@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>TESTEMUNHOS - Adil Móveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Top Bar with Social Media, Email and Phone -->
+      <div class="bg-navy text-white py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <div class="flex space-x-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
+              <i data-feather="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
+              <i data-feather="instagram" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <div class="flex items-center space-x-6 text-sm">
+            <a href="mailto:adil.moveis@hotmail.com" class="flex items-center hover:text-gray-300">
+              <i data-feather="mail" class="w-4 h-4 mr-1"></i> adil.moveis@hotmail.com
+            </a>
+            <a href="tel:212582788" class="flex items-center hover:text-gray-300">
+              <i data-feather="phone" class="w-4 h-4 mr-1"></i> 212 582 788
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Header with Logo and Menu -->
+      <div class="bg-white py-4 border-b border-gray-200">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <a href="index.html" class="text-2xl font-bold text-navy">ADIL MÓVEIS</a>
+          </div>
+          
+          <!-- Menu Button -->
+          <button 
+            class="flex items-center space-x-2 text-navy"
+            id="menuButton"
+          >
+            <span class="uppercase font-bold">MENU</span>
+            <i data-feather="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Menu Overlay -->
+      <div id="menuOverlay" class="fixed inset-0 bg-white z-50 overflow-y-auto hidden">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex justify-end mb-8">
+            <button 
+              class="flex items-center space-x-2 text-navy"
+              id="closeMenuButton"
+            >
+              <span class="uppercase font-bold">MENU</span>
+              <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          
+          <nav class="flex flex-col space-y-4">
+            <a href="index.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              INICIO
+            </a>
+            <a href="quartos.html" class="text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              QUARTOS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="colchoes.html" class="text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              COLCHÕES
+              <span class="text-xl">›</span>
+            </a>
+            <a href="salas.html" class="text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              SALAS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="escritorio.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              ESCRITÓRIO
+            </a>
+            <a href="cozinha.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              COZINHA
+            </a>
+            <a href="complementos.html" class="text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              COMPLEMENTOS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="kids.html" class="text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              KIDS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="tecidos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              TECIDOS
+            </a>
+            <a href="servicos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              SERVIÇOS
+            </a>
+            <a href="contactos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              CONTACTOS
+            </a>
+            <a href="testemunhos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              TESTEMUNHOS
+            </a>
+            <a href="parceiros.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              PARCEIROS
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="bg-navy py-12">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-white text-4xl font-light uppercase tracking-wider">TESTEMUNHOS</h1>
+        </div>
+      </section>
+      
+      <!-- Testimonials Section -->
+      <section id="testemunhos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-light mb-4">O que os nossos clientes dizem</h2>
+              <p class="text-gray-600 max-w-2xl mx-auto">
+                Nos últimos 30 anos, temos servido com dedicação e paixão. 
+                Aqui estão alguns comentários dos nossos clientes satisfeitos.
+              </p>
+            </div>
+            
+            <div class="space-y-12">
+              <!-- Testimonial 1 -->
+              <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                  <div class="mr-4">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                        alt="Avatar" 
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold">Ana Silva</h3>
+                    <p class="text-gray-500">Cliente desde 2018</p>
+                  </div>
+                  <div class="ml-auto">
+                    <div class="flex text-yellow-400">
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="italic text-gray-600 font-serif text-lg leading-relaxed">
+                  "Não poderia estar mais satisfeita com a qualidade dos móveis e o serviço prestado. Comprei um sofá e móveis para a sala de jantar, e ambos superaram as minhas expectativas. Recomendo a todos que procuram móveis de qualidade e um atendimento personalizado."
+                </blockquote>
+              </div>
+              
+              <!-- Testimonial 2 -->
+              <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                  <div class="mr-4">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                        alt="Avatar" 
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold">João Mendes</h3>
+                    <p class="text-gray-500">Cliente desde 2020</p>
+                  </div>
+                  <div class="ml-auto">
+                    <div class="flex text-yellow-400">
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="italic text-gray-600 font-serif text-lg leading-relaxed">
+                  "Adquiri móveis para todo o meu quarto na Adil Móveis e fiquei impressionado com a qualidade e a atenção aos detalhes. O suporte pós-venda também tem sido excepcional. Sem dúvida, voltarei para futuras compras."
+                </blockquote>
+              </div>
+              
+              <!-- Testimonial 3 -->
+              <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                  <div class="mr-4">
+                    <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" 
+                        alt="Avatar" 
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold">Maria Costa</h3>
+                    <p class="text-gray-500">Cliente desde 2015</p>
+                  </div>
+                  <div class="ml-auto">
+                    <div class="flex text-yellow-400">
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                      <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                  </div>
+                </div>
+                <blockquote class="italic text-gray-600 font-serif text-lg leading-relaxed">
+                  "Conhecer a Adil Móveis foi uma das melhores descobertas! Mobilei toda a minha casa com eles e nunca me decepcionaram. A qualidade dos produtos, combinada com o atendimento personalizado, torna este lugar especial. Já indiquei para vários amigos."
+                </blockquote>
+              </div>
+            </div>
+            
+            <!-- Share Testimonial CTA -->
+            <div class="mt-16 text-center">
+              <h3 class="text-2xl font-light mb-6">Partilhe a sua experiência</h3>
+              <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                Conte-nos como foi a sua experiência com a Adil Móveis. O seu feedback é muito importante para nós e ajuda-nos a melhorar continuamente.
+              </p>
+              <a href="contactos.html" class="btn-adil">
+                PARTILHAR TESTEMUNHO
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy text-white py-10">
+      <div class="container mx-auto px-4">
+        <!-- Top Section with Social and Contact -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8 pb-8 border-b border-gray-700">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-medium mb-4 uppercase tracking-wide">Adil Móveis</h3>
+            <div class="flex space-x-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+                <i data-feather="facebook" class="w-5 h-5"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+                <i data-feather="instagram" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+            <a href="mailto:adil.moveis@hotmail.com" class="flex items-center hover:opacity-80 transition-opacity">
+              <i data-feather="mail" class="w-4 h-4 mr-2"></i> adil.moveis@hotmail.com
+            </a>
+            <a href="tel:212582788" class="flex items-center hover:opacity-80 transition-opacity">
+              <i data-feather="phone" class="w-4 h-4 mr-2"></i> 212 582 788
+            </a>
+          </div>
+        </div>
+        
+        <!-- Navigation Columns -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">Menu</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="index.html" class="hover:opacity-80 transition-opacity">INICIO</a></li>
+              <li><a href="quartos.html" class="hover:opacity-80 transition-opacity">QUARTOS</a></li>
+              <li><a href="colchoes.html" class="hover:opacity-80 transition-opacity">COLCHÕES</a></li>
+              <li><a href="salas.html" class="hover:opacity-80 transition-opacity">SALAS</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">&nbsp;</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="escritorio.html" class="hover:opacity-80 transition-opacity">ESCRITÓRIO</a></li>
+              <li><a href="cozinha.html" class="hover:opacity-80 transition-opacity">COZINHA</a></li>
+              <li><a href="complementos.html" class="hover:opacity-80 transition-opacity">COMPLEMENTOS</a></li>
+              <li><a href="kids.html" class="hover:opacity-80 transition-opacity">KIDS</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">&nbsp;</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="tecidos.html" class="hover:opacity-80 transition-opacity">TECIDOS</a></li>
+              <li><a href="servicos.html" class="hover:opacity-80 transition-opacity">SERVIÇOS</a></li>
+              <li><a href="contactos.html" class="hover:opacity-80 transition-opacity">CONTACTOS</a></li>
+              <li><a href="testemunhos.html" class="hover:opacity-80 transition-opacity">TESTEMUNHOS</a></li>
+              <li><a href="parceiros.html" class="hover:opacity-80 transition-opacity">PARCEIROS</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">Morada</h4>
+            <address class="not-italic text-sm text-gray-300 leading-relaxed">
+              Av. Engenheiro de Aeronáutica<br />
+              Antão de Freitas, 15<br />
+              2805-327<br />
+              Almada
+            </address>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center text-xs text-gray-400">
+          <p>&copy; <span id="currentYear"></span> Adil Móveis. Todos os direitos reservados.</p>
+          <p class="mt-1">Website desenvolvido por REPLIT</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize Feather Icons
+      document.addEventListener('DOMContentLoaded', () => {
+        feather.replace();
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Menu toggle functionality
+        const menuButton = document.getElementById('menuButton');
+        const closeMenuButton = document.getElementById('closeMenuButton');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        menuButton.addEventListener('click', () => {
+          menuOverlay.classList.remove('hidden');
+        });
+        
+        closeMenuButton.addEventListener('click', () => {
+          menuOverlay.classList.add('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
