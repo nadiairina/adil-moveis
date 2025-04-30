@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>SALAS - Adil Móveis</title>
+    <title>Salas - Adil Móveis</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -101,11 +101,14 @@
             <a href="servicos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
               SERVIÇOS
             </a>
-            <a href="index.html#contactos" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+            <a href="contactos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
               CONTACTOS
             </a>
-            <a href="index.html#testemunhos" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+            <a href="testemunhos.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
               TESTEMUNHOS
+            </a>
+            <a href="parceiros.html" class="text-lg py-2 border-b border-gray-200 hover:text-navy">
+              PARCEIROS
             </a>
           </nav>
         </div>
@@ -113,84 +116,211 @@
     </header>
 
     <main>
-      <!-- Page Header -->
-      <section class="bg-navy py-12">
+      <!-- Category Header -->
+      <section class="bg-navy text-white py-16">
         <div class="container mx-auto px-4 text-center">
-          <h1 class="text-white text-4xl font-light uppercase tracking-wider">SALAS</h1>
+          <h1 class="text-4xl md:text-5xl font-light uppercase tracking-wider mb-4">SALAS</h1>
+          <p class="max-w-2xl mx-auto text-lg">
+            Móveis elegantes e confortáveis para a sua sala de estar e jantar. Personalize cores, medidas e estofos para que encaixem perfeitamente na sua casa.
+          </p>
         </div>
       </section>
       
-      <!-- Content Section -->
+      <!-- Products Grid -->
       <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-          <p class="text-center text-xl max-w-3xl mx-auto mb-12">
-            Esta página está em desenvolvimento. Em breve teremos mais produtos e informações disponíveis.
-          </p>
-          
-          <div class="text-center">
-            <a href="index.html" class="btn-adil">
-              VOLTAR PARA PÁGINA INICIAL
-            </a>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Sofá MILANO" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER DETALHES
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Sofá MILANO</h3>
+                <p class="text-sm text-gray-500 mt-1">Disponível em várias cores e medidas</p>
+                <p class="text-gray-500 italic mt-2">preços sob consulta</p>
+              </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Sofá LISBOA" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER DETALHES
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Sofá LISBOA</h3>
+                <p class="text-sm text-gray-500 mt-1">Design moderno e elegante</p>
+                <p class="text-gray-500 italic mt-2">preços sob consulta</p>
+              </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Móvel TV PORTO" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER DETALHES
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Móvel TV PORTO</h3>
+                <p class="text-sm text-gray-500 mt-1">Múltiplas opções de arrumação</p>
+                <p class="text-gray-500 italic mt-2">preços sob consulta</p>
+              </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Mesa de Jantar CASCAIS" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER DETALHES
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Mesa de Jantar CASCAIS</h3>
+                <p class="text-sm text-gray-500 mt-1">Extensível, várias medidas</p>
+                <p class="text-gray-500 italic mt-2">preços sob consulta</p>
+              </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Cadeira de Jantar BRAGA" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER DETALHES
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Cadeira de Jantar BRAGA</h3>
+                <p class="text-sm text-gray-500 mt-1">Múltiplas opções de estofos</p>
+                <p class="text-gray-500 italic mt-2">preços sob consulta</p>
+              </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1616486305462-623ea86efe66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Estante SINTRA" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER DETALHES
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Estante SINTRA</h3>
+                <p class="text-sm text-gray-500 mt-1">Soluções modulares à medida</p>
+                <p class="text-gray-500 italic mt-2">preços sob consulta</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      
+      <!-- Call to Action -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-navy text-3xl mb-6 font-light uppercase tracking-wider">PRECISA DE AJUDA?</h2>
+          <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
+            A nossa equipa está disponível para o aconselhar na escolha dos móveis perfeitos para a sua sala. Contacte-nos para saber mais sobre medidas, cores e acabamentos disponíveis.
+          </p>
+          <a href="contactos.html" class="btn-adil">
+            CONTACTE-NOS
+          </a>
+        </div>
+      </section>
     </main>
-
-    <footer class="bg-navy text-white py-10">
+    
+    <footer class="bg-navy text-white py-12">
       <div class="container mx-auto px-4">
         <!-- Top Section with Social and Contact -->
         <div class="flex flex-col md:flex-row justify-between items-center mb-8 pb-8 border-b border-gray-700">
           <div class="mb-6 md:mb-0">
-            <h3 class="text-xl font-medium mb-4 uppercase tracking-wide">Adil Móveis</h3>
-            <div class="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
-                <i data-feather="facebook" class="w-5 h-5"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
-                <i data-feather="instagram" class="w-5 h-5"></i>
-              </a>
-            </div>
+            <a href="index.html" class="text-2xl font-bold">ADIL MÓVEIS</a>
           </div>
           
-          <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-            <a href="mailto:adil.moveis@hotmail.com" class="flex items-center hover:opacity-80 transition-opacity">
-              <i data-feather="mail" class="w-4 h-4 mr-2"></i> adil.moveis@hotmail.com
+          <div class="flex space-x-8">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+              <i data-feather="facebook" class="w-6 h-6"></i>
             </a>
-            <a href="tel:212582788" class="flex items-center hover:opacity-80 transition-opacity">
-              <i data-feather="phone" class="w-4 h-4 mr-2"></i> 212 582 788
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+              <i data-feather="instagram" class="w-6 h-6"></i>
+            </a>
+            <a href="mailto:adil.moveis@hotmail.com" class="hover:opacity-80 transition-opacity">
+              <i data-feather="mail" class="w-6 h-6"></i>
+            </a>
+            <a href="tel:212582788" class="hover:opacity-80 transition-opacity">
+              <i data-feather="phone" class="w-6 h-6"></i>
             </a>
           </div>
         </div>
         
-        <!-- Navigation Columns -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <!-- Bottom Section with Nav and Address -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">Menu</h4>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2">
               <li><a href="index.html" class="hover:opacity-80 transition-opacity">INICIO</a></li>
               <li><a href="quartos.html" class="hover:opacity-80 transition-opacity">QUARTOS</a></li>
               <li><a href="colchoes.html" class="hover:opacity-80 transition-opacity">COLCHÕES</a></li>
               <li><a href="salas.html" class="hover:opacity-80 transition-opacity">SALAS</a></li>
+              <li><a href="escritorio.html" class="hover:opacity-80 transition-opacity">ESCRITÓRIO</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">&nbsp;</h4>
-            <ul class="space-y-2 text-sm">
-              <li><a href="escritorio.html" class="hover:opacity-80 transition-opacity">ESCRITÓRIO</a></li>
+            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">Produtos</h4>
+            <ul class="space-y-2">
               <li><a href="cozinha.html" class="hover:opacity-80 transition-opacity">COZINHA</a></li>
               <li><a href="complementos.html" class="hover:opacity-80 transition-opacity">COMPLEMENTOS</a></li>
               <li><a href="kids.html" class="hover:opacity-80 transition-opacity">KIDS</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">&nbsp;</h4>
-            <ul class="space-y-2 text-sm">
               <li><a href="tecidos.html" class="hover:opacity-80 transition-opacity">TECIDOS</a></li>
               <li><a href="servicos.html" class="hover:opacity-80 transition-opacity">SERVIÇOS</a></li>
-              <li><a href="index.html#contactos" class="hover:opacity-80 transition-opacity">CONTACTOS</a></li>
-              <li><a href="index.html#testemunhos" class="hover:opacity-80 transition-opacity">TESTEMUNHOS</a></li>
+              <li><a href="contactos.html" class="hover:opacity-80 transition-opacity">CONTACTOS</a></li>
+              <li><a href="testemunhos.html" class="hover:opacity-80 transition-opacity">TESTEMUNHOS</a></li>
+              <li><a href="parceiros.html" class="hover:opacity-80 transition-opacity">PARCEIROS</a></li>
             </ul>
           </div>
           
