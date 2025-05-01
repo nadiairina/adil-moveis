@@ -53,90 +53,259 @@
       </div>
       
       <!-- Menu Overlay -->
-<div id="menuOverlay" class="fixed top-0 right-0 w-72 bg-white z-50 overflow-y-auto hidden h-screen shadow-lg">
-  <div class="py-4">
-    <div class="flex justify-between items-center px-4 mb-4 border-b border-gray-200 pb-4">
-      <span class="text-lg font-bold text-navy">MENU</span>
-      <button 
-  class="text-navy"
-  id="closeMenuButton">
-    <i data-feather="x" class="w-6 h-6"></i>
-</button>
-    </div>
-    
-    <nav class="flex flex-col">
-      <a href="index.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        INICIO
-      </a>
-      <a href="quartos.html" class="text-base py-3 px-4 hover:bg-gray-100 flex justify-between items-center hover:text-navy">
-        QUARTOS
-        <span class="text-lg">›</span>
-      </a>
-      <a href="colchoes.html" class="text-base py-3 px-4 hover:bg-gray-100 flex justify-between items-center hover:text-navy">
-        COLCHÕES
-        <span class="text-lg">›</span>
-      </a>
-      <a href="salas.html" class="text-base py-3 px-4 hover:bg-gray-100 flex justify-between items-center hover:text-navy">
-        SALAS
-        <span class="text-lg">›</span>
-      </a>
-      <a href="escritorio.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        ESCRITÓRIO
-      </a>
-      <a href="cozinha.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        COZINHA
-      </a>
-      <a href="complementos.html" class="text-base py-3 px-4 hover:bg-gray-100 flex justify-between items-center hover:text-navy">
-        COMPLEMENTOS
-        <span class="text-lg">›</span>
-      </a>
-      <a href="kids.html" class="text-base py-3 px-4 hover:bg-gray-100 flex justify-between items-center hover:text-navy">
-        KIDS
-        <span class="text-lg">›</span>
-      </a>
-      <a href="tecidos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        TECIDOS
-      </a>
-      <a href="servicos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        SERVIÇOS
-      </a>
-      <a href="contactos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        CONTACTOS
-      </a>
-      <a href="testemunhos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        TESTEMUNHOS
-      </a>
-      <a href="parceiros.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-        PARCEIROS
-      </a>
-    </nav>
-  </div>
-</div>
-      
+      <div id="menuOverlay" class="fixed top-0 right-0 w-72 bg-white z-50 overflow-y-auto hidden h-screen shadow-lg">
+        <div class="py-4">
+          <div class="flex justify-between items-center px-4 mb-4 border-b border-gray-200 pb-4">
+            <span class="text-lg font-bold text-navy">MENU</span>
+            <button 
+              class="text-navy"
+              id="closeMenuButton"
+            >
+              <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          
+          <nav class="flex flex-col space-y-4">
+            <a href="index.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              INICIO
+            </a>
+            <a href="quartos.html" class="px-4 text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              QUARTOS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="colchoes.html" class="px-4 text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              COLCHÕES
+              <span class="text-xl">›</span>
+            </a>
+            <a href="salas.html" class="px-4 text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              SALAS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="escritorio.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              ESCRITÓRIO
+            </a>
+            <a href="cozinha.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              COZINHA
+            </a>
+            <a href="complementos.html" class="px-4 text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              COMPLEMENTOS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="kids.html" class="px-4 text-lg py-2 border-b border-gray-200 flex justify-between items-center hover:text-navy">
+              KIDS
+              <span class="text-xl">›</span>
+            </a>
+            <a href="tecidos.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              TECIDOS
+            </a>
+            <a href="servicos.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              SERVIÇOS
+            </a>
+            <a href="contactos.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              CONTACTOS
+            </a>
+            <a href="testemunhos.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              TESTEMUNHOS
+            </a>
+            <a href="parceiros.html" class="px-4 text-lg py-2 border-b border-gray-200 hover:text-navy">
+              PARCEIROS
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <!-- Page Header -->
-      <section class="bg-navy py-12">
+      <!-- Category Header -->
+      <section class="bg-navy text-white py-16">
         <div class="container mx-auto px-4 text-center">
-          <h1 class="text-white text-4xl font-light uppercase tracking-wider">TECIDOS</h1>
+          <h1 class="text-4xl md:text-5xl font-light uppercase tracking-wider mb-4">TECIDOS</h1>
+          <p class="max-w-2xl mx-auto text-lg">
+            Uma vasta coleção de tecidos de alta qualidade para personalizar o seu mobiliário. Cores, texturas e padrões que transformam cada peça em algo único.
+          </p>
         </div>
       </section>
       
-      <!-- Content Section -->
+      <!-- Fabric Categories -->
       <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-          <p class="text-center text-xl max-w-3xl mx-auto mb-12">
-            Esta página está em desenvolvimento. Em breve teremos mais produtos e informações disponíveis.
-          </p>
-          
-          <div class="text-center">
-            <a href="index.html" class="btn-adil">
-              VOLTAR PARA PÁGINA INICIAL
-            </a>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Category 1 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1615874694520-474822394e73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Tecidos Naturais" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER AMOSTRAS
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Tecidos Naturais</h3>
+                <p class="text-sm text-gray-500 mt-1">Algodão, linho e fibras naturais</p>
+              </div>
+            </div>
+            
+            <!-- Category 2 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Tecidos Premium" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER AMOSTRAS
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Tecidos Premium</h3>
+                <p class="text-sm text-gray-500 mt-1">Veludo, seda e materiais luxuosos</p>
+              </div>
+            </div>
+            
+            <!-- Category 3 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1558618666-c9879776363e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Tecidos Resistentes" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER AMOSTRAS
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Tecidos Resistentes</h3>
+                <p class="text-sm text-gray-500 mt-1">Para famílias com crianças e animais</p>
+              </div>
+            </div>
+            
+            <!-- Category 4 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1506619458605-c427c3cdbfe1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Tecidos Decorativos" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER AMOSTRAS
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Tecidos Decorativos</h3>
+                <p class="text-sm text-gray-500 mt-1">Padrões e texturas excepcionais</p>
+              </div>
+            </div>
+            
+            <!-- Category 5 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1596079890744-c1a0462d0975?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Tecidos para Exterior" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER AMOSTRAS
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Tecidos para Exterior</h3>
+                <p class="text-sm text-gray-500 mt-1">Resistentes a água e UV</p>
+              </div>
+            </div>
+            
+            <!-- Category 6 -->
+            <div class="overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1582656314057-7156db5dc4b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  alt="Tecidos para Cortinas" 
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <a href="#" class="btn-adil bg-white text-navy border-white">
+                    VER AMOSTRAS
+                  </a>
+                </div>
+              </div>
+              <div class="py-4 text-center">
+                <h3 class="text-lg font-medium">Tecidos para Cortinas</h3>
+                <p class="text-sm text-gray-500 mt-1">Opções translúcidas e blackout</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      
+      <!-- Services Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-navy text-3xl text-center mb-10 font-light uppercase tracking-wider">NOSSOS SERVIÇOS</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            <div class="text-center">
+              <div class="inline-block mb-4 text-navy">
+                <i data-feather="scissors" class="w-12 h-12"></i>
+              </div>
+              <h3 class="text-xl font-medium mb-2">Personalização</h3>
+              <p class="text-gray-600">
+                Adaptamos e personalizamos os tecidos de acordo com as suas necessidades e preferências.
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="inline-block mb-4 text-navy">
+                <i data-feather="home" class="w-12 h-12"></i>
+              </div>
+              <h3 class="text-xl font-medium mb-2">Consultoria</h3>
+              <p class="text-gray-600">
+                Serviço de consultoria de design para ajudar a escolher os melhores tecidos para o seu espaço.
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="inline-block mb-4 text-navy">
+                <i data-feather="truck" class="w-12 h-12"></i>
+              </div>
+              <h3 class="text-xl font-medium mb-2">Entrega de Amostras</h3>
+              <p class="text-gray-600">
+                Podemos enviar amostras de tecidos para que possa avaliar as opções no conforto da sua casa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Call to Action -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-navy text-3xl mb-6 font-light uppercase tracking-wider">SOLICITE UMA CONSULTA</h2>
+          <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
+            Os nossos especialistas estão disponíveis para ajudar na escolha do tecido perfeito para o seu mobiliário. Contacte-nos para agendar uma consulta.
+          </p>
+          <a href="contactos.html" class="btn-adil">
+            CONTACTE-NOS
+          </a>
+        </div>
+      </section>
     </main>
-
+    
     <footer class="bg-navy text-white py-10">
       <div class="container mx-auto px-4">
         <!-- Top Section with Social and Contact -->
@@ -144,10 +313,10 @@
           <div class="mb-6 md:mb-0">
             <h3 class="text-xl font-medium mb-4 uppercase tracking-wide">Adil Móveis</h3>
             <div class="flex space-x-4">
-              <a href="https://www.facebook.com/adilmoveisaiaz/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
                 <i data-feather="facebook" class="w-5 h-5"></i>
               </a>
-              <a href="https://www.instagram.com/adil_moveis88/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
                 <i data-feather="instagram" class="w-5 h-5"></i>
               </a>
             </div>
@@ -198,8 +367,10 @@
           <div>
             <h4 class="text-sm font-medium mb-4 uppercase tracking-wide">Morada</h4>
             <address class="not-italic text-sm text-gray-300 leading-relaxed">
-              R. Dr. António Elvas 28B<br />
-              2810-110 Almada<br />
+              Av. Engenheiro de Aeronáutica<br />
+              Antão de Freitas, 15<br />
+              2805-327<br />
+              Almada
             </address>
           </div>
         </div>
@@ -207,7 +378,6 @@
         <!-- Copyright -->
         <div class="text-center text-xs text-gray-400">
           <p>&copy; <span id="currentYear"></span> Adil Móveis. Todos os direitos reservados.</p>
-          <p class="mt-1">Website desenvolvido por Nadia Irina</p>
         </div>
       </div>
     </footer>
