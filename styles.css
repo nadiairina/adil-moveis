@@ -9,13 +9,13 @@ body {
   font-style: italic;
 }
 
-/* Adil Móveis color scheme */
+/* Adil Móveis color scheme - Updated to grey from navy */
 .text-navy {
-  color: #003366;
+  color: #4A4A4A;
 }
 
 .bg-navy {
-  background-color: #003366;
+  background-color: #4A4A4A;
 }
 
 /* Containers */
@@ -25,16 +25,11 @@ body {
   padding: 0 1rem;
 }
 
-/* Menu items with arrows */
+/* Menu items with arrows - arrows removed */
 .menu-item-with-arrow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.menu-item-with-arrow:after {
-  content: '›';
-  font-size: 1.5rem;
 }
 
 /* Header styles */
@@ -44,6 +39,20 @@ body {
 
 .social-icon:hover {
   opacity: 0.8;
+}
+
+/* Logo styles */
+.logo-container {
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.logo-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 /* Button styles */
@@ -62,8 +71,8 @@ body {
 }
 
 .btn-adil:hover {
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #4A4A4A;
+  border-color: #4A4A4A;
   color: white;
 }
 
@@ -92,8 +101,24 @@ body {
   transition: opacity 0.3s ease;
 }
 
-/* Responsive utilities */
+/* Partner logos grid */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .partner-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
+  .partner-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
   .md\:flex-row {
     flex-direction: row;
   }
@@ -140,4 +165,50 @@ body {
   .md\:mb-0 {
     margin-bottom: 0;
   }
+}
+
+/* Partner logo item */
+.partner-logo {
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* History section images */
+.history-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .history-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.history-image {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.history-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.history-image:hover img {
+  transform: scale(1.05);
 }
