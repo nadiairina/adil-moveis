@@ -14,7 +14,7 @@ body {
   color: #4A4A4A;
 }
 
-.bg-navy {
+.bg-navy, .bg-gray-700 {
   background-color: #4A4A4A;
 }
 
@@ -25,11 +25,17 @@ body {
   padding: 0 1rem;
 }
 
-/* Menu items with arrows - arrows removed */
-.menu-item-with-arrow {
+/* Menu items without arrows */
+.menu-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* This class is kept for reference but not used */
+.menu-item-with-arrow {
+  /* Arrow styles removed as requested */
+  display: none;
 }
 
 /* Header styles */
