@@ -12,7 +12,7 @@
   <body>
     <header>
       <!-- Top Bar with Social Media, Email and Phone -->
-      <div class="bg-navy text-white py-2">
+      <div class="bg-gray-700 text-white py-2">
         <div class="container mx-auto px-4 flex justify-between items-center">
           <div class="flex space-x-3">
             <a href="https://www.facebook.com/adilmoveisaiaz/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
@@ -43,13 +43,13 @@
             </a>
           </div>
           
-          <!-- Menu Button -->
+          <!-- Menu Button (Smaller Version) -->
           <button 
-            class="flex items-center space-x-2 text-navy"
+            class="flex items-center space-x-1 text-gray-700"
             id="menuButton"
           >
-            <span class="uppercase font-bold">MENU</span>
-            <i data-feather="menu" class="w-6 h-6"></i>
+            <span class="uppercase font-bold text-sm">MENU</span>
+            <i data-feather="menu" class="w-5 h-5"></i>
           </button>
         </div>
       </div>
@@ -58,9 +58,9 @@
       <div id="menuOverlay" class="fixed top-0 right-0 w-72 bg-white z-50 overflow-y-auto hidden h-screen shadow-lg">
         <div class="py-4">
           <div class="flex justify-between items-center px-4 mb-4 border-b border-gray-200 pb-4">
-            <span class="text-lg font-bold text-navy">MENU</span>
+            <span class="text-lg font-bold text-gray-700">MENU</span>
             <button 
-              class="text-navy"
+              class="text-gray-700"
               id="closeMenuButton"
             >
               <i data-feather="x" class="w-6 h-6"></i>
@@ -68,7 +68,7 @@
           </div>
           
           <nav class="flex flex-col">
-            <a href="index.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
+            <a href="index.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-gray-700">
               INICIO
             </a>
             <a href="quartos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
@@ -114,7 +114,7 @@
 
     <main>
       <!-- Page Header -->
-      <section class="bg-navy py-12">
+      <section class="bg-gray-700 py-12">
         <div class="container mx-auto px-4 text-center">
           <h1 class="text-white text-4xl font-light uppercase tracking-wider">PARCEIROS</h1>
         </div>
@@ -134,124 +134,88 @@
             <!-- Partners Grid -->
             <div class="partner-grid">
               <!-- Partner 1 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
-                    <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 1</text>
-                  </svg>
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <img src="public_images/brand1.svg" alt="Marca Parceira 1" class="max-h-16 max-w-full" />
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 1</div>
               </div>
               
               <!-- Partner 2 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
-                    <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 2</text>
-                  </svg>
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <img src="public_images/brand2.svg" alt="Marca Parceira 2" class="max-h-16 max-w-full" />
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 2</div>
               </div>
               
               <!-- Partner 3 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <svg class="w-32 h-16" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
                     <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 3</text>
                   </svg>
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 3</div>
               </div>
               
               <!-- Partner 4 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <svg class="w-32 h-16" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
                     <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 4</text>
                   </svg>
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 4</div>
               </div>
               
               <!-- Partner 5 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <svg class="w-32 h-16" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
                     <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 5</text>
                   </svg>
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 5</div>
               </div>
               
               <!-- Partner 6 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <svg class="w-32 h-16" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
                     <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 6</text>
                   </svg>
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 6</div>
               </div>
               
               <!-- Partner 7 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <svg class="w-32 h-16" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
                     <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 7</text>
                   </svg>
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 7</div>
               </div>
               
               <!-- Partner 8 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <div class="partner-logo bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="h-24 flex items-center justify-center">
+                  <svg class="w-32 h-16" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
                     <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 8</text>
                   </svg>
                 </div>
+                <div class="mt-2 text-center text-sm text-gray-600 font-medium">Marca 8</div>
               </div>
               
-              <!-- Partner 9 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
-                    <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 9</text>
-                  </svg>
-                </div>
-              </div>
-              
-              <!-- Partner 10 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
-                    <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 10</text>
-                  </svg>
-                </div>
-              </div>
-              
-              <!-- Partner 11 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
-                    <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 11</text>
-                  </svg>
-                </div>
-              </div>
-              
-              <!-- Partner 12 -->
-              <div class="partner-logo">
-                <div class="h-20 flex items-center justify-center">
-                  <svg class="w-32 h-12" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="20" width="160" height="40" rx="5" fill="#f5f5f5"/>
-                    <text x="100" y="45" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">MARCA 12</text>
-                  </svg>
-                </div>
-              </div>
+              <!-- Only displaying 8 logos for better layout and readability -->
             </div>
             
             <!-- Partner Benefits Section -->
@@ -259,7 +223,7 @@
               <h3 class="text-2xl font-light mb-6">Por que escolhemos estas marcas?</h3>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                 <div class="bg-gray-50 p-6 rounded-lg">
-                  <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div class="w-16 h-16 bg-gray-700 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <i data-feather="check-circle" class="w-8 h-8"></i>
                   </div>
                   <h3 class="text-xl font-medium mb-2">Qualidade Superior</h3>
@@ -269,7 +233,7 @@
                 </div>
                 
                 <div class="bg-gray-50 p-6 rounded-lg">
-                  <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div class="w-16 h-16 bg-gray-700 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <i data-feather="trending-up" class="w-8 h-8"></i>
                   </div>
                   <h3 class="text-xl font-medium mb-2">Inovação</h3>
@@ -279,7 +243,7 @@
                 </div>
                 
                 <div class="bg-gray-50 p-6 rounded-lg">
-                  <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div class="w-16 h-16 bg-gray-700 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <i data-feather="shield" class="w-8 h-8"></i>
                   </div>
                   <h3 class="text-xl font-medium mb-2">Garantia</h3>
@@ -294,7 +258,7 @@
       </section>
     </main>
 
-    <footer class="bg-navy text-white py-10">
+    <footer class="bg-gray-700 text-white py-10">
       <div class="container mx-auto px-4">
         <!-- Top Section with Social and Contact -->
         <div class="flex flex-col md:flex-row justify-between items-center mb-8 pb-8 border-b border-gray-700">
