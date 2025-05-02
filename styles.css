@@ -1,7 +1,7 @@
 /* Custom font styles for Adil Móveis */
 body {
   font-family: 'Inter', sans-serif;
-  color: #000;
+  color: #333;
 }
 
 .fancy-script {
@@ -9,25 +9,13 @@ body {
   font-style: italic;
 }
 
-/* Adil Móveis color scheme - Updated to black */
-/* Adil Móveis color scheme - Updated to black */
+/* Adil Móveis color scheme - Updated to light grey */
 .text-navy {
-  color: #000;
+  color: #D3D3D3;
 }
 
-.bg-navy {
+.bg-navy, .bg-gray-700 {
   background-color: #D3D3D3;
-}
-
-.bg-black {
-  background-color: #000000;
-}
-
-/* Add this to ensure images display properly */
-.group img {
-  display: block;
-  min-height: 100%;
-  background-color: #f0f0f0; /* Fallback color if image fails to load */
 }
 
 /* Containers */
@@ -89,8 +77,8 @@ body {
 }
 
 .btn-adil:hover {
-  background-color: #000;
-  border-color: #000;
+  background-color: #D3D3D3;
+  border-color: #D3D3D3;
   color: white;
 }
 
