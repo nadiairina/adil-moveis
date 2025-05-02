@@ -9,13 +9,13 @@ body {
   font-style: italic;
 }
 
-/* Adil Móveis color scheme - Updated to light grey from grey */
+/* Adil Móveis color scheme - Updated to light grey */
 .text-navy {
-  color: #7D7D7D;
+  color: #D3D3D3;
 }
 
 .bg-navy, .bg-gray-700 {
-  background-color: #7D7D7D;
+  background-color: #D3D3D3;
 }
 
 /* Containers */
@@ -77,8 +77,8 @@ body {
 }
 
 .btn-adil:hover {
-  background-color: #7D7D7D;
-  border-color: #7D7D7D;
+  background-color: #D3D3D3;
+  border-color: #D3D3D3;
   color: white;
 }
 
@@ -124,50 +124,50 @@ body {
   .partner-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .md\:flex-row {
     flex-direction: row;
   }
-  
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  
+
   .md\:h-64 {
     height: 16rem;
   }
-  
+
   .md\:space-y-0 {
     margin-top: 0;
   }
-  
+
   .md\:space-x-8 > * + * {
     margin-left: 2rem;
   }
-  
+
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
   }
-  
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  
+
   .md\:mb-0 {
     margin-bottom: 0;
   }
