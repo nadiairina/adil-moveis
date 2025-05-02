@@ -9,13 +9,13 @@ body {
   font-style: italic;
 }
 
-/* Adil Móveis color scheme - Updated to grey from navy */
+/* Adil Móveis color scheme - Updated to light grey from grey */
 .text-navy {
-  color: #4A4A4A;
+  color: #7D7D7D;
 }
 
 .bg-navy, .bg-gray-700 {
-  background-color: #4A4A4A;
+  background-color: #7D7D7D;
 }
 
 /* Containers */
@@ -77,8 +77,8 @@ body {
 }
 
 .btn-adil:hover {
-  background-color: #4A4A4A;
-  border-color: #4A4A4A;
+  background-color: #7D7D7D;
+  border-color: #7D7D7D;
   color: white;
 }
 
