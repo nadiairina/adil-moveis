@@ -9,13 +9,13 @@ body {
   font-style: italic;
 }
 
-/* Adil Móveis color scheme - Updated to light grey */
+/* Adil Móveis color scheme - Updated to black */
 .text-navy {
-  color: #D3D3D3;
+  color: #000000; /* Changed from #D3D3D3 to #000000 */
 }
 
 .bg-navy, .bg-gray-700 {
-  background-color: #D3D3D3;
+  background-color: #000000; /* Changed from #D3D3D3 to #000000 */
 }
 
 /* Containers */
