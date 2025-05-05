@@ -223,3 +223,13 @@ body {
 .history-image:hover img {
   transform: scale(1.05);
 }
+/* Make the history images section wider */
+.container.mx-auto.px-4.py-8 {
+  max-width: 1400px; /* Increase this value to make images wider */
+}
+
+/* Optional: if you want to maintain image proportions but ensure consistent height */
+.grid.grid-cols-1.md\:grid-cols-3.gap-8 img {
+  height: 350px;
+  object-fit: cover;
+}
