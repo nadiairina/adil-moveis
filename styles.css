@@ -210,7 +210,7 @@ body {
 
 .history-image img {
   width: 100%;
-  height: 350px;
+  height: 500px !important; /* increased from 350px to 500px and added !important */
   object-fit: cover;
   transition: transform 0.5s ease;
 }
