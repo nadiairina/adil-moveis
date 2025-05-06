@@ -421,113 +421,112 @@
     </footer>
 
     <script>
-  // Run once the DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Feather Icons
-    feather.replace();
-    
-    // Set current year in footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    
-    // Menu toggle functionality
-    const menuButton = document.getElementById('menuButton');
-    const closeMenuButton = document.getElementById('closeMenuButton');
-    const menuOverlay = document.getElementById('menuOverlay');
-
-    menuButton.addEventListener('click', () => {
-      menuOverlay.classList.remove('hidden');
-    });
-
-    closeMenuButton.addEventListener('click', () => {
-      menuOverlay.classList.add('hidden');
-    });
-    
-    // Modal functionality
-    const modal = document.getElementById('imageModal');
-    const closeModal = document.getElementById('closeModal');
-    
-    closeModal.addEventListener('click', () => {
+// Wait for page to load
+window.addEventListener('DOMContentLoaded', function() {
+  // Initialize icons
+  feather.replace();
+  
+  // All elements
+  var menuButton = document.getElementById('menuButton');
+  var closeMenuButton = document.getElementById('closeMenuButton');
+  var menuOverlay = document.getElementById('menuOverlay');
+  var modal = document.getElementById('imageModal');
+  var closeModal = document.getElementById('closeModal');
+  var slides = document.querySelectorAll('.mySlides');
+  
+  // Menu functionality
+  menuButton.onclick = function() {
+    menuOverlay.classList.remove('hidden');
+  };
+  
+  closeMenuButton.onclick = function() {
+    menuOverlay.classList.add('hidden');
+  };
+  
+  // Modal close button
+  closeModal.onclick = function() {
+    modal.classList.add('hidden');
+  };
+  
+  // Click outside to close
+  modal.onclick = function(e) {
+    if (e.target === modal) {
       modal.classList.add('hidden');
-    });
-    
-    // Close modal when clicking outside the image
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-      }
-    });
-    
-    // Slideshow initialization
-    showSlides(1);
-    
-    // Add event listeners to prev/next buttons
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    
-    prevButton.addEventListener('click', function() {
-      plusSlides(-1);
-    });
-    
-    nextButton.addEventListener('click', function() {
-      plusSlides(1);
-    });
-    
-    // Add event listeners to dots
-    const dots = document.querySelectorAll('.dot');
-    dots.forEach(function(dot, index) {
-      dot.addEventListener('click', function() {
-        currentSlide(index + 1);
-      });
-    });
-  });
-  
-  // Global variable for slideshow
-  let slideIndex = 1;
-  
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    let i;
-    let slides = document.querySelectorAll(".mySlides");
-    let dots = document.querySelectorAll(".dot");
-    
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    
-    // Hide all slides
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
     }
-    
-    // Remove active class from all dots
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" bg-gray-800", " bg-gray-300");
-    }
-    
-    // Show the current slide and activate the dot
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
+  };
+  
+  // Set up prev/next buttons
+  document.querySelector('.prev').onclick = function(e) {
+    e.stopPropagation();
+    changeSlide(-1);
+  };
+  
+  document.querySelector('.next').onclick = function(e) {
+    e.stopPropagation();
+    changeSlide(1);
+  };
+  
+  // Set up dots
+  var dots = document.querySelectorAll('.dot');
+  for (var i = 0; i < dots.length; i++) {
+    (function(index) {
+      dots[index].onclick = function(e) {
+        e.stopPropagation();
+        showSlide(index + 1);
+      };
+    })(i);
   }
   
-  // Open slideshow modal
-  function openSlideshow(slideNumber) {
-    // Show modal
-    document.getElementById('imageModal').classList.remove('hidden');
-    
-    // Set current slide
-    currentSlide(slideNumber);
-    
-    // Update feather icons in the modal
-    feather.replace();
+  // Show first slide
+  showSlide(1);
+});
+
+// Current slide
+var slideIndex = 1;
+
+// Change slide by n
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+// Show specific slide
+function showSlide(n) {
+  var slides = document.querySelectorAll('.mySlides');
+  var dots = document.querySelectorAll('.dot');
+  
+  // Loop around if needed
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
+  // Hide all slides
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  
+  // Reset all dots
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" bg-gray-800", " bg-gray-300");
+  }
+  
+  // Show current slide and dot
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
+}
+
+// Open slideshow function
+function openSlideshow(n) {
+  // For debugging
+  console.log('Opening slideshow slide: ' + n);
+  
+  // Show modal
+  document.getElementById('imageModal').classList.remove('hidden');
+  
+  // Show slide
+  showSlide(n);
+  
+  // Re-initialize icons
+  feather.replace();
+}
 </script>
   </body>
 </html>
