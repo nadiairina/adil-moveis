@@ -446,17 +446,17 @@
     const closeModal = document.getElementById('closeModal');
     
     if (modal && closeModal) {
-  closeModal.addEventListener('click', () => {
-    modal.classList.add('hidden');
-  });
-    
-    // Close modal when clicking outside the image
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
+      closeModal.addEventListener('click', () => {
         modal.classList.add('hidden');
-      }
-    });
-    }
+      });
+      
+      // Close modal when clicking outside the image
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    } // Missing closing bracket was here
     
     // Slideshow initialization
     showSlides(1);
@@ -465,13 +465,15 @@
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     
-    prevButton.addEventListener('click', function() {
-      plusSlides(-1);
-    });
-    
-    nextButton.addEventListener('click', function() {
-      plusSlides(1);
-    });
+    if (prevButton && nextButton) {
+      prevButton.addEventListener('click', function() {
+        plusSlides(-1);
+      });
+      
+      nextButton.addEventListener('click', function() {
+        plusSlides(1);
+      });
+    }
     
     // Add event listeners to dots
     const dots = document.querySelectorAll('.dot');
@@ -514,26 +516,31 @@
     }
     
     // Show the current slide and activate the dot
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
+    if (slides.length > 0) {
+      slides[slideIndex-1].style.display = "block";
+    }
+    
+    if (dots.length > 0) {
+      dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
+    }
   }
   
   // Open slideshow modal
-function openSlideshow(slideNumber) {
-  console.log("Opening slideshow with slide:", slideNumber);
-  
-  // Show modal
-  const modal = document.getElementById('imageModal');
-  if (modal) {
-    modal.classList.remove('hidden');
-    // Set current slide
-    currentSlide(slideNumber);
-    // Update feather icons in the modal
-    feather.replace();
-  } else {
-    console.error("Modal element not found!");
+  function openSlideshow(slideNumber) {
+    console.log("Opening slideshow with slide:", slideNumber);
+    
+    // Show modal
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      // Set current slide
+      currentSlide(slideNumber);
+      // Update feather icons in the modal
+      feather.replace();
+    } else {
+      console.error("Modal element not found!");
+    }
   }
-}
 </script>
   </body>
 </html>
