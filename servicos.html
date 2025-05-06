@@ -186,64 +186,75 @@
        onclick="openSlideshow(9)">
         </div>
       </div>
-      <!-- Promotional Images Slideshow -->
-<div class="slideshow-container relative max-w-4xl mx-auto mt-12">
-  <!-- Slides -->
-  <div class="mySlides hidden">
-    <img src="images/promo-cofidis.png" alt="Facilidades de pagamento com Cofidis" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-recolha.png" alt="Recolhemos móveis usados gratuitamente" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-fabrico.png" alt="Fabrico nacional de qualidade" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-roupeiros.png" alt="Roupeiros por medida" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-entrega.png" alt="Entrega imediata" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-montagem.png" alt="Entrega e montagem gratuita" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-valorizar.PNG" alt="Valorizamos o seu colchão antigo" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-pagamento.png" alt="Pagamento a prestações" class="w-full h-auto">
-  </div>
-  
-  <div class="mySlides hidden">
-    <img src="images/promo-colchoes.png" alt="O maior stock de colchões" class="w-full h-auto">
-  </div>
-  
-  <!-- Next and previous buttons -->
-  <a class="prev absolute top-1/2 left-0 ml-4 transform -translate-y-1/2 cursor-pointer rounded-full bg-black bg-opacity-50 p-2 text-white hover:bg-opacity-75">
-    <i data-feather="chevron-left" class="w-6 h-6"></i>
-  </a>
-  <a class="next absolute top-1/2 right-0 mr-4 transform -translate-y-1/2 cursor-pointer rounded-full bg-black bg-opacity-50 p-2 text-white hover:bg-opacity-75">
-    <i data-feather="chevron-right" class="w-6 h-6"></i>
-  </a>
-  
-  <!-- Dots/circles -->
-  <div class="dots-container text-center mt-4">
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
-    <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+
+      <!-- Image Modal/Lightbox -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+  <div class="relative max-w-4xl w-full mx-auto">
+    <!-- Close button -->
+    <button id="closeModal" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75">
+      <i data-feather="x" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Slideshow container -->
+    <div class="slideshow-container relative">
+      <!-- Slides will be added here -->
+      <div class="mySlides hidden">
+        <img src="images/promo-cofidis.png" alt="Facilidades de pagamento com Cofidis" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-recolha.png" alt="Recolhemos móveis usados gratuitamente" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-fabrico.png" alt="Fabrico nacional de qualidade" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-roupeiros.png" alt="Roupeiros por medida" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-entrega.png" alt="Entrega imediata" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-montagem.png" alt="Entrega e montagem gratuita" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-valorizar.PNG" alt="Valorizamos o seu colchão antigo" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-pagamento.png" alt="Pagamento a prestações" class="w-full h-auto">
+      </div>
+      
+      <div class="mySlides hidden">
+        <img src="images/promo-colchoes.png" alt="O maior stock de colchões" class="w-full h-auto">
+      </div>
+      
+      <!-- Next and previous buttons -->
+      <a class="prev absolute top-1/2 left-0 ml-4 transform -translate-y-1/2 cursor-pointer rounded-full bg-black bg-opacity-50 p-2 text-white hover:bg-opacity-75">
+        <i data-feather="chevron-left" class="w-6 h-6"></i>
+      </a>
+      <a class="next absolute top-1/2 right-0 mr-4 transform -translate-y-1/2 cursor-pointer rounded-full bg-black bg-opacity-50 p-2 text-white hover:bg-opacity-75">
+        <i data-feather="chevron-right" class="w-6 h-6"></i>
+      </a>
+    </div>
+    
+    <!-- Dots/circles -->
+    <div class="dots-container text-center mt-4">
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+      <span class="dot cursor-pointer h-3 w-3 bg-gray-300 rounded-full inline-block mx-1"></span>
+    </div>
   </div>
 </div>
             
@@ -367,6 +378,21 @@
       menuOverlay.classList.add('hidden');
     });
     
+    // Modal functionality
+    const modal = document.getElementById('imageModal');
+    const closeModal = document.getElementById('closeModal');
+    
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+    
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+    
     // Slideshow initialization
     showSlides(1);
     
@@ -426,14 +452,18 @@
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
   }
-      // Add this function with your other JavaScript functions
-function openSlideshow(slideNumber) {
-  // Set current slide
-  currentSlide(slideNumber);
   
-  // Scroll to slideshow
-  document.querySelector('.slideshow-container').scrollIntoView({behavior: 'smooth'});
-}
+  // Open slideshow modal
+  function openSlideshow(slideNumber) {
+    // Show modal
+    document.getElementById('imageModal').classList.remove('hidden');
+    
+    // Set current slide
+    currentSlide(slideNumber);
+    
+    // Update feather icons in the modal
+    feather.replace();
+  }
 </script>
   </body>
 </html>
