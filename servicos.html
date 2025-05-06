@@ -519,16 +519,21 @@
   }
   
   // Open slideshow modal
-  function openSlideshow(slideNumber) {
-    // Show modal
-    document.getElementById('imageModal').classList.remove('hidden');
-    
+function openSlideshow(slideNumber) {
+  console.log("Opening slideshow with slide:", slideNumber);
+  
+  // Show modal
+  const modal = document.getElementById('imageModal');
+  if (modal) {
+    modal.classList.remove('hidden');
     // Set current slide
     currentSlide(slideNumber);
-    
     // Update feather icons in the modal
     feather.replace();
+  } else {
+    console.error("Modal element not found!");
   }
+}
 </script>
   </body>
 </html>
