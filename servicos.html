@@ -260,7 +260,7 @@
     
     <!-- Slideshow container -->
     <div class="slideshow-container relative">
-      <!-- Slides will be added here -->
+      <!-- Slides -->
       <div class="mySlides hidden">
         <img src="images/promo-cofidis.png" alt="Facilidades de pagamento com Cofidis" class="w-full h-auto">
       </div>
@@ -426,66 +426,55 @@
     feather.replace();
     
     // Set current year in footer
-    if (document.getElementById('currentYear')) {
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
-    }
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
     
     // Menu toggle functionality
     const menuButton = document.getElementById('menuButton');
     const closeMenuButton = document.getElementById('closeMenuButton');
     const menuOverlay = document.getElementById('menuOverlay');
 
-    if (menuButton && closeMenuButton && menuOverlay) {
-      menuButton.addEventListener('click', () => {
-        menuOverlay.classList.remove('hidden');
-      });
+    menuButton.addEventListener('click', () => {
+      menuOverlay.classList.remove('hidden');
+    });
 
-      closeMenuButton.addEventListener('click', () => {
-        menuOverlay.classList.add('hidden');
-      });
-    }
+    closeMenuButton.addEventListener('click', () => {
+      menuOverlay.classList.add('hidden');
+    });
     
     // Modal functionality
     const modal = document.getElementById('imageModal');
     const closeModal = document.getElementById('closeModal');
     
-    if (modal && closeModal) {
-      closeModal.addEventListener('click', () => {
-        modal.classList.add('hidden');
-      });
-      
-      // Close modal when clicking outside the image
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          modal.classList.add('hidden');
-        }
-      });
-    }
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
     
-    // Initialize slideshow
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+    
+    // Slideshow initialization
     showSlides(1);
     
     // Add event listeners to prev/next buttons
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     
-    if (prevButton && nextButton) {
-      prevButton.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent closing the modal
-        plusSlides(-1);
-      });
-      
-      nextButton.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent closing the modal
-        plusSlides(1);
-      });
-    }
+    prevButton.addEventListener('click', function() {
+      plusSlides(-1);
+    });
+    
+    nextButton.addEventListener('click', function() {
+      plusSlides(1);
+    });
     
     // Add event listeners to dots
     const dots = document.querySelectorAll('.dot');
     dots.forEach(function(dot, index) {
-      dot.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent closing the modal
+      dot.addEventListener('click', function() {
         currentSlide(index + 1);
       });
     });
@@ -509,8 +498,6 @@
     let slides = document.querySelectorAll(".mySlides");
     let dots = document.querySelectorAll(".dot");
     
-    if (!slides.length) return;
-    
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     
@@ -526,23 +513,19 @@
     
     // Show the current slide and activate the dot
     slides[slideIndex-1].style.display = "block";
-    if (dots.length > 0) {
-      dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
-    }
+    dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
   }
   
-  // Open slideshow modal
+  // This is the function that opens the modal
   function openSlideshow(slideNumber) {
-    console.log("Opening slideshow with slide:", slideNumber);
-    const modal = document.getElementById('imageModal');
-    if (modal) {
-      modal.classList.remove('hidden');
-      currentSlide(slideNumber);
-      // Re-initialize feather icons in the modal
-      feather.replace();
-    } else {
-      console.error("Modal element not found!");
-    }
+    // Show modal
+    document.getElementById('imageModal').classList.remove('hidden');
+    
+    // Set current slide
+    currentSlide(slideNumber);
+    
+    // Update feather icons in the modal
+    feather.replace();
   }
 </script>
   </body>
