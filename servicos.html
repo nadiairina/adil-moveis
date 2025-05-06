@@ -337,39 +337,29 @@
     </footer>
 
     <script>
-      // Initialize Feather Icons
-      document.addEventListener('DOMContentLoaded', () => {
-        feather.replace();
-        
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-      });
-    </script>
-    <!-- At the end of your body tag, just before the closing </body> tag -->
-<script>
-  // Initialize feather icons
-  feather.replace();
-  
-  // Menu toggle functionality
-  const menuButton = document.getElementById('menuButton');
-  const closeMenuButton = document.getElementById('closeMenuButton');
-  const menuOverlay = document.getElementById('menuOverlay');
-
-  menuButton.addEventListener('click', () => {
-    menuOverlay.classList.remove('hidden');
-  });
-
-  closeMenuButton.addEventListener('click', () => {
-    menuOverlay.classList.add('hidden');
-  });
-  
-  // Slideshow functionality
-  let slideIndex = 1;
-  
   // Run once the DOM is fully loaded
-  document.addEventListener("DOMContentLoaded", function() {
-    showSlides(slideIndex);
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Feather Icons
+    feather.replace();
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Menu toggle functionality
+    const menuButton = document.getElementById('menuButton');
+    const closeMenuButton = document.getElementById('closeMenuButton');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    menuButton.addEventListener('click', () => {
+      menuOverlay.classList.remove('hidden');
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+      menuOverlay.classList.add('hidden');
+    });
+    
+    // Slideshow initialization
+    showSlides(1);
     
     // Add event listeners to prev/next buttons
     const prevButton = document.querySelector('.prev');
@@ -391,6 +381,9 @@
       });
     });
   });
+  
+  // Global variable for slideshow
+  let slideIndex = 1;
   
   // Next/previous controls
   function plusSlides(n) {
