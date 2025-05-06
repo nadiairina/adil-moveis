@@ -798,11 +798,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Update active button styling
       filterButtons.forEach(btn => {
-        btn.classList.remove('active', 'bg-gray-300');
-        btn.classList.add('bg-gray-200');
+        btn.classList.remove('active');
+        btn.classList.remove('bg-navy', 'text-white');
+        btn.classList.add('bg-gray-100');
       });
-      this.classList.add('active', 'bg-gray-300');
-      this.classList.remove('bg-gray-200');
+      
+      // Apply active styling to clicked button
+      this.classList.add('active', 'bg-navy', 'text-white');
+      this.classList.remove('bg-gray-100');
       
       // Get all products
       const products = document.querySelectorAll('.product');
