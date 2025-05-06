@@ -764,28 +764,6 @@
     </footer>
 
     <script>
-      // Initialize Feather Icons
-      document.addEventListener('DOMContentLoaded', () => {
-        feather.replace();
-        
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Menu toggle functionality
-        const menuButton = document.getElementById('menuButton');
-        const closeMenuButton = document.getElementById('closeMenuButton');
-        const menuOverlay = document.getElementById('menuOverlay');
-        
-        menuButton.addEventListener('click', () => {
-          menuOverlay.classList.remove('hidden');
-        });
-        
-        closeMenuButton.addEventListener('click', () => {
-          menuOverlay.classList.add('hidden');
-        });
-      });
-
-      <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Get all filter buttons
   const filterButtons = document.querySelectorAll('.filter-button');
