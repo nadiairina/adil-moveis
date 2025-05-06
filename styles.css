@@ -300,3 +300,7 @@ body {
 .active, .dot:hover {
   background-color: #333;
 }
+.filter-button.active {
+    background-color: #d1d5db; /* Gray-300 */
+    font-weight: 500;
+  }
