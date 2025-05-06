@@ -426,20 +426,24 @@
     feather.replace();
     
     // Set current year in footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    if (document.getElementById('currentYear')) {
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    }
     
     // Menu toggle functionality
     const menuButton = document.getElementById('menuButton');
     const closeMenuButton = document.getElementById('closeMenuButton');
     const menuOverlay = document.getElementById('menuOverlay');
 
-    menuButton.addEventListener('click', () => {
-      menuOverlay.classList.remove('hidden');
-    });
+    if (menuButton && closeMenuButton && menuOverlay) {
+      menuButton.addEventListener('click', () => {
+        menuOverlay.classList.remove('hidden');
+      });
 
-    closeMenuButton.addEventListener('click', () => {
-      menuOverlay.classList.add('hidden');
-    });
+      closeMenuButton.addEventListener('click', () => {
+        menuOverlay.classList.add('hidden');
+      });
+    }
     
     // Modal functionality
     const modal = document.getElementById('imageModal');
@@ -456,9 +460,9 @@
           modal.classList.add('hidden');
         }
       });
-    } // Missing closing bracket was here
+    }
     
-    // Slideshow initialization
+    // Initialize slideshow
     showSlides(1);
     
     // Add event listeners to prev/next buttons
@@ -466,11 +470,13 @@
     const nextButton = document.querySelector('.next');
     
     if (prevButton && nextButton) {
-      prevButton.addEventListener('click', function() {
+      prevButton.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent closing the modal
         plusSlides(-1);
       });
       
-      nextButton.addEventListener('click', function() {
+      nextButton.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent closing the modal
         plusSlides(1);
       });
     }
@@ -478,7 +484,8 @@
     // Add event listeners to dots
     const dots = document.querySelectorAll('.dot');
     dots.forEach(function(dot, index) {
-      dot.addEventListener('click', function() {
+      dot.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent closing the modal
         currentSlide(index + 1);
       });
     });
@@ -502,6 +509,8 @@
     let slides = document.querySelectorAll(".mySlides");
     let dots = document.querySelectorAll(".dot");
     
+    if (!slides.length) return;
+    
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     
@@ -516,10 +525,7 @@
     }
     
     // Show the current slide and activate the dot
-    if (slides.length > 0) {
-      slides[slideIndex-1].style.display = "block";
-    }
-    
+    slides[slideIndex-1].style.display = "block";
     if (dots.length > 0) {
       dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" bg-gray-300", " bg-gray-800");
     }
@@ -528,14 +534,11 @@
   // Open slideshow modal
   function openSlideshow(slideNumber) {
     console.log("Opening slideshow with slide:", slideNumber);
-    
-    // Show modal
     const modal = document.getElementById('imageModal');
     if (modal) {
       modal.classList.remove('hidden');
-      // Set current slide
       currentSlide(slideNumber);
-      // Update feather icons in the modal
+      // Re-initialize feather icons in the modal
       feather.replace();
     } else {
       console.error("Modal element not found!");
