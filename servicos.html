@@ -358,5 +358,23 @@
         });
       });
     </script>
+    <!-- At the very end of your body tag, before the closing </body> -->
+<script>
+  // Initialize feather icons
+  feather.replace();
+  
+  // Menu toggle functionality
+  const menuButton = document.getElementById('menuButton');
+  const closeMenuButton = document.getElementById('closeMenuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  menuButton.addEventListener('click', () => {
+    menuOverlay.classList.remove('hidden');
+  });
+
+  closeMenuButton.addEventListener('click', () => {
+    menuOverlay.classList.add('hidden');
+  });
+</script>
   </body>
 </html>
