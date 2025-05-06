@@ -189,7 +189,7 @@ body {
   transform: translateY(-5px);
 }
 .partner-logo img {
-  max-height: 120px !important; /* Adjust to your preferred size */
+  max-height: 140px !important; /* Adjust to your preferred size */
 }
 
 /* History section images - Updated for better centering and alignment */
