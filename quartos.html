@@ -127,78 +127,72 @@
 </section>
      
        <!-- Subcategories Section -->
-      <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            <a href="#camas" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Camas</a>
-            <a href="#sommiers" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Sommiers</a>
-            <a href="#estrados" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Estrados</a>
-            <a href="#cabeceiras" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Cabeceiras</a>
-            <a href="#mesas de cabeceira" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Mesas de Cabeceira</a>
-            <a href="#cómodas" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Cómodas</a>
-            <a href="#roupeiros" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Roupeiros</a>
-            <a href="#camiseiros" class="px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md">Camiseiros</a>
-          </div>
-        </div>
-      </section>
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="filters flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md active" data-category="all">Todos</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="camas">Camas</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="sommiers">Sommiers</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="estrados">Estrados</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="cabeceiras">Cabeceiras</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="mesasCabeceira">Mesas de Cabeceira</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="comodas">Cómodas</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="roupeiros">Roupeiros</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="camiseiros">Camiseiros</button>
+    </div>
+  </div>
+</section>
       
-      <!-- Products Grid -->
-      <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Product 1 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Cama VENEZA" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Cama VENEZA</h3>
-                
-              </div>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Cama VENEZA" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Cama VENEZA</h3>
-                
-              </div>
-            </div>
-            
-            <!-- Product 3 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Cama VENEZA" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Cama VENEZA</h3>
-                
-              </div>
-            </div>
+      <!-- Product grid container -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+  <!-- Product 1 (Cama) -->
+  <div class="product overflow-hidden group" data-category="camas">
+    <div class="relative overflow-hidden">
+      <img 
+        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+        alt="Cama VENEZA" 
+        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+      </div>
+    </div>
+    <div class="py-4 text-center">
+      <h3 class="text-lg font-medium">Cama VENEZA</h3>
+    </div>
+  </div>
+  
+  <!-- Product 2 (Sommier) -->
+  <div class="product overflow-hidden group" data-category="sommiers">
+    <div class="relative overflow-hidden">
+      <img 
+        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+        alt="Sommier LUXO" 
+        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+      </div>
+    </div>
+    <div class="py-4 text-center">
+      <h3 class="text-lg font-medium">Sommier LUXO</h3>
+    </div>
+  </div>
+  
+  <!-- Product 3 (Cabeceira) -->
+  <div class="product overflow-hidden group" data-category="cabeceiras">
+    <div class="relative overflow-hidden">
+      <img 
+        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+        alt="Cabeceira ROMA" 
+        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+      </div>
+    </div>
+    <div class="py-4 text-center">
+      <h3 class="text-lg font-medium">Cabeceira ROMA</h3>
+    </div>
+  </div>
             
             <!-- Product 4 -->
             <div class="overflow-hidden group">
@@ -790,6 +784,40 @@
           menuOverlay.classList.add('hidden');
         });
       });
-    </script>
+
+      <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll('.filter-button');
+  
+  // Add click handler to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the category from the button
+      const category = this.getAttribute('data-category');
+      
+      // Update active button styling
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active', 'bg-gray-300');
+        btn.classList.add('bg-gray-200');
+      });
+      this.classList.add('active', 'bg-gray-300');
+      this.classList.remove('bg-gray-200');
+      
+      // Get all products
+      const products = document.querySelectorAll('.product');
+      
+      // Show/hide products based on category
+      products.forEach(product => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
   </body>
 </html>
