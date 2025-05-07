@@ -906,31 +906,32 @@
 
     <!-- Gallery Modal -->
 <div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center">
-  <div class="relative max-w-5xl w-full mx-auto px-12">
+  <div class="relative w-full h-full flex items-center justify-center">
     <!-- Close button -->
-    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-60 hover:bg-opacity-80">
+    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75">
       <i data-feather="x" class="w-6 h-6"></i>
     </button>
     
     <!-- Slide counter -->
-    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-60 py-1 px-3 rounded-full">
+    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-50 py-1 px-3 rounded-full">
       <span id="currentSlide">1</span>/<span id="totalSlides">8</span>
     </div>
     
     <!-- Gallery container -->
-    <div class="gallery-container relative">
+    <div class="gallery-container relative flex items-center justify-center w-full h-full">
       <!-- You'll populate this with JavaScript -->
     </div>
     
     <!-- Navigation arrows -->
-    <button id="prevSlide" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-60 text-white p-2 rounded-full hover:bg-opacity-80">
+    <button id="prevSlide" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
       <i data-feather="chevron-left" class="w-8 h-8"></i>
     </button>
-    <button id="nextSlide" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-60 text-white p-2 rounded-full hover:bg-opacity-80">
+    <button id="nextSlide" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
       <i data-feather="chevron-right" class="w-8 h-8"></i>
     </button>
   </div>
 </div>
+    
     <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize Feather icons
@@ -1026,10 +1027,10 @@ function updateGallery() {
   // Update slide counter
   currentSlideEl.textContent = currentIndex + 1;
   
-  // Create HTML for current image with fixed dimensions that match your current display
+  // Create HTML for current image with fixed dimensions and centered in modal
   galleryContainer.innerHTML = `
-    <div class="slide">
-      <div style="width: 800px; height: 500px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden;">
+    <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+      <div style="width: 800px; height: 500px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
         <img 
           src="${galleryImages[currentIndex]}" 
           alt="${galleryTitles[currentIndex]}" 
