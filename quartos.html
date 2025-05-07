@@ -1022,18 +1022,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Function to update gallery
-  function updateGallery() {
-    // Update slide counter
-    currentSlideEl.textContent = currentIndex + 1;
-    
-    // Create HTML for current image
-    galleryContainer.innerHTML = `
-      <div class="slide">
-        <img src="${galleryImages[currentIndex]}" alt="${galleryTitles[currentIndex]}" class="max-h-[80vh] mx-auto">
-        <div class="text-white text-center mt-4 text-xl">${galleryTitles[currentIndex]}</div>
+function updateGallery() {
+  // Update slide counter
+  currentSlideEl.textContent = currentIndex + 1;
+  
+  // Create HTML for current image
+  galleryContainer.innerHTML = `
+    <div class="slide flex flex-col items-center justify-center">
+      <div class="fixed-size-container w-full max-w-4xl h-[70vh] flex items-center justify-center overflow-hidden">
+        <img 
+          src="${galleryImages[currentIndex]}" 
+          alt="${galleryTitles[currentIndex]}" 
+          class="object-contain w-full h-full"
+        >
       </div>
-    `;
-  }
+      <div class="text-white text-center mt-4 text-xl">${galleryTitles[currentIndex]}</div>
+    </div>
+  `;
+}
   
   // Previous slide
   function prevSlide() {
