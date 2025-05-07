@@ -1021,7 +1021,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.style.overflow = '';
   }
   
-  // Function to update gallery
+  // Even smaller version if needed
 function updateGallery() {
   // Update slide counter
   currentSlideEl.textContent = currentIndex + 1;
@@ -1029,11 +1029,12 @@ function updateGallery() {
   // Create HTML for current image
   galleryContainer.innerHTML = `
     <div class="slide flex flex-col items-center justify-center">
-      <div class="fixed-size-container w-full max-w-4xl h-[70vh] flex items-center justify-center overflow-hidden">
+      <div class="fixed-size-container w-full max-w-2xl h-[50vh] flex items-center justify-center overflow-hidden bg-gray-900 rounded-lg p-2">
         <img 
           src="${galleryImages[currentIndex]}" 
           alt="${galleryTitles[currentIndex]}" 
-          class="object-contain w-full h-full"
+          class="object-contain w-auto h-auto max-w-full max-h-full"
+          style="image-rendering: auto;"
         >
       </div>
       <div class="text-white text-center mt-4 text-xl">${galleryTitles[currentIndex]}</div>
