@@ -905,28 +905,28 @@
     </footer>
 
     <!-- Gallery Modal -->
-<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
-  <div class="relative max-w-6xl w-full mx-auto">
+<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center">
+  <div class="relative max-w-5xl w-full mx-auto px-12">
     <!-- Close button -->
-    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75">
+    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-60 hover:bg-opacity-80">
       <i data-feather="x" class="w-6 h-6"></i>
     </button>
     
     <!-- Slide counter -->
-    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-50 py-1 px-3 rounded-full">
+    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-60 py-1 px-3 rounded-full">
       <span id="currentSlide">1</span>/<span id="totalSlides">8</span>
     </div>
     
     <!-- Gallery container -->
-    <div class="gallery-container relative w-full bg-gray-900 bg-opacity-50 rounded-lg p-4">
+    <div class="gallery-container relative">
       <!-- You'll populate this with JavaScript -->
     </div>
     
     <!-- Navigation arrows -->
-    <button id="prevSlide" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+    <button id="prevSlide" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-60 text-white p-2 rounded-full hover:bg-opacity-80">
       <i data-feather="chevron-left" class="w-8 h-8"></i>
     </button>
-    <button id="nextSlide" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+    <button id="nextSlide" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-60 text-white p-2 rounded-full hover:bg-opacity-80">
       <i data-feather="chevron-right" class="w-8 h-8"></i>
     </button>
   </div>
@@ -1021,7 +1021,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.style.overflow = '';
   }
   
-  // Even smaller version if needed
+  // Function to update gallery
 function updateGallery() {
   // Update slide counter
   currentSlideEl.textContent = currentIndex + 1;
@@ -1029,15 +1029,17 @@ function updateGallery() {
   // Create HTML for current image
   galleryContainer.innerHTML = `
     <div class="slide flex flex-col items-center justify-center">
-      <div class="fixed-size-container w-full max-w-2xl h-[50vh] flex items-center justify-center overflow-hidden bg-gray-900 rounded-lg p-2">
-        <img 
-          src="${galleryImages[currentIndex]}" 
-          alt="${galleryTitles[currentIndex]}" 
-          class="object-contain w-auto h-auto max-w-full max-h-full"
-          style="image-rendering: auto;"
-        >
+      <div class="fixed-size-container w-full h-[70vh] bg-white rounded-lg p-4 flex items-center justify-center">
+        <div class="relative w-full h-full flex items-center justify-center">
+          <img 
+            src="${galleryImages[currentIndex]}" 
+            alt="${galleryTitles[currentIndex]}" 
+            class="max-w-full max-h-full object-contain"
+            style="image-rendering: high-quality;"
+          >
+        </div>
       </div>
-      <div class="text-white text-center mt-4 text-xl">${galleryTitles[currentIndex]}</div>
+      <div class="text-white text-center mt-6 text-xl font-medium">${galleryTitles[currentIndex]}</div>
     </div>
   `;
 }
