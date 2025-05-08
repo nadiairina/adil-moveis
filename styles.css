@@ -321,9 +321,9 @@ body {
   object-fit: cover;
 }
 
-/* Target only specific problematic images by their URLs */
-.product img[src*="https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000306-70cba70cbf/6-2.png?ph=8b7412ce18"],
-.product img[src*="https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000276-65c7a65c7c/3-6.png?ph=8b7412ce18"],
-.product img[src*="https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000274-dd873dd875/1%20.png?ph=8b7412ce18"] {
+/* Target only specific problematic images by distinctive parts of their URLs */
+.product img[src*="70cba70cbf/6-2.png"],
+.product img[src*="65c7a65c7c/3-6.png"],
+.product img[src*="dd873dd875/1%20.png"] {
   object-position: center; /* Center the image */
 }
