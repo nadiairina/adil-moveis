@@ -304,10 +304,12 @@ body {
     background-color: #d1d5db; /* Gray-300 */
     font-weight: 500;
   }
+/* Add this to your CSS file */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* Responsive adjustments */
@@ -321,4 +323,15 @@ body {
   .products-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Make product cards consistent in height */
+.product {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product .relative {
+  flex: 1;
 }
