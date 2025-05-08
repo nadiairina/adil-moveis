@@ -311,18 +311,24 @@ body {
   flex-direction: column;
 }
 
+/* Style for all product images */
 .product .relative {
-  flex: 1;
+  position: relative;
+  padding-top: 66.67%; /* 2:3 aspect ratio like the first image */
+  overflow: hidden;
 }
-/* Keep your standard image styling */
+
 .product img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
+/* Target specific problematic images */
 .special-positioning {
-  object-position: top !important; /* Try positioning from the top */
-  object-fit: contain !important; /* Try contain instead of cover */
-  background-color: white !important; /* Add a background */
+  object-position: center 35% !important; /* Adjust vertical position to show the important part */
 }
