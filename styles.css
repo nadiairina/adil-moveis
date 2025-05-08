@@ -322,9 +322,8 @@ body {
 }
 
 /* Target only specific problematic images by their URLs */
-.product img[src*="2049"],
-.product img[src*="specific-problem-image-2"],
-.product img[src*="specific-problem-image-3"] {
+.product img[src*="https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000306-70cba70cbf/6-2.png?ph=8b7412ce18"],
+.product img[src*="https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000276-65c7a65c7c/3-6.png?ph=8b7412ce18"],
+.product img[src*="https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000274-dd873dd875/1%20.png?ph=8b7412ce18"] {
   object-position: center; /* Center the image */
-}
 }
