@@ -271,27 +271,229 @@
       </div>
     </footer>
 
+    <!-- Gallery Modal -->
+<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <!-- Close button -->
+    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75">
+      <i data-feather="x" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Slide counter -->
+    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-50 py-1 px-3 rounded-full">
+      <span id="currentSlide">1</span>/<span id="totalSlides">8</span>
+    </div>
+    
+    <!-- Gallery container -->
+    <div class="gallery-container relative flex items-center justify-center w-full h-full">
+      <!-- You'll populate this with JavaScript -->
+    </div>
+    
+    <!-- Title at the bottom -->
+    <div id="galleryTitle" class="text-white text-center text-xl font-medium absolute bottom-8 w-full"></div>
+    
+    <!-- Navigation arrows -->
+    <button id="prevSlide" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      <i data-feather="chevron-left" class="w-8 h-8"></i>
+    </button>
+    <button id="nextSlide" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      <i data-feather="chevron-right" class="w-8 h-8"></i>
+    </button>
+  </div>
+</div>
+    
     <script>
-      // Initialize Feather Icons
-      document.addEventListener('DOMContentLoaded', () => {
-        feather.replace();
-        
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Menu toggle functionality
-        const menuButton = document.getElementById('menuButton');
-        const closeMenuButton = document.getElementById('closeMenuButton');
-        const menuOverlay = document.getElementById('menuOverlay');
-        
-        menuButton.addEventListener('click', () => {
-          menuOverlay.classList.remove('hidden');
-        });
-        
-        closeMenuButton.addEventListener('click', () => {
-          menuOverlay.classList.add('hidden');
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Feather icons
+  if (typeof feather !== 'undefined') {
+    feather.replace();
+  }
+  
+  // ===== MENU FUNCTIONALITY =====
+  // Get menu elements
+  const menuButton = document.getElementById('menuButton');
+  const closeMenuButton = document.getElementById('closeMenuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  
+  // Open menu when clicking menu button
+  if (menuButton) {
+    menuButton.addEventListener('click', function() {
+      menuOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+  }
+  
+  // Close menu when clicking close button
+  if (closeMenuButton) {
+    closeMenuButton.addEventListener('click', function() {
+      menuOverlay.classList.add('hidden');
+      document.body.style.overflow = ''; // Allow scrolling again
+    });
+  }
+  
+  // Close menu when clicking outside
+  if (menuOverlay) {
+    menuOverlay.addEventListener('click', function(e) {
+      if (e.target === menuOverlay) {
+        menuOverlay.classList.add('hidden');
+        document.body.style.overflow = ''; // Allow scrolling again
+      }
+    });
+  }
+  
+  // ===== FILTER FUNCTIONALITY =====
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll('.filter-button');
+  
+  // Add click handler to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the category from the button
+      const category = this.getAttribute('data-category');
+      
+      // Update active button styling
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.remove('bg-navy', 'text-white');
+        btn.classList.add('bg-gray-100');
       });
-    </script>
+      
+      // Apply active styling to clicked button
+      this.classList.add('active', 'bg-navy', 'text-white');
+      this.classList.remove('bg-gray-100');
+      
+      // Get all products
+      const products = document.querySelectorAll('.product');
+      
+      // Show/hide products based on category
+      products.forEach(product => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // ===== GALLERY FUNCTIONALITY =====
+  // Get all product images
+  const products = document.querySelectorAll('.product');
+  
+  // Create an array of all product images
+  const galleryImages = [];
+  const galleryTitles = [];
+  
+  products.forEach(product => {
+    const img = product.querySelector('img');
+    const title = product.querySelector('h3').textContent;
+    galleryImages.push(img.src);
+    galleryTitles.push(title);
+  });
+  
+  // Setup gallery elements
+  const modal = document.getElementById('galleryModal');
+  const galleryContainer = document.querySelector('.gallery-container');
+  const closeButton = document.getElementById('closeGallery');
+  const prevButton = document.getElementById('prevSlide');
+  const nextButton = document.getElementById('nextSlide');
+  const currentSlideEl = document.getElementById('currentSlide');
+  const totalSlidesEl = document.getElementById('totalSlides');
+  
+  let currentIndex = 0;
+  
+  // Update total slides count
+  totalSlidesEl.textContent = galleryImages.length;
+  
+  // Function to open gallery
+  window.openGallery = function(index) {
+    currentIndex = index;
+    updateGallery();
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    
+    // Re-initialize Feather icons
+    if (typeof feather !== 'undefined') {
+      feather.replace();
+    }
+  };
+  
+  // Function to close gallery
+  function closeGallery() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+  
+  // Function to update gallery
+  function updateGallery() {
+    // Update slide counter
+    currentSlideEl.textContent = currentIndex + 1;
+    
+    // Remove the title from inside the slide and put it at the bottom of the modal
+    galleryContainer.innerHTML = `
+      <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+        <div style="width: 800px; height: 500px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
+          <img 
+            src="${galleryImages[currentIndex]}" 
+            alt="${galleryTitles[currentIndex]}" 
+            style="max-width: 100%; max-height: 100%; object-fit: contain;"
+          >
+        </div>
+      </div>
+    `;
+    
+    // Find or create the title element outside the gallery container
+    let titleElement = document.getElementById('galleryTitle');
+    if (!titleElement) {
+      titleElement = document.createElement('div');
+      titleElement.id = 'galleryTitle';
+      titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
+      document.getElementById('galleryModal').appendChild(titleElement);
+    }
+    
+    // Update the title text
+    titleElement.textContent = galleryTitles[currentIndex];
+  }
+  
+  // Previous slide
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateGallery();
+  }
+  
+  // Next slide
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateGallery();
+  }
+  
+  // Event listeners
+  if (closeButton) closeButton.addEventListener('click', closeGallery);
+  if (prevButton) prevButton.addEventListener('click', prevSlide);
+  if (nextButton) nextButton.addEventListener('click', nextSlide);
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (!modal || modal.classList.contains('hidden')) return;
+    
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    } else if (e.key === 'Escape') {
+      closeGallery();
+    }
+  });
+  
+  // Close when clicking outside of the image
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeGallery();
+      }
+    });
+  }
+});
+</script>
   </body>
 </html>
