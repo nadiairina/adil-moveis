@@ -314,3 +314,11 @@ body {
 .product .relative {
   flex: 1;
 }
+/* Add this to your styles.css file */
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: white; /* optional: adds white background */
+}
