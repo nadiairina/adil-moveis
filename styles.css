@@ -321,9 +321,7 @@ body {
   object-fit: cover;
 }
 
-/* Target only specific problematic images by distinctive parts of their URLs */
-.product img[src*="70cba70cbf/6-2.png"],
-.product img[src*="65c7a65c7c/3-6.png"],
-.product img[src*="dd873dd875/1%20.png"] {
-  object-position: center; /* Center the image */
+/* Target the specific problematic images with a class */
+.special-positioning {
+  object-position: center !important;
 }
