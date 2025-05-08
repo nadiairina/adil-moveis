@@ -314,4 +314,17 @@ body {
 .product .relative {
   flex: 1;
 }
+/* Keep your standard image styling */
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Target only specific problematic images by their URLs */
+.product img[src*="2049"],
+.product img[src*="specific-problem-image-2"],
+.product img[src*="specific-problem-image-3"] {
+  object-position: center; /* Center the image */
+}
 }
