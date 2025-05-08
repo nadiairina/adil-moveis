@@ -312,13 +312,10 @@ body {
 }
 
 .product .relative {
-  flex: 1;
-}
-/* Style for all product images */
-.product .relative {
   position: relative;
   padding-top: 66.67%; /* 2:3 aspect ratio like the first image */
   overflow: hidden;
+  flex: 1;
 }
 
 .product img {
