@@ -321,10 +321,8 @@ body {
   object-fit: cover;
 }
 
-/* Target only specific problematic images with more specific styling */
-.product img[src*="70cba70cbf/6-2.png"],
-.product img[src*="65c7a65c7c/3-6.png"],
-.product img[src*="dd873dd875/1%20.png"] {
-  object-position: 50% 50% !important; /* Explicitly set horizontal and vertical positioning */
-  object-fit: cover !important;
+.special-positioning {
+  object-position: top !important; /* Try positioning from the top */
+  object-fit: contain !important; /* Try contain instead of cover */
+  background-color: white !important; /* Add a background */
 }
