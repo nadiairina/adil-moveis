@@ -321,7 +321,10 @@ body {
   object-fit: cover;
 }
 
-/* Target the specific problematic images with a class */
-.special-positioning {
-  object-position: center !important;
+/* Target only specific problematic images with more specific styling */
+.product img[src*="70cba70cbf/6-2.png"],
+.product img[src*="65c7a65c7c/3-6.png"],
+.product img[src*="dd873dd875/1%20.png"] {
+  object-position: 50% 50% !important; /* Explicitly set horizontal and vertical positioning */
+  object-fit: cover !important;
 }
