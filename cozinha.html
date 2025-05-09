@@ -126,135 +126,399 @@
         </div>
       </section>
       
-      <!-- Products Grid -->
+     <!-- Subcategories Section -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="filters flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md active" data-category="todos">Todos</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md active" data-category="sofas">Sofás</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="moveis">Móveis</button>
+      <button class="filter-button px-6 py-3 bg-gray-100 hover:bg-navy hover:text-white transition-all rounded-md" data-category="mesasEcadeiras">Mesas e Cadeiras</button>
+    </div>
+  </div>
+</section>
+
+
       <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Product 1 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Móvel de Cozinha Moderno" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <a href="#" class="btn-adil bg-white text-navy border-white">
-                    VER DETALHES
-                  </a>
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Móvel de Cozinha Moderno</h3>
-                <p class="text-sm text-gray-500 mt-1">Elegante e funcional</p>
-              </div>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Mesa de Cozinha Extensível" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <a href="#" class="btn-adil bg-white text-navy border-white">
-                    VER DETALHES
-                  </a>
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Mesa de Cozinha Extensível</h3>
-                <p class="text-sm text-gray-500 mt-1">Perfeita para refeições em família</p>
-              </div>
-            </div>
-            
-            <!-- Product 3 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Cadeiras de Cozinha" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <a href="#" class="btn-adil bg-white text-navy border-white">
-                    VER DETALHES
-                  </a>
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Cadeiras de Cozinha</h3>
-                <p class="text-sm text-gray-500 mt-1">Confortáveis e duradouras</p>
-              </div>
-            </div>
-            
-            <!-- Product 4 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Armários Suspensos" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <a href="#" class="btn-adil bg-white text-navy border-white">
-                    VER DETALHES
-                  </a>
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Armários Suspensos</h3>
-                <p class="text-sm text-gray-500 mt-1">Maximizam o espaço de armazenamento</p>
-              </div>
-            </div>
-            
-            <!-- Product 5 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Bancada de Cozinha" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <a href="#" class="btn-adil bg-white text-navy border-white">
-                    VER DETALHES
-                  </a>
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Bancada de Cozinha</h3>
-                <p class="text-sm text-gray-500 mt-1">Durável e fácil de limpar</p>
-              </div>
-            </div>
-            
-            <!-- Product 6 -->
-            <div class="overflow-hidden group">
-              <div class="relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Cozinha Completa" 
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <a href="#" class="btn-adil bg-white text-navy border-white">
-                    VER DETALHES
-                  </a>
-                </div>
-              </div>
-              <div class="py-4 text-center">
-                <h3 class="text-lg font-medium">Cozinha Completa</h3>
-                <p class="text-sm text-gray-500 mt-1">Soluções integradas para sua casa</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="container mx-auto px-4">
+    <!-- Product grid container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       
+      <!-- Product 1 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2022/07/apolo_3.jpg" 
+            alt="Lusocolchão - Colchão Apolo" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(0)"
+          />
         </div>
-      </section>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Colchão Apolo</h3>
+        </div>
+      </div>
+      
+      <!-- Product 2 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2022/06/active_comfort_3.jpg" 
+            alt="Lusocolchão - Active Confort" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(1)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Active Confort</h3>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2022/06/pocketflex_3.jpg" 
+            alt="Lusocolchão - Colchão Apolo" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(2)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Colchão Enrolado Pocketflex</h3>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2022/07/premium_2.jpg" 
+            alt="Lusocolchão - Colchão Molas Ensacadas Premium Double Topper" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(3)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Colchão Molas Ensacadas Premium Double Topper</h3>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2022/07/viscobox_3.jpg" 
+            alt="Lusocolchão - Colchão Molas Bonel Viscobox" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(4)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Colchão Molas Bonel Viscobox</h3>
+        </div>
+      </div>
+     
+      
+      <!-- Product 6 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/z/z/zz3_firm_multielastic_geral.jpg" 
+            alt="Molaflex - Colchão zZ3 Firm Multielástic" 
+            class="w-full h-64 object-cover cursor-pointer"
+             
+            onclick="openGallery(5)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão zZ3 Firm Multielástic</h3>
+        </div>
+      </div>
+      <!-- Product 7 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/z/z/zz3_soft_pocket_premium_geral.jpg" 
+            alt="Molaflex - Colchão zZ3 Soft Pocket Sense" 
+            class="w-full h-64 object-cover cursor-pointer"
+             
+            onclick="openGallery(6)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão zZ3 Soft Pocket Sense</h3>
+        </div>
+      </div>
+      <!-- Product 8 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/w/b/wbx_body.jpg" 
+            alt="Molaflex - Colchão Wbx Body" 
+            class="w-full h-64 object-cover cursor-pointer"
+            
+            onclick="openGallery(7)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Wbx Body</h3>
+        </div>
+      </div>
+      <!-- Product 9 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/l/e/levity_airvex.jpg" 
+            alt="Molaflex - Colchão Levity Airvex" 
+            class="w-full h-64 object-cover cursor-pointer"
+            
+            onclick="openGallery(8)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Levity Airvex</h3>
+        </div>
+      </div>
+      <!-- Product 10 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/w/b/wbx_steel.jpg" 
+            alt="Molaflex - Colchão Wbx Steel" 
+            class="w-full h-64 object-cover cursor-pointer"
+            
+            onclick="openGallery(9)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Wbx Steel</h3>
+        </div>
+      </div>
+      <!-- Product 11 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/s/e/selection_art_geral.jpg" 
+            alt="Molaflex - Colchão Selection Art" 
+            class="w-full h-64 object-cover cursor-pointer"
+           
+            onclick="openGallery(10)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Selection Art</h3>
+        </div>
+      </div>
+      <!-- Product 12 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/p/r/princess_geral.jpg" 
+            alt="Molaflex - Colchão Princess" 
+            class="w-full h-64 object-cover cursor-pointer"
+            
+            onclick="openGallery(11)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Princess</h3>
+        </div>
+      </div>
+      <!-- Product 13 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/m/o/moon_1_.jpg" 
+            alt="Molaflex - Colchão Moon" 
+            class="w-full h-64 object-cover cursor-pointer"
+            
+            onclick="openGallery(12)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Moon</h3>
+        </div>
+      </div>
+      <!-- Product 14 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/92361f3faf70026ddcf81a3b43398017/e/t/eternity_pocket.jpg" 
+            alt="Molaflex - Colchão Eternity Pocket" 
+            class="w-full h-64 object-cover cursor-pointer"
+            
+            onclick="openGallery(13)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Colchão Eternity Pocket</h3>
+        </div>
+      </div>
+
+      <!-- Product 15 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/a/l/almofada-ecofiber_packaging-_1_.jpg" 
+            alt="Molaflex - Almofada Ecofiber" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(14)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Almofada Ecofiber</h3>
+        </div>
+      </div>
+      <!-- Product 16 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/a/l/almofada_soft_packaging_2_.png" 
+            alt="Molaflex - Almofada Soft" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(15)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Almofada Soft</h3>
+        </div>
+      </div>
+      <!-- Product 17 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/a/l/almofada_natur_packaging_1_.png" 
+            alt="Molaflex - Almofada Natur" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(16)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Almofada Natur</h3>
+        </div>
+      </div>
+      
+      <!-- Product 18 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2021/03/ErgothecAnatomica_2.jpg" 
+            alt="Lusocolchão - Almofada Ergotech Anatómica" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(17)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Almofada Ergotech Anatómica</h3>
+        </div>
+      </div>
+      <!-- Product 19 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2021/03/Latex_2-1.jpg" 
+            alt="Lusocolchão - Almofada Látex" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(18)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Almofada Látex</h3>
+        </div>
+      </div>
+      <!-- Product 20 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2021/03/Soft_2.jpg" 
+            alt="Lusocolchão - Almofada Soft" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(19)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Almofada Soft</h3>
+        </div>
+      </div>
+      <!-- Product 21 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2021/03/Fibra_2.jpg" 
+            alt="Lusocolchão - Almofada Fibra" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(20)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Almofada Fibra</h3>
+        </div>
+      </div>
+      <!-- Product 22 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2021/03/Resguardo_3.jpg" 
+            alt="Lusocolchão - Resguardo" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(21)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Resguardo</h3>
+        </div>
+      </div>
+
+ <!-- Product 23 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://store.jjlouro.pt/wp-content/uploads/2021/03/TopSuite_2.jpg" 
+            alt="Lusocolchão - Topper Top Suite" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(22)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Lusocolchão - Topper Top Suite</h3>
+        </div>
+      </div>
+      
+      <!-- Product 24 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/t/o/topper_visco.jpg" 
+            alt="Molaflex - Topper Visco" 
+            class="w-full h-64 object-cover cursor-pointer"
+            onclick="openGallery(23)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Topper Visco</h3>
+        </div>
+      </div>
+      
+
+      <!-- Product 25 -->
+      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="complementos">
+        <div class="relative">
+          <img 
+            src="https://molaflex.com/media/catalog/product/cache/84814593cd4899f58653978e0949fe20/e/d/edredao_eco_comfort_packaging_1.png" 
+            alt="Molaflex - Edredão Eco Comfort" 
+            class="w-full h-64 object-cover cursor-pointer"
+             
+            onclick="openGallery(24)"
+          />
+        </div>
+        <div class="py-4 text-center">
+          <h3 class="text-lg font-medium">Molaflex - Edredão Eco Comfort</h3>
+        </div>
+      </div>
+
+      
+      
+    </div> <!-- Close the grid container -->
+  </div> <!-- Close the container -->
+</section> <!-- Close the products section -->
     </main>
 
     <footer class="bg-black text-white py-10">
@@ -335,27 +599,229 @@
       </div>
     </footer>
 
+    <!-- Gallery Modal -->
+<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <!-- Close button -->
+    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75">
+      <i data-feather="x" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Slide counter -->
+    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-50 py-1 px-3 rounded-full">
+      <span id="currentSlide">1</span>/<span id="totalSlides">8</span>
+    </div>
+    
+    <!-- Gallery container -->
+    <div class="gallery-container relative flex items-center justify-center w-full h-full">
+      <!-- You'll populate this with JavaScript -->
+    </div>
+    
+    <!-- Title at the bottom -->
+    <div id="galleryTitle" class="text-white text-center text-xl font-medium absolute bottom-8 w-full"></div>
+    
+    <!-- Navigation arrows -->
+    <button id="prevSlide" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      <i data-feather="chevron-left" class="w-8 h-8"></i>
+    </button>
+    <button id="nextSlide" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      <i data-feather="chevron-right" class="w-8 h-8"></i>
+    </button>
+  </div>
+</div>
+    
     <script>
-      // Initialize Feather Icons
-      document.addEventListener('DOMContentLoaded', () => {
-        feather.replace();
-        
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Menu toggle functionality
-        const menuButton = document.getElementById('menuButton');
-        const closeMenuButton = document.getElementById('closeMenuButton');
-        const menuOverlay = document.getElementById('menuOverlay');
-        
-        menuButton.addEventListener('click', () => {
-          menuOverlay.classList.remove('hidden');
-        });
-        
-        closeMenuButton.addEventListener('click', () => {
-          menuOverlay.classList.add('hidden');
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Feather icons
+  if (typeof feather !== 'undefined') {
+    feather.replace();
+  }
+  
+  // ===== MENU FUNCTIONALITY =====
+  // Get menu elements
+  const menuButton = document.getElementById('menuButton');
+  const closeMenuButton = document.getElementById('closeMenuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  
+  // Open menu when clicking menu button
+  if (menuButton) {
+    menuButton.addEventListener('click', function() {
+      menuOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+  }
+  
+  // Close menu when clicking close button
+  if (closeMenuButton) {
+    closeMenuButton.addEventListener('click', function() {
+      menuOverlay.classList.add('hidden');
+      document.body.style.overflow = ''; // Allow scrolling again
+    });
+  }
+  
+  // Close menu when clicking outside
+  if (menuOverlay) {
+    menuOverlay.addEventListener('click', function(e) {
+      if (e.target === menuOverlay) {
+        menuOverlay.classList.add('hidden');
+        document.body.style.overflow = ''; // Allow scrolling again
+      }
+    });
+  }
+  
+  // ===== FILTER FUNCTIONALITY =====
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll('.filter-button');
+  
+  // Add click handler to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the category from the button
+      const category = this.getAttribute('data-category');
+      
+      // Update active button styling
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.remove('bg-navy', 'text-white');
+        btn.classList.add('bg-gray-100');
       });
-    </script>
+      
+      // Apply active styling to clicked button
+      this.classList.add('active', 'bg-navy', 'text-white');
+      this.classList.remove('bg-gray-100');
+      
+      // Get all products
+      const products = document.querySelectorAll('.product');
+      
+      // Show/hide products based on category
+      products.forEach(product => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // ===== GALLERY FUNCTIONALITY =====
+  // Get all product images
+  const products = document.querySelectorAll('.product');
+  
+  // Create an array of all product images
+  const galleryImages = [];
+  const galleryTitles = [];
+  
+  products.forEach(product => {
+    const img = product.querySelector('img');
+    const title = product.querySelector('h3').textContent;
+    galleryImages.push(img.src);
+    galleryTitles.push(title);
+  });
+  
+  // Setup gallery elements
+  const modal = document.getElementById('galleryModal');
+  const galleryContainer = document.querySelector('.gallery-container');
+  const closeButton = document.getElementById('closeGallery');
+  const prevButton = document.getElementById('prevSlide');
+  const nextButton = document.getElementById('nextSlide');
+  const currentSlideEl = document.getElementById('currentSlide');
+  const totalSlidesEl = document.getElementById('totalSlides');
+  
+  let currentIndex = 0;
+  
+  // Update total slides count
+  totalSlidesEl.textContent = galleryImages.length;
+  
+  // Function to open gallery
+  window.openGallery = function(index) {
+    currentIndex = index;
+    updateGallery();
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    
+    // Re-initialize Feather icons
+    if (typeof feather !== 'undefined') {
+      feather.replace();
+    }
+  };
+  
+  // Function to close gallery
+  function closeGallery() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+  
+  // Function to update gallery
+  function updateGallery() {
+    // Update slide counter
+    currentSlideEl.textContent = currentIndex + 1;
+    
+    // Remove the title from inside the slide and put it at the bottom of the modal
+    galleryContainer.innerHTML = `
+      <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+        <div style="width: 800px; height: 500px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
+          <img 
+            src="${galleryImages[currentIndex]}" 
+            alt="${galleryTitles[currentIndex]}" 
+            style="max-width: 100%; max-height: 100%; object-fit: contain;"
+          >
+        </div>
+      </div>
+    `;
+    
+    // Find or create the title element outside the gallery container
+    let titleElement = document.getElementById('galleryTitle');
+    if (!titleElement) {
+      titleElement = document.createElement('div');
+      titleElement.id = 'galleryTitle';
+      titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
+      document.getElementById('galleryModal').appendChild(titleElement);
+    }
+    
+    // Update the title text
+    titleElement.textContent = galleryTitles[currentIndex];
+  }
+  
+  // Previous slide
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateGallery();
+  }
+  
+  // Next slide
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateGallery();
+  }
+  
+  // Event listeners
+  if (closeButton) closeButton.addEventListener('click', closeGallery);
+  if (prevButton) prevButton.addEventListener('click', prevSlide);
+  if (nextButton) nextButton.addEventListener('click', nextSlide);
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (!modal || modal.classList.contains('hidden')) return;
+    
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    } else if (e.key === 'Escape') {
+      closeGallery();
+    }
+  });
+  
+  // Close when clicking outside of the image
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeGallery();
+      }
+    });
+  }
+});
+</script>
   </body>
 </html>
