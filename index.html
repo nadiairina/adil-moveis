@@ -11,51 +11,29 @@
   </head>
   <body>
     <header>
-     
       <!-- Top Bar with Social Media, Email and Phone -->
       <div class="bg-navy text-white py-2">
         <div class="container mx-auto px-4 flex justify-between items-center">
-          <div class="flex space-x-3">
+          <div class="flex space-x-8">
             <a href="https://www.facebook.com/adilmoveisaiaz/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-              <i data-feather="facebook" class="w-4 h-4"></i>
+              <i data-feather="facebook" class="w-5 h-5"></i>
             </a>
             <a href="https://www.instagram.com/adil_moveis88/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-              <i data-feather="instagram" class="w-4 h-4"></i>
+              <i data-feather="instagram" class="w-5 h-5"></i>
             </a>
           </div>
           <div class="flex items-center space-x-6 text-sm">
             <a href="mailto:adil.moveis@hotmail.com" class="flex items-center hover:text-gray-300">
-              <i data-feather="mail" class="w-4 h-4 mr-1"></i> adil.moveis@hotmail.com
+              <i data-feather="mail" class="w-4 h-4 mr-3"></i> adil.moveis@hotmail.com
             </a>
             <a href="tel:212582788" class="flex items-center hover:text-gray-300">
-              <i data-feather="phone" class="w-4 h-4 mr-1"></i> 212 582 788
+              <i data-feather="phone" class="w-4 h-4 mr-3"></i> 212 582 788
             </a>
           </div>
         </div>
       </div>
       
-      <!-- Overlay Header with Logo and Menu (replaces the white bar) -->
-      <div class="absolute top-0 left-0 w-full z-10 pt-12 px-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-          <!-- Logo -->
-          <div class="flex items-center">
-            <a href="index.html">
-              <img src="images/adil-moveis-logo.png" alt="Adil Móveis" class="h-12 w-auto">
-            </a>
-          </div>
-          
-          <!-- Menu Button (now white to show on hero background) -->
-          <button 
-            class="flex items-center space-x-2 text-white"
-            id="menuButton"
-          >
-            <span class="uppercase font-bold">MENU</span>
-            <i data-feather="menu" class="w-6 h-6"></i>
-          </button>
-        </div>
-      </div>
-      
-      <!-- Menu Overlay (unchanged) -->
+      <!-- Menu Overlay -->
       <div id="menuOverlay" class="fixed top-0 right-0 w-72 bg-white z-50 overflow-y-auto hidden h-screen shadow-lg">
         <div class="py-4">
           <div class="flex justify-between items-center px-4 mb-4 border-b border-gray-200 pb-4">
@@ -69,33 +47,54 @@
           </div>
           
           <nav class="flex flex-col">
-            <!-- Navigation items (unchanged) -->
+            <!-- Menu items here -->
             <a href="index.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
               INÍCIO
             </a>
-            <!-- ... other menu items ... -->
+            <!-- ...other menu items... -->
           </nav>
         </div>
       </div>
     </header>
+
     <main>
-      <!-- Hero Section (modified to start right after the top black bar) -->
-      <section class="relative h-80 md:h-96 bg-gray-200 mt-10"> <!-- Added mt-10 to account for the top bar height -->
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000087-a0d69a0d6c/Obrigado%20pela%20prefer%C3%AAncia%20cart%C3%A3o-1.webp?ph=8b7412ce18');"></div>
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
-          <h1 class="text-4xl md:text-5xl font-light mb-4 text-shadow">37 anos de Adil Móveis</h1>
-          <p class="text-xl max-w-2xl text-shadow">
-            Altere cores, medidas e estofos dos seus móveis favoritos para que encaixem perfeitamente na sua casa!
-          </p>
-          <p class="text-sm mt-4 mb-6 text-shadow">preços sob consulta</p>
-          
-          <!-- Download Catalog Button -->
-          <a href="catalogos.html" class="inline-block border border-white py-3 px-6 text-white hover:bg-white hover:bg-opacity-20 transition-all">
-            CATÁLOGOS
+      <!-- Hero Section with Logo and Menu Button -->
+      <section class="relative bg-gray-200">
+        <!-- Logo and Menu positioning container -->
+        <div class="absolute top-0 left-0 w-full z-10 flex justify-between items-center p-4">
+          <a href="index.html">
+            <img src="images/adil-moveis-logo.png" alt="Adil Móveis" class="h-12 w-auto bg-white rounded">
           </a>
+          
+          <button 
+            class="flex items-center space-x-2 text-white bg-black bg-opacity-50 py-2 px-3 rounded"
+            id="menuButton"
+          >
+            <span class="uppercase font-bold">MENU</span>
+            <i data-feather="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="h-screen pt-20">
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://8b7412ce18.cbaul-cdnwnd.com/b7f391356926b258259c220a3b084f98/200000087-a0d69a0d6c/Obrigado%20pela%20prefer%C3%AAncia%20cart%C3%A3o-1.webp?ph=8b7412ce18');"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-light mb-4 text-shadow">37 anos de Adil Móveis</h1>
+            <p class="text-xl max-w-2xl text-shadow">
+              Altere cores, medidas e estofos dos seus móveis favoritos para que encaixem perfeitamente na sua casa!
+            </p>
+            <p class="text-sm mt-4 mb-6 text-shadow">preços sob consulta</p>
+            
+            <!-- Download Catalog Button -->
+            <a href="catalogos.html" class="inline-block border border-white py-3 px-6 text-white hover:bg-white hover:bg-opacity-20 transition-all">
+              CATÁLOGOS
+            </a>
+          </div>
         </div>
       </section>
+      
+      <!-- Rest of your content... -->
 
       <!-- Categories Section -->  
       <section class="py-16 pb-8 bg-white">
