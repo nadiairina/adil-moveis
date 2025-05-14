@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Catálogos - Adil Móveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Include your standard header here -->
+    
+    <main>
+      <section class="bg-navy py-12">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-white text-4xl font-light uppercase tracking-wider text-shadow">CATÁLOGOS</h1>
+        </div>
+      </section>
+      
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+              <h2 class="text-2xl font-light mb-4">Descarregue os nossos catálogos</h2>
+              <p class="text-gray-600 mb-8">
+                Explore a nossa seleção completa de móveis nos catálogos abaixo.
+              </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Catalog 1 -->
+              <div class="border border-gray-200 rounded-lg p-6 flex flex-col items-center">
+                <img src="images/catalog-lourini.jpg" alt="Catálogo Lourini" class="w-32 h-40 object-cover mb-4 shadow-md">
+                <h3 class="text-lg font-medium mb-2">Catálogo Lourini</h3>
+                <p class="text-gray-600 text-sm mb-4 text-center">Sofás, mesas, aparadores e móveis de sala</p>
+                <a href="downloads/catalogo-lourini.pdf" download class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-navy hover:bg-blue-900 transition-colors">
+                  <i data-feather="download" class="w-4 h-4 mr-2"></i>
+                  Descarregar PDF
+                </a>
+              </div>
+              
+              <!-- Catalog 2 -->
+              <div class="border border-gray-200 rounded-lg p-6 flex flex-col items-center">
+                <img src="images/catalog-lusocolchao.jpg" alt="Catálogo Lusocolchão" class="w-32 h-40 object-cover mb-4 shadow-md">
+                <h3 class="text-lg font-medium mb-2">Catálogo Lusocolchão</h3>
+                <p class="text-gray-600 text-sm mb-4 text-center">Colchões e bases de cama</p>
+                <a href="downloads/catalogo-lusocolchao.pdf" download class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-navy hover:bg-blue-900 transition-colors">
+                  <i data-feather="download" class="w-4 h-4 mr-2"></i>
+                  Descarregar PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Include your standard footer here -->
+    
+    <script>
+      // Initialize Feather Icons
+      document.addEventListener('DOMContentLoaded', () => {
+        feather.replace();
+      });
+    </script>
+  </body>
+</html>
