@@ -11,18 +11,14 @@ closeMenuButton.addEventListener('click', () => {
   menuOverlay.classList.add('hidden');
 });
 
-// Add this to your existing menu JavaScript
+// Close menu when clicking outside
 document.addEventListener('click', function(event) {
-  // Check if menu is open
-  if (!menuOverlay.classList.contains('hidden') && !menuOverlay.classList.contains('active')) {
-    // Check if the click is outside the menu
-    if (!menuOverlay.contains(event.target) && event.target !== menuButton) {
+  // Check if menu is open (not hidden)
+  if (!menuOverlay.classList.contains('hidden')) {
+    // Check if the click is outside the menu AND not on the menu button itself
+    if (!menuOverlay.contains(event.target) && event.target !== menuButton && !menuButton.contains(event.target)) {
       // Close the menu
-      menuOverlay.classList.remove('active');
-      setTimeout(function() {
-        menuOverlay.classList.add('hidden');
-      }, 300);
+      menuOverlay.classList.add('hidden');
     }
   }
 });
-
