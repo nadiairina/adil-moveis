@@ -361,18 +361,12 @@ button img:hover,
   transform: none !important;
   box-shadow: none !important;
 }
-/* Target history section images specifically */
-.history-image img,
-.historia img,
-section:has(h2:contains("História")) img,
-#historia img {
+/* Target historia images with inline styles */
+[src*="historia"] {
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-.history-image img:hover,
-.historia img:hover,
-section:has(h2:contains("História")) img:hover,
-#historia img:hover {
+[src*="historia"]:hover {
   transform: scale(1.03) !important;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
 }
