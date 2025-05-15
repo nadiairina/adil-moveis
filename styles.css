@@ -332,3 +332,24 @@ body {
 .special-positioning {
   object-position: center 35% !important; /* Adjust vertical position to show the important part */
 }
+/* Add hover effect to all product images */
+.product-container img, 
+.grid-cols-1 img,
+.grid-cols-2 img, 
+.md\:grid-cols-2 img,
+.md\:grid-cols-3 img,
+.md\:grid-cols-4 img,
+.furniture-grid img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-container img:hover, 
+.grid-cols-1 img:hover,
+.grid-cols-2 img:hover, 
+.md\:grid-cols-2 img:hover,
+.md\:grid-cols-3 img:hover,
+.md\:grid-cols-4 img:hover,
+.furniture-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
