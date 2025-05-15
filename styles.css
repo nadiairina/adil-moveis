@@ -399,4 +399,16 @@ button img:hover,
     min-width: 90% !important;
     max-width: 450px !important;
   }
+
+/* Fix to show entire chairs */
+[data-category="cadeiras"] .product .relative,
+[data-category="bancos"] .product .relative {
+  padding-top: 100% !important; /* Make container square */
+}
+
+[data-category="cadeiras"] .product img,
+[data-category="bancos"] .product img {
+  object-fit: contain !important; /* Show entire chair */
+  object-position: center !important;
+  padding: 10px;
 }
