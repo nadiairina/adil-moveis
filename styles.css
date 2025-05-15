@@ -399,7 +399,7 @@ button img:hover,
     min-width: 90% !important;
     max-width: 450px !important;
   }
-
+}
 /* Fix to show entire chairs */
 [data-category="cadeiras"] .product .relative,
 [data-category="bancos"] .product .relative {
