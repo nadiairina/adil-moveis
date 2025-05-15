@@ -903,36 +903,35 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.style.overflow = '';
   }
   
-  // Function to update gallery
   function updateGallery() {
-    // Update slide counter
-    currentSlideEl.textContent = currentIndex + 1;
-    
-    // Remove the title from inside the slide and put it at the bottom of the modal
-    galleryContainer.innerHTML = `
-      <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
-        <div style="width: 800px; height: 500px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
-          <img 
-            src="${galleryImages[currentIndex]}" 
-            alt="${galleryTitles[currentIndex]}" 
-            style="max-width: 100%; max-height: 100%; object-fit: contain;"
-          >
-        </div>
+  // Update slide counter
+  currentSlideEl.textContent = currentIndex + 1;
+  
+  // Remove the title from inside the slide and put it at the bottom of the modal
+  galleryContainer.innerHTML = `
+    <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+      <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
+        <img 
+          src="${galleryImages[currentIndex]}" 
+          alt="${galleryTitles[currentIndex]}" 
+          style="max-width: 100%; max-height: 100%; object-fit: contain;"
+        >
       </div>
-    `;
-    
-    // Find or create the title element outside the gallery container
-    let titleElement = document.getElementById('galleryTitle');
-    if (!titleElement) {
-      titleElement = document.createElement('div');
-      titleElement.id = 'galleryTitle';
-      titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
-      document.getElementById('galleryModal').appendChild(titleElement);
-    }
-    
-    // Update the title text
-    titleElement.textContent = galleryTitles[currentIndex];
+    </div>
+  `;
+  
+  // Find or create the title element outside the gallery container
+  let titleElement = document.getElementById('galleryTitle');
+  if (!titleElement) {
+    titleElement = document.createElement('div');
+    titleElement.id = 'galleryTitle';
+    titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
+    document.getElementById('galleryModal').appendChild(titleElement);
   }
+  
+  // Update the title text
+  titleElement.textContent = galleryTitles[currentIndex];
+}
   
   // Previous slide
   function prevSlide() {
