@@ -385,3 +385,18 @@ button img:hover,
   padding: 0 15px !important;
   box-sizing: border-box !important;
 }
+/* Make history images stack on mobile */
+@media (max-width: 768px) {
+  div[style*="display: flex; justify-content: space-between"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+  }
+  
+  div[style*="display: flex; justify-content: space-between"] img {
+    width: 90% !important;
+    min-width: 90% !important;
+    max-width: 450px !important;
+  }
+}
