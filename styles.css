@@ -400,18 +400,14 @@ button img:hover,
     max-width: 450px !important;
   }
 }
-/* Fix to show entire chairs - more specific rule */
-.product[data-category="cadeiras"] .relative img,
-.product[data-category="cadeiras"] img.object-cover,
-.product[data-category="bancos"] .relative img,
-.product[data-category="bancos"] img.object-cover {
+/* Direct chair image fix */
+.chair-image {
   object-fit: contain !important;
-  height: 100% !important;
-  padding: 5px !important;
+  height: 300px !important;
 }
 
-/* Make the chair product containers taller for better display */
 .product[data-category="cadeiras"] .relative,
 .product[data-category="bancos"] .relative {
-  padding-top: 120% !important; /* Taller container */
+  height: 300px !important;
+  padding-top: 0 !important;
 }
