@@ -370,33 +370,51 @@ button img:hover,
   transform: scale(1.03) !important;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
 }
-/* Override all modal image styles */
-[id*="modal"] img,
+/* Ultra-aggressive modal image fix */
+body > div:not(header):not(main):not(footer) img,
+[role="dialog"] img,
+.modal img,
+#modal img,
+.popup img,
+#popup img,
 [class*="modal"] img,
-[class*="slide"] img,
-.lightbox img {
-  width: 100% !important;
+[id*="modal"] img,
+[class*="popup"] img,
+[id*="popup"] img,
+[class*="lightbox"] img,
+[id*="lightbox"] img,
+.mySlides img,
+[id*="slide"] img,
+[class*="slide"] img {
+  width: auto !important;
+  max-width: 100% !important;
   height: auto !important;
-  object-fit: contain !important;
   max-height: 80vh !important;
+  object-fit: contain !important;
+  object-position: center !important;
   margin: 0 auto !important;
+  display: block !important;
 }
 
-/* Add this if the modal itself needs styling */
-[id*="modal"],
+/* Ensure the container is also responsive */
+body > div:not(header):not(main):not(footer),
+[role="dialog"],
+.modal,
+#modal,
+.popup,
+#popup,
 [class*="modal"],
-.lightbox {
+[id*="modal"],
+[class*="popup"],
+[id*="popup"],
+[class*="lightbox"],
+[id*="lightbox"],
+.mySlides,
+[id*="slide"],
+[class*="slide"] {
   width: 100% !important;
-  max-width: 100% !important;
-  padding: 0 !important;
+  max-width: 100vw !important;
   box-sizing: border-box !important;
-}
-
-/* Target modal content directly */
-[id*="modal"] > div,
-[class*="modal"] > div,
-.lightbox > div {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
+  overflow: hidden !important;
+  padding: 0 15px !important;
 }
