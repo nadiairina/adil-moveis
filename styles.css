@@ -370,3 +370,48 @@ button img:hover,
   transform: scale(1.03) !important;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
 }
+/* Fix for product lightbox/modal images on mobile */
+.modal-content img,
+#imageModal img,
+.mySlides img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Make modal container responsive */
+.modal-container,
+#imageModal .modal-content,
+.slideshow-container {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Ensure modal navigation buttons don't overlap content */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
