@@ -480,3 +480,64 @@ button img:hover,
     padding: 8px !important;
   }
 }
+/* Global header fixes for all pages */
+@media (max-width: 768px) {
+  /* Add more space at the top of all pages */
+  body {
+    padding-top: 60px; /* Creates space for fixed header */
+  }
+  
+  /* Fix header positioning */
+  header, .header, nav {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    background-color: #000 !important; /* Match your header background */
+    padding: 10px !important;
+  }
+  
+  /* Push all main content down */
+  main, .main-content, .hero-section, section:first-of-type {
+    margin-top: 60px !important; /* Should match body padding-top */
+  }
+  
+  /* Fix page title spacing on all pages */
+  h1, .page-title, .section-title {
+    padding-top: 2rem !important;
+    margin-top: 1rem !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7) !important; /* Makes text readable on any background */
+  }
+  
+  /* Ensure all content containers have proper spacing */
+  .container, section, .section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Fix navigation menu */
+  .menu, .nav-menu, #menu {
+    top: 60px !important; /* Position below fixed header */
+  }
+  
+  /* Fix all hero images/sections */
+  .hero, .hero-section, [style*="background-image"] {
+    padding-top: 80px !important; /* Extra space for header */
+    min-height: 300px !important; /* Ensure minimum height */
+  }
+}
+
+/* Extra small device adjustments */
+@media (max-width: 359px) {
+  /* Make text even smaller on tiny screens */
+  h1 {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Tighten spacing */
+  .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
