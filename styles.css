@@ -411,3 +411,72 @@ button img:hover,
   height: 300px !important;
   padding-top: 0 !important;
 }
+/* Mobile responsiveness fixes */
+
+/* Extra small device fixes - phones less than 360px wide */
+@media (max-width: 359px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .container {
+    padding: 0 0.5rem !important;
+  }
+  
+  /* Fix spacing in product grid */
+  .grid {
+    gap: 0.5rem !important;
+  }
+}
+
+/* Small phone fixes */
+@media (max-width: 480px) {
+  /* Ensure buttons are large enough to tap */
+  button, .btn-adil, a.btn-adil, a[href="catalogos.html"] {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Make sure images don't overflow their containers */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add more space between stacked elements */
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  /* Adjust product grid spacing */
+  .product {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Universal mobile fixes */
+@media (max-width: 768px) {
+  /* Fix menu spacing */
+  .menu-item {
+    padding: 10px;
+  }
+  
+  /* Ensure proper spacing on mobile */
+  .px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Fix heading line height */
+  h1, h2, h3 {
+    line-height: 1.2 !important;
+  }
+  
+  /* Better padding for clickable elements */
+  a, button {
+    padding: 8px !important;
+  }
+}
