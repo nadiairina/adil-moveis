@@ -572,47 +572,38 @@ button img:hover,
     min-width: 40px !important;
   }
 }
-/* Add black background container to menu button similar to logo */
-.menu-button,
-button[aria-label*="menu"],
-button.MENU,
-#hamburger,
+/* Direct styling for menu button with !important */
 button.bg-gray-700,
-.menu-icon {
+button.MENU,
+button[aria-label="menu"],
+button[aria-label="Toggle menu"],
+button:has(svg.feather-menu),
+.menu-button,
+#menu-button,
+button:has(.menu-icon) {
   background-color: #000 !important;
   color: white !important;
-  border-radius: 0 !important; /* Makes it square like the logo container */
-  padding: 8px 12px !important;
-  transition: opacity 0.3s ease !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 10px !important;
+  box-shadow: none !important;
+  position: relative !important;
+  z-index: 100 !important;
 }
 
-/* Add hover effect similar to logo */
-.menu-button:hover,
-button[aria-label*="menu"]:hover,
-button.MENU:hover,
-#hamburger:hover,
-button.bg-gray-700:hover,
-.menu-icon:hover {
-  opacity: 0.8 !important;
-}
-
-/* Ensure the button and its contents are properly aligned */
-.menu-button svg, 
-button[aria-label*="menu"] svg,
-.menu-icon svg {
-  fill: white !important;
+/* Target any SVG inside the button */
+button svg,
+.menu-button svg,
+button .feather,
+button [data-feather] {
   stroke: white !important;
+  fill: none !important;
 }
 
-/* Ensure proper spacing between menu button and logo */
-@media (max-width: 768px) {
-  .menu-button,
-  button[aria-label*="menu"],
-  button.MENU,
-  #hamburger,
-  button.bg-gray-700,
-  .menu-icon {
-    margin-left: auto !important;
-    margin-right: 10px !important;
-  }
+/* Force this to apply by using the highest specificity possible */
+html body header button,
+html body .header button,
+html body nav button {
+  background-color: #000 !important;
+  color: white !important;
 }
