@@ -446,3 +446,129 @@ button img:hover,
     margin-top: 10px !important;
   }
 }
+/* Comprehensive mobile fixes for various devices */
+
+/* iPhone SE, Galaxy S5, and other very small devices */
+@media (max-width: 374px) {
+  /* Make logo even smaller on tiny screens */
+  .logo img, img[alt*="Adil"], header img {
+    max-width: 100px !important;
+  }
+  
+  /* Reduce text size for very small screens */
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  
+  h2 {
+    font-size: 1.1rem !important;
+  }
+  
+  p, div {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Reduce padding further */
+  .container, section, div {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  
+  /* Ensure buttons are properly sized */
+  button, .btn-adil {
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Medium sized phones (iPhone 6-8, Pixel, etc.) */
+@media (min-width: 375px) and (max-width: 413px) {
+  h1 {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Add more space for content */
+  .py-6 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
+/* Fix for iPhone X, iPhone 11/12, Galaxy S9/S10 etc. */
+@media (min-width: 414px) and (max-width: 767px) {
+  /* Slightly larger spacing for larger phones */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Adjust title position */
+  h1 {
+    padding-top: 15px !important;
+  }
+}
+
+/* Fix for phones in landscape orientation */
+@media (max-height: 450px) and (orientation: landscape) {
+  /* Reduce vertical spacing */
+  .py-6, .py-8, .py-10, .py-12 {
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+  }
+  
+  /* Make header more compact in landscape */
+  header, .header {
+    padding: 5px !important;
+  }
+  
+  /* Adjust hero sections for landscape */
+  .hero, [style*="background-image"] {
+    min-height: 200px !important; 
+  }
+  
+  /* Adjust title spacing */
+  h1, h2 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+/* Universal fixes for all mobile devices */
+@media (max-width: 768px) {
+  /* Fix image sizes */
+  img {
+    max-width: 100% !important;
+  }
+  
+  /* Fix menu overlap issues */
+  .menu, #menu {
+    z-index: 1000 !important;
+  }
+  
+  /* Add text shadow to improve readability on image backgrounds */
+  h1, h2, h3, p, .text-white {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+  }
+  
+  /* Fix footer on mobile */
+  footer {
+    padding: 1rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  /* Fix grid layouts */
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  
+  /* Ensure proper spacing between grid items */
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    gap: 1rem !important;
+  }
+  
+  /* Make sure all clickable elements are big enough */
+  a, button, [role="button"] {
+    min-height: 40px !important;
+    min-width: 40px !important;
+  }
+}
