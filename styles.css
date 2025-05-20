@@ -572,38 +572,37 @@ button img:hover,
     min-width: 40px !important;
   }
 }
-/* Direct styling for menu button with !important */
-button.bg-gray-700,
-button.MENU,
-button[aria-label="menu"],
-button[aria-label="Toggle menu"],
-button:has(svg.feather-menu),
-.menu-button,
-#menu-button,
-button:has(.menu-icon) {
-  background-color: #000 !important;
-  color: white !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 10px !important;
-  box-shadow: none !important;
-  position: relative !important;
-  z-index: 100 !important;
+/* Style for the menu button to match the logo */
+#menuButton {
+  background-color: #000 !important; /* Solid black background */
+  background-opacity: 1 !important; /* Override the bg-opacity-50 */
+  border-radius: 0 !important; /* Square corners like logo container */
+  padding: 8px 12px !important;
+  transition: opacity 0.3s ease !important;
 }
 
-/* Target any SVG inside the button */
-button svg,
-.menu-button svg,
-button .feather,
-button [data-feather] {
+#menuButton:hover {
+  opacity: 0.8 !important;
+}
+
+#menuButton span {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+#menuButton i {
   stroke: white !important;
   fill: none !important;
 }
 
-/* Force this to apply by using the highest specificity possible */
-html body header button,
-html body .header button,
-html body nav button {
-  background-color: #000 !important;
-  color: white !important;
+/* Make sure the logo and menu match */
+a img[alt="Adil Móveis"] {
+  border-radius: 0 !important; /* Remove rounded corners to match menu */
+  background-color: #000 !important; /* Change background to black */
+  padding: 8px !important;
+}
+
+/* Ensure both elements are properly spaced */
+.absolute.top-0.left-0.w-full.z-10 {
+  padding: 12px !important;
 }
