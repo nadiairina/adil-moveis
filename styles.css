@@ -606,3 +606,12 @@ a img[alt="Adil Móveis"] {
 .absolute.top-0.left-0.w-full.z-10 {
   padding: 12px !important;
 }
+/* Simple hover effect for menu button */
+#menuButton {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+#menuButton:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
