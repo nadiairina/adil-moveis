@@ -572,3 +572,47 @@ button img:hover,
     min-width: 40px !important;
   }
 }
+/* Add black background container to menu button similar to logo */
+.menu-button,
+button[aria-label*="menu"],
+button.MENU,
+#hamburger,
+button.bg-gray-700,
+.menu-icon {
+  background-color: #000 !important;
+  color: white !important;
+  border-radius: 0 !important; /* Makes it square like the logo container */
+  padding: 8px 12px !important;
+  transition: opacity 0.3s ease !important;
+}
+
+/* Add hover effect similar to logo */
+.menu-button:hover,
+button[aria-label*="menu"]:hover,
+button.MENU:hover,
+#hamburger:hover,
+button.bg-gray-700:hover,
+.menu-icon:hover {
+  opacity: 0.8 !important;
+}
+
+/* Ensure the button and its contents are properly aligned */
+.menu-button svg, 
+button[aria-label*="menu"] svg,
+.menu-icon svg {
+  fill: white !important;
+  stroke: white !important;
+}
+
+/* Ensure proper spacing between menu button and logo */
+@media (max-width: 768px) {
+  .menu-button,
+  button[aria-label*="menu"],
+  button.MENU,
+  #hamburger,
+  button.bg-gray-700,
+  .menu-icon {
+    margin-left: auto !important;
+    margin-right: 10px !important;
+  }
+}
