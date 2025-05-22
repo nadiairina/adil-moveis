@@ -581,3 +581,40 @@ button img:hover,
   transform: scale(1.03) !important;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
 }
+/* Fix for specific product images using their exact URLs */
+img[src="https://lourini.pt/app/uploads/2024/07/roupeiro-branco-1200x1200.png"],
+img[src="https://lourini.pt/app/uploads/2024/07/roupeiro-1200x1200.png"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5103-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5105-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5140-scaled.jpg"],
+img[src="https://lourini.pt/app/uploads/2024/10/modulo4gavetas_ibiza_lado-1200x1200.png"],
+img[src="https://lourini.pt/app/uploads/2024/07/camiseiro-1200x1200.png"],
+img[src="https://lourini.pt/app/uploads/2024/06/modulo-4gavetas-aberto-branco-1200x1200.png"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_camiseiro_5034-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_camiseiro_5035-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_camiseiro_5027-631x1024.jpg"],
+img[src="https://lourini.pt/app/uploads/2024/10/modulo2P3P-lado-1200x1200.png"],
+img[src="https://static.wixstatic.com/media/01ff71_920a29f541054dbd976e7b059b43c5b8.jpg/v1/fill/w_450,h_418,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/01ff71_920a29f541054dbd976e7b059b43c5b8.jpg"],
+img[src="https://static.wixstatic.com/media/01ff71_b3ea3960e283428f8707b5e98237cd2e.jpg/v1/fill/w_479,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/01ff71_b3ea3960e283428f8707b5e98237cd2e.jpg"],
+img[src="https://lourini.pt/app/uploads/2024/07/toronto-elemento-prateleiras-1200x1200.png"],
+img[src="https://i0.wp.com/mitomovel.pt/wp/wp-content/uploads/2021/10/Ref.-271-aberto.webp?ssl=1"],
+img[src="https://i0.wp.com/mitomovel.pt/wp/wp-content/uploads/2021/10/Ref.-269-aberto.webp?ssl=1"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5061-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5064_1-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5077_1-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5080-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5085-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_bengaleiro_5100_1-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_bengaleiro_5102-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_cabide_2050-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1555-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1565-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1580_2-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1585_2-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1650-scaled.jpg"],
+img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1566-scaled.jpg"] {
+  object-fit: contain !important;
+  height: 280px !important;
+  background-color: white !important;
+  width: 100% !important;
+}
