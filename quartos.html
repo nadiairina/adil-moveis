@@ -1046,56 +1046,60 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // ===== FILTER FUNCTIONALITY =====
-  // Get all filter buttons and products
-  const filterButtons = document.querySelectorAll('.filter-button');
-  const products = document.querySelectorAll('.product');
+// Get all filter buttons and products
+const filterButtons = document.querySelectorAll('.filter-button');
+const products = document.querySelectorAll('.product');
 
-  // Initialize - show all products
-  products.forEach(product => {
-    product.style.display = '';
-  });
-  
-  // Make sure "Todos" button is active by default
-  const todosButton = document.querySelector('.filter-button[data-category="all"]');
-  if (todosButton) {
-    todosButton.classList.add('active');
-  }
+// Initialize - show all products
+products.forEach(product => {
+  product.style.display = '';
+});
 
-  // Add click handler to each button
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      console.log('Filter button clicked:', this.getAttribute('data-category'));
+// Make sure "Todos" button is active by default and has active styling
+const todosButton = document.querySelector('.filter-button[data-category="all"]');
+if (todosButton) {
+  todosButton.classList.add('active');
+  todosButton.classList.add('bg-navy', 'text-white'); // Add navy background and white text
+  todosButton.classList.remove('bg-gray-100');
+}
+
+// Add click handler to each button
+filterButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    console.log('Filter button clicked:', this.getAttribute('data-category'));
+    
+    // Remove active class from all buttons
+    filterButtons.forEach(btn => {
+      btn.classList.remove('active', 'bg-navy', 'text-white');
+      btn.classList.add('bg-gray-100'); // Reset all buttons to gray background
+    });
+    
+    // Add active class to clicked button
+    this.classList.add('active', 'bg-navy', 'text-white');
+    this.classList.remove('bg-gray-100');
+    
+    // Get the category from the button
+    const category = this.getAttribute('data-category');
+    console.log('Filtering by category:', category);
+    
+    // Show/hide products based on category
+    products.forEach(product => {
+      const productCategory = product.getAttribute('data-category');
+      console.log('Product category:', productCategory);
       
-      // Remove active class from all buttons
-      filterButtons.forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      // Add active class to clicked button
-      this.classList.add('active');
-      
-      // Get the category from the button
-      const category = this.getAttribute('data-category');
-      console.log('Filtering by category:', category);
-      
-      // Show/hide products based on category
-      products.forEach(product => {
-        const productCategory = product.getAttribute('data-category');
-        console.log('Product category:', productCategory);
-        
-        if (category === 'all') {
-          product.style.display = '';
-          console.log('Showing product (all)');
-        } else if (productCategory === category) {
-          product.style.display = '';
-          console.log('Showing product (match)');
-        } else {
-          product.style.display = 'none';
-          console.log('Hiding product (no match)');
-        }
-      });
+      if (category === 'all') {
+        product.style.display = '';
+        console.log('Showing product (all)');
+      } else if (productCategory === category) {
+        product.style.display = '';
+        console.log('Showing product (match)');
+      } else {
+        product.style.display = 'none';
+        console.log('Hiding product (no match)');
+      }
     });
   });
+});
   
   // ===== GALLERY FUNCTIONALITY =====
   // Get all product images
