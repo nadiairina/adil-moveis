@@ -622,7 +622,6 @@ img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE
   padding: 0 !important;
   margin: 0 !important;
 }
-
 /* Also fix the parent container */
 .product .relative {
   height: auto !important;
@@ -631,14 +630,19 @@ img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE
   margin: 0 !important;
   overflow: visible !important;
 }
-
-/* Make sure the product card expands properly */
+/* Make sure the product card expands properly WITHOUT !important on display */
 .product {
   height: auto !important;
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;  /* Removed !important */
+  flex-direction: column;  /* Removed !important */
 }
+/* Add this crucial class for hiding products */
+.product-hidden {
+  display: none !important; /* This will override other display settings */
+}
+/* Filter button styling */
 .filter-button.active {
-    background-color: #d1d5db; /* Gray-300 */
-    font-weight: 500;
+  background-color: #000033 !important; /* Navy background */
+  color: white !important; /* White text */
+  font-weight: 500;
 }
