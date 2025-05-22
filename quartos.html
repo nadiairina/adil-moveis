@@ -1046,7 +1046,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // ===== FILTER FUNCTIONALITY =====
-document.addEventListener('DOMContentLoaded', function() {
   // Get all filter buttons and products
   const filterButtons = document.querySelectorAll('.filter-button');
   const products = document.querySelectorAll('.product');
@@ -1057,7 +1056,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // Make sure "Todos" button is active by default
-  document.querySelector('.filter-button[data-category="all"]').classList.add('active');
+  const todosButton = document.querySelector('.filter-button[data-category="all"]');
+  if (todosButton) {
+    todosButton.classList.add('active');
+  }
 
   // Add click handler to each button
   filterButtons.forEach(button => {
@@ -1094,12 +1096,9 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-});
   
   // ===== GALLERY FUNCTIONALITY =====
   // Get all product images
-  const products = document.querySelectorAll('.product');
-  
   // Create an array of all product images
   const galleryImages = [];
   const galleryTitles = [];
@@ -1123,7 +1122,9 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentIndex = 0;
   
   // Update total slides count
-  totalSlidesEl.textContent = galleryImages.length;
+  if (totalSlidesEl) {
+    totalSlidesEl.textContent = galleryImages.length;
+  }
   
   // Function to open gallery
   window.openGallery = function(index) {
@@ -1145,34 +1146,40 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function updateGallery() {
-  // Update slide counter
-  currentSlideEl.textContent = currentIndex + 1;
-  
-  // Remove the title from inside the slide and put it at the bottom of the modal
-  galleryContainer.innerHTML = `
-    <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
-      <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
-        <img 
-          src="${galleryImages[currentIndex]}" 
-          alt="${galleryTitles[currentIndex]}" 
-          style="max-width: 100%; max-height: 100%; object-fit: contain;"
-        >
-      </div>
-    </div>
-  `;
-  
-  // Find or create the title element outside the gallery container
-  let titleElement = document.getElementById('galleryTitle');
-  if (!titleElement) {
-    titleElement = document.createElement('div');
-    titleElement.id = 'galleryTitle';
-    titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
-    document.getElementById('galleryModal').appendChild(titleElement);
+    // Update slide counter
+    if (currentSlideEl) {
+      currentSlideEl.textContent = currentIndex + 1;
+    }
+    
+    // Remove the title from inside the slide and put it at the bottom of the modal
+    if (galleryContainer) {
+      galleryContainer.innerHTML = `
+        <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+          <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
+            <img 
+              src="${galleryImages[currentIndex]}" 
+              alt="${galleryTitles[currentIndex]}" 
+              style="max-width: 100%; max-height: 100%; object-fit: contain;"
+            >
+          </div>
+        </div>
+      `;
+    }
+    
+    // Find or create the title element outside the gallery container
+    if (modal) {
+      let titleElement = document.getElementById('galleryTitle');
+      if (!titleElement) {
+        titleElement = document.createElement('div');
+        titleElement.id = 'galleryTitle';
+        titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
+        modal.appendChild(titleElement);
+      }
+      
+      // Update the title text
+      titleElement.textContent = galleryTitles[currentIndex];
+    }
   }
-  
-  // Update the title text
-  titleElement.textContent = galleryTitles[currentIndex];
-}
   
   // Previous slide
   function prevSlide() {
