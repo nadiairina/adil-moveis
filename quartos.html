@@ -1046,36 +1046,52 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // ===== FILTER FUNCTIONALITY =====
-// Get all filter buttons
-const filterButtons = document.querySelectorAll('.filter-button');
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all filter buttons and products
+  const filterButtons = document.querySelectorAll('.filter-button');
+  const products = document.querySelectorAll('.product');
 
-// Add click handler to each button
-filterButtons.forEach(button => {
-  button.addEventListener('click', function() {
-    // Get the category from the button
-    const category = this.getAttribute('data-category');
-    
-    // Update active button styling
-    filterButtons.forEach(btn => {
-      btn.classList.remove('active');
-      // Keep hover styles but remove active state
-      btn.classList.remove('bg-navy', 'text-white');
-      btn.classList.add('bg-gray-100', 'hover:bg-navy', 'hover:text-white');
-    });
-    
-    // Apply active styling to clicked button
-    this.classList.add('active');
-    
-    // Get all products
-    const products = document.querySelectorAll('.product');
-    
-    // Show/hide products based on category
-    products.forEach(product => {
-      if (category === 'all' || product.getAttribute('data-category') === category) {
-        product.style.display = '';
-      } else {
-        product.style.display = 'none';
-      }
+  // Initialize - show all products
+  products.forEach(product => {
+    product.style.display = '';
+  });
+  
+  // Make sure "Todos" button is active by default
+  document.querySelector('.filter-button[data-category="all"]').classList.add('active');
+
+  // Add click handler to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      console.log('Filter button clicked:', this.getAttribute('data-category'));
+      
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Get the category from the button
+      const category = this.getAttribute('data-category');
+      console.log('Filtering by category:', category);
+      
+      // Show/hide products based on category
+      products.forEach(product => {
+        const productCategory = product.getAttribute('data-category');
+        console.log('Product category:', productCategory);
+        
+        if (category === 'all') {
+          product.style.display = '';
+          console.log('Showing product (all)');
+        } else if (productCategory === category) {
+          product.style.display = '';
+          console.log('Showing product (match)');
+        } else {
+          product.style.display = 'none';
+          console.log('Hiding product (no match)');
+        }
+      });
     });
   });
 });
