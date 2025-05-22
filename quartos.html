@@ -1046,39 +1046,39 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // ===== FILTER FUNCTIONALITY =====
-  // Get all filter buttons
-  const filterButtons = document.querySelectorAll('.filter-button');
-  
-  // Add click handler to each button
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Get the category from the button
-      const category = this.getAttribute('data-category');
-      
-      // Update active button styling
-      filterButtons.forEach(btn => {
-        btn.classList.remove('active');
-        btn.classList.remove('bg-navy', 'text-white');
-        btn.classList.add('bg-gray-100');
-      });
-      
-      // Apply active styling to clicked button
-      this.classList.add('active', 'bg-navy', 'text-white');
-      this.classList.remove('bg-gray-100');
-      
-      // Get all products
-      const products = document.querySelectorAll('.product');
-      
-      // Show/hide products based on category
-      products.forEach(product => {
-        if (category === 'all' || product.getAttribute('data-category') === category) {
-          product.style.display = '';
-        } else {
-          product.style.display = 'none';
-        }
-      });
+// Get all filter buttons
+const filterButtons = document.querySelectorAll('.filter-button');
+
+// Add click handler to each button
+filterButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    // Get the category from the button
+    const category = this.getAttribute('data-category');
+    
+    // Update active button styling
+    filterButtons.forEach(btn => {
+      btn.classList.remove('active');
+      // Keep hover styles but remove active state
+      btn.classList.remove('bg-navy', 'text-white');
+      btn.classList.add('bg-gray-100', 'hover:bg-navy', 'hover:text-white');
+    });
+    
+    // Apply active styling to clicked button
+    this.classList.add('active');
+    
+    // Get all products
+    const products = document.querySelectorAll('.product');
+    
+    // Show/hide products based on category
+    products.forEach(product => {
+      if (category === 'all' || product.getAttribute('data-category') === category) {
+        product.style.display = '';
+      } else {
+        product.style.display = 'none';
+      }
     });
   });
+});
   
   // ===== GALLERY FUNCTIONALITY =====
   // Get all product images
