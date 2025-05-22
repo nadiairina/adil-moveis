@@ -1046,63 +1046,44 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // ===== FILTER FUNCTIONALITY =====
-// Get all filter buttons and products
-const filterButtons = document.querySelectorAll('.filter-button');
-const products = document.querySelectorAll('.product');
-
-// Initialize - show all products
-products.forEach(product => {
-  product.style.display = '';
-});
-
-// Make sure "Todos" button is active by default and has active styling
-const todosButton = document.querySelector('.filter-button[data-category="all"]');
-if (todosButton) {
-  todosButton.classList.add('active');
-  todosButton.classList.add('bg-navy', 'text-white'); // Add navy background and white text
-  todosButton.classList.remove('bg-gray-100');
-}
-
-// Add click handler to each button
-filterButtons.forEach(button => {
-  button.addEventListener('click', function() {
-    console.log('Filter button clicked:', this.getAttribute('data-category'));
-    
-    // Remove active class from all buttons
-    filterButtons.forEach(btn => {
-      btn.classList.remove('active', 'bg-navy', 'text-white');
-      btn.classList.add('bg-gray-100'); // Reset all buttons to gray background
-    });
-    
-    // Add active class to clicked button
-    this.classList.add('active', 'bg-navy', 'text-white');
-    this.classList.remove('bg-gray-100');
-    
-    // Get the category from the button
-    const category = this.getAttribute('data-category');
-    console.log('Filtering by category:', category);
-    
-    // Show/hide products based on category
-    products.forEach(product => {
-      const productCategory = product.getAttribute('data-category');
-      console.log('Product category:', productCategory);
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll('.filter-button');
+  
+  // Add click handler to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the category from the button
+      const category = this.getAttribute('data-category');
       
-      if (category === 'all') {
-        product.style.display = '';
-        console.log('Showing product (all)');
-      } else if (productCategory === category) {
-        product.style.display = '';
-        console.log('Showing product (match)');
-      } else {
-        product.style.display = 'none';
-        console.log('Hiding product (no match)');
-      }
+      // Update active button styling
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.remove('bg-navy', 'text-white');
+        btn.classList.add('bg-gray-100');
+      });
+      
+      // Apply active styling to clicked button
+      this.classList.add('active', 'bg-navy', 'text-white');
+      this.classList.remove('bg-gray-100');
+      
+      // Get all products
+      const products = document.querySelectorAll('.product');
+      
+      // Show/hide products based on category
+      products.forEach(product => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
     });
   });
-});
   
   // ===== GALLERY FUNCTIONALITY =====
   // Get all product images
+  const products = document.querySelectorAll('.product');
+  
   // Create an array of all product images
   const galleryImages = [];
   const galleryTitles = [];
@@ -1126,9 +1107,7 @@ filterButtons.forEach(button => {
   let currentIndex = 0;
   
   // Update total slides count
-  if (totalSlidesEl) {
-    totalSlidesEl.textContent = galleryImages.length;
-  }
+  totalSlidesEl.textContent = galleryImages.length;
   
   // Function to open gallery
   window.openGallery = function(index) {
@@ -1150,40 +1129,34 @@ filterButtons.forEach(button => {
   }
   
   function updateGallery() {
-    // Update slide counter
-    if (currentSlideEl) {
-      currentSlideEl.textContent = currentIndex + 1;
-    }
-    
-    // Remove the title from inside the slide and put it at the bottom of the modal
-    if (galleryContainer) {
-      galleryContainer.innerHTML = `
-        <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
-          <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
-            <img 
-              src="${galleryImages[currentIndex]}" 
-              alt="${galleryTitles[currentIndex]}" 
-              style="max-width: 100%; max-height: 100%; object-fit: contain;"
-            >
-          </div>
-        </div>
-      `;
-    }
-    
-    // Find or create the title element outside the gallery container
-    if (modal) {
-      let titleElement = document.getElementById('galleryTitle');
-      if (!titleElement) {
-        titleElement = document.createElement('div');
-        titleElement.id = 'galleryTitle';
-        titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
-        modal.appendChild(titleElement);
-      }
-      
-      // Update the title text
-      titleElement.textContent = galleryTitles[currentIndex];
-    }
+  // Update slide counter
+  currentSlideEl.textContent = currentIndex + 1;
+  
+  // Remove the title from inside the slide and put it at the bottom of the modal
+  galleryContainer.innerHTML = `
+    <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+      <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
+        <img 
+          src="${galleryImages[currentIndex]}" 
+          alt="${galleryTitles[currentIndex]}" 
+          style="max-width: 100%; max-height: 100%; object-fit: contain;"
+        >
+      </div>
+    </div>
+  `;
+  
+  // Find or create the title element outside the gallery container
+  let titleElement = document.getElementById('galleryTitle');
+  if (!titleElement) {
+    titleElement = document.createElement('div');
+    titleElement.id = 'galleryTitle';
+    titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
+    document.getElementById('galleryModal').appendChild(titleElement);
   }
+  
+  // Update the title text
+  titleElement.textContent = galleryTitles[currentIndex];
+}
   
   // Previous slide
   function prevSlide() {
@@ -1224,59 +1197,6 @@ filterButtons.forEach(button => {
     });
   }
 });
-
-  // Direct filtering script - completely separate from other code
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log("Independent filter script loaded");
-    
-    // Directly select filter buttons and products
-    var buttons = document.querySelectorAll('.filter-button');
-    var products = document.querySelectorAll('.product');
-    
-    console.log("Found buttons:", buttons.length);
-    console.log("Found products:", products.length);
-    
-    // Add click handlers directly
-    buttons.forEach(function(button) {
-      button.onclick = function() {
-        var category = this.getAttribute('data-category');
-        console.log("Button clicked:", category);
-        
-        // Update button styles
-        buttons.forEach(function(btn) {
-          btn.style.backgroundColor = '#f3f4f6'; // gray-100
-          btn.style.color = 'black';
-        });
-        
-        this.style.backgroundColor = '#000033'; // navy
-        this.style.color = 'white';
-        
-        // Filter products
-        if (category === 'all') {
-          products.forEach(function(product) {
-            product.style.display = 'block';
-          });
-        } else {
-          products.forEach(function(product) {
-            var productCategory = product.getAttribute('data-category');
-            console.log("Product category:", productCategory);
-            
-            if (productCategory === category) {
-              product.style.display = 'block';
-            } else {
-              product.style.display = 'none';
-            }
-          });
-        }
-      };
-    });
-    
-    // Trigger "all" button click to set initial state
-    setTimeout(function() {
-      var allButton = document.querySelector('.filter-button[data-category="all"]');
-      if (allButton) allButton.click();
-    }, 100);
-  });
 </script>
   </body>
 </html>
