@@ -642,7 +642,7 @@ img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE
 }
 /* Filter button styling */
 .filter-button.active {
-  background-color: #000033 !important; /* Navy background */
-  color: white !important; /* White text */
+  background-color: #d1d5db !important; /* Gray-300 */
+  color: black !important; /* Black text */
   font-weight: 500;
 }
