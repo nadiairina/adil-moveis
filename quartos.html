@@ -1224,6 +1224,59 @@ filterButtons.forEach(button => {
     });
   }
 });
+
+  // Direct filtering script - completely separate from other code
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("Independent filter script loaded");
+    
+    // Directly select filter buttons and products
+    var buttons = document.querySelectorAll('.filter-button');
+    var products = document.querySelectorAll('.product');
+    
+    console.log("Found buttons:", buttons.length);
+    console.log("Found products:", products.length);
+    
+    // Add click handlers directly
+    buttons.forEach(function(button) {
+      button.onclick = function() {
+        var category = this.getAttribute('data-category');
+        console.log("Button clicked:", category);
+        
+        // Update button styles
+        buttons.forEach(function(btn) {
+          btn.style.backgroundColor = '#f3f4f6'; // gray-100
+          btn.style.color = 'black';
+        });
+        
+        this.style.backgroundColor = '#000033'; // navy
+        this.style.color = 'white';
+        
+        // Filter products
+        if (category === 'all') {
+          products.forEach(function(product) {
+            product.style.display = 'block';
+          });
+        } else {
+          products.forEach(function(product) {
+            var productCategory = product.getAttribute('data-category');
+            console.log("Product category:", productCategory);
+            
+            if (productCategory === category) {
+              product.style.display = 'block';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+        }
+      };
+    });
+    
+    // Trigger "all" button click to set initial state
+    setTimeout(function() {
+      var allButton = document.querySelector('.filter-button[data-category="all"]');
+      if (allButton) allButton.click();
+    }, 100);
+  });
 </script>
   </body>
 </html>
