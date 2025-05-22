@@ -581,7 +581,7 @@ button img:hover,
   transform: scale(1.03) !important;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
 }
-/* Fix for specific product images using their exact URLs */
+/* Fix for specific product images using their exact URLs - with increased height */
 img[src="https://lourini.pt/app/uploads/2024/07/roupeiro-branco-1200x1200.png"],
 img[src="https://lourini.pt/app/uploads/2024/07/roupeiro-1200x1200.png"],
 img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5103-scaled.jpg"],
@@ -614,7 +614,27 @@ img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE
 img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1650-scaled.jpg"],
 img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1566-scaled.jpg"] {
   object-fit: contain !important;
-  height: 280px !important;
+  height: 320px !important;  /* Increased from 280px to 320px */
   background-color: white !important;
   width: 100% !important;
+  max-height: none !important;
+  min-height: 320px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Also fix the parent container */
+.product .relative {
+  height: auto !important;
+  min-height: 320px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+/* Make sure the product card expands properly */
+.product {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
