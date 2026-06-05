@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adil Móveis — Plano de Carreira Nádia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      
+      /* Typography Colors */
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      
+      /* Branding Tones */
+      --gold: #b3923b;
+      --gold-light: #fefaf0;
+      --gold-border: #f1e4c3;
+      
+      /* Status Tones */
+      --green: #10b981;
+      --green-light: #ecfdf5;
+      --green-border: #a7f3d0;
+      
+      --blue: #3b82f6;
+      --blue-light: #eff6ff;
+      --blue-border: #bfdbfe;
+      
+      --purple: #8b5cf6;
+      --purple-light: #f5f3ff;
+      --purple-border: #ddd6fe;
+      
+      --red: #ef4444;
+      --red-light: #fef2f2;
+      --red-border: #fecaca;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .header-left { display: flex; align-items: center; gap: 1.25rem; }
+    .header-logo img {
+      height: 44px;
+      width: auto;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      padding: 2px;
+    }
+    .header-title h1 { 
+      font-size: 1.25rem; 
+      font-weight: 800; 
+      color: var(--text-main); 
+      letter-spacing: -0.02em;
+    }
+    .header-title p { 
+      font-size: 0.8rem; 
+      color: var(--text-muted); 
+      font-weight: 500;
+      margin-top: 0.1rem;
+    }
+    .header-badge {
+      background: var(--purple-light);
+      border: 1px solid var(--purple-border);
+      color: var(--purple);
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .header-badge::before { content: '●'; font-size: 0.5rem; }
+
+    /* ===== CONTAINER ===== */
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 2rem 1.5rem; 
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* ===== KPI CARDS ===== */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);
+    }
+    .kpi-icon { font-size: 1.5rem; }
+    .kpi-value { font-size: 1.5rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.02em; }
+    .kpi-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    
+    .kpi-card.gold { border-left: 4px solid var(--gold); }
+    .kpi-card.green { border-left: 4px solid var(--green); }
+    .kpi-card.blue { border-left: 4px solid var(--blue); }
+    .kpi-card.purple { border-left: 4px solid var(--purple); }
+    .kpi-card.red { border-left: 4px solid var(--red); }
+
+    /* ===== MAIN LAYOUT CARDS ===== */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== GRIDS ===== */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    @media (max-width: 900px) { 
+      .grid-2, .grid-3 { grid-template-columns: 1fr; } 
+    }
+
+    /* ===== BLOCKS & TIMELINE ===== */
+    .block-item {
+      padding: 1.25rem;
+      border-radius: 12px;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .block-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .block-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+    .block-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ===== TIMELINE FLOW ===== */
+    .flow { display: flex; flex-direction: column; gap: 0.85rem; }
+    .flow-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+    .flow-num {
+      width: 1.75rem;
+      height: 1.75rem;
+      background: var(--purple);
+      color: #ffffff;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .flow-content { display: flex; flex-direction: column; gap: 0.15rem; }
+    .flow-title { font-size: 0.85rem; font-weight: 700; color: var(--text-main); }
+    .flow-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      background: #ffffff;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-logo">
+        <img src="images/adil-moveis-logo.png" alt="Adil Móveis">
+      </div>
+      <div class="header-title">
+        <h1>Adil Móveis — Planeamento de Carreira</h1>
+        <p>Gestora: Nádia Irina · Plano de Viabilidade Privado</p>
+      </div>
+    </div>
+    <div class="header-badge">ESTRATÉGICO PRIVADO</div>
+  </div>
+
+  <div class="container">
+
+    <!-- WARNING NOTICE -->
+    <div class="card" style="border-left: 4px solid var(--purple); background: var(--purple-light);">
+      <div class="card-title" style="color: var(--purple);">🔒 Painel de Acesso Restrito</div>
+      <p style="font-size: 0.85rem; color: var(--text-main);">Este documento é confidencial e contém a análise de viabilidade financeira para a transição a tempo inteiro da Nádia. **Não deve ser partilhado com terceiros.**</p>
+    </div>
+
+    <!-- KPI CARDS -->
+    <div class="kpi-grid">
+      <div class="kpi-card purple">
+        <span class="kpi-icon">🎯</span>
+        <span class="kpi-value">1.200€</span>
+        <span class="kpi-label">Salário Alvo Líquido</span>
+      </div>
+      <div class="kpi-card gold">
+        <span class="kpi-icon">💶</span>
+        <span class="kpi-value">1.485€</span>
+        <span class="kpi-label">Custo Total da Empresa</span>
+      </div>
+      <div class="kpi-card green">
+        <span class="kpi-icon">📈</span>
+        <span class="kpi-value">6.000€</span>
+        <span class="kpi-label">Faturação Mínima Online</span>
+      </div>
+      <div class="kpi-card blue">
+        <span class="kpi-icon">⏱️</span>
+        <span class="kpi-value">6 Meses</span>
+        <span class="kpi-label">Prazo de Transição</span>
+      </div>
+    </div>
+
+    <!-- CARREIRA, ORÇAMENTO E VIABILIDADE -->
+    <div class="grid-2">
+      <!-- PLANO DE CARREIRA -->
+      <div class="card">
+        <div class="card-title">💼 Estrutura de Custos & Viabilidade</div>
+        <div class="card-subtitle">Cálculo de margens necessárias para o negócio suportar a contratação.</div>
+        
+        <div class="checklist">
+          <div class="block-item" style="border-left: 4px solid var(--purple); margin-bottom: 0.75rem;">
+            <span class="block-title" style="color: var(--purple);">Salário da Nádia</span>
+            <span class="block-value">1.200€ líquidos</span>
+            <span class="block-desc">Remuneração base inicial para gestão de marketing, apoio por WhatsApp e processamento de encomendas do e-commerce.</span>
+          </div>
+          
+          <div class="block-item" style="border-left: 4px solid var(--gold); margin-bottom: 0.75rem;">
+            <span class="block-title" style="color: var(--gold);">TSU e Encargos Sociais</span>
+            <span class="block-value">285€ /mês (23.75%)</span>
+            <span class="block-desc">Encargo obrigatório pago pela empresa à Segurança Social sobre o salário bruto correspondente.</span>
+          </div>
+
+          <div class="block-item" style="border-left: 4px solid var(--green);">
+            <span class="block-title" style="color: var(--green);">Volume de Vendas Alvo</span>
+            <span class="block-value">15 a 20 encomendas /mês</span>
+            <span class="block-desc">Com um ticket médio de 400€ a 500€ e uma margem comercial de 25%, faturar entre <strong>6.000€ e 7.500€ por mês no site</strong> cobre a 100% o salário e custos publicitários.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CRONOGRAMA DE TRANSIÇÃO -->
+      <div class="card">
+        <div class="card-title">📅 Cronograma de Transição de Carreira</div>
+        <div class="card-subtitle">Fases recomendadas para garantir a sustentabilidade antes da saída do emprego atual.</div>
+        
+        <div class="flow">
+          <div class="flow-step">
+            <span class="flow-num">1</span>
+            <div class="flow-content">
+              <span class="flow-title">Fase 1: Aquecimento & Arranque (Mês 1)</span>
+              <span class="flow-desc">Colocação do site online com preços reais. Lançamento dos primeiros anúncios. Meta: **3-5 vendas iniciais** (part-time).</span>
+            </div>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">2</span>
+            <div class="flow-content">
+              <span class="flow-title">Fase 2: Consistência & Otimização (Mês 2 e 3)</span>
+              <span class="flow-desc">Otimização de públicos e aumento orgânico das visitas. Meta: **8-12 encomendas/mês** (estabilidade de processos).</span>
+            </div>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">3</span>
+            <div class="flow-content">
+              <span class="flow-title">Fase 3: Salto para Full-Time (Mês 4 a 6)</span>
+              <span class="flow-desc">Manter a fasquia estável das **15-20 encomendas online**. Faturação cobre 100% do ordenado. Transição para dedicação a tempo inteiro.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Plano Privado de Carreira · Adil Móveis E-commerce Project · 2025
+  </div>
+
+</body>
+</html>
