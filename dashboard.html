@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Adil Móveis E-commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      
+      /* Typography Colors */
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      
+      /* Branding Tones */
+      --gold: #b3923b;
+      --gold-light: #fefaf0;
+      --gold-border: #f1e4c3;
+      
+      /* Status Tones */
+      --green: #10b981;
+      --green-light: #ecfdf5;
+      --green-border: #a7f3d0;
+      
+      --blue: #3b82f6;
+      --blue-light: #eff6ff;
+      --blue-border: #bfdbfe;
+      
+      --purple: #8b5cf6;
+      --purple-light: #f5f3ff;
+      --purple-border: #ddd6fe;
+      
+      --red: #ef4444;
+      --red-light: #fef2f2;
+      --red-border: #fecaca;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .header-left { display: flex; align-items: center; gap: 1.25rem; }
+    .header-logo img {
+      height: 44px;
+      width: auto;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      padding: 2px;
+    }
+    .header-title h1 { 
+      font-size: 1.25rem; 
+      font-weight: 800; 
+      color: var(--text-main); 
+      letter-spacing: -0.02em;
+    }
+    .header-title p { 
+      font-size: 0.8rem; 
+      color: var(--text-muted); 
+      font-weight: 500;
+      margin-top: 0.1rem;
+    }
+    .header-badge {
+      background: var(--gold-light);
+      border: 1px solid var(--gold-border);
+      color: var(--gold);
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .header-badge::before { content: '●'; font-size: 0.5rem; }
+
+    /* ===== CONTAINER ===== */
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 2rem 1.5rem; 
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* ===== FILTER BAR ===== */
+    .filter-bar {
+      display: flex;
+      gap: 0.75rem;
+      background: #ffffff;
+      padding: 0.85rem 1.25rem;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01);
+    }
+    .filter-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-right: 0.5rem;
+    }
+    .filter-btn {
+      padding: 0.45rem 1.15rem;
+      border-radius: 30px;
+      border: 1px solid var(--border-color);
+      background: #f8fafc;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .filter-btn:hover {
+      background: #e2e8f0;
+      color: var(--text-main);
+    }
+    .filter-btn.active {
+      background: var(--text-main);
+      color: #ffffff;
+      border-color: var(--text-main);
+    }
+
+    /* ===== KPI CARDS ===== */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .kpi-card:hover { 
+      transform: translateY(-2px); 
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); 
+    }
+    .kpi-icon { font-size: 1.5rem; }
+    .kpi-value { font-size: 1.5rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.02em; }
+    .kpi-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    
+    .kpi-card.gold { border-left: 4px solid var(--gold); }
+    .kpi-card.green { border-left: 4px solid var(--green); }
+    .kpi-card.blue { border-left: 4px solid var(--blue); }
+    .kpi-card.purple { border-left: 4px solid var(--purple); }
+    .kpi-card.red { border-left: 4px solid var(--red); }
+
+    /* ===== MAIN LAYOUT CARDS ===== */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== GRIDS ===== */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    @media (max-width: 900px) { 
+      .grid-2, .grid-3 { grid-template-columns: 1fr; } 
+    }
+
+    /* ===== PROGRESS BARS ===== */
+    .progress-group { display: flex; flex-direction: column; gap: 0.9rem; }
+    .progress-item { display: flex; flex-direction: column; gap: 0.35rem; }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .progress-name { color: var(--text-main); }
+    .progress-pct { color: var(--text-muted); }
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      background-color: #f1f5f9;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.8s ease-out;
+    }
+
+    /* ===== CHECKLISTS ===== */
+    .checklist { display: flex; flex-direction: column; gap: 0.75rem; }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      transition: background-color 0.2s;
+    }
+    .check-item:hover { background-color: #f1f5f9; }
+    .check-icon {
+      font-size: 0.9rem;
+      font-weight: 800;
+      width: 1.35rem;
+      height: 1.35rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .check-icon.done {
+      background-color: var(--green-light);
+      border: 1.5px solid var(--green);
+      color: var(--green);
+    }
+    .check-icon.todo {
+      background-color: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: transparent;
+    }
+    .check-content { flex: 1; display: flex; flex-direction: column; gap: 0.15rem; }
+    .check-title { font-size: 0.85rem; font-weight: 700; color: var(--text-main); }
+    .check-desc { font-size: 0.78rem; color: var(--text-muted); }
+    
+    .check-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .check-tag.tech { background-color: var(--blue-light); color: var(--blue); border: 1px solid var(--blue-border); }
+    .check-tag.nadia { background-color: var(--purple-light); color: var(--purple); border: 1px solid var(--purple-border); }
+    .check-tag.pai, .check-tag.deles { background-color: var(--gold-light); color: var(--gold); border: 1px solid var(--gold-border); }
+
+    /* ===== BLOCKS & TIMELINE ===== */
+    .block-item {
+      padding: 1.25rem;
+      border-radius: 12px;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .block-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .block-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+    .block-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ===== TIMELINE FLOW ===== */
+    .flow { display: flex; flex-direction: column; gap: 0.85rem; }
+    .flow-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+    .flow-num {
+      width: 1.75rem;
+      height: 1.75rem;
+      background: var(--text-main);
+      color: #ffffff;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .flow-content { display: flex; flex-direction: column; gap: 0.15rem; }
+    .flow-title { font-size: 0.85rem; font-weight: 700; color: var(--text-main); }
+    .flow-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* ===== NEWSLETTER LIST ===== */
+    .news-list { display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1rem; }
+    .news-item { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 0.2rem; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      background: #ffffff;
+      margin-top: auto;
+    }
+    .footer a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-logo">
+        <img src="images/adil-moveis-logo.png" alt="Adil Móveis">
+      </div>
+      <div class="header-title">
+        <h1>Adil Móveis — E-commerce Dashboard</h1>
+        <p>Gestora: Nádia Irina · Especialista Mkt & Pub</p>
+      </div>
+    </div>
+    <div class="header-badge">EM CONSTRUÇÃO</div>
+  </div>
+  <div class="container">
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <span class="filter-label">🔎 Filtrar Painel:</span>
+      <button class="filter-btn active" data-filter="all">📂 Ver Tudo</button>
+      <button class="filter-btn" data-filter="nadia">👩‍💻 Cenas Minhas (Nádia: Mkt/Viabilidade)</button>
+      <button class="filter-btn" data-filter="deles">👨‍💼 Cenas Deles (Pai/Irmãos: Preços/Lojas)</button>
+      <button class="filter-btn" data-filter="tecnico">⚙️ Cenas Técnicas (Setup/Código)</button>
+    </div>
+
+    <!-- KPI CARDS -->
+    <div class="kpi-grid">
+      <div class="kpi-card gold" data-view="nadia deles tecnico">
+        <span class="kpi-icon">🏗️</span>
+        <span class="kpi-value">Fase 2</span>
+        <span class="kpi-label">Construção da Loja</span>
+      </div>
+      <div class="kpi-card green" data-view="tecnico deles">
+        <span class="kpi-icon">✅</span>
+        <span class="kpi-value">213</span>
+        <span class="kpi-label">Produtos Ativos</span>
+      </div>
+      <div class="kpi-card blue" data-view="nadia">
+        <span class="kpi-icon">💶</span>
+        <span class="kpi-value">150€</span>
+        <span class="kpi-label">Orçamento Ads/mês</span>
+      </div>
+      <div class="kpi-card purple" data-view="nadia deles">
+        <span class="kpi-icon">🎯</span>
+        <span class="kpi-value">1200€</span>
+        <span class="kpi-label">Salário Alvo Nádia</span>
+      </div>
+      <div class="kpi-card red" data-view="deles nadia">
+        <span class="kpi-icon">📈</span>
+        <span class="kpi-value">6000€</span>
+        <span class="kpi-label">Meta de Faturação</span>
+      </div>
+    </div>
+
+    <!-- PROGRESSO GERAL DO PROJETO -->
+    <div class="card" data-view="nadia deles tecnico">
+      <div class="card-title">📊 Progresso Geral do Projeto</div>
+      <div class="card-subtitle">Estado atual do desenvolvimento técnico e das definições de negócio.</div>
+      <div class="progress-group">
+        <div class="progress-item" data-view="tecnico">
+          <div class="progress-label">
+            <span class="progress-name">Infraestrutura Técnica (Snipcart + Carrinho)</span>
+            <span class="progress-pct">100%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 100%; background: var(--green);"></div></div>
+        </div>
+        <div class="progress-item" data-view="tecnico">
+          <div class="progress-label">
+            <span class="progress-name">Integração de Botões de Compra (213 artigos)</span>
+            <span class="progress-pct">100%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 100%; background: var(--green);"></div></div>
+        </div>
+        <div class="progress-item" data-view="tecnico deles">
+          <div class="progress-label">
+            <span class="progress-name">WhatsApp Flutuante de Vendas</span>
+            <span class="progress-pct">100%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 100%; background: var(--green);"></div></div>
+        </div>
+        <div class="progress-item" data-view="deles">
+          <div class="progress-label">
+            <span class="progress-name">Definição da Lista de Preços Reais (Com o Pai)</span>
+            <span class="progress-pct">10%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 10%; background: var(--gold);"></div></div>
+        </div>
+        <div class="progress-item" data-view="deles">
+          <div class="progress-label">
+            <span class="progress-name">Validação do Catálogo de Artigos Ativos (Com a Irmã)</span>
+            <span class="progress-pct">0%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width: 0%; background: var(--gold);"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARREIRA, ORÇAMENTO E VIABILIDADE -->
+    <div class="grid-2" data-view="nadia deles">
+      <!-- PLANO DE CARREIRA -->
+      <div class="card" data-view="nadia deles">
+        <div class="card-title">💼 Plano de Carreira & Viabilidade</div>
+        <div class="card-subtitle">Como transitar com segurança para o negócio de família a tempo inteiro.</div>
+        
+        <div class="checklist">
+          <div class="block-item" style="border-left: 4px solid var(--purple);" data-view="nadia deles">
+            <span class="block-title" style="color: var(--purple);">Salário Alvo</span>
+            <span class="block-value">1.200€ fixos</span>
+            <span class="block-desc">Definido sem comissões iniciais. Ajustável no futuro de acordo com o crescimento das vendas da loja.</span>
+          </div>
+          
+          <div class="block-item" style="border-left: 4px solid var(--gold);" data-view="nadia deles">
+            <span class="block-title" style="color: var(--gold);">Custo Real da Empresa</span>
+            <span class="block-value">1.485€ /mês</span>
+            <span class="block-desc">Inclui os 1.200€ de salário bruto + 23,75% de TSU (285€) pagos pela empresa à Segurança Social.</span>
+          </div>
+
+          <div class="block-item" style="border-left: 4px solid var(--green);" data-view="nadia deles">
+            <span class="block-title" style="color: var(--green);">Meta de Vendas para a Transição</span>
+            <span class="block-value">15 a 20 vendas /mês</span>
+            <span class="block-desc">Representa faturar cerca de <strong>6.000€ a 7.500€ brutas/mês</strong> online (assumindo ticket médio de 400€ e margem de 25%). O lucro líquido gerado paga a 100% o teu ordenado.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CRONOGRAMA DE TRANSIÇÃO -->
+      <div class="card" data-view="nadia deles">
+        <div class="card-title">📅 Cronograma de Transição (Meta 6 Meses)</div>
+        <div class="card-subtitle">Fases recomendadas para garantir estabilidade financeira no salto para full-time.</div>
+        
+        <div class="flow">
+          <div class="flow-step" data-view="nadia deles">
+            <span class="flow-num">1</span>
+            <div class="flow-content">
+              <span class="flow-title">Mês 1: Lançamento & Testes</span>
+              <span class="flow-desc">Colocação do site público, arranque dos anúncios locais (5€/dia). Meta: <strong>3-5 encomendas</strong>. Apoio familiar em part-time.</span>
+            </div>
+          </div>
+          <div class="flow-step" data-view="nadia deles">
+            <span class="flow-num">2</span>
+            <div class="flow-content">
+              <span class="flow-title">Mês 2 e 3: Otimização</span>
+              <span class="flow-desc">Otimização de públicos, campanhas de retargeting de colchões e fecho de leads por WhatsApp. Meta: <strong>8-12 encomendas/mês</strong>.</span>
+            </div>
+          </div>
+          <div class="flow-step" data-view="nadia deles">
+            <span class="flow-num">3</span>
+            <div class="flow-content">
+              <span class="flow-title">Mês 4 a 6: Estabilidade & Full-Time</span>
+              <span class="flow-desc">Atingir de forma consistente <strong>15-20 encomendas/mês</strong> (6.000€ faturados online). O lucro gerado cobre o salário. Transição para full-time.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESTRATÉGIA DE ANÚNCIOS (GOOGLE & META) -->
+    <div class="card" data-view="nadia">
+      <div class="card-title">📣 Planeamento Detalhado de Tráfego Pago</div>
+      <div class="card-subtitle">Parâmetros exatos das campanhas no Google Search e Meta Ads para gerir os anúncios.</div>
+      
+      <div class="grid-2">
+        <!-- GOOGLE ADS -->
+        <div class="block-item" style="background: var(--blue-light); border: 1px solid var(--blue-border);" data-view="nadia">
+          <span class="block-title" style="color: var(--blue);">🔍 Google Ads Search (Pesquisa Direta)</span>
+          <span class="block-value">90€/mês (3€/dia)</span>
+          <div class="block-desc" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <p><strong>Duração:</strong> Contínua (Sempre Ativa).</p>
+            <p><strong>Geolocalização:</strong> Concelhos de Almada, Seixal e Barreiro.</p>
+            <p><strong>Keywords Principais:</strong> <em>"loja de moveis almada", "comprar colchao margem sul", "camas casal feijo", "sofa por medida seixal"</em>.</p>
+            <p><strong>Mensagem do Anúncio:</strong> Focada em "Entrega e Montagem Grátis" e "Assistência Pós-Venda Local". Ligar o telefone da loja para chamadas diretas.</p>
+          </div>
+        </div>
+
+        <!-- META ADS -->
+        <div class="block-item" style="background: var(--purple-light); border: 1px solid var(--purple-border);" data-view="nadia">
+          <span class="block-title" style="color: var(--purple);">📱 Meta Ads (Facebook & Instagram)</span>
+          <span class="block-value">60€/mês (2€/dia)</span>
+          <div class="block-desc" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <p><strong>Duração:</strong> Contínua (Sempre Ativa).</p>
+            <p><strong>Geolocalização:</strong> Raio de 15km das lojas físicas do Feijó.</p>
+            <p><strong>Público-Alvo:</strong> Idades de 25-60 anos, com interesse em <em>Decoração, IKEA, Mudanças de Casa, Compra de Habitação, Casamento</em>.</p>
+            <p><strong>Criativos:</strong> Carrossel visual com fotos profissionais Lourini (camas e colchões) + Vídeos dinâmicos (Reels) com time-lapses de entregas reais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAMPANHAS E PROMOÇÕES -->
+    <div class="card" data-view="deles nadia">
+      <div class="card-title">🏷️ Promoções de Lançamento</div>
+      <div class="card-subtitle">As 3 mecânicas promocionais para atrair os primeiros compradores.</div>
+      <div class="grid-3">
+        <div class="block-item" data-view="deles nadia">
+          <span class="block-title" style="color: var(--gold);">🚀 Cupão BEMVINDO5</span>
+          <span class="block-desc">Oferece 5% de desconto imediato na primeira compra no site. Ativado via Snipcart. Divulgado no cabeçalho do site e redes sociais.</span>
+        </div>
+        <div class="block-item" data-view="deles nadia">
+          <span class="block-title" style="color: var(--green);">🚚 Montagem Grátis Local</span>
+          <span class="block-desc">Destacar que a entrega e a montagem são totalmente gratuitas no concelho de Almada e Seixal. Diferencial competitivo forte contra grandes superfícies.</span>
+        </div>
+        <div class="block-item" data-view="deles nadia">
+          <span class="block-title" style="color: var(--blue);">📦 Pack Quarto Completo</span>
+          <span class="block-desc">Desconto progressivo automático no carrinho quando o cliente compra uma Cama + Cabeceira + Colchão em simultâneo. Sobe o valor gasto por cliente.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROADMAP DE TAREFAS -->
+    <div class="grid-2" data-view="deles nadia tecnico">
+      <!-- ROADMAP -->
+      <div class="card" data-view="deles nadia tecnico">
+        <div class="card-title">🗓️ Roadmap de Fases</div>
+        <div class="card-subtitle">A nossa caminhada do zero até ao e-commerce operacional.</div>
+        <div class="flow">
+          <div class="flow-step" data-view="deles nadia tecnico">
+            <span class="flow-num">✓</span>
+            <div class="flow-content">
+              <span class="flow-title">Fase 1: Pesquisa & Escolha da Tecnologia</span>
+              <span class="flow-desc">Análise de mercado, escolha do Snipcart e preparação dos ficheiros HTML.</span>
+            </div>
+          </div>
+          <div class="flow-step" style="border-left: 3px solid var(--gold);" data-view="deles nadia tecnico">
+            <span class="flow-num" style="background: var(--gold);">▶</span>
+            <div class="flow-content">
+              <span class="flow-title">Fase 2: Construção da Loja (Atual)</span>
+              <span class="flow-desc">Snipcart instalado ✅ · Carrinho ativo ✅ · 213 botões de compra configurados ✅ · Botão WhatsApp integrado ✅ · <strong>Pendente: catálogo ativo (irmã) e folha de preços finais (pai).</strong></span>
+            </div>
+          </div>
+          <div class="flow-step" data-view="deles nadia tecnico">
+            <span class="flow-num" style="background: var(--text-muted);">3</span>
+            <div class="flow-content">
+              <span class="flow-title">Fase 3: Pagamentos Nacionais</span>
+              <span class="flow-desc">Criar conta Ifthenpay/Eupago para aceitar pagamentos com referência MBWay e Multibanco.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAREFAS CHECKLIST -->
+      <div class="card" data-view="deles nadia tecnico">
+        <div class="card-title">✏️ Próximas Tarefas — Checklist</div>
+        <div class="card-subtitle">Tarefas operacionais imediatas para colocar o projeto online.</div>
+        <div class="checklist">
+          <div class="check-item" data-view="tecnico">
+            <span class="check-icon done">✓</span>
+            <div class="check-content">
+              <span class="check-title">Ligar o Snipcart às 14 páginas do site</span>
+              <span class="check-desc">Motor de compras ativo e testado em todo o site.</span>
+            </div>
+            <span class="check-tag tech">Técnico</span>
+          </div>
+          
+          <div class="check-item" data-view="tecnico">
+            <span class="check-icon done">✓</span>
+            <div class="check-content">
+              <span class="check-title">Carrinho e Botão WhatsApp Flutuante</span>
+              <span class="check-desc">Atalhos dinâmicos no canto das páginas para compra e suporte rápido.</span>
+            </div>
+            <span class="check-tag tech">Técnico</span>
+          </div>
+
+          <div class="check-item" data-view="deles">
+            <span class="check-icon todo"></span>
+            <div class="check-content">
+              <span class="check-title">Validar catálogo de artigos com a Irmã</span>
+              <span class="check-desc">Confirmar se o site está atualizado com os produtos que se vendem efetivamente.</span>
+            </div>
+            <span class="check-tag deles">Deles</span>
+          </div>
+
+          <div class="check-item" data-view="deles">
+            <span class="check-icon todo"></span>
+            <div class="check-content">
+              <span class="check-title">Preços reais e especificações (Pai/Irmã)</span>
+              <span class="check-desc">Obter a folha com preços de venda e especificações para atualizar nos 213 artigos.</span>
+            </div>
+            <span class="check-tag deles">Deles</span>
+          </div>
+
+          <div class="check-item" data-view="tecnico">
+            <span class="check-icon todo"></span>
+            <div class="check-content">
+              <span class="check-title">Publicar o site no GitHub (Live)</span>
+              <span class="check-desc">Enviar as alterações para o GitHub Pages para a loja ficar visível ao público.</span>
+            </div>
+            <span class="check-tag tech">Técnico</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTEGRAÇÕES E NEWSLETTERS -->
+    <div class="grid-2" data-view="tecnico nadia">
+      <!-- INTEGRAÇÕES TÉCNICAS -->
+      <div class="card" data-view="tecnico">
+        <div class="card-title">🔌 Guias de Integração Técnica</div>
+        <div class="card-subtitle">Como gerir as integrações no painel do Snipcart e Stripe de forma simples.</div>
+        <div class="checklist">
+          <div class="block-item" data-view="tecnico">
+            <span class="block-title" style="color: var(--blue);">💳 Klarna (Em 3x sem juros)</span>
+            <span class="block-desc">Ativa-se na conta Stripe em <em>Métodos de Pagamento > Klarna > Ativar</em>. O checkout do Snipcart reconhece-a automaticamente.</span>
+          </div>
+          <div class="block-item" data-view="tecnico">
+            <span class="block-title" style="color: var(--purple);">🎟️ Cupão de Desconto</span>
+            <span class="block-desc">Configurado no painel do Snipcart em <em>Promotions > Discounts</em>. Criar o código "BEMVINDO5" associado a 5% de desconto.</span>
+          </div>
+          <div class="block-item" data-view="tecnico">
+            <span class="block-title" style="color: var(--gold);">📧 MailerLite (Email Automático)</span>
+            <span class="block-desc">Ligar o formulário da newsletter à conta MailerLite. Envia o cupão BEMVINDO5 automaticamente assim que o utilizador subscreve.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESTRATÉGIA DE NEWSLETTER -->
+      <div class="card" data-view="nadia">
+        <div class="card-title">💡 Plano de Newsletter (1 a 2x por mês)</div>
+        <div class="card-subtitle">Ideias de conteúdos úteis e comerciais para fidelizar a tua lista de emails.</div>
+        <div class="checklist">
+          <div class="block-item" data-view="nadia">
+            <span class="block-title" style="color: var(--green);">1. Newsletter Educativa</span>
+            <ul class="news-list">
+              <li class="news-item"><em>«Como escolher a firmeza ideal para o teu colchão? Molas vs Látex»</em></li>
+              <li class="news-item"><em>«Passo a passo: Como tirar medidas corretas à sala antes de comprar o sofá»</em></li>
+            </ul>
+          </div>
+          <div class="block-item" data-view="nadia">
+            <span class="block-title" style="color: var(--blue);">2. Newsletter Inspiracional</span>
+            <ul class="news-list">
+              <li class="news-item"><em>«3 ideias de decoração de quarto de casal com fotos reais de clientes locais»</em></li>
+              <li class="news-item"><em>«Tendências de decoração de salas: Cores e tecidos da nova estação»</em></li>
+            </ul>
+          </div>
+          <div class="block-item" data-view="nadia">
+            <span class="block-title" style="color: var(--gold);">3. Newsletter Comercial</span>
+            <ul class="news-list">
+              <li class="news-item"><em>«Campanha Especial: Valorizamos o seu colchão usado na compra do novo»</em></li>
+              <li class="news-item"><em>«Desconto de Boas-Vindas: 5% extra no nosso site este fim-de-semana»</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Dashboard criado por <a href="https://nadiairina.github.io/Nadia-Portfolio/" target="_blank">Nádia Irina</a> · Adil Móveis E-commerce Project · 2025
+  </div>
+
+  <!-- FILTER JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      
+      function applyFilter(filterValue) {
+        const filterTargets = document.querySelectorAll('[data-view]');
+        
+        filterTargets.forEach(target => {
+          const views = target.getAttribute('data-view').split(' ');
+          if (filterValue === 'all' || views.includes(filterValue)) {
+            // Restore default displays
+            if (target.classList.contains('kpi-card')) {
+              target.style.display = 'flex';
+            } else if (target.classList.contains('check-item') || target.classList.contains('progress-item') || target.classList.contains('block-item')) {
+              target.style.display = 'flex';
+            } else {
+              target.style.display = 'block';
+            }
+          } else {
+            target.style.display = 'none';
+          }
+        });
+
+        // Hide parent grid blocks if all their children are hidden
+        const grids = document.querySelectorAll('.grid-2, .grid-3');
+        grids.forEach(grid => {
+          const visibleChildren = Array.from(grid.children).filter(child => child.style.display !== 'none');
+          if (visibleChildren.length === 0) {
+            grid.style.display = 'none';
+          } else {
+            grid.style.display = 'grid';
+          }
+        });
+      }
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filterValue = btn.getAttribute('data-filter');
+          applyFilter(filterValue);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

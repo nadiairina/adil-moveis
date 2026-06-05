@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -29,6 +32,11 @@
             <a href="tel:212582788" class="flex items-center hover:text-gray-300">
               <i data-feather="phone" class="w-4 h-4 mr-3"></i> 212 582 788
             </a>
+            <!-- Snipcart Button -->
+            <button class="snipcart-checkout flex items-center font-bold bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-200 transition-colors">
+              <i data-feather="shopping-cart" class="w-4 h-4 mr-2"></i>
+              <span class="snipcart-total-price">0.00€</span>
+            </button>
           </div>
         </div>
       </div>
@@ -153,9 +161,17 @@
         onclick="openGallery(0)"
       />
       </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Robson</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Robson</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-robson"
+            data-item-name="Lourini - Sofá Robson"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
  <!-- Product 2 (Camas) -->
@@ -169,9 +185,17 @@
       onclick="openGallery(1)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Deryl</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Deryl</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-deryl"
+            data-item-name="Lourini - Sofá Deryl"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    <!-- Product 3 (Camas) -->
@@ -185,9 +209,17 @@
       onclick="openGallery(2)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Amazónia</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Amazónia</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-amaznia"
+            data-item-name="Lourini - Sofá Amazónia"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    <!-- Product 4 (Camas) -->
@@ -201,9 +233,17 @@
       onclick="openGallery(3)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Deryl</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Deryl</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-deryl"
+            data-item-name="Lourini - Deryl"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    <!-- Product 5 (Camas) -->
@@ -217,9 +257,17 @@
       onclick="openGallery(4)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Megan</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Megan</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-megan"
+            data-item-name="Lourini - Sofá Megan"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 6 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -232,9 +280,17 @@
       onclick="openGallery(5)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Sabrina</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Sabrina</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-sabrina"
+            data-item-name="Lourini - Sofá Sabrina"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 7 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -247,9 +303,17 @@
       onclick="openGallery(6)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Stuart</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Stuart</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-stuart"
+            data-item-name="Lourini - Sofá Stuart"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 8 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -262,9 +326,17 @@
       onclick="openGallery(7)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Damon</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Damon</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-damon"
+            data-item-name="Lourini - Sofá Damon"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 9 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -277,9 +349,17 @@
       onclick="openGallery(8)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá George</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá George</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-george"
+            data-item-name="Lourini - Sofá George"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 10 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -292,9 +372,17 @@
       onclick="openGallery(9)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Argo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Argo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-argo"
+            data-item-name="Lourini - Sofá Argo"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   <!-- Product 11 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -306,9 +394,17 @@
         onclick="openGallery(10)"
       />
       </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Zeller</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Zeller</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-zeller"
+            data-item-name="Lourini - Sofá Zeller"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
  <!-- Product 12 (Camas) -->
@@ -322,9 +418,17 @@
       onclick="openGallery(11)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Cadmus</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Cadmus</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-cadmus"
+            data-item-name="Lourini - Sofá Cadmus"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    <!-- Product 13 (Camas) -->
@@ -338,9 +442,17 @@
       onclick="openGallery(12)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Sírio</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Sírio</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-srio"
+            data-item-name="Lourini - Sofá Sírio"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    <!-- Product 14 (Camas) -->
@@ -354,9 +466,17 @@
       onclick="openGallery(13)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Daytona</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Daytona</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-daytona"
+            data-item-name="Lourini - Sofá Daytona"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    <!-- Product 15 (Camas) -->
@@ -370,9 +490,17 @@
       onclick="openGallery(14)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Dennis</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Dennis</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-dennis"
+            data-item-name="Lourini - Sofá Dennis"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 16 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -385,9 +513,17 @@
       onclick="openGallery(15)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Sírio</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Sírio</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-srio"
+            data-item-name="Lourini - Sofá Sírio"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    
    
@@ -402,9 +538,17 @@
       onclick="openGallery(16)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Calvin</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Calvin</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-calvin"
+            data-item-name="Lourini - Calvin"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 18 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -417,9 +561,17 @@
       onclick="openGallery(17)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Marli</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Marli</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-marli"
+            data-item-name="Lourini - Sofá Marli"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   <!-- Product 19 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -431,9 +583,17 @@
         onclick="openGallery(18)"
       />
       </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Mistik</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Mistik</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-mistik"
+            data-item-name="Lourini - Sofá Mistik"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
  <!-- Product 20 (Camas) -->
@@ -447,9 +607,17 @@
       onclick="openGallery(19)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Trevor</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Trevor</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-trevor"
+            data-item-name="Lourini - Sofá Trevor"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
    
@@ -464,9 +632,17 @@
       onclick="openGallery(20)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Sofá Vidal</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Sofá Vidal</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-sof-vidal"
+            data-item-name="Lourini - Sofá Vidal"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 22 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -479,9 +655,17 @@
       onclick="openGallery(21)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeirão Frank</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeirão Frank</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeiro-frank"
+            data-item-name="Lourini - Cadeirão Frank"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 23 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -494,9 +678,17 @@
       onclick="openGallery(22)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeirão Connor</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeirão Connor</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeiro-connor"
+            data-item-name="Lourini - Cadeirão Connor"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
    <!-- Product 24 (Camas) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -509,9 +701,17 @@
       onclick="openGallery(23)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeirão Lion</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeirão Lion</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeiro-lion"
+            data-item-name="Lourini - Cadeirão Lion"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   <!-- Product 25 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sofas">
@@ -523,9 +723,17 @@
         onclick="openGallery(24)"
       />
       </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeirão Dover</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeirão Dover</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeiro-dover"
+            data-item-name="Lourini - Cadeirão Dover"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
  
@@ -541,9 +749,17 @@
       onclick="openGallery(25)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Aparador Ibiza</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-ibiza"
+            data-item-name="Lourini - Aparador Ibiza"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -555,9 +771,17 @@
       onclick="openGallery(26)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Aparador City</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador City</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-city"
+            data-item-name="Lourini - Aparador City"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -569,9 +793,17 @@
       onclick="openGallery(27)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Base Tv Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Base Tv Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-base-tv-faro"
+            data-item-name="Lourini - Base Tv Faro"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -583,9 +815,17 @@
       onclick="openGallery(28)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-faro"
+            data-item-name="Lourini - Consola Faro"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -597,9 +837,17 @@
       onclick="openGallery(29)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola Ibiza</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-ibiza"
+            data-item-name="Lourini - Consola Ibiza"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -611,9 +859,17 @@
       onclick="openGallery(30)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-mlaga"
+            data-item-name="Lourini - Consola Málaga"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -625,9 +881,17 @@
       onclick="openGallery(31)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Base de TV Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Base de TV Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-base-de-tv-mlaga"
+            data-item-name="Lourini - Base de TV Málaga"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -639,9 +903,17 @@
       onclick="openGallery(32)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola Toronto</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-toronto"
+            data-item-name="Lourini - Consola Toronto"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -653,9 +925,17 @@
       onclick="openGallery(33)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola Malmo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-malmo"
+            data-item-name="Lourini - Consola Malmo"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -667,9 +947,17 @@
       onclick="openGallery(34)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola toronto</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-toronto"
+            data-item-name="Lourini - Consola toronto"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="moveis">
@@ -681,9 +969,17 @@
       onclick="openGallery(35)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Consola Malmo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Consola Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-consola-malmo"
+            data-item-name="Lourini - Consola Malmo"
+            data-item-price="399.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   
   <!-- Product 49 (Cama) -->
@@ -696,9 +992,17 @@
       onclick="openGallery(36)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Centro Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Centro Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-centro-faro"
+            data-item-name="Lourini - Mesa de Centro Faro"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -710,9 +1014,17 @@
       onclick="openGallery(37)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Centro City</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Centro City</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-centro-city"
+            data-item-name="Lourini - Mesa de Centro City"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -724,9 +1036,17 @@
       onclick="openGallery(38)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de apoio Ibiza</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de apoio Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-apoio-ibiza"
+            data-item-name="Lourini - Mesa de apoio Ibiza"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -738,9 +1058,17 @@
       onclick="openGallery(39)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Centro Malmo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Centro Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-centro-malmo"
+            data-item-name="Lourini - Mesa de Centro Malmo"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -752,9 +1080,17 @@
       onclick="openGallery(40)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de apoio City</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de apoio City</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-apoio-city"
+            data-item-name="Lourini - Mesa de apoio City"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -766,9 +1102,17 @@
       onclick="openGallery(41)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Centro Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Centro Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-centro-mlaga"
+            data-item-name="Lourini - Mesa de Centro Málaga"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   
   <!-- Product 4 (Cama) -->
@@ -781,9 +1125,17 @@
          onclick="openGallery(42)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Sagres</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Sagres</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-sagres"
+            data-item-name="Lourini - Cadeira Estofada Sagres"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -795,9 +1147,17 @@
       onclick="openGallery(43)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Bona</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Bona</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-bona"
+            data-item-name="Lourini - Cadeira Estofada Bona"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -809,9 +1169,17 @@
       onclick="openGallery(44)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Pérola</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Pérola</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-prola"
+            data-item-name="Lourini - Cadeira Estofada Pérola"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div> 
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -823,9 +1191,17 @@
       onclick="openGallery(45)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Moon</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Moon</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-moon"
+            data-item-name="Lourini - Cadeira Estofada Moon"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -837,9 +1213,17 @@
       onclick="openGallery(46)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Paris</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Paris</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-paris"
+            data-item-name="Lourini - Cadeira Estofada Paris"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -851,9 +1235,17 @@
       onclick="openGallery(47)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Saturno</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Saturno</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-saturno"
+            data-item-name="Lourini - Cadeira Estofada Saturno"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -865,9 +1257,17 @@
       onclick="openGallery(48)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cadeira Estofada Sea</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cadeira Estofada Sea</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cadeira-estofada-sea"
+            data-item-name="Lourini - Cadeira Estofada Sea"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 
 
@@ -882,9 +1282,17 @@
       onclick="openGallery(49)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-faro"
+            data-item-name="Lourini - Mesa Faro"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 <!-- Product 4 (Cama) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasEcadeiras">
@@ -896,9 +1304,17 @@
       onclick="openGallery(50)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-mlaga"
+            data-item-name="Lourini - Mesa Málaga"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 
   <!-- Product 4 (Cama) -->
@@ -911,9 +1327,17 @@
       onclick="openGallery(51)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa Malmo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-malmo"
+            data-item-name="Lourini - Mesa Malmo"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 
 <!-- Product 4 (Cama) -->
@@ -926,9 +1350,17 @@
       onclick="openGallery(52)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa Toronto</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-toronto"
+            data-item-name="Lourini - Mesa Toronto"
+            data-item-price="89.00"
+            data-item-url="salas.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   
   
@@ -1260,5 +1692,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+    <!-- Snipcart Configuration -->
+    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="ODE4MjNlYWYtZGViOS00OGY3LWJhZWEtODU1OTE5OTYzMzQxNjM5MTYyMDI2OTM2NjA0MTY3" hidden></div>
+      <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/351212582788" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.731-1.464L0 24zm6.59-4.846c1.6.95 3.198 1.451 4.782 1.452 5.424 0 9.835-4.354 9.838-9.702.002-2.592-1.01-5.029-2.85-6.87C16.579 2.193 14.15 1.18 11.56 1.18 6.13 1.18 1.72 5.534 1.717 10.882c0 1.631.426 3.224 1.235 4.633L1.925 21.87l6.236-1.636zM17.154 14c-.284-.143-1.68-.829-1.94-.924-.259-.096-.448-.143-.637.143-.19.285-.733.924-.899 1.113-.165.19-.33.213-.614.072-2.012-1.01-3.136-1.785-4.385-3.928-.328-.564-.108-.874.116-1.096.2-.2.448-.523.673-.784.09-.105.15-.175.226-.245.075-.07.15-.14.226-.21.226-.226.376-.44.527-.722.15-.285.075-.544-.038-.722-.113-.178-.899-2.163-1.233-2.969-.328-.79-.663-.684-.899-.696-.23-.012-.495-.015-.756-.015-.262 0-.687.098-.946.381-.26.285-.99 1.012-.99 2.47 0 1.457 1.06 2.871 1.21 3.062.15.19 2.085 3.184 5.052 4.466.706.305 1.258.487 1.687.623.708.226 1.353.194 1.862.118.568-.084 1.681-.687 1.916-1.353.235-.667.235-1.238.165-1.353-.07-.115-.26-.19-.544-.332z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
   </body>
 </html>

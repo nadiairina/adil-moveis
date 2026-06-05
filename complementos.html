@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -29,6 +32,11 @@
             <a href="tel:212582788" class="flex items-center hover:text-gray-300">
               <i data-feather="phone" class="w-4 h-4 mr-3"></i> 212 582 788
             </a>
+            <!-- Snipcart Button -->
+            <button class="snipcart-checkout flex items-center font-bold bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-200 transition-colors">
+              <i data-feather="shopping-cart" class="w-4 h-4 mr-2"></i>
+              <span class="snipcart-total-price">0.00€</span>
+            </button>
           </div>
         </div>
       </div>
@@ -156,8 +164,16 @@
             onclick="openGallery(0)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Málaga</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-mlaga"
+            data-item-name="Lourini - Aparador Málaga"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 2 -->
@@ -170,8 +186,16 @@
             onclick="openGallery(1)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Málaga</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-mlaga"
+            data-item-name="Lourini - Aparador Málaga"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 3 -->
@@ -184,8 +208,16 @@
             onclick="openGallery(2)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Malmo</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-malmo"
+            data-item-name="Lourini - Aparador Malmo"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 4 -->
@@ -198,8 +230,16 @@
             onclick="openGallery(3)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Toronto</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-toronto"
+            data-item-name="Lourini - Aparador Toronto"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 5 -->
@@ -212,8 +252,16 @@
             onclick="openGallery(4)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Toronto</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-toronto"
+            data-item-name="Lourini - Aparador Toronto"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 6 -->
@@ -226,8 +274,16 @@
             onclick="openGallery(5)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Toronto</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-toronto"
+            data-item-name="Lourini - Aparador Toronto"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 7 -->
@@ -240,8 +296,16 @@
             onclick="openGallery(6)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Faro</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-faro"
+            data-item-name="Lourini - Aparador Faro"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 8 -->
@@ -254,8 +318,16 @@
             onclick="openGallery(7)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador City</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador City</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-city"
+            data-item-name="Lourini - Aparador City"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 9 -->
@@ -268,8 +340,16 @@
             onclick="openGallery(8)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Ibiza</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-ibiza"
+            data-item-name="Lourini - Aparador Ibiza"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 10 -->
@@ -282,8 +362,16 @@
             onclick="openGallery(9)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Mitomóvel - Ref. 276</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Mitomóvel - Ref. 276</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mitomvel-ref-276"
+            data-item-name="Mitomóvel - Ref. 276"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 11 -->
@@ -296,8 +384,16 @@
             onclick="openGallery(10)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Mitomóvel - Ref. 276</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Mitomóvel - Ref. 276</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mitomvel-ref-276"
+            data-item-name="Mitomóvel - Ref. 276"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 12 -->
@@ -310,8 +406,16 @@
             onclick="openGallery(11)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Malmo</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-malmo"
+            data-item-name="Lourini - Aparador Malmo"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 13 -->
@@ -324,8 +428,16 @@
             onclick="openGallery(12)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Aparador Ibiza</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Aparador Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-aparador-ibiza"
+            data-item-name="Lourini - Aparador Ibiza"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 14 -->
@@ -338,8 +450,16 @@
             onclick="openGallery(13)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">LLourini - Estante Toronto</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">LLourini - Estante Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="llourini-estante-toronto"
+            data-item-name="LLourini - Estante Toronto"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 15 -->
@@ -352,8 +472,16 @@
             onclick="openGallery(14)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Estante Málaga</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Estante Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-estante-mlaga"
+            data-item-name="Lourini - Estante Málaga"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       
@@ -368,8 +496,16 @@
             onclick="openGallery(15)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Mitomóvel - Ref. 273</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Mitomóvel - Ref. 273</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mitomvel-ref-273"
+            data-item-name="Mitomóvel - Ref. 273"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 17 -->
@@ -382,8 +518,16 @@
             onclick="openGallery(16)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Mitomóvel - Ref. 274</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Mitomóvel - Ref. 274</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mitomvel-ref-274"
+            data-item-name="Mitomóvel - Ref. 274"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 18 -->
@@ -396,8 +540,16 @@
             onclick="openGallery(17)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Mitomóvel - Ref. 271</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Mitomóvel - Ref. 271</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mitomvel-ref-271"
+            data-item-name="Mitomóvel - Ref. 271"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 19 -->
@@ -410,8 +562,16 @@
             onclick="openGallery(18)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Mitomóvel - Ref. 269</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Mitomóvel - Ref. 269</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mitomvel-ref-269"
+            data-item-name="Mitomóvel - Ref. 269"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 20 -->
@@ -424,8 +584,16 @@
             onclick="openGallery(19)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Sapateira 5061</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Sapateira 5061</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-sapateira-5061"
+            data-item-name="Móveis AF - Sapateira 5061"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 21 -->
@@ -438,8 +606,16 @@
             onclick="openGallery(20)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Sapateira 5064</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Sapateira 5064</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-sapateira-5064"
+            data-item-name="Móveis AF - Sapateira 5064"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 22 -->
@@ -452,8 +628,16 @@
             onclick="openGallery(21)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Sapateira 5075</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Sapateira 5075</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-sapateira-5075"
+            data-item-name="Móveis AF - Sapateira 5075"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 23 -->
@@ -466,8 +650,16 @@
             onclick="openGallery(22)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Sapateira 5077</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Sapateira 5077</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-sapateira-5077"
+            data-item-name="Móveis AF - Sapateira 5077"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 24 -->
@@ -480,8 +672,16 @@
             onclick="openGallery(23)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Sapateira 5080</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Sapateira 5080</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-sapateira-5080"
+            data-item-name="Móveis AF - Sapateira 5080"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 25 -->
@@ -494,8 +694,16 @@
             onclick="openGallery(24)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Sapateira 5085</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Sapateira 5085</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-sapateira-5085"
+            data-item-name="Móveis AF - Sapateira 5085"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
  
@@ -510,8 +718,16 @@
             onclick="openGallery(25)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Bengaleiro 5100</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Bengaleiro 5100</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-bengaleiro-5100"
+            data-item-name="Móveis AF - Bengaleiro 5100"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 27 -->
@@ -524,8 +740,16 @@
             onclick="openGallery(26)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Bengaleiro 5102</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Bengaleiro 5102</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-bengaleiro-5102"
+            data-item-name="Móveis AF - Bengaleiro 5102"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 28 -->
@@ -538,8 +762,16 @@
             onclick="openGallery(27)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Bengaleiro 2050</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Bengaleiro 2050</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-bengaleiro-2050"
+            data-item-name="Móveis AF - Bengaleiro 2050"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       
@@ -555,8 +787,16 @@
             onclick="openGallery(28)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Espelho Madrid</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Espelho Madrid</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-espelho-madrid"
+            data-item-name="Lourini - Espelho Madrid"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 30 -->
@@ -569,8 +809,16 @@
             onclick="openGallery(29)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lourini - Espelho Toronto</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Espelho Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-espelho-toronto"
+            data-item-name="Lourini - Espelho Toronto"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
      
@@ -585,8 +833,16 @@
             onclick="openGallery(30)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Móvel Casa de Banho 1555</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Móvel Casa de Banho 1555</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-mvel-casa-de-banho-1555"
+            data-item-name="Móveis AF - Móvel Casa de Banho 1555"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 32 -->
@@ -600,8 +856,16 @@
             onclick="openGallery(31)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Móvel Casa de Banho 1565</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Móvel Casa de Banho 1565</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-mvel-casa-de-banho-1565"
+            data-item-name="Móveis AF - Móvel Casa de Banho 1565"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 33 -->
@@ -615,8 +879,16 @@
             onclick="openGallery(32)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Móvel Casa de Banho 1580</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Móvel Casa de Banho 1580</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-mvel-casa-de-banho-1580"
+            data-item-name="Móveis AF - Móvel Casa de Banho 1580"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 34 -->
@@ -630,8 +902,16 @@
             onclick="openGallery(33)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Móvel Casa de Banho 1600</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Móvel Casa de Banho 1600</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-mvel-casa-de-banho-1600"
+            data-item-name="Móveis AF - Móvel Casa de Banho 1600"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 35 -->
@@ -645,8 +925,16 @@
             onclick="openGallery(34)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Móvel Casa de Banho 1655</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Móvel Casa de Banho 1655</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-mvel-casa-de-banho-1655"
+            data-item-name="Móveis AF - Móvel Casa de Banho 1655"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
       <!-- Product 36 -->
@@ -660,8 +948,16 @@
             onclick="openGallery(35)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Móveis AF - Móvel Casa de Banho 1566</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Móvel Casa de Banho 1566</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-mvel-casa-de-banho-1566"
+            data-item-name="Móveis AF - Móvel Casa de Banho 1566"
+            data-item-price="149.00"
+            data-item-url="complementos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
         </div>
       </div>
      
@@ -979,5 +1275,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+    <!-- Snipcart Configuration -->
+    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="ODE4MjNlYWYtZGViOS00OGY3LWJhZWEtODU1OTE5OTYzMzQxNjM5MTYyMDI2OTM2NjA0MTY3" hidden></div>
+      <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/351212582788" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.731-1.464L0 24zm6.59-4.846c1.6.95 3.198 1.451 4.782 1.452 5.424 0 9.835-4.354 9.838-9.702.002-2.592-1.01-5.029-2.85-6.87C16.579 2.193 14.15 1.18 11.56 1.18 6.13 1.18 1.72 5.534 1.717 10.882c0 1.631.426 3.224 1.235 4.633L1.925 21.87l6.236-1.636zM17.154 14c-.284-.143-1.68-.829-1.94-.924-.259-.096-.448-.143-.637.143-.19.285-.733.924-.899 1.113-.165.19-.33.213-.614.072-2.012-1.01-3.136-1.785-4.385-3.928-.328-.564-.108-.874.116-1.096.2-.2.448-.523.673-.784.09-.105.15-.175.226-.245.075-.07.15-.14.226-.21.226-.226.376-.44.527-.722.15-.285.075-.544-.038-.722-.113-.178-.899-2.163-1.233-2.969-.328-.79-.663-.684-.899-.696-.23-.012-.495-.015-.756-.015-.262 0-.687.098-.946.381-.26.285-.99 1.012-.99 2.47 0 1.457 1.06 2.871 1.21 3.062.15.19 2.085 3.184 5.052 4.466.706.305 1.258.487 1.687.623.708.226 1.353.194 1.862.118.568-.084 1.681-.687 1.916-1.353.235-.667.235-1.238.165-1.353-.07-.115-.26-.19-.544-.332z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
   </body>
 </html>

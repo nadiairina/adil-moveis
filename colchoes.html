@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -29,6 +32,11 @@
             <a href="tel:212582788" class="flex items-center hover:text-gray-300">
               <i data-feather="phone" class="w-4 h-4 mr-3"></i> 212 582 788
             </a>
+            <!-- Snipcart Button -->
+            <button class="snipcart-checkout flex items-center font-bold bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-200 transition-colors">
+              <i data-feather="shopping-cart" class="w-4 h-4 mr-2"></i>
+              <span class="snipcart-total-price">0.00€</span>
+            </button>
           </div>
         </div>
       </div>
@@ -153,8 +161,16 @@
             onclick="openGallery(0)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Colchão Apolo</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Colchão Apolo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-colcho-apolo"
+            data-item-name="Lusocolchão - Colchão Apolo"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       
@@ -168,8 +184,16 @@
             onclick="openGallery(1)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Active Confort</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Active Confort</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-active-confort"
+            data-item-name="Lusocolchão - Active Confort"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 3 -->
@@ -182,8 +206,16 @@
             onclick="openGallery(2)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Colchão Enrolado Pocketflex</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Colchão Enrolado Pocketflex</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-colcho-enrolado-pocketflex"
+            data-item-name="Lusocolchão - Colchão Enrolado Pocketflex"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 4 -->
@@ -196,8 +228,16 @@
             onclick="openGallery(3)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Colchão Molas Ensacadas Premium Double Topper</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Colchão Molas Ensacadas Premium Double Topper</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-colcho-molas-ensacadas-premium-double-topper"
+            data-item-name="Lusocolchão - Colchão Molas Ensacadas Premium Double Topper"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 5 -->
@@ -210,8 +250,16 @@
             onclick="openGallery(4)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Colchão Molas Bonel Viscobox</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Colchão Molas Bonel Viscobox</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-colcho-molas-bonel-viscobox"
+            data-item-name="Lusocolchão - Colchão Molas Bonel Viscobox"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
      
@@ -227,8 +275,16 @@
             onclick="openGallery(5)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão zZ3 Firm Multielástic</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão zZ3 Firm Multielástic</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-zz3-firm-multielstic"
+            data-item-name="Molaflex - Colchão zZ3 Firm Multielástic"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 7 -->
@@ -242,8 +298,16 @@
             onclick="openGallery(6)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão zZ3 Soft Pocket Sense</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão zZ3 Soft Pocket Sense</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-zz3-soft-pocket-sense"
+            data-item-name="Molaflex - Colchão zZ3 Soft Pocket Sense"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 8 -->
@@ -257,8 +321,16 @@
             onclick="openGallery(7)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Wbx Body</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Wbx Body</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-wbx-body"
+            data-item-name="Molaflex - Colchão Wbx Body"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 9 -->
@@ -272,8 +344,16 @@
             onclick="openGallery(8)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Levity Airvex</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Levity Airvex</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-levity-airvex"
+            data-item-name="Molaflex - Colchão Levity Airvex"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 10 -->
@@ -287,8 +367,16 @@
             onclick="openGallery(9)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Wbx Steel</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Wbx Steel</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-wbx-steel"
+            data-item-name="Molaflex - Colchão Wbx Steel"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 11 -->
@@ -302,8 +390,16 @@
             onclick="openGallery(10)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Selection Art</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Selection Art</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-selection-art"
+            data-item-name="Molaflex - Colchão Selection Art"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 12 -->
@@ -317,8 +413,16 @@
             onclick="openGallery(11)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Princess</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Princess</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-princess"
+            data-item-name="Molaflex - Colchão Princess"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 13 -->
@@ -332,8 +436,16 @@
             onclick="openGallery(12)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Moon</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Moon</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-moon"
+            data-item-name="Molaflex - Colchão Moon"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       <!-- Product 14 -->
@@ -347,8 +459,16 @@
             onclick="openGallery(13)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Colchão Eternity Pocket</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Colchão Eternity Pocket</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-colcho-eternity-pocket"
+            data-item-name="Molaflex - Colchão Eternity Pocket"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
 
@@ -362,8 +482,16 @@
             onclick="openGallery(14)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Almofada Ecofiber</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Almofada Ecofiber</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-almofada-ecofiber"
+            data-item-name="Molaflex - Almofada Ecofiber"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       <!-- Product 16 -->
@@ -376,8 +504,16 @@
             onclick="openGallery(15)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Almofada Soft</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Almofada Soft</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-almofada-soft"
+            data-item-name="Molaflex - Almofada Soft"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       <!-- Product 17 -->
@@ -390,8 +526,16 @@
             onclick="openGallery(16)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Almofada Natur</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Almofada Natur</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-almofada-natur"
+            data-item-name="Molaflex - Almofada Natur"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       
@@ -405,8 +549,16 @@
             onclick="openGallery(17)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Almofada Ergotech Anatómica</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Almofada Ergotech Anatómica</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-almofada-ergotech-anatmica"
+            data-item-name="Lusocolchão - Almofada Ergotech Anatómica"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       <!-- Product 19 -->
@@ -419,8 +571,16 @@
             onclick="openGallery(18)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Almofada Látex</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Almofada Látex</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-almofada-ltex"
+            data-item-name="Lusocolchão - Almofada Látex"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       <!-- Product 20 -->
@@ -433,8 +593,16 @@
             onclick="openGallery(19)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Almofada Soft</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Almofada Soft</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-almofada-soft"
+            data-item-name="Lusocolchão - Almofada Soft"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       <!-- Product 21 -->
@@ -447,8 +615,16 @@
             onclick="openGallery(20)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Almofada Fibra</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Almofada Fibra</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-almofada-fibra"
+            data-item-name="Lusocolchão - Almofada Fibra"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
       <!-- Product 22 -->
@@ -461,8 +637,16 @@
             onclick="openGallery(21)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Resguardo</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Resguardo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-resguardo"
+            data-item-name="Lusocolchão - Resguardo"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
 
@@ -476,8 +660,16 @@
             onclick="openGallery(22)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Lusocolchão - Topper Top Suite</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Topper Top Suite</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-topper-top-suite"
+            data-item-name="Lusocolchão - Topper Top Suite"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       
@@ -491,8 +683,16 @@
             onclick="openGallery(23)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Topper Visco</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Topper Visco</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-topper-visco"
+            data-item-name="Molaflex - Topper Visco"
+            data-item-price="299.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
         </div>
       </div>
       
@@ -508,8 +708,16 @@
             onclick="openGallery(24)"
           />
         </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Molaflex - Edredão Eco Comfort</h3>
+        <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Molaflex - Edredão Eco Comfort</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="molaflex-edredo-eco-comfort"
+            data-item-name="Molaflex - Edredão Eco Comfort"
+            data-item-price="39.00"
+            data-item-url="colchoes.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 39€
+          </button>
         </div>
       </div>
 
@@ -841,5 +1049,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+    <!-- Snipcart Configuration -->
+    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="ODE4MjNlYWYtZGViOS00OGY3LWJhZWEtODU1OTE5OTYzMzQxNjM5MTYyMDI2OTM2NjA0MTY3" hidden></div>
+      <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/351212582788" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.731-1.464L0 24zm6.59-4.846c1.6.95 3.198 1.451 4.782 1.452 5.424 0 9.835-4.354 9.838-9.702.002-2.592-1.01-5.029-2.85-6.87C16.579 2.193 14.15 1.18 11.56 1.18 6.13 1.18 1.72 5.534 1.717 10.882c0 1.631.426 3.224 1.235 4.633L1.925 21.87l6.236-1.636zM17.154 14c-.284-.143-1.68-.829-1.94-.924-.259-.096-.448-.143-.637.143-.19.285-.733.924-.899 1.113-.165.19-.33.213-.614.072-2.012-1.01-3.136-1.785-4.385-3.928-.328-.564-.108-.874.116-1.096.2-.2.448-.523.673-.784.09-.105.15-.175.226-.245.075-.07.15-.14.226-.21.226-.226.376-.44.527-.722.15-.285.075-.544-.038-.722-.113-.178-.899-2.163-1.233-2.969-.328-.79-.663-.684-.899-.696-.23-.012-.495-.015-.756-.015-.262 0-.687.098-.946.381-.26.285-.99 1.012-.99 2.47 0 1.457 1.06 2.871 1.21 3.062.15.19 2.085 3.184 5.052 4.466.706.305 1.258.487 1.687.623.708.226 1.353.194 1.862.118.568-.084 1.681-.687 1.916-1.353.235-.667.235-1.238.165-1.353-.07-.115-.26-.19-.544-.332z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
   </body>
 </html>

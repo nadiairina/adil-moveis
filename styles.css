@@ -640,9 +640,182 @@ img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE
 .product-hidden {
   display: none !important; /* This will override other display settings */
 }
-/* Filter button styling */
+
+/* Modernização dos Cartões de Produto */
+.product {
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.005) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease !important;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02) !important;
+  border-color: #e2e8f0;
+}
+.product img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.product:hover img {
+  transform: scale(1.04) !important;
+}
+
+/* Modernização dos Botões Snipcart nos Produtos */
+.product button.snipcart-add-item {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
+  padding: 0.65rem 1.25rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  transition: all 0.25s ease !important;
+  box-shadow: none !important;
+}
+.product button.snipcart-add-item:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Modernização do Botão de Checkout no Top Bar */
+button.snipcart-checkout {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 30px !important;
+  padding: 0.4rem 1.1rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+button.snipcart-checkout:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* Modernização dos Botões de Filtro das Categorias */
+.filter-button {
+  background-color: #f8fafc !important;
+  color: #64748b !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 30px !important;
+  padding: 0.5rem 1.5rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+.filter-button:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
 .filter-button.active {
-  background-color: #d1d5db !important; /* Gray-300 */
-  color: black !important; /* Black text */
-  font-weight: 500;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* Modernização do Menu Lateral Overlay */
+#menuOverlay {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-left: 1px solid rgba(226, 232, 240, 0.8) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+#menuOverlay nav a {
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
+  color: #334155 !important;
+  border-left: 3px solid transparent;
+}
+#menuOverlay nav a:hover {
+  color: #000000 !important;
+  background-color: rgba(0, 0, 0, 0.02) !important;
+  padding-left: 1.5rem !important;
+  border-left-color: #000000 !important;
+}
+
+/* Scrollbar Premium Minimalista */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: #fff !important;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: whatsapp-pulse 2s infinite !important;
+}
+
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float span {
+    display: none; /* Only show icon on mobile */
+  }
+  .whatsapp-float {
+    padding: 12px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+  }
 }

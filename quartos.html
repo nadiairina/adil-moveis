@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -29,6 +32,11 @@
             <a href="tel:212582788" class="flex items-center hover:text-gray-300">
               <i data-feather="phone" class="w-4 h-4 mr-3"></i> 212 582 788
             </a>
+            <!-- Snipcart Button -->
+            <button class="snipcart-checkout flex items-center font-bold bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-200 transition-colors">
+              <i data-feather="shopping-cart" class="w-4 h-4 mr-2"></i>
+              <span class="snipcart-total-price">0.00€</span>
+            </button>
           </div>
         </div>
       </div>
@@ -157,9 +165,17 @@
         onclick="openGallery(0)"
       />
       </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama casal Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama casal Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-casal-faro"
+            data-item-name="Lourini - Cama casal Faro"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
  <!-- Product 2 (Camas) -->
@@ -173,9 +189,17 @@
       onclick="openGallery(1)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Quarto 2049</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Quarto 2049</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-quarto-2049"
+            data-item-name="Móveis AF - Quarto 2049"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
 <!-- Product 3 (Cama) -->
@@ -189,9 +213,17 @@
       onclick="openGallery(2)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Quarto 2045</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Quarto 2045</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-quarto-2045"
+            data-item-name="Móveis AF - Quarto 2045"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   
   <!-- Product 4 (Cama) -->
@@ -204,9 +236,17 @@
       onclick="openGallery(3)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Quarto 2043</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Quarto 2043</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-quarto-2043"
+            data-item-name="Móveis AF - Quarto 2043"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
             
             <!-- Product 5 (Cama) -->
@@ -220,9 +260,17 @@
       onclick="openGallery(4)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Quarto 2032</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Quarto 2032</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-quarto-2032"
+            data-item-name="Móveis AF - Quarto 2032"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
             
             <!-- Product 6 (Cama) -->
@@ -235,9 +283,17 @@
       onclick="openGallery(5)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama Casal Viena</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama Casal Viena</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-casal-viena"
+            data-item-name="Lourini - Cama Casal Viena"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
           
             <!-- Product 7 (Cama) -->
@@ -250,9 +306,17 @@
       onclick="openGallery(6)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama Estofada Sophie</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama Estofada Sophie</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-estofada-sophie"
+            data-item-name="Lourini - Cama Estofada Sophie"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
             <!-- Product 8 (Cama) -->
@@ -265,9 +329,17 @@
       onclick="openGallery(7)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama Estofada Majestic</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama Estofada Majestic</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-estofada-majestic"
+            data-item-name="Lourini - Cama Estofada Majestic"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
             <!-- Product 9 (Cama) -->
@@ -280,9 +352,17 @@
       onclick="openGallery(8)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama Casal Simples Madrid</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama Casal Simples Madrid</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-casal-simples-madrid"
+            data-item-name="Lourini - Cama Casal Simples Madrid"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
             
@@ -297,9 +377,17 @@
       onclick="openGallery(9)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama Casal Simples Chiado</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama Casal Simples Chiado</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-casal-simples-chiado"
+            data-item-name="Lourini - Cama Casal Simples Chiado"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 
   <!-- Product 11 (Cama) -->
@@ -312,9 +400,17 @@
         onclick="openGallery(10)"
       />
       </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cama casal Cherry</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cama casal Cherry</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cama-casal-cherry"
+            data-item-name="Lourini - Cama casal Cherry"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 <!-- Product 12 (Cabeceira) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="cabeceiras">
@@ -326,9 +422,17 @@
       onclick="openGallery(11)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Elegance</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Elegance</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-elegance"
+            data-item-name="Lusocolchão - Cabeceira Elegance"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
             
          
@@ -342,9 +446,17 @@
       onclick="openGallery(12)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Gomo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Gomo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-gomo"
+            data-item-name="Lusocolchão - Cabeceira Gomo"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
             
             <!-- Product 14 (Cabeceira) -->
@@ -357,9 +469,17 @@
       onclick="openGallery(13)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Krystal</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Krystal</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-krystal"
+            data-item-name="Lusocolchão - Cabeceira Krystal"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
             
             <!-- Product 15 (Cabeceira) -->
@@ -372,9 +492,17 @@
       onclick="openGallery(14)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Edna</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Edna</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-edna"
+            data-item-name="Lusocolchão - Cabeceira Edna"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
          
    <!-- Product 16 (Cabeceira) -->
@@ -387,9 +515,17 @@
       onclick="openGallery(15)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Myra</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Myra</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-myra"
+            data-item-name="Lusocolchão - Cabeceira Myra"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 
 <!-- Product 17 (Cabeceira) -->
@@ -402,9 +538,17 @@
       onclick="openGallery(16)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Luxe</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Luxe</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-luxe"
+            data-item-name="Lusocolchão - Cabeceira Luxe"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 
             <!-- Product 18 (Cabeceira) -->
@@ -417,9 +561,17 @@
       onclick="openGallery(17)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cabeceira Jones</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cabeceira Jones</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cabeceira-jones"
+            data-item-name="Lusocolchão - Cabeceira Jones"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 <!-- Product 19 (mesaCabeceira) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="mesasCabeceira">
@@ -431,9 +583,17 @@
       onclick="openGallery(18)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira Ibiza</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-ibiza"
+            data-item-name="Lourini - Mesa de Cabeceira Ibiza"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 
   <!-- Product 20 (mesaCabeceira) -->
@@ -446,9 +606,17 @@
       onclick="openGallery(19)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira Toronto</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-toronto"
+            data-item-name="Lourini - Mesa de Cabeceira Toronto"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   
 <!-- Product 21 (mesaCabeceira) -->
@@ -461,9 +629,17 @@
       onclick="openGallery(20)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-mlaga"
+            data-item-name="Lourini - Mesa de Cabeceira Málaga"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   
 <!-- Product 22 (mesaCabeceira) -->
@@ -476,9 +652,17 @@
       onclick="openGallery(21)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira Malmo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-malmo"
+            data-item-name="Lourini - Mesa de Cabeceira Malmo"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
  
  <!-- Product 23 (mesaCabeceira) -->
@@ -491,9 +675,17 @@
       onclick="openGallery(22)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-faro"
+            data-item-name="Lourini - Mesa de Cabeceira Faro"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
   
 <!-- Product 24 (mesaCabeceira) -->
@@ -506,9 +698,17 @@
       onclick="openGallery(23)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira Dream</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira Dream</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-dream"
+            data-item-name="Lourini - Mesa de Cabeceira Dream"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 
   <!-- Product 25 (mesaCabeceira) -->
@@ -521,9 +721,17 @@
       onclick="openGallery(24)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Mesa de Cabeceira City</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Mesa de Cabeceira City</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-mesa-de-cabeceira-city"
+            data-item-name="Lourini - Mesa de Cabeceira City"
+            data-item-price="89.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 89€
+          </button>
+        </div>
 </div>
 
 
@@ -537,9 +745,17 @@
       onclick="openGallery(25)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cómoda Dupla Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cómoda Dupla Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cmoda-dupla-faro"
+            data-item-name="Lourini - Cómoda Dupla Faro"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
  
  <!-- Product 27 (comoda) -->
@@ -552,9 +768,17 @@
       onclick="openGallery(26)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cómoda Dream</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cómoda Dream</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cmoda-dream"
+            data-item-name="Lourini - Cómoda Dream"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
  
  <!-- Product 28 (comoda) -->
@@ -567,9 +791,17 @@
       onclick="openGallery(27)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cómoda Toronto</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cómoda Toronto</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cmoda-toronto"
+            data-item-name="Lourini - Cómoda Toronto"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
  
  <!-- Product 29 (comoda) -->
@@ -582,9 +814,17 @@
       onclick="openGallery(28)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Cómoda Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Cómoda Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-cmoda-mlaga"
+            data-item-name="Lourini - Cómoda Málaga"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
 <!-- Product 30 (Roupeiro) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="roupeiros">
@@ -596,9 +836,17 @@
       onclick="openGallery(29)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Roupeiro Dream</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Roupeiro Dream</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-roupeiro-dream"
+            data-item-name="Lourini - Roupeiro Dream"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   
 <!-- Product 31 (Roupeiro) -->
@@ -611,9 +859,17 @@
       onclick="openGallery(30)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Roupeiro Faro</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Roupeiro Faro</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-roupeiro-faro"
+            data-item-name="Lourini - Roupeiro Faro"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   
 <!-- Product 32 (Roupeiro) -->
@@ -626,9 +882,17 @@
       onclick="openGallery(31)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Ropeiro 5103</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Ropeiro 5103</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-ropeiro-5103"
+            data-item-name="Móveis AF - Ropeiro 5103"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   
 <!-- Product 33 (Roupeiro) -->
@@ -641,9 +905,17 @@
       onclick="openGallery(32)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Ropeiro 5105</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Ropeiro 5105</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-ropeiro-5105"
+            data-item-name="Móveis AF - Ropeiro 5105"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
   
 <!-- Product 34 (Roupeiro) -->
@@ -656,9 +928,17 @@
       onclick="openGallery(33)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Ropeiro 5140</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Ropeiro 5140</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-ropeiro-5140"
+            data-item-name="Móveis AF - Ropeiro 5140"
+            data-item-price="399.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 399€
+          </button>
+        </div>
 </div>
 <!-- Product 35 (Camiseiro) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="camiseiros">
@@ -670,9 +950,17 @@
       onclick="openGallery(34)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Camiseiro Ibiza</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Camiseiro Ibiza</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-camiseiro-ibiza"
+            data-item-name="Lourini - Camiseiro Ibiza"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
 
             <!-- Product 36 (camiseiro) -->
@@ -685,9 +973,17 @@
       onclick="openGallery(35)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Camiseiro Málaga</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Camiseiro Málaga</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-camiseiro-mlaga"
+            data-item-name="Lourini - Camiseiro Málaga"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
   <!-- Product 37 (camiseiro) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="camiseiros">
@@ -699,9 +995,17 @@
       onclick="openGallery(36)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lourini - Camiseiro Malmo</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lourini - Camiseiro Malmo</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lourini-camiseiro-malmo"
+            data-item-name="Lourini - Camiseiro Malmo"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
   <!-- Product 38 (camiseiro) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="camiseiros">
@@ -713,9 +1017,17 @@
       onclick="openGallery(37)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Camiseiro 5034</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Camiseiro 5034</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-camiseiro-5034"
+            data-item-name="Móveis AF - Camiseiro 5034"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
   <!-- Product 39 (camiseiro) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="camiseiros">
@@ -727,9 +1039,17 @@
       onclick="openGallery(38)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Camiseiro 5035</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Camiseiro 5035</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-camiseiro-5035"
+            data-item-name="Móveis AF - Camiseiro 5035"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
 
             <!-- Product 40 (camiseiro) -->
@@ -742,9 +1062,17 @@
       onclick="openGallery(39)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Móveis AF - Camiseiro 5027</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Móveis AF - Camiseiro 5027</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="mveis-af-camiseiro-5027"
+            data-item-name="Móveis AF - Camiseiro 5027"
+            data-item-price="149.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 149€
+          </button>
+        </div>
 </div>
 <!-- Product 41 (Sommier) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="sommiers">
@@ -756,9 +1084,17 @@
       onclick="openGallery(40)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Sommier Sion</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Sommier Sion</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-sommier-sion"
+            data-item-name="Lusocolchão - Sommier Sion"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
   
   <!-- Product 42 (Sommier) -->
@@ -771,9 +1107,17 @@
       onclick="openGallery(41)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Sommier Articulado Estofado</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Sommier Articulado Estofado</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-sommier-articulado-estofado"
+            data-item-name="Lusocolchão - Sommier Articulado Estofado"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
             
             <!-- Product 43 (Sommier) -->
@@ -786,9 +1130,17 @@
       onclick="openGallery(42)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Sommier Big Box</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Sommier Big Box</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-sommier-big-box"
+            data-item-name="Lusocolchão - Sommier Big Box"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
             
             <!-- Product 44 (Sommier) -->
@@ -801,9 +1153,17 @@
       onclick="openGallery(43)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Sommier Basic Suite</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Sommier Basic Suite</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-sommier-basic-suite"
+            data-item-name="Lusocolchão - Sommier Basic Suite"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
             
             <!-- Product 45 (sommier) -->
@@ -816,9 +1176,17 @@
       onclick="openGallery(44)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Sommier Fresh</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Sommier Fresh</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-sommier-fresh"
+            data-item-name="Lusocolchão - Sommier Fresh"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 <!-- Product 46 (Estrado) -->
   <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="estrados">
@@ -830,9 +1198,17 @@
       onclick="openGallery(45)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Cama Articulada</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Cama Articulada</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-cama-articulada"
+            data-item-name="Lusocolchão - Cama Articulada"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 
             <!-- Product 47 (Estrado) -->
@@ -845,9 +1221,17 @@
       onclick="openGallery(46)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Estrado Metálico</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Estrado Metálico</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-estrado-metlico"
+            data-item-name="Lusocolchão - Estrado Metálico"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
   
   <!-- Product 48 (Estrados) -->
@@ -860,9 +1244,17 @@
       onclick="openGallery(47)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Estrado Multilâminas</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Estrado Multilâminas</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-estrado-multilminas"
+            data-item-name="Lusocolchão - Estrado Multilâminas"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 
  <!-- Product 49 (Estrado) -->
@@ -875,9 +1267,17 @@
       onclick="openGallery(48)"
     />
   </div>
-  <div class="py-4 text-center">
-    <h3 class="text-lg font-medium">Lusocolchão - Estrado Nido</h3>
-  </div>
+  <div class="py-4 text-center flex flex-col items-center justify-between h-full">
+          <h3 class="text-lg font-medium mb-3">Lusocolchão - Estrado Nido</h3>
+          <button class="snipcart-add-item bg-black text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-gray-800 transition-colors mt-auto mb-2"
+            data-item-id="lusocolcho-estrado-nido"
+            data-item-name="Lusocolchão - Estrado Nido"
+            data-item-price="299.00"
+            data-item-url="quartos.html"
+            data-item-description="Mobiliário de alta qualidade. Cores, acabamentos e medidas personalizáveis após a encomenda.">
+            Adicionar — 299€
+          </button>
+        </div>
 </div>
 </div>
         </div>
@@ -1204,5 +1604,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+    <!-- Snipcart Configuration -->
+    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="ODE4MjNlYWYtZGViOS00OGY3LWJhZWEtODU1OTE5OTYzMzQxNjM5MTYyMDI2OTM2NjA0MTY3" hidden></div>
+      <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/351212582788" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.731-1.464L0 24zm6.59-4.846c1.6.95 3.198 1.451 4.782 1.452 5.424 0 9.835-4.354 9.838-9.702.002-2.592-1.01-5.029-2.85-6.87C16.579 2.193 14.15 1.18 11.56 1.18 6.13 1.18 1.72 5.534 1.717 10.882c0 1.631.426 3.224 1.235 4.633L1.925 21.87l6.236-1.636zM17.154 14c-.284-.143-1.68-.829-1.94-.924-.259-.096-.448-.143-.637.143-.19.285-.733.924-.899 1.113-.165.19-.33.213-.614.072-2.012-1.01-3.136-1.785-4.385-3.928-.328-.564-.108-.874.116-1.096.2-.2.448-.523.673-.784.09-.105.15-.175.226-.245.075-.07.15-.14.226-.21.226-.226.376-.44.527-.722.15-.285.075-.544-.038-.722-.113-.178-.899-2.163-1.233-2.969-.328-.79-.663-.684-.899-.696-.23-.012-.495-.015-.756-.015-.262 0-.687.098-.946.381-.26.285-.99 1.012-.99 2.47 0 1.457 1.06 2.871 1.21 3.062.15.19 2.085 3.184 5.052 4.466.706.305 1.258.487 1.687.623.708.226 1.353.194 1.862.118.568-.084 1.681-.687 1.916-1.353.235-.667.235-1.238.165-1.353-.07-.115-.26-.19-.544-.332z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
   </body>
 </html>
