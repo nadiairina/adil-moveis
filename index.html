@@ -192,7 +192,15 @@
         <!-- Scroll indicator -->
         <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;animation:heroScroll 2s ease-in-out infinite;">
           <span style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.6);">Descobrir</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="no      <!-- ══════════════════════════════════════════════════════
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </section>
+
+      <style>
+        @keyframes heroScroll { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+      </style>
+
+      <!-- ══════════════════════════════════════════════════════
            TENDÊNCIAS — Trending Products Grid
       ══════════════════════════════════════════════════════ -->
       <section style="background:#FDFCFA; padding:5rem 0;">
