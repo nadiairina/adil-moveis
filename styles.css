@@ -1082,5 +1082,27 @@ footer.bg-black img {
   border-bottom-color: #1a1a1a;
 }
 
+/* ── Remove cool grays and mix warm beige with baby blue ── */
+.bg-gray-50, .bg-\[\#F3F4F6\], .bg-\[\#F9FAFB\] {
+  background-color: #EDF4F8 !important; /* Soft Baby Blue background */
+}
+
+.bg-gray-100 {
+  background-color: #EDF4F8 !important; /* Soft Baby Blue background */
+}
+
+.bg-gray-200 {
+  background-color: #E3EEF4 !important; /* Medium Baby Blue background */
+}
+
+.bg-gray-300 {
+  background-color: #D4E4EE !important; /* Darker Baby Blue accent background */
+}
+
+.bg-white {
+  background-color: #FDFCFA !important; /* Warm White */
+}
+
+
 
 

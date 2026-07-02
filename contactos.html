@@ -157,61 +157,74 @@
       </script>
     </header>
 
-    <main>
-     <!-- Hero Section with Logo and Menu Button -->
-<section class="relative bg-gray-200">
-  
-  <!-- Page Header - Add more padding at the top (pt-24) -->
-  <section class="bg-gray-200 py-12 pt-24">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-gray-800 text-4xl font-light uppercase tracking-wider">CONTACTOS</h1>
-    </div>
-  </section>
+    <main class="bg-[#FDFCFA]">
+      <!-- Minimalist Page Header (Zara Home Style) -->
+      <section style="background-color:#F5F0E8; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
+        <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
+          <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3.25rem); font-weight:400; color:#1a1a1a; letter-spacing:0.05em; margin-bottom:1rem; text-transform:uppercase;">Contactos & Lojas</h1>
+          <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.7; max-width:620px; margin:0 auto; font-weight:300;">
+            Agende uma visita exclusiva no nosso Showroom em Almada ou envie-nos uma mensagem para obter um orçamento de mobiliário personalizado.
+          </p>
+        </div>
+      </section>
       
       <!-- Contact Section -->
-      <section id="contactos" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
+      <section id="contactos" style="background:#FDFCFA; padding:5rem 0;">
+        <div class="container mx-auto px-4" style="max-width:1200px;">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Contact Info -->
-            <div>
-              <h2 class="text-2xl font-medium mb-6">Informações de Contacto</h2>
+            <!-- Contact Info + Google Maps -->
+            <div data-aos="fade-right">
+              <h2 class="text-2xl font-serif text-black mb-6">Informações de Contacto</h2>
               
-              <div class="space-y-6">
+              <div class="space-y-6 text-sm font-light text-gray-600">
                 <div>
-                  <h3 class="text-lg font-semibold mb-2 text-navy">Morada</h3>
-                  <address class="not-italic text-gray-600 leading-relaxed">
-                     R. Dr. António Elvas 28B<br />
-              2810-110 Almada<br />
-                    
+                  <h3 class="text-xs font-bold text-[#1a1a1a] uppercase tracking-wider mb-2">Morada</h3>
+                  <address class="not-italic leading-relaxed">
+                     Rua Dr. António Elvas 28B<br />
+                     2810-110 Almada (Feijó)<br />
                   </address>
                 </div>
                 
                 <div>
-                  <h3 class="text-lg font-semibold mb-2 text-navy">Telefone</h3>
-                  <p class="text-gray-600">
-                    <a href="tel:212582788" class="hover:text-navy">212 582 788</a>
+                  <h3 class="text-xs font-bold text-[#1a1a1a] uppercase tracking-wider mb-2">Telefones</h3>
+                  <p class="leading-relaxed">
+                    📞 <a href="tel:212582788" class="hover:text-black">212 582 788</a> (Fixo)<br/>
+                    💬 <a href="https://wa.me/351912582788" class="hover:text-[#25D366]">912 582 788</a> (WhatsApp / Orçamentos)
                   </p>
                 </div>
                 
                 <div>
-                  <h3 class="text-lg font-semibold mb-2 text-navy">Email</h3>
-                  <p class="text-gray-600">
-                    <a href="mailto:adil.moveis@hotmail.com" class="hover:text-navy">adil.moveis@hotmail.com</a>
-                  </p>
+                  <h3 class="text-xs font-bold text-[#1a1a1a] uppercase tracking-wider mb-2">Email</h3>
+                  <p><a href="mailto:adil.moveis@hotmail.com" class="hover:text-black">adil.moveis@hotmail.com</a></p>
                 </div>
                 
                 <div>
-                  <h3 class="text-lg font-semibold mb-2 text-navy">Horário</h3>
-                  <p class="text-gray-600 mb-1">Segunda a Sábado: 9:00 - 19:00</p>
-                  
+                  <h3 class="text-xs font-bold text-[#1a1a1a] uppercase tracking-wider mb-2">Horário</h3>
+                  <p class="mb-1">Segunda a Sábado: 9:00 - 19:00</p>
                 </div>
               </div>
+              
+              <!-- Map Integration -->
+              <div class="mt-8 rounded overflow-hidden border border-[#E8E3DC] shadow-sm">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.350325026938!2d-9.171236684656463!3d38.647144879610114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193498877bc9ad%3A0xe54e39ec2f8b5020!2sR.%20Dr.%20Ant%C3%B3nio%20Elvas%2028B%2C%202810-353%20Almada!5e0!3m2!1spt!2spt!4v1688000000000!5m2!1spt!2spt" 
+                  width="100%" 
+                  height="260" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              
+              <a href="https://www.google.com/maps/search/?api=1&query=Adil+Móveis+Almada" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 bg-[#C8B598] text-[#1a1a1a] px-6 py-3 rounded text-[10px] font-bold tracking-widest uppercase hover:bg-[#b09e85] transition-colors" style="text-decoration:none;">
+                📍 Abrir no Google Maps
+              </a>
             </div>
             
-            <!-- Contact Form -->
-            
-<div id="agendar-visita-form">
-  <h2 class="text-2xl font-medium mb-6">Agendar Visita / Enviar Mensagem</h2>
+            <!-- Contact Form + Calendly Scheduler -->
+            <div id="agendar-visita-form" data-aos="fade-left">
+              <h2 class="text-2xl font-serif text-black mb-6">Pedir Orçamento ou Contactar</h2>
   
   <form class="space-y-6" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST">
     <input type="hidden" name="_subject" value="Contacto / Agendamento de Visita - Website">
@@ -298,6 +311,19 @@
       </button>
     </div>
   </form>
+              
+              <!-- Virtual Calendar (Calendly Integration) -->
+              <div class="mt-12 pt-8 border-t border-[#E8E3DC]">
+                <h3 class="text-lg font-serif text-black mb-3">📅 Agendamento Virtual de Visita</h3>
+                <p class="text-xs text-gray-500 font-light mb-6">
+                  Selecione um dia e horário disponíveis na nossa agenda virtual abaixo para reservar um atendimento exclusivo na nossa loja.
+                </p>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/adil-moveis" style="min-width:320px;height:580px;border:1px solid #E8E3DC;border-radius:4px;overflow:hidden;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+              </div>
+
 </div>
             </div>
         </div>
@@ -347,7 +373,7 @@
     <div class="flex flex-col md:flex-row justify-between items-center mb-8 pb-8 border-b border-gray-700">
       <div class="mb-6 md:mb-0">
         <div class="flex items-center mb-4">
-          <img src="images/adil-moveis-logo.png" alt="Adil Móveis" class="h-8 w-auto mr-3">
+          <div style="width:52px;height:52px;border-radius:50%;background:#ffffff;border:1px solid #E8E3DC;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;margin-bottom:1rem;"><img src="images/logo.png" alt="Adil Móveis" style="width:85%;height:auto;object-fit:contain;mix-blend-mode:multiply;"></div>
           
         </div>
         <div class="flex space-x-4">

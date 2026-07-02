@@ -157,217 +157,522 @@
       </script>
     </header>
 
-    <!-- Hero Section with Logo and Menu Button -->
-<section class="relative bg-gray-200">
-  
-      <section class="relative h-80 md:h-96 bg-gray-200">
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://jjlouro.pt/wp-content/uploads/2023/04/noticia_TECIDOS.jpg');"></div>
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
-          <h1 class="text-4xl md:text-5xl font-light mb-4 text-shadow">TECIDOS</h1>
-          <p class="text-xl max-w-2xl text-shadow">
-            Uma vasta coleção de tecidos de alta qualidade para personalizar o seu mobiliário. Cores e texturas que transformam cada peça em algo único.
+    <main class="bg-[#FDFCFA]">
+      <!-- Minimalist Page Header (Zara Home Style) -->
+      <section style="background-color:#F5F0E8; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
+        <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
+          <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3.25rem); font-weight:400; color:#1a1a1a; letter-spacing:0.05em; margin-bottom:1rem; text-transform:uppercase;">Guia de Tecidos</h1>
+          <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.7; max-width:620px; margin:0 auto; font-weight:300;">
+            Descubra a nossa vasta gama de texturas e cores para personalizar o seu sofá, cadeiras ou cabeceira de cama. Visite a nossa loja para sentir os tecidos ao vivo.
           </p>
-          
         </div>
       </section>
-      
-      <section class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-    <!-- Product grid container -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-      
-      <!-- Product 1 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4046.jpg" 
-            alt="Tecido Letto" 
-            class="w-full h-64 object-cover cursor-pointer"
-            onclick="openGallery(0)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Letto</h3>
-        </div>
-      </div>
-      
-      <!-- Product 2 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4047.jpg" 
-            alt="Tecido Polpo" 
-            class="w-full h-64 object-cover cursor-pointer"
-            onclick="openGallery(1)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Polpo</h3>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4048.jpg" 
-            alt="Tecido Cowboy" 
-            class="w-full h-64 object-cover cursor-pointer"
-            onclick="openGallery(2)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Cowboy</h3>
-        </div>
-      </div>
-      <!-- Product 4 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4049.jpg" 
-            alt="Tecido Supersoft" 
-            class="w-full h-64 object-cover cursor-pointer"
-            onclick="openGallery(3)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Supersoft</h3>
-        </div>
-      </div>
-      <!-- Product 5 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4050.jpg" 
-            alt="Tecido Marble" 
-            class="w-full h-64 object-cover cursor-pointer"
-            onclick="openGallery(4)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Marble</h3>
-        </div>
-      </div>
-     
-      
-      <!-- Product 6 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4051.jpg" 
-            alt="Tecido Magia" 
-            class="w-full h-64 object-cover cursor-pointer"
-             
-            onclick="openGallery(5)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Magia</h3>
-        </div>
-      </div>
-      <!-- Product 7 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4052.jpg" 
-            alt="Tecido Fancy" 
-            class="w-full h-64 object-cover cursor-pointer"
-             
-            onclick="openGallery(6)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Fancy</h3>
-        </div>
-      </div>
-      <!-- Product 8 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4053.jpg" 
-            alt="Tecido Primo" 
-            class="w-full h-64 object-cover cursor-pointer"
-            
-            onclick="openGallery(7)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Primo</h3>
-        </div>
-      </div>
-      <!-- Product 9 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4054.jpg" 
-            alt="Tecido Imola" 
-            class="w-full h-64 object-cover cursor-pointer"
-            
-            onclick="openGallery(8)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Imola</h3>
-        </div>
-      </div>
-      <!-- Product 10 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4056.jpg" 
-            alt="Tecido Atlantis" 
-            class="w-full h-64 object-cover cursor-pointer"
-            
-            onclick="openGallery(9)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Atlantis</h3>
-        </div>
-      </div>
-      <!-- Product 11 -->
-      <div class="product bg-white rounded shadow-sm overflow-hidden" data-category="all">
-        <div class="relative">
-          <img 
-            src="images/IMG_4057.jpg" 
-            alt="Tecido Soro" 
-            class="w-full h-64 object-cover cursor-pointer"
-           
-            onclick="openGallery(10)"
-          />
-        </div>
-        <div class="py-4 text-center">
-          <h3 class="text-lg font-medium">Tecido Soro</h3>
-        </div>
-      </div>
-      
-      
-      
-    </div> <!-- Close the grid container -->
-  </div> <!-- Close the container -->
-</section> <!-- Close the products section -->
     
-      
-      
-      
-      <!-- Call to Action -->
-      <section class="py-16 bg-gray-200">
-        <div class="container mx-auto px-4 text-center">
-          <h2 class="text-navy text-3xl mb-6 font-light uppercase tracking-wider">PEÇA AJUDA</h2>
-          <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
-            Os nossos especialistas estão disponíveis para ajudar na escolha do tecido perfeito para o seu mobiliário.
-          </p>
-          <a href="contactos.html" class="btn-adil">
-            CONTACTE-NOS
-          </a>
+
+      <!-- Fabrics Grid Section -->
+      <section style="background:#FDFCFA; padding:5rem 0;">
+        <div class="container mx-auto px-4" style="max-width:1200px;">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_1.jpg" alt="Veludo Concept — 01" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Veludo Concept — 01</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Toque extremamente macio, brilho discreto e alta densidade. Ideal para sofás de luxo e cabeceiras.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_2.jpg" alt="Linho Rústico Natura — 02" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Linho Rústico Natura — 02</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Fibras naturais entrelaçadas, aspeto orgânico e altamente respirável. Clássico e intemporal.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_3.jpg" alt="Microfibra Protect — 03" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Microfibra Protect — 03</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Tratamento anti-mancha e repelente a líquidos. Alta durabilidade, ideal para casas com animais.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_4.jpg" alt="Chenille Comfort — 04" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Chenille Comfort — 04</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Textura rica em relevo, toque acolhedor e resistente ao desgaste diário. Conforto tradicional.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_5.jpg" alt="Pele Sintética Nobre — 05" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Pele Sintética Nobre — 05</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Visual clássico e elegante, de fácil limpeza e manutenção. Elevada resistência a riscos.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_6.jpg" alt="Lona Algodão Slim — 06" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Lona Algodão Slim — 06</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Aspeito mate, toque suave e natural. Uma escolha moderna, minimalista e muito resistente.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_7.jpg" alt="Veludo Concept — 07" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Veludo Concept — 07</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Toque extremamente macio, brilho discreto e alta densidade. Ideal para sofás de luxo e cabeceiras.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_8.jpg" alt="Linho Rústico Natura — 08" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Linho Rústico Natura — 08</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Fibras naturais entrelaçadas, aspeto orgânico e altamente respirável. Clássico e intemporal.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_9.jpg" alt="Microfibra Protect — 09" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Microfibra Protect — 09</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Tratamento anti-mancha e repelente a líquidos. Alta durabilidade, ideal para casas com animais.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_10.jpg" alt="Chenille Comfort — 10" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Chenille Comfort — 10</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Textura rica em relevo, toque acolhedor e resistente ao desgaste diário. Conforto tradicional.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_11.jpg" alt="Pele Sintética Nobre — 11" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Pele Sintética Nobre — 11</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Visual clássico e elegante, de fácil limpeza e manutenção. Elevada resistência a riscos.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_12.jpg" alt="Lona Algodão Slim — 12" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Lona Algodão Slim — 12</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Aspeito mate, toque suave e natural. Uma escolha moderna, minimalista e muito resistente.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_13.jpg" alt="Veludo Concept — 13" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Veludo Concept — 13</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Toque extremamente macio, brilho discreto e alta densidade. Ideal para sofás de luxo e cabeceiras.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_14.jpg" alt="Linho Rústico Natura — 14" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Linho Rústico Natura — 14</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Fibras naturais entrelaçadas, aspeto orgânico e altamente respirável. Clássico e intemporal.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_15.jpg" alt="Microfibra Protect — 15" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Microfibra Protect — 15</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Tratamento anti-mancha e repelente a líquidos. Alta durabilidade, ideal para casas com animais.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_16.jpg" alt="Chenille Comfort — 16" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Chenille Comfort — 16</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Textura rica em relevo, toque acolhedor e resistente ao desgaste diário. Conforto tradicional.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_17.jpg" alt="Pele Sintética Nobre — 17" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Pele Sintética Nobre — 17</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Visual clássico e elegante, de fácil limpeza e manutenção. Elevada resistência a riscos.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_18.jpg" alt="Lona Algodão Slim — 18" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Lona Algodão Slim — 18</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Aspeito mate, toque suave e natural. Uma escolha moderna, minimalista e muito resistente.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_19.jpg" alt="Veludo Concept — 19" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Veludo Concept — 19</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Toque extremamente macio, brilho discreto e alta densidade. Ideal para sofás de luxo e cabeceiras.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_20.jpg" alt="Linho Rústico Natura — 20" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Linho Rústico Natura — 20</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Fibras naturais entrelaçadas, aspeto orgânico e altamente respirável. Clássico e intemporal.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_21.jpg" alt="Microfibra Protect — 21" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Microfibra Protect — 21</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Tratamento anti-mancha e repelente a líquidos. Alta durabilidade, ideal para casas com animais.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_22.jpg" alt="Chenille Comfort — 22" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Chenille Comfort — 22</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Textura rica em relevo, toque acolhedor e resistente ao desgaste diário. Conforto tradicional.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_23.jpg" alt="Pele Sintética Nobre — 23" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Pele Sintética Nobre — 23</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Visual clássico e elegante, de fácil limpeza e manutenção. Elevada resistência a riscos.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_24.jpg" alt="Lona Algodão Slim — 24" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Lona Algodão Slim — 24</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Aspeito mate, toque suave e natural. Uma escolha moderna, minimalista e muito resistente.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_25.jpg" alt="Veludo Concept — 25" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Veludo Concept — 25</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Toque extremamente macio, brilho discreto e alta densidade. Ideal para sofás de luxo e cabeceiras.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_26.jpg" alt="Linho Rústico Natura — 26" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Linho Rústico Natura — 26</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Fibras naturais entrelaçadas, aspeto orgânico e altamente respirável. Clássico e intemporal.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_27.jpg" alt="Microfibra Protect — 27" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Microfibra Protect — 27</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Tratamento anti-mancha e repelente a líquidos. Alta durabilidade, ideal para casas com animais.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_28.jpg" alt="Chenille Comfort — 28" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Chenille Comfort — 28</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Textura rica em relevo, toque acolhedor e resistente ao desgaste diário. Conforto tradicional.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_29.jpg" alt="Pele Sintética Nobre — 29" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Pele Sintética Nobre — 29</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Visual clássico e elegante, de fácil limpeza e manutenção. Elevada resistência a riscos.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_30.jpg" alt="Lona Algodão Slim — 30" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Lona Algodão Slim — 30</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Aspeito mate, toque suave e natural. Uma escolha moderna, minimalista e muito resistente.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_31.jpg" alt="Veludo Concept — 31" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Veludo Concept — 31</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Toque extremamente macio, brilho discreto e alta densidade. Ideal para sofás de luxo e cabeceiras.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_32.jpg" alt="Linho Rústico Natura — 32" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Linho Rústico Natura — 32</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Fibras naturais entrelaçadas, aspeto orgânico e altamente respirável. Clássico e intemporal.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+            <!-- Fabric Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up">
+              <div style="position:relative; padding-top:100%; overflow:hidden; background:#F7F4F0; border-bottom:1px solid #E8E3DC;">
+                <img src="images/tecidos/tecido_33.jpg" alt="Microfibra Protect — 33" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <div style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">Microfibra Protect — 33</h3>
+                  <p style="font-family:'Inter',sans-serif; font-size:11px; color:#6b6b6b; line-height:1.6; margin:0 0 1rem 0; font-weight:300;">Tratamento anti-mancha e repelente a líquidos. Alta durabilidade, ideal para casas com animais.</p>
+                </div>
+                <div style="font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; border-top:1px solid #E8E3DC; padding-top:10px; margin-top:auto;">
+                  Disponível sob Consulta
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
     
-                <!-- ══════════════════════════════════════════════════════
-           CAMPANHA DE DESCONTO / NEWSLETTER (10%)
-      ══════════════════════════════════════════════════════ -->
-      <section style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
+      style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
         <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
           <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:1rem;">OFERTA EXCLUSIVA</p>
           <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.75rem,3.5vw,2.5rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Subscreva e receba 10% de desconto na primeira compra</h2>
@@ -391,7 +696,7 @@
     <div class="flex flex-col md:flex-row justify-between items-center mb-8 pb-8 border-b border-gray-700">
       <div class="mb-6 md:mb-0">
         <div class="flex items-center mb-4">
-          <img src="images/adil-moveis-logo.png" alt="Adil Móveis" class="h-8 w-auto mr-3">
+          <div style="width:52px;height:52px;border-radius:50%;background:#ffffff;border:1px solid #E8E3DC;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;margin-bottom:1rem;"><img src="images/logo.png" alt="Adil Móveis" style="width:85%;height:auto;object-fit:contain;mix-blend-mode:multiply;"></div>
           
         </div>
         <div class="flex space-x-4">
