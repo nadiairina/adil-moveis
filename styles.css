@@ -936,9 +936,9 @@ img[src*="BANHO"] {
 /* ── Premium Footer Styling Override ─────────────────────── */
 footer,
 footer.bg-black {
-  background-color: #F5F0E8 !important;
+  background-color: #EDF4F8 !important; /* Soft Baby Blue */
   color: #1a1a1a !important;
-  border-top: 1px solid #E8E3DC !important;
+  border-top: 1px solid #D4E4EE !important;
 }
 
 footer .border-b,
@@ -1106,3 +1106,70 @@ footer.bg-black img {
 
 
 
+
+/* ── Global Baby Blue Footer Style Override ─────────────────── */
+footer,
+footer.bg-black {
+  background-color: #EDF4F8 !important; /* Soft Baby Blue */
+  color: #1a1a1a !important;
+  border-top: 1px solid #D4E4EE !important;
+}
+footer *, 
+footer a, 
+footer h4, 
+footer p, 
+footer span, 
+footer div,
+footer li {
+  color: #1a1a1a !important;
+}
+footer a:hover {
+  opacity: 0.7 !important;
+}
+footer .border-b,
+footer .border-gray-700,
+footer div.border-b {
+  border-color: #D4E4EE !important;
+}
+
+
+/* ── Global Baby Blue Buttons Override ────────────────── */
+.btn-adil,
+.filter-button-link,
+.filter-button,
+button[type="submit"],
+.cta-button,
+.snipcart-add-item {
+  background-color: #EDF4F8 !important;
+  color: #1a1a1a !important;
+  border: 1px solid #D4E4EE !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-adil:hover,
+.filter-button:hover,
+.filter-button-link:hover,
+button[type="submit"]:hover,
+.cta-button:hover,
+.snipcart-add-item:hover,
+.filter-button.active,
+.active-filter {
+  background-color: #C2D6E4 !important;
+  border-color: #A9C5DA !important;
+  color: #1a1a1a !important;
+}
+
+/* Quick contact widget adjustment */
+.floating-contact-bar a {
+  background-color: #EDF4F8 !important;
+  color: #1a1a1a !important;
+  border: 1px solid #D4E4EE !important;
+}
+.floating-contact-bar a:hover {
+  background-color: #C2D6E4 !important;
+}

@@ -161,179 +161,351 @@
       <!-- Minimalist Page Header (Zara Home Style) -->
       <section style="background-color:#F5F0E8; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
         <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
-          <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3.25rem); font-weight:400; color:#1a1a1a; letter-spacing:0.05em; margin-bottom:1rem; text-transform:uppercase;">Testemunhos Reais</h1>
+          <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3.25rem); font-weight:400; color:#1a1a1a; letter-spacing:0.05em; margin-bottom:1rem; text-transform:uppercase;">Testemunhos</h1>
           <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.7; max-width:620px; margin:0 auto; font-weight:300;">
-            A opinião genuína dos nossos clientes ao longo de 37 anos de dedicação. Clique em qualquer imagem para ampliar e ler o testemunho completo.
+            A opinião dos nossos clientes ao longo de 37 anos de dedicação e excelência no serviço de mobiliário personalizado.
           </p>
         </div>
       </section>
     
 
-      <!-- Screenshot Grid Section -->
-      <section style="background:#FDFCFA; padding:5rem 0;">
+      <!-- Testimonials Section (Clean Text-based Cards Grid) -->
+      <section id="testemunhos" style="background:#FDFCFA; padding:5rem 0;">
         <div class="container mx-auto px-4" style="max-width:1100px;">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_1.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="50">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_1.png" alt="Testemunho 1" style="width:100%; height:auto; display:block;" />
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="0">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Um serviço de excelência, integridade e confiança."
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_2.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="100">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_2.png" alt="Testemunho 2" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_3.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="0">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_3.png" alt="Testemunho 3" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">AA</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Aniss Ali</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_4.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="50">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_4.png" alt="Testemunho 4" style="width:100%; height:auto; display:block;" />
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="30">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Não existe melhor loja! Toda a minha mobília foi comprada nesta loja aconselho a todos que estejam a fazer casa ou a renovar Casa! Atendimento e dedicação 💯 estrelas!! Obrigado."
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_5.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="100">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_5.png" alt="Testemunho 5" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_6.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="0">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_6.png" alt="Testemunho 6" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">JS</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Joana Silva</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_7.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="50">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_7.png" alt="Testemunho 7" style="width:100%; height:auto; display:block;" />
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="60">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Fantástica variedade de produtos, sempre com uma atenção ao cliente muito acima da média, mantendo preços muito competitivos na relação qualidade/preço. Recomendo fortemente."
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_8.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="100">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_8.png" alt="Testemunho 8" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_9.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="0">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_9.png" alt="Testemunho 9" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">PP</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Paulo Pires</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_10.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="50">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_10.png" alt="Testemunho 10" style="width:100%; height:auto; display:block;" />
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="0">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Espetacular, móveis de alta qualidade, preço acessível, simpatia, parabéns Sr Aiaz."
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_11.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="100">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_11.png" alt="Testemunho 11" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
-              </div>
-            </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_12.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="0">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_12.png" alt="Testemunho 12" style="width:100%; height:auto; display:block;" />
-              </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">MC</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Manuel Cerqueira</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_13.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="50">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_13.png" alt="Testemunho 13" style="width:100%; height:auto; display:block;" />
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="30">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Atendimento top, excelente relação preço/qualidade🤗"
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">NA</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Nasrin Ali</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_14.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="100">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_14.png" alt="Testemunho 14" style="width:100%; height:auto; display:block;" />
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="60">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Já sou cliente há muitos anos. Recomendo vivamente esta loja. Pessoal 5 estrelas."
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">ID</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Ilda Dias</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Testimonial Screenshot Card -->
-            <div onclick="openLightbox('images/testemunhos/testemunho_15.png')" style="background:#EDF4F8; border:1px solid #E8E3DC; border-radius:4px; padding:12px; cursor:pointer; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.02); transition:all 0.3s; transform: translateY(0);" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='#C8B598'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#E8E3DC'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';" data-aos="fade-up" data-aos-delay="0">
-              <div style="position:relative; width:100%; border-radius:2px; overflow:hidden; background:#F7F4F0;">
-                <img src="images/testemunhos/testemunho_15.png" alt="Testemunho 15" style="width:100%; height:auto; display:block;" />
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="0">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Muito profissionalismo na entrega e montagem. Fiquei muito satisfeita com o sommier e o colchão."
+                </blockquote>
               </div>
-              <div style="padding:10px 0 0 0; text-align:center; font-family:'Inter',sans-serif; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">
-                ✦ Opinião de Cliente ✦
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">MS</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Maria Santos</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="30">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Preços muito competitivos e entrega super rápida. Recomendo a Adil Móveis no Feijó."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">RO</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Rui Oliveira</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="60">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Comprei o meu quarto de casal completo e ficou perfeito. Apoio no pós-venda 5 estrelas."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">CF</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Cláudia Ferreira</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="0">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Atendimento excelente do Sr. Aiaz e equipa. Montagem rápida e muito limpa. Muito obrigado."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">AC</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">António Costa</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="30">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Ótima qualidade do mobiliário. Recomendo para quem quer mobilar a casa com confiança."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">SR</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Sofia Rodrigues</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="60">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Simpatia e qualidade no atendimento. Preço justo e entrega gratuita na zona."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">JP</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">João Pedro</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="0">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Excelente loja de móveis no Feijó. Aconselho pela simpatia e pelo profissionalismo."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">SM</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Sandra Marques</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="30">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Móveis muito bonitos e com acabamentos excelentes. Recomendo vivamente a visita à loja física."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">CM</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Carlos Martins</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Card -->
+            <div style="background:#EDF4F8; border:1px solid #E8E3DC; padding:2.5rem 2rem; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='translateY(0)';" data-aos="fade-up" data-aos-delay="60">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-size:3rem; color:#C8B598; line-height:0.1; margin-bottom:1rem; margin-top:0.5rem;">“</div>
+                <blockquote style="font-family:'Playfair Display',serif; font-style:italic; color:#1a1a1a; font-size:1.05rem; line-height:1.7; margin-bottom:2rem;">
+                  "Comprei o sofá dos meus sonhos aqui. Muito confortável e com a medida exata que precisava."
+                </blockquote>
+              </div>
+              <div style="display:flex; align-items:center; gap:12px; border-top:1px solid #E8E3DC; padding-top:1.25rem; margin-top:auto;">
+                <div style="width:42px; height:42px; border-radius:50%; background:#F5F0E8; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; border:1px solid #E8E3DC; flex-shrink:0;">AC</div>
+                <div>
+                  <h4 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; letter-spacing:0.05em;">Ana Cristina</h4>
+                  <div style="display:flex; color:#C8B598; gap:2px; margin-top:2px;">
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                    <i data-feather="star" style="width:10px; height:10px; fill:currentColor;"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <!-- Interactive Lightbox Modal -->
-      <div id="testemonialLightbox" style="position:fixed; inset:0; background:rgba(0,0,0,0.85); backdrop-filter:blur(5px); z-index:9999; display:none; align-items:center; justify-content:center; padding:1.5rem;" onclick="closeLightbox()">
-        <div style="position:relative; max-width:600px; width:100%; max-height:85vh; border-radius:4px; overflow:hidden; background:#fff; padding:12px; border:1px solid #E8E3DC; box-shadow:0 15px 40px rgba(0,0,0,0.2);" onclick="event.stopPropagation()">
-          <button style="position:absolute; top:12px; right:12px; border:none; background:transparent; font-size:1.5rem; color:#1a1a1a; cursor:pointer;" onclick="closeLightbox()">&times;</button>
-          <img id="lightboxImg" src="" style="width:100%; height:auto; display:block; border-radius:2px;" />
-        </div>
-      </div>
-      
-      <script>
-        function openLightbox(src) {
-          const lightbox = document.getElementById('testemonialLightbox');
-          const img = document.getElementById('lightboxImg');
-          img.src = src;
-          lightbox.style.display = 'flex';
-          document.body.style.overflow = 'hidden';
-        }
-        function closeLightbox() {
-          const lightbox = document.getElementById('testemonialLightbox');
-          lightbox.style.display = 'none';
-          document.body.style.overflow = '';
-        }
-      </script>
     
       style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
         <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
