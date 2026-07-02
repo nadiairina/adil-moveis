@@ -14,113 +14,149 @@
   </head>
   <body>
     <header>
-      <!-- Top Bar with Social Media, Email and Phone -->
-      <div class="bg-navy text-white py-2">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-          <div class="flex space-x-8">
-            <a href="https://www.facebook.com/adilmoveisaiaz/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-              <i data-feather="facebook" class="w-5 h-5"></i>
-            </a>
-            <a href="https://www.instagram.com/adil_moveis88/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-              <i data-feather="instagram" class="w-5 h-5"></i>
-            </a>
-          </div>
-          <div class="flex items-center space-x-6 text-sm">
-            <a href="mailto:adil.moveis@hotmail.com" class="flex items-center hover:text-gray-300">
-              <i data-feather="mail" class="w-4 h-4 mr-3"></i> adil.moveis@hotmail.com
-            </a>
-            <a href="tel:212582788" class="flex items-center hover:text-gray-300">
-              <i data-feather="phone" class="w-4 h-4 mr-3"></i> 212 582 788
-            </a>
-            <!-- Snipcart Button -->
-            <button class="snipcart-checkout flex items-center font-bold bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-200 transition-colors">
-              <i data-feather="shopping-cart" class="w-4 h-4 mr-2"></i>
-              <span class="snipcart-total-price">0.00€</span>
+                      <!-- Global Promo Banner -->
+    <div style="background-color:#C8B598;color:#1a1a1a;padding:5px 0;font-size:9px;font-weight:700;letter-spacing:0.15em;z-index:50;position:relative;border-bottom:1px solid #b09e85;overflow:hidden;white-space:nowrap;">
+      <div class="animate-marquee" style="display:inline-block;white-space:nowrap;">
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+      </div>
+    </div>
+    <!-- STICKY NAVBAR -->
+    <header class="sticky top-0 z-50 transition-all duration-300 shadow-sm" id="site-header" style="background-color:#F5F0E8;border-bottom:1px solid #E8E3DC;">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex items-center justify-between relative" style="height:72px;">
+          
+          <!-- Logo -->
+          <a href="index.html" class="flex-shrink-0 flex items-center" style="margin-left:4px;">
+            <img src="images/adil-moveis-logo.png" alt="Adil Móveis" style="height:52px;width:52px;border-radius:50%;object-fit:cover;mix-blend-mode:multiply;">
+          </a>
+          
+          <!-- Desktop Menu (Centered) -->
+          <nav class="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 px-2" id="desktop-nav" style="z-index:10;">
+            <a href="index.html" class="nav-link" data-page="index.html">INÍCIO</a>
+            <a href="quartos.html" class="nav-link" data-page="quartos.html">QUARTOS</a>
+            <a href="salas.html" class="nav-link" data-page="salas.html">SALAS</a>
+            <a href="colchoes.html" class="nav-link" data-page="colchoes.html">COLCHÕES</a>
+            <a href="kids.html" class="nav-link" data-page="kids.html">KIDS</a>
+          </nav>
+          
+          <!-- Right Side -->
+          <div class="flex items-center gap-4">
+            <a href="conjuntos.html" class="hidden xl:inline-block" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#C8B598;border:1px solid #C8B598;padding:6px 16px;transition:all 0.3s;border-radius:2px;text-decoration:none;" onmouseover="this.style.background='#C8B598';this.style.color='white';" onmouseout="this.style.background='transparent';this.style.color='#C8B598';">PACKS</a>
+            
+            <a href="contactos.html" class="hidden lg:inline-block" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#1a1a1a;border:1px solid #C8B598;background:#C8B598;padding:7px 18px;transition:all 0.3s;border-radius:20px;text-decoration:none;" onmouseover="this.style.background='#b09e85';this.style.borderColor='#b09e85';" onmouseout="this.style.background='#C8B598';this.style.borderColor='#C8B598';">AGENDAR VISITA</a>
+            
+            <button class="snipcart-checkout flex items-center justify-center border rounded-full text-black hover:border-black transition-colors relative" style="width:42px;height:32px;border-color:#E8E3DC;background:transparent;">
+              <i data-feather="shopping-bag" style="width:16px;height:16px;"></i>
+              <span class="snipcart-items-count" style="position:absolute;top:-5px;right:-5px;background:#1a1a1a;color:white;font-size:9px;width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;">0</span>
             </button>
+            
+            <button id="menuButton" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;" class="ml-1">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Mobile Menu Overlay -->
+      <div id="menuOverlay" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.45);">
+        <div id="menuSidebar" class="absolute top-0 right-0 h-full flex flex-col" style="width:320px;max-width:88vw;background:#FDFCFA;transform:translateX(100%);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1);box-shadow:-4px 0 30px rgba(0,0,0,0.12);border-left:1px solid #E8E3DC;">
+          <!-- Sidebar Header -->
+          <div style="padding:1.5rem;border-bottom:1px solid #E8E3DC;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#6b6b6b;">MENU</span>
+            <button id="closeMenuBtn" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          
+          <!-- Links -->
+          <div style="flex:1;overflow-y:auto;padding:2rem 1.5rem;">
+            <p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">Loja</p>
+            <nav style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+              <a href="quartos.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Quartos</a>
+              <a href="salas.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Salas</a>
+              <a href="colchoes.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Colchões</a>
+              <a href="kids.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Kids / Crianças</a>
+              <a href="escritorio.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Escritório</a>
+              <a href="complementos.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Complementos</a>
+              <a href="conjuntos.html" style="font-size:1rem;font-weight:600;color:#C8B598;text-decoration:none;letter-spacing:0.02em;">✦ Packs Especiais</a>
+              <a href="catalogos.html" style="font-size:0.85rem;font-weight:400;color:#6b6b6b;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Catálogos PDF</a>
+            </nav>
+            
+            <p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;padding-top:1.5rem;border-top:1px solid #E8E3DC;">Empresa & Apoio</p>
+            <nav style="display:flex;flex-direction:column;gap:0.85rem;">
+              <a href="empresa.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">A Nossa História</a>
+              <a href="testemunhos.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Testemunhos</a>
+              <a href="tecidos.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Guia de Tecidos</a>
+              <a href="faq.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Perguntas Frequentes</a>
+              <a href="envios.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Envios e Devoluções</a>
+              <a href="contactos.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Contactos & Lojas</a>
+            </nav>
+          </div>
+          
+          <!-- Sidebar Footer -->
+          <div style="padding:1.5rem;background:#F5F0E8;border-top:1px solid #E8E3DC;">
+            <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;width:100%;padding:0.85rem;margin-bottom:0.75rem;background:#C8B598;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">
+              Agendar Visita à Loja
+            </a>
+            <a href="tel:212582788" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.9rem;font-weight:700;color:#1a1a1a;text-decoration:none;margin-bottom:0.5rem;">
+              📞 212 582 788
+            </a>
+            <a href="https://wa.me/351912582788" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.8rem;color:#25d366;text-decoration:none;">
+              💬 912 582 788
+            </a>
           </div>
         </div>
       </div>
       
-      <!-- Menu Overlay -->
-      <div id="menuOverlay" class="fixed top-0 right-0 w-72 bg-white z-50 overflow-y-auto hidden h-screen shadow-lg">
-        <div class="py-4">
-          <div class="flex justify-between items-center px-4 mb-4 border-b border-gray-200 pb-4">
-            <span class="text-lg font-bold text-black">MENU</span>
-            <button 
-              class="text-black"
-              id="closeMenuButton"
-            >
-              <i data-feather="x" class="w-6 h-6"></i>
-            </button>
-          </div>
+      <!-- Script for menu & active nav link -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Active nav highlight
+          var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+          var navLinks = document.querySelectorAll('#desktop-nav .nav-link');
+          navLinks.forEach(function(link) {
+            if (link.getAttribute('data-page') === currentPage) {
+              link.style.color = '#1a1a1a';
+              link.style.borderBottom = '1px solid #1a1a1a';
+              link.style.paddingBottom = '2px';
+            }
+          });
           
-          <nav class="flex flex-col">
-            <!-- Menu items here -->
-            <a href="index.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              INÍCIO
-            </a>
-            <a href="quartos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              QUARTOS
-            </a>
-            <a href="colchoes.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              COLCHÕES
-            </a>
-            <a href="salas.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              SALAS
-            </a>
-            <a href="escritorio.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              ESCRITÓRIO
-            </a>
-            <a href="cozinha.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              COZINHA
-            </a>
-            <a href="complementos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              COMPLEMENTOS
-            </a>
-            <a href="kids.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              KIDS
-            </a>
-            <a href="tecidos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              TECIDOS
-            </a>
-            <a href="servicos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              SERVIÇOS
-            </a>
-            <a href="contactos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              CONTACTOS
-            </a>
-            <a href="testemunhos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              TESTEMUNHOS
-            </a>
-            <a href="parceiros.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              PARCEIROS
-            </a>
-            <a href="catalogos.html" class="text-base py-3 px-4 hover:bg-gray-100 hover:text-navy">
-              CATÁLOGOS
-            </a>
-
-          </nav>
-        </div>
-      </div>
+          // Sidebar menu
+          var menuBtn = document.getElementById('menuButton');
+          var closeBtn = document.getElementById('closeMenuBtn');
+          var overlay  = document.getElementById('menuOverlay');
+          var sidebar  = document.getElementById('menuSidebar');
+          
+          function openMenu() {
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            setTimeout(function() { sidebar.style.transform = 'translateX(0)'; }, 10);
+          }
+          function closeMenu() {
+            sidebar.style.transform = 'translateX(100%)';
+            setTimeout(function() { overlay.classList.add('hidden'); }, 310);
+            document.body.style.overflow = '';
+          }
+          
+          if (menuBtn)  menuBtn.addEventListener('click', openMenu);
+          if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+          if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
+        });
+      </script>
     </header>
 
     <main>
      <!-- Hero Section with Logo and Menu Button -->
 <section class="relative bg-gray-200">
-  <!-- Logo and Menu positioning container -->
-  <div class="absolute top-0 left-0 w-full z-10 flex justify-between items-center p-4">
-    <a href="index.html">
-      <img src="images/adil-moveis-logo.png" alt="Adil Móveis" class="h-12 w-auto bg-white rounded">
-    </a>
-    
-    <button 
-      class="flex items-center space-x-2 text-white bg-black bg-opacity-50 py-2 px-3 rounded"
-      id="menuButton"
-    >
-      <span class="uppercase font-bold">MENU</span>
-      <i data-feather="menu" class="w-6 h-6"></i>
-    </button>
-  </div>
   
   <!-- Page Header - Add more padding at the top (pt-24) -->
   <section class="bg-gray-200 py-12 pt-24">
@@ -172,22 +208,37 @@
             <!-- Contact Form -->
             
 <div>
-  <h2 class="text-2xl font-medium mb-6">Envie-nos uma Mensagem</h2>
+  <h2 class="text-2xl font-medium mb-6">Agendar Visita / Enviar Mensagem</h2>
   
   <form class="space-y-6" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Novo Contacto do Website">
+    <input type="hidden" name="_subject" value="Contacto / Agendamento de Visita - Website">
     
-    <div>
-      <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
-        Nome Completo*
-      </label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
-        required
-      />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+          Nome Completo*
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
+          required
+        />
+      </div>
+      
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+          Telefone*
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
+          required
+        />
+      </div>
     </div>
     
     <div>
@@ -202,27 +253,31 @@
         required
       />
     </div>
-    
-    <div>
-      <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
-        Telefone
-      </label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
-      />
+
+    <div style="background-color: #F5F0E8; padding: 1.25rem; border-radius: 6px; border: 1px solid #E8E3DC;">
+      <h3 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a1a;">📅 Agendar Visita Gratuita (Opcional)</h3>
+      <p style="font-size: 0.75rem; color: #6b6b6b; margin-bottom: 1rem;">Selecione o dia e hora para podermos preparar um atendimento personalizado para si.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="visit-date" class="block text-xs font-medium text-gray-700 mb-1">Data da Visita</label>
+          <input type="date" id="visit-date" name="visit-date" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy" />
+        </div>
+        <div>
+          <label for="visit-time" class="block text-xs font-medium text-gray-700 mb-1">Hora da Visita</label>
+          <input type="time" id="visit-time" name="visit-time" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy" />
+        </div>
+      </div>
     </div>
     
     <div>
       <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
-        Mensagem*
+        Mensagem / Notas Adicionais*
       </label>
       <textarea
         id="message"
         name="message"
-        rows="4"
+        rows="3"
         class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
         required
       ></textarea>
@@ -232,8 +287,11 @@
       <button
         type="submit"
         class="btn-adil"
+        style="background: #C8B598; border-color: #C8B598; color: white;"
+        onmouseover="this.style.background='#b09e85'; this.style.borderColor='#b09e85';"
+        onmouseout="this.style.background='#C8B598'; this.style.borderColor='#C8B598';"
       >
-        ENVIAR MENSAGEM
+        SUBMETER PEDIDO
       </button>
     </div>
   </form>
@@ -259,7 +317,28 @@
       </section>
     </main>
 
-    <footer class="bg-black text-white py-10">
+          <!-- ══════════════════════════════════════════════════════
+           CAMPANHA DE DESCONTO / ANIVERSÁRIO
+      ══════════════════════════════════════════════════════ -->
+      <section style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
+        <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
+          <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:1rem;">OFERTA DE ANIVERSÁRIO</p>
+          <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.75rem,3.5vw,2.5rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Campanha de Celebração — 20% Desconto Direto</h2>
+          <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.75; margin-bottom:2.25rem; max-width:600px; margin-left:auto; margin-right:auto;">
+            Visite as nossas lojas no Feijó para usufruir de um desconto de 20% em toda a coleção de mobiliário de fabrico nacional e personalizado.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; align-items:center;">
+            <a href="contactos.html" style="display:inline-flex; align-items:center; gap:8px; background:#C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:0.9rem 2.25rem; text-decoration:none; border:1px solid #C8B598; border-radius:2px; transition:all 0.3s;" onmouseover="this.style.background='#b09e85'; this.style.borderColor='#b09e85';" onmouseout="this.style.background='#C8B598'; this.style.borderColor='#C8B598';">
+              📅 Agendar Visita Grátis
+            </a>
+            <a href="https://wa.me/351912582788" target="_blank" style="display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1a1a1a; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:0.9rem 2.25rem; text-decoration:none; border:1px solid #1a1a1a; border-radius:2px; transition:all 0.3s;" onmouseover="this.style.background='#1a1a1a'; this.style.color='#fff';" onmouseout="this.style.background='transparent'; this.style.color='#1a1a1a';">
+              💬 Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+<footer class="bg-black text-white py-10">
   <div class="container mx-auto px-4">
     <!-- Top Section with Social and Contact -->
     <div class="flex flex-col md:flex-row justify-between items-center mb-8 pb-8 border-b border-gray-700">

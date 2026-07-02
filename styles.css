@@ -1,210 +1,495 @@
-/* Custom font styles for Adil Móveis */
+/* =========================================================
+   ADIL MÓVEIS — Premium CSS
+   Inspired by Zara Home / Gato Preto aesthetic
+   Warm beige, serif headings, clean minimalism
+   ========================================================= */
+
+/* ── Google Fonts ────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── Design Tokens ───────────────────────────────────────── */
+:root {
+  --bg:          #FDFCFA;
+  --banner:      #C8B598;
+  --navbar:      #F5F0E8;
+  --text:        #1a1a1a;
+  --text-muted:  #6b6b6b;
+  --border:      #E8E3DC;
+  --white:       #ffffff;
+  --black:       #1a1a1a;
+  --accent:      #C8B598;
+  --accent-dark: #b09e85;
+
+  --font-serif:  'Playfair Display', Georgia, serif;
+  --font-sans:   'Inter', system-ui, sans-serif;
+
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+
+  --shadow-card:  0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Reset & Base ────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  color: #333;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography ──────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text);
 }
 
 .fancy-script {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-style: italic;
 }
 
-/* Adil Móveis color scheme - Updated to black */
-.text-navy {
-  color: #000000; /* Changed from #D3D3D3 to #000000 */
-}
+/* ── Color Classes (preserved) ───────────────────────────── */
+.text-navy  { color: var(--black); }
+.bg-navy,
+.bg-gray-700 { background-color: var(--black); }
 
-.bg-navy, .bg-gray-700 {
-  background-color: #000000; /* Changed from #D3D3D3 to #000000 */
-}
-
-/* Containers */
+/* ── Container ───────────────────────────────────────────── */
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
-/* Menu items without arrows */
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ── Marquee Banner ──────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-25%, 0, 0); }
 }
 
-/* This class is kept for reference but not used */
-.menu-item-with-arrow {
-  /* Arrow styles removed as requested */
-  display: none;
-}
-
-/* Header styles */
-.social-icon {
-  transition: opacity 0.2s ease;
-}
-
-.social-icon:hover {
-  opacity: 0.8;
-}
-
-/* Logo styles */
-.logo-container {
-  background-color: #000;
-  padding: 0.5rem 1rem;
+.animate-marquee {
   display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 
-.logo-text {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+/* ── Navigation ──────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-/* Button styles */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--black);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover {
+  color: var(--black);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Active nav link */
+#desktop-nav .nav-link.active,
+#desktop-nav .nav-link[style*="border-b"] {
+  color: var(--black);
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
 .btn-adil {
   display: inline-block;
   background-color: transparent;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid var(--black);
+  color: var(--black);
   padding: 0.75rem 2rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  transition: var(--transition);
   text-decoration: none;
   cursor: pointer;
+  border-radius: var(--radius-sm);
 }
 
 .btn-adil:hover {
-  background-color: #D3D3D3;
-  border-color: #D3D3D3;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-/* Transition effects */
-.transition-opacity {
-  transition: opacity 0.3s ease;
+.btn-adil-filled {
+  display: inline-block;
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  color: var(--white);
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  transition: var(--transition);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
 }
 
-.transition-transform {
-  transition: transform 0.5s ease;
+.btn-adil-filled:hover {
+  background-color: transparent;
+  color: var(--black);
 }
 
-.group:hover .group-hover\:scale-110 {
-  transform: scale(1.1);
+.btn-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--white);
+  padding: 0.875rem 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  transition: var(--transition);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
 }
 
-.transition-all {
-  transition: all 0.3s ease;
+.btn-visit:hover {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
 }
 
-.group-hover\:bg-opacity-30 {
-  transition: background-opacity 0.3s ease;
+/* ── Product Cards ───────────────────────────────────────── */
+.product {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  box-shadow: var(--shadow-card);
 }
 
-.group-hover\:opacity-100 {
-  transition: opacity 0.3s ease;
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
 }
 
-/* Partner logos grid */
-.partner-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+.product .relative {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  background-color: #f7f4f0;
 }
 
-@media (min-width: 640px) {
-  .partner-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.product img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (min-width: 768px) {
-  .partner-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:h-64 {
-    height: 16rem;
-  }
-
-  .md\:space-y-0 {
-    margin-top: 0;
-  }
-
-  .md\:space-x-8 > * + * {
-    margin-left: 2rem;
-  }
-
-  .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0;
-  }
+.product:hover img {
+  transform: scale(1.06);
 }
 
-/* Partner logo item */
-.partner-logo {
-  border: 1px solid #eee;
-  padding: 1.5rem;
+/* Discount badge */
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--accent);
+  color: var(--white);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  z-index: 2;
+}
+
+.new-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  z-index: 2;
+}
+
+/* ── Product Snipcart Button ─────────────────────────────── */
+.product button.snipcart-add-item,
+.snipcart-add-item.product-cart-btn {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--black) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0.65rem 1.25rem !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-sans) !important;
+  transition: var(--transition) !important;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product button.snipcart-add-item:hover,
+.snipcart-add-item.product-cart-btn:hover {
+  background-color: transparent !important;
+  color: var(--black) !important;
+  border-color: var(--black) !important;
+}
+
+/* ── Filter Buttons ──────────────────────────────────────── */
+.filter-button {
+  background-color: var(--bg) !important;
+  color: var(--text-muted) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 30px !important;
+  padding: 0.45rem 1.25rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  font-family: var(--font-sans) !important;
+  letter-spacing: 0.05em !important;
+  transition: var(--transition) !important;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border-color: var(--black) !important;
+}
+
+.filter-button.active {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border-color: var(--black) !important;
+  font-weight: 600 !important;
+}
+
+/* ── Snipcart Checkout Button ────────────────────────────── */
+button.snipcart-checkout {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 30px !important;
+  padding: 0.4rem 1.1rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  font-family: var(--font-sans) !important;
+  transition: var(--transition) !important;
+}
+
+button.snipcart-checkout:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border-color: var(--black) !important;
+}
+
+/* ── Mobile Sidebar Menu ─────────────────────────────────── */
+#menuOverlay {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-left: 1px solid var(--border) !important;
+}
+
+/* ── Hero Section ────────────────────────────────────────── */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 120px;
-  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-.partner-logo:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
-}
-.partner-logo img {
-  max-height: 140px !important; /* Adjust to your preferred size */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.18) 0%,
+    rgba(0,0,0,0.35) 60%,
+    rgba(0,0,0,0.55) 100%
+  );
+  z-index: 1;
 }
 
-.partner-logo .h-24 {
-  height: 160px; /* Increase this to give more space for the larger logos */
+.hero-section > * {
+  position: relative;
+  z-index: 2;
 }
 
-/* History section images - Updated for better centering and alignment */
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 300;
+  color: rgba(255,255,255,0.92);
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+
+/* ── Trust Bar ───────────────────────────────────────────── */
+.trust-bar {
+  background-color: var(--navbar);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.trust-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.trust-bar-item svg,
+.trust-bar-item i {
+  color: var(--accent);
+}
+
+/* ── Category Grid ───────────────────────────────────────── */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  aspect-ratio: 3/4;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  transition: background 0.4s ease;
+}
+
+.category-card:hover .category-card-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 60%);
+}
+
+.category-card-title {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.category-card:hover .category-card-title {
+  gap: 0.75rem;
+}
+
+.category-card-title::after {
+  content: '→';
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.category-card:hover .category-card-title::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── History / About Section ─────────────────────────────── */
 .history-images {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -215,14 +500,13 @@ body {
 
 .history-image {
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   height: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .history-image img {
   width: 100%;
-  height: 300px; /* Fixed height for consistency */
+  height: 300px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -230,34 +514,102 @@ body {
 .history-image:hover img {
   transform: scale(1.05);
 }
-/* Make the history images section wider */
-.container.mx-auto.px-4.py-8 {
-  max-width: 1400px; /* Increase this value to make images wider */
+
+/* ── Section Headings ────────────────────────────────────── */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
-/* Optional: if you want to maintain image proportions but ensure consistent height */
-.grid.grid-cols-1.md\:grid-cols-3.gap-8 img {
-  height: 350px;
-  object-fit: cover;
+.section-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
 }
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+/* ── Partner Logos ───────────────────────────────────────── */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
-/* Slideshow styles */
+
+@media (min-width: 640px) {
+  .partner-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .partner-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.partner-logo {
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  transition: var(--transition);
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+}
+
+.partner-logo:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.partner-logo img {
+  max-height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%);
+}
+
+/* ── Image hover – global (excluded from nav/footer) ─────── */
+img {
+  max-width: 100%;
+}
+
+header img,
+footer img,
+.no-hover img,
+.logo img {
+  transition: none !important;
+}
+
+header img:hover,
+footer img:hover,
+.no-hover img:hover,
+.logo img:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ── Slideshow ───────────────────────────────────────────── */
 .slideshow-container {
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: white;
+  background: var(--white);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
-.mySlides {
-  display: none;
-  text-align: center;
-}
+.mySlides { display: none; text-align: center; }
 
 .mySlides img {
   max-height: 500px;
@@ -270,107 +622,71 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   margin-top: -22px;
-  padding: 16px;
-  color: white;
+  padding: 14px 18px;
+  color: var(--white);
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 16px;
+  transition: 0.3s ease;
   border-radius: 50%;
   user-select: none;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.35);
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.7); }
 
 .dot {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
+  height: 10px; width: 10px;
+  margin: 0 4px;
+  background-color: var(--border);
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.4s ease;
 }
 
-.active, .dot:hover {
-  background-color: #333;
-}
-.filter-button.active {
-    background-color: #d1d5db; /* Gray-300 */
-    font-weight: 500;
-  }
-/* Add this to your styles.css file */
-.product {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.active, .dot:hover { background-color: var(--accent-dark); }
+
+/* ── Logo ────────────────────────────────────────────────── */
+.logo-container {
+  background-color: transparent;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
 }
 
-.product .relative {
-  position: relative;
-  padding-top: 66.67%; /* 2:3 aspect ratio like the first image */
-  overflow: hidden;
-  flex: 1;
+/* ── Social Icons ────────────────────────────────────────── */
+.social-icon { transition: opacity 0.2s ease; }
+.social-icon:hover { opacity: 0.7; }
+
+/* ── Menu Button ─────────────────────────────────────────── */
+#menuButton {
+  transition: transform 0.2s ease;
+}
+#menuButton:hover {
+  transform: scale(1.05);
 }
 
-.product img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+/* ── Special product image fixes ─────────────────────────── */
+.special-positioning { object-position: center 35% !important; }
+
+.chair-image {
+  object-fit: contain !important;
+  height: 300px !important;
 }
 
-/* Target specific problematic images */
-.special-positioning {
-  object-position: center 35% !important; /* Adjust vertical position to show the important part */
-}
-/* Add hover effect to ALL images on the site */
-img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.product[data-category="cadeiras"] .relative,
+.product[data-category="bancos"] .relative {
+  min-height: 280px !important;
+  padding-top: 0 !important;
 }
 
-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+.product-hidden { display: none !important; }
 
-/* Exclude specific images that shouldn't have the effect */
-header img, 
-footer img, 
-.no-hover-effect, 
-button img, 
-.feather,
-[data-feather] {
-  transition: none !important;
-}
-
-header img:hover, 
-footer img:hover,
-.no-hover-effect:hover, 
-button img:hover,
-.feather:hover,
-[data-feather]:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-/* Target historia images with inline styles */
-[src*="historia"] {
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-}
-
-[src*="historia"]:hover {
-  transform: scale(1.03) !important;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
-}
-/* Fix for gallery modal images on mobile */
+/* ── Gallery / modal fix ─────────────────────────────────── */
 #galleryModal .gallery-container img {
   width: auto !important;
   max-width: 90% !important;
@@ -381,441 +697,292 @@ button img:hover,
   margin: 0 auto !important;
 }
 
-#galleryModal .gallery-container {
-  padding: 0 15px !important;
-  box-sizing: border-box !important;
-}
-/* Make history images stack on mobile */
-@media (max-width: 768px) {
-  div[style*="display: flex; justify-content: space-between"] {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 30px !important;
-  }
-  
-  div[style*="display: flex; justify-content: space-between"] img {
-    width: 90% !important;
-    min-width: 90% !important;
-    max-width: 450px !important;
-  }
-}
-/* Direct chair image fix */
-.chair-image {
-  object-fit: contain !important;
-  height: 300px !important;
-}
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-dark); }
 
-.product[data-category="cadeiras"] .relative,
-.product[data-category="bancos"] .relative {
-  height: 300px !important;
-  padding-top: 0 !important;
-}
-/* Make logo and hamburger menu smaller on mobile */
-@media (max-width: 768px) {
-  /* Reduce logo size */
-  .logo img, 
-  img[alt*="logo"], 
-  img[alt*="Adil"],
-  [alt="ADIL MÓVEIS"],
-  header img,
-  .logo-container img {
-    max-width: 120px !important; /* Adjust this value to your preference */
-    height: auto !important;
-  }
-  
-  /* Make hamburger menu smaller */
-  .menu-button,
-  button[aria-label*="menu"],
-  button.MENU,
-  #hamburger,
-  button:has(svg),
-  .menu-icon,
-  button.bg-gray-700 {
-    transform: scale(0.8) !important; /* Makes it 80% of original size */
-    padding: 6px !important;
-  }
-  
-  /* Adjust position if needed */
-  header, .header {
-    padding: 8px !important;
-  }
-  
-  /* Fix spacing for the page title */
-  h1:not(.logo), .page-title {
-    margin-top: 10px !important;
-  }
-}
-/* Comprehensive mobile fixes for various devices */
-
-/* iPhone SE, Galaxy S5, and other very small devices */
-@media (max-width: 374px) {
-  /* Make logo even smaller on tiny screens */
-  .logo img, img[alt*="Adil"], header img {
-    max-width: 100px !important;
-  }
-  
-  /* Reduce text size for very small screens */
-  h1 {
-    font-size: 1.3rem !important;
-  }
-  
-  h2 {
-    font-size: 1.1rem !important;
-  }
-  
-  p, div {
-    font-size: 0.9rem !important;
-  }
-  
-  /* Reduce padding further */
-  .container, section, div {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-  }
-  
-  /* Ensure buttons are properly sized */
-  button, .btn-adil {
-    padding: 6px 12px !important;
-    font-size: 0.8rem !important;
-  }
-}
-
-/* Medium sized phones (iPhone 6-8, Pixel, etc.) */
-@media (min-width: 375px) and (max-width: 413px) {
-  h1 {
-    font-size: 1.4rem !important;
-  }
-  
-  /* Add more space for content */
-  .py-6 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
-}
-
-/* Fix for iPhone X, iPhone 11/12, Galaxy S9/S10 etc. */
-@media (min-width: 414px) and (max-width: 767px) {
-  /* Slightly larger spacing for larger phones */
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  
-  /* Adjust title position */
-  h1 {
-    padding-top: 15px !important;
-  }
-}
-
-/* Fix for phones in landscape orientation */
-@media (max-height: 450px) and (orientation: landscape) {
-  /* Reduce vertical spacing */
-  .py-6, .py-8, .py-10, .py-12 {
-    padding-top: 0.8rem !important;
-    padding-bottom: 0.8rem !important;
-  }
-  
-  /* Make header more compact in landscape */
-  header, .header {
-    padding: 5px !important;
-  }
-  
-  /* Adjust hero sections for landscape */
-  .hero, [style*="background-image"] {
-    min-height: 200px !important; 
-  }
-  
-  /* Adjust title spacing */
-  h1, h2 {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-  }
-}
-
-/* Universal fixes for all mobile devices */
-@media (max-width: 768px) {
-  /* Fix image sizes */
-  img {
-    max-width: 100% !important;
-  }
-  
-  /* Fix menu overlap issues */
-  .menu, #menu {
-    z-index: 1000 !important;
-  }
-  
-  /* Add text shadow to improve readability on image backgrounds */
-  h1, h2, h3, p, .text-white {
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
-  }
-  
-  /* Fix footer on mobile */
-  footer {
-    padding: 1rem !important;
-    font-size: 0.85rem !important;
-  }
-  
-  /* Fix grid layouts */
-  .grid {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  
-  /* Ensure proper spacing between grid items */
-  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
-    gap: 1rem !important;
-  }
-  
-  /* Make sure all clickable elements are big enough */
-  a, button, [role="button"] {
-    min-height: 40px !important;
-    min-width: 40px !important;
-  }
-}
-/* Menu button styling with hover effect */
-#menuButton {
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-}
-
-#menuButton:hover {
-  transform: scale(1.03) !important;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
-}
-/* Fix for specific product images using their exact URLs - with increased height */
-img[src="https://lourini.pt/app/uploads/2024/07/roupeiro-branco-1200x1200.png"],
-img[src="https://lourini.pt/app/uploads/2024/07/roupeiro-1200x1200.png"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5103-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5105-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_roupeiro_5140-scaled.jpg"],
-img[src="https://lourini.pt/app/uploads/2024/10/modulo4gavetas_ibiza_lado-1200x1200.png"],
-img[src="https://lourini.pt/app/uploads/2024/07/camiseiro-1200x1200.png"],
-img[src="https://lourini.pt/app/uploads/2024/06/modulo-4gavetas-aberto-branco-1200x1200.png"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_camiseiro_5034-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_camiseiro_5035-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_camiseiro_5027-631x1024.jpg"],
-img[src="https://lourini.pt/app/uploads/2024/10/modulo2P3P-lado-1200x1200.png"],
-img[src="https://static.wixstatic.com/media/01ff71_920a29f541054dbd976e7b059b43c5b8.jpg/v1/fill/w_450,h_418,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/01ff71_920a29f541054dbd976e7b059b43c5b8.jpg"],
-img[src="https://static.wixstatic.com/media/01ff71_b3ea3960e283428f8707b5e98237cd2e.jpg/v1/fill/w_479,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/01ff71_b3ea3960e283428f8707b5e98237cd2e.jpg"],
-img[src="https://lourini.pt/app/uploads/2024/07/toronto-elemento-prateleiras-1200x1200.png"],
-img[src="https://i0.wp.com/mitomovel.pt/wp/wp-content/uploads/2021/10/Ref.-271-aberto.webp?ssl=1"],
-img[src="https://i0.wp.com/mitomovel.pt/wp/wp-content/uploads/2021/10/Ref.-269-aberto.webp?ssl=1"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5061-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5064_1-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5077_1-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5080-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_sapateira_5085-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_bengaleiro_5100_1-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_bengaleiro_5102-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_cabide_2050-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1555-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1565-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1580_2-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1585_2-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1650-scaled.jpg"],
-img[src="https://moveisaf.com/wp-content/uploads/2022/04/AF-MOVEIS_MOVEL_CASA_DE_BANHO_1566-scaled.jpg"] {
-  object-fit: contain !important;
-  height: 320px !important;  /* Increased from 280px to 320px */
-  background-color: white !important;
-  width: 100% !important;
-  max-height: none !important;
-  min-height: 320px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-/* Also fix the parent container */
-.product .relative {
-  height: auto !important;
-  min-height: 320px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: visible !important;
-}
-/* Make sure the product card expands properly WITHOUT !important on display */
-.product {
-  height: auto !important;
-  display: flex;  /* Removed !important */
-  flex-direction: column;  /* Removed !important */
-}
-/* Add this crucial class for hiding products */
-.product-hidden {
-  display: none !important; /* This will override other display settings */
-}
-
-/* Modernização dos Cartões de Produto */
-.product {
-  border: 1px solid #f1f5f9;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.005) !important;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease !important;
-  background-color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.product:hover {
-  transform: translateY(-6px) !important;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02) !important;
-  border-color: #e2e8f0;
-}
-.product img {
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-.product:hover img {
-  transform: scale(1.04) !important;
-}
-
-/* Modernização dos Botões Snipcart nos Produtos */
-.product button.snipcart-add-item {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border: 1px solid #000000 !important;
-  border-radius: 4px !important;
-  padding: 0.65rem 1.25rem !important;
-  font-size: 0.75rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.05em !important;
-  text-transform: uppercase !important;
-  transition: all 0.25s ease !important;
-  box-shadow: none !important;
-}
-.product button.snipcart-add-item:hover {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-}
-
-/* Modernização do Botão de Checkout no Top Bar */
-button.snipcart-checkout {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 30px !important;
-  padding: 0.4rem 1.1rem !important;
-  font-size: 0.8rem !important;
-  font-weight: 600 !important;
-  transition: all 0.25s ease !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
-}
-button.snipcart-checkout:hover {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
-}
-
-/* Modernização dos Botões de Filtro das Categorias */
-.filter-button {
-  background-color: #f8fafc !important;
-  color: #64748b !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 30px !important;
-  padding: 0.5rem 1.5rem !important;
-  font-size: 0.85rem !important;
-  font-weight: 600 !important;
-  transition: all 0.2s ease !important;
-}
-.filter-button:hover {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
-}
-.filter-button.active {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
-}
-
-/* Modernização do Menu Lateral Overlay */
-#menuOverlay {
-  background-color: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
-  border-left: 1px solid rgba(226, 232, 240, 0.8) !important;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-#menuOverlay nav a {
-  transition: all 0.2s ease !important;
-  font-weight: 500 !important;
-  color: #334155 !important;
-  border-left: 3px solid transparent;
-}
-#menuOverlay nav a:hover {
-  color: #000000 !important;
-  background-color: rgba(0, 0, 0, 0.02) !important;
-  padding-left: 1.5rem !important;
-  border-left-color: #000000 !important;
-}
-
-/* Scrollbar Premium Minimalista */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #f8fafc;
-}
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-/* WhatsApp Floating Button */
+/* ── WhatsApp Float ──────────────────────────────────────── */
 .whatsapp-float {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 28px;
+  right: 28px;
   background-color: #25d366;
   color: #fff !important;
   border-radius: 50px;
-  padding: 10px 20px;
+  padding: 12px 22px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 16px rgba(37,211,102,0.4);
   z-index: 9999;
   text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  animation: whatsapp-pulse 2s infinite !important;
+  animation: whatsapp-pulse 2.5s infinite;
 }
 
 .whatsapp-float:hover {
   background-color: #20ba5a;
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  transform: scale(1.05) translateY(-2px);
 }
 
-.whatsapp-icon {
-  width: 20px;
-  height: 20px;
-}
+.whatsapp-icon { width: 20px; height: 20px; }
 
 @keyframes whatsapp-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+  70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* ── Text Shadow utility ──────────────────────────────────── */
+.text-shadow {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* ── Responsive Grid helpers ─────────────────────────────── */
+@media (min-width: 768px) {
+  .md\:flex-row      { flex-direction: row; }
+  .md\:grid-cols-2   { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:grid-cols-3   { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .md\:grid-cols-4   { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .md\:h-64          { height: 16rem; }
+  .md\:space-y-0     { margin-top: 0; }
+  .md\:space-x-8 > * + * { margin-left: 2rem; }
+  .md\:text-7xl      { font-size: 4.5rem; line-height: 1; }
+  .md\:text-2xl      { font-size: 1.5rem; }
+  .md\:text-xl       { font-size: 1.25rem; }
+  .md\:mb-0          { margin-bottom: 0; }
+}
+
+/* ── Mobile Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .container { padding: 0 1rem; }
+
+  /* Logo */
+  .logo img,
+  img[alt*="Adil"],
+  header img {
+    max-width: 110px !important;
+    height: auto !important;
   }
-  70% {
-    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+
+  /* Grid single col */
+  .grid { grid-template-columns: repeat(1, 1fr) !important; }
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 { gap: 1rem !important; }
+
+  /* Typography */
+  h1 { font-size: 1.75rem !important; }
+  h2 { font-size: 1.4rem !important; }
+
+  /* No text shadow override on mobile (was ugly in dark mode) */
+  h1, h2, h3, p { text-shadow: none !important; }
+  .text-shadow   { text-shadow: 0 2px 8px rgba(0,0,0,0.6) !important; }
+
+  /* Footer compact */
+  footer { padding: 1.5rem !important; font-size: 0.85rem !important; }
+
+  /* Tap targets */
+  a, button { min-height: 44px; }
+
+  /* WhatsApp compact on mobile */
+  .whatsapp-float span { display: none; }
+  .whatsapp-float { padding: 13px; border-radius: 50%; }
+
+  /* History images */
+  div[style*="display: flex; justify-content: space-between"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
   }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  div[style*="display: flex; justify-content: space-between"] img {
+    width: 90% !important;
+    min-width: unset !important;
+    max-width: 420px !important;
   }
 }
 
-@media (max-width: 768px) {
-  .whatsapp-float span {
-    display: none; /* Only show icon on mobile */
-  }
-  .whatsapp-float {
-    padding: 12px;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 20px;
-  }
+@media (max-width: 374px) {
+  .logo img, header img { max-width: 90px !important; }
+  h1 { font-size: 1.3rem !important; }
+  h2 { font-size: 1.1rem !important; }
 }
+
+@media (max-height: 450px) and (orientation: landscape) {
+  .hero-section { min-height: 200px !important; }
+  header { padding: 4px !important; }
+}
+
+/* ── Agendar Visita banner ───────────────────────────────── */
+.visit-cta-section {
+  background-color: var(--navbar);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.visit-cta-section h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.visit-cta-section p {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* ── Product Detail Page ─────────────────────────────────── */
+.pdp-trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.pdp-trust-badge svg { color: var(--accent); flex-shrink: 0; }
+
+.pdp-size-btn {
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--white);
+  color: var(--text-muted);
+}
+
+.pdp-size-btn:hover,
+.pdp-size-btn.active {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.size-btn {
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--white);
+  color: var(--text-muted);
+}
+
+.size-btn:hover { border-color: var(--black); color: var(--black); }
+.size-btn.border-black { border-color: var(--black) !important; background: var(--black); color: var(--white); }
+
+/* ── Price styling ────────────────────────────────────────── */
+.price-original {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-size: 0.9em;
+  margin-right: 0.5rem;
+}
+
+.price-discounted {
+  color: #b05a2e;
+  font-weight: 600;
+}
+
+/* ── Menu items ──────────────────────────────────────────── */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-with-arrow { display: none; }
+
+/* ── Special tall images (roupeiros etc.) ─────────────────── */
+img[src*="roupeiro"],
+img[src*="camiseiro"],
+img[src*="sapateira"],
+img[src*="bengaleiro"],
+img[src*="BANHO"] {
+  object-fit: contain !important;
+  background-color: var(--white) !important;
+}
+
+/* ── Premium Footer Styling Override ─────────────────────── */
+footer,
+footer.bg-black {
+  background-color: #F5F0E8 !important;
+  color: #1a1a1a !important;
+  border-top: 1px solid #E8E3DC !important;
+}
+
+footer .border-b,
+footer .border-gray-700,
+footer.bg-black .border-b,
+footer.bg-black .border-gray-700 {
+  border-color: #E8E3DC !important;
+}
+
+footer a,
+footer.bg-black a {
+  color: #6b6b6b !important;
+  transition: color 0.2s ease;
+}
+
+footer a:hover,
+footer.bg-black a:hover {
+  color: #1a1a1a !important;
+}
+
+footer h4,
+footer address,
+footer p,
+footer.bg-black h4,
+footer.bg-black address,
+footer.bg-black p {
+  color: #1a1a1a !important;
+}
+
+footer .text-gray-400,
+footer.bg-black .text-gray-400 {
+  color: #6b6b6b !important;
+}
+
+footer svg,
+footer i,
+footer.bg-black svg,
+footer.bg-black i {
+  color: #1a1a1a !important;
+}
+
+footer img,
+footer.bg-black img {
+  mix-blend-mode: multiply !important;
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  background-color: transparent !important;
+}
+
+
