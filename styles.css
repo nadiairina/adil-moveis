@@ -990,4 +990,97 @@ footer.bg-black img {
   background-color: transparent !important;
 }
 
+/* ── Floating Contact Bar (Zara Home / Gato Preto Style) ── */
+.floating-contact-bar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 227, 220, 0.9);
+  border-radius: 40px;
+  padding: 8px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 90vw;
+  transition: all 0.3s ease;
+}
+
+.floating-contact-bar:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.floating-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.floating-btn-primary {
+  background: #C8B598;
+  color: #1a1a1a;
+}
+.floating-btn-primary:hover {
+  background: #b09e85;
+}
+
+.floating-btn-wpp {
+  background: #25D366;
+  color: #fff;
+}
+.floating-btn-wpp:hover {
+  background: #20ba5a;
+}
+
+.floating-btn-sec {
+  background: transparent;
+  color: #6b6b6b;
+  border: 1px solid #E8E3DC;
+}
+.floating-btn-sec:hover {
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.filter-button-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 8px 0;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button-link.active,
+.filter-button-link:hover {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+
+
 

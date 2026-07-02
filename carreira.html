@@ -228,6 +228,7 @@
       margin-top: auto;
     }
   </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -342,6 +343,34 @@
   <div class="footer">
     Plano Privado de Carreira · Adil Móveis E-commerce Project · 2025
   </div>
+
+
+    <!-- Floating Contact Widget (Adil Móveis Premium) -->
+    <div class="floating-contact-bar">
+      <a href="https://www.google.com/maps/search/?api=1&query=Adil+Móveis+Feijó+Almada" target="_blank" rel="noopener" class="floating-btn floating-btn-sec">
+        📍 Como Chegar
+      </a>
+      <a href="contactos.html?agendar=true" class="floating-btn floating-btn-primary">
+        📅 Agendar Visita
+      </a>
+      <a href="https://wa.me/351912582788" target="_blank" rel="noopener" class="floating-btn floating-btn-wpp">
+        💬 Pedir Orçamento
+      </a>
+    </div>
+
+    <!-- AOS (Animate on Scroll) JS and Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+          });
+        }
+      });
+    </script>
 
 </body>
 </html>

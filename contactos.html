@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://cdn.snipcart.com" />
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
     <script src="https://unpkg.com/feather-icons"></script>
-  </head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
   <body>
     <header>
                               <!-- Global Promo Banner -->
@@ -209,7 +210,7 @@
             
             <!-- Contact Form -->
             
-<div>
+<div id="agendar-visita-form">
   <h2 class="text-2xl font-medium mb-6">Agendar Visita / Enviar Mensagem</h2>
   
   <form class="space-y-6" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST">
@@ -457,5 +458,44 @@
       </svg>
       <span>WhatsApp</span>
     </a>
-  </body>
+  
+    <!-- Floating Contact Widget (Adil Móveis Premium) -->
+    <div class="floating-contact-bar">
+      <a href="https://www.google.com/maps/search/?api=1&query=Adil+Móveis+Feijó+Almada" target="_blank" rel="noopener" class="floating-btn floating-btn-sec">
+        📍 Como Chegar
+      </a>
+      <a href="contactos.html?agendar=true" class="floating-btn floating-btn-primary">
+        📅 Agendar Visita
+      </a>
+      <a href="https://wa.me/351912582788" target="_blank" rel="noopener" class="floating-btn floating-btn-wpp">
+        💬 Pedir Orçamento
+      </a>
+    </div>
+
+    <!-- AOS (Animate on Scroll) JS and Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+          });
+        }
+        
+        // Scroll to Agendar Visita form if ?agendar=true is in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('agendar') === 'true') {
+          const formEl = document.getElementById('agendar-visita-form');
+          if (formEl) {
+            setTimeout(() => {
+              formEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+          }
+        }
+      });
+    </script>
+
+</body>
 </html>
