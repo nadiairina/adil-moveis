@@ -1133,16 +1133,13 @@ footer div.border-b {
 }
 
 
-/* ── Global Baby Blue Buttons Override ────────────────── */
+/* ── Global Baby Blue Buttons Override (Reverted to original colors for primary CTAs) ── */
 .btn-adil,
-.filter-button-link,
-.filter-button,
-button[type="submit"],
 .cta-button,
 .snipcart-add-item {
-  background-color: #EDF4F8 !important;
-  color: #1a1a1a !important;
-  border: 1px solid #D4E4EE !important;
+  background-color: #C8B598 !important;
+  color: #ffffff !important;
+  border: 1px solid #C8B598 !important;
   font-family: 'Inter', sans-serif !important;
   font-size: 10px !important;
   font-weight: 700 !important;
@@ -1152,11 +1149,29 @@ button[type="submit"],
 }
 
 .btn-adil:hover,
-.filter-button:hover,
-.filter-button-link:hover,
-button[type="submit"]:hover,
 .cta-button:hover,
-.snipcart-add-item:hover,
+.snipcart-add-item:hover {
+  background-color: #b09e85 !important;
+  border-color: #b09e85 !important;
+  color: #ffffff !important;
+}
+
+/* Keep only filter bar buttons in baby blue style */
+.filter-button {
+  background-color: #EDF4F8 !important;
+  color: #1a1a1a !important;
+  border: 1px solid #D4E4EE !important;
+  padding: 8px 16px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.filter-button:hover,
 .filter-button.active,
 .active-filter {
   background-color: #C2D6E4 !important;
@@ -1164,12 +1179,3 @@ button[type="submit"]:hover,
   color: #1a1a1a !important;
 }
 
-/* Quick contact widget adjustment */
-.floating-contact-bar a {
-  background-color: #EDF4F8 !important;
-  color: #1a1a1a !important;
-  border: 1px solid #D4E4EE !important;
-}
-.floating-contact-bar a:hover {
-  background-color: #C2D6E4 !important;
-}
