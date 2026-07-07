@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Adil Móveis - Detalhe do Produto</title>
+    <meta name="description" content="Veja os detalhes do produto, escolha tamanhos e cores, e adicione ao carrinho. Entrega e montagem grátis num raio de 50km de Lisboa e Setúbal.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Load Products Database -->
+    <script src="products.js"></script>
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        
+    </script>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+      /* PDP-specific styles */
+      .pdp-main-image-wrap {
+        aspect-ratio: 4/3;
+        background-color: #f7f4f0;
+        overflow: hidden;
+        border-radius: 8px;
+        border: 1px solid #E8E3DC;
+        cursor: zoom-in;
+        position: relative;
+      }
+      .pdp-main-image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+      }
+      .pdp-main-image-wrap:hover img {
+        transform: scale(1.06);
+      }
+      .pdp-thumb {
+        width: 76px; height: 76px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        overflow: hidden;
+        cursor: pointer;
+        background: #f7f4f0;
+        transition: border-color 0.2s ease;
+      }
+      .pdp-thumb img {
+        width: 100%; height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+      .pdp-thumb:hover { border-color: #C8B598; }
+      .pdp-thumb.active { border-color: #1a1a1a; }
+
+      .trust-badge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        background: #FDFCFA;
+        border: 1px solid #E8E3DC;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #6b6b6b;
+      }
+      .trust-badge svg { color: #C8B598; flex-shrink: 0; }
+
+      .option-btn {
+        border: 1px solid #E8E3DC;
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: #fff;
+        color: #6b6b6b;
+        font-family: 'Inter', sans-serif;
+      }
+      .option-btn:hover { border-color: #1a1a1a; color: #1a1a1a; }
+      .option-btn.selected {
+        background: #1a1a1a;
+        color: #fff;
+        border-color: #1a1a1a;
+      }
+
+      /* Related product card */
+      .related-card {
+        background: #fff;
+        border: 1px solid #E8E3DC;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+      }
+      .related-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+        border-color: #C8B598;
+      }
+      .related-card .img-wrap {
+        aspect-ratio: 1;
+        overflow: hidden;
+        background: #f7f4f0;
+      }
+      .related-card .img-wrap img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      .related-card:hover .img-wrap img { transform: scale(1.06); }
+
+      .breadcrumb { font-size: 12px; color: #6b6b6b; }
+      .breadcrumb a { color: #6b6b6b; text-decoration: none; }
+      .breadcrumb a:hover { color: #1a1a1a; }
+      .breadcrumb span { margin: 0 6px; }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+  <body style="background:#FDFCFA;color:#1a1a1a;font-family:'Inter',sans-serif;">
+
+    <!-- HEADER INJECTED BY update_headers.py -->
+                <!-- Global Promo Banner -->
+    <div style="background-color:#EDF4F8;color:#1a1a1a;padding:8px 0;font-size:13px;font-weight:700;letter-spacing:0.15em;z-index:50;position:relative;border-bottom:1px solid #D4E4EE;overflow:hidden;white-space:nowrap;">
+      <div class="animate-marquee" style="display:inline-block;white-space:nowrap;">
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+      </div>
+    </div>
+    <!-- STICKY NAVBAR -->
+    <header class="sticky top-0 z-50 transition-all duration-300 shadow-sm" id="site-header" style="background-color:#F5F0E8;border-bottom:1px solid #E8E3DC;">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex items-center justify-between relative" style="height:86px;">
+          
+          <!-- Logo -->
+          <a href="index.html" class="flex-shrink-0 flex items-center" style="margin-left:4px;">
+            <div style="width:76px;height:76px;border-radius:50%;background:#ffffff;border:1px solid #E8E3DC;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;">
+              <img src="images/logo.png" alt="Adil Móveis" style="width:85%;height:auto;object-fit:contain;mix-blend-mode:multiply;">
+            </div>
+          </a>
+          
+          <!-- Desktop Menu (Centered) -->
+          <nav class="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 px-2" id="desktop-nav" style="z-index:10;">
+            <a href="index.html" class="nav-link" data-page="index.html">INÍCIO</a>
+            <a href="quartos.html" class="nav-link" data-page="quartos.html">QUARTOS</a>
+            <a href="salas.html" class="nav-link" data-page="salas.html">SALAS</a>
+            <a href="colchoes.html" class="nav-link" data-page="colchoes.html">COLCHÕES</a>
+            <a href="kids.html" class="nav-link" data-page="kids.html">KIDS</a>
+          </nav>
+          
+          <!-- Right Side -->
+          <div class="flex items-center gap-4">
+            <a href="packs.html" class="hidden xl:inline-block" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.2em;color:#ffffff;background:#C8B598;border:1px solid #C8B598;padding:8px 20px;transition:all 0.3s;border-radius:30px;text-decoration:none;box-shadow:0 3px 12px rgba(200,181,152,0.4);" onmouseover="this.style.background='#b09e85';this.style.borderColor='#b09e85';" onmouseout="this.style.background='#C8B598';this.style.borderColor='#C8B598';">PACKS ESPECIAIS</a>
+            
+            <a href="contactos.html" class="hidden lg:inline-block" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;background:#C8B598;color:#ffffff;border:1px solid #C8B598;padding:7px 18px;transition:all 0.3s;border-radius:20px;text-decoration:none;" onmouseover="this.style.background='#b09e85';this.style.borderColor='#b09e85';" onmouseout="this.style.background='#C8B598';this.style.borderColor='#C8B598';">AGENDAR VISITA</a>
+            
+            <button class="snipcart-checkout flex items-center justify-center border rounded-full text-black hover:border-black transition-colors relative" style="width:42px;height:32px;border-color:#E8E3DC;background:transparent;">
+              <i data-feather="shopping-bag" style="width:16px;height:16px;"></i>
+              <span class="snipcart-items-count" style="position:absolute;top:-5px;right:-5px;background:#1a1a1a;color:white;font-size:9px;width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;">0</span>
+            </button>
+            
+            <button id="menuButton" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;" class="ml-1">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Mobile Menu Overlay -->
+      <div id="menuOverlay" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.45);">
+        <div id="menuSidebar" class="absolute top-0 right-0 h-full flex flex-col" style="width:320px;max-width:88vw;background:#FDFCFA;transform:translateX(100%);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1);box-shadow:-4px 0 30px rgba(0,0,0,0.12);border-left:1px solid #E8E3DC;">
+          <!-- Sidebar Header -->
+          <div style="padding:1.5rem;border-bottom:1px solid #E8E3DC;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#6b6b6b;">MENU</span>
+            <button id="closeMenuBtn" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          
+          <!-- Links -->
+          <div style="flex:1;overflow-y:auto;padding:2rem 1.5rem;">
+            <p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">Loja</p>
+            <nav style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
+              <a href="quartos.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Quartos</a>
+              <a href="salas.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Salas</a>
+              <a href="colchoes.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Colchões</a>
+              <a href="kids.html" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#C8B598'" onmouseout="this.style.color='#1a1a1a'">Kids / Crianças</a>
+              
+              
+              <a href="packs.html" style="font-size:1rem;color:#C8B598;font-weight:700;text-decoration:none;padding:10px 15px;border:2px solid #C8B598;border-radius:25px;display:inline-block;margin-top:10px;text-align:center;transition:all 0.3s;" onmouseover="this.style.background=\'#C8B598\';this.style.color=\'#fff\';" onmouseout="this.style.background=\'transparent\';this.style.color=\'#C8B598\';">✦ Packs Especiais</a>
+              <a href="catalogos.html" style="font-size:0.85rem;font-weight:400;color:#6b6b6b;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Catálogos PDF</a>
+            </nav>
+            
+            <p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;padding-top:1.5rem;border-top:1px solid #E8E3DC;">Empresa & Apoio</p>
+            <nav style="display:flex;flex-direction:column;gap:0.85rem;">
+              <a href="empresa.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">A Nossa História</a>
+              <a href="testemunhos.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Testemunhos</a>
+              
+              <a href="faq.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Perguntas Frequentes</a>
+              <a href="envios.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Envios e Devoluções</a>
+              <a href="contactos.html" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#6b6b6b'">Contactos & Lojas</a>
+            </nav>
+          </div>
+          
+          <!-- Sidebar Footer -->
+          <div style="padding:1.5rem;background:#F5F0E8;border-top:1px solid #E8E3DC;">
+            <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;width:100%;padding:0.85rem;margin-bottom:0.75rem;background:#C8B598;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">
+              Agendar Visita à Loja
+            </a>
+            <a href="tel:212582788" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.9rem;font-weight:700;color:#1a1a1a;text-decoration:none;margin-bottom:0.5rem;">
+              📞 212 582 788
+            </a>
+            <a href="https://wa.me/351960209396" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.8rem;color:#25d366;text-decoration:none;">
+              💬 960 209 396
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Script for menu & active nav link -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Active nav highlight
+          var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+          var navLinks = document.querySelectorAll('#desktop-nav .nav-link');
+          navLinks.forEach(function(link) {
+            if (link.getAttribute('data-page') === currentPage) {
+              link.style.color = '#1a1a1a';
+              link.style.borderBottom = '1px solid #1a1a1a';
+              link.style.paddingBottom = '2px';
+            }
+          });
+          
+          // Sidebar menu
+          var menuBtn = document.getElementById('menuButton');
+          var closeBtn = document.getElementById('closeMenuBtn');
+          var overlay  = document.getElementById('menuOverlay');
+          var sidebar  = document.getElementById('menuSidebar');
+          
+          function openMenu() {
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            setTimeout(function() { sidebar.style.transform = 'translateX(0)'; }, 10);
+          }
+          function closeMenu() {
+            sidebar.style.transform = 'translateX(100%)';
+            setTimeout(function() { overlay.classList.add('hidden'); }, 310);
+            document.body.style.overflow = '';
+          }
+          
+          if (menuBtn)  menuBtn.addEventListener('click', openMenu);
+          if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+          if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
+        });
+      </script>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main style="background:#FDFCFA;padding:3rem 0 6rem;">
+      <div class="container mx-auto px-4" style="max-width:1200px;">
+
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb" style="margin-bottom:2.5rem;">
+          <a href="index.html">Início</a>
+          <span>›</span>
+          <span id="breadcrumb-category" style="color:#6b6b6b;"></span>
+          <span id="breadcrumb-cat-sep" style="display:none;">›</span>
+          <span id="breadcrumb-name" style="color:#1a1a1a;font-weight:500;">A carregar...</span>
+        </nav>
+
+        <!-- Product Layout -->
+        <div id="product-container" style="display:none;">
+          <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+            <!-- LEFT: Images -->
+            <div style="width:100%;max-width:100%;" class="lg:w-3/5">
+              <!-- Main Image -->
+              <div class="pdp-main-image-wrap" id="mainImageWrap">
+                <img id="mainImage" src="images/logo.png" alt="Produto">
+                <!-- Discount Badge (injected by JS) -->
+                <div id="discount-badge-img" style="display:none;position:absolute;top:14px;left:14px;background:#C8B598;color:#fff;font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;z-index:2;"></div>
+              </div>
+
+              <!-- Thumbnails -->
+              <div id="gallery-container" style="display:flex;gap:10px;margin-top:14px;overflow-x:auto;padding-bottom:6px;"></div>
+            </div>
+
+            <!-- RIGHT: Info -->
+            <div style="width:100%;" class="lg:w-2/5">
+              <div style="position:sticky;top:90px;">
+
+                <!-- Brand / Category label -->
+                <p id="product-category-label" style="font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.75rem;">ADIL MÓVEIS PREMIUM</p>
+
+                <!-- Product Name -->
+                <h1 id="dynamic-title" style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;color:#1a1a1a;line-height:1.2;margin-bottom:1.25rem;">Produto</h1>
+
+                <!-- Price -->
+                <div id="price-block" style="margin-bottom:1.75rem;">
+                  <div id="productPrice" style="font-family:'Inter',sans-serif;font-size:1.6rem;font-weight:500;color:#1a1a1a;"></div>
+                  <div id="price-original-wrap" style="display:none;margin-top:4px;">
+                    <span id="price-original" style="font-size:0.95rem;color:#6b6b6b;text-decoration:line-through;margin-right:8px;"></span>
+                    <span id="discount-pct-badge" style="font-size:11px;font-weight:700;background:#C8B598;color:#fff;padding:2px 8px;border-radius:2px;"></span>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <div id="dynamic-desc-container" style="margin-bottom:1.75rem;padding-bottom:1.75rem;border-bottom:1px solid #E8E3DC;">
+                  <p id="dynamic-desc" style="font-size:0.9rem;color:#6b6b6b;line-height:1.7;font-weight:300;"></p>
+                </div>
+
+                <!-- Custom Option 1 (Sizes / Colours) -->
+                <div id="custom1-container" style="display:none;margin-bottom:1.5rem;">
+                  <h3 id="custom1-title" style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1a1a1a;margin-bottom:0.75rem;">Opção 1</h3>
+                  <div id="custom1-options" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+                </div>
+
+                <!-- Custom Option 2 (Fabric / Colour) -->
+                <div id="custom2-container" style="display:none;margin-bottom:1.5rem;">
+                  <h3 style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1a1a1a;margin-bottom:0.75rem;display:flex;justify-content:space-between;align-items:center;">
+                    <span id="custom2-title">Opção 2</span>
+                    
+                  </h3>
+                  <div id="custom2-options" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+                </div>
+
+                <!-- Add to Cart -->
+                <button id="addToCartBtn" class="snipcart-add-item" style="width:100%;background:#C8B598;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">
+                  <i data-feather="shopping-bag" style="width:18px;height:18px;"></i>
+                  <span>Adicionar ao Carrinho</span>
+                </button>
+
+                <!-- Pedir Orçamento via WhatsApp -->
+                <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:none;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
+                  <i data-feather="message-circle" style="width:18px;height:18px;"></i>
+                  <span>Pedir Orçamento via WhatsApp</span>
+                </a>
+
+                <!-- Helper Buttons -->
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.75rem;">
+                  <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:0.85rem;border:1px solid #C8B598;color:#C8B598;font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.2s;" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" onmouseout="this.style.background='transparent';this.style.color='#C8B598';">
+                    <i data-feather="map-pin" style="width:15px;height:15px;"></i>
+                    Ver na Loja
+                  </a>
+                  <a href="https://wa.me/351960209396" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:0.85rem;border:1px solid #E8E3DC;color:#6b6b6b;font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.2s;" onmouseover="this.style.background='#25D366';this.style.color='#fff';this.style.borderColor='#25D366';" onmouseout="this.style.background='transparent';this.style.color='#6b6b6b';this.style.borderColor='#E8E3DC';">
+                    <i data-feather="message-circle" style="width:15px;height:15px;"></i>
+                    Dúvidas?
+                  </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:1.5rem;">
+                  <div class="trust-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    <span>Entrega Grátis · 50km Lisboa & Setúbal</span>
+                  </div>
+                  <div class="trust-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    <span>Montagem Profissional Incluída</span>
+                  </div>
+                  <div class="trust-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <span>Garantia 3 Anos</span>
+                  </div>
+                  <div class="trust-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.5"></path></svg>
+                    <span>Recolha de Móveis Usados Grátis</span>
+                  </div>
+                </div>
+
+                <!-- Nota sobre Tecidos -->
+                <div style="background:#fcf9f5; border:1px dashed #C8B598; padding:1.25rem; border-radius:3px; margin-bottom:1.5rem; text-align:center;">
+                  <span style="font-size:16px; display:block; margin-bottom:0.5rem;">🎨</span>
+                  <strong style="color:#1a1a1a; font-size:12px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:0.5rem;">Mais de 100 Tecidos Disponíveis!</strong>
+                  <p style="color:#6b6b6b; font-size:11px; line-height:1.5; margin:0;">
+                    Trabalhamos com catálogos premium (tecnologia anti-mancha, pet-friendly e repelentes de água). Como as cores variam nos ecrãs, convidamo-lo a <a href="contactos.html" style="color:#C8B598; text-decoration:underline; font-weight:bold;">visitar o nosso showroom</a> ou a <a href="https://wa.me/351960209396" target="_blank" style="color:#25D366; text-decoration:underline; font-weight:bold;">contactar-nos via WhatsApp</a> para lhe enviarmos vídeos reais das amostras.
+                  </p>
+                </div>
+
+                <!-- Agendar Visita CTA -->
+                <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;background:#F5F0E8;border:1px solid #C8B598;color:#1a1a1a;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.25s;" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" onmouseout="this.style.background='#F5F0E8';this.style.color='#1a1a1a';">
+                  <i data-feather="calendar" style="width:16px;height:16px;"></i>
+                  Agendar Visita à Loja · Adil Móveis Feijó
+                </a>
+
+              </div>
+            </div>
+
+          </div><!-- /product layout -->
+
+          <!-- ── Related Products ─────────────────────────────── -->
+          <div id="related-products-section" style="display:none;margin-top:6rem;padding-top:4rem;border-top:1px solid #E8E3DC;">
+            <div style="margin-bottom:2.5rem;">
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">DESCUBRA TAMBÉM</p>
+              <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:#1a1a1a;">Poderá gostar também</h2>
+            </div>
+            <div id="related-products-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+        </div><!-- /product-container -->
+
+        <!-- Error state -->
+        <div id="product-not-found" style="display:none;text-align:center;padding:6rem 0;">
+          <h2 style="font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:400;color:#1a1a1a;margin-bottom:1rem;">Produto não encontrado</h2>
+          <p style="color:#6b6b6b;margin-bottom:1rem;">O produto que procura não está disponível.</p>
+          <a href="index.html" style="display:inline-block;background:#1a1a1a;color:#fff;padding:0.85rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-radius:3px;">Voltar ao Início</a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+                <!-- ══════════════════════════════════════════════════════
+           CAMPANHA DE DESCONTO / NEWSLETTER (10%)
+      ══════════════════════════════════════════════════════ -->
+      <section style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
+        <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
+          <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:1rem;">OFERTA EXCLUSIVA</p>
+          <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.75rem,3.5vw,2.5rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Subscreva e receba 10% de desconto na primeira compra (Válido online e em loja!)</h2>
+          <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.75; margin-bottom:1rem; max-width:600px; margin-left:auto; margin-right:auto;">
+            Registe o seu e-mail para receber novidades, coleções exclusivas e um vale de 10% de desconto para a sua primeira encomenda de mobiliário.
+          </p>
+          <form style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; max-width:500px; margin:0 auto;" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST">
+            <input type="email" name="email" placeholder="O seu endereço de e-mail" style="flex:1; min-width:250px; padding:0.85rem 1.25rem; border:1px solid #E8E3DC; border-radius:2px; font-size:0.85rem; outline:none; background:#fff; font-family:'Inter',sans-serif;" required>
+            <button type="submit" style="background:#C8B598; border:1px solid #C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:0.85rem 2rem; border-radius:2px; transition:all 0.3s; cursor:pointer; font-family:'Inter',sans-serif;" onmouseover="this.style.background='#b09e85'; this.style.borderColor='#b09e85';" onmouseout="this.style.background='#C8B598'; this.style.borderColor='#C8B598';">
+              Subscrever
+            </button>
+          </form>
+        </div>
+      </section>
+
+
+
+<footer style="background:#1a1a1a;color:#d1ccc5;padding:1rem 0 0.5rem;">
+      <div class="container mx-auto px-4" style="max-width:1200px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2rem;margin-bottom:1rem;">
+          <div>
+            <img src="images/logo.png" alt="Adil Móveis" style="height:36px;width:auto;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.85;">
+            <p style="font-size:12px;color:#888;line-height:1.6;">37 anos de experiência em mobiliário de qualidade.</p>
+          </div>
+          <div>
+            <h4 style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">Loja</h4>
+            <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:0.5rem;">
+              <li><a href="quartos.html" style="font-size:12px;color:#888;text-decoration:none;">Quartos</a></li>
+              <li><a href="salas.html" style="font-size:12px;color:#888;text-decoration:none;">Salas</a></li>
+              <li><a href="colchoes.html" style="font-size:12px;color:#888;text-decoration:none;">Colchões</a></li>
+              <li><a href="kids.html" style="font-size:12px;color:#888;text-decoration:none;">Kids</a></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">Contacto</h4>
+            <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="font-size:12px;color:#888;">Rua Padre António Vieira 28B</li>
+              <li style="font-size:12px;color:#888;">2800-017 Almada (Feijó)</li>
+              <li><a href="tel:212582788" style="font-size:12px;color:#888;text-decoration:none;">📞 212 582 788</a></li>
+              <li><a href="https://wa.me/351960209396" style="font-size:12px;color:#888;text-decoration:none;">💬 960 209 396</a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="border-top:1px solid #333;padding-top:1.5rem;text-align:center;font-size:11px;color:#555;">
+          © <span id="footer-year"></span> Adil Móveis. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    
+
+    <!-- Main JS: product loading -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Init feather
+        if (typeof feather !== 'undefined') feather.replace();
+
+        // Footer year
+        var fyEl = document.getElementById('footer-year');
+        if (fyEl) fyEl.textContent = new Date().getFullYear();
+
+        // Load product from URL params
+        var params = new URLSearchParams(window.location.search);
+        var productId = params.get('id');
+        var cleanId = productId ? productId.replace(/-+/g, '-') : '';
+
+        if (!productId || !window.produtos) {
+          document.getElementById('breadcrumb-name').textContent = 'Produto não encontrado';
+          document.getElementById('product-not-found').style.display = 'block';
+          return;
+        }
+
+        var p = window.produtos[productId] || window.produtos[cleanId];
+        
+        // Se o produto não existir na base de dados (placeholders como kids-17 ou pack-5)
+        if (!p) {
+            var categoryMatch = productId.split('-')[0]; // "kids", "quarto", "pack", etc.
+            var displayName = "Produto Ref. " + productId.toUpperCase();
+            var desc = "Produto atualmente indisponível online. Para informações sobre esta referência, disponibilidade, opções de cores e orçamento, por favor contacte-nos.";
+            
+            if (categoryMatch === 'pack') {
+                displayName = "Pack Especial Ref. " + productId.replace('pack-', '').toUpperCase();
+                desc = "Este Pack Especial de mobiliário inclui um conjunto completo de peças selecionadas para a sua casa (ex: Quarto Completo, Sala de Estar ou Conjunto de Jantar). Disponível para personalização de medidas, cores e tecidos diretamente no nosso showroom ou sob consulta. Fale connosco para saber o que inclui e obter o melhor preço!";
+            }
+            
+            p = {
+                id: productId,
+                name: displayName,
+                category: categoryMatch === 'pack' ? 'Packs Especiais' : categoryMatch,
+                price: 0,
+                image: "images/sem-imagem.svg",
+                description: desc
+            };
+        }
+
+        // Show container
+        document.getElementById('product-container').style.display = 'block';
+
+        // Page title
+        document.title = p.name + ' — Adil Móveis';
+
+        // Breadcrumbs
+        var catLabel = p.category ? p.category.charAt(0).toUpperCase() + p.category.slice(1) : '';
+        if (catLabel) {
+          document.getElementById('breadcrumb-category').textContent = catLabel;
+          document.getElementById('breadcrumb-cat-sep').style.display = 'inline';
+        }
+        document.getElementById('breadcrumb-name').textContent = p.name;
+
+        // Category label
+        if (catLabel) {
+          document.getElementById('product-category-label').textContent = 'ADIL MÓVEIS · ' + catLabel.toUpperCase();
+        }
+
+        // Title
+        document.getElementById('dynamic-title').textContent = p.name;
+
+        // Price & discount
+        var priceEl = document.getElementById('productPrice');
+        if (p.price > 0) {
+          var discPct = p.discount_pct || 0;
+          var originalPrice = p.original_price || 0;
+
+          if (discPct > 0 && originalPrice > 0) {
+            priceEl.innerHTML = '<span style="color:#b05a2e;font-size:1.6rem;font-weight:600;">' + p.price.toFixed(2).replace('.',',') + ' €</span>';
+            document.getElementById('price-original').textContent = originalPrice.toFixed(2).replace('.',',') + ' €';
+            document.getElementById('discount-pct-badge').textContent = '-' + discPct + '%';
+            document.getElementById('price-original-wrap').style.display = 'block';
+            // Badge on image
+            var imgBadge = document.getElementById('discount-badge-img');
+            imgBadge.textContent = '-' + discPct + '%';
+            imgBadge.style.display = 'block';
+          } else {
+            priceEl.textContent = p.price.toFixed(2).replace('.',',') + ' €';
+          }
+        } else {
+          priceEl.textContent = 'Preço sob consulta';
+        }
+
+        // Toggle buttons based on price
+        if (p.price > 0) {
+          document.getElementById('addToCartBtn').style.display = 'flex';
+          document.getElementById('quoteWhatsAppBtn').style.display = 'none';
+        } else {
+          document.getElementById('addToCartBtn').style.display = 'none';
+          document.getElementById('quoteWhatsAppBtn').style.display = 'flex';
+          var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name + ' (Ref: ' + p.id + ')';
+          document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351960209396?text=' + encodeURIComponent(textMessage);
+        }
+
+        // Add to cart setup
+        var btn = document.getElementById('addToCartBtn');
+        btn.dataset.itemId       = p.id;
+        btn.dataset.itemName     = p.name;
+        btn.dataset.itemPrice    = p.price > 0 ? p.price : 0.01;
+        btn.dataset.itemImage    = p.image;
+        btn.dataset.itemUrl      = 'produto-detalhe.html?id=' + p.id;
+        if (p.description) btn.dataset.itemDescription = p.description;
+
+        // Description
+        if (p.description || p.dimensions) {
+          var descHtml = p.description || '';
+          if (p.dimensions) {
+            descHtml += '<br><br><strong style="color:#1a1a1a;font-weight:600;">Dimensões:</strong> ' + p.dimensions;
+          }
+          document.getElementById('dynamic-desc').innerHTML = descHtml;
+        } else {
+          document.getElementById('dynamic-desc-container').style.display = 'none';
+        }
+
+        // Gallery
+        var galleryContainer = document.getElementById('gallery-container');
+        galleryContainer.innerHTML = '';
+        var galleryImages = (p.gallery && p.gallery.length > 0) ? p.gallery : (p.image ? [p.image] : []);
+
+        galleryImages.forEach(function(imgSrc, idx) {
+          var thumb = document.createElement('div');
+          thumb.className = 'pdp-thumb' + (idx === 0 ? ' active' : '');
+          thumb.innerHTML = '<img src="' + imgSrc + '" alt="Vista ' + (idx+1) + '">';
+          thumb.addEventListener('click', function() {
+            document.getElementById('mainImage').src = imgSrc;
+            document.querySelectorAll('.pdp-thumb').forEach(function(t) { t.classList.remove('active'); });
+            thumb.classList.add('active');
+          });
+          galleryContainer.appendChild(thumb);
+        });
+
+        document.getElementById('mainImage').src = p.image;
+
+        // Hide gallery row if only 1 image
+        if (galleryImages.length <= 1) galleryContainer.style.display = 'none';
+
+        // Custom options builder
+        function buildOptions(containerId, titleId, optionsId, customName, customOptionsRaw, customIndex) {
+          var container = document.getElementById(containerId);
+          if (!customName || !customOptionsRaw) { container.style.display = 'none'; return; }
+
+          container.style.display = 'block';
+          document.getElementById(titleId).textContent = customName;
+
+          btn.dataset['itemCustom' + customIndex + 'Name']    = customName;
+          btn.dataset['itemCustom' + customIndex + 'Options'] = customOptionsRaw;
+
+          var opts = customOptionsRaw.split('|');
+          btn.dataset['itemCustom' + customIndex + 'Value'] = opts[0].split('[')[0];
+
+          var flexDiv = document.getElementById(optionsId);
+          flexDiv.innerHTML = '';
+
+          opts.forEach(function(opt, i) {
+            var val = opt.split('[')[0];
+            var b = document.createElement('button');
+            b.className = 'option-btn size-btn' + (i === 0 ? ' selected' : '');
+            b.textContent = val;
+            b.addEventListener('click', function() {
+              flexDiv.querySelectorAll('.option-btn').forEach(function(x) { x.classList.remove('selected'); });
+              b.classList.add('selected');
+              btn.dataset['itemCustom' + customIndex + 'Value'] = val;
+            });
+            flexDiv.appendChild(b);
+          });
+        }
+
+        buildOptions('custom1-container', 'custom1-title', 'custom1-options', p.custom1_name, p.custom1_options, 1);
+        buildOptions('custom2-container', 'custom2-title', 'custom2-options', p.custom2_name, p.custom2_options, 2);
+
+        // Related products
+        var allProducts = Object.values(window.produtos);
+        var related = allProducts.filter(function(prod) {
+          return (prod.category === p.category || prod.url === p.url) && prod.id !== p.id;
+        });
+        related.sort(function() { return 0.5 - Math.random(); });
+        var selected = related.slice(0, 4);
+
+        if (selected.length > 0) {
+          document.getElementById('related-products-section').style.display = 'block';
+          var grid = document.getElementById('related-products-grid');
+          selected.forEach(function(prod) {
+            var card = document.createElement('div');
+            card.className = 'related-card';
+            var imgHtml = (prod.image && prod.image !== 'images/logo.png')
+              ? '<img src="' + prod.image + '" alt="' + prod.name + '" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;">'
+              : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#ccc;background:#f7f4f0;font-size:12px;">Imagem brevemente</div>';
+
+            var priceStr = prod.price > 0 ? prod.price.toFixed(2).replace('.',',') + ' €' : 'Sob consulta';
+
+            card.innerHTML = '<a href="produto-detalhe.html?id=' + prod.id + '" style="text-decoration:none;display:block;">'
+              + '<div class="img-wrap">' + imgHtml + '</div>'
+              + '<div style="padding:1rem;">'
+              + '<p style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#C8B598;margin-bottom:4px;">' + (prod.category || '') + '</p>'
+              + '<h3 style="font-family:\'Playfair Display\',serif;font-size:1rem;font-weight:400;color:#1a1a1a;margin-bottom:6px;line-height:1.3;">' + (prod.name || '') + '</h3>'
+              + '<p style="font-size:0.95rem;color:#6b6b6b;font-weight:500;">' + priceStr + '</p>'
+              + '</div></a>';
+            grid.appendChild(card);
+          });
+        }
+
+        // Re-init feather for dynamically added icons
+        if (typeof feather !== 'undefined') feather.replace();
+      });
+    </script>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="ODE4MjNlYWYtZGViOS00OGY3LWJhZWEtODU1OTE5OTYzMzQxNjM5MTYyMDI2OTM2NjA0MTY3" hidden></div>
+  
+    <!-- Floating Contact Widget (Adil Móveis Premium) -->
+    <div class="floating-contact-bar">
+      <a href="https://www.google.com/maps/search/?api=1&query=Adil+Móveis+Feijó+Almada" target="_blank" rel="noopener" class="floating-btn floating-btn-sec">
+        📍 Como Chegar
+      </a>
+      <a href="contactos.html?agendar=true" class="floating-btn floating-btn-primary">
+        📅 Agendar Visita
+      </a>
+      <a href="https://wa.me/351960209396" target="_blank" rel="noopener" class="floating-btn floating-btn-wpp">
+        💬 Pedir Orçamento
+      </a>
+    </div>
+
+    <!-- AOS (Animate on Scroll) JS and Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+          });
+        }
+      });
+    </script>
+
+</body>
+</html>

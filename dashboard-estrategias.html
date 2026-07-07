@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Estratégias — Adil Móveis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #C8B598;
+      --gold-light: #e8ddd0;
+      --gold-dark: #a8906a;
+      --dark: #1a1a1a;
+      --dark2: #2c2a29;
+      --gray: #6b7280;
+      --light: #fafaf9;
+      --white: #ffffff;
+      --green: #16a34a;
+      --red: #dc2626;
+      --orange: #ea580c;
+      --blue: #2563eb;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f0f0f;
+      color: #e5e7eb;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2c2a29 100%);
+      border-bottom: 1px solid #333;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+    .header-sub {
+      font-size: 0.75rem;
+      color: var(--gray);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .header-badge {
+      background: var(--gold);
+      color: #1a1a1a;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* MAIN */
+    .main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px 40px;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #333;
+    }
+
+    /* CALENDAR STRIP */
+    .calendar-strip {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 4px;
+      margin-bottom: 40px;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .month-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 12px 4px;
+      border-radius: 10px;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .month-cell:hover { background: #2a2a2a; }
+    .month-cell.active { background: #2a2a2a; outline: 1.5px solid var(--gold); }
+    .month-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+    .month-cell.active .month-label { color: var(--gold); }
+    .month-bar-wrap {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .month-bar {
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+      transition: all 0.3s;
+    }
+    .level-low .month-bar { background: linear-gradient(to top, #7f1d1d, #dc2626); height: 25%; }
+    .level-mid .month-bar { background: linear-gradient(to top, #78350f, #f59e0b); height: 55%; }
+    .level-high .month-bar { background: linear-gradient(to top, #14532d, #22c55e); height: 90%; }
+    .month-tag {
+      font-size: 0.55rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .level-low .month-tag { background: rgba(220,38,38,0.15); color: #ef4444; }
+    .level-mid .month-tag { background: rgba(245,158,11,0.15); color: #f59e0b; }
+    .level-high .month-tag { background: rgba(34,197,94,0.15); color: #22c55e; }
+
+    /* CARDS GRID */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 900px) { .cards-grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 24px;
+      transition: all 0.2s;
+    }
+    .card:hover { border-color: #444; transform: translateY(-2px); }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .icon-gold { background: rgba(200,181,152,0.15); }
+    .icon-green { background: rgba(34,197,94,0.12); }
+    .icon-blue { background: rgba(37,99,235,0.12); }
+    .icon-orange { background: rgba(234,88,12,0.12); }
+    .icon-pink { background: rgba(236,72,153,0.12); }
+    .icon-purple { background: rgba(147,51,234,0.12); }
+
+    .card-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f3f4f6;
+      letter-spacing: 0.02em;
+    }
+    .card-subtitle {
+      font-size: 0.7rem;
+      color: var(--gray);
+      margin-top: 2px;
+    }
+    .card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card ul li {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .card ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.7rem;
+    }
+
+    /* PEAK SEASONS */
+    .peak-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 900px) { .peak-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .peak-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .peak-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .peak-card.black-friday::before { background: linear-gradient(90deg, #f59e0b, #f97316); }
+    .peak-card.spring::before { background: linear-gradient(90deg, #22c55e, #16a34a); }
+    .peak-card.sept::before { background: linear-gradient(90deg, #3b82f6, #6366f1); }
+    .peak-card.xmas::before { background: linear-gradient(90deg, #ef4444, #dc2626); }
+
+    .peak-emoji { font-size: 1.8rem; margin-bottom: 8px; }
+    .peak-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f3f4f6;
+      margin-bottom: 4px;
+    }
+    .peak-months {
+      font-size: 0.65rem;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .peak-tip {
+      font-size: 0.72rem;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+
+    /* CAMPAIGN BUILDER */
+    .campaign-builder {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 40px;
+    }
+    .campaign-builder h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .campaign-builder p {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+    .campaign-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 800px) { .campaign-steps { grid-template-columns: repeat(2, 1fr); } }
+
+    .step {
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+    }
+    .step-num {
+      width: 28px;
+      height: 28px;
+      background: var(--gold);
+      color: #1a1a1a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .step-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #f3f4f6;
+      margin-bottom: 6px;
+    }
+    .step-desc {
+      font-size: 0.7rem;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    /* QUICK WINS */
+    .quick-wins {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 700px) { .quick-wins { grid-template-columns: 1fr; } }
+
+    .win-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .win-emoji {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .win-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f3f4f6;
+      margin-bottom: 4px;
+    }
+    .win-desc {
+      font-size: 0.75rem;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+    .win-tag {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .tag-free { background: rgba(34,197,94,0.12); color: #22c55e; }
+    .tag-paid { background: rgba(37,99,235,0.12); color: #60a5fa; }
+    .tag-fast { background: rgba(234,88,12,0.12); color: #fb923c; }
+
+    /* DETAIL PANEL */
+    .detail-panel {
+      background: linear-gradient(135deg, #1a1611, #1e1a14);
+      border: 1px solid var(--gold-dark);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 40px;
+      display: none;
+    }
+    .detail-panel.active { display: block; }
+    .detail-month-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .detail-level {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .detail-actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 700px) { .detail-actions { grid-template-columns: 1fr; } }
+
+    .detail-action {
+      background: rgba(200,181,152,0.06);
+      border: 1px solid rgba(200,181,152,0.15);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .detail-action-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .detail-action-desc {
+      font-size: 0.7rem;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <div class="header-title">📊 Dashboard de Estratégias</div>
+      <div class="header-sub">Adil Móveis · Como combater os meses fracos</div>
+    </div>
+    <div class="header-badge">Guia de Marketing</div>
+  </div>
+
+  <div class="main">
+
+    <!-- CALENDAR -->
+    <div class="section-title">Calendário de Vendas — Potencial por Mês</div>
+    <div class="calendar-strip" id="calendarStrip">
+      <!-- Generated by JS -->
+    </div>
+
+    <!-- DETAIL PANEL -->
+    <div class="detail-panel" id="detailPanel">
+      <div class="detail-month-title" id="detailTitle"></div>
+      <div class="detail-level" id="detailLevel"></div>
+      <div class="detail-actions" id="detailActions"></div>
+    </div>
+
+    <!-- PEAK SEASONS -->
+    <div class="section-title">Épocas de Pico — Prepara com Antecedência</div>
+    <div class="peak-grid">
+      <div class="peak-card spring">
+        <div class="peak-emoji">🌸</div>
+        <div class="peak-name">Primavera / Casamentos</div>
+        <div class="peak-months">Abril · Maio · Junho</div>
+        <div class="peak-tip">Maior época de mudanças de casa e casamentos. Campanha "Renova a tua casa" 3 semanas antes.</div>
+      </div>
+      <div class="peak-card sept">
+        <div class="peak-emoji">📚</div>
+        <div class="peak-name">Regresso ao Ativo</div>
+        <div class="peak-months">Setembro · Outubro</div>
+        <div class="peak-tip">Famílias a reorganizar espaços. Promoção "Novo ano, nova casa" com foco em quartos e escritórios.</div>
+      </div>
+      <div class="peak-card black-friday">
+        <div class="peak-emoji">🖤</div>
+        <div class="peak-name">Black Friday</div>
+        <div class="peak-months">Novembro</div>
+        <div class="peak-tip">Enorme em móveis. Prepara descontos com 2 semanas de antecedência e faz contagem decrescente no Instagram.</div>
+      </div>
+      <div class="peak-card xmas">
+        <div class="peak-emoji">🎄</div>
+        <div class="peak-name">Natal / Ano Novo</div>
+        <div class="peak-months">Dezembro · Janeiro</div>
+        <div class="peak-tip">Packs presentes e renovação de ano novo. Campanha "Começa o ano com a casa dos teus sonhos".</div>
+      </div>
+    </div>
+
+    <!-- STRATEGIES GRID -->
+    <div class="section-title">Estratégias para Meses Fracos</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-orange">🔥</div>
+          <div>
+            <div class="card-title">Promoção Relâmpago</div>
+            <div class="card-subtitle">Cria urgência imediata</div>
+          </div>
+        </div>
+        <ul>
+          <li>Desconto de 10-20% num produto ou linha durante 48-72h</li>
+          <li>Partilha no Instagram, Facebook e WhatsApp da loja</li>
+          <li>Usa contagem decrescente nos Stories do Instagram</li>
+          <li>Limita a quantidade ("apenas 5 unidades")</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-gold">📦</div>
+          <div>
+            <div class="card-title">Packs Especiais</div>
+            <div class="card-subtitle">Aumenta o valor médio</div>
+          </div>
+        </div>
+        <ul>
+          <li>Cria um pack "Quarto Completo" com preço especial</li>
+          <li>Pack "Sala de Estar": sofá + mesa + aparador</li>
+          <li>O site já tem a página de Packs pronta a usar</li>
+          <li>Comunica a poupança em €, não em percentagem</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-green">📱</div>
+          <div>
+            <div class="card-title">Instagram Diário</div>
+            <div class="card-subtitle">Visibilidade constante</div>
+          </div>
+        </div>
+        <ul>
+          <li>Publica mais nos meses fracos, não menos</li>
+          <li>Mostra ambientes da loja com luz natural</li>
+          <li>Antes/Depois de clientes com autorização</li>
+          <li>Vídeos curtos (Reels) de 15-30 segundos multiplicam o alcance</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-blue">🌟</div>
+          <div>
+            <div class="card-title">Google Meu Negócio</div>
+            <div class="card-subtitle">Clientes perto de ti</div>
+          </div>
+        </div>
+        <ul>
+          <li>Pede reviews a clientes satisfeitos (manda o link direto pelo WhatsApp)</li>
+          <li>Responde a TODAS as reviews, boas e más</li>
+          <li>Publica fotos novas da loja todos os meses</li>
+          <li>Atualiza horários especiais em feriados</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-pink">💌</div>
+          <div>
+            <div class="card-title">Reativar Clientes Antigos</div>
+            <div class="card-subtitle">37 anos de contactos</div>
+          </div>
+        </div>
+        <ul>
+          <li>A loja tem décadas de clientes — entra em contacto</li>
+          <li>Mensagem WhatsApp: "Temos novidades no catálogo online!"</li>
+          <li>Clientes satisfeitos recomendam amigos e família</li>
+          <li>Oferece 5% de desconto por fidelidade</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-purple">🎯</div>
+          <div>
+            <div class="card-title">Anúncios Pagos</div>
+            <div class="card-subtitle">100-200€/mês, grande retorno</div>
+          </div>
+        </div>
+        <ul>
+          <li>Meta Ads (Facebook/Instagram) com raio de 30km da loja</li>
+          <li>Mostra o produto mais apelativo com preço visível</li>
+          <li>Google Ads para "móveis Almada" ou "loja móveis Lisboa"</li>
+          <li>Nos meses fracos, este investimento tem o maior retorno</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CAMPAIGN BUILDER -->
+    <div class="campaign-builder">
+      <h3>Como Lançar uma Campanha em 4 Passos</h3>
+      <p>Segue estes passos sempre que precisares de impulsionar as vendas num mês fraco.</p>
+      <div class="campaign-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-title">Escolhe o Produto</div>
+          <div class="step-desc">Seleciona 1 ou 2 produtos com boa margem ou que precisas de escoar. Foca-te neles.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-title">Define o Desconto</div>
+          <div class="step-desc">Entre 10% e 25%. Calcula antes para garantir que ainda há margem. Dura 3 a 7 dias.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-title">Anuncia no Instagram</div>
+          <div class="step-desc">Post + Story com contagem. Usa a foto do produto e escreve o preço original e o novo.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-title">Atualiza o Site</div>
+          <div class="step-desc">Pede ao programador para aplicar o preço com desconto e adicionar o badge "Promoção" no produto.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK WINS -->
+    <div class="section-title">Ações Rápidas — Resultados em 24-48h</div>
+    <div class="quick-wins">
+      <div class="win-card">
+        <div class="win-emoji">📸</div>
+        <div>
+          <div class="win-title">Foto nova na loja hoje</div>
+          <div class="win-desc">Tira uma foto bonita de um móvel na loja com boa luz e publica já no Instagram. Simples, rápido e gratuito. Faz isto todos os dias.</div>
+          <span class="win-tag tag-free">Gratuito</span>
+          <span class="win-tag tag-fast">Rápido</span>
+        </div>
+      </div>
+      <div class="win-card">
+        <div class="win-emoji">⭐</div>
+        <div>
+          <div class="win-title">Pede 3 reviews no Google</div>
+          <div class="win-desc">Identifica 3 clientes recentes satisfeitos e manda-lhes o link direto para deixar uma review no Google Meu Negócio.</div>
+          <span class="win-tag tag-free">Gratuito</span>
+        </div>
+      </div>
+      <div class="win-card">
+        <div class="win-emoji">📲</div>
+        <div>
+          <div class="win-title">Partilha do catálogo online</div>
+          <div class="win-desc">Manda o link do site por WhatsApp a 10 contactos da loja: "Lançámos o nosso catálogo online, dá uma vista de olhos!" </div>
+          <span class="win-tag tag-free">Gratuito</span>
+          <span class="win-tag tag-fast">Rápido</span>
+        </div>
+      </div>
+      <div class="win-card">
+        <div class="win-emoji">💸</div>
+        <div>
+          <div class="win-title">Anúncio de €5/dia no Instagram</div>
+          <div class="win-desc">Pega num post que já fizeste e promove-o por 5€/dia durante 5 dias. Chega a milhares de pessoas na zona de Lisboa/Setúbal.</div>
+          <span class="win-tag tag-paid">€25 investimento</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end main -->
+
+  <script>
+    const months = [
+      { name: 'Jan', level: 'mid', label: 'Médio', color: '#f59e0b', detail: { title: 'Janeiro — Ano Novo, Casa Nova', level: 'Mês de Recuperação · Potencial Médio', actions: [ { title: '🎯 Campanha Ano Novo', desc: 'Comunicação: "Começa 2025 com a casa dos teus sonhos". Desconto de 10% em produtos selecionados durante 2 semanas.' }, { title: '📱 Conteúdo de Inspiração', desc: 'Publica ambientes e decorações inspiradoras. As pessoas estão motivadas para mudar a casa nesta época.' }, { title: '♻️ Reativar Clientes', desc: 'Contacta clientes antigos com mensagem de Ano Novo e apresenta o novo catálogo online.' } ] } },
+      { name: 'Fev', level: 'low', label: 'Fraco', color: '#ef4444', detail: { title: 'Fevereiro — Mês Mais Fraco', level: 'Mês Fraco · Foco em Visibilidade', actions: [ { title: '💌 Campanha Dia dos Namorados', desc: 'Promove itens decorativos, cabeceiras estofadas e camas. "O presente mais duradouro" para casais.' }, { title: '📸 Mais Conteúdo Instagram', desc: 'Compensa a baixa de tráfego com mais publicações. Este é o mês para construir audiência para os meses a vir.' }, { title: '🌟 Pede Reviews', desc: 'Manda mensagem a clientes de Dezembro/Janeiro pedindo review no Google. Mais reviews = mais visibilidade.' } ] } },
+      { name: 'Mar', level: 'mid', label: 'Médio', color: '#f59e0b', detail: { title: 'Março — Pré-Primavera', level: 'Mês de Crescimento · Potencial Médio', actions: [ { title: '🌱 Campanha "Nova Estação"', desc: 'Início da Primavera. Comunicação fresca, cores claras, renovação. Foco em salas e zonas de estar.' }, { title: '🏠 Parcerias Locais', desc: 'Contacta arquitetos e decoradores locais para parcerias. Eles recomendam a loja aos clientes.' }, { title: '📦 Pack Primavera', desc: 'Cria um pack especial de Primavera: sofá + mesa de centro com preço conjunto atrativo.' } ] } },
+      { name: 'Abr', level: 'high', label: 'Alto', color: '#22c55e', detail: { title: 'Abril — Época de Ouro', level: 'Mês Forte · Máximo Esforço', actions: [ { title: '💍 Campanha Casamentos', desc: 'Maior época de casamentos e primeiros apartamentos. "Mobiliza o vosso lar dos sonhos juntos."' }, { title: '🔥 Promoção Relâmpago', desc: 'Com alta procura, lança uma promoção de 48h para criar urgência adicional e aumentar conversões.' }, { title: '📲 Anúncios Pagos', desc: 'Investe em Meta Ads neste mês. Com a procura alta, o retorno sobre o investimento é máximo.' } ] } },
+      { name: 'Mai', level: 'high', label: 'Alto', color: '#22c55e', detail: { title: 'Maio — Pico de Vendas', level: 'Mês Forte · Mantém o Ritmo', actions: [ { title: '📸 Conteúdo de Clientes', desc: 'Pede autorização para partilhar fotos de quartos/salas de clientes. Prova social é muito poderosa.' }, { title: '🚚 Destaca Entrega Grátis', desc: 'Reforça sempre a comunicação de entrega + montagem grátis. É um diferenciador enorme.' }, { title: '⭐ Acumula Reviews', desc: 'Maio de alta venda = muitos clientes satisfeitos. Pede reviews a todos para fortalecer Junho.' } ] } },
+      { name: 'Jun', level: 'mid', label: 'Médio', color: '#f59e0b', detail: { title: 'Junho — Início do Verão', level: 'Potencial Médio · Transição', actions: [ { title: '☀️ Campanha Verão', desc: 'Foco em ambientes frescos e luminosos. Boa altura para promover salas de estar e zonas de convívio.' }, { title: '📋 Planeia o Black Friday', desc: 'Começa a preparar a estratégia de Novembro. Define os produtos, descontos e materiais de comunicação.' }, { title: '🎯 Fidelização', desc: 'Com vendas a estabilizar, foca-te em manter os clientes atuais satisfeitos e a recomendar a loja.' } ] } },
+      { name: 'Jul', level: 'low', label: 'Fraco', color: '#ef4444', detail: { title: 'Julho — Mês de Férias', level: 'Mês Fraco · Estratégia de Longo Prazo', actions: [ { title: '🏖️ Conteúdo de Verão', desc: 'As pessoas estão de férias mas no Instagram. Publica conteúdo aspiracional: "Para que quarto sonhas regressar?"' }, { title: '🔧 Atualiza o Site', desc: 'Aproveita o mês mais calmo para pedires melhorias ao site: novas fotos, novos produtos, ajustes de design.' }, { title: '📧 Prepara Setembro', desc: 'Planeia toda a comunicação de Setembro agora. Escreve os textos, tira fotos, prepara os posts com antecedência.' } ] } },
+      { name: 'Ago', level: 'low', label: 'Fraco', color: '#ef4444', detail: { title: 'Agosto — Férias Grandes', level: 'Mês Mais Fraco · Preparação', actions: [ { title: '📸 Banco de Conteúdo', desc: 'Tira muitas fotos da loja para teres conteúdo preparado para os meses de pico. Investe neste mês.' }, { title: '🎯 Anúncios de Reconhecimento', desc: 'Com orçamento baixo (€3-5/dia), mantém a Adil visível nas redes para não perderes relevância.' }, { title: '🤝 Networking', desc: 'Vai a feiras e eventos do setor. Contacta fornecedores para novas linhas para o outono.' } ] } },
+      { name: 'Set', level: 'high', label: 'Alto', color: '#22c55e', detail: { title: 'Setembro — Regresso ao Ativo', level: 'Mês Forte · Grande Oportunidade', actions: [ { title: '🏠 Campanha Regresso', desc: '"Novo ano letivo, nova casa." Foco em quartos de jovens, escritórios e espaços de estudo.' }, { title: '🔥 Lança uma Novidade', desc: 'Apresenta um produto novo ou destaca a Linha Malmo como novidade exclusiva. Gera buzz nas redes.' }, { title: '📲 Vai a Fundo nos Anúncios', desc: 'Setembro tem excelente ROI em anúncios de móveis. Investe 150-200€ em Meta Ads este mês.' } ] } },
+      { name: 'Out', level: 'high', label: 'Alto', color: '#22c55e', detail: { title: 'Outubro — Preparação do Inverno', level: 'Mês Forte · Máxima Atividade', actions: [ { title: '🍂 Campanha Acolhimento', desc: 'Tom mais quente e aconchegante. "Prepara o teu lar para o inverno." Foco em sofás e zonas de descanso.' }, { title: '⏳ Teaser Black Friday', desc: 'Começa a comunicar que o Black Friday está a chegar. "Inscreve-te para acesso antecipado."' }, { title: '📦 Packs de Outono', desc: 'Cria 2-3 packs temáticos específicos para esta época com preço especial.' } ] } },
+      { name: 'Nov', level: 'high', label: 'Alto', color: '#22c55e', detail: { title: 'Novembro — Black Friday', level: 'Mês de Pico Máximo · Não Percas!', actions: [ { title: '🖤 Black Friday Total', desc: 'Lança descontos de 15-30% na última semana. Publica todos os dias. Cria urgência com "últimas unidades".' }, { title: '📱 Intensidade Máxima', desc: 'Posts diários no Instagram, Stories com contagem decrescente. Manda mensagem WhatsApp a todos os contactos.' }, { title: '💸 Investe em Anúncios', desc: 'Este é o mês onde vale a pena investir mais em anúncios. O retorno pode ser 5-10x o investimento.' } ] } },
+      { name: 'Dez', level: 'mid', label: 'Médio', color: '#f59e0b', detail: { title: 'Dezembro — Natal e Fecho de Ano', level: 'Potencial Médio · Foco em Packs', actions: [ { title: '🎁 Packs Presentes', desc: 'Cria packs de Natal com preços de presente. Cabeceiras estofadas, móveis de decoração funcionam bem.' }, { title: '🥂 Ano Novo', desc: 'Na segunda quinzena, vira a comunicação para "Começa o Ano Novo com a casa nova". Prepara Janeiro.' }, { title: '📊 Avalia o Ano', desc: 'Analisa o que funcionou melhor em termos de produtos e campanhas. Usa para planear o ano seguinte.' } ] } }
+    ];
+
+    const strip = document.getElementById('calendarStrip');
+
+    months.forEach((m, i) => {
+      const cell = document.createElement('div');
+      cell.className = `month-cell level-${m.level}`;
+      cell.innerHTML = `
+        <div class="month-bar-wrap"><div class="month-bar"></div></div>
+        <div class="month-label">${m.name}</div>
+        <div class="month-tag">${m.label}</div>
+      `;
+      cell.addEventListener('click', () => {
+        document.querySelectorAll('.month-cell').forEach(c => c.classList.remove('active'));
+        cell.classList.add('active');
+        showDetail(m);
+      });
+      strip.appendChild(cell);
+    });
+
+    function showDetail(m) {
+      const panel = document.getElementById('detailPanel');
+      document.getElementById('detailTitle').textContent = m.detail.title;
+      const levelEl = document.getElementById('detailLevel');
+      levelEl.textContent = m.detail.level;
+      levelEl.style.color = m.level === 'high' ? '#22c55e' : m.level === 'low' ? '#ef4444' : '#f59e0b';
+      
+      const actionsEl = document.getElementById('detailActions');
+      actionsEl.innerHTML = m.detail.actions.map(a => `
+        <div class="detail-action">
+          <div class="detail-action-title">${a.title}</div>
+          <div class="detail-action-desc">${a.desc}</div>
+        </div>
+      `).join('');
+      
+      panel.classList.add('active');
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  </script>
+</body>
+</html>
