@@ -1678,6 +1678,66 @@ const window_products = {
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo de Tecidos[+0.00]",
     "image": "images/sem-imagem.svg"
+  },
+  "pack-1": {
+    "id": "pack-1",
+    "name": "Pack Sala de Sonho",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Sofá + Móvel de TV. Mobiliário Lourini de alta qualidade. Cores, acabamentos e tecidos personalizáveis na nossa loja física.",
+    "custom1_name": "Opções de Sofá",
+    "custom1_options": "Standard[+0.00]|Chaise Longue (sob consulta)[+0.00]",
+    "custom2_name": "Tecido / Cor",
+    "custom2_options": "Ver Catálogo de Tecidos[+0.00]",
+    "image": "images/sem-imagem.svg"
+  },
+  "pack-2": {
+    "id": "pack-2",
+    "name": "Pack Sala de Sonho Premium",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Sofá + Mesa de Centro + Móvel de TV. Mobiliário Lourini de alta qualidade. Cores, acabamentos e tecidos personalizáveis na nossa loja física.",
+    "custom1_name": "Opções de Sofá",
+    "custom1_options": "Standard[+0.00]|Chaise Longue (sob consulta)[+0.00]",
+    "custom2_name": "Tecido / Cor",
+    "custom2_options": "Ver Catálogo de Tecidos[+0.00]",
+    "image": "images/sem-imagem.svg"
+  },
+  "pack-3": {
+    "id": "pack-3",
+    "name": "Pack Aconchego Essencial",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Cama de Casal + Colchão + Almofadas. Mobiliário Lourini de alta qualidade e conforto superior.",
+    "custom1_name": "Medida do Colchão",
+    "custom1_options": "140x190cm[+0.00]|150x190cm[+0.00]|160x200cm[+0.00]",
+    "custom2_name": "Tipo de Cama",
+    "custom2_options": "Estofada[+0.00]|Madeira[+0.00]",
+    "image": "images/sem-imagem.svg"
+  },
+  "pack-4": {
+    "id": "pack-4",
+    "name": "Pack À Mesa",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Mesa de Refeição + Cadeiras. Perfeito para momentos de convívio em família. Medidas e acabamentos personalizáveis.",
+    "custom1_name": "Número de Cadeiras",
+    "custom1_options": "4 Cadeiras[+0.00]|6 Cadeiras (sob consulta)[+0.00]",
+    "custom2_name": "Mesa Extensível",
+    "custom2_options": "Não[+0.00]|Sim (sob consulta)[+0.00]",
+    "image": "images/sem-imagem.svg"
+  },
+  "pack-5": {
+    "id": "pack-5",
+    "name": "Pack Sonhos Tranquilos",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Sommier de Casal + Cabeceira Estofada + Colchão. Conforto e elegância garantidos para o seu quarto.",
+    "custom1_name": "Sommier Elevatório (Arrumação)",
+    "custom1_options": "Fixo[+0.00]|Elevatório (sob consulta)[+0.00]",
+    "custom2_name": "Medidas",
+    "custom2_options": "140x190cm[+0.00]|150x190cm[+0.00]|160x200cm[+0.00]",
+    "image": "images/sem-imagem.svg"
   }
 };
 
