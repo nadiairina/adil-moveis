@@ -1004,11 +1004,31 @@ footer.bg-black img {
   border-radius: 40px;
   padding: 8px 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  display: flex;
+  display: none; /* Hide on desktop by default */
   align-items: center;
   gap: 12px;
   max-width: 90vw;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .floating-contact-bar {
+    display: flex; /* Show on mobile/tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-btn-sec {
+    display: none !important; /* Hide "Como Chegar" on small screens to avoid cut-off */
+  }
+  .floating-contact-bar {
+    gap: 8px;
+    padding: 6px 12px;
+  }
+  .floating-btn {
+    padding: 6px 12px;
+    font-size: 8px;
+  }
 }
 
 .floating-contact-bar:hover {
