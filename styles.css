@@ -776,7 +776,6 @@ footer img:hover,
   }
 
   /* Grid single col */
-  .grid { grid-template-columns: repeat(1, 1fr) !important; }
   .grid-cols-2,
   .grid-cols-3,
   .grid-cols-4 { gap: 1rem !important; }
@@ -939,6 +938,7 @@ footer.bg-black {
   background-color: #EDF4F8 !important; /* Soft Baby Blue */
   color: #1a1a1a !important;
   border-top: 1px solid #D4E4EE !important;
+  padding-bottom: 90px !important; /* Extra bottom padding so floating contact bar never overlaps footer content */
 }
 
 footer .border-b,
@@ -1004,17 +1004,11 @@ footer.bg-black img {
   border-radius: 40px;
   padding: 8px 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  display: none; /* Hide on desktop by default */
+  display: flex; /* Show on all devices */
   align-items: center;
   gap: 12px;
   max-width: 90vw;
   transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .floating-contact-bar {
-    display: flex; /* Show on mobile/tablet */
-  }
 }
 
 @media (max-width: 480px) {
