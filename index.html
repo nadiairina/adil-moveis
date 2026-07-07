@@ -200,6 +200,30 @@
       <style>
         @keyframes heroScroll { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
         @keyframes blink { from, to { border-color: transparent } 50% { border-color: #C8B598; } }
+        
+        .trending-card {
+          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+          border: none !important;
+          box-shadow: none !important;
+        }
+        .trending-card:hover {
+          transform: translateY(-10px) !important;
+          box-shadow: 0 15px 30px rgba(200, 181, 152, 0.18) !important;
+          border-radius: 4px;
+        }
+        .trending-card img {
+          transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+        .trending-card:hover img {
+          transform: scale(1.08) !important;
+        }
+        .trending-badge {
+          transition: all 0.3s ease !important;
+        }
+        .trending-card:hover .trending-badge {
+          background-color: #1a1a1a !important;
+          transform: translateY(-2px);
+        }
       </style>
 
       <!-- ══════════════════════════════════════════════════════
@@ -214,10 +238,10 @@
 
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <!-- Product 1 -->
-            <a href="produto-detalhe.html?id=sala-1" class="product bg-white overflow-hidden block group transition-all duration-300" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=sala-1" class="product trending-card bg-white overflow-hidden block group" style="text-decoration:none; color:inherit;" data-aos="fade-up" data-aos-delay="50">
               <div class="relative rounded overflow-hidden" style="padding-top:100%; background:#F7F4F0;">
-                <img src="https://lourini.pt/app/uploads/2024/09/robson-chaise-1200x1200.webp" alt="Sofá Robson" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
+                <img src="https://lourini.pt/app/uploads/2024/09/robson-chaise-1200x1200.webp" alt="Sofá Robson" class="absolute inset-0 w-full h-full object-cover" />
+                <div class="trending-badge" style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
               </div>
               <div class="pt-4 pb-2 text-center">
                 <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:6px; transition:color 0.3s;" class="group-hover:text-[#C8B598]">Sofá Robson</h3>
@@ -229,10 +253,10 @@
             </a>
 
             <!-- Product 2 -->
-            <a href="produto-detalhe.html?id=quarto-2" class="product bg-white overflow-hidden block group transition-all duration-300" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=quarto-2" class="product trending-card bg-white overflow-hidden block group" style="text-decoration:none; color:inherit;" data-aos="fade-up" data-aos-delay="100">
               <div class="relative rounded overflow-hidden" style="padding-top:100%; background:#F7F4F0;">
-                <img src="images/Lourini-Majestic.jpg" alt="Cama Viena" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
+                <img src="images/Lourini-Majestic.jpg" alt="Cama Viena" class="absolute inset-0 w-full h-full object-cover" />
+                <div class="trending-badge" style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
               </div>
               <div class="pt-4 pb-2 text-center">
                 <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:6px; transition:color 0.3s;" class="group-hover:text-[#C8B598]">Cama Viena</h3>
@@ -244,10 +268,10 @@
             </a>
 
             <!-- Product 3 -->
-            <a href="produto-detalhe.html?id=quarto-3" class="product bg-white overflow-hidden block group transition-all duration-300" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=quarto-3" class="product trending-card bg-white overflow-hidden block group" style="text-decoration:none; color:inherit;" data-aos="fade-up" data-aos-delay="150">
               <div class="relative rounded overflow-hidden" style="padding-top:100%; background:#F7F4F0;">
-                <img src="images/Lourini-Madrid.jpg" alt="Cama Sophie" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
+                <img src="images/Lourini-Madrid.jpg" alt="Cama Sophie" class="absolute inset-0 w-full h-full object-cover" />
+                <div class="trending-badge" style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
               </div>
               <div class="pt-4 pb-2 text-center">
                 <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:6px; transition:color 0.3s;" class="group-hover:text-[#C8B598]">Cama Sophie</h3>
@@ -259,10 +283,10 @@
             </a>
 
             <!-- Product 4 -->
-            <a href="produto-detalhe.html?id=kids-1" class="product bg-white overflow-hidden block group transition-all duration-300" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=kids-1" class="product trending-card bg-white overflow-hidden block group" style="text-decoration:none; color:inherit;" data-aos="fade-up" data-aos-delay="200">
               <div class="relative rounded overflow-hidden" style="padding-top:100%; background:#F7F4F0;">
-                <img src="https://lourini.pt/app/uploads/2024/06/secretaria-sala-quarto-1200x1200.webp" alt="Cama Dream" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
+                <img src="https://lourini.pt/app/uploads/2024/06/secretaria-sala-quarto-1200x1200.webp" alt="Cama Dream" class="absolute inset-0 w-full h-full object-cover" />
+                <div class="trending-badge" style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:7px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:4px 8px; border-radius:2px; z-index:2; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">TENDÊNCIA</div>
               </div>
               <div class="pt-4 pb-2 text-center">
                 <h3 style="font-family:'Inter',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:6px; transition:color 0.3s;" class="group-hover:text-[#C8B598]">Cama Dream</h3>
