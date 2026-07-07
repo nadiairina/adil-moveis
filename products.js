@@ -1680,3 +1680,7 @@ const window_products = {
     "image": "images/sem-imagem.svg"
   }
 };
+
+if (typeof window !== 'undefined') {
+  window.produtos = window_products;
+}
