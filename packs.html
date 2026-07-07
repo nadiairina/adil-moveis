@@ -182,79 +182,141 @@
       <!-- ── Product Grid Section (Clean Boxes, No Buttons, 3 Columns) ── -->
       <section style="background:#FDFCFA; padding:5rem 0;">
         <div style="max-width:1280px; margin:0 auto; padding:0 1.5rem;">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Product Box 1 -->
-            <a href="produto-detalhe.html?id=pack-1" class="product bg-white rounded overflow-hidden block border border-[#E8E3DC] hover:shadow-md transition-shadow relative" data-category="sala" style="text-decoration:none; color:inherit;">
-              <div class="relative" style="padding-top:100%; overflow:hidden; background:#F7F4F0;">
+          <div class="space-y-16">
+            <!-- Pack 1: Sala de Sonho -->
+            <div class="product flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white border border-[#E8E3DC] rounded overflow-hidden p-6 md:p-8 hover:shadow-md transition-shadow" data-category="sala">
+              <div style="width:100%; md:width:50%; position:relative; padding-top:35%; overflow:hidden; background:#F7F4F0; min-height:280px; border-radius:4px;" class="w-full md:w-1/2">
                 <img src="images/sem-imagem.svg" alt="Pack Sala de Sonho" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:4px 10px; border-radius:20px; z-index:2;">
-                  Pack Especial
+                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:8px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:4px 12px; border-radius:20px; z-index:2;">CAMPANHA</div>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <span style="font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem; display:block;">Ref: pack-1</span>
+                <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.5rem,2.5vw,2rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Pack Sala de Sonho</h2>
+                <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.6; margin-bottom:1.5rem;">
+                  Conjunto composto por: Sofá de alta qualidade + Móvel de TV moderno. Personalize as medidas, cores e tecidos diretamente na nossa loja física para combinar perfeitamente com a sua casa.
+                </p>
+                <div style="border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:1rem 0; margin-bottom:1.5rem;">
+                  <h4 style="font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:0.5rem;">O que está incluído:</h4>
+                  <ul style="font-size:12px; color:#6b6b6b; list-style-type:none; padding-left:0; margin:0;" class="space-y-1">
+                    <li>✔ 1x Sofá Premium Lourini</li>
+                    <li>✔ 1x Móvel de TV moderno</li>
+                    <li>✔ Mais de 100 cores e tecidos de catálogo disponíveis na loja</li>
+                  </ul>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                  <span style="font-size:1.25rem; font-weight:600; color:#C8B598;">Sob Consulta</span>
+                  <a href="produto-detalhe.html?id=pack-1" style="background:#1a1a1a; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:12px 24px; text-decoration:none; border-radius:2px; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Ver Detalhes e Opções →</a>
                 </div>
               </div>
-              <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-                <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Pack Sala de Sonho</h3>
-                <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-                  <span class="price-discounted" style="font-weight:600; color:#c8b598;">Sob Consulta</span>
-                </p>
-              </div>
-            </a>
-            <!-- Product Box 2 -->
-            <a href="produto-detalhe.html?id=pack-2" class="product bg-white rounded overflow-hidden block border border-[#E8E3DC] hover:shadow-md transition-shadow relative" data-category="sala" style="text-decoration:none; color:inherit;">
-              <div class="relative" style="padding-top:100%; overflow:hidden; background:#F7F4F0;">
+            </div>
+
+            <!-- Pack 2: Sala de Sonho Premium -->
+            <div class="product flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-white border border-[#E8E3DC] rounded overflow-hidden p-6 md:p-8 hover:shadow-md transition-shadow" data-category="sala">
+              <div style="width:100%; md:width:50%; position:relative; padding-top:35%; overflow:hidden; background:#F7F4F0; min-height:280px; border-radius:4px;" class="w-full md:w-1/2">
                 <img src="images/sem-imagem.svg" alt="Pack Sala de Sonho Premium" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:4px 10px; border-radius:20px; z-index:2;">
-                  Pack Especial
+                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:8px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:4px 12px; border-radius:20px; z-index:2;">CAMPANHA</div>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <span style="font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem; display:block;">Ref: pack-2</span>
+                <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.5rem,2.5vw,2rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Pack Sala de Sonho Premium</h2>
+                <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.6; margin-bottom:1.5rem;">
+                  Conjunto composto por: Sofá de alta qualidade + Mesa de Centro contemporânea + Móvel de TV moderno. Uma combinação elegante e pronta a habitar para a sua sala de estar.
+                </p>
+                <div style="border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:1rem 0; margin-bottom:1.5rem;">
+                  <h4 style="font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:0.5rem;">O que está incluído:</h4>
+                  <ul style="font-size:12px; color:#6b6b6b; list-style-type:none; padding-left:0; margin:0;" class="space-y-1">
+                    <li>✔ 1x Sofá Premium Lourini</li>
+                    <li>✔ 1x Mesa de Centro moderna</li>
+                    <li>✔ 1x Móvel de TV moderno</li>
+                  </ul>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                  <span style="font-size:1.25rem; font-weight:600; color:#C8B598;">Sob Consulta</span>
+                  <a href="produto-detalhe.html?id=pack-2" style="background:#1a1a1a; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:12px 24px; text-decoration:none; border-radius:2px; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Ver Detalhes e Opções →</a>
                 </div>
               </div>
-              <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-                <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Pack Sala de Sonho Premium</h3>
-                <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-                  <span class="price-discounted" style="font-weight:600; color:#c8b598;">Sob Consulta</span>
-                </p>
-              </div>
-            </a>
-            <!-- Product Box 3 -->
-            <a href="produto-detalhe.html?id=pack-3" class="product bg-white rounded overflow-hidden block border border-[#E8E3DC] hover:shadow-md transition-shadow relative" data-category="quarto" style="text-decoration:none; color:inherit;">
-              <div class="relative" style="padding-top:100%; overflow:hidden; background:#F7F4F0;">
+            </div>
+
+            <!-- Pack 3: Aconchego Essencial -->
+            <div class="product flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white border border-[#E8E3DC] rounded overflow-hidden p-6 md:p-8 hover:shadow-md transition-shadow" data-category="quarto">
+              <div style="width:100%; md:width:50%; position:relative; padding-top:35%; overflow:hidden; background:#F7F4F0; min-height:280px; border-radius:4px;" class="w-full md:w-1/2">
                 <img src="images/sem-imagem.svg" alt="Pack Aconchego Essencial" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:4px 10px; border-radius:20px; z-index:2;">
-                  Pack Especial
+                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:8px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:4px 12px; border-radius:20px; z-index:2;">CAMPANHA</div>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <span style="font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem; display:block;">Ref: pack-3</span>
+                <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.5rem,2.5vw,2rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Pack Aconchego Essencial</h2>
+                <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.6; margin-bottom:1.5rem;">
+                  Conjunto composto por: Cama de Casal + Colchão confortável + Almofadas. O pack essencial de quarto para desfrutar de noites tranquilas e conforto absoluto.
+                </p>
+                <div style="border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:1rem 0; margin-bottom:1.5rem;">
+                  <h4 style="font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:0.5rem;">O que está incluído:</h4>
+                  <ul style="font-size:12px; color:#6b6b6b; list-style-type:none; padding-left:0; margin:0;" class="space-y-1">
+                    <li>✔ 1x Cama de Casal Lourini (Madeira ou Estofada)</li>
+                    <li>✔ 1x Colchão confortável</li>
+                    <li>✔ Almofadas de oferta</li>
+                  </ul>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                  <span style="font-size:1.25rem; font-weight:600; color:#C8B598;">Sob Consulta</span>
+                  <a href="produto-detalhe.html?id=pack-3" style="background:#1a1a1a; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:12px 24px; text-decoration:none; border-radius:2px; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Ver Detalhes e Opções →</a>
                 </div>
               </div>
-              <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-                <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Pack Aconchego Essencial</h3>
-                <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-                  <span class="price-discounted" style="font-weight:600; color:#c8b598;">Sob Consulta</span>
-                </p>
-              </div>
-            </a>
-            <!-- Product Box 4 -->
-            <a href="produto-detalhe.html?id=pack-4" class="product bg-white rounded overflow-hidden block border border-[#E8E3DC] hover:shadow-md transition-shadow relative" data-category="sala" style="text-decoration:none; color:inherit;">
-              <div class="relative" style="padding-top:100%; overflow:hidden; background:#F7F4F0;">
+            </div>
+
+            <!-- Pack 4: À Mesa -->
+            <div class="product flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-white border border-[#E8E3DC] rounded overflow-hidden p-6 md:p-8 hover:shadow-md transition-shadow" data-category="sala">
+              <div style="width:100%; md:width:50%; position:relative; padding-top:35%; overflow:hidden; background:#F7F4F0; min-height:280px; border-radius:4px;" class="w-full md:w-1/2">
                 <img src="images/sem-imagem.svg" alt="Pack À Mesa" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:4px 10px; border-radius:20px; z-index:2;">
-                  Pack Especial
-                </div>
+                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:8px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:4px 12px; border-radius:20px; z-index:2;">CAMPANHA</div>
               </div>
-              <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-                <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Pack À Mesa</h3>
-                <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-                  <span class="price-discounted" style="font-weight:600; color:#c8b598;">Sob Consulta</span>
+              <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <span style="font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem; display:block;">Ref: pack-4</span>
+                <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.5rem,2.5vw,2rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Pack À Mesa</h2>
+                <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.6; margin-bottom:1.5rem;">
+                  Conjunto composto por: Mesa de Refeição moderna + Conjunto de Cadeiras a condizer. Ideal para reunir quem mais gosta para jantar e momentos de convívio perfeitos.
                 </p>
-              </div>
-            </a>
-            <!-- Product Box 5 -->
-            <a href="produto-detalhe.html?id=pack-5" class="product bg-white rounded overflow-hidden block border border-[#E8E3DC] hover:shadow-md transition-shadow relative" data-category="casal" style="text-decoration:none; color:inherit;">
-              <div class="relative" style="padding-top:100%; overflow:hidden; background:#F7F4F0;">
-                <img src="images/sem-imagem.svg" alt="Pack Sonhos Tranquilos" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:4px 10px; border-radius:20px; z-index:2;">
-                  Pack Especial
+                <div style="border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:1rem 0; margin-bottom:1.5rem;">
+                  <h4 style="font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:0.5rem;">O que está incluído:</h4>
+                  <ul style="font-size:12px; color:#6b6b6b; list-style-type:none; padding-left:0; margin:0;" class="space-y-1">
+                    <li>✔ 1x Mesa de Refeição Lourini (Medidas ajustáveis)</li>
+                    <li>✔ 4x ou 6x Cadeiras estofadas personalizáveis</li>
+                  </ul>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                  <span style="font-size:1.25rem; font-weight:600; color:#C8B598;">Sob Consulta</span>
+                  <a href="produto-detalhe.html?id=pack-4" style="background:#1a1a1a; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:12px 24px; text-decoration:none; border-radius:2px; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Ver Detalhes e Opções →</a>
                 </div>
               </div>
-              <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-                <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Pack Sonhos Tranquilos</h3>
-                <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-                  <span class="price-discounted" style="font-weight:600; color:#c8b598;">Sob Consulta</span>
+            </div>
+
+            <!-- Pack 5: Sonhos Tranquilos -->
+            <div class="product flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white border border-[#E8E3DC] rounded overflow-hidden p-6 md:p-8 hover:shadow-md transition-shadow" data-category="casal">
+              <div style="width:100%; md:width:50%; position:relative; padding-top:35%; overflow:hidden; background:#F7F4F0; min-height:280px; border-radius:4px;" class="w-full md:w-1/2">
+                <img src="images/sem-imagem.svg" alt="Pack Sonhos Tranquilos" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+                <div style="position:absolute; top:12px; left:12px; background:#C8B598; color:#fff; font-size:8px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:4px 12px; border-radius:20px; z-index:2;">CAMPANHA</div>
+              </div>
+              <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <span style="font-size:9px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem; display:block;">Ref: pack-5</span>
+                <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.5rem,2.5vw,2rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;">Pack Sonhos Tranquilos</h2>
+                <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.6; margin-bottom:1.5rem;">
+                  Conjunto composto por: Sommier de Casal Elevatório (arrumação extra) + Cabeceira Estofada + Colchão superior. A combinação de luxo e utilidade para o quarto principal.
+                </p>
+                <div style="border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:1rem 0; margin-bottom:1.5rem;">
+                  <h4 style="font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#1a1a1a; margin-bottom:0.5rem;">O que está incluído:</h4>
+                  <ul style="font-size:12px; color:#6b6b6b; list-style-type:none; padding-left:0; margin:0;" class="space-y-1">
+                    <li>✔ 1x Sommier Elevatório de Casal</li>
+                    <li>✔ 1x Cabeceira Estofada Premium</li>
+                    <li>✔ 1x Colchão de alta densidade/conforto</li>
+                  </ul>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                  <span style="font-size:1.25rem; font-weight:600; color:#C8B598;">Sob Consulta</span>
+                  <a href="produto-detalhe.html?id=pack-5" style="background:#1a1a1a; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:12px 24px; text-decoration:none; border-radius:2px; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Ver Detalhes e Opções →</a>
+                </div>
+              </div>
+            </div>
+          </div>
                 </p>
               </div>
             </a>
