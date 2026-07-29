@@ -1,0 +1,21 @@
+Extracting from ../Excel de produtos - Site-finalporagora.xlsx
+
+--- Sheet: Folha2 ---
+Row 567 [Colors: {'theme-8'}]: ['', 'COLOCAR AMOSTRAS DE MADEIRA E TECIDOS', '', '', '']
+
+--- Sheet: Folha3 ---
+
+--- Sheet: Folha1 ---
+Row 1 [Colors: {'theme-8'}]: ['lourini sleep', 'Camas', '', 'Linha Malmo', 'Cores', 'Medidas']
+Row 5 [Colors: {'theme-8'}]: ['', 'Quartos de Casal a por no site', 'O QUE SE VENDE MAIS - LINHA PARIS', 'Módulo 2 gavetas 60 - Module 2 drawers 60', 'Branco - Carvalho (White - Oak)', 'L600 x A655 x P405']
+Row 6 [Colors: {'theme-8'}]: ['Ibiza', '', 'BASE TV PARIS', '', 'Capuccino - Carvalho (Capuccino - Oak', '']
+Row 7 [Colors: {'theme-8'}]: ['', '', 'MESA CENTRO PARIS', '', 'Dark Grey - Carvalho (Dark Grey - Oak)', '']
+Row 8 [Colors: {'theme-8'}]: ['', 'City - mesa', 'COMPLEMENTO PARIS', 'Módulo 3 gavetas 116 - Module 3 drawers 116', 'Branco - Carvalho (White - Oak)', 'L1165 x A800 x P455']
+Row 9 [Colors: {'theme-8'}]: ['Faro', '', 'APARADOR PARIS', '', 'Capuccino - Carvalho (Capuccino - Oak', '']
+Row 10 [Colors: {'theme-8'}]: ['Toronto', '', 'MESA PARIS', '', 'Dark Grey - Carvalho (Dark Grey - Oak)', '']
+Row 11 [Colors: {'theme-8'}]: ['', 'Málaga - tudo e por tbm elemento 4 prateleiras!', 'CADEIRAS LOURO?', 'Módulo 2 portas 116 - Module 2 doors 116', 'Branco - Carvalho (White - Oak)', 'L1165 x A800 x P455']
+Row 12 [Colors: {'theme-8'}]: ['', 'Madrid', 'CAMA CASAL PARIS', '', 'Capuccino - Carvalho (Capuccino - Oak', '']
+Row 13 [Colors: {'theme-8'}]: ['', 'Florença', 'MESAS DE CABECEIRA PARIS', '', 'Dark Grey - Carvalho (Dark Grey - Oak)', '']
+Row 14 [Colors: {'theme-8'}]: ['', 'Paris - principal', 'COMODA PARIS CINZA', 'Módulo 4 gavetas 60 - Module 4 drawers 60', 'Branco - Carvalho (White - Oak)', 'L600 x A1260 x P405']
+Row 15 [Colors: {'theme-8'}]: ['Estoril', '', 'CAMISEIRO PARIS', '', 'Capuccino - Carvalho (Capuccino - Oak', '']
+Row 17 [Colors: {'FFCDC2DE'}]: ['', 'Viena', 'e salas', 'Linha Málaga', '', '']

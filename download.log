@@ -1,0 +1,99 @@
+/Users/nadiairina/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/nadiairina/Desktop/adil móveis/adil-moveis/download_images.py:10: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  ddgs = DDGS()
+Searching for: Sofá Trevor Lourini
+Search failed for Sofá Trevor Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Trevor+Lourini&l=us-en&vqd=4-331799348443006130132892071857434911659&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Robson Lourini
+Search failed for Sofá Robson Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Robson+Lourini&l=us-en&vqd=4-256520101101731739719118679581510923450&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Amazónia Lourini
+Search failed for Sofá Amazónia Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Amaz%C3%B3nia+Lourini&l=us-en&vqd=4-29293529157553006284988207598574078521&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Argo Lourini
+Search failed for Sofá Argo Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Argo+Lourini&l=us-en&vqd=4-317812849773830283255312829246697041423&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Eros Lourini
+Search failed for Sofá Eros Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Eros+Lourini&l=us-en&vqd=4-289620491364311749539733317788809661757&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Daytona Lourini
+Search failed for Sofá Daytona Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Daytona+Lourini&l=us-en&vqd=4-227782531789989041904457099218116783731&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Orly Lourini
+Search failed for Sofá Orly Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Orly+Lourini&l=us-en&vqd=4-280738113371711219045139972313317015567&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Alvin Lourini
+Search failed for Sofá Alvin Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Alvin+Lourini&l=us-en&vqd=4-228105498028747637605432260887261566998&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá George Lourini
+Search failed for Sofá George Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+George+Lourini&l=us-en&vqd=4-187108642888420217807143367085813902834&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Mónika Lourini
+Search failed for Sofá Mónika Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+M%C3%B3nika+Lourini&l=us-en&vqd=4-11852195387921779409760760223314489244&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Megan Lourini
+Search failed for Sofá Megan Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Megan+Lourini&l=us-en&vqd=4-109190492478529354078219307674151889855&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Robbie Lourini
+Search failed for Sofá Robbie Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Robbie+Lourini&l=us-en&vqd=4-273836574250209993303268694396543353986&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Mistik Lourini
+Search failed for Sofá Mistik Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Mistik+Lourini&l=us-en&vqd=4-210842472310212713851485083935474139340&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Philipe Lourini
+Search failed for Sofá Philipe Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Philipe+Lourini&l=us-en&vqd=4-248556396272247390848159336859740552542&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sofá Ozil Lourini
+Search failed for Sofá Ozil Lourini: https://duckduckgo.com/i.js?o=json&q=Sof%C3%A1+Ozil+Lourini&l=us-en&vqd=4-175570102897807215375931364436640770322&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Sirio Lourini
+Search failed for Cadeirão Sirio Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Sirio+Lourini&l=us-en&vqd=4-78567662153420227233386773941398851947&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Fredy Lourini
+Search failed for Cadeirão Fredy Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Fredy+Lourini&l=us-en&vqd=4-320770955617779011354563523329135389247&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Connor Lourini
+Search failed for Cadeirão Connor Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Connor+Lourini&l=us-en&vqd=4-126660255781571330495568192826848336286&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Lion Lourini
+Search failed for Cadeirão Lion Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Lion+Lourini&l=us-en&vqd=4-277585821223574757125250082670095414506&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Dover Lourini
+Search failed for Cadeirão Dover Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Dover+Lourini&l=us-en&vqd=4-302764903846581508427522492362770511440&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Stick Lourini
+Search failed for Cadeirão Stick Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Stick+Lourini&l=us-en&vqd=4-2477415375447540276565173522394815422&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeirão Star Lourini
+Search failed for Cadeirão Star Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeir%C3%A3o+Star+Lourini&l=us-en&vqd=4-69822557695024396938480126730783800892&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Charly Lourini
+Search failed for Cadeira Charly Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Charly+Lourini&l=us-en&vqd=4-123571844993988138008043596168782753811&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Moon Lourini
+Search failed for Cadeira Moon Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Moon+Lourini&l=us-en&vqd=4-336493074066240368198491842225925656861&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Paris Lourini
+Search failed for Cadeira Paris Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Paris+Lourini&l=us-en&vqd=4-30693216266895072970376891591963829546&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Sagres Lourini
+Search failed for Cadeira Sagres Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Sagres+Lourini&l=us-en&vqd=4-4595941520267053422503194415982914126&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Madrid Lourini
+Search failed for Cadeira Madrid Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Madrid+Lourini&l=us-en&vqd=4-191337058106425752561890417486508976235&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Milão Lourini
+Search failed for Cadeira Milão Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Mil%C3%A3o+Lourini&l=us-en&vqd=4-152302558844382727008851969395099493753&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Chiado Lourini
+Search failed for Cadeira Chiado Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Chiado+Lourini&l=us-en&vqd=4-131391254606599010079809049851037913947&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cadeira Viena Lourini
+Search failed for Cadeira Viena Lourini: https://duckduckgo.com/i.js?o=json&q=Cadeira+Viena+Lourini&l=us-en&vqd=4-127482539851635871207625266811610141032&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sala Linha Malmo (Composição) Lourini
+Search failed for Sala Linha Malmo (Composição) Lourini: https://duckduckgo.com/i.js?o=json&q=Sala+Linha+Malmo+%28Composi%C3%A7%C3%A3o%29+Lourini&l=us-en&vqd=4-33012049326631124289543022548589687822&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sala Linha Madrid (Composição) Lourini
+Search failed for Sala Linha Madrid (Composição) Lourini: https://duckduckgo.com/i.js?o=json&q=Sala+Linha+Madrid+%28Composi%C3%A7%C3%A3o%29+Lourini&l=us-en&vqd=4-77304654639150330676427453218334652112&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sala Linha Paris (Composição) Lourini
+Search failed for Sala Linha Paris (Composição) Lourini: https://duckduckgo.com/i.js?o=json&q=Sala+Linha+Paris+%28Composi%C3%A7%C3%A3o%29+Lourini&l=us-en&vqd=4-437780313333899728122128239545445250&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Sala Linha Chiado (Composição) Lourini
+Search failed for Sala Linha Chiado (Composição) Lourini: https://duckduckgo.com/i.js?o=json&q=Sala+Linha+Chiado+%28Composi%C3%A7%C3%A3o%29+Lourini&l=us-en&vqd=4-186554646892273796926300105776513340667&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Cama casal
+Search failed for Quarto Lourini - Cama casal: https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+Cama+casal&l=us-en&vqd=4-336106930901247569731248563463629386347&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Mesa cabeceira
+Search failed for Quarto Lourini - Mesa cabeceira: https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+Mesa+cabeceira&l=us-en&vqd=4-318631608104926912544640258007691672460&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Cómoda
+Search failed for Quarto Lourini - Cómoda: https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+C%C3%B3moda&l=us-en&vqd=4-173426832553090303593166059347539108345&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Camiseiro
+Search failed for Quarto Lourini - Camiseiro: https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+Camiseiro&l=us-en&vqd=4-132551334980742716526233500859249223551&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Estrado Metálico
+Search failed for Quarto Lourini - Estrado Metálico: https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+Estrado+Met%C3%A1lico&l=us-en&vqd=4-293482633882129619669200210594921679397&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Jones
+Search failed for Quarto Lourini - Jones: https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+Jones&l=us-en&vqd=4-226022365835363557576454514654845472602&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cabeceira Jones com laterais Lourini
+Search failed for Cabeceira Jones com laterais Lourini: https://duckduckgo.com/i.js?o=json&q=Cabeceira+Jones+com+laterais+Lourini&l=us-en&vqd=4-194924188360708833221597005000142912253&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cama Casal Paris Lourini
+Search failed for Cama Casal Paris Lourini: https://duckduckgo.com/i.js?o=json&q=Cama+Casal+Paris+Lourini&l=us-en&vqd=4-338998995065746878745427344406375044388&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Cómoda Paris Lourini
+Search failed for Cómoda Paris Lourini: https://duckduckgo.com/i.js?o=json&q=C%C3%B3moda+Paris+Lourini&l=us-en&vqd=4-114021355726588012059703924532575543389&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Camiseiro Paris Lourini
+Search failed for Camiseiro Paris Lourini: https://duckduckgo.com/i.js?o=json&q=Camiseiro+Paris+Lourini&l=us-en&vqd=4-187558645189878295162398296421599561257&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Mesa de Cabeceira Paris Lourini
+Search failed for Mesa de Cabeceira Paris Lourini: https://duckduckgo.com/i.js?o=json&q=Mesa+de+Cabeceira+Paris+Lourini&l=us-en&vqd=4-201235697789121653239822361289122967759&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Estrado Metálico Lourini
+Search failed for Estrado Metálico Lourini: https://duckduckgo.com/i.js?o=json&q=Estrado+Met%C3%A1lico+Lourini&l=us-en&vqd=4-124039712550353013220385156645983382781&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Searching for: Quarto Lourini - Linha Play (Kids)
+Search failed for Quarto Lourini - Linha Play (Kids): https://duckduckgo.com/i.js?o=json&q=Quarto+Lourini+-+Linha+Play+%28Kids%29&l=us-en&vqd=4-291305400960464866080443369890275194209&p=1&f=%2C%2C%2C%2C%2C 403 Ratelimit
+Done processing products.js

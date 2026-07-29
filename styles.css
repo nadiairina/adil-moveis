@@ -229,8 +229,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .product img {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100% !important; 
+  height: 100% !important;
+  max-width: none !important;
   object-fit: cover;
   object-position: center;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -331,15 +333,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Snipcart Checkout Button ────────────────────────────── */
 button.snipcart-checkout {
-  background-color: var(--white) !important;
+  background-color: transparent !important;
   color: var(--black) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 30px !important;
-  padding: 0.4rem 1.1rem !important;
-  font-size: 0.75rem !important;
-  font-weight: 600 !important;
-  font-family: var(--font-sans) !important;
+  border: 2px solid #1a1a1a !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   transition: var(--transition) !important;
+  flex-shrink: 0 !important;
 }
 
 button.snipcart-checkout:hover {
@@ -770,7 +775,6 @@ footer img:hover,
 
   /* Logo */
   .logo img,
-  img[alt*="Adil"],
   header img {
     max-width: 110px !important;
     height: auto !important;
@@ -983,7 +987,6 @@ footer.bg-black i {
 
 footer img,
 footer.bg-black img {
-  mix-blend-mode: multiply !important;
   height: 52px !important;
   width: 52px !important;
   border-radius: 50% !important;
@@ -1013,16 +1016,13 @@ footer.bg-black img {
 }
 
 @media (max-width: 480px) {
-  .floating-btn-sec {
-    display: none !important; /* Hide "Como Chegar" on small screens to avoid cut-off */
-  }
   .floating-contact-bar {
-    gap: 8px;
-    padding: 6px 12px;
+    gap: 6px;
+    padding: 6px 10px;
   }
   .floating-btn {
-    padding: 6px 12px;
-    font-size: 8px;
+    padding: 5px 8px;
+    font-size: 7.5px;
   }
 }
 
