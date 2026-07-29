@@ -657,6 +657,13 @@
 
           var flexDiv = document.getElementById(optionsId);
           flexDiv.innerHTML = '';
+          
+          function updateWhatsAppLink() {
+            var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name + ' (Ref: ' + p.id + ')';
+            var custom1 = btn.dataset.itemCustom1Name ? '\\n- ' + btn.dataset.itemCustom1Name + ': ' + btn.dataset.itemCustom1Value : '';
+            var custom2 = btn.dataset.itemCustom2Name ? '\\n- ' + btn.dataset.itemCustom2Name + ': ' + btn.dataset.itemCustom2Value : '';
+            document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351960209396?text=' + encodeURIComponent(textMessage + custom1 + custom2);
+          }
 
           opts.forEach(function(opt, i) {
             var val = opt.split('[')[0];
@@ -667,9 +674,13 @@
               flexDiv.querySelectorAll('.option-btn').forEach(function(x) { x.classList.remove('selected'); });
               b.classList.add('selected');
               btn.dataset['itemCustom' + customIndex + 'Value'] = val;
+              updateWhatsAppLink();
             });
             flexDiv.appendChild(b);
           });
+          
+          // Initial update
+          updateWhatsAppLink();
         }
 
         buildOptions('custom1-container', 'custom1-title', 'custom1-options', p.custom1_name, p.custom1_options, 1);
