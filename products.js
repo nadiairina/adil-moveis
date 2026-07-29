@@ -10,7 +10,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-1.png"
+    "image": "images/produtos/sofas-1_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-1_gallery_0.png",
+      "images/produtos/sofas-1_gallery_1.png",
+      "images/produtos/sofas-1_gallery_2.webp"
+    ]
   },
   "sofas-2": {
     "id": "sofas-2",
@@ -23,7 +28,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-2.png"
+    "image": "images/produtos/sofas-2_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-2_gallery_0.png",
+      "images/produtos/sofas-2_gallery_1.png",
+      "images/produtos/sofas-2_gallery_2.webp"
+    ]
   },
   "sofas-3": {
     "id": "sofas-3",
@@ -36,7 +46,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/produtos/sofas-3_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-3_gallery_0.png",
+      "images/produtos/sofas-3_gallery_1.webp",
+      "images/produtos/sofas-3_gallery_2.webp"
+    ]
   },
   "sofas-4": {
     "id": "sofas-4",
@@ -49,7 +64,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-4.png"
+    "image": "images/produtos/sofas-4_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-4_gallery_0.png",
+      "images/produtos/sofas-4_gallery_1.png",
+      "images/produtos/sofas-4_gallery_2.webp"
+    ]
   },
   "sofas-5": {
     "id": "sofas-5",
@@ -75,7 +95,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-6.png"
+    "image": "images/produtos/sofas-6_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-6_gallery_0.png",
+      "images/produtos/sofas-6_gallery_1.webp",
+      "images/produtos/sofas-6_gallery_2.png"
+    ]
   },
   "sofas-7": {
     "id": "sofas-7",
@@ -101,7 +126,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-8.png"
+    "image": "images/produtos/sofas-8_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-8_gallery_0.png",
+      "images/produtos/sofas-8_gallery_1.png",
+      "images/produtos/sofas-8_gallery_2.webp",
+      "images/produtos/sofas-8_gallery_3.webp"
+    ]
   },
   "sofas-9": {
     "id": "sofas-9",
@@ -114,7 +145,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-9.png"
+    "image": "images/produtos/sofas-9_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-9_gallery_0.png",
+      "images/produtos/sofas-9_gallery_1.webp",
+      "images/produtos/sofas-9_gallery_2.png",
+      "images/produtos/sofas-9_gallery_3.png"
+    ]
   },
   "sofas-10": {
     "id": "sofas-10",
@@ -140,7 +177,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-11.png"
+    "image": "images/produtos/sofas-11_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-11_gallery_0.png",
+      "images/produtos/sofas-11_gallery_1.webp",
+      "images/produtos/sofas-11_gallery_2.webp"
+    ]
   },
   "sofas-12": {
     "id": "sofas-12",
@@ -166,7 +208,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-13.png"
+    "image": "images/produtos/sofas-13_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-13_gallery_0.png",
+      "images/produtos/sofas-13_gallery_1.webp",
+      "images/produtos/sofas-13_gallery_2.png",
+      "images/produtos/sofas-13_gallery_3.webp"
+    ]
   },
   "sofas-14": {
     "id": "sofas-14",
@@ -231,7 +279,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-18.png"
+    "image": "images/produtos/sofas-18_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-18_gallery_0.png",
+      "images/produtos/sofas-18_gallery_1.webp",
+      "images/produtos/sofas-18_gallery_2.png"
+    ]
   },
   "sofas-19": {
     "id": "sofas-19",
@@ -244,7 +297,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-19.png"
+    "image": "images/produtos/sofas-19_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-19_gallery_0.png",
+      "images/produtos/sofas-19_gallery_1.webp"
+    ]
   },
   "sofas-20": {
     "id": "sofas-20",
@@ -257,7 +314,14 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-20.png"
+    "image": "images/produtos/sofas-20_gallery_0.png",
+    "gallery": [
+      "images/produtos/sofas-20_gallery_0.png",
+      "images/produtos/sofas-20_gallery_1.png",
+      "images/produtos/sofas-20_gallery_2.png",
+      "images/produtos/sofas-20_gallery_3.webp",
+      "images/produtos/sofas-20_gallery_4.webp"
+    ]
   },
   "sofas-21": {
     "id": "sofas-21",
@@ -310,7 +374,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-24.png"
+    "image": "images/produtos/salas-24_gallery_0.png",
+    "gallery": [
+      "images/produtos/salas-24_gallery_0.png",
+      "images/produtos/salas-24_gallery_1.webp",
+      "images/produtos/salas-24_gallery_2.png"
+    ]
   },
   "salas-25": {
     "id": "salas-25",
@@ -323,7 +392,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-25.png"
+    "image": "images/produtos/salas-25_gallery_0.png",
+    "gallery": [
+      "images/produtos/salas-25_gallery_0.png",
+      "images/produtos/salas-25_gallery_1.png",
+      "images/produtos/salas-25_gallery_2.webp",
+      "images/produtos/salas-25_gallery_3.png"
+    ]
   },
   "salas-26": {
     "id": "salas-26",
@@ -336,7 +411,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-26.png"
+    "image": "images/produtos/salas-26_gallery_0.png",
+    "gallery": [
+      "images/produtos/salas-26_gallery_0.png",
+      "images/produtos/salas-26_gallery_1.webp"
+    ]
   },
   "salas-27": {
     "id": "salas-27",
@@ -375,7 +454,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-29.png"
+    "image": "images/produtos/salas-29_gallery_0.png",
+    "gallery": [
+      "images/produtos/salas-29_gallery_0.png",
+      "images/produtos/salas-29_gallery_1.webp"
+    ]
   },
   "salas-30": {
     "id": "salas-30",
@@ -427,7 +510,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-33.png"
+    "image": "images/produtos/salas-33_gallery_0.png",
+    "gallery": [
+      "images/produtos/salas-33_gallery_0.png",
+      "images/produtos/salas-33_gallery_1.png",
+      "images/produtos/salas-33_gallery_2.webp",
+      "images/produtos/salas-33_gallery_3.png"
+    ]
   },
   "salas-34": {
     "id": "salas-34",
@@ -440,7 +529,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-34.png"
+    "image": "images/produtos/salas-34_gallery_0.png",
+    "gallery": [
+      "images/produtos/salas-34_gallery_0.png",
+      "images/produtos/salas-34_gallery_1.webp"
+    ]
   },
   "quartos-35": {
     "id": "quartos-35",
@@ -532,7 +625,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/quartos-41.webp"
+    "image": "images/produtos/quartos-41_gallery_0.png",
+    "gallery": [
+      "images/produtos/quartos-41_gallery_0.png",
+      "images/produtos/quartos-41_gallery_1.webp"
+    ]
   },
   "quartos-42": {
     "id": "quartos-42",
