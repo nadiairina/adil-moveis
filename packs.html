@@ -185,7 +185,33 @@
   </div>
 </section>
 
-      <!-- ── Bento Grid Packs Section ── -->
+      <!-- ── Strict 4-Column Bento Grid Packs Section ── -->
+      <style>
+        .bento-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+        }
+        .bento-featured {
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+        .bento-span-2 {
+          grid-column: span 2;
+        }
+        .bento-span-1 {
+          grid-column: span 1;
+        }
+        @media (max-width: 900px) {
+          .bento-grid {
+            grid-template-columns: 1fr;
+          }
+          .bento-featured, .bento-span-2, .bento-span-1 {
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+        }
+      </style>
       <section style="background:#FDFCFA; padding:5rem 0;">
         <div style="max-width:1280px; margin:0 auto; padding:0 1.5rem;">
           <div class="text-center mb-12">
@@ -193,19 +219,17 @@
             <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.75rem,3vw,2.75rem); font-weight:400; color:#1a1a1a; line-height:1.2;">Seleção de Packs Exclusivos</h2>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div class="bento-grid max-w-6xl mx-auto">
             
-            <!-- FEATURED BENTO ITEM (2x2): Pack 3 - Pack Aconchego Essencial -->
-            <div class="product md:col-span-2 md:row-span-2 flex flex-col bg-white border-2 border-[#C8B598] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 group" data-category="quarto">
-              <a href="pack-detalhe.html?id=pack-3" class="block relative w-full overflow-hidden" style="padding-top:65%; background:#F7F4F0;">
+            <!-- FEATURED 2x2 BENTO ITEM: Pack 3 - Pack Aconchego Essencial -->
+            <div class="product bento-featured flex flex-col bg-white border-2 border-[#C8B598] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 group" data-category="quarto">
+              <a href="pack-detalhe.html?id=pack-3" class="block relative w-full overflow-hidden" style="padding-top:60%; background:#F7F4F0;">
                 <img src="images/Lourini-Viena.jpg" alt="Pack Aconchego Essencial" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" onerror="this.outerHTML='<div class="absolute inset-0 flex flex-col items-center justify-center bg-[#F3EEE4]"><span style="font-size:11px; font-weight:600; color:#998b75;">Imagem em breve</span></div>'" />
                 <div style="position:absolute; top:20px; left:20px; background:#C8B598; color:#fff; font-size:9px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:6px 14px; border-radius:30px; z-index:2; box-shadow:0 4px 10px rgba(0,0,0,0.15);">⭐ DESTAQUE DO MÊS</div>
               </a>
               <div class="p-8 flex flex-col justify-between flex-1 bg-white">
                 <div>
-                  <div class="flex items-center gap-2 mb-2">
-                    <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pack Quarto Casal</span>
-                  </div>
+                  <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598; display:block; margin-bottom:4px;">Pack Quarto Casal</span>
                   <h3 style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a; margin-bottom:1rem;">Pack Aconchego Essencial</h3>
                   <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.7; margin-bottom:1.5rem;">
                     Inclui Cama de Casal Estofada com Sommier Rebatível de Arrumação + Colchão Ortopédico de Molas Ensacadas + 2 Mesas de Cabeceira.
@@ -218,8 +242,8 @@
               </div>
             </div>
 
-            <!-- BENTO ITEM 2: Pack 1 - Pack Sala de Sonho -->
-            <div class="product md:col-span-2 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="sala">
+            <!-- BENTO ITEM 2 (2 cols x 1 row): Pack 1 - Pack Sala de Sonho -->
+            <div class="product bento-span-2 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="sala">
               <div class="p-6 flex flex-col sm:flex-row gap-6 items-center">
                 <a href="pack-detalhe.html?id=pack-1" class="w-full sm:w-1/2 block relative rounded overflow-hidden" style="padding-top:55%; background:#F7F4F0;">
                   <img src="images/Lourini-Chiado.jpg" alt="Pack Sala de Sonho" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.outerHTML='<div class="absolute inset-0 flex flex-col items-center justify-center bg-[#F3EEE4]"><span style="font-size:10px; font-weight:600; color:#998b75;">Imagem em breve</span></div>'" />
@@ -235,8 +259,8 @@
               </div>
             </div>
 
-            <!-- BENTO ITEM 3: Pack 2 - Pack Quarto Casal Premium -->
-            <div class="product md:col-span-1 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="quarto">
+            <!-- BENTO ITEM 3 (1 col x 1 row): Pack 2 - Pack Quarto Casal Premium -->
+            <div class="product bento-span-1 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="quarto">
               <a href="pack-detalhe.html?id=pack-2" class="block relative w-full" style="padding-top:70%; background:#F7F4F0;">
                 <img src="images/Lourini-Sophie.jpg" alt="Pack Quarto Casal Premium" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.outerHTML='<div class="absolute inset-0 flex flex-col items-center justify-center bg-[#F3EEE4]"><span style="font-size:10px; font-weight:600; color:#998b75;">Imagem em breve</span></div>'" />
               </a>
@@ -249,8 +273,8 @@
               </div>
             </div>
 
-            <!-- BENTO ITEM 4: Pack 4 - Pack Conforto Total -->
-            <div class="product md:col-span-1 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="casal">
+            <!-- BENTO ITEM 4 (1 col x 1 row): Pack 4 - Pack Conforto Total -->
+            <div class="product bento-span-1 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="casal">
               <a href="pack-detalhe.html?id=pack-4" class="block relative w-full" style="padding-top:70%; background:#F7F4F0;">
                 <img src="images/promo-colchoes.png" alt="Pack Conforto Total" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.outerHTML='<div class="absolute inset-0 flex flex-col items-center justify-center bg-[#F3EEE4]"><span style="font-size:10px; font-weight:600; color:#998b75;">Imagem em breve</span></div>'" />
               </a>
@@ -263,8 +287,8 @@
               </div>
             </div>
 
-            <!-- BENTO ITEM 5: Pack 5 - Pack Jovem Moderno -->
-            <div class="product md:col-span-2 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="quarto">
+            <!-- BENTO ITEM 5 (2 cols x 1 row): Pack 5 - Pack Jovem Moderno -->
+            <div class="product bento-span-2 flex flex-col bg-white border border-[#E8E3DC] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group" data-category="quarto">
               <div class="p-6 flex flex-col sm:flex-row gap-6 items-center">
                 <a href="pack-detalhe.html?id=pack-5" class="w-full sm:w-1/2 block relative rounded overflow-hidden" style="padding-top:55%; background:#F7F4F0;">
                   <img src="https://store.jjlouro.pt/wp-content/uploads/2021/03/Kids_2.jpg" alt="Pack Jovem Moderno" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.outerHTML='<div class="absolute inset-0 flex flex-col items-center justify-center bg-[#F3EEE4]"><span style="font-size:10px; font-weight:600; color:#998b75;">Imagem em breve</span></div>'" />
