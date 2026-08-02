@@ -4,7 +4,7 @@ const window_products = {
     "name": "Sofá Trevor",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Conforto e design aliados num sofá robusto, com costa reclináveis e chaise longue com arrumação. A peça-chave para transformar qualquer sala num espaço convidativo e acolhedor. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -15,14 +15,15 @@ const window_products = {
       "images/produtos/sofas-1_gallery_0.png",
       "images/produtos/sofas-1_gallery_1.png",
       "images/produtos/sofas-1_gallery_2.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-2": {
     "id": "sofas-2",
     "name": "Sofá Robson",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "O lugar perfeito para sentar toda a família confortavelmente. Com chaise longue, assentos deslizantes, costas reclináveis e três puffs incluídos. Possui baú no braço para arrumar todos os gadgets. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -33,14 +34,15 @@ const window_products = {
       "images/produtos/sofas-2_gallery_0.png",
       "images/produtos/sofas-2_gallery_1.png",
       "images/produtos/sofas-2_gallery_2.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-3": {
     "id": "sofas-3",
     "name": "Sofá Amazónia",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Um modelo generoso e eclético que oferece uma nova vida à decoração da sala. Com costas reclináveis para um conforto extra. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -51,14 +53,15 @@ const window_products = {
       "images/produtos/sofas-3_gallery_0.png",
       "images/produtos/sofas-3_gallery_1.webp",
       "images/produtos/sofas-3_gallery_2.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-4": {
     "id": "sofas-4",
     "name": "Sofá Argo",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Peça-chave para tornar qualquer sala de estar um espaço convidativo e acolhedor. Com assentos deslizantes, costas reclináveis e baú de arrumação no braço, é funcional sem descurar o conforto. Inclui 2 puffs no braço e terminal solto que pode ser usado de forma independente ou como chaise longue. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -69,27 +72,29 @@ const window_products = {
       "images/produtos/sofas-4_gallery_0.png",
       "images/produtos/sofas-4_gallery_1.png",
       "images/produtos/sofas-4_gallery_2.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-5": {
     "id": "sofas-5",
     "name": "Sofá Eros",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Elemento essencial em qualquer sala de estar, além de enriquecer a decoração é também funcional devido à cama elevatória e chaise longue reversível com arrumação, proporcionando conforto extra com as suas costas reclináveis. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-5.png"
+    "image": "images/produtos/sofas-5.png",
+    "subcategory": "Sofás"
   },
   "sofas-6": {
     "id": "sofas-6",
     "name": "Sofá Daytona",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Com um toque moderno e elegante, alia qualidade ao conforto reforçado pelas costas reclináveis. Revestimento em tecido ou em pele, personalizáveis.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -100,27 +105,29 @@ const window_products = {
       "images/produtos/sofas-6_gallery_0.png",
       "images/produtos/sofas-6_gallery_1.webp",
       "images/produtos/sofas-6_gallery_2.png"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-7": {
     "id": "sofas-7",
     "name": "Sofá Orly",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Moderno, elegante e confortável, com chaise longue e costas reclináveis. Um sofá com lugar de destaque em qualquer sala de estar. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-8": {
     "id": "sofas-8",
     "name": "Sofá Alvin",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Modelo envolvente com um conforto inigualável aliado a um design moderno. Inclui mecanismos relax elétricos. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -132,14 +139,15 @@ const window_products = {
       "images/produtos/sofas-8_gallery_1.png",
       "images/produtos/sofas-8_gallery_2.webp",
       "images/produtos/sofas-8_gallery_3.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-9": {
     "id": "sofas-9",
     "name": "Sofá George",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Com um design sofisticado, mas desprentesioso, este modelo adapta-se facilmente a qualquer decoração, contribuindo para a criação de um espaço mais acolhedor e cómodo. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -151,27 +159,29 @@ const window_products = {
       "images/produtos/sofas-9_gallery_1.webp",
       "images/produtos/sofas-9_gallery_2.png",
       "images/produtos/sofas-9_gallery_3.png"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-10": {
     "id": "sofas-10",
     "name": "Sofá Mónika",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Um modelo que faz rimar elegância com conforto. Com desenho exclusivo de Sylvain Joly Design, encaixa na perfeição em qualquer estilo decorativo, tornando a sala numa divisão mais convidativa e cómoda. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-11": {
     "id": "sofas-11",
     "name": "Sofá Megan",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Sofisticado e confortável, com um toque de modernidade conferido pelos elegantes pés metálicos. Um design exclusivo Sylvain Joly Design. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -182,27 +192,29 @@ const window_products = {
       "images/produtos/sofas-11_gallery_0.png",
       "images/produtos/sofas-11_gallery_1.webp",
       "images/produtos/sofas-11_gallery_2.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-12": {
     "id": "sofas-12",
     "name": "Sofá Robbie",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Pés metálicos e linhas depuradas, como costas sem qualquer costura central, fazem deste sofá um exemplo de elegância. Alia qualidade e conforto, com um toque de modernidade. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-13": {
     "id": "sofas-13",
     "name": "Sofá Mistik",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Uma sala de estar agradável só fica completa com um sofá bonito e confortável. Com um design clássico e depurado, integra qualquer estilo de decoração. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -214,66 +226,71 @@ const window_products = {
       "images/produtos/sofas-13_gallery_1.webp",
       "images/produtos/sofas-13_gallery_2.png",
       "images/produtos/sofas-13_gallery_3.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-14": {
     "id": "sofas-14",
     "name": "Sofá Philipe",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Bonito, funcional e confortável, um modelo que dará nova vida à decoração da sala. Equipado com uma cama extra para hóspedes e extra conforto com as suas costas reclináveis. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-15": {
     "id": "sofas-15",
     "name": "Sofá Ozil",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Sofás",
+    "category": "Salas",
     "description": "Prático e funcional, adapta-se a qualquer estilo de decoração ao mesmo tempo que proporciona uma cama extra, de montagem rápida e fácil, com modelo elevatório e sistema clic-clac.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-16": {
     "id": "sofas-16",
     "name": "Cadeirão Sirio",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Perfeitos para descontrair com todo o conforto e tranquilidade, os cadeirões relax incluem costas reclináveis e apoio para as pernas, movimentados através de mecanismo manual ou elétrico. Têm ainda a opção de sistema de elevação sénior, que facilita o sentar e levantar.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-16.png"
+    "image": "images/produtos/sofas-16.png",
+    "subcategory": "Sofás"
   },
   "sofas-17": {
     "id": "sofas-17",
     "name": "Cadeirão Fredy",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Relax manual, elétrico ou sénior",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-18": {
     "id": "sofas-18",
     "name": "Cadeirão Connor",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Mecanismo relax sénior com trolley",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -284,14 +301,15 @@ const window_products = {
       "images/produtos/sofas-18_gallery_0.png",
       "images/produtos/sofas-18_gallery_1.webp",
       "images/produtos/sofas-18_gallery_2.png"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-19": {
     "id": "sofas-19",
     "name": "Cadeirão Lion",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Para descontrair e recarregar baterias. Cadeirão de dimensões generosas. A peça ideal de conforto para a sala de estar ou quarto. Revestimento em tecido personalizável. Pés disponíveis: wengué, branco, cerejeira e cor natural (pinho).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -301,14 +319,15 @@ const window_products = {
     "gallery": [
       "images/produtos/sofas-19_gallery_0.png",
       "images/produtos/sofas-19_gallery_1.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-20": {
     "id": "sofas-20",
     "name": "Cadeirão Dover",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Modelo original, com costuras de efeito concha, para uma maior sensação de envolvência. Revestimento em tecido personalizável. Pés disponíveis: wengué, branco, cerejeira e cor natural (pinho).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -321,54 +340,58 @@ const window_products = {
       "images/produtos/sofas-20_gallery_2.png",
       "images/produtos/sofas-20_gallery_3.webp",
       "images/produtos/sofas-20_gallery_4.webp"
-    ]
+    ],
+    "subcategory": "Sofás"
   },
   "sofas-21": {
     "id": "sofas-21",
     "name": "Cadeirão Stick",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Cadeirão estofado. Pés disponíveis: wengué e cerejeira",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "sofas-22": {
     "id": "sofas-22",
     "name": "Cadeirão Star",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeirões",
+    "category": "Salas",
     "description": "Cadeirão estofado. Pés disponíveis: wengué e cerejeira",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Sofás"
   },
   "salas-23": {
     "id": "salas-23",
     "name": "Pack 4 Cadeiras Charly (Bege)",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Pack económico de 4 cadeiras Charly estofadas em bege. Prontas a entregar.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/produtos/salas-23.png",
-    "buy_link": "#klarna_cadeiras"
+    "buy_link": "#klarna_cadeiras",
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-24": {
     "id": "salas-24",
     "name": "Cadeira Moon",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia). Opção de colocação de copo metálico nos pés da cadeira.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -379,14 +402,15 @@ const window_products = {
       "images/produtos/salas-24_gallery_0.png",
       "images/produtos/salas-24_gallery_1.webp",
       "images/produtos/salas-24_gallery_2.png"
-    ]
+    ],
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-25": {
     "id": "salas-25",
     "name": "Cadeira Paris",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -398,14 +422,15 @@ const window_products = {
       "images/produtos/salas-25_gallery_1.png",
       "images/produtos/salas-25_gallery_2.webp",
       "images/produtos/salas-25_gallery_3.png"
-    ]
+    ],
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-26": {
     "id": "salas-26",
     "name": "Cadeira Sagres",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira, faia e pinho mel).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -415,40 +440,43 @@ const window_products = {
     "gallery": [
       "images/produtos/salas-26_gallery_0.png",
       "images/produtos/salas-26_gallery_1.webp"
-    ]
+    ],
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-27": {
     "id": "salas-27",
     "name": "Cadeira Madrid",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-27.png"
+    "image": "images/produtos/salas-27.png",
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-28": {
     "id": "salas-28",
     "name": "Cadeira Milão",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Costa e assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-29": {
     "id": "salas-29",
     "name": "Cadeira Chiado",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
@@ -458,20 +486,22 @@ const window_products = {
     "gallery": [
       "images/produtos/salas-29_gallery_0.png",
       "images/produtos/salas-29_gallery_1.webp"
-    ]
+    ],
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-30": {
     "id": "salas-30",
     "name": "Cadeira Viena",
     "price": 0.0,
     "url": "salas.html",
-    "category": "Cadeiras",
+    "category": "Salas",
     "description": "Assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg"
+    "image": "images/sem-imagem.svg",
+    "subcategory": "Mesas e Cadeiras"
   },
   "salas-31": {
     "id": "salas-31",
@@ -484,7 +514,8 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-31.webp"
+    "image": "images/produtos/salas-31.webp",
+    "subcategory": "Móveis"
   },
   "salas-32": {
     "id": "salas-32",
@@ -497,7 +528,8 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-32.png"
+    "image": "images/produtos/salas-32.png",
+    "subcategory": "Móveis"
   },
   "salas-33": {
     "id": "salas-33",
@@ -516,7 +548,8 @@ const window_products = {
       "images/produtos/salas-33_gallery_1.png",
       "images/produtos/salas-33_gallery_2.webp",
       "images/produtos/salas-33_gallery_3.png"
-    ]
+    ],
+    "subcategory": "Móveis"
   },
   "salas-34": {
     "id": "salas-34",
@@ -533,7 +566,8 @@ const window_products = {
     "gallery": [
       "images/produtos/salas-34_gallery_0.png",
       "images/produtos/salas-34_gallery_1.webp"
-    ]
+    ],
+    "subcategory": "Móveis"
   },
   "quartos-35": {
     "id": "quartos-35",
@@ -703,11 +737,8 @@ const window_products = {
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
+    "subcategory": "Quartos",
     "description": "Linha Play - Mobiliário Juvenil",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/sem-imagem.svg"
   },
   "kids-2": {
@@ -716,11 +747,8 @@ const window_products = {
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
+    "subcategory": "Quartos",
     "description": "Linha Play - Mobiliário Juvenil",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/sem-imagem.svg"
   },
   "kids-3": {
@@ -729,11 +757,8 @@ const window_products = {
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
+    "subcategory": "Quartos",
     "description": "Linha Play - Mobiliário Juvenil",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/sem-imagem.svg"
   },
   "kids-4": {
@@ -742,11 +767,8 @@ const window_products = {
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
+    "subcategory": "Quartos",
     "description": "Linha Play - Mobiliário Juvenil",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/sem-imagem.svg"
   },
   "kids-5": {
@@ -755,11 +777,68 @@ const window_products = {
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
+    "subcategory": "Quartos",
     "description": "Linha Play - Mobiliário Juvenil",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
+    "image": "images/sem-imagem.svg"
+  },
+  "colchoes-comp-1": {
+    "id": "colchoes-comp-1",
+    "name": "Almofada Viscoelástica Ergonomia",
+    "price": 0.0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Acessórios e complementos de descanso de alta qualidade.",
+    "image": "images/sem-imagem.svg"
+  },
+  "colchoes-comp-2": {
+    "id": "colchoes-comp-2",
+    "name": "Almofada de Penas & Plumagem",
+    "price": 0.0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Acessórios e complementos de descanso de alta qualidade.",
+    "image": "images/sem-imagem.svg"
+  },
+  "colchoes-comp-3": {
+    "id": "colchoes-comp-3",
+    "name": "Protetor de Colchão Impermeável",
+    "price": 0.0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Acessórios e complementos de descanso de alta qualidade.",
+    "image": "images/sem-imagem.svg"
+  },
+  "colchoes-comp-4": {
+    "id": "colchoes-comp-4",
+    "name": "Capa de Colchão Respirável",
+    "price": 0.0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Acessórios e complementos de descanso de alta qualidade.",
+    "image": "images/sem-imagem.svg"
+  },
+  "colchoes-comp-5": {
+    "id": "colchoes-comp-5",
+    "name": "Topper Viscoelástico Conforto Extra",
+    "price": 0.0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Acessórios e complementos de descanso de alta qualidade.",
+    "image": "images/sem-imagem.svg"
+  },
+  "colchoes-comp-6": {
+    "id": "colchoes-comp-6",
+    "name": "Sommier Metálico de Suporte",
+    "price": 0.0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Acessórios e complementos de descanso de alta qualidade.",
     "image": "images/sem-imagem.svg"
   }
 };
