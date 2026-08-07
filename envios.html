@@ -762,20 +762,20 @@ document.addEventListener('snipcart.ready', function() {
   EM ATUALIZAÇÃO
 </div>
 
-  <!-- Quick Search Modal Overlay -->
+      <!-- Quick Search Bar Modal -->
   <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
-    <div class="max-w-2xl mx-auto mt-20 px-4">
+    <div class="max-w-xl mx-auto mt-24 px-4">
       <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
-        <div class="flex items-center justify-between pb-4 border-b border-[#E8E3DC] mb-4">
-          <div class="flex items-center gap-3 flex-1">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="text" id="searchInput" placeholder="Pesquisar por produto (ex: Sofá, Colchão, Cama, Secretária)..." class="w-full text-sm outline-none text-[#1a1a1a]" oninput="filterSearchResults()" />
-          </div>
+        <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
+          <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
           <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
         </div>
-        <div id="searchResults" class="max-h-60 overflow-y-auto space-y-2">
-          <p class="text-xs text-gray-400 text-center py-4">Escreva o que procura para ver os produtos sugeridos...</p>
-        </div>
+        <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
+          <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
+        </form>
+        <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
       </div>
     </div>
   </div>
@@ -784,205 +784,23 @@ document.addEventListener('snipcart.ready', function() {
     const m = document.getElementById('searchModal');
     if (m) {
       m.classList.remove('hidden');
-      document.getElementById('searchInput').focus();
-      document.getElementById('searchInput').value = '';
-      filterSearchResults();
+      const inp = document.getElementById('searchInput');
+      if (inp) { inp.value = ''; inp.focus(); }
     }
   }
   function closeSearchModal() {
     const m = document.getElementById('searchModal');
     if (m) m.classList.add('hidden');
   }
-  
-  const siteProducts = [
-    {
-      name: "Cama de Casal Estofada",
-      category: "Quartos",
-      url: "produto-detalhe.html?id=cama-paris",
-      keywords: ["cama", "casal", "camas", "quarto", "quartos", "cama casal", "estofada", "cabeceira", "dormir", "sommier", "beliche", "box", "cama dupla", "cama matrimonial", "cama king", "cama queen", "mobiliário quarto", "decoração quarto"]
-    },
-    {
-      name: "Mesa de Cabeceira",
-      category: "Quartos",
-      url: "quartos.html",
-      keywords: ["mesa de cabeceira", "cabeceira", "mesinha", "mesa noite", "quarto", "quartos", "cama", "mesa lateral", "bedside", "nightstand"]
-    },
-    {
-      name: "Roupeiro",
-      category: "Quartos",
-      url: "quartos.html",
-      keywords: ["roupeiro", "armário", "roupeiros", "armários", "guarda roupa", "roupas", "guardar roupa", "quarto", "closet", "cabide", "prateleira", "armazenamento"]
-    },
-    {
-      name: "Camiseiro / Cómoda",
-      category: "Quartos",
-      url: "quartos.html",
-      keywords: ["camiseiro", "cómoda", "comoda", "gavetas", "camiseiros", "cómodas", "quarto", "arrumação", "dresser", "gaveta"]
-    },
-    {
-      name: "Sofá Chaise Longue Orly",
-      category: "Salas",
-      url: "produto-detalhe.html?id=sofa-orly",
-      keywords: ["sofá", "sofa", "sofás", "sofas", "sala", "salas", "chaise", "chaise longue", "chaise-longue", "divã", "assento", "estofos", "tecido", "veludo", "couro", "canto", "angular", "sofa canto", "living room", "sala estar", "sala de estar", "assento acolchoado"]
-    },
-    {
-      name: "Mesa de Centro / Centro de Mesa",
-      category: "Salas",
-      url: "salas.html",
-      keywords: ["mesa", "mesa de centro", "mesa centro", "centro de mesa", "mesinha sala", "sala", "salas", "café", "mesa café", "móvel sala"]
-    },
-    {
-      name: "Móvel de TV / Aparador",
-      category: "Salas",
-      url: "salas.html",
-      keywords: ["tv", "televisão", "televisao", "móvel tv", "movel tv", "aparador", "estante", "painel", "sala", "salas", "media", "sala de estar", "rack", "consola"]
-    },
-    {
-      name: "Colchão Evolution",
-      category: "Colchões",
-      url: "produto-detalhe.html?id=colchoes-1",
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "dormir", "descanso", "cama", "molas", "espuma", "viscoelástico", "viscoelastico", "ortopédico", "ortopedico", "evolution", "conforto", "sono"]
-    },
-    {
-      name: "Colchão Freshcool",
-      category: "Colchões",
-      url: "produto-detalhe.html?id=colchoes-2",
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "dormir", "descanso", "fresco", "frescura", "frio", "freshcool", "verão", "quente", "temperatura", "gel", "viscoelástico", "conforto"]
-    },
-    {
-      name: "Colchão Max Body",
-      category: "Colchões",
-      url: "produto-detalhe.html?id=colchoes-3",
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "dormir", "descanso", "ergonómico", "ergonomico", "max body", "corpo", "costas", "ortopédico", "ortopedico", "suporte", "lombar"]
-    },
-    {
-      name: "Colchão Airflow",
-      category: "Colchões",
-      url: "produto-detalhe.html?id=colchoes-4",
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "dormir", "descanso", "airflow", "ar", "ventilação", "ventilacao", "respirável", "respiravel", "conforto", "espuma", "viscoelástico"]
-    },
-    {
-      name: "Almofada Viscoelástica",
-      category: "Complementos",
-      url: "colchoes.html",
-      keywords: ["almofada", "almofadas", "viscoelástico", "viscoelastico", "ergonomia", "pescoço", "pescoco", "cervical", "dormir", "descanso", "complemento"]
-    },
-    {
-      name: "Protetor de Colchão Impermeável",
-      category: "Complementos",
-      url: "colchoes.html",
-      keywords: ["protetor", "protector", "colchão", "impermeável", "impermeavel", "capa", "higiene", "limpeza", "complemento", "cama"]
-    },
-    {
-      name: "Topper Viscoelástico",
-      category: "Complementos",
-      url: "colchoes.html",
-      keywords: ["topper", "sobrecapa", "viscoelástico", "viscoelastico", "conforto", "colchão", "complemento", "extra", "macio"]
-    },
-    {
-      name: "Linha Play — Cama",
-      category: "Kids",
-      url: "produto-detalhe.html?id=kids-cama",
-      keywords: ["kids", "criança", "criancas", "crianças", "cama", "camas", "infantil", "infantis", "juvenil", "jovem", "play", "linha play", "quarto criança", "beliche", "cama solteiro", "cama individual"]
-    },
-    {
-      name: "Linha Play — Secretária",
-      category: "Kids",
-      url: "produto-detalhe.html?id=kids-secretaria",
-      keywords: ["secretária", "secretaria", "secretárias", "mesa estudo", "estudo", "trabalho", "kids", "criança", "crianças", "infantil", "juvenil", "play", "linha play", "escola", "computador", "homework"]
-    },
-    {
-      name: "Linha Play — Roupeiro",
-      category: "Kids",
-      url: "produto-detalhe.html?id=kids-roupeiro",
-      keywords: ["roupeiro", "armário", "armario", "kids", "criança", "crianças", "infantil", "juvenil", "play", "linha play", "closet", "roupa"]
-    },
-    {
-      name: "Linha Play — Camiseiro",
-      category: "Kids",
-      url: "produto-detalhe.html?id=kids-camiseiro",
-      keywords: ["camiseiro", "cómoda", "comoda", "gavetas", "kids", "criança", "crianças", "infantil", "juvenil", "play", "linha play", "arrumação", "guardar"]
-    },
-    {
-      name: "Linha Play — Mesa de Cabeceira",
-      category: "Kids",
-      url: "produto-detalhe.html?id=kids-mesa",
-      keywords: ["mesa de cabeceira", "mesinha", "kids", "criança", "crianças", "infantil", "juvenil", "play", "linha play", "cabeceira", "noite"]
-    },
-    {
-      name: "Pack Aconchego Essencial",
-      category: "Packs",
-      url: "pack-detalhe.html?id=pack-3",
-      keywords: ["pack", "packs", "conjunto", "conjuntos", "quarto", "quartos", "casal", "cama", "colchão", "sommier", "oferta", "promoção", "promocao", "desconto", "pack completo", "kit"]
-    },
-    {
-      name: "Pack Sala de Sonho",
-      category: "Packs",
-      url: "pack-detalhe.html?id=pack-1",
-      keywords: ["pack", "packs", "conjunto", "sala", "salas", "sofá", "sofa", "mesa", "tv", "oferta", "promoção", "promocao", "desconto", "pack completo", "kit sala"]
-    },
-    {
-      name: "Pack Quarto Casal Premium",
-      category: "Packs",
-      url: "pack-detalhe.html?id=pack-2",
-      keywords: ["pack", "packs", "conjunto", "quarto", "quartos", "casal", "cama", "colchão", "camiseiro", "oferta", "promoção", "promocao", "desconto", "premium"]
-    },
-    {
-      name: "Pack Conforto Total",
-      category: "Packs",
-      url: "pack-detalhe.html?id=pack-4",
-      keywords: ["pack", "packs", "conjunto", "colchão", "sommier", "almofadas", "conforto", "descanso", "dormir", "oferta", "promoção", "kit colchão"]
-    },
-    {
-      name: "Pack Jovem Moderno",
-      category: "Packs",
-      url: "pack-detalhe.html?id=pack-5",
-      keywords: ["pack", "packs", "conjunto", "jovem", "juvenil", "kids", "criança", "solteiro", "cama", "secretária", "estudo", "oferta", "kit jovem"]
-    }
-  ];
-
-  function filterSearchResults() {
-    const q = document.getElementById('searchInput').value.toLowerCase().trim();
-    const resContainer = document.getElementById('searchResults');
-    if (!q) {
-      resContainer.innerHTML = '<p style="font-family:Inter,sans-serif; font-size:12px; color:#9ca3af; text-align:center; padding:1.5rem;">Escreva o que procura... <br><span style="color:#C8B598;">ex: cama, sofá, colchão, secretária, kids, packs</span></p>';
-      return;
-    }
-    const matches = siteProducts.filter(p => 
-      p.name.toLowerCase().includes(q) || 
-      p.category.toLowerCase().includes(q) ||
-      p.keywords.some(k => k.includes(q) || q.includes(k))
-    );
-    if (matches.length === 0) {
-      resContainer.innerHTML = '<p style="font-family:Inter,sans-serif; font-size:12px; color:#6b7280; text-align:center; padding:1.5rem;">Nenhum produto encontrado.<br>Tente: <span style="color:#C8B598;">cama, sofá, colchão, roupeiro, kids, packs</span></p>';
-    } else {
-      resContainer.innerHTML = matches.map(p => `
-        <a href="${p.url}" onclick="closeSearchModal()" style="display:flex; align-items:center; justify-content:space-between; padding:10px 12px; border-radius:8px; text-decoration:none; transition:background 0.15s;" onmouseover="this.style.background='#F5F0E8'" onmouseout="this.style.background='transparent'">
-          <span style="font-family:Inter,sans-serif; font-size:14px; font-weight:500; color:#1a1a1a;">${p.name}</span>
-          <span style="font-family:Inter,sans-serif; font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#C8B598;">${p.category} →</span>
-        </a>
-      `).join('');
+  function handleGlobalSearch(e) {
+    e.preventDefault();
+    const q = document.getElementById('searchInput').value.trim();
+    if (q) {
+      window.location.href = 'search.html?q=' + encodeURIComponent(q);
     }
   }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
-    if (searchInput) {
-      searchInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-          const results = document.querySelectorAll('#searchResults a');
-          if (results.length === 1) {
-            results[0].click();
-          }
-        }
-      });
-    }
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeSearchModal();
-    });
-    document.getElementById('searchModal')?.addEventListener('click', function(e) {
-      if (e.target === this) closeSearchModal();
-    });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSearchModal();
   });
 </script>
 </body>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <script src="maintenance.js"></script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>Pesquisa — Adil Móveis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="images/logo_sem_fundo.png" rel="icon" type="image/png"/>
+</head>
+<body style="background:#FDFCFA; font-family:'Inter',sans-serif;">
+
+<!-- Global Promo Banner -->
+<div style="background-color:#EDF4F8;color:#1a1a1a;padding:8px 0;font-size:13px;font-weight:700;letter-spacing:0.15em;z-index:50;position:relative;border-bottom:1px solid #D4E4EE;overflow:hidden;white-space:nowrap;">
+  <div class="animate-marquee" style="display:inline-block;white-space:nowrap;">
+    <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+    <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+    <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
+    <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+  </div>
+</div>
+
+<!-- STICKY NAVBAR -->
+<header class="sticky top-0 z-50 shadow-sm" id="site-header" style="background-color:#F5F0E8;border-bottom:1px solid #E8E3DC;">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="flex items-center justify-between relative" style="height:86px;">
+      <a href="index.html" class="flex-shrink-0 flex items-center" style="margin-left:4px;">
+        <div style="width:76px;height:76px;border-radius:50%;background:#ffffff;border:1px solid #E8E3DC;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;">
+          <img src="images/logo.png" alt="Adil Móveis" style="width:85%;height:auto;object-fit:contain;mix-blend-mode:multiply;"/>
+        </div>
+      </a>
+      <nav class="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 px-2">
+        <a class="nav-link" href="index.html">INÍCIO</a>
+        <a class="nav-link" href="quartos.html">QUARTOS</a>
+        <a class="nav-link" href="salas.html">SALAS</a>
+        <a class="nav-link" href="colchoes.html">COLCHÕES</a>
+        <a class="nav-link" href="kids.html">KIDS</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="hidden xl:inline-block" href="packs.html" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.2em;color:#fff;background:#C8B598;border:2px solid #C8B598;padding:7px 20px;border-radius:30px;text-decoration:none;">PACKS ESPECIAIS</a>
+        <a class="hidden lg:inline-block" href="contactos.html" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;background:transparent;color:#1a1a1a;border:2px solid #C8B598;padding:7px 18px;border-radius:20px;text-decoration:none;">AGENDAR VISITA</a>
+        <button onclick="document.getElementById('header-search').focus()" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;">
+          <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH HERO BAR -->
+<section style="background:#F5F0E8; border-bottom:1px solid #E8E3DC; padding:3rem 0;">
+  <div style="max-width:720px; margin:0 auto; padding:0 1.5rem;">
+    <p style="font-size:10px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:#C8B598;text-align:center;margin-bottom:1rem;">PESQUISA DE PRODUTOS</p>
+    <form onsubmit="runSearch(event)" style="display:flex; align-items:center; gap:0; background:#fff; border:2px solid #E8E3DC; border-radius:50px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:border-color 0.3s;" onfocusin="this.style.borderColor='#C8B598'" onfocusout="this.style.borderColor='#E8E3DC'">
+      <svg style="margin-left:20px; flex-shrink:0;" fill="none" height="20" stroke="#C8B598" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input 
+        id="header-search"
+        type="text" 
+        placeholder="Pesquisar... ex: cama, sofá, colchão, secretária, criança, packs" 
+        style="flex:1; padding:16px 16px; font-size:15px; font-family:'Inter',sans-serif; border:none; outline:none; background:transparent; color:#1a1a1a;"
+        oninput="showSuggestions()"
+        onkeydown="if(event.key==='Enter'){runSearch(event);}"
+      />
+      <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; padding:14px 28px; border:none; cursor:pointer; border-radius:0 50px 50px 0; transition:background 0.2s; flex-shrink:0;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">Pesquisar</button>
+    </form>
+
+    <!-- Live suggestions dropdown -->
+    <div id="suggestions-box" style="display:none; background:#fff; border:1px solid #E8E3DC; border-radius:12px; margin-top:8px; box-shadow:0 8px 24px rgba(0,0,0,0.08); overflow:hidden; max-height:220px; overflow-y:auto;"></div>
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section style="padding:4rem 0; min-height:60vh;">
+  <div style="max-width:1280px; margin:0 auto; padding:0 1.5rem;">
+
+    <!-- Query label -->
+    <div id="results-header" style="margin-bottom:2rem; display:none;">
+      <p style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:4px;">RESULTADOS DA PESQUISA</p>
+      <h2 id="results-title" style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a;"></h2>
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" style="text-align:center; padding:5rem 0;">
+      <svg style="margin:0 auto 1.5rem; opacity:0.2;" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <p style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#1a1a1a; margin-bottom:0.5rem;">O que está à procura?</p>
+      <p style="font-size:0.9rem; color:#6b6b6b; font-weight:300; margin-bottom:2rem;">Escreva o que procura acima e pressione Enter.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+        <button onclick="quickSearch('cama')" class="suggestion-tag">🛏️ Cama</button>
+        <button onclick="quickSearch('sofá')" class="suggestion-tag">🛋️ Sofá</button>
+        <button onclick="quickSearch('colchão')" class="suggestion-tag">😴 Colchão</button>
+        <button onclick="quickSearch('roupeiro')" class="suggestion-tag">🚪 Roupeiro</button>
+        <button onclick="quickSearch('criança')" class="suggestion-tag">🧒 Kids</button>
+        <button onclick="quickSearch('secretária')" class="suggestion-tag">📚 Secretária</button>
+        <button onclick="quickSearch('packs')" class="suggestion-tag">🎁 Packs</button>
+        <button onclick="quickSearch('sala')" class="suggestion-tag">🪑 Sala</button>
+      </div>
+    </div>
+
+    <!-- No results -->
+    <div id="no-results" style="display:none; text-align:center; padding:5rem 0;">
+      <p style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#1a1a1a; margin-bottom:0.5rem;">Nenhum produto encontrado</p>
+      <p style="font-size:0.9rem; color:#6b6b6b; font-weight:300; margin-bottom:2rem;">Tente pesquisar por: <span style="color:#C8B598;">cama, sofá, colchão, roupeiro, criança, sala, packs</span></p>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="results-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" style="display:none;"></div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-8" style="font-family:'Inter',sans-serif; border-top:1px solid #1a1a1a;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+    <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #222;">
+      <!-- Left side: logo and contacts -->
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <!-- Left side: logo and contacts -->
+        <div style="display:flex; align-items:center; gap:1.25rem;">
+          <div style="width:54px; height:54px; border-radius:50%; background:#ffffff; border:1px solid #E8E3DC; display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0;">
+            <img src="images/logo.png" alt="Adil Móveis" style="width:85%; height:auto; object-fit:contain; mix-blend-mode:multiply;" />
+          </div>
+          <div>
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:600; color:#1a1a1a; margin:0 0 2px 0;">Adil Móveis</h3>
+            <p style="font-size:10px; color:#6b6b6b; margin:0;">Loja no Feijó, Almada</p>
+          </div>
+        </div>
+      </div>
+      <!-- Middle: Contacts -->
+      <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:11px; color:#aaa;">
+        <a href="tel:212582788" style="color:inherit; text-decoration:none;">📞 212 582 788</a>
+        <a href="https://wa.me/351960209396" target="_blank" style="color:inherit; text-decoration:none;">💬 960 209 396</a>
+        <a href="mailto:adil.moveis@hotmail.com" style="color:inherit; text-decoration:none;">✉️ adil.moveis@hotmail.com</a>
+      </div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:11px; color:#666;">
+      <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;">
+        <a href="index.html" style="color:#aaa; text-decoration:none;">Início</a>
+        <a href="quartos.html" style="color:#aaa; text-decoration:none;">Quartos</a>
+        <a href="colchoes.html" style="color:#aaa; text-decoration:none;">Colchões</a>
+        <a href="salas.html" style="color:#aaa; text-decoration:none;">Salas</a>
+        <a href="kids.html" style="color:#aaa; text-decoration:none;">Kids</a>
+        <a href="contactos.html" style="color:#aaa; text-decoration:none;">Contactos</a>
+      </div>
+      <div>© <span id="year"></span> Adil Móveis. Todos os direitos reservados. · <a href="https://nadiairina.github.io/Nadia-Portfolio/" target="_blank" style="color:#aaa; text-decoration:underline;">Desenvolvido por Nadia Irina</a></div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .suggestion-tag {
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:500;
+    background:#F5F0E8;
+    color:#1a1a1a;
+    border:1px solid #E8E3DC;
+    padding:8px 18px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:all 0.2s;
+  }
+  .suggestion-tag:hover {
+    background:#C8B598;
+    color:#fff;
+    border-color:#C8B598;
+    transform:translateY(-2px);
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 35s linear infinite; }
+  .nav-link {
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:#1a1a1a;
+    text-decoration:none;
+    padding:4px 0;
+    border-bottom:1px solid transparent;
+    transition:border-color 0.2s, color 0.2s;
+  }
+  .nav-link:hover { color:#C8B598; border-bottom-color:#C8B598; }
+</style>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const siteProducts = [
+    { name:"Cama de Casal Estofada", category:"Quartos", url:"produto-detalhe.html?id=cama-paris", icon:"🛏️", keywords:["cama","casal","camas","quarto","quartos","estofada","cabeceira","dormir","sommier","box","dupla","matrimonial","king","queen","mobiliário","decoração","madeira","estrutura"] },
+    { name:"Mesa de Cabeceira", category:"Quartos", url:"quartos.html", icon:"🛏️", keywords:["mesa","cabeceira","mesinha","noite","quarto","quartos","cama","lateral","bedside"] },
+    { name:"Roupeiro / Armário", category:"Quartos", url:"quartos.html", icon:"🚪", keywords:["roupeiro","armário","armario","roupeiros","armários","guarda","roupa","quarto","closet","cabide","prateleira","armazenamento","guardar"] },
+    { name:"Camiseiro / Cómoda", category:"Quartos", url:"quartos.html", icon:"🗄️", keywords:["camiseiro","cómoda","comoda","gavetas","camiseiros","cómodas","quarto","arrumação","dresser","gaveta","cofre"] },
+    { name:"Sofá Chaise Longue Orly", category:"Salas", url:"produto-detalhe.html?id=sofa-orly", icon:"🛋️", keywords:["sofá","sofa","sofás","sofas","sala","salas","chaise","chaise longue","divã","assento","estofos","tecido","veludo","couro","canto","angular","living","sala estar","sala de estar","relaxar","descanso"] },
+    { name:"Mesa de Centro", category:"Salas", url:"salas.html", icon:"🪑", keywords:["mesa","centro","sala","salas","café","mesinha","living","decoração"] },
+    { name:"Móvel de TV / Aparador", category:"Salas", url:"salas.html", icon:"📺", keywords:["tv","televisão","televisao","móvel","movel","aparador","estante","painel","sala","media","rack","consola"] },
+    { name:"Colchão Evolution", category:"Colchões", url:"produto-detalhe.html?id=colchoes-1", icon:"😴", keywords:["colchão","colchao","colchões","colchoes","dormir","descanso","cama","molas","espuma","viscoelástico","ortopédico","evolution","conforto","sono","repouso"] },
+    { name:"Colchão Freshcool", category:"Colchões", url:"produto-detalhe.html?id=colchoes-2", icon:"😴", keywords:["colchão","colchao","colchões","colchoes","fresco","frescura","frio","freshcool","verão","temperatura","gel","viscoelástico","conforto","dormir","quente"] },
+    { name:"Colchão Max Body", category:"Colchões", url:"produto-detalhe.html?id=colchoes-3", icon:"😴", keywords:["colchão","colchao","colchões","colchoes","ergonómico","ergonomico","max body","corpo","costas","ortopédico","suporte","lombar","dormir"] },
+    { name:"Colchão Airflow", category:"Colchões", url:"produto-detalhe.html?id=colchoes-4", icon:"😴", keywords:["colchão","colchao","colchões","colchoes","airflow","ar","ventilação","respirável","dormir","espuma","viscoelástico"] },
+    { name:"Almofada Viscoelástica", category:"Complementos", url:"colchoes.html", icon:"🛏️", keywords:["almofada","almofadas","viscoelástico","ergonomia","pescoço","cervical","dormir","descanso","complemento"] },
+    { name:"Protetor de Colchão Impermeável", category:"Complementos", url:"colchoes.html", icon:"🛡️", keywords:["protetor","colchão","impermeável","capa","higiene","limpeza","complemento","cama"] },
+    { name:"Topper Viscoelástico", category:"Complementos", url:"colchoes.html", icon:"🛏️", keywords:["topper","sobrecapa","viscoelástico","conforto","colchão","complemento","extra","macio"] },
+    { name:"Sommier Metálico", category:"Complementos", url:"colchoes.html", icon:"🛏️", keywords:["sommier","metálico","suporte","cama","estrutura","complemento","base"] },
+    { name:"Linha Play — Cama", category:"Kids", url:"produto-detalhe.html?id=kids-cama", icon:"🧒", keywords:["kids","criança","criancas","crianças","cama","infantil","juvenil","jovem","play","linha play","quarto criança","solteiro","individual"] },
+    { name:"Linha Play — Secretária", category:"Kids", url:"produto-detalhe.html?id=kids-secretaria", icon:"📚", keywords:["secretária","secretaria","mesa estudo","estudo","trabalho","kids","criança","infantil","juvenil","play","escola","computador","homework","escritório"] },
+    { name:"Linha Play — Roupeiro", category:"Kids", url:"produto-detalhe.html?id=kids-roupeiro", icon:"🚪", keywords:["roupeiro","armário","kids","criança","infantil","juvenil","play","closet","roupa","armario"] },
+    { name:"Linha Play — Camiseiro", category:"Kids", url:"produto-detalhe.html?id=kids-camiseiro", icon:"🗄️", keywords:["camiseiro","cómoda","gavetas","kids","criança","infantil","juvenil","play","arrumação","guardar"] },
+    { name:"Linha Play — Mesa de Cabeceira", category:"Kids", url:"produto-detalhe.html?id=kids-mesa", icon:"🧒", keywords:["mesa de cabeceira","mesinha","kids","criança","infantil","juvenil","play","cabeceira","noite"] },
+    { name:"Pack Aconchego Essencial", category:"Packs", url:"pack-detalhe.html?id=pack-3", icon:"🎁", keywords:["pack","packs","conjunto","conjuntos","quarto","casal","cama","colchão","sommier","oferta","promoção","desconto","kit","completo"] },
+    { name:"Pack Sala de Sonho", category:"Packs", url:"pack-detalhe.html?id=pack-1", icon:"🎁", keywords:["pack","packs","conjunto","sala","salas","sofá","mesa","tv","oferta","promoção","desconto","kit sala"] },
+    { name:"Pack Quarto Casal Premium", category:"Packs", url:"pack-detalhe.html?id=pack-2", icon:"🎁", keywords:["pack","packs","conjunto","quarto","casal","cama","colchão","camiseiro","oferta","promoção","desconto","premium"] },
+    { name:"Pack Conforto Total", category:"Packs", url:"pack-detalhe.html?id=pack-4", icon:"🎁", keywords:["pack","packs","conjunto","colchão","sommier","almofadas","conforto","descanso","dormir","oferta","kit colchão"] },
+    { name:"Pack Jovem Moderno", category:"Packs", url:"pack-detalhe.html?id=pack-5", icon:"🎁", keywords:["pack","packs","conjunto","jovem","juvenil","kids","criança","solteiro","cama","secretária","estudo","oferta","kit jovem"] }
+  ];
+
+  function matchProducts(q) {
+    const terms = q.toLowerCase().trim().split(/\s+/);
+    return siteProducts.filter(p =>
+      terms.some(t =>
+        p.name.toLowerCase().includes(t) ||
+        p.category.toLowerCase().includes(t) ||
+        p.keywords.some(k => k.includes(t) || t.includes(k))
+      )
+    );
+  }
+
+  function quickSearch(term) {
+    document.getElementById('header-search').value = term;
+    doSearch(term);
+  }
+
+  function runSearch(e) {
+    e.preventDefault();
+    const q = document.getElementById('header-search').value.trim();
+    if (!q) return;
+    document.getElementById('suggestions-box').style.display = 'none';
+    doSearch(q);
+    // Update URL so user can share / reload
+    history.pushState(null, '', 'search.html?q=' + encodeURIComponent(q));
+  }
+
+  function doSearch(q) {
+    const matches = matchProducts(q);
+    const grid = document.getElementById('results-grid');
+    const header = document.getElementById('results-header');
+    const title = document.getElementById('results-title');
+    const empty = document.getElementById('empty-state');
+    const noRes = document.getElementById('no-results');
+
+    empty.style.display = 'none';
+    noRes.style.display = 'none';
+
+    title.textContent = matches.length + ' resultado' + (matches.length !== 1 ? 's' : '') + ' para "' + q + '"';
+    header.style.display = 'block';
+
+    if (matches.length === 0) {
+      grid.style.display = 'none';
+      noRes.style.display = 'block';
+      return;
+    }
+
+    grid.style.display = 'grid';
+    grid.innerHTML = matches.map(p => `
+      <a href="${p.url}" style="text-decoration:none;">
+        <div style="background:#fff; border:1px solid #E8E3DC; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)';this.style.borderColor='#C8B598';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';this.style.borderColor='#E8E3DC';">
+          <div style="aspect-ratio:16/9; background:#F3EEE4; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <span style="font-size:2.5rem;">${p.icon}</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <span style="font-size:9px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#998b75;">Imagem em breve</span>
+          </div>
+          <div style="padding:1.25rem;">
+            <span style="font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598; display:block; margin-bottom:4px;">${p.category}</span>
+            <p style="font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:400; font-style:italic; color:#1a1a1a; margin:0 0 8px 0;">"${p.name}"</p>
+            <span style="font-size:11px; color:#C8B598; font-weight:700;">Ver Produto →</span>
+          </div>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  function showSuggestions() {
+    const q = document.getElementById('header-search').value.trim();
+    const box = document.getElementById('suggestions-box');
+    if (!q || q.length < 2) { box.style.display = 'none'; return; }
+    const matches = matchProducts(q).slice(0, 6);
+    if (!matches.length) { box.style.display = 'none'; return; }
+    box.style.display = 'block';
+    box.innerHTML = matches.map(p => `
+      <a href="${p.url}" style="display:flex; align-items:center; justify-content:space-between; padding:10px 16px; text-decoration:none; border-bottom:1px solid #f3f4f6; transition:background 0.15s;" onmouseover="this.style.background='#F5F0E8'" onmouseout="this.style.background='#fff'">
+        <span style="font-size:13px; font-weight:500; color:#1a1a1a;">${p.icon} ${p.name}</span>
+        <span style="font-size:9px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#C8B598;">${p.category} →</span>
+      </a>
+    `).join('');
+  }
+
+  // On page load, check URL for ?q= param
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q) {
+      document.getElementById('header-search').value = q;
+      doSearch(q);
+    }
+    // Close suggestions when clicking outside
+    document.addEventListener('click', e => {
+      if (!e.target.closest('form')) {
+        document.getElementById('suggestions-box').style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
