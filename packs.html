@@ -97,15 +97,30 @@
       </div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var menuBtn = document.getElementById('menuButton');
-        var closeBtn = document.getElementById('closeMenuBtn');
-        var overlay  = document.getElementById('menuOverlay');
-        var sidebar  = document.getElementById('menuSidebar');
-        if (menuBtn) menuBtn.addEventListener('click', function() { overlay.classList.remove('hidden'); setTimeout(function(){ sidebar.style.transform = 'translateX(0)'; }, 10); });
-        if (closeBtn) closeBtn.addEventListener('click', function() { sidebar.style.transform = 'translateX(100%)'; setTimeout(function(){ overlay.classList.add('hidden'); }, 310); });
-      });
-    </script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuBtn  = document.getElementById('menuButton');
+    var closeBtn = document.getElementById('closeMenuBtn');
+    var overlay  = document.getElementById('menuOverlay');
+    var sidebar  = document.getElementById('menuSidebar');
+    
+    function openMenu() {
+      if (!overlay || !sidebar) return;
+      overlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      setTimeout(function() { sidebar.style.transform = 'translateX(0)'; }, 10);
+    }
+    function closeMenu() {
+      if (!overlay || !sidebar) return;
+      sidebar.style.transform = 'translateX(100%)';
+      setTimeout(function() { overlay.classList.add('hidden'); }, 310);
+      document.body.style.overflow = '';
+    }
+    
+    if (menuBtn)  menuBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
+  });
+</script>
   </header>
 
   <main>
@@ -275,9 +290,9 @@
   <footer class="bg-black text-white py-8" style="font-family:'Inter',sans-serif; border-top:1px solid #1a1a1a;">
     <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
       <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #222;">
-        <div style="height:48px; display:flex; align-items:center;">
-          <img alt="Adil Móveis" src="images/logo_sem_fundo.png" style="max-height:48px; width:auto; object-fit:contain;">
-        </div>
+        <div style="width:64px; height:64px; border-radius:50%; background:#ffffff; border:1px solid #E8E3DC; display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0;">
+  <img alt="Adil Móveis" src="images/logo_sem_fundo.png" style="width:85%; height:auto; object-fit:contain;" />
+</div>
         <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:11px; color:#aaa;">
           <a href="tel:212582788" style="color:inherit; text-decoration:none;">📞 212 582 788</a>
           <a href="https://wa.me/351960209396" style="color:inherit; text-decoration:none;" target="_blank">💬 960 209 396</a>
