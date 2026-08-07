@@ -14,7 +14,13 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo_sem_fundo.png">
-  </head>
+  
+  <!-- Open Graph / WhatsApp Social Sharing Meta Tags -->
+  <meta property="og:title" content="Adil Móveis - Mobiliário & Decoração no Feijó, Almada" />
+  <meta property="og:description" content="Mobiliário de qualidade para a sua casa. Quartos, Salas, Colchões, Linha Kids e Packs Promocionais com entrega e montagem grátis a 50km." />
+  <meta property="og:image" content="images/logo_sem_fundo.png" />
+  <meta property="og:type" content="website" />
+</head>
   <body>
     <header>
                               <!-- Global Promo Banner -->
@@ -22,11 +28,11 @@
       <div class="animate-marquee" style="display:inline-block;white-space:nowrap;">
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
-        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 3 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
-        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 3 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
-        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 3 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
       </div>
     </div>
@@ -59,7 +65,10 @@
             
             
             
-            <button id="menuButton" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;" class="ml-1">
+            <button onclick="openSearchModal()" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;margin-right:2px;" title="Pesquisar">
+            <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button id="menuButton" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;" class="ml-1">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
           </div>
@@ -429,6 +438,80 @@ function openSlideshow(n) {
   <span style="display:inline-block; width:8px; height:8px; background-color:#eab308; border-radius:50%; box-shadow: 0 0 8px rgba(234,179,8,0.6);"></span>
   EM ATUALIZAÇÃO
 </div>
+
+  <!-- Quick Search Modal Overlay -->
+  <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
+    <div class="max-w-2xl mx-auto mt-20 px-4">
+      <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
+        <div class="flex items-center justify-between pb-4 border-b border-[#E8E3DC] mb-4">
+          <div class="flex items-center gap-3 flex-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="searchInput" placeholder="Pesquisar por produto (ex: Sofá, Colchão, Cama, Secretária)..." class="w-full text-sm outline-none text-[#1a1a1a]" oninput="filterSearchResults()" />
+          </div>
+          <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
+        </div>
+        <div id="searchResults" class="max-h-60 overflow-y-auto space-y-2">
+          <p class="text-xs text-gray-400 text-center py-4">Escreva o que procura para ver os produtos sugeridos...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+  function openSearchModal() {
+    const m = document.getElementById('searchModal');
+    if (m) {
+      m.classList.remove('hidden');
+      document.getElementById('searchInput').focus();
+    }
+  }
+  function closeSearchModal() {
+    const m = document.getElementById('searchModal');
+    if (m) m.classList.add('hidden');
+  }
+  
+  const siteProducts = [
+    { name: "Cama Casal Estofada", category: "Quartos", url: "produto-detalhe.html?id=cama-paris" },
+    { name: "Sofá Chaise Longue Orly", category: "Salas", url: "produto-detalhe.html?id=sofa-orly" },
+    { name: "Colchão Evolution", category: "Colchões", url: "produto-detalhe.html?id=colchoes-1" },
+    { name: "Colchão Freshcool", category: "Colchões", url: "produto-detalhe.html?id=colchoes-2" },
+    { name: "Colchão Max Body", category: "Colchões", url: "produto-detalhe.html?id=colchoes-3" },
+    { name: "Colchão Airflow", category: "Colchões", url: "produto-detalhe.html?id=colchoes-4" },
+    { name: "Linha Play — Cama", category: "Kids", url: "produto-detalhe.html?id=kids-cama" },
+    { name: "Linha Play — Secretária", category: "Kids", url: "produto-detalhe.html?id=kids-secretaria" },
+    { name: "Linha Play — Roupeiro", category: "Kids", url: "produto-detalhe.html?id=kids-roupeiro" },
+    { name: "Linha Play — Camiseiro", category: "Kids", url: "produto-detalhe.html?id=kids-camiseiro" },
+    { name: "Linha Play — Mesa de Cabeceira", category: "Kids", url: "produto-detalhe.html?id=kids-mesa" },
+    { name: "Pack Aconchego Essencial", category: "Packs", url: "pack-detalhe.html?id=pack-3" },
+    { name: "Pack Sala de Sonho", category: "Packs", url: "pack-detalhe.html?id=pack-1" },
+    { name: "Pack Quarto Casal Premium", category: "Packs", url: "pack-detalhe.html?id=pack-2" },
+    { name: "Pack Conforto Total", category: "Packs", url: "pack-detalhe.html?id=pack-4" },
+    { name: "Pack Jovem Moderno", category: "Packs", url: "pack-detalhe.html?id=pack-5" }
+  ];
+
+  function filterSearchResults() {
+    const q = document.getElementById('searchInput').value.toLowerCase().trim();
+    const resContainer = document.getElementById('searchResults');
+    if (!q) {
+      resContainer.innerHTML = '<p class="text-xs text-gray-400 text-center py-4">Escreva o que procura para ver os produtos sugeridos...</p>';
+      return;
+    }
+    const matches = siteProducts.filter(p => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
+    if (matches.length === 0) {
+      resContainer.innerHTML = '<p class="text-xs text-gray-500 text-center py-4">Nenhum produto encontrado com essa pesquisa.</p>';
+    } else {
+      resContainer.innerHTML = matches.map(p => `
+        <a href="${p.url}" class="flex items-center justify-between p-3 hover:bg-[#F5F0E8] rounded-lg transition-colors text-decoration-none">
+          <span class="text-sm font-medium text-[#1a1a1a]">${p.name}</span>
+          <span class="text-xs text-[#C8B598] font-bold uppercase tracking-wider">${p.category} →</span>
+        </a>
+      `).join('');
+    }
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSearchModal();
+  });
+</script>
 </body>
 
 </html>
