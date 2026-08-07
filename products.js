@@ -731,56 +731,6 @@ const window_products = {
     "image": "images/sem-imagem.svg",
     "buy_link": "#klarna_estrado"
   },
-  "kids-1": {
-    "id": "kids-1",
-    "name": "Secretária - Linha Play",
-    "price": 0.0,
-    "url": "kids.html",
-    "category": "Kids",
-    "subcategory": "Quartos",
-    "description": "Linha Play - Mobiliário Juvenil",
-    "image": "images/sem-imagem.svg"
-  },
-  "kids-2": {
-    "id": "kids-2",
-    "name": "Cama Solteiro - Linha Play",
-    "price": 0.0,
-    "url": "kids.html",
-    "category": "Kids",
-    "subcategory": "Quartos",
-    "description": "Linha Play - Mobiliário Juvenil",
-    "image": "images/sem-imagem.svg"
-  },
-  "kids-3": {
-    "id": "kids-3",
-    "name": "Roupeiro - Linha Play",
-    "price": 0.0,
-    "url": "kids.html",
-    "category": "Kids",
-    "subcategory": "Quartos",
-    "description": "Linha Play - Mobiliário Juvenil",
-    "image": "images/sem-imagem.svg"
-  },
-  "kids-4": {
-    "id": "kids-4",
-    "name": "Camiseiro - Linha Play",
-    "price": 0.0,
-    "url": "kids.html",
-    "category": "Kids",
-    "subcategory": "Quartos",
-    "description": "Linha Play - Mobiliário Juvenil",
-    "image": "images/sem-imagem.svg"
-  },
-  "kids-5": {
-    "id": "kids-5",
-    "name": "Mesa de Cabeceira - Linha Play",
-    "price": 0.0,
-    "url": "kids.html",
-    "category": "Kids",
-    "subcategory": "Quartos",
-    "description": "Linha Play - Mobiliário Juvenil",
-    "image": "images/sem-imagem.svg"
-  },
   "colchoes-comp-1": {
     "id": "colchoes-comp-1",
     "name": "Almofada Viscoelástica Ergonomia",
@@ -839,6 +789,60 @@ const window_products = {
     "category": "Colchões",
     "subcategory": "Complementos",
     "description": "Acessórios e complementos de descanso de alta qualidade.",
+    "image": "images/sem-imagem.svg"
+  },
+  "kids-1": {
+    "id": "kids-1",
+    "name": "Cama Solteiro - Linha Play",
+    "price": 0.0,
+    "url": "kids.html",
+    "category": "Kids",
+    "description": "Mobiliário Juvenil - Linha Play",
+    "image": "images/sem-imagem.svg"
+  },
+  "kids-2": {
+    "id": "kids-2",
+    "name": "Secretária - Linha Play",
+    "price": 0.0,
+    "url": "kids.html",
+    "category": "Kids",
+    "description": "Mobiliário Juvenil - Linha Play",
+    "image": "images/sem-imagem.svg"
+  },
+  "kids-3": {
+    "id": "kids-3",
+    "name": "Roupeiro - Linha Play",
+    "price": 0.0,
+    "url": "kids.html",
+    "category": "Kids",
+    "description": "Mobiliário Juvenil - Linha Play",
+    "image": "images/sem-imagem.svg"
+  },
+  "kids-4": {
+    "id": "kids-4",
+    "name": "Camiseiro - Linha Play",
+    "price": 0.0,
+    "url": "kids.html",
+    "category": "Kids",
+    "description": "Mobiliário Juvenil - Linha Play",
+    "image": "images/sem-imagem.svg"
+  },
+  "kids-5": {
+    "id": "kids-5",
+    "name": "Mesa de Cabeceira - Linha Play",
+    "price": 0.0,
+    "url": "kids.html",
+    "category": "Kids",
+    "description": "Mobiliário Juvenil - Linha Play",
+    "image": "images/sem-imagem.svg"
+  },
+  "kids-6": {
+    "id": "kids-6",
+    "name": "Complemento - Linha Play",
+    "price": 0.0,
+    "url": "kids.html",
+    "category": "Kids",
+    "description": "Mobiliário Juvenil - Linha Play",
     "image": "images/sem-imagem.svg"
   }
 };
