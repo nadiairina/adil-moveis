@@ -146,11 +146,11 @@
       <div class="animate-marquee" style="display:inline-block;white-space:nowrap;">
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
-        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 38 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
-        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 38 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
-        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 37 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
+        <span style="margin:0 2.5rem;display:inline-block;">🛋️ 38 ANOS DE CONFIANÇA EM MOBILIÁRIO DE QUALIDADE</span>
         <span style="margin:0 2.5rem;display:inline-block;">🚚 ENTREGA, MONTAGEM E RECOLHA GRÁTIS NUM RAIO DE 50KM (LISBOA E SETÚBAL)</span>
       </div>
     </div>
@@ -400,7 +400,7 @@
                   </div>
                   <div class="trust-badge">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                    <span>Garantia 37 Anos</span>
+                    <span>Garantia 38 Anos</span>
                   </div>
                   <div class="trust-badge">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.5"></path></svg>
@@ -559,7 +559,50 @@
           return;
         }
 
-        var p = window.produtos[productId] || window.produtos[cleanId];
+        
+        window.officialPacks = {
+          "pack-1": {
+            id: "pack-1",
+            name: "Pack Sala de Sonho",
+            category: "Packs Especiais",
+            price: 0,
+            image: "images/F3EEE4",
+            description: "O <strong>Pack Sala de Sonho</strong> foi especialmente desenhado para quem procura conforto e elegância na sala de estar.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Sofá Orly (2 lugares):</strong> Estofado de elevado conforto e durabilidade.<br>• <strong>Base TV Madrid (1 gaveta):</strong> L1555 x A500 x P450 mm.<br><br><em>Disponível para personalização de cores e tecidos. Fale connosco no WhatsApp para obter orçamento imediato!</em>"
+          },
+          "pack-2": {
+            id: "pack-2",
+            name: "Pack Sala de Sonho Premium",
+            category: "Packs Especiais",
+            price: 0,
+            image: "images/F3EEE4",
+            description: "O <strong>Pack Sala de Sonho Premium</strong> combina linhas contemporâneas e máxima arrumação para a sua sala.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Sofá Luna Chaise:</strong> Chaise longue de elevada qualidade e conforto.<br>• <strong>Base TV Malmo (Módulo 1 gaveta 180):</strong> L1800 x A500 x P455 mm (Disponível em 3 Cores).<br>• <strong>Mesa de Centro Malmo (Módulo MC90):</strong> L900 x A380 x P600 mm (Disponível em 3 Cores).<br><br><em>Fale connosco no WhatsApp para escolher as cores e obter o melhor preço!</em>"
+          },
+          "pack-3": {
+            id: "pack-3",
+            name: "Pack Aconchego Essencial",
+            category: "Packs Especiais",
+            price: 0,
+            image: "images/F3EEE4",
+            description: "O <strong>Pack Aconchego Essencial</strong> é o conjunto de quarto de casal completo pensado para o seu descanso total.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Cama de Casal Madrid:</strong> L1610 x A1100 x P2090 mm (Opção com 4 gavetas e estrado incluído).<br>• <strong>Colchão Super Ortopédico:</strong> Suporte ergonómico de elevada densidade.<br>🎁 <strong>OFERTA EXCLUSIVA:</strong> 2 Almofadas Soft de presente!<br><br><em>Fale connosco no WhatsApp para personalizar o seu pack!</em>"
+          },
+          "pack-4": {
+            id: "pack-4",
+            name: "Pack À Mesa",
+            category: "Packs Especiais",
+            price: 0,
+            image: "images/F3EEE4",
+            description: "O <strong>Pack À Mesa</strong> é a solução perfeita para reuniões de família e jantares confortáveis.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Mesa de Sala Extensível Paris (2 Topos):</strong> Fechada L1400 x A790 x P900 mm | Aberta L2300 x A790 x P900 mm (Disponível em 2 Cores).<br>• <strong>4x Cadeiras Estofadas Charly:</strong> Pés e tecido totalmente personalizáveis.<br><br><em>Fale connosco no WhatsApp para escolher os tecidos das cadeiras e obter orçamento!</em>"
+          },
+          "pack-5": {
+            id: "pack-5",
+            name: "Pack Sonhos Tranquilos",
+            category: "Packs Especiais",
+            price: 0,
+            image: "images/F3EEE4",
+            description: "O <strong>Pack Sonhos Tranquilos</strong> é o topo de gama do conforto e tecnologia de descanso.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Base Arca Recta Elevatória c/ Motor Mindol:</strong> Sistema articulado motorizado de elevação suave.<br>• <strong>Cabeceira Estofada:</strong> Design sofisticado à sua escolha.<br>• <strong>Colchão à Escolha:</strong> Escolha o nível de firmeza ideal para si.<br><br><em>Fale connosco no WhatsApp para ver o vídeo demonstrativo e escolher a sua combinação!</em>"
+          }
+        };
+        var p = (window.officialPacks && window.officialPacks[productId]) || (window.produtos && (window.produtos[productId] || window.produtos[cleanId]));
         
         // Se o produto não existir na base de dados (placeholders como kids-17 ou pack-5)
         if (!p) {
