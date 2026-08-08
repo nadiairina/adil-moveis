@@ -314,15 +314,16 @@
     </div>
   </section>
 
-      <!-- Classic Family & Showroom Gallery with Clickable Lightbox -->
+        <!-- Classic Family & Showroom Gallery with Clickable Lightbox -->
   <section class="py-12 bg-white border-y border-gray-100">
     <div class="container mx-auto px-4 max-w-7xl">
+      <!-- 1. Os Fundadores (Pai e Tios) -->
       <div class="text-center mb-10">
         <p style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">TRADIÇÃO FAMILIAR</p>
         <h3 style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a;">Os Fundadores & A Nossa História</h3>
-        <p style="font-size:0.85rem; color:#6b6b6b; font-weight:300; margin-top:4px;">Clique em qualquer fotografia para ampliar e navegar na galeria.</p>
+        <p style="font-size:0.85rem; color:#6b6b6b; font-weight:300; margin-top:4px;">Clique em qualquer fotografia para ampliar e navegar na galeria em ecrã inteiro.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(0)" data-aos="fade-up" data-aos-delay="0">
           <img src="images/historia1.jpg" alt="Fundadores Adil Móveis 1" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
         </div>
@@ -334,20 +335,32 @@
         </div>
       </div>
 
-      <!-- Exposição Atual nas Lojas do Feijó -->
+      <!-- 2. Exposição Completa nas Lojas do Feijó (7 Fotografias Enviadas pela Sara) -->
       <div class="text-center mb-8 pt-8 border-t border-gray-100">
         <p style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">EXPOSIÇÃO NO FEIJÓ</p>
-        <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:400; color:#1a1a1a;">Visite a Nossa Loja em Almada</h3>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:400; color:#1a1a1a;">Visite a Nossa Loja em Almada (7 Fotos da Exposição)</h3>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(3)" data-aos="fade-up" data-aos-delay="0">
           <img src="images/IMG_6668.jpeg" alt="Exposição Loja 1" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
         </div>
-        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(4)" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/IMG_6675.jpeg" alt="Exposição Loja 2" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(4)" data-aos="fade-up" data-aos-delay="50">
+          <img src="images/IMG_6670.jpeg" alt="Exposição Loja 2" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
         </div>
-        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(5)" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/IMG_6676.jpeg" alt="Exposição Loja 3" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(5)" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/IMG_6675.jpeg" alt="Exposição Loja 3" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(6)" data-aos="fade-up" data-aos-delay="150">
+          <img src="images/IMG_6676.jpeg" alt="Exposição Loja 4" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(7)" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/Unknown.jpeg" alt="Exposição Loja 5" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(8)" data-aos="fade-up" data-aos-delay="250">
+          <img src="images/Unknown-1.jpeg" alt="Exposição Loja 6" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(9)" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/Unknown-2.jpeg" alt="Exposição Loja 7" class="w-full aspect-video object-cover transform transition-transform duration-700 group-hover:scale-105">
         </div>
       </div>
     </div>
@@ -886,6 +899,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
+  
   <!-- Lightbox Gallery Modal -->
   <div id="lightboxModal" class="fixed inset-0 z-[9999] hidden flex flex-col items-center justify-center" style="background:rgba(0,0,0,0.92); backdrop-filter:blur(8px);">
     <button onclick="closeLightbox()" style="position:absolute; top:24px; right:28px; color:#fff; font-size:32px; background:none; border:none; cursor:pointer; z-index:10000;" title="Fechar (&Esc;)">&times;</button>
@@ -902,12 +916,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <script>
     const galleryItems = [
-      { src: "images/historia1.jpg", caption: "Fundadores Adil Móveis · 38 Anos de História no Feijó" },
-      { src: "images/historia2.jpg", caption: "Fundadores Adil Móveis · 38 Anos de História no Feijó" },
-      { src: "images/historia3.jpg", caption: "Fundadores Adil Móveis · 38 Anos de História no Feijó" },
-      { src: "images/IMG_6668.jpeg", caption: "Exposição Atual na Loja em Almada (Feijó)" },
-      { src: "images/IMG_6675.jpeg", caption: "Exposição Atual na Loja em Almada (Feijó)" },
-      { src: "images/IMG_6676.jpeg", caption: "Exposição Atual na Loja em Almada (Feijó)" }
+      { src: "images/historia1.jpg", caption: "Fundadores Adil Móveis · 38 Anos de Tradição no Feijó" },
+      { src: "images/historia2.jpg", caption: "Fundadores Adil Móveis · 38 Anos de Tradição no Feijó" },
+      { src: "images/historia3.jpg", caption: "Fundadores Adil Móveis · 38 Anos de Tradição no Feijó" },
+      { src: "images/IMG_6668.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/IMG_6670.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/IMG_6675.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/IMG_6676.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/Unknown.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/Unknown-1.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/Unknown-2.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" }
     ];
     let currentLightboxIdx = 0;
 
