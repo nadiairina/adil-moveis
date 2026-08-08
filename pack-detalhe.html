@@ -553,7 +553,7 @@
         var productId = params.get('id');
         var cleanId = productId ? productId.replace(/-+/g, '-') : '';
 
-        if (!productId || !window.produtos) {
+        if (!productId) {
           document.getElementById('breadcrumb-name').textContent = 'Produto não encontrado';
           document.getElementById('product-not-found').style.display = 'block';
           return;
