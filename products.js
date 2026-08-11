@@ -547,7 +547,7 @@ const window_products = {
   },
   "salas-31": {
     "id": "salas-31",
-    "name": "Sala Linha Malmo (Composição)",
+    "name": "Sala Linha Malmo",
     "price": 0.0,
     "url": "salas.html",
     "category": "Salas",
@@ -561,7 +561,7 @@ const window_products = {
   },
   "salas-32": {
     "id": "salas-32",
-    "name": "Sala Linha Madrid (Composição)",
+    "name": "Sala Linha Madrid",
     "price": 0.0,
     "url": "salas.html",
     "category": "Salas",
@@ -575,7 +575,7 @@ const window_products = {
   },
   "salas-33": {
     "id": "salas-33",
-    "name": "Sala Linha Paris (Composição)",
+    "name": "Sala Linha Paris",
     "price": 0.0,
     "url": "salas.html",
     "category": "Salas",
@@ -595,7 +595,7 @@ const window_products = {
   },
   "salas-34": {
     "id": "salas-34",
-    "name": "Sala Linha Chiado (Composição)",
+    "name": "Sala Linha Chiado",
     "price": 0.0,
     "url": "salas.html",
     "category": "Salas",
