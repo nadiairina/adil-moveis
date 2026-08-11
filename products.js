@@ -1201,7 +1201,8 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L980[+0.00]|L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/logo_sem_fundo.png",
+    "subcategory": "Cabeceiras"
   },
   "quartos-75": {
     "id": "quartos-75",
@@ -1214,7 +1215,8 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L2200[+0.00]|L2700[+0.00]|L2800[+0.00]|L2900[+0.00]|L3100[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/logo_sem_fundo.png",
+    "subcategory": "Cabeceiras"
   },
   "quartos-76": {
     "id": "quartos-76",
@@ -1227,7 +1229,8 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/logo_sem_fundo.png",
+    "subcategory": "Cabeceiras"
   },
   "quartos-77": {
     "id": "quartos-77",
@@ -1240,7 +1243,8 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/logo_sem_fundo.png",
+    "subcategory": "Cabeceiras"
   },
   "quartos-78": {
     "id": "quartos-78",
@@ -1253,7 +1257,8 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1150[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/logo_sem_fundo.png",
+    "subcategory": "Cabeceiras"
   },
   "quartos-79": {
     "id": "quartos-79",
@@ -1266,7 +1271,8 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/logo_sem_fundo.png",
+    "subcategory": "Cabeceiras"
   },
   "quartos-80": {
     "id": "quartos-80",
@@ -1332,6 +1338,114 @@ const window_products = {
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
     "image": "images/logo_sem_fundo.png"
+  },
+  "quartos-cab-1": {
+    "id": "quartos-cab-1",
+    "name": "Cabeceira Alison",
+    "category": "Quartos",
+    "subcategory": "Cabeceiras",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "quartos.html"
+  },
+  "quartos-cab-2": {
+    "id": "quartos-cab-2",
+    "name": "Cabeceira Melissa",
+    "category": "Quartos",
+    "subcategory": "Cabeceiras",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "quartos.html"
+  },
+  "quartos-cab-3": {
+    "id": "quartos-cab-3",
+    "name": "Cabeceira Gala",
+    "category": "Quartos",
+    "subcategory": "Cabeceiras",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "quartos.html"
+  },
+  "quartos-cab-4": {
+    "id": "quartos-cab-4",
+    "name": "Cabeceira Sophie",
+    "category": "Quartos",
+    "subcategory": "Cabeceiras",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "quartos.html"
+  },
+  "colchoes-ibiza": {
+    "id": "colchoes-ibiza",
+    "name": "Colchão Ibiza",
+    "category": "Colchões",
+    "subcategory": "Colchões",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "colchoes.html"
+  },
+  "colchoes-faro": {
+    "id": "colchoes-faro",
+    "name": "Colchão Faro",
+    "category": "Colchões",
+    "subcategory": "Colchões",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "colchoes.html"
+  },
+  "colchoes-toronto": {
+    "id": "colchoes-toronto",
+    "name": "Colchão Toronto",
+    "category": "Colchões",
+    "subcategory": "Colchões",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "colchoes.html"
+  },
+  "colchoes-estoril": {
+    "id": "colchoes-estoril",
+    "name": "Colchão Estoril",
+    "category": "Colchões",
+    "subcategory": "Colchões",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "colchoes.html"
+  },
+  "colchoes-dream": {
+    "id": "colchoes-dream",
+    "name": "Colchão Dream",
+    "category": "Colchões",
+    "subcategory": "Colchões",
+    "price": "Preço Sob Consulta",
+    "image": "images/sem-imagem.svg",
+    "gallery": [
+      "images/sem-imagem.svg"
+    ],
+    "url": "colchoes.html"
   }
 };
 if (typeof module !== 'undefined') module.exports = window_products;
