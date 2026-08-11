@@ -384,11 +384,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-stick_main.jpg",
+    "image": "images/produtos/sofas-stick_chair.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-stick_main.jpg",
-      "images/produtos/sofas-stick_g1.jpg"
+      "images/produtos/sofas-stick_chair.jpg",
+      "images/produtos/sofas-stick_measures.jpg"
     ]
   },
   "sofas-22": {
@@ -402,10 +402,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-star_main.jpg",
+    "image": "images/produtos/sofas-star_chair.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-star_main.jpg"
+      "images/produtos/sofas-star_chair.jpg",
+      "images/produtos/sofas-star_measures.jpg"
     ]
   },
   "salas-23": {
