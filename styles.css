@@ -298,37 +298,37 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--black) !important;
 }
 
-/* ── Filter Buttons ──────────────────────────────────────── */
-/* ── Filter Buttons — Zara Home Style ────────────────────── */
+/* ── Filter Buttons — Pill Style ─────────────────────────── */
 .filter-button {
-  background-color: transparent !important;
-  color: var(--text-muted) !important;
-  border: none !important;
-  border-bottom: 2px solid transparent !important;
-  border-radius: 0 !important;
-  padding: 0.5rem 1rem !important;
+  background-color: #fff !important;
+  color: #1a1a1a !important;
+  border: 1px solid #E8E3DC !important;
+  border-radius: 9999px !important;
+  padding: 0.6rem 1.5rem !important;
   font-size: 10px !important;
-  font-weight: 500 !important;
-  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif !important;
   letter-spacing: 0.15em !important;
   text-transform: uppercase !important;
   transition: all 0.3s ease !important;
-  cursor: pointer;
-  margin: 0 0.5rem !important;
+  cursor: pointer !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
+  outline: none !important;
 }
 
 .filter-button:hover {
-  background-color: transparent !important;
-  color: var(--black) !important;
-  border-bottom-color: var(--border) !important;
+  background-color: #C8B598 !important;
+  border-color: #C8B598 !important;
+  color: #fff !important;
 }
 
 .filter-button.active {
-  background-color: transparent !important;
-  color: var(--black) !important;
-  border-bottom-color: var(--accent) !important;
+  background-color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  color: #fff !important;
   font-weight: 700 !important;
 }
+
 
 
 /* ── Snipcart Checkout Button ────────────────────────────── */

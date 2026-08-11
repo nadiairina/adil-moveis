@@ -165,7 +165,7 @@
     </section>
 
     <!-- 🌟 HERO FEATURED PACK SHOWCASE BANNER (Pack 3: Pack Aconchego Essencial) -->
-    <section class="py-8 bg-[#FDFCFA]">
+    <section id="hero-pack-section" class="py-8 bg-[#FDFCFA]">
       <div class="max-w-6xl mx-auto px-4">
         <div class="bg-white border-2 border-[#C8B598] rounded-2xl overflow-hidden shadow-xl flex flex-col md:flex-row items-stretch" data-category="quarto">
           <div class="w-full md:w-7/12 relative bg-[#F7F4F0] min-h-[320px] overflow-hidden">
@@ -380,15 +380,25 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const filterButtons = document.querySelectorAll('.filter-button');
+      const heroSection = document.getElementById('hero-pack-section');
+
       filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
           filterButtons.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           const cat = btn.getAttribute('data-category');
+
+          // Show/hide hero section (data-category="quarto")
+          if (heroSection) {
+            heroSection.style.display = (cat === 'all' || cat === 'quarto') ? '' : 'none';
+          }
+
+          // Show/hide all pack cards in the grid
           const packCards = document.querySelectorAll('.pack-card');
           packCards.forEach(card => {
-            if (cat === 'all' || card.getAttribute('data-category') === cat) {
-              card.style.display = 'flex';
+            const cardCat = card.getAttribute('data-category');
+            if (cat === 'all' || cardCat === cat) {
+              card.style.display = '';
             } else {
               card.style.display = 'none';
             }
