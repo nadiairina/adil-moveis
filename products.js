@@ -367,11 +367,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-stick_measures.jpg",
+    "image": "images/produtos/sofas-stick_chair.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-stick_measures.jpg",
-      "images/produtos/sofas-stick_chair.jpg"
+      "images/produtos/sofas-stick_chair.jpg",
+      "images/produtos/sofas-stick_measures.jpg"
     ]
   },
   "sofas-22": {
