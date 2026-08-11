@@ -407,7 +407,7 @@ const window_products = {
   },
   "salas-23": {
     "id": "salas-23",
-    "name": "Pack 4 Cadeiras Charly (Bege)",
+    "name": "Cadeira Charly",
     "price": 0.0,
     "url": "salas.html",
     "category": "Salas",
@@ -544,72 +544,6 @@ const window_products = {
       "images/produtos/salas-viena_main.jpg",
       "images/produtos/salas-viena_g1.jpg"
     ]
-  },
-  "salas-31": {
-    "id": "salas-31",
-    "name": "Sala Linha Malmo",
-    "price": 0.0,
-    "url": "salas.html",
-    "category": "Salas",
-    "description": "Carvalho Natura - Branco",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-31.webp",
-    "subcategory": "Móveis"
-  },
-  "salas-32": {
-    "id": "salas-32",
-    "name": "Sala Linha Madrid",
-    "price": 0.0,
-    "url": "salas.html",
-    "category": "Salas",
-    "description": "Carvalho Natura - Branco",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-32.png",
-    "subcategory": "Móveis"
-  },
-  "salas-33": {
-    "id": "salas-33",
-    "name": "Sala Linha Paris",
-    "price": 0.0,
-    "url": "salas.html",
-    "category": "Salas",
-    "description": "Carvalho Natura - Branco",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-33_gallery_0.png",
-    "gallery": [
-      "images/produtos/salas-33_gallery_0.png",
-      "images/produtos/salas-33_gallery_1.png",
-      "images/produtos/salas-33_gallery_2.webp",
-      "images/produtos/salas-33_gallery_3.png"
-    ],
-    "subcategory": "Móveis"
-  },
-  "salas-34": {
-    "id": "salas-34",
-    "name": "Sala Linha Chiado",
-    "price": 0.0,
-    "url": "salas.html",
-    "category": "Salas",
-    "description": "Carvalho Natura - Branco",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-34_gallery_0.png",
-    "gallery": [
-      "images/produtos/salas-34_gallery_0.png",
-      "images/produtos/salas-34_gallery_1.webp"
-    ],
-    "subcategory": "Móveis"
   },
   "colchoes-comp-1": {
     "id": "colchoes-comp-1",
