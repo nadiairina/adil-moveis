@@ -119,8 +119,14 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-orly_main.webp",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-orly_main.webp",
+      "images/produtos/sofas-orly_g1.webp",
+      "images/produtos/sofas-orly_g2.webp",
+      "images/produtos/sofas-orly_g3.webp"
+    ]
   },
   "sofas-8": {
     "id": "sofas-8",
@@ -173,8 +179,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-monika_main.jpg",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-monika_main.jpg",
+      "images/produtos/sofas-monika_g1.jpg"
+    ]
   },
   "sofas-11": {
     "id": "sofas-11",
@@ -206,8 +216,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-robbie_main.webp",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-robbie_main.webp",
+      "images/produtos/sofas-robbie_g1.webp",
+      "images/produtos/sofas-robbie_g2.webp"
+    ]
   },
   "sofas-13": {
     "id": "sofas-13",
@@ -254,8 +269,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-ozil_main.jpg",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-ozil_main.jpg",
+      "images/produtos/sofas-ozil_g1.jpg",
+      "images/produtos/sofas-ozil_g2.jpg"
+    ]
   },
   "sofas-16": {
     "id": "sofas-16",
@@ -282,8 +302,15 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-fredy_main.webp",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-fredy_main.webp",
+      "images/produtos/sofas-fredy_g1.webp",
+      "images/produtos/sofas-fredy_g2.webp",
+      "images/produtos/sofas-fredy_g3.webp",
+      "images/produtos/sofas-fredy_g4.webp"
+    ]
   },
   "sofas-18": {
     "id": "sofas-18",
@@ -354,8 +381,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-stick_main.jpg",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-stick_main.jpg",
+      "images/produtos/sofas-stick_g1.jpg"
+    ]
   },
   "sofas-22": {
     "id": "sofas-22",
@@ -368,8 +399,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofas-star_main.jpg",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofas-star_main.jpg"
+    ]
   },
   "salas-23": {
     "id": "salas-23",
@@ -468,8 +502,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Mesas e Cadeiras"
+    "image": "images/produtos/salas-milao_main.jpg",
+    "subcategory": "Mesas e Cadeiras",
+    "gallery": [
+      "images/produtos/salas-milao_main.jpg",
+      "images/produtos/salas-milao_g1.jpg"
+    ]
   },
   "salas-29": {
     "id": "salas-29",
@@ -500,8 +538,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Mesas e Cadeiras"
+    "image": "images/produtos/salas-viena_main.jpg",
+    "subcategory": "Mesas e Cadeiras",
+    "gallery": [
+      "images/produtos/salas-viena_main.jpg",
+      "images/produtos/salas-viena_g1.jpg"
+    ]
   },
   "salas-31": {
     "id": "salas-31",
