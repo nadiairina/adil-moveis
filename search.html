@@ -284,204 +284,447 @@
   if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
 
   const siteProducts = [
-    // ── QUARTOS ──
-    { 
-      name: "Cama de Casal Estofada", 
-      category: "Quartos", 
-      url: "produto-detalhe.html?id=cama-paris", 
-      icon: "🛏️", 
-      keywords: ["cama", "camas", "casal", "quarto", "quartos", "estofada", "cabeceira", "dormir", "sommier", "box", "dupla", "matrimonial", "king", "queen", "estrado", "cama de casal"] 
+    {
+      name: "Sofá Trevor",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "trevor", "sala", "chaise"]
     },
-    { 
-      name: "Mesa de Cabeceira", 
-      category: "Quartos", 
-      url: "quartos.html", 
-      icon: "🛏️", 
-      keywords: ["mesa", "mesas", "mesa de cabeceira", "cabeceira", "mesinha", "noite", "quarto", "quartos", "cama", "bedside", "mesa lateral", "apoio"] 
+    {
+      name: "Sofá Robson",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "robson", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Roupeiro / Armário", 
-      category: "Quartos", 
-      url: "quartos.html", 
-      icon: "🚪", 
-      keywords: ["roupeiro", "roupeiros", "armário", "armario", "armários", "armarios", "guarda roupa", "guarda-roupa", "roupa", "quarto", "quartos", "closet", "cabide", "prateleira", "armazenamento", "guardar"] 
+    {
+      name: "Sofá Amazónia",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "amazónia", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Camiseiro / Cómoda", 
-      category: "Quartos", 
-      url: "quartos.html", 
-      icon: "🗄️", 
-      keywords: ["camiseiro", "camiseiros", "cómoda", "comoda", "cómodas", "comodas", "gaveta", "gavetas", "gaveteiro", "quarto", "quartos", "arrumação", "dresser"] 
+    {
+      name: "Sofá Argo",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "argo"]
     },
-
-    // ── SALAS ──
-    { 
-      name: "Sofá Chaise Longue Orly", 
-      category: "Salas", 
-      url: "produto-detalhe.html?id=sofa-orly", 
-      icon: "🛋️", 
-      keywords: ["sofá", "sofa", "sofás", "sofas", "sala", "salas", "chaise", "chaise longue", "divã", "assento", "estofos", "tecido", "veludo", "couro", "canto", "angular", "living", "sala estar", "sala de estar", "cadeira", "cadeiras", "poltrona", "relaxar"] 
+    {
+      name: "Sofá Eros",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "eros", "relaxar", "salas", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Mesa de Centro / Apoio", 
-      category: "Salas", 
-      url: "salas.html", 
-      icon: "🪑", 
-      keywords: ["mesa", "mesas", "mesa de centro", "centro", "sala", "salas", "café", "mesinha", "living", "mesa de apoio", "cadeira", "cadeiras"] 
+    {
+      name: "Sofá Daytona",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "daytona", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Móvel de TV / Aparador", 
-      category: "Salas", 
-      url: "salas.html", 
-      icon: "📺", 
-      keywords: ["tv", "televisão", "televisao", "móvel", "movel", "aparador", "aparadores", "buffet", "estante", "painel", "sala", "salas", "media", "rack", "consola", "sala de estar"] 
+    {
+      name: "Sofá Orly",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "orly"]
     },
-    { 
-      name: "Cadeiras & Conjunto de Sala", 
-      category: "Salas", 
-      url: "salas.html", 
-      icon: "🪑", 
-      keywords: ["cadeira", "cadeiras", "cadeirão", "cadeirao", "assento", "assentos", "mesa", "mesas", "sala", "salas", "jantar", "sala de jantar", "estofada"] 
+    {
+      name: "Sofá Alvin",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "alvin", "chaise", "sala"]
     },
-
-    // ── COLCHÕES & COMPLEMENTOS ──
-    { 
-      name: "Colchão Evolution", 
-      category: "Colchões", 
-      url: "produto-detalhe.html?id=colchoes-1", 
-      icon: "😴", 
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "dormir", "descanso", "cama", "molas", "espuma", "viscoelástico", "viscoelastico", "ortopédico", "ortopedico", "evolution", "conforto", "sono", "repouso"] 
+    {
+      name: "Sofá George",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "george"]
     },
-    { 
-      name: "Colchão Freshcool", 
-      category: "Colchões", 
-      url: "produto-detalhe.html?id=colchoes-2", 
-      icon: "😴", 
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "fresco", "frescura", "frio", "freshcool", "verão", "temperatura", "gel", "viscoelástico", "viscoelastico", "conforto", "dormir", "quente"] 
+    {
+      name: "Sofá Mónika",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "mónika", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Colchão Max Body", 
-      category: "Colchões", 
-      url: "produto-detalhe.html?id=colchoes-3", 
-      icon: "😴", 
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "ergonómico", "ergonomico", "max body", "corpo", "costas", "ortopédico", "ortopedico", "suporte", "lombar", "dormir"] 
+    {
+      name: "Sofá Megan",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "megan", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Colchão Airflow", 
-      category: "Colchões", 
-      url: "produto-detalhe.html?id=colchoes-4", 
-      icon: "😴", 
-      keywords: ["colchão", "colchao", "colchões", "colchoes", "airflow", "ventilação", "ventilacao", "respirável", "respiravel", "dormir", "espuma", "viscoelástico", "viscoelastico"] 
+    {
+      name: "Sofá Robbie",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "robbie", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Almofada Viscoelástica Ergonomia", 
-      category: "Complementos", 
-      url: "colchoes.html", 
-      icon: "🛏️", 
-      keywords: ["almofada", "almofadas", "travesseiro", "travesseiros", "almofadão", "viscoelástico", "viscoelastico", "ergonomia", "pescoço", "pescoco", "cervical", "dormir", "descanso", "complemento", "quarto"] 
+    {
+      name: "Sofá Mistik",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "mistik"]
     },
-    { 
-      name: "Almofada de Penas & Plumagem", 
-      category: "Complementos", 
-      url: "colchoes.html", 
-      icon: "🛏️", 
-      keywords: ["almofada", "almofadas", "travesseiro", "travesseiros", "penas", "plumas", "macio", "dormir", "descanso", "complemento", "quarto"] 
+    {
+      name: "Sofá Philipe",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "philipe", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
     },
-    { 
-      name: "Protetor de Colchão Impermeável", 
-      category: "Complementos", 
-      url: "colchoes.html", 
-      icon: "🛡️", 
-      keywords: ["protetor", "protector", "impermeável", "impermeavel", "capa", "resguardo", "higiene", "limpeza", "colchão", "colchao", "complemento", "cama"] 
+    {
+      name: "Sofá Ozil",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🛋️",
+      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "ozil", "chaise"]
     },
-    { 
-      name: "Topper Viscoelástico Conforto Extra", 
-      category: "Complementos", 
-      url: "colchoes.html", 
-      icon: "🛏️", 
-      keywords: ["topper", "sobrecolchão", "sobrecolchao", "sobrecapa", "viscoelástico", "viscoelastico", "conforto", "colchão", "colchao", "complemento", "extra", "macio"] 
+    {
+      name: "Cadeirão Sirio",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "sirio", "cadeirao", "assento", "sala"]
     },
-    { 
-      name: "Sommier Metálico de Suporte", 
-      category: "Complementos", 
-      url: "colchoes.html", 
-      icon: "🛏️", 
-      keywords: ["sommier", "somier", "metálico", "metalico", "suporte", "cama", "estrado", "estrutura", "base", "complemento"] 
+    {
+      name: "Cadeirão Fredy",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "cadeirao", "fredy", "sala", "assento"]
     },
-
-    // ── KIDS ──
-    { 
-      name: "Linha Play — Cama Infantil", 
-      category: "Kids", 
-      url: "produto-detalhe.html?id=kids-cama", 
-      icon: "🧒", 
-      keywords: ["kids", "criança", "criancas", "crianças", "cama", "camas", "infantil", "juvenil", "jovem", "play", "linha play", "quarto criança", "solteiro", "individual", "beliche"] 
+    {
+      name: "Cadeirão Connor",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "connor", "relaxar", "salas", "cadeirao", "assento", "sala"]
     },
-    { 
-      name: "Linha Play — Secretária de Estudo", 
-      category: "Kids", 
-      url: "produto-detalhe.html?id=kids-secretaria", 
-      icon: "📚", 
-      keywords: ["secretária", "secretaria", "secretárias", "secretarias", "mesa", "mesas", "mesa de estudo", "mesa estudo", "estudo", "trabalho", "escrevaninha", "kids", "criança", "criancas", "crianças", "infantil", "juvenil", "play", "escola", "computador", "homework", "escritório", "escritorio"] 
+    {
+      name: "Cadeirão Lion",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "lion", "cadeirao", "assento", "sala"]
     },
-    { 
-      name: "Linha Play — Roupeiro Infantil", 
-      category: "Kids", 
-      url: "produto-detalhe.html?id=kids-roupeiro", 
-      icon: "🚪", 
-      keywords: ["roupeiro", "armário", "armario", "kids", "criança", "criancas", "crianças", "infantil", "juvenil", "play", "closet", "roupa", "guarda roupa"] 
+    {
+      name: "Cadeirão Dover",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "dover", "relaxar", "salas", "cadeirao", "assento", "sala"]
     },
-    { 
-      name: "Linha Play — Camiseiro & Cómoda", 
-      category: "Kids", 
-      url: "produto-detalhe.html?id=kids-camiseiro", 
-      icon: "🗄️", 
-      keywords: ["camiseiro", "cómoda", "comoda", "gavetas", "gaveta", "gaveteiro", "kids", "criança", "criancas", "crianças", "infantil", "juvenil", "play", "arrumação", "guardar"] 
+    {
+      name: "Cadeirão Stick",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "stick", "cadeirao", "assento", "sala"]
     },
-    { 
-      name: "Linha Play — Mesa de Cabeceira", 
-      category: "Kids", 
-      url: "produto-detalhe.html?id=kids-mesa", 
-      icon: "🧒", 
-      keywords: ["mesa", "mesas", "mesa de cabeceira", "mesinha", "kids", "criança", "criancas", "crianças", "infantil", "juvenil", "play", "cabeceira", "noite"] 
+    {
+      name: "Cadeirão Star",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["poltrona", "cadeirão", "cadeira", "star", "relaxar", "salas", "cadeirao", "assento", "sala"]
     },
-
-    // ── PACKS ──
-    { 
-      name: "Pack Aconchego Essencial", 
-      category: "Packs", 
-      url: "pack-detalhe.html?id=pack-3", 
-      icon: "🎁", 
-      keywords: ["pack", "packs", "conjunto", "conjuntos", "quarto", "quartos", "casal", "cama", "colchão", "colchao", "sommier", "oferta", "promoção", "promocao", "desconto", "kit", "completo"] 
+    {
+      name: "Pack 4 Cadeiras Charly (Bege)",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🎁",
+      keywords: ["jantar", "cadeira", "cadeiras", "(bege)", "promoção", "completo", "tudo", "salas", "conjunto", "pack", "4", "assento", "desconto", "charly", "sala", "packs"]
     },
-    { 
-      name: "Pack Sala de Sonho", 
-      category: "Packs", 
-      url: "pack-detalhe.html?id=pack-1", 
-      icon: "🎁", 
-      keywords: ["pack", "packs", "conjunto", "conjuntos", "sala", "salas", "sofá", "sofa", "mesa", "mesas", "tv", "aparador", "oferta", "promoção", "promocao", "desconto", "kit sala"] 
+    {
+      name: "Cadeira Moon",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["moon", "jantar", "cadeira", "cadeiras", "salas", "assento", "sala"]
     },
-    { 
-      name: "Pack Quarto Casal Premium", 
-      category: "Packs", 
-      url: "pack-detalhe.html?id=pack-2", 
-      icon: "🎁", 
-      keywords: ["pack", "packs", "conjunto", "conjuntos", "quarto", "quartos", "casal", "cama", "colchão", "colchao", "camiseiro", "cómoda", "comoda", "oferta", "promoção", "promocao", "desconto", "premium"] 
+    {
+      name: "Cadeira Paris",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["jantar", "cadeira", "cadeiras", "paris", "salas", "assento", "sala"]
     },
-    { 
-      name: "Pack Conforto Total", 
-      category: "Packs", 
-      url: "pack-detalhe.html?id=pack-4", 
-      icon: "🎁", 
-      keywords: ["pack", "packs", "conjunto", "conjuntos", "colchão", "colchao", "sommier", "almofadas", "almofada", "conforto", "descanso", "dormir", "oferta", "kit colchão"] 
+    {
+      name: "Cadeira Sagres",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["jantar", "cadeira", "cadeiras", "sagres", "salas", "assento", "sala"]
     },
-    { 
-      name: "Pack Jovem Moderno", 
-      category: "Packs", 
-      url: "pack-detalhe.html?id=pack-5", 
-      icon: "🎁", 
-      keywords: ["pack", "packs", "conjunto", "conjuntos", "jovem", "juvenil", "kids", "criança", "criancas", "crianças", "solteiro", "cama", "secretária", "secretaria", "estudo", "oferta", "kit jovem"] 
-    }
+    {
+      name: "Cadeira Madrid",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["jantar", "cadeira", "cadeiras", "salas", "assento", "sala", "madrid"]
+    },
+    {
+      name: "Cadeira Milão",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["jantar", "cadeira", "cadeiras", "milão", "salas", "assento", "sala"]
+    },
+    {
+      name: "Cadeira Chiado",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["jantar", "cadeira", "cadeiras", "chiado", "salas", "assento", "sala"]
+    },
+    {
+      name: "Cadeira Viena",
+      category: "Salas",
+      url: "salas.html",
+      icon: "🪑",
+      keywords: ["jantar", "cadeira", "cadeiras", "viena", "salas", "assento", "sala"]
+    },
+    {
+      name: "Sala Linha Malmo (Composição)",
+      category: "Salas",
+      url: "salas.html",
+      icon: "📺",
+      keywords: ["movel", "(composição)", "estante", "malmo", "linha", "composição", "móvel", "salas", "conjunto", "tv", "sala", "aparador"]
+    },
+    {
+      name: "Sala Linha Madrid (Composição)",
+      category: "Salas",
+      url: "salas.html",
+      icon: "📺",
+      keywords: ["movel", "(composição)", "estante", "linha", "composição", "móvel", "salas", "conjunto", "tv", "sala", "madrid", "aparador"]
+    },
+    {
+      name: "Sala Linha Paris (Composição)",
+      category: "Salas",
+      url: "salas.html",
+      icon: "📺",
+      keywords: ["movel", "(composição)", "estante", "linha", "paris", "composição", "móvel", "salas", "conjunto", "tv", "sala", "aparador"]
+    },
+    {
+      name: "Sala Linha Chiado (Composição)",
+      category: "Salas",
+      url: "salas.html",
+      icon: "📺",
+      keywords: ["movel", "(composição)", "estante", "linha", "composição", "móvel", "chiado", "salas", "conjunto", "tv", "sala", "aparador"]
+    },
+    {
+      name: "Quarto Louro - Cama casal",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🛏️",
+      keywords: ["casal", "quarto", "dormir", "cabeceira", "cama", "quartos", "estrado", "louro", "-", "camas"]
+    },
+    {
+      name: "Quarto Louro - Mesa cabeceira",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🪑",
+      keywords: ["casal", "jantar", "quarto", "dormir", "cabeceira", "quartos", "cama", "estrado", "louro", "apoio", "centro", "mesa", "-", "camas", "mesas"]
+    },
+    {
+      name: "Quarto Louro - Cómoda",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🚪",
+      keywords: ["cabeceira", "cama", "cómoda", "roupa", "quarto", "gavetas", "armário", "estrado", "comoda", "guardar", "-", "casal", "camiseiro", "dormir", "quartos", "arrumação", "louro", "roupeiro", "camas"]
+    },
+    {
+      name: "Quarto Louro - Camiseiro",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🚪",
+      keywords: ["cabeceira", "cama", "cómoda", "roupa", "quarto", "gavetas", "armário", "estrado", "comoda", "guardar", "-", "casal", "camiseiro", "dormir", "quartos", "arrumação", "louro", "roupeiro", "camas"]
+    },
+    {
+      name: "Quarto Louro - Estrado Metálico",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🛏️",
+      keywords: ["casal", "quarto", "dormir", "cabeceira", "quartos", "estrado", "cama", "louro", "-", "camas", "metálico"]
+    },
+    {
+      name: "Quarto Louro - Jones",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🛏️",
+      keywords: ["jones", "casal", "quarto", "dormir", "cabeceira", "quartos", "cama", "estrado", "louro", "-", "camas"]
+    },
+    {
+      name: "Cabeceira Jones com laterais",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🛏️",
+      keywords: ["jones", "casal", "quarto", "dormir", "cabeceira", "quartos", "cama", "estrado", "laterais", "com", "camas"]
+    },
+    {
+      name: "Cama Casal Paris",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🛏️",
+      keywords: ["casal", "quarto", "paris", "dormir", "cabeceira", "cama", "quartos", "estrado", "camas"]
+    },
+    {
+      name: "Cómoda Paris",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🚪",
+      keywords: ["quarto", "camiseiro", "gavetas", "armário", "paris", "quartos", "cómoda", "arrumação", "roupa", "comoda", "roupeiro", "guardar"]
+    },
+    {
+      name: "Camiseiro Paris",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🚪",
+      keywords: ["quarto", "camiseiro", "gavetas", "armário", "paris", "quartos", "cómoda", "arrumação", "roupa", "comoda", "roupeiro", "guardar"]
+    },
+    {
+      name: "Mesa de Cabeceira Paris",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "🪑",
+      keywords: ["casal", "jantar", "quarto", "paris", "cabeceira", "dormir", "quartos", "cama", "estrado", "apoio", "centro", "mesa", "de", "camas", "mesas"]
+    },
+    {
+      name: "Estrado Metálico",
+      category: "Quartos",
+      url: "quartos.html",
+      icon: "✨",
+      keywords: ["quartos", "estrado", "metálico"]
+    },
+    {
+      name: "Almofada Viscoelástica Ergonomia",
+      category: "Colchões",
+      url: "colchoes.html",
+      icon: "😴",
+      keywords: ["descanso", "ortopédico", "viscoelástica", "colchao", "viscoelástico", "dormir", "cama", "colchões", "ergonomia", "colchão", "colchoes", "espuma", "almofada"]
+    },
+    {
+      name: "Almofada de Penas & Plumagem",
+      category: "Colchões",
+      url: "colchoes.html",
+      icon: "😴",
+      keywords: ["descanso", "plumagem", "ortopédico", "colchao", "viscoelástico", "dormir", "penas", "colchão", "cama", "colchões", "&", "de", "colchoes", "espuma", "almofada"]
+    },
+    {
+      name: "Protetor de Colchão Impermeável",
+      category: "Colchões",
+      url: "colchoes.html",
+      icon: "😴",
+      keywords: ["descanso", "ortopédico", "viscoelástico", "colchao", "dormir", "cama", "colchões", "impermeável", "colchão", "de", "colchoes", "espuma", "almofada", "protetor"]
+    },
+    {
+      name: "Capa de Colchão Respirável",
+      category: "Colchões",
+      url: "colchoes.html",
+      icon: "😴",
+      keywords: ["descanso", "ortopédico", "viscoelástico", "colchao", "dormir", "respirável", "cama", "colchões", "capa", "colchão", "de", "colchoes", "espuma", "almofada"]
+    },
+    {
+      name: "Topper Viscoelástico Conforto Extra",
+      category: "Colchões",
+      url: "colchoes.html",
+      icon: "😴",
+      keywords: ["conforto", "descanso", "ortopédico", "colchao", "espuma", "dormir", "topper", "cama", "colchões", "extra", "colchão", "colchoes", "viscoelástico", "almofada"]
+    },
+    {
+      name: "Sommier Metálico de Suporte",
+      category: "Colchões",
+      url: "colchoes.html",
+      icon: "✨",
+      keywords: ["de", "colchões", "metálico", "sommier", "suporte"]
+    },
+    {
+      name: "Cama Solteiro - Linha Play",
+      category: "Kids",
+      url: "kids.html",
+      icon: "🧒",
+      keywords: ["criança", "estudo", "linha", "cabeceira", "cama", "secretária", "infantil", "quarto", "crianca", "play", "estrado", "solteiro", "jovem", "-", "casal", "dormir", "quartos", "juvenil", "crianças", "kids", "camas"]
+    },
+    {
+      name: "Secretária - Linha Play",
+      category: "Kids",
+      url: "kids.html",
+      icon: "🧒",
+      keywords: ["estudo", "linha", "crianca", "play", "juvenil", "crianças", "kids", "secretária", "solteiro", "infantil", "jovem", "criança", "-"]
+    },
+    {
+      name: "Roupeiro - Linha Play",
+      category: "Kids",
+      url: "kids.html",
+      icon: "🧒",
+      keywords: ["criança", "estudo", "linha", "cómoda", "roupa", "secretária", "infantil", "quarto", "gavetas", "armário", "crianca", "play", "comoda", "solteiro", "jovem", "guardar", "-", "camiseiro", "juvenil", "arrumação", "crianças", "kids", "roupeiro"]
+    },
+    {
+      name: "Camiseiro - Linha Play",
+      category: "Kids",
+      url: "kids.html",
+      icon: "🧒",
+      keywords: ["criança", "estudo", "linha", "cómoda", "roupa", "secretária", "infantil", "quarto", "gavetas", "armário", "crianca", "play", "comoda", "solteiro", "jovem", "guardar", "-", "camiseiro", "juvenil", "arrumação", "crianças", "kids", "roupeiro"]
+    },
+    {
+      name: "Mesa de Cabeceira - Linha Play",
+      category: "Kids",
+      url: "kids.html",
+      icon: "🧒",
+      keywords: ["mesa", "criança", "estudo", "linha", "cabeceira", "cama", "secretária", "infantil", "de", "jantar", "quarto", "crianca", "play", "estrado", "solteiro", "jovem", "-", "casal", "dormir", "quartos", "juvenil", "crianças", "kids", "apoio", "centro", "camas", "mesas"]
+    },
+    {
+      name: "Complemento - Linha Play",
+      category: "Kids",
+      url: "kids.html",
+      icon: "🧒",
+      keywords: ["estudo", "linha", "crianca", "play", "juvenil", "crianças", "kids", "secretária", "solteiro", "infantil", "complemento", "criança", "jovem", "-"]
+    },
+    {
+      name: "Pack Sala de Sonho",
+      category: "Packs",
+      url: "pack-detalhe.html?id=pack-1",
+      icon: "🎁",
+      keywords: ["movel", "estante", "composição", "sonho", "móvel", "completo", "promoção", "tudo", "salas", "conjunto", "tv", "pack", "desconto", "sala", "de", "aparador", "packs"]
+    },
+    {
+      name: "Pack Quarto Aconchego",
+      category: "Packs",
+      url: "pack-detalhe.html?id=pack-2",
+      icon: "🎁",
+      keywords: ["casal", "quarto", "dormir", "cabeceira", "promoção", "quartos", "cama", "estrado", "completo", "tudo", "conjunto", "pack", "desconto", "aconchego", "camas", "packs"]
+    },
+    {
+      name: "Pack Casa Completa VIP",
+      category: "Packs",
+      url: "pack-detalhe.html?id=pack-3",
+      icon: "🎁",
+      keywords: ["promoção", "completo", "tudo", "vip", "conjunto", "pack", "casa", "desconto", "completa", "packs"]
+    },
+    {
+      name: "Pack Kids",
+      category: "Packs",
+      url: "pack-detalhe.html?id=pack-4",
+      icon: "🎁",
+      keywords: ["promoção", "completo", "tudo", "conjunto", "kids", "pack", "desconto", "packs"]
+    },
+    {
+      name: "Pack Jovem",
+      category: "Packs",
+      url: "pack-detalhe.html?id=pack-5",
+      icon: "🎁",
+      keywords: ["promoção", "completo", "tudo", "conjunto", "pack", "jovem", "desconto", "packs"]
+    },
   ];
 
   function removeAccents(str) {
