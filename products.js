@@ -255,8 +255,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/sem-imagem.svg",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sofa-philipe.png",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/sofa-philipe.png"
+    ]
   },
   "sofas-15": {
     "id": "sofas-15",
