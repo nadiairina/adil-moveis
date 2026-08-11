@@ -244,23 +244,6 @@ const window_products = {
     ],
     "subcategory": "Sofás"
   },
-  "sofas-14": {
-    "id": "sofas-14",
-    "name": "Sofá Philipe",
-    "price": 0.0,
-    "url": "salas.html",
-    "category": "Salas",
-    "description": "Bonito, funcional e confortável, um modelo que dará nova vida à decoração da sala. Equipado com uma cama extra para hóspedes e extra conforto com as suas costas reclináveis. Revestimento em tecido personalizável.",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofa-philipe.png",
-    "subcategory": "Sofás",
-    "gallery": [
-      "images/produtos/sofa-philipe.png"
-    ]
-  },
   "sofas-15": {
     "id": "sofas-15",
     "name": "Sofá Ozil",
@@ -384,11 +367,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-stick_chair.jpg",
+    "image": "images/produtos/sofas-stick_measures.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-stick_chair.jpg",
-      "images/produtos/sofas-stick_measures.jpg"
+      "images/produtos/sofas-stick_measures.jpg",
+      "images/produtos/sofas-stick_chair.jpg"
     ]
   },
   "sofas-22": {
@@ -402,11 +385,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-star_chair.jpg",
+    "image": "images/produtos/sofas-star_measures.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-star_chair.jpg",
-      "images/produtos/sofas-star_measures.jpg"
+      "images/produtos/sofas-star_measures.jpg",
+      "images/produtos/sofas-star_chair.jpg"
     ]
   },
   "salas-23": {
