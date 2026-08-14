@@ -597,59 +597,76 @@ const window_products = {
     "name": "Cama Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Cama pessoa simples com estrado incluído. L1160 x A950 x P2030.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1160 x A950 x P2030[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-1_main.jpg",
+    "gallery": [
+      "images/produtos/kids-1_main.jpg",
+      "images/produtos/kids-1_gallery_1.jpg"
+    ]
   },
   "kids-2": {
     "id": "kids-2",
     "name": "Cama Elevatória Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Cama pessoa elevatória. L1160 x A950 x P2055.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1160 x A950 x P2055[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-2_main.jpg",
+    "gallery": [
+      "images/produtos/kids-2_main.jpg",
+      "images/produtos/kids-2_gallery_1.jpg"
+    ]
   },
   "kids-3": {
     "id": "kids-3",
     "name": "Cama Estúdio Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Cama estúdio com estrado + gavetão. L2065 x A630 x P905.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L2065 x A630 x P905[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-3_main.jpg",
+    "gallery": [
+      "images/produtos/kids-3_main.jpg",
+      "images/produtos/kids-3_gallery_1.jpg"
+    ]
   },
   "kids-4": {
     "id": "kids-4",
     "name": "Beliche Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Beliche com estrados incluídos. L2045 x A1600 x P950.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L2045 x A1600 x P950[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-4_main.jpg",
+    "gallery": [
+      "images/produtos/kids-4_main.jpg",
+      "images/produtos/kids-4_gallery_1.jpg",
+      "images/produtos/kids-4_gallery_2.jpg"
+    ]
   },
   "kids-5": {
     "id": "kids-5",
     "name": "Mesa Cabeceira Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Mesa de cabeceira 2 gavetas. L500 x A400 x P410.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
@@ -667,7 +684,7 @@ const window_products = {
     "name": "Cómoda Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Cómoda 3 gavetas. L1000 x A768 x P450.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
@@ -1140,7 +1157,7 @@ const window_products = {
     "name": "Camiseiro Play",
     "price": 0.0,
     "url": "kids.html",
-    "category": "Quartos",
+    "category": "Kids",
     "description": "Camiseiro 4 gavetas. L501 x A951 x P400.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
@@ -1462,6 +1479,58 @@ const window_products = {
       "images/sem-imagem.svg"
     ],
     "url": "colchoes.html"
+  },
+  "kids-8": {
+    "id": "kids-8",
+    "name": "Secretária Play",
+    "category": "Kids",
+    "subcategory": "Secretárias",
+    "price": "Preço Sob Consulta",
+    "image": "images/produtos/kids-8_main.jpg",
+    "gallery": [
+      "images/produtos/kids-8_main.jpg",
+      "images/produtos/kids-8_gallery_1.jpg"
+    ],
+    "url": "kids.html"
+  },
+  "kids-9": {
+    "id": "kids-9",
+    "name": "Roupeiro Play",
+    "category": "Kids",
+    "subcategory": "Roupeiros",
+    "price": "Preço Sob Consulta",
+    "image": "images/produtos/kids-9_main.jpg",
+    "gallery": [
+      "images/produtos/kids-9_main.jpg",
+      "images/produtos/kids-9_gallery_1.jpg"
+    ],
+    "url": "kids.html"
+  },
+  "kids-10": {
+    "id": "kids-10",
+    "name": "Elemento Prateleiras Play",
+    "category": "Kids",
+    "subcategory": "Estantes",
+    "price": "Preço Sob Consulta",
+    "image": "images/produtos/kids-10_main.jpg",
+    "gallery": [
+      "images/produtos/kids-10_main.jpg",
+      "images/produtos/kids-10_gallery_1.jpg"
+    ],
+    "url": "kids.html"
+  },
+  "kids-11": {
+    "id": "kids-11",
+    "name": "Estante TV Play",
+    "category": "Kids",
+    "subcategory": "Estantes",
+    "price": "Preço Sob Consulta",
+    "image": "images/produtos/kids-11_main.jpg",
+    "gallery": [
+      "images/produtos/kids-11_main.jpg",
+      "images/produtos/kids-11_gallery_1.jpg"
+    ],
+    "url": "kids.html"
   }
 };
 if (typeof module !== 'undefined') module.exports = window_products;
