@@ -202,22 +202,19 @@ h1, h2, h3, h4, h5, h6 {
 /* ── Product Cards ───────────────────────────────────────── */
 .product {
   background-color: var(--white);
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   height: auto;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.3s ease;
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: var(--shadow-card);
 }
 
 .product:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--accent);
 }
 
 .product .relative {
