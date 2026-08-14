@@ -655,7 +655,12 @@ const window_products = {
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L500 x A400 x P410[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-5_main.jpg",
+    "gallery": [
+      "images/produtos/kids-5_main.jpg",
+      "images/produtos/kids-5_gallery_1.jpg"
+    ],
+    "subcategory": "Mesas de Cabeceira"
   },
   "kids-6": {
     "id": "kids-6",
@@ -668,7 +673,12 @@ const window_products = {
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A768 x P450[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-6_main.jpg",
+    "gallery": [
+      "images/produtos/kids-6_main.jpg",
+      "images/produtos/kids-6_gallery_1.jpg"
+    ],
+    "subcategory": "Cómodas"
   },
   "quartos-35": {
     "id": "quartos-35",
@@ -1136,7 +1146,13 @@ const window_products = {
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L501 x A951 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/kids-7_main.jpg",
+    "gallery": [
+      "images/produtos/kids-7_main.jpg",
+      "images/produtos/kids-7_gallery_1.jpg",
+      "images/produtos/kids-7_gallery_2.jpg"
+    ],
+    "subcategory": "Camiseiros"
   },
   "quartos-70": {
     "id": "quartos-70",
