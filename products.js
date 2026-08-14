@@ -594,7 +594,7 @@ const window_products = {
   },
   "kids-1": {
     "id": "kids-1",
-    "name": "Cama Play",
+    "name": "Cama Estúdio Play",
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
@@ -606,7 +606,8 @@ const window_products = {
     "image": "images/produtos/kids-1_main.jpg",
     "gallery": [
       "images/produtos/kids-1_main.jpg",
-      "images/produtos/kids-1_gallery_1.jpg"
+      "images/produtos/kids-1_gallery_1.jpg",
+      "images/produtos/kids-1_gallery_2.jpg"
     ]
   },
   "kids-2": {
@@ -663,7 +664,7 @@ const window_products = {
   },
   "kids-5": {
     "id": "kids-5",
-    "name": "Mesa Cabeceira Play",
+    "name": "Mesa de Cabeceira Play",
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
@@ -1154,7 +1155,7 @@ const window_products = {
   },
   "kids-7": {
     "id": "kids-7",
-    "name": "Camiseiro Play",
+    "name": "Camiseiro Alto Play",
     "price": 0.0,
     "url": "kids.html",
     "category": "Kids",
@@ -1167,7 +1168,8 @@ const window_products = {
     "gallery": [
       "images/produtos/kids-7_main.jpg",
       "images/produtos/kids-7_gallery_1.jpg",
-      "images/produtos/kids-7_gallery_2.jpg"
+      "images/produtos/kids-7_gallery_2.jpg",
+      "images/produtos/kids-7_gallery_3.jpg"
     ],
     "subcategory": "Camiseiros"
   },
@@ -1489,7 +1491,9 @@ const window_products = {
     "image": "images/produtos/kids-8_main.jpg",
     "gallery": [
       "images/produtos/kids-8_main.jpg",
-      "images/produtos/kids-8_gallery_1.jpg"
+      "images/produtos/kids-8_gallery_1.jpg",
+      "images/produtos/kids-8_gallery_2.jpg",
+      "images/produtos/kids-8_gallery_3.jpg"
     ],
     "url": "kids.html"
   },
@@ -1502,7 +1506,14 @@ const window_products = {
     "image": "images/produtos/kids-9_main.jpg",
     "gallery": [
       "images/produtos/kids-9_main.jpg",
-      "images/produtos/kids-9_gallery_1.jpg"
+      "images/produtos/kids-9_gallery_1.jpg",
+      "images/produtos/kids-9_gallery_2.jpg",
+      "images/produtos/kids-9_gallery_3.jpg",
+      "images/produtos/kids-9_gallery_4.jpg",
+      "images/produtos/kids-9_gallery_5.jpg",
+      "images/produtos/kids-9_gallery_6.jpg",
+      "images/produtos/kids-9_gallery_7.jpg",
+      "images/produtos/kids-9_gallery_8.jpg"
     ],
     "url": "kids.html"
   },
@@ -1515,7 +1526,9 @@ const window_products = {
     "image": "images/produtos/kids-10_main.jpg",
     "gallery": [
       "images/produtos/kids-10_main.jpg",
-      "images/produtos/kids-10_gallery_1.jpg"
+      "images/produtos/kids-10_gallery_1.jpg",
+      "images/produtos/kids-10_gallery_2.jpg",
+      "images/produtos/kids-10_gallery_3.jpg"
     ],
     "url": "kids.html"
   },
