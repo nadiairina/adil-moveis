@@ -817,7 +817,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Simples[+0.00]|Com 4 gavetas[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Cama-Casal-Madrid.webp",
+    "gallery": [
+      "images/produtos/Cama-Casal-Madrid.webp",
+      "images/produtos/Cama-Casal-Madrid-4.webp"
+    ]
   },
   "quartos-42": {
     "id": "quartos-42",
@@ -830,7 +834,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L555 x A470 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/9.webp",
+    "gallery": [
+      "images/produtos/9.webp",
+      "images/produtos/7.webp"
+    ]
   },
   "quartos-43": {
     "id": "quartos-43",
@@ -843,7 +851,14 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1020 x A860 x P450[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Comoda-Madrid-1.webp",
+    "gallery": [
+      "images/produtos/Comoda-Madrid-1.webp",
+      "images/produtos/Comoda-Madrid-2.webp",
+      "images/produtos/Comoda-Madrid-3.webp",
+      "images/produtos/Comoda-Madrid-4.webp",
+      "images/produtos/Comoda-Madrid-Ambiente.webp"
+    ]
   },
   "quartos-44": {
     "id": "quartos-44",
@@ -856,7 +871,13 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L635 x A1060 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Camiseiro-Madrid-Frente.webp",
+    "gallery": [
+      "images/produtos/Camiseiro-Madrid-Frente.webp",
+      "images/produtos/Camiseiro-Madrid-Lateral.webp",
+      "images/produtos/Camiseiro-Madrid-Aberto.webp",
+      "images/produtos/Camiseiro-Madrid-Ambiente.webp"
+    ]
   },
   "quartos-45": {
     "id": "quartos-45",
@@ -869,7 +890,10 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A820 x P355[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/movel-hall-madrid-branco.png",
+    "gallery": [
+      "images/produtos/movel-hall-madrid-branco.png"
+    ]
   },
   "quartos-46": {
     "id": "quartos-46",
@@ -882,7 +906,13 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1100 x A905 x P355[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Sapateira-Madrid-1.webp",
+    "gallery": [
+      "images/produtos/Sapateira-Madrid-1.webp",
+      "images/produtos/Sapateira-Madrid-2.webp",
+      "images/produtos/Sapateira-Madrid-2-1.webp",
+      "images/produtos/Sapateira-Madrid-4.webp"
+    ]
   },
   "quartos-47": {
     "id": "quartos-47",
@@ -895,7 +925,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L955 x A1800 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/elemento-de-prateleiras-madrid-branco.jpg",
+    "gallery": [
+      "images/produtos/elemento-de-prateleiras-madrid-branco.jpg",
+      "images/produtos/elemento-de-prateleiras-madrid-branco-1.jpg"
+    ]
   },
   "quartos-48": {
     "id": "quartos-48",
