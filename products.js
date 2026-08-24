@@ -713,7 +713,6 @@ const window_products = {
     "gallery": [
       "images/produtos/cama-natura-1200x1200.png",
       "images/produtos/cama-1200x1200.png",
-      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200-1.webp",
       "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
     ]
   },
@@ -731,7 +730,8 @@ const window_products = {
     "image": "images/produtos/mesa-cabeceira-natura-1200x1200.png",
     "gallery": [
       "images/produtos/mesa-cabeceira-natura-1200x1200.png",
-      "images/produtos/mesa-cabeceira-cinza-1-1200x1200.png"
+      "images/produtos/mesa-cabeceira-cinza-1-1200x1200.png",
+      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
     ]
   },
   "quartos-37": {
