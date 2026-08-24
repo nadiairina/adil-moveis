@@ -709,9 +709,9 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1570 x A1100 x P2092[+0.00]",
-    "image": "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3.png",
+    "image": "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3-aproximada.png",
     "gallery": [
-      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3-aproximada.png",
       "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-1.png",
       "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-2.png"
     ],
