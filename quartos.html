@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', function() {
           else if (nameLower.includes('estrado')) dataCategory = 'estrados';
 
           html += `
-            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block border border-[#E8E3DC] hover:shadow-md transition-shadow relative" data-category="${dataCategory}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${dataCategory}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
               <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
                 <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" />
               </div>

@@ -2,25 +2,21 @@
 
 <html lang="pt">
 <head>
-  <script src="maintenance.js"></script>
+<script src="maintenance.js"></script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <title>KIDS - Adil Móveis</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital@1&amp;display=swap" rel="stylesheet"/>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-
-
-
 <script src="https://unpkg.com/feather-icons"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 <link href="images/logo_sem_fundo.png" rel="icon" type="image/png"/>
-
-  <!-- Open Graph / WhatsApp Social Sharing Meta Tags -->
-  <meta property="og:title" content="Adil Móveis - Mobiliário & Decoração no Feijó, Almada" />
-  <meta property="og:description" content="Mobiliário de qualidade para a sua casa. Quartos, Salas, Colchões, Linha Kids e Packs Promocionais com entrega e montagem grátis a 50km." />
-  <meta property="og:image" content="images/logo_sem_fundo.png" />
-  <meta property="og:type" content="website" />
+<!-- Open Graph / WhatsApp Social Sharing Meta Tags -->
+<meta content="Adil Móveis - Mobiliário &amp; Decoração no Feijó, Almada" property="og:title"/>
+<meta content="Mobiliário de qualidade para a sua casa. Quartos, Salas, Colchões, Linha Kids e Packs Promocionais com entrega e montagem grátis a 50km." property="og:description"/>
+<meta content="images/logo_sem_fundo.png" property="og:image"/>
+<meta content="website" property="og:type"/>
 </head>
 <body>
 <!-- Global Promo Banner -->
@@ -41,12 +37,12 @@
 <div class="container mx-auto px-4 lg:px-8">
 <div class="flex items-center justify-between relative" style="height:86px;">
 <!-- Logo -->
-        <a href="index.html" class="flex-shrink-0 flex items-center" style="margin-left:4px;">
-          <div style="width:76px;height:76px;border-radius:50%;background:#ffffff;border:1px solid #E8E3DC;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-            <img src="images/logo_sem_fundo.png" alt="Adil Móveis" style="width:82%;height:auto;object-fit:contain;"/>
-          </div>
-        </a>
-        <!-- Desktop Menu (Centered) -->
+<a class="flex-shrink-0 flex items-center" href="index.html" style="margin-left:4px;">
+<div style="width:76px;height:76px;border-radius:50%;background:#ffffff;border:1px solid #E8E3DC;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+<img alt="Adil Móveis" src="images/logo_sem_fundo.png" style="width:82%;height:auto;object-fit:contain;"/>
+</div>
+</a>
+<!-- Desktop Menu (Centered) -->
 <nav class="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 px-2" id="desktop-nav" style="z-index:10;">
 <a class="nav-link" data-page="index.html" href="index.html">INÍCIO</a>
 <a class="nav-link" data-page="quartos.html" href="quartos.html">QUARTOS</a>
@@ -58,60 +54,59 @@
 <div class="flex items-center gap-4">
 <a class="hidden sm:inline-block" href="packs.html" onmouseout="this.style.background='#EBF2F7';this.style.transform='translateY(0)';" onmouseover="this.style.background='#D6E4F0';this.style.transform='translateY(-2px)';" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.2em;color:#1E3A8A;background:#EBF2F7;border:2px solid #1E3A8A;padding:7px 20px;transition:all 0.3s;border-radius:30px;text-decoration:none;box-shadow:0 4px 15px rgba(30,58,138,0.1);">PACKS ESPECIAIS</a>
 <a class="hidden lg:inline-block" href="contactos.html" onmouseout="this.style.background='transparent';this.style.color='#1a1a1a';" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;background:transparent;color:#1a1a1a;border:2px solid #C8B598;padding:7px 18px;transition:all 0.3s;border-radius:20px;text-decoration:none;">AGENDAR VISITA</a>
-
 <button onclick="openSearchModal()" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;margin-right:2px;" title="Pesquisar">
-            <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          </button>
-          <button class="ml-1" id="menuButton" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+</button>
+<button class="ml-1" id="menuButton" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;">
 <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
 </button>
 </div>
 </div>
 </div>
 <!-- Mobile Menu Overlay -->
-    <div class="fixed inset-0 z-50 hidden" id="menuOverlay" style="background:rgba(0,0,0,0.45);">
-      <div class="absolute top-0 right-0 h-full flex flex-col" id="menuSidebar" style="width:320px;max-width:88vw;background:#FDFCFA;transform:translateX(100%);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1);box-shadow:-4px 0 30px rgba(0,0,0,0.12);border-left:1px solid #E8E3DC;">
-        <!-- Sidebar Header -->
-        <div style="padding:1.5rem;border-bottom:1px solid #E8E3DC;display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#6b6b6b;">MENU</span>
-          <button id="closeMenuBtn" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;">
-            <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
-          </button>
-        </div>
-        <!-- Links -->
-        <div style="flex:1;overflow-y:auto;padding:2rem 1.5rem;">
-          <p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">Loja</p>
-          <nav style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
-            <a href="quartos.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Quartos</a>
-            <a href="salas.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Salas</a>
-            <a href="colchoes.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Colchões</a>
-            <a href="kids.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Kids</a>
-            <a href="packs.html" onmouseout="this.style.background='transparent';this.style.color='#C8B598';" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" style="font-size:1rem;color:#C8B598;font-weight:700;text-decoration:none;padding:10px 15px;border:2px solid #C8B598;border-radius:25px;display:inline-block;margin-top:10px;text-align:center;transition:all 0.3s;">✦ Packs Especiais</a>
-          </nav>
-          <p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;padding-top:1.5rem;border-top:1px solid #E8E3DC;">Empresa & Apoio</p>
-          <nav style="display:flex;flex-direction:column;gap:0.85rem;">
-            <a href="empresa.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">A Nossa História</a>
-            <a href="catalogos.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Catálogos PDF</a>
-            <a href="testemunhos.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Testemunhos</a>
-            <a href="faq.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Perguntas Frequentes</a>
-            <a href="envios.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Envios e Devoluções</a>
-            <a href="contactos.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Contactos & Lojas</a>
-          </nav>
-        </div>
-        <!-- Sidebar Footer -->
-        <div style="padding:1.5rem;background:#F5F0E8;border-top:1px solid #E8E3DC;">
-          <a href="contactos.html" onmouseout="this.style.background='#C8B598'" onmouseover="this.style.background='#b09e85'" style="display:flex;align-items:center;justify-content:center;width:100%;padding:0.85rem;margin-bottom:0.75rem;background:#C8B598;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;">
+<div class="fixed inset-0 z-50 hidden" id="menuOverlay" style="background:rgba(0,0,0,0.45);">
+<div class="absolute top-0 right-0 h-full flex flex-col" id="menuSidebar" style="width:320px;max-width:88vw;background:#FDFCFA;transform:translateX(100%);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1);box-shadow:-4px 0 30px rgba(0,0,0,0.12);border-left:1px solid #E8E3DC;">
+<!-- Sidebar Header -->
+<div style="padding:1.5rem;border-bottom:1px solid #E8E3DC;display:flex;justify-content:space-between;align-items:center;">
+<span style="font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#6b6b6b;">MENU</span>
+<button id="closeMenuBtn" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+</button>
+</div>
+<!-- Links -->
+<div style="flex:1;overflow-y:auto;padding:2rem 1.5rem;">
+<p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">Loja</p>
+<nav style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
+<a href="quartos.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Quartos</a>
+<a href="salas.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Salas</a>
+<a href="colchoes.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Colchões</a>
+<a href="kids.html" onmouseout="this.style.color='#1a1a1a'" onmouseover="this.style.color='#C8B598'" style="font-size:1rem;font-weight:400;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em;transition:color 0.2s;">Kids</a>
+<a href="packs.html" onmouseout="this.style.background='transparent';this.style.color='#C8B598';" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" style="font-size:1rem;color:#C8B598;font-weight:700;text-decoration:none;padding:10px 15px;border:2px solid #C8B598;border-radius:25px;display:inline-block;margin-top:10px;text-align:center;transition:all 0.3s;">✦ Packs Especiais</a>
+</nav>
+<p style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;padding-top:1.5rem;border-top:1px solid #E8E3DC;">Empresa &amp; Apoio</p>
+<nav style="display:flex;flex-direction:column;gap:0.85rem;">
+<a href="empresa.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">A Nossa História</a>
+<a href="catalogos.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Catálogos PDF</a>
+<a href="testemunhos.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Testemunhos</a>
+<a href="faq.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Perguntas Frequentes</a>
+<a href="envios.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Envios e Devoluções</a>
+<a href="contactos.html" onmouseout="this.style.color='#6b6b6b'" onmouseover="this.style.color='#1a1a1a'" style="font-size:0.85rem;color:#6b6b6b;text-decoration:none;transition:color 0.2s;">Contactos &amp; Lojas</a>
+</nav>
+</div>
+<!-- Sidebar Footer -->
+<div style="padding:1.5rem;background:#F5F0E8;border-top:1px solid #E8E3DC;">
+<a href="contactos.html" onmouseout="this.style.background='#C8B598'" onmouseover="this.style.background='#b09e85'" style="display:flex;align-items:center;justify-content:center;width:100%;padding:0.85rem;margin-bottom:0.75rem;background:#C8B598;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;">
             Agendar Visita à Loja
           </a>
-          <a href="tel:212582788" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.9rem;font-weight:700;color:#1a1a1a;text-decoration:none;margin-bottom:0.5rem;">
+<a href="tel:212582788" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.9rem;font-weight:700;color:#1a1a1a;text-decoration:none;margin-bottom:0.5rem;">
             📞 212 582 788
           </a>
-          <a href="https://wa.me/351960209396" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.8rem;color:#25d366;text-decoration:none;" target="_blank">
+<a href="https://wa.me/351960209396" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.8rem;color:#25d366;text-decoration:none;" target="_blank">
             💬 960 209 396
           </a>
-        </div>
-      </div>
-    </div>
+</div>
+</div>
+</div>
 <!-- Script for menu & active nav link -->
 <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -151,115 +146,245 @@
 </header>
 <!-- Minimalist Split-Screen Page Header -->
 <section style="display:flex; min-height:38vh; flex-wrap:wrap; background:#FDFCFA; position:relative;">
-  <!-- Left Side: Content -->
-  <div style="flex:1 1 50%; display:flex; flex-direction:column; justify-content:center; padding:3.5rem 6%; min-width:320px; z-index:2;">
-    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:#1a1a1a;line-height:1.15;margin-bottom:1rem;">
+<!-- Left Side: Content -->
+<div style="flex:1 1 50%; display:flex; flex-direction:column; justify-content:center; padding:3.5rem 6%; min-width:320px; z-index:2;">
+<h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:#1a1a1a;line-height:1.15;margin-bottom:1rem;">
       Kids
     </h1>
-    <p style="font-size:clamp(0.9rem,1.5vw,1.1rem);color:#6b6b6b;font-weight:300;max-width:580px;line-height:1.7;margin:0;">Mobiliário juvenil versátil e moderno. Soluções de arrumação, estudo e descanso concebidas para o crescimento e conforto dos mais novos.</p>
-  </div>
-  <!-- Right Side: Clean #F3EEE4 Cover Area -->
-  <div style="flex:1 1 50%; position:relative; min-height:30vh; min-width:320px; background:#F3EEE4; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0; text-align:center; overflow:hidden;">
-  <img src="images/produtos/kids_header.jpg" alt="Kids" style="position:absolute; width:100%; height:100%; object-fit:cover; object-position:center;" />
+<p style="font-size:clamp(0.9rem,1.5vw,1.1rem);color:#6b6b6b;font-weight:300;max-width:580px;line-height:1.7;margin:0;">Mobiliário juvenil versátil e moderno. Soluções de arrumação, estudo e descanso concebidas para o crescimento e conforto dos mais novos.</p>
+</div>
+<!-- Right Side: Clean #F3EEE4 Cover Area -->
+<div style="flex:1 1 50%; position:relative; min-height:30vh; min-width:320px; background:#F3EEE4; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0; text-align:center; overflow:hidden;">
+<img alt="Kids" src="images/produtos/kids_header.jpg" style="position:absolute; width:100%; height:100%; object-fit:cover; object-position:center;"/>
 </div>
 </section>
 <hr style="border:none; border-top:1px solid #E8E3DC; margin:0;"/>
-
 <!-- ── Product Grid Section (6 Kids Boxes, No Filters) ── -->
 <section style="background:#ffffff; padding:5rem 0;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 1.5rem;">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="products-grid">
-      <a href="produto-detalhe.html?id=kids-1" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="camas" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-1_main.jpg" alt="Cama Estúdio Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">CAMA ESTÚDIO PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-2" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="camas" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-2_main.jpg" alt="Cama Elevatória Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">CAMA ELEVATÓRIA PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-4" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="beliches" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-4_main.jpg" alt="Beliche Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">BELICHE PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-8" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="secretarias" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-8_main.jpg" alt="Secretária Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">SECRETÁRIA PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-9" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="roupeiros" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-9_main.jpg" alt="Roupeiro Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">ROUPEIRO PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-7" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="camiseiros" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-7_main.jpg" alt="Camiseiro Alto Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">CAMISEIRO ALTO PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-6" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="comodas" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-6_main.jpg" alt="Cómoda Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">CÓMODA PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-5" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="mesas" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-5_main.jpg" alt="Mesa de Cabeceira Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">MESA DE CABECEIRA PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-10" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="estantes" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-10_main.jpg" alt="Elemento Prateleiras Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">ELEMENTO PRATELEIRAS PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-      <a href="produto-detalhe.html?id=kids-11" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="estantes" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="images/produtos/kids-11_main.jpg" alt="Estante TV Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="padding:12px;" />
-        </div>
-        <div style="padding: 1rem 1.5rem 1.5rem;">
-          <p style="font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#1a1a1a; margin:0 0 6px;">ESTANTE TV PLAY</p>
-          <p style="font-family:'Inter',sans-serif; font-size:13px; color:#C8B598; font-weight:500; margin:0;">Preço Sob Consulta</p>
-        </div>
-      </a>
-    </div></section>
+<div style="max-width:1280px; margin:0 auto; padding:0 1.5rem;">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="products-grid">
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="camas" href="produto-detalhe.html?id=kids-1" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Cama Estúdio Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-1_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Cama Estúdio Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="camas" href="produto-detalhe.html?id=kids-2" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Cama Elevatória Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-2_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Cama Elevatória Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="beliches" href="produto-detalhe.html?id=kids-4" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Beliche Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-4_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Beliche Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="secretarias" href="produto-detalhe.html?id=kids-8" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Secretária Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-8_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Secretária Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="roupeiros" href="produto-detalhe.html?id=kids-9" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Roupeiro Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-9_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Roupeiro Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="camiseiros" href="produto-detalhe.html?id=kids-7" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Camiseiro Alto Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-7_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Camiseiro Alto Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="comodas" href="produto-detalhe.html?id=kids-6" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Cómoda Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-6_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Cómoda Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="mesas" href="produto-detalhe.html?id=kids-5" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Mesa de Cabeceira Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-5_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Mesa de Cabeceira Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="estantes" href="produto-detalhe.html?id=kids-10" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Elemento Prateleiras Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-10_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Elemento Prateleiras Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="estantes" href="produto-detalhe.html?id=kids-11" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Estante TV Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-11_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Estante TV Play</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+</div><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="products-grid">
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="camas" href="produto-detalhe.html?id=kids-1" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Cama Estúdio Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-1_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">CAMA ESTÚDIO PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="camas" href="produto-detalhe.html?id=kids-2" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Cama Elevatória Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-2_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">CAMA ELEVATÓRIA PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="beliches" href="produto-detalhe.html?id=kids-4" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Beliche Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-4_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BELICHE PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="secretarias" href="produto-detalhe.html?id=kids-8" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Secretária Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-8_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">SECRETÁRIA PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="roupeiros" href="produto-detalhe.html?id=kids-9" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Roupeiro Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-9_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">ROUPEIRO PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="camiseiros" href="produto-detalhe.html?id=kids-7" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Camiseiro Alto Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-7_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">CAMISEIRO ALTO PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="comodas" href="produto-detalhe.html?id=kids-6" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Cómoda Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-6_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">CÓMODA PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="mesas" href="produto-detalhe.html?id=kids-5" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Mesa de Cabeceira Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-5_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">MESA DE CABECEIRA PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="estantes" href="produto-detalhe.html?id=kids-10" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Elemento Prateleiras Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-10_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">ELEMENTO PRATELEIRAS PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+<a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-aos="fade-up" data-category="estantes" href="produto-detalhe.html?id=kids-11" style="text-decoration:none; color:inherit;">
+<div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+<img alt="Estante TV Play" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" src="images/produtos/kids-11_main.jpg" style="mix-blend-mode: darken;"/>
+</div>
+<div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+<h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">ESTANTE TV PLAY</h3>
+<p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+<span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+</p>
+</div>
+</a>
+</div></div></section>
 <section style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
 <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
 <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:1rem;">OFERTA EXCLUSIVA</p>
@@ -276,60 +401,51 @@
 </div>
 </section>
 <footer class="bg-black text-white py-8" style="font-family:'Inter',sans-serif; border-top:1px solid #1a1a1a;">
-  <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
-    <!-- Main row: logo/contacts on left, clean horizontal menu on right -->
-    <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #222;">
-      
-      <!-- Left side: logo and contacts -->
-      <div style="display:flex; align-items:center; gap:1.25rem;">
-        
-        <div>
-          <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:600; color:#ffffff; margin:0 0 2px 0;">Adil Móveis</h3>
-          <p style="font-size:10px; color:#aaa; margin:0;">Loja no Feijó, Almada</p>
-        </div>
-      </div>
-      
-      <!-- Middle: Contacts -->
-      <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:11px; color:#aaa;">
-        <a href="tel:212582788" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">📞 212 582 788</a>
-        <a href="https://wa.me/351960209396" target="_blank" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='#aaa'">💬 960 209 396</a>
-        <a href="mailto:adil.moveis@hotmail.com" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">✉️ adil.moveis@hotmail.com</a>
-      </div>
-
-      <!-- Right side: Socials -->
-      <div style="display:flex; gap:1rem;">
-        <a href="https://www.facebook.com/p/Adil-M%C3%B3veis-100063641348118/" target="_blank" style="color:#aaa; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-        </a>
-        <a href="https://www.instagram.com/adilmoveis/" target="_blank" style="color:#aaa; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Bottom row: horizontal navigation and copyright -->
-    <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:11px; color:#666;">
-      
-      <!-- Horizontal links -->
-      <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;">
-        <a href="index.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Início</a>
-        <a href="quartos.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Quartos</a>
-        <a href="colchoes.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Colchões</a>
-        <a href="salas.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Salas</a>
-        <a href="kids.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Kids</a>
-        <a href="contactos.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Contactos</a>
-      </div>
-      
-      <!-- Copyright -->
-      <div style="text-align:right;">
-        &copy; 2026 Adil Móveis. Todos os direitos reservados.
+<div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+<!-- Main row: logo/contacts on left, clean horizontal menu on right -->
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #222;">
+<!-- Left side: logo and contacts -->
+<div style="display:flex; align-items:center; gap:1.25rem;">
+<div>
+<h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:600; color:#ffffff; margin:0 0 2px 0;">Adil Móveis</h3>
+<p style="font-size:10px; color:#aaa; margin:0;">Loja no Feijó, Almada</p>
+</div>
+</div>
+<!-- Middle: Contacts -->
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:11px; color:#aaa;">
+<a href="tel:212582788" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:inherit; text-decoration:none; transition:color 0.2s;">📞 212 582 788</a>
+<a href="https://wa.me/351960209396" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#25D366'" style="color:inherit; text-decoration:none; transition:color 0.2s;" target="_blank">💬 960 209 396</a>
+<a href="mailto:adil.moveis@hotmail.com" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:inherit; text-decoration:none; transition:color 0.2s;">✉️ adil.moveis@hotmail.com</a>
+</div>
+<!-- Right side: Socials -->
+<div style="display:flex; gap:1rem;">
+<a href="https://www.facebook.com/p/Adil-M%C3%B3veis-100063641348118/" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; transition:color 0.2s;" target="_blank">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+</a>
+<a href="https://www.instagram.com/adilmoveis/" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; transition:color 0.2s;" target="_blank">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+</div>
+</div>
+<!-- Bottom row: horizontal navigation and copyright -->
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:11px; color:#666;">
+<!-- Horizontal links -->
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;">
+<a href="index.html" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; text-decoration:none; transition:color 0.2s;">Início</a>
+<a href="quartos.html" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; text-decoration:none; transition:color 0.2s;">Quartos</a>
+<a href="colchoes.html" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; text-decoration:none; transition:color 0.2s;">Colchões</a>
+<a href="salas.html" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; text-decoration:none; transition:color 0.2s;">Salas</a>
+<a href="kids.html" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; text-decoration:none; transition:color 0.2s;">Kids</a>
+<a href="contactos.html" onmouseout="this.style.color='#aaa'" onmouseover="this.style.color='#fff'" style="color:#aaa; text-decoration:none; transition:color 0.2s;">Contactos</a>
+</div>
+<!-- Copyright -->
+<div style="text-align:right;">
+        © 2026 Adil Móveis. Todos os direitos reservados.
         <span style="margin:0 6px;">·</span>
-        Desenvolvido por <a href="https://nadiairina.github.io/Nadia-Portfolio/" target="_blank" style="color:#aaa; text-decoration:underline;">Nadia Irina</a>
-      </div>
-
-    </div>
-  </div>
+        Desenvolvido por <a href="https://nadiairina.github.io/Nadia-Portfolio/" style="color:#aaa; text-decoration:underline;" target="_blank">Nadia Irina</a>
+</div>
+</div>
+</div>
 </footer>
 <!-- Gallery Modal -->
 <div class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center" id="galleryModal">
@@ -550,8 +666,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <!-- Snipcart Configuration -->
-
-
 <!-- WhatsApp Floating Button -->
 <!-- Floating Contact Widget (Adil Móveis Premium) -->
 <div class="floating-contact-bar">
@@ -578,26 +692,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     </script>
-</header>
 
-
-      <!-- Quick Search Bar Modal -->
-  <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
-    <div class="max-w-xl mx-auto mt-24 px-4">
-      <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
-        <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
-          <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
-          <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
-        </div>
-        <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
-          <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
-        </form>
-        <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
-      </div>
-    </div>
-  </div>
+<!-- Quick Search Bar Modal -->
+<div class="fixed inset-0 z-50 hidden" id="searchModal" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
+<div class="max-w-xl mx-auto mt-24 px-4">
+<div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
+<div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
+<span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
+<button class="text-gray-400 hover:text-black text-xl font-bold ml-2" onclick="closeSearchModal()">×</button>
+</div>
+<form class="flex items-center gap-3" onsubmit="handleGlobalSearch(event)">
+<svg fill="none" height="20" stroke="#C8B598" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+<input autofocus="" class="w-full text-sm outline-none text-[#1a1a1a] py-2" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." type="text"/>
+<button style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;" type="submit">Pesquisar</button>
+</form>
+<p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
+</div>
+</div>
+</div>
 <script>
   function openSearchModal() {
     const m = document.getElementById('searchModal');
@@ -623,5 +735,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 </body>
-
 </html>
