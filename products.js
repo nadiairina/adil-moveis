@@ -1421,7 +1421,10 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L2200[+0.00]|L2700[+0.00]|L2800[+0.00]|L2900[+0.00]|L3100[+0.00]",
-    "image": "images/logo_sem_fundo.png",
+    "image": "images/produtos/cabeceira-estofada-jones-claterais-x150-1.jpg",
+    "gallery": [
+      "images/produtos/cabeceira-estofada-jones-claterais-x150-1.jpg"
+    ],
     "gallery": [],
     "subcategory": "Cabeceiras"
   },
