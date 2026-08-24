@@ -698,6 +698,110 @@ const window_products = {
     ],
     "subcategory": "Cómodas"
   },
+  "quartos-58": {
+    "id": "quartos-58",
+    "name": "Cama Chiado",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama casal com estrado incluído. L1570 x A1100 x P2092.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1570 x A1100 x P2092[+0.00]",
+    "image": "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150.png",
+    "gallery": [
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-1.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-2.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3.png"
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-70": {
+    "id": "quartos-70",
+    "name": "Cama Estofada Alison",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama estofada elevatória. Tecido personalizável. L1540/1640/1740/1940 x A1340 x P2150.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1540[+0.00]|L1640[+0.00]|L1740[+0.00]|L1940[+0.00]",
+    "image": "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
+    "gallery": [
+      "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
+      "images/produtos/cama-estofada-alison-bege-200x150-3.jpg"
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-71": {
+    "id": "quartos-71",
+    "name": "Cama Estofada Gala",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama estofada. Tecido personalizável. L1540/1560/1660/1760/1960 x A1460 x P2150.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1540[+0.00]|L1560[+0.00]|L1660[+0.00]|L1760[+0.00]|L1960[+0.00]",
+    "image": "images/produtos/cama-estofada-alison-bege-200x150.jpg",
+    "subcategory": "Camas"
+  },
+  "quartos-72": {
+    "id": "quartos-72",
+    "name": "Cama Estofada Melissa",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama estofada. Tecido personalizável. L1480/1580/1680/1880 x A1400 x P2110.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
+    "image": "images/produtos/melissa_cama_ambiente.jpg",
+    "gallery": [
+      "images/produtos/melissa_cama_ambiente.jpg"
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-73": {
+    "id": "quartos-73",
+    "name": "Cama Estofada Sophie",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama estofada. Tecido personalizável. L1470/1570/1670/1870 x A1360 x P2120.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1470[+0.00]|L1570[+0.00]|L1670[+0.00]|L1870[+0.00]",
+    "image": "images/produtos/sophie_cama_ambiente.jpg",
+    "gallery": [
+      "images/produtos/sophie_cama_ambiente.jpg"
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-41": {
+    "id": "quartos-41",
+    "name": "Cama Madrid",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama casal com estrado incluído. L1610 x A1100 x P2090.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco Mate - Stone[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "Simples[+0.00]|Com 4 gavetas[+0.00]",
+    "image": "images/produtos/Cama-Casal-Madrid.webp",
+    "gallery": [
+      "images/produtos/Cama-Casal-Madrid.webp",
+      "images/produtos/Cama-Casal-Madrid-4.webp"
+    ],
+    "subcategory": "Camas"
+  },
   "quartos-35": {
     "id": "quartos-35",
     "name": "Cama Málaga",
@@ -714,7 +818,193 @@ const window_products = {
       "images/produtos/cama-natura-1200x1200.png",
       "images/produtos/cama-1200x1200.png",
       "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
-    ]
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-48": {
+    "id": "quartos-48",
+    "name": "Cama Paris",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama casal com estrado incluído.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1460 x A1050 x P2050[+0.00]|L1560 x A1050 x P2050[+0.00]",
+    "image": "images/produtos/Cama-Casal-Paris-Carvalho-Natura.webp",
+    "gallery": [
+      "images/produtos/Cama-Casal-Paris-Carvalho-Natura.webp",
+      "images/produtos/Cama-Casal-Paris-Carvalho-Cinza.webp"
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-64": {
+    "id": "quartos-64",
+    "name": "Cama Viena",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cama casal com estrado incluído e iluminação LED na cabeceira.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1580 x A1100 x P2110[+0.00]",
+    "image": "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
+    "gallery": [
+      "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
+      "images/produtos/Cama-Casal-Viena-Cinza-Lado.webp"
+    ],
+    "subcategory": "Camas"
+  },
+  "quartos-78": {
+    "id": "quartos-78",
+    "name": "Cabeceira Gomo",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cabeceira estofada. Tecido personalizável.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L950[+0.00]|L1150[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
+    "image": "images/produtos/gomo-estofada.png",
+    "gallery": [
+      "images/produtos/gomo-estofada.png",
+      "images/produtos/gomo-estofada-1.png",
+      "images/produtos/gomo-1200x1200.png",
+      "images/produtos/quarto-cabeceira-gomo-1200x1200.webp"
+    ],
+    "subcategory": "Cabeceiras"
+  },
+  "quartos-75": {
+    "id": "quartos-75",
+    "name": "Cabeceira Jones com laterais",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cabeceira estofada com laterais. Tecido personalizável. L2200/2700/2800/2900/3100 x A1200 x P140.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L2200[+0.00]|L2700[+0.00]|L2800[+0.00]|L2900[+0.00]|L3100[+0.00]",
+    "image": "images/produtos/cabeceira-estofada-jones-claterais-x150-1.jpg",
+    "gallery": [],
+    "subcategory": "Cabeceiras"
+  },
+  "quartos-74": {
+    "id": "quartos-74",
+    "name": "Cabeceira Jones sem laterais",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cabeceira estofada. Tecido personalizável. L980/1480/1580/1680/1880 x A1200 x P140.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L980[+0.00]|L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
+    "image": "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg",
+    "gallery": [
+      "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg"
+    ],
+    "subcategory": "Cabeceiras"
+  },
+  "quartos-79": {
+    "id": "quartos-79",
+    "name": "Cabeceira Kristal",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cabeceira estofada. Tecido personalizável.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
+    "image": "images/produtos/kristal-1200x1200.png",
+    "gallery": [
+      "images/produtos/kristal-1200x1200.png",
+      "images/produtos/kristal-1200x1200-1.png",
+      "images/produtos/kristal-cabeceira-1200x1200.webp",
+      "images/produtos/kristal-cabeceira-2048x2048.webp",
+      "images/produtos/cabeceira-kristal-sleep-1200x1200.webp",
+      "images/produtos/cabeceira-kristal-sleep-2048x2048.webp"
+    ],
+    "subcategory": "Cabeceiras"
+  },
+  "quartos-77": {
+    "id": "quartos-77",
+    "name": "Cabeceira Luxe",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cabeceira estofada. Tecido personalizável.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
+    "image": "images/produtos/LUXE.jpg",
+    "gallery": [
+      "images/produtos/LUXE.jpg",
+      "images/produtos/LUXE_AMBIENTE.jpg",
+      "images/produtos/Cabeceira-Luxe-cinza.webp",
+      "images/produtos/Cabeceira-Luxe-Preto.webp",
+      "images/produtos/Cabeceira-Luxe-Beje.webp"
+    ],
+    "subcategory": "Cabeceiras"
+  },
+  "quartos-76": {
+    "id": "quartos-76",
+    "name": "Cabeceira Myra",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cabeceira estofada. Tecido personalizável. L950/1450/1550/1650/1850 x A1220 x P100.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
+    "image": "images/produtos/myra.png",
+    "gallery": [
+      "images/produtos/myra.png",
+      "images/produtos/myra_amb-1200x1200.webp"
+    ],
+    "subcategory": "Cabeceiras"
+  },
+  "quartos-59": {
+    "id": "quartos-59",
+    "name": "Mesa Cabeceira Chiado",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Mesa de cabeceira 2 gavetas. L575 x A460 x P400.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L575 x A460 x P400[+0.00]",
+    "image": "images/produtos/5.webp",
+    "gallery": [
+      "images/produtos/5.webp",
+      "images/produtos/6.webp"
+    ],
+    "subcategory": "Mesas de Cabeceira"
+  },
+  "quartos-42": {
+    "id": "quartos-42",
+    "name": "Mesa Cabeceira Madrid",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Mesa de cabeceira 2 gavetas. L555 x A470 x P400.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco Mate - Stone[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L555 x A470 x P400[+0.00]",
+    "image": "images/produtos/9.webp",
+    "gallery": [
+      "images/produtos/9.webp",
+      "images/produtos/7.webp"
+    ],
+    "subcategory": "Mesas de Cabeceira"
   },
   "quartos-36": {
     "id": "quartos-36",
@@ -732,113 +1022,62 @@ const window_products = {
       "images/produtos/mesa-cabeceira-natura-1200x1200.png",
       "images/produtos/mesa-cabeceira-cinza-1-1200x1200.png",
       "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
-    ]
+    ],
+    "subcategory": "Mesas de Cabeceira"
   },
-  "quartos-38": {
-    "id": "quartos-38",
-    "name": "Cómoda Málaga",
+  "quartos-49": {
+    "id": "quartos-49",
+    "name": "Mesa Cabeceira Paris",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 3 gavetas. L1070 x A895 x P455.",
+    "description": "Mesa de cabeceira 2 gavetas. L605 x A460 x P350.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1070 x A895 x P455[+0.00]",
-    "image": "images/produtos/comoda-natura-1200x1200.png",
+    "custom2_options": "L605 x A460 x P350[+0.00]",
+    "image": "images/produtos/Mesa-de-Cabeceira-Paris-Natura.webp",
     "gallery": [
-      "images/produtos/comoda-natura-1200x1200.png",
-      "images/produtos/comoda-cinza-malaga-1200x1200.webp",
-      "images/produtos/comoda-cinza-1200x1200.png"
-    ]
+      "images/produtos/Mesa-de-Cabeceira-Paris-Natura.webp",
+      "images/produtos/Mesa-de-Cabeceira-Paris-Cinza.webp"
+    ],
+    "subcategory": "Mesas de Cabeceira"
   },
-  "quartos-37": {
-    "id": "quartos-37",
-    "name": "Camiseiro Málaga",
+  "quartos-65": {
+    "id": "quartos-65",
+    "name": "Mesa Cabeceira Viena",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Camiseiro 4 gavetas. L640 x A1225 x P405.",
+    "description": "Mesa de cabeceira 2 gavetas. L580 x A455 x P400.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L640 x A1225 x P405[+0.00]",
-    "image": "images/produtos/camiseiro-natura-1200x1200.webp",
+    "custom2_options": "L580 x A455 x P400[+0.00]",
+    "image": "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
     "gallery": [
-      "images/produtos/camiseiro-natura-1200x1200.webp",
-      "images/produtos/camiseiro-cinza-1200x1200.png",
-      "images/produtos/camiseiro-1200x1200.png"
-    ]
+      "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
+      "images/produtos/Mesa-Cabeceira-Viena-Cinza.webp"
+    ],
+    "subcategory": "Mesas de Cabeceira"
   },
-  "quartos-39": {
-    "id": "quartos-39",
-    "name": "Móvel Hall Málaga",
+  "quartos-60": {
+    "id": "quartos-60",
+    "name": "Cómoda Chiado",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Móvel hall. L1000 x A800 x P405.",
+    "description": "Cómoda 4 gavetas. L1015 x A850 x P450.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1000 x A800 x P405[+0.00]",
-    "image": "images/produtos/movel-hall-natura-1200x1200.png",
+    "custom2_options": "L1015 x A850 x P450[+0.00]",
+    "image": "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
     "gallery": [
-      "images/produtos/movel-hall-natura-1200x1200.png",
-      "images/produtos/movel-hall-1200x1200.png",
-      "images/produtos/movel-hall-1200x1200.webp"
-    ]
-  },
-  "quartos-40": {
-    "id": "quartos-40",
-    "name": "Elemento Prateleiras Málaga",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Elemento 4 prateleiras + 1 gaveta, estrutura metálica. L800 x A2000 x P395.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L800 x A2000 x P395[+0.00]",
-    "image": "images/produtos/estante-natura-1200x1200.png",
-    "gallery": [
-      "images/produtos/estante-natura-1200x1200.png",
-      "images/produtos/estante-cinza-1200x1200.png",
-      "images/produtos/elemento-prateleiras-toronto-cinza-1200x1200.webp"
-    ]
-  },
-  "quartos-41": {
-    "id": "quartos-41",
-    "name": "Cama Madrid",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama casal com estrado incluído. L1610 x A1100 x P2090.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Stone[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "Simples[+0.00]|Com 4 gavetas[+0.00]",
-    "image": "images/produtos/Cama-Casal-Madrid.webp",
-    "gallery": [
-      "images/produtos/Cama-Casal-Madrid.webp",
-      "images/produtos/Cama-Casal-Madrid-4.webp"
-    ]
-  },
-  "quartos-42": {
-    "id": "quartos-42",
-    "name": "Mesa Cabeceira Madrid",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L555 x A470 x P400.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Stone[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L555 x A470 x P400[+0.00]",
-    "image": "images/produtos/9.webp",
-    "gallery": [
-      "images/produtos/9.webp",
-      "images/produtos/7.webp"
-    ]
+      "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
+      "images/produtos/Comoda-Chiado-Branca.webp"
+    ],
+    "subcategory": "Cómodas"
   },
   "quartos-43": {
     "id": "quartos-43",
@@ -858,7 +1097,85 @@ const window_products = {
       "images/produtos/Comoda-Madrid-3.webp",
       "images/produtos/Comoda-Madrid-4.webp",
       "images/produtos/Comoda-Madrid-Ambiente.webp"
-    ]
+    ],
+    "subcategory": "Cómodas"
+  },
+  "quartos-38": {
+    "id": "quartos-38",
+    "name": "Cómoda Málaga",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cómoda 3 gavetas. L1070 x A895 x P455.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1070 x A895 x P455[+0.00]",
+    "image": "images/produtos/comoda-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/comoda-natura-1200x1200.png",
+      "images/produtos/comoda-cinza-malaga-1200x1200.webp",
+      "images/produtos/comoda-cinza-1200x1200.png"
+    ],
+    "subcategory": "Cómodas"
+  },
+  "quartos-50": {
+    "id": "quartos-50",
+    "name": "Cómoda Paris",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cómoda 4 gavetas. L1135 x A885 x P450. (Cinza disponível)",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1135 x A885 x P450[+0.00]",
+    "image": "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
+    "gallery": [
+      "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
+      "images/produtos/Comoda-Paris-Carvalho-Cinza.webp"
+    ],
+    "subcategory": "Cómodas"
+  },
+  "quartos-66": {
+    "id": "quartos-66",
+    "name": "Cómoda Viena",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Cómoda 4 gavetas. L1130 x A920 x P500.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1130 x A920 x P500[+0.00]",
+    "image": "images/produtos/comoda-viena-faia.png",
+    "gallery": [
+      "images/produtos/comoda-viena-faia.png",
+      "images/produtos/comoda-viena-faia.jpg",
+      "images/produtos/comoda-viena-faia-1.jpg",
+      "images/produtos/comoda-viena-cinzabranco.jpg",
+      "images/produtos/comoda-viena-cinzabranco-1.jpg",
+      "images/produtos/comoda-viena-cinzabranco-2.jpg"
+    ],
+    "subcategory": "Cómodas"
+  },
+  "quartos-61": {
+    "id": "quartos-61",
+    "name": "Camiseiro Chiado",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Camiseiro 5 gavetas. L575 x A1095 x P400.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L575 x A1095 x P400[+0.00]",
+    "image": "images/produtos/Camiseiro-Chiado-Branco.webp",
+    "gallery": [
+      "images/produtos/Camiseiro-Chiado-Branco.webp",
+      "images/produtos/Camiseiro-Chiado-Pinho-Mel.webp"
+    ],
+    "subcategory": "Camiseiros"
   },
   "quartos-44": {
     "id": "quartos-44",
@@ -877,7 +1194,100 @@ const window_products = {
       "images/produtos/Camiseiro-Madrid-Lateral.webp",
       "images/produtos/Camiseiro-Madrid-Aberto.webp",
       "images/produtos/Camiseiro-Madrid-Ambiente.webp"
-    ]
+    ],
+    "subcategory": "Camiseiros"
+  },
+  "quartos-37": {
+    "id": "quartos-37",
+    "name": "Camiseiro Málaga",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Camiseiro 4 gavetas. L640 x A1225 x P405.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L640 x A1225 x P405[+0.00]",
+    "image": "images/produtos/camiseiro-natura-1200x1200.webp",
+    "gallery": [
+      "images/produtos/camiseiro-natura-1200x1200.webp",
+      "images/produtos/camiseiro-cinza-1200x1200.png",
+      "images/produtos/camiseiro-1200x1200.png"
+    ],
+    "subcategory": "Camiseiros"
+  },
+  "quartos-51": {
+    "id": "quartos-51",
+    "name": "Camiseiro Paris",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Camiseiro 5 gavetas. L695 x A1125 x P400.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L695 x A1125 x P400[+0.00]",
+    "image": "images/produtos/Camiseiro-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Camiseiro-Paris-Natura.webp",
+      "images/produtos/Camiseiro-Paris-Cinza.webp"
+    ],
+    "subcategory": "Camiseiros"
+  },
+  "quartos-67": {
+    "id": "quartos-67",
+    "name": "Camiseiro Viena",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Camiseiro 5 gavetas. L650 x A1150 x P400.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L650 x A1150 x P400[+0.00]",
+    "image": "images/produtos/camiseiro-viena-jl738.jpg",
+    "gallery": [
+      "images/produtos/camiseiro-viena-jl738.jpg",
+      "images/produtos/camiseiro-viena-jl738-1.jpg"
+    ],
+    "subcategory": "Camiseiros"
+  },
+  "quartos-47": {
+    "id": "quartos-47",
+    "name": "Elemento Prateleiras Madrid",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Elemento prateleiras. L955 x A1800 x P350.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco Mate - Stone[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L955 x A1800 x P350[+0.00]",
+    "image": "images/produtos/elemento-de-prateleiras-madrid-branco.jpg",
+    "gallery": [
+      "images/produtos/elemento-de-prateleiras-madrid-branco.jpg",
+      "images/produtos/elemento-de-prateleiras-madrid-branco-1.jpg"
+    ],
+    "subcategory": "Outros"
+  },
+  "quartos-40": {
+    "id": "quartos-40",
+    "name": "Elemento Prateleiras Málaga",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Elemento 4 prateleiras + 1 gaveta, estrutura metálica. L800 x A2000 x P395.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L800 x A2000 x P395[+0.00]",
+    "image": "images/produtos/estante-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/estante-natura-1200x1200.png",
+      "images/produtos/estante-cinza-1200x1200.png",
+      "images/produtos/elemento-prateleiras-toronto-cinza-1200x1200.webp"
+    ],
+    "subcategory": "Outros"
   },
   "quartos-45": {
     "id": "quartos-45",
@@ -893,7 +1303,8 @@ const window_products = {
     "image": "images/produtos/movel-hall-madrid-branco.png",
     "gallery": [
       "images/produtos/movel-hall-madrid-branco.png"
-    ]
+    ],
+    "subcategory": "Outros"
   },
   "quartos-46": {
     "id": "quartos-46",
@@ -912,92 +1323,8 @@ const window_products = {
       "images/produtos/Sapateira-Madrid-2.webp",
       "images/produtos/Sapateira-Madrid-2-1.webp",
       "images/produtos/Sapateira-Madrid-4.webp"
-    ]
-  },
-  "quartos-47": {
-    "id": "quartos-47",
-    "name": "Elemento Prateleiras Madrid",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Elemento prateleiras. L955 x A1800 x P350.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Stone[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L955 x A1800 x P350[+0.00]",
-    "image": "images/produtos/elemento-de-prateleiras-madrid-branco.jpg",
-    "gallery": [
-      "images/produtos/elemento-de-prateleiras-madrid-branco.jpg",
-      "images/produtos/elemento-de-prateleiras-madrid-branco-1.jpg"
-    ]
-  },
-  "quartos-48": {
-    "id": "quartos-48",
-    "name": "Cama Paris",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama casal com estrado incluído.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1460 x A1050 x P2050[+0.00]|L1560 x A1050 x P2050[+0.00]",
-    "image": "images/produtos/Cama-Casal-Paris-Carvalho-Natura.webp",
-    "gallery": [
-      "images/produtos/Cama-Casal-Paris-Carvalho-Natura.webp",
-      "images/produtos/Cama-Casal-Paris-Carvalho-Cinza.webp"
-    ]
-  },
-  "quartos-49": {
-    "id": "quartos-49",
-    "name": "Mesa Cabeceira Paris",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L605 x A460 x P350.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L605 x A460 x P350[+0.00]",
-    "image": "images/produtos/Mesa-de-Cabeceira-Paris-Natura.webp",
-    "gallery": [
-      "images/produtos/Mesa-de-Cabeceira-Paris-Natura.webp",
-      "images/produtos/Mesa-de-Cabeceira-Paris-Cinza.webp"
-    ]
-  },
-  "quartos-50": {
-    "id": "quartos-50",
-    "name": "Cómoda Paris",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1135 x A885 x P450. (Cinza disponível)",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1135 x A885 x P450[+0.00]",
-    "image": "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
-    "gallery": [
-      "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
-      "images/produtos/Comoda-Paris-Carvalho-Cinza.webp"
-    ]
-  },
-  "quartos-51": {
-    "id": "quartos-51",
-    "name": "Camiseiro Paris",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Camiseiro 5 gavetas. L695 x A1125 x P400.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L695 x A1125 x P400[+0.00]",
-    "image": "images/produtos/Camiseiro-Paris-Natura.webp",
-    "gallery": [
-      "images/produtos/Camiseiro-Paris-Natura.webp",
-      "images/produtos/Camiseiro-Paris-Cinza.webp"
-    ]
+    ],
+    "subcategory": "Outros"
   },
   "salas-31": {
     "id": "salas-31",
@@ -1101,75 +1428,95 @@ const window_products = {
       "images/produtos/Sapateira-Paris-Cinza.webp"
     ]
   },
-  "quartos-58": {
-    "id": "quartos-58",
-    "name": "Cama Chiado",
+  "quartos-81": {
+    "id": "quartos-81",
+    "name": "Sómier Articulado Estofado",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cama casal com estrado incluído. L1570 x A1100 x P2092.",
+    "description": "Sómier articulado estofado. Consultar medidas.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1570 x A1100 x P2092[+0.00]",
-    "image": "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150.png",
+    "custom2_options": "Standard[+0.00]",
+    "image": "images/produtos/7616052-esquerdo-aberto.jpg",
     "gallery": [
-      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150.png",
-      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-1.png",
-      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-2.png",
-      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3.png"
-    ]
+      "images/produtos/7616052-esquerdo-aberto.jpg",
+      "images/produtos/7616052-esquerdo-amb.jpg"
+    ],
+    "subcategory": "Sommiers"
   },
-  "quartos-59": {
-    "id": "quartos-59",
-    "name": "Mesa Cabeceira Chiado",
+  "quartos-80": {
+    "id": "quartos-80",
+    "name": "Sómier Big Box",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L575 x A460 x P400.",
+    "description": "Sómier articulado estofado. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L575 x A460 x P400[+0.00]",
-    "image": "images/produtos/5.webp",
+    "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]|1800x2000[+0.00]",
+    "image": "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
     "gallery": [
-      "images/produtos/5.webp",
-      "images/produtos/6.webp"
-    ]
+      "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
+      "images/produtos/Base-Sommier-Big-Box2-600x333.jpg",
+      "images/produtos/Base-Sommier-Big-Box3-600x333.jpg"
+    ],
+    "subcategory": "Sommiers"
   },
-  "quartos-60": {
-    "id": "quartos-60",
-    "name": "Cómoda Chiado",
+  "quartos-82": {
+    "id": "quartos-82",
+    "name": "Sómier New 33/37",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1015 x A850 x P450.",
+    "description": "Sómier articulado com estrutura de madeira. Disponível em várias cores.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom1_options": "Cerejeira[+0.00]|Camouflage[+0.00]|Opal[+0.00]|Capuccino[+0.00]|Dark Grey[+0.00]|Branco[+0.00]|Preto[+0.00]|Carvalho Natura[+0.00]|Carvalho Cinza[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1015 x A850 x P450[+0.00]",
-    "image": "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
+    "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]",
+    "image": "images/produtos/new-natura-lourini.png",
     "gallery": [
-      "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
-      "images/produtos/Comoda-Chiado-Branca.webp"
-    ]
+      "images/produtos/new-natura-lourini.png",
+      "images/produtos/new-branco-lourini.png"
+    ],
+    "subcategory": "Sommiers"
   },
-  "quartos-61": {
-    "id": "quartos-61",
-    "name": "Camiseiro Chiado",
+  "quartos-84": {
+    "id": "quartos-84",
+    "name": "Sómier Summer",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Camiseiro 5 gavetas. L575 x A1095 x P400.",
+    "description": "Sómier fixo estofado. Consultar medidas.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L575 x A1095 x P400[+0.00]",
-    "image": "images/produtos/Camiseiro-Chiado-Branco.webp",
+    "custom2_options": "Standard[+0.00]",
+    "image": "images/produtos/sommier-fixo-summer-195x140.jpg",
     "gallery": [
-      "images/produtos/Camiseiro-Chiado-Branco.webp",
-      "images/produtos/Camiseiro-Chiado-Pinho-Mel.webp"
-    ]
+      "images/produtos/sommier-fixo-summer-195x140.jpg"
+    ],
+    "subcategory": "Sommiers"
+  },
+  "quartos-83": {
+    "id": "quartos-83",
+    "name": "Sómier Vintage",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Sómier fixo estofado. Consultar medidas.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "Standard[+0.00]",
+    "image": "images/produtos/sommier-vintage-1.webp",
+    "gallery": [
+      "images/produtos/sommier-vintage-1.webp",
+      "images/produtos/sommier-vintage-e1732121529234.webp"
+    ],
+    "subcategory": "Sommiers"
   },
   "quartos-62": {
     "id": "quartos-62",
@@ -1186,7 +1533,27 @@ const window_products = {
     "gallery": [
       "images/produtos/Movel-Hall-Chiado-Branco.webp",
       "images/produtos/Movel-Hall-Chiado-Pinho-Mel.webp"
-    ]
+    ],
+    "subcategory": "Outros"
+  },
+  "quartos-39": {
+    "id": "quartos-39",
+    "name": "Móvel Hall Málaga",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Móvel hall. L1000 x A800 x P405.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L1000 x A800 x P405[+0.00]",
+    "image": "images/produtos/movel-hall-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/movel-hall-natura-1200x1200.png",
+      "images/produtos/movel-hall-1200x1200.png",
+      "images/produtos/movel-hall-1200x1200.webp"
+    ],
+    "subcategory": "Outros"
   },
   "quartos-63": {
     "id": "quartos-63",
@@ -1203,79 +1570,8 @@ const window_products = {
     "gallery": [
       "images/produtos/Sapateira-Chiado-Branco.webp",
       "images/produtos/Sapateira-Chiado-Pinho-Mel.webp"
-    ]
-  },
-  "quartos-64": {
-    "id": "quartos-64",
-    "name": "Cama Viena",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama casal com estrado incluído e iluminação LED na cabeceira.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1580 x A1100 x P2110[+0.00]",
-    "image": "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
-    "gallery": [
-      "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
-      "images/produtos/Cama-Casal-Viena-Cinza-Lado.webp"
-    ]
-  },
-  "quartos-65": {
-    "id": "quartos-65",
-    "name": "Mesa Cabeceira Viena",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L580 x A455 x P400.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L580 x A455 x P400[+0.00]",
-    "image": "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
-    "gallery": [
-      "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
-      "images/produtos/Mesa-Cabeceira-Viena-Cinza.webp"
-    ]
-  },
-  "quartos-66": {
-    "id": "quartos-66",
-    "name": "Cómoda Viena",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1130 x A920 x P500.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1130 x A920 x P500[+0.00]",
-    "image": "images/produtos/comoda-viena-faia.png",
-    "gallery": [
-      "images/produtos/comoda-viena-faia.png",
-      "images/produtos/comoda-viena-faia.jpg",
-      "images/produtos/comoda-viena-faia-1.jpg",
-      "images/produtos/comoda-viena-cinzabranco.jpg",
-      "images/produtos/comoda-viena-cinzabranco-1.jpg",
-      "images/produtos/comoda-viena-cinzabranco-2.jpg"
-    ]
-  },
-  "quartos-67": {
-    "id": "quartos-67",
-    "name": "Camiseiro Viena",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Camiseiro 5 gavetas. L650 x A1150 x P400.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L650 x A1150 x P400[+0.00]",
-    "image": "images/produtos/camiseiro-viena-jl738.jpg",
-    "gallery": [
-      "images/produtos/camiseiro-viena-jl738.jpg",
-      "images/produtos/camiseiro-viena-jl738-1.jpg"
-    ]
+    ],
+    "subcategory": "Outros"
   },
   "salas-37": {
     "id": "salas-37",
@@ -1330,266 +1626,6 @@ const window_products = {
       "images/produtos/kids-7_gallery_3.jpg"
     ],
     "subcategory": "Camiseiros"
-  },
-  "quartos-70": {
-    "id": "quartos-70",
-    "name": "Cama Estofada Alison",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama estofada elevatória. Tecido personalizável. L1540/1640/1740/1940 x A1340 x P2150.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1540[+0.00]|L1640[+0.00]|L1740[+0.00]|L1940[+0.00]",
-    "image": "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
-    "gallery": [
-      "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
-      "images/produtos/cama-estofada-alison-bege-200x150-3.jpg"
-    ]
-  },
-  "quartos-71": {
-    "id": "quartos-71",
-    "name": "Cama Estofada Gala",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama estofada. Tecido personalizável. L1540/1560/1660/1760/1960 x A1460 x P2150.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1540[+0.00]|L1560[+0.00]|L1660[+0.00]|L1760[+0.00]|L1960[+0.00]",
-    "image": "images/produtos/cama-estofada-alison-bege-200x150.jpg"
-  },
-  "quartos-72": {
-    "id": "quartos-72",
-    "name": "Cama Estofada Melissa",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama estofada. Tecido personalizável. L1480/1580/1680/1880 x A1400 x P2110.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
-    "image": "images/produtos/melissa_cama_ambiente.jpg",
-    "gallery": [
-      "images/produtos/melissa_cama_ambiente.jpg"
-    ]
-  },
-  "quartos-73": {
-    "id": "quartos-73",
-    "name": "Cama Estofada Sophie",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cama estofada. Tecido personalizável. L1470/1570/1670/1870 x A1360 x P2120.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L1470[+0.00]|L1570[+0.00]|L1670[+0.00]|L1870[+0.00]",
-    "image": "images/produtos/sophie_cama_ambiente.jpg",
-    "gallery": [
-      "images/produtos/sophie_cama_ambiente.jpg"
-    ]
-  },
-  "quartos-74": {
-    "id": "quartos-74",
-    "name": "Cabeceira Jones sem laterais",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável. L980/1480/1580/1680/1880 x A1200 x P140.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L980[+0.00]|L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
-    "image": "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg",
-    "gallery": [
-      "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg"
-    ],
-    "subcategory": "Cabeceiras"
-  },
-  "quartos-75": {
-    "id": "quartos-75",
-    "name": "Cabeceira Jones com laterais",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cabeceira estofada com laterais. Tecido personalizável. L2200/2700/2800/2900/3100 x A1200 x P140.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L2200[+0.00]|L2700[+0.00]|L2800[+0.00]|L2900[+0.00]|L3100[+0.00]",
-    "image": "images/produtos/cabeceira-estofada-jones-claterais-x150-1.jpg",
-    "gallery": [],
-    "subcategory": "Cabeceiras"
-  },
-  "quartos-76": {
-    "id": "quartos-76",
-    "name": "Cabeceira Myra",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável. L950/1450/1550/1650/1850 x A1220 x P100.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/myra.png",
-    "gallery": [
-      "images/produtos/myra.png",
-      "images/produtos/myra_amb-1200x1200.webp"
-    ],
-    "subcategory": "Cabeceiras"
-  },
-  "quartos-77": {
-    "id": "quartos-77",
-    "name": "Cabeceira Luxe",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/LUXE.jpg",
-    "gallery": [
-      "images/produtos/LUXE.jpg",
-      "images/produtos/LUXE_AMBIENTE.jpg",
-      "images/produtos/Cabeceira-Luxe-cinza.webp",
-      "images/produtos/Cabeceira-Luxe-Preto.webp",
-      "images/produtos/Cabeceira-Luxe-Beje.webp"
-    ],
-    "subcategory": "Cabeceiras"
-  },
-  "quartos-78": {
-    "id": "quartos-78",
-    "name": "Cabeceira Gomo",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L950[+0.00]|L1150[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/gomo-estofada.png",
-    "gallery": [
-      "images/produtos/gomo-estofada.png",
-      "images/produtos/gomo-estofada-1.png",
-      "images/produtos/gomo-1200x1200.png",
-      "images/produtos/quarto-cabeceira-gomo-1200x1200.webp"
-    ],
-    "subcategory": "Cabeceiras"
-  },
-  "quartos-79": {
-    "id": "quartos-79",
-    "name": "Cabeceira Kristal",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/kristal-1200x1200.png",
-    "gallery": [
-      "images/produtos/kristal-1200x1200.png",
-      "images/produtos/kristal-1200x1200-1.png",
-      "images/produtos/kristal-cabeceira-1200x1200.webp",
-      "images/produtos/kristal-cabeceira-2048x2048.webp",
-      "images/produtos/cabeceira-kristal-sleep-1200x1200.webp",
-      "images/produtos/cabeceira-kristal-sleep-2048x2048.webp"
-    ],
-    "subcategory": "Cabeceiras"
-  },
-  "quartos-80": {
-    "id": "quartos-80",
-    "name": "Sómier Big Box",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Sómier articulado estofado. Tecido personalizável.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]|1800x2000[+0.00]",
-    "image": "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
-    "gallery": [
-      "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
-      "images/produtos/Base-Sommier-Big-Box2-600x333.jpg",
-      "images/produtos/Base-Sommier-Big-Box3-600x333.jpg"
-    ]
-  },
-  "quartos-81": {
-    "id": "quartos-81",
-    "name": "Sómier Articulado Estofado",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Sómier articulado estofado. Consultar medidas.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "Standard[+0.00]",
-    "image": "images/produtos/7616052-esquerdo-aberto.jpg",
-    "gallery": [
-      "images/produtos/7616052-esquerdo-aberto.jpg",
-      "images/produtos/7616052-esquerdo-amb.jpg"
-    ]
-  },
-  "quartos-82": {
-    "id": "quartos-82",
-    "name": "Sómier New 33/37",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Sómier articulado com estrutura de madeira. Disponível em várias cores.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cerejeira[+0.00]|Camouflage[+0.00]|Opal[+0.00]|Capuccino[+0.00]|Dark Grey[+0.00]|Branco[+0.00]|Preto[+0.00]|Carvalho Natura[+0.00]|Carvalho Cinza[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]",
-    "image": "images/produtos/new-natura-lourini.png",
-    "gallery": [
-      "images/produtos/new-natura-lourini.png",
-      "images/produtos/new-branco-lourini.png"
-    ]
-  },
-  "quartos-83": {
-    "id": "quartos-83",
-    "name": "Sómier Vintage",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Sómier fixo estofado. Consultar medidas.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "Standard[+0.00]",
-    "image": "images/produtos/sommier-vintage-1.webp",
-    "gallery": [
-      "images/produtos/sommier-vintage-1.webp",
-      "images/produtos/sommier-vintage-e1732121529234.webp"
-    ]
-  },
-  "quartos-84": {
-    "id": "quartos-84",
-    "name": "Sómier Summer",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Sómier fixo estofado. Consultar medidas.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "Standard[+0.00]",
-    "image": "images/produtos/sommier-fixo-summer-195x140.jpg",
-    "gallery": [
-      "images/produtos/sommier-fixo-summer-195x140.jpg"
-    ]
   },
   "colchoes-ibiza": {
     "id": "colchoes-ibiza",
