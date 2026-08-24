@@ -1593,54 +1593,6 @@ const window_products = {
       "images/produtos/sommier-fixo-summer-195x140.jpg"
     ]
   },
-  "quartos-cab-1": {
-    "id": "quartos-cab-1",
-    "name": "Cabeceira Alison",
-    "category": "Quartos",
-    "subcategory": "Cabeceiras",
-    "price": "Preço Sob Consulta",
-    "image": "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
-    "gallery": [
-      "images/produtos/cama-estofada-alison-bege-200x150-2.jpg"
-    ],
-    "url": "quartos.html"
-  },
-  "quartos-cab-2": {
-    "id": "quartos-cab-2",
-    "name": "Cabeceira Melissa",
-    "category": "Quartos",
-    "subcategory": "Cabeceiras",
-    "price": "Preço Sob Consulta",
-    "image": "images/produtos/melissa_cama_ambiente.jpg",
-    "gallery": [
-      "images/produtos/melissa_cama_ambiente.jpg"
-    ],
-    "url": "quartos.html"
-  },
-  "quartos-cab-3": {
-    "id": "quartos-cab-3",
-    "name": "Cabeceira Gala",
-    "category": "Quartos",
-    "subcategory": "Cabeceiras",
-    "price": "Preço Sob Consulta",
-    "image": "images/produtos/cama-estofada-alison-bege-200x150.jpg",
-    "gallery": [
-      "images/produtos/cama-estofada-alison-bege-200x150.jpg"
-    ],
-    "url": "quartos.html"
-  },
-  "quartos-cab-4": {
-    "id": "quartos-cab-4",
-    "name": "Cabeceira Sophie",
-    "category": "Quartos",
-    "subcategory": "Cabeceiras",
-    "price": "Preço Sob Consulta",
-    "image": "images/produtos/sophie_cama_ambiente.jpg",
-    "gallery": [
-      "images/produtos/sophie_cama_ambiente.jpg"
-    ],
-    "url": "quartos.html"
-  },
   "colchoes-ibiza": {
     "id": "colchoes-ibiza",
     "name": "Colchão Ibiza",
