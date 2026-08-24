@@ -1599,9 +1599,9 @@ const window_products = {
     "category": "Quartos",
     "subcategory": "Cabeceiras",
     "price": "Preço Sob Consulta",
-    "image": "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
+    "image": "images/produtos/alison-cabeceira-crop.jpg",
     "gallery": [
-      "images/produtos/cama-estofada-alison-bege-200x150-2.jpg"
+      "images/produtos/alison-cabeceira-crop.jpg"
     ],
     "url": "quartos.html"
   },
@@ -1611,9 +1611,9 @@ const window_products = {
     "category": "Quartos",
     "subcategory": "Cabeceiras",
     "price": "Preço Sob Consulta",
-    "image": "images/produtos/melissa_cama_ambiente.jpg",
+    "image": "images/produtos/melissa-cabeceira-crop.jpg",
     "gallery": [
-      "images/produtos/melissa_cama_ambiente.jpg"
+      "images/produtos/melissa-cabeceira-crop.jpg"
     ],
     "url": "quartos.html"
   },
@@ -1623,9 +1623,9 @@ const window_products = {
     "category": "Quartos",
     "subcategory": "Cabeceiras",
     "price": "Preço Sob Consulta",
-    "image": "images/produtos/cama-estofada-alison-bege-200x150.jpg",
+    "image": "images/produtos/gala-cabeceira-crop.jpg",
     "gallery": [
-      "images/produtos/cama-estofada-alison-bege-200x150.jpg"
+      "images/produtos/gala-cabeceira-crop.jpg"
     ],
     "url": "quartos.html"
   },
@@ -1635,9 +1635,9 @@ const window_products = {
     "category": "Quartos",
     "subcategory": "Cabeceiras",
     "price": "Preço Sob Consulta",
-    "image": "images/produtos/sophie_cama_ambiente.jpg",
+    "image": "images/produtos/sophie-cabeceira-crop.jpg",
     "gallery": [
-      "images/produtos/sophie_cama_ambiente.jpg"
+      "images/produtos/sophie-cabeceira-crop.jpg"
     ],
     "url": "quartos.html"
   },
