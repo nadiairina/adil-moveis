@@ -336,12 +336,12 @@ document.addEventListener('DOMContentLoaded', function() {
       // Update active button styling
       filterButtons.forEach(btn => {
         btn.classList.remove('active');
-        btn.classList.remove('bg-navy', 'text-white');
+        btn.classList.remove('bg-[#C8B598]', 'text-white');
         btn.classList.add('bg-gray-100');
       });
       
       // Apply active styling to clicked button
-      this.classList.add('active', 'bg-navy', 'text-white');
+      this.classList.add('active', 'bg-[#C8B598]', 'text-white');
       this.classList.remove('bg-gray-100');
       
       // Get all products
@@ -518,16 +518,18 @@ document.addEventListener('DOMContentLoaded', function() {
           if (!p.url.includes("quartos")) continue;
           
           // Map product name to filter button categories
-          const nameLower = (p.name || '').toLowerCase();
-          let dataCategory = 'outros';
-          if (nameLower.includes('cama')) dataCategory = 'camas';
-          else if (nameLower.includes('mesa de cabeceira') || nameLower.includes('mesa cabeceira')) dataCategory = 'mesasCabeceira';
-          else if (nameLower.includes('cabeceira')) dataCategory = 'cabeceiras';
-          else if (nameLower.includes('cómoda') || nameLower.includes('comoda')) dataCategory = 'comodas';
-          else if (nameLower.includes('roupeiro') || nameLower.includes('guarda-roupa')) dataCategory = 'roupeiros';
-          else if (nameLower.includes('camiseiro')) dataCategory = 'camiseiros';
-          else if (nameLower.includes('sommier')) dataCategory = 'sommiers';
-          else if (nameLower.includes('estrado')) dataCategory = 'estrados';
+          // Map product subcategory to filter button categories
+          const subMap = {
+            "Camas": "camas",
+            "Cabeceiras": "cabeceiras",
+            "Mesas de Cabeceira": "mesasCabeceira",
+            "Cómodas": "comodas",
+            "Roupeiros": "roupeiros",
+            "Camiseiros": "camiseiros",
+            "Sommiers": "sommiers",
+            "Estrados": "estrados"
+          };
+          let dataCategory = subMap[p.subcategory] || 'outros';
 
           html += `
             <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${dataCategory}" data-aos="fade-up" style="text-decoration:none; color:inherit;">

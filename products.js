@@ -2,7 +2,7 @@ const window_products = {
   "sofas-1": {
     "id": "sofas-1",
     "name": "Sofá Trevor",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Conforto e design aliados num sofá robusto, com costa reclináveis e chaise longue com arrumação. A peça-chave para transformar qualquer sala num espaço convidativo e acolhedor. Revestimento em tecido personalizável.",
@@ -21,7 +21,7 @@ const window_products = {
   "sofas-2": {
     "id": "sofas-2",
     "name": "Sofá Robson",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "O lugar perfeito para sentar toda a família confortavelmente. Com chaise longue, assentos deslizantes, costas reclináveis e três puffs incluídos. Possui baú no braço para arrumar todos os gadgets. Revestimento em tecido personalizável.",
@@ -40,7 +40,7 @@ const window_products = {
   "sofas-3": {
     "id": "sofas-3",
     "name": "Sofá Amazónia",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Um modelo generoso e eclético que oferece uma nova vida à decoração da sala. Com costas reclináveis para um conforto extra. Revestimento em tecido personalizável.",
@@ -59,7 +59,7 @@ const window_products = {
   "sofas-4": {
     "id": "sofas-4",
     "name": "Sofá Argo",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Peça-chave para tornar qualquer sala de estar um espaço convidativo e acolhedor. Com assentos deslizantes, costas reclináveis e baú de arrumação no braço, é funcional sem descurar o conforto. Inclui 2 puffs no braço e terminal solto que pode ser usado de forma independente ou como chaise longue. Revestimento em tecido personalizável.",
@@ -78,7 +78,7 @@ const window_products = {
   "sofas-5": {
     "id": "sofas-5",
     "name": "Sofá Eros",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Elemento essencial em qualquer sala de estar, além de enriquecer a decoração é também funcional devido à cama elevatória e chaise longue reversível com arrumação, proporcionando conforto extra com as suas costas reclináveis. Revestimento em tecido personalizável.",
@@ -92,7 +92,7 @@ const window_products = {
   "sofas-6": {
     "id": "sofas-6",
     "name": "Sofá Daytona",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Com um toque moderno e elegante, alia qualidade ao conforto reforçado pelas costas reclináveis. Revestimento em tecido ou em pele, personalizáveis.",
@@ -111,7 +111,7 @@ const window_products = {
   "sofas-7": {
     "id": "sofas-7",
     "name": "Sofá Orly",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Moderno, elegante e confortável, com chaise longue e costas reclináveis. Um sofá com lugar de destaque em qualquer sala de estar. Revestimento em tecido personalizável.",
@@ -131,7 +131,7 @@ const window_products = {
   "sofas-8": {
     "id": "sofas-8",
     "name": "Sofá Alvin",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Modelo envolvente com um conforto inigualável aliado a um design moderno. Inclui mecanismos relax elétricos. Revestimento em tecido personalizável.",
@@ -151,7 +151,7 @@ const window_products = {
   "sofas-9": {
     "id": "sofas-9",
     "name": "Sofá George",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Com um design sofisticado, mas desprentesioso, este modelo adapta-se facilmente a qualquer decoração, contribuindo para a criação de um espaço mais acolhedor e cómodo. Revestimento em tecido personalizável.",
@@ -171,7 +171,7 @@ const window_products = {
   "sofas-10": {
     "id": "sofas-10",
     "name": "Sofá Mónika",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Um modelo que faz rimar elegância com conforto. Com desenho exclusivo de Sylvain Joly Design, encaixa na perfeição em qualquer estilo decorativo, tornando a sala numa divisão mais convidativa e cómoda. Revestimento em tecido personalizável.",
@@ -189,7 +189,7 @@ const window_products = {
   "sofas-11": {
     "id": "sofas-11",
     "name": "Sofá Megan",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Sofisticado e confortável, com um toque de modernidade conferido pelos elegantes pés metálicos. Um design exclusivo Sylvain Joly Design. Revestimento em tecido personalizável.",
@@ -208,7 +208,7 @@ const window_products = {
   "sofas-12": {
     "id": "sofas-12",
     "name": "Sofá Robbie",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Pés metálicos e linhas depuradas, como costas sem qualquer costura central, fazem deste sofá um exemplo de elegância. Alia qualidade e conforto, com um toque de modernidade. Revestimento em tecido personalizável.",
@@ -227,7 +227,7 @@ const window_products = {
   "sofas-13": {
     "id": "sofas-13",
     "name": "Sofá Mistik",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Uma sala de estar agradável só fica completa com um sofá bonito e confortável. Com um design clássico e depurado, integra qualquer estilo de decoração. Revestimento em tecido personalizável.",
@@ -247,7 +247,7 @@ const window_products = {
   "sofas-15": {
     "id": "sofas-15",
     "name": "Sofá Ozil",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Prático e funcional, adapta-se a qualquer estilo de decoração ao mesmo tempo que proporciona uma cama extra, de montagem rápida e fácil, com modelo elevatório e sistema clic-clac.",
@@ -266,7 +266,7 @@ const window_products = {
   "sofas-16": {
     "id": "sofas-16",
     "name": "Cadeirão Sirio",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Perfeitos para descontrair com todo o conforto e tranquilidade, os cadeirões relax incluem costas reclináveis e apoio para as pernas, movimentados através de mecanismo manual ou elétrico. Têm ainda a opção de sistema de elevação sénior, que facilita o sentar e levantar.",
@@ -280,7 +280,7 @@ const window_products = {
   "sofas-17": {
     "id": "sofas-17",
     "name": "Cadeirão Fredy",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Relax manual, elétrico ou sénior",
@@ -301,7 +301,7 @@ const window_products = {
   "sofas-18": {
     "id": "sofas-18",
     "name": "Cadeirão Connor",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Mecanismo relax sénior com trolley",
@@ -320,7 +320,7 @@ const window_products = {
   "sofas-19": {
     "id": "sofas-19",
     "name": "Cadeirão Lion",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Para descontrair e recarregar baterias. Cadeirão de dimensões generosas. A peça ideal de conforto para a sala de estar ou quarto. Revestimento em tecido personalizável. Pés disponíveis: wengué, branco, cerejeira e cor natural (pinho).",
@@ -338,7 +338,7 @@ const window_products = {
   "sofas-20": {
     "id": "sofas-20",
     "name": "Cadeirão Dover",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Modelo original, com costuras de efeito concha, para uma maior sensação de envolvência. Revestimento em tecido personalizável. Pés disponíveis: wengué, branco, cerejeira e cor natural (pinho).",
@@ -359,7 +359,7 @@ const window_products = {
   "sofas-21": {
     "id": "sofas-21",
     "name": "Cadeirão Stick",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Cadeirão estofado. Pés disponíveis: wengué e cerejeira",
@@ -377,7 +377,7 @@ const window_products = {
   "sofas-22": {
     "id": "sofas-22",
     "name": "Cadeirão Star",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Cadeirão estofado. Pés disponíveis: wengué e cerejeira",
@@ -395,7 +395,7 @@ const window_products = {
   "salas-23": {
     "id": "salas-23",
     "name": "Cadeira Charly",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Pack económico de 4 cadeiras Charly estofadas em bege. Prontas a entregar.",
@@ -410,7 +410,7 @@ const window_products = {
   "salas-24": {
     "id": "salas-24",
     "name": "Cadeira Moon",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia). Opção de colocação de copo metálico nos pés da cadeira.",
@@ -429,7 +429,7 @@ const window_products = {
   "salas-25": {
     "id": "salas-25",
     "name": "Cadeira Paris",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
@@ -449,7 +449,7 @@ const window_products = {
   "salas-26": {
     "id": "salas-26",
     "name": "Cadeira Sagres",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira, faia e pinho mel).",
@@ -467,7 +467,7 @@ const window_products = {
   "salas-27": {
     "id": "salas-27",
     "name": "Cadeira Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
@@ -481,7 +481,7 @@ const window_products = {
   "salas-28": {
     "id": "salas-28",
     "name": "Cadeira Milão",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Costa e assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
@@ -499,7 +499,7 @@ const window_products = {
   "salas-29": {
     "id": "salas-29",
     "name": "Cadeira Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
@@ -517,7 +517,7 @@ const window_products = {
   "salas-30": {
     "id": "salas-30",
     "name": "Cadeira Viena",
-    "price": 0.0,
+    "price": 0,
     "url": "salas.html",
     "category": "Salas",
     "description": "Assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
@@ -535,7 +535,7 @@ const window_products = {
   "colchoes-comp-1": {
     "id": "colchoes-comp-1",
     "name": "Almofada Viscoelástica Ergonomia",
-    "price": 0.0,
+    "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
@@ -545,7 +545,7 @@ const window_products = {
   "colchoes-comp-2": {
     "id": "colchoes-comp-2",
     "name": "Almofada de Penas & Plumagem",
-    "price": 0.0,
+    "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
@@ -555,7 +555,7 @@ const window_products = {
   "colchoes-comp-3": {
     "id": "colchoes-comp-3",
     "name": "Protetor de Colchão Impermeável",
-    "price": 0.0,
+    "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
@@ -565,7 +565,7 @@ const window_products = {
   "colchoes-comp-4": {
     "id": "colchoes-comp-4",
     "name": "Capa de Colchão Respirável",
-    "price": 0.0,
+    "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
@@ -575,7 +575,7 @@ const window_products = {
   "colchoes-comp-5": {
     "id": "colchoes-comp-5",
     "name": "Topper Viscoelástico Conforto Extra",
-    "price": 0.0,
+    "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
@@ -585,7 +585,7 @@ const window_products = {
   "colchoes-comp-6": {
     "id": "colchoes-comp-6",
     "name": "Sommier Metálico de Suporte",
-    "price": 0.0,
+    "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
@@ -595,7 +595,7 @@ const window_products = {
   "kids-1": {
     "id": "kids-1",
     "name": "Cama Estúdio Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Cama pessoa simples com estrado incluído. L1160 x A950 x P2030.",
@@ -613,7 +613,7 @@ const window_products = {
   "kids-2": {
     "id": "kids-2",
     "name": "Cama Elevatória Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Cama pessoa elevatória. L1160 x A950 x P2055.",
@@ -630,7 +630,7 @@ const window_products = {
   "kids-3": {
     "id": "kids-3",
     "name": "Cama Estúdio Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Cama estúdio com estrado + gavetão. L2065 x A630 x P905.",
@@ -647,7 +647,7 @@ const window_products = {
   "kids-4": {
     "id": "kids-4",
     "name": "Beliche Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Beliche com estrados incluídos. L2045 x A1600 x P950.",
@@ -665,7 +665,7 @@ const window_products = {
   "kids-5": {
     "id": "kids-5",
     "name": "Mesa de Cabeceira Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Mesa de cabeceira 2 gavetas. L500 x A400 x P410.",
@@ -683,7 +683,7 @@ const window_products = {
   "kids-6": {
     "id": "kids-6",
     "name": "Cómoda Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Cómoda 3 gavetas. L1000 x A768 x P450.",
@@ -701,7 +701,7 @@ const window_products = {
   "quartos-35": {
     "id": "quartos-35",
     "name": "Cama Málaga",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama casal simples com estrado incluído. L1580 x A1100 x P2080.",
@@ -719,7 +719,7 @@ const window_products = {
   "quartos-36": {
     "id": "quartos-36",
     "name": "Mesa Cabeceira Málaga",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Mesa de cabeceira 2 gavetas. L640 x A540 x P405.",
@@ -734,28 +734,10 @@ const window_products = {
       "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
     ]
   },
-  "quartos-37": {
-    "id": "quartos-37",
-    "name": "Camiseiro Málaga",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "description": "Camiseiro 4 gavetas. L640 x A1225 x P405.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "L640 x A1225 x P405[+0.00]",
-    "image": "images/produtos/camiseiro-natura-1200x1200.webp",
-    "gallery": [
-      "images/produtos/camiseiro-natura-1200x1200.webp",
-      "images/produtos/camiseiro-cinza-1200x1200.png",
-      "images/produtos/camiseiro-1200x1200.png"
-    ]
-  },
   "quartos-38": {
     "id": "quartos-38",
     "name": "Cómoda Málaga",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cómoda 3 gavetas. L1070 x A895 x P455.",
@@ -770,10 +752,28 @@ const window_products = {
       "images/produtos/comoda-cinza-1200x1200.png"
     ]
   },
+  "quartos-37": {
+    "id": "quartos-37",
+    "name": "Camiseiro Málaga",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "description": "Camiseiro 4 gavetas. L640 x A1225 x P405.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
+    "custom2_name": "Dimensões",
+    "custom2_options": "L640 x A1225 x P405[+0.00]",
+    "image": "images/produtos/camiseiro-natura-1200x1200.webp",
+    "gallery": [
+      "images/produtos/camiseiro-natura-1200x1200.webp",
+      "images/produtos/camiseiro-cinza-1200x1200.png",
+      "images/produtos/camiseiro-1200x1200.png"
+    ]
+  },
   "quartos-39": {
     "id": "quartos-39",
     "name": "Móvel Hall Málaga",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Móvel hall. L1000 x A800 x P405.",
@@ -791,7 +791,7 @@ const window_products = {
   "quartos-40": {
     "id": "quartos-40",
     "name": "Elemento Prateleiras Málaga",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Elemento 4 prateleiras + 1 gaveta, estrutura metálica. L800 x A2000 x P395.",
@@ -809,7 +809,7 @@ const window_products = {
   "quartos-41": {
     "id": "quartos-41",
     "name": "Cama Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama casal com estrado incluído. L1610 x A1100 x P2090.",
@@ -826,7 +826,7 @@ const window_products = {
   "quartos-42": {
     "id": "quartos-42",
     "name": "Mesa Cabeceira Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Mesa de cabeceira 2 gavetas. L555 x A470 x P400.",
@@ -843,7 +843,7 @@ const window_products = {
   "quartos-43": {
     "id": "quartos-43",
     "name": "Cómoda Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cómoda 4 gavetas. L1020 x A860 x P450.",
@@ -863,7 +863,7 @@ const window_products = {
   "quartos-44": {
     "id": "quartos-44",
     "name": "Camiseiro Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Camiseiro 5 gavetas. L635 x A1060 x P400.",
@@ -882,7 +882,7 @@ const window_products = {
   "quartos-45": {
     "id": "quartos-45",
     "name": "Móvel Hall Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Móvel hall 1 gaveta + 1 prateleira. L1000 x A820 x P355.",
@@ -898,7 +898,7 @@ const window_products = {
   "quartos-46": {
     "id": "quartos-46",
     "name": "Sapateira Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sapateira 2 portas + 1 gaveta. L1100 x A905 x P355.",
@@ -917,7 +917,7 @@ const window_products = {
   "quartos-47": {
     "id": "quartos-47",
     "name": "Elemento Prateleiras Madrid",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Elemento prateleiras. L955 x A1800 x P350.",
@@ -934,7 +934,7 @@ const window_products = {
   "quartos-48": {
     "id": "quartos-48",
     "name": "Cama Paris",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama casal com estrado incluído.",
@@ -951,7 +951,7 @@ const window_products = {
   "quartos-49": {
     "id": "quartos-49",
     "name": "Mesa Cabeceira Paris",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Mesa de cabeceira 2 gavetas. L605 x A460 x P350.",
@@ -968,7 +968,7 @@ const window_products = {
   "quartos-50": {
     "id": "quartos-50",
     "name": "Cómoda Paris",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cómoda 4 gavetas. L1135 x A885 x P450. (Cinza disponível)",
@@ -985,7 +985,7 @@ const window_products = {
   "quartos-51": {
     "id": "quartos-51",
     "name": "Camiseiro Paris",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Camiseiro 5 gavetas. L695 x A1125 x P400.",
@@ -999,12 +999,12 @@ const window_products = {
       "images/produtos/Camiseiro-Paris-Cinza.webp"
     ]
   },
-  "quartos-52": {
-    "id": "quartos-52",
+  "salas-31": {
+    "id": "salas-31",
     "name": "Base TV Paris",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Base TV Linha Paris.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
@@ -1016,12 +1016,12 @@ const window_products = {
       "images/produtos/Base-TV-Paris-Cinza.webp"
     ]
   },
-  "quartos-53": {
-    "id": "quartos-53",
+  "salas-32": {
+    "id": "salas-32",
     "name": "Mesa de Centro Paris",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Mesa de centro Linha Paris.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
@@ -1033,12 +1033,12 @@ const window_products = {
       "images/produtos/Mesa-de-Centro-Paris-Cinza.webp"
     ]
   },
-  "quartos-54": {
-    "id": "quartos-54",
+  "salas-33": {
+    "id": "salas-33",
     "name": "Aparador Paris",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Aparador Linha Paris.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
@@ -1050,12 +1050,12 @@ const window_products = {
       "images/produtos/Aparador-Paris-Cinza.webp"
     ]
   },
-  "quartos-55": {
-    "id": "quartos-55",
+  "salas-34": {
+    "id": "salas-34",
     "name": "Secretária Paris",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Secretária. L1200 x A750 x P590.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
@@ -1067,12 +1067,12 @@ const window_products = {
       "images/produtos/Secretaria-Paris-Cinza.webp"
     ]
   },
-  "quartos-56": {
-    "id": "quartos-56",
+  "salas-35": {
+    "id": "salas-35",
     "name": "Móvel Hall Paris",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Móvel hall 1 gaveta + 1 prateleira. L995 x A840 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
@@ -1084,12 +1084,12 @@ const window_products = {
       "images/produtos/Movel-de-Hall-Paris-Cinza.webp"
     ]
   },
-  "quartos-57": {
-    "id": "quartos-57",
+  "salas-36": {
+    "id": "salas-36",
     "name": "Sapateira Paris",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Sapateira 3 portas + 1 gaveta. L1350 x A902 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
@@ -1104,7 +1104,7 @@ const window_products = {
   "quartos-58": {
     "id": "quartos-58",
     "name": "Cama Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama casal com estrado incluído. L1570 x A1100 x P2092.",
@@ -1123,7 +1123,7 @@ const window_products = {
   "quartos-59": {
     "id": "quartos-59",
     "name": "Mesa Cabeceira Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Mesa de cabeceira 2 gavetas. L575 x A460 x P400.",
@@ -1140,7 +1140,7 @@ const window_products = {
   "quartos-60": {
     "id": "quartos-60",
     "name": "Cómoda Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cómoda 4 gavetas. L1015 x A850 x P450.",
@@ -1157,7 +1157,7 @@ const window_products = {
   "quartos-61": {
     "id": "quartos-61",
     "name": "Camiseiro Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Camiseiro 5 gavetas. L575 x A1095 x P400.",
@@ -1174,7 +1174,7 @@ const window_products = {
   "quartos-62": {
     "id": "quartos-62",
     "name": "Móvel Hall Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Móvel hall 1 gaveta + 1 porta. L897 x A830 x P350.",
@@ -1191,7 +1191,7 @@ const window_products = {
   "quartos-63": {
     "id": "quartos-63",
     "name": "Sapateira Chiado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sapateira 2 portas. L1032 x A885 x P350.",
@@ -1208,7 +1208,7 @@ const window_products = {
   "quartos-64": {
     "id": "quartos-64",
     "name": "Cama Viena",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama casal com estrado incluído e iluminação LED na cabeceira.",
@@ -1225,7 +1225,7 @@ const window_products = {
   "quartos-65": {
     "id": "quartos-65",
     "name": "Mesa Cabeceira Viena",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Mesa de cabeceira 2 gavetas. L580 x A455 x P400.",
@@ -1242,7 +1242,7 @@ const window_products = {
   "quartos-66": {
     "id": "quartos-66",
     "name": "Cómoda Viena",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cómoda 4 gavetas. L1130 x A920 x P500.",
@@ -1263,7 +1263,7 @@ const window_products = {
   "quartos-67": {
     "id": "quartos-67",
     "name": "Camiseiro Viena",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Camiseiro 5 gavetas. L650 x A1150 x P400.",
@@ -1277,12 +1277,12 @@ const window_products = {
       "images/produtos/camiseiro-viena-jl738-1.jpg"
     ]
   },
-  "quartos-68": {
-    "id": "quartos-68",
+  "salas-37": {
+    "id": "salas-37",
     "name": "Móvel Hall Viena",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Móvel hall 1 gaveta + 1 prateleira. L1130 x A900 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
@@ -1294,12 +1294,12 @@ const window_products = {
       "images/produtos/Hall-Viena-Cinza-Lateral.webp"
     ]
   },
-  "quartos-69": {
-    "id": "quartos-69",
+  "salas-38": {
+    "id": "salas-38",
     "name": "Sapateira Viena",
-    "price": 0.0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Sapateira 2 portas + 1 gaveta. L1130 x A1000 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
@@ -1314,7 +1314,7 @@ const window_products = {
   "kids-7": {
     "id": "kids-7",
     "name": "Camiseiro Alto Play",
-    "price": 0.0,
+    "price": 0,
     "url": "kids.html",
     "category": "Kids",
     "description": "Camiseiro 4 gavetas. L501 x A951 x P400.",
@@ -1334,7 +1334,7 @@ const window_products = {
   "quartos-70": {
     "id": "quartos-70",
     "name": "Cama Estofada Alison",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama estofada elevatória. Tecido personalizável. L1540/1640/1740/1940 x A1340 x P2150.",
@@ -1351,7 +1351,7 @@ const window_products = {
   "quartos-71": {
     "id": "quartos-71",
     "name": "Cama Estofada Gala",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama estofada. Tecido personalizável. L1540/1560/1660/1760/1960 x A1460 x P2150.",
@@ -1364,7 +1364,7 @@ const window_products = {
   "quartos-72": {
     "id": "quartos-72",
     "name": "Cama Estofada Melissa",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama estofada. Tecido personalizável. L1480/1580/1680/1880 x A1400 x P2110.",
@@ -1380,7 +1380,7 @@ const window_products = {
   "quartos-73": {
     "id": "quartos-73",
     "name": "Cama Estofada Sophie",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cama estofada. Tecido personalizável. L1470/1570/1670/1870 x A1360 x P2120.",
@@ -1396,7 +1396,7 @@ const window_products = {
   "quartos-74": {
     "id": "quartos-74",
     "name": "Cabeceira Jones sem laterais",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cabeceira estofada. Tecido personalizável. L980/1480/1580/1680/1880 x A1200 x P140.",
@@ -1413,7 +1413,7 @@ const window_products = {
   "quartos-75": {
     "id": "quartos-75",
     "name": "Cabeceira Jones com laterais",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cabeceira estofada com laterais. Tecido personalizável. L2200/2700/2800/2900/3100 x A1200 x P140.",
@@ -1422,16 +1422,13 @@ const window_products = {
     "custom2_name": "Dimensões",
     "custom2_options": "L2200[+0.00]|L2700[+0.00]|L2800[+0.00]|L2900[+0.00]|L3100[+0.00]",
     "image": "images/produtos/cabeceira-estofada-jones-claterais-x150-1.jpg",
-    "gallery": [
-      "images/produtos/cabeceira-estofada-jones-claterais-x150-1.jpg"
-    ],
     "gallery": [],
     "subcategory": "Cabeceiras"
   },
   "quartos-76": {
     "id": "quartos-76",
     "name": "Cabeceira Myra",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cabeceira estofada. Tecido personalizável. L950/1450/1550/1650/1850 x A1220 x P100.",
@@ -1449,7 +1446,7 @@ const window_products = {
   "quartos-77": {
     "id": "quartos-77",
     "name": "Cabeceira Luxe",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cabeceira estofada. Tecido personalizável.",
@@ -1470,7 +1467,7 @@ const window_products = {
   "quartos-78": {
     "id": "quartos-78",
     "name": "Cabeceira Gomo",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cabeceira estofada. Tecido personalizável.",
@@ -1490,7 +1487,7 @@ const window_products = {
   "quartos-79": {
     "id": "quartos-79",
     "name": "Cabeceira Kristal",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Cabeceira estofada. Tecido personalizável.",
@@ -1512,7 +1509,7 @@ const window_products = {
   "quartos-80": {
     "id": "quartos-80",
     "name": "Sómier Big Box",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sómier articulado estofado. Tecido personalizável.",
@@ -1530,7 +1527,7 @@ const window_products = {
   "quartos-81": {
     "id": "quartos-81",
     "name": "Sómier Articulado Estofado",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sómier articulado estofado. Consultar medidas.",
@@ -1540,13 +1537,14 @@ const window_products = {
     "custom2_options": "Standard[+0.00]",
     "image": "images/produtos/7616052-esquerdo-aberto.jpg",
     "gallery": [
-      "images/produtos/7616052-esquerdo-aberto.jpg"
-    , "images/produtos/7616052-esquerdo-amb.jpg"]
+      "images/produtos/7616052-esquerdo-aberto.jpg",
+      "images/produtos/7616052-esquerdo-amb.jpg"
+    ]
   },
   "quartos-82": {
     "id": "quartos-82",
     "name": "Sómier New 33/37",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sómier articulado com estrutura de madeira. Disponível em várias cores.",
@@ -1563,7 +1561,7 @@ const window_products = {
   "quartos-83": {
     "id": "quartos-83",
     "name": "Sómier Vintage",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sómier fixo estofado. Consultar medidas.",
@@ -1580,7 +1578,7 @@ const window_products = {
   "quartos-84": {
     "id": "quartos-84",
     "name": "Sómier Summer",
-    "price": 0.0,
+    "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "description": "Sómier fixo estofado. Consultar medidas.",
@@ -1717,4 +1715,3 @@ const window_products = {
     "url": "kids.html"
   }
 };
-if (typeof module !== 'undefined') module.exports = window_products;
