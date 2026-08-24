@@ -1252,12 +1252,12 @@ const window_products = {
     ],
     "subcategory": "Camiseiros"
   },
-  "quartos-47": {
-    "id": "quartos-47",
+  "salas-39": {
+    "id": "salas-39",
     "name": "Elemento Prateleiras Madrid",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Elemento prateleiras. L955 x A1800 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
@@ -1270,12 +1270,12 @@ const window_products = {
     ],
     "subcategory": "Outros"
   },
-  "quartos-40": {
-    "id": "quartos-40",
+  "salas-40": {
+    "id": "salas-40",
     "name": "Elemento Prateleiras Málaga",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Elemento 4 prateleiras + 1 gaveta, estrutura metálica. L800 x A2000 x P395.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
@@ -1289,12 +1289,12 @@ const window_products = {
     ],
     "subcategory": "Outros"
   },
-  "quartos-45": {
-    "id": "quartos-45",
+  "salas-41": {
+    "id": "salas-41",
     "name": "Móvel Hall Madrid",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Móvel hall 1 gaveta + 1 prateleira. L1000 x A820 x P355.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
@@ -1306,12 +1306,12 @@ const window_products = {
     ],
     "subcategory": "Outros"
   },
-  "quartos-46": {
-    "id": "quartos-46",
+  "salas-42": {
+    "id": "salas-42",
     "name": "Sapateira Madrid",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Sapateira 2 portas + 1 gaveta. L1100 x A905 x P355.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
@@ -1518,12 +1518,12 @@ const window_products = {
     ],
     "subcategory": "Sommiers"
   },
-  "quartos-62": {
-    "id": "quartos-62",
+  "salas-43": {
+    "id": "salas-43",
     "name": "Móvel Hall Chiado",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Móvel hall 1 gaveta + 1 porta. L897 x A830 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
@@ -1536,12 +1536,12 @@ const window_products = {
     ],
     "subcategory": "Outros"
   },
-  "quartos-39": {
-    "id": "quartos-39",
+  "salas-44": {
+    "id": "salas-44",
     "name": "Móvel Hall Málaga",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Móvel hall. L1000 x A800 x P405.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
@@ -1555,12 +1555,12 @@ const window_products = {
     ],
     "subcategory": "Outros"
   },
-  "quartos-63": {
-    "id": "quartos-63",
+  "salas-45": {
+    "id": "salas-45",
     "name": "Sapateira Chiado",
     "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
+    "url": "salas.html",
+    "category": "Salas",
     "description": "Sapateira 2 portas. L1032 x A885 x P350.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
