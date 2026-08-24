@@ -942,7 +942,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1460 x A1050 x P2050[+0.00]|L1560 x A1050 x P2050[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Cama-Casal-Paris-Carvalho-Natura.webp",
+    "gallery": [
+      "images/produtos/Cama-Casal-Paris-Carvalho-Natura.webp",
+      "images/produtos/Cama-Casal-Paris-Carvalho-Cinza.webp"
+    ]
   },
   "quartos-49": {
     "id": "quartos-49",
@@ -955,7 +959,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L605 x A460 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Mesa-de-Cabeceira-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Mesa-de-Cabeceira-Paris-Natura.webp",
+      "images/produtos/Mesa-de-Cabeceira-Paris-Cinza.webp"
+    ]
   },
   "quartos-50": {
     "id": "quartos-50",
@@ -968,7 +976,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1135 x A885 x P450[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
+    "gallery": [
+      "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
+      "images/produtos/Comoda-Paris-Carvalho-Cinza.webp"
+    ]
   },
   "quartos-51": {
     "id": "quartos-51",
@@ -981,7 +993,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L695 x A1125 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Camiseiro-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Camiseiro-Paris-Natura.webp",
+      "images/produtos/Camiseiro-Paris-Cinza.webp"
+    ]
   },
   "quartos-52": {
     "id": "quartos-52",
@@ -994,7 +1010,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Base-TV-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Base-TV-Paris-Natura.webp",
+      "images/produtos/Base-TV-Paris-Cinza.webp"
+    ]
   },
   "quartos-53": {
     "id": "quartos-53",
@@ -1007,7 +1027,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Mesa-de-Centro-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Mesa-de-Centro-Paris-Natura.webp",
+      "images/produtos/Mesa-de-Centro-Paris-Cinza.webp"
+    ]
   },
   "quartos-54": {
     "id": "quartos-54",
@@ -1020,7 +1044,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Aparador-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Aparador-Paris-Natura.webp",
+      "images/produtos/Aparador-Paris-Cinza.webp"
+    ]
   },
   "quartos-55": {
     "id": "quartos-55",
@@ -1033,7 +1061,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1200 x A750 x P590[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Secretaria-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Secretaria-Paris-Natura.webp",
+      "images/produtos/Secretaria-Paris-Cinza.webp"
+    ]
   },
   "quartos-56": {
     "id": "quartos-56",
@@ -1046,7 +1078,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L995 x A840 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Movel-de-Hall-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Movel-de-Hall-Paris-Natura.webp",
+      "images/produtos/Movel-de-Hall-Paris-Cinza.webp"
+    ]
   },
   "quartos-57": {
     "id": "quartos-57",
@@ -1059,7 +1095,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1350 x A902 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Sapateira-Paris-Natura.webp",
+    "gallery": [
+      "images/produtos/Sapateira-Paris-Natura.webp",
+      "images/produtos/Sapateira-Paris-Cinza.webp"
+    ]
   },
   "quartos-58": {
     "id": "quartos-58",
