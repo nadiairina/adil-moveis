@@ -1112,7 +1112,13 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1570 x A1100 x P2092[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150.png",
+    "gallery": [
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-1.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-2.png",
+      "images/produtos/cama-de-casal-chiado-brancocarvalho-200x150-3.png"
+    ]
   },
   "quartos-59": {
     "id": "quartos-59",
@@ -1125,7 +1131,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L575 x A460 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/5.webp",
+    "gallery": [
+      "images/produtos/5.webp",
+      "images/produtos/6.webp"
+    ]
   },
   "quartos-60": {
     "id": "quartos-60",
@@ -1138,7 +1148,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1015 x A850 x P450[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
+    "gallery": [
+      "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
+      "images/produtos/Comoda-Chiado-Branca.webp"
+    ]
   },
   "quartos-61": {
     "id": "quartos-61",
@@ -1151,7 +1165,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L575 x A1095 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Camiseiro-Chiado-Branco.webp",
+    "gallery": [
+      "images/produtos/Camiseiro-Chiado-Branco.webp",
+      "images/produtos/Camiseiro-Chiado-Pinho-Mel.webp"
+    ]
   },
   "quartos-62": {
     "id": "quartos-62",
@@ -1164,7 +1182,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L897 x A830 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Movel-Hall-Chiado-Branco.webp",
+    "gallery": [
+      "images/produtos/Movel-Hall-Chiado-Branco.webp",
+      "images/produtos/Movel-Hall-Chiado-Pinho-Mel.webp"
+    ]
   },
   "quartos-63": {
     "id": "quartos-63",
@@ -1177,7 +1199,11 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1032 x A885 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Sapateira-Chiado-Branco.webp",
+    "gallery": [
+      "images/produtos/Sapateira-Chiado-Branco.webp",
+      "images/produtos/Sapateira-Chiado-Pinho-Mel.webp"
+    ]
   },
   "quartos-64": {
     "id": "quartos-64",
@@ -1190,7 +1216,11 @@ const window_products = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1580 x A1100 x P2110[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
+    "gallery": [
+      "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
+      "images/produtos/Cama-Casal-Viena-Cinza-Lado.webp"
+    ]
   },
   "quartos-65": {
     "id": "quartos-65",
@@ -1203,7 +1233,11 @@ const window_products = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L580 x A455 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
+    "gallery": [
+      "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
+      "images/produtos/Mesa-Cabeceira-Viena-Cinza.webp"
+    ]
   },
   "quartos-66": {
     "id": "quartos-66",
@@ -1216,7 +1250,15 @@ const window_products = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1130 x A920 x P500[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/comoda-viena-faia.png",
+    "gallery": [
+      "images/produtos/comoda-viena-faia.png",
+      "images/produtos/comoda-viena-faia.jpg",
+      "images/produtos/comoda-viena-faia-1.jpg",
+      "images/produtos/comoda-viena-cinzabranco.jpg",
+      "images/produtos/comoda-viena-cinzabranco-1.jpg",
+      "images/produtos/comoda-viena-cinzabranco-2.jpg"
+    ]
   },
   "quartos-67": {
     "id": "quartos-67",
@@ -1229,7 +1271,11 @@ const window_products = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L650 x A1150 x P400[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/camiseiro-viena-jl738.jpg",
+    "gallery": [
+      "images/produtos/camiseiro-viena-jl738.jpg",
+      "images/produtos/camiseiro-viena-jl738-1.jpg"
+    ]
   },
   "quartos-68": {
     "id": "quartos-68",
@@ -1242,7 +1288,11 @@ const window_products = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1130 x A900 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Hall-Viena-Faia-Lateral.webp",
+    "gallery": [
+      "images/produtos/Hall-Viena-Faia-Lateral.webp",
+      "images/produtos/Hall-Viena-Cinza-Lateral.webp"
+    ]
   },
   "quartos-69": {
     "id": "quartos-69",
@@ -1255,7 +1305,11 @@ const window_products = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1130 x A1000 x P350[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Sapateira-Viena-Faia-Lateral.webp",
+    "gallery": [
+      "images/produtos/Sapateira-Viena-Faia-Lateral.webp",
+      "images/produtos/Sapateira-Viena-Cinza-Lateral.webp"
+    ]
   },
   "kids-7": {
     "id": "kids-7",
@@ -1288,7 +1342,11 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1540[+0.00]|L1640[+0.00]|L1740[+0.00]|L1940[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
+    "gallery": [
+      "images/produtos/cama-estofada-alison-bege-200x150-2.jpg",
+      "images/produtos/cama-estofada-alison-bege-200x150-3.jpg"
+    ]
   },
   "quartos-71": {
     "id": "quartos-71",
@@ -1301,7 +1359,7 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1540[+0.00]|L1560[+0.00]|L1660[+0.00]|L1760[+0.00]|L1960[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/cama-estofada-alison-bege-200x150.jpg"
   },
   "quartos-72": {
     "id": "quartos-72",
@@ -1314,7 +1372,10 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/melissa_cama_ambiente.jpg",
+    "gallery": [
+      "images/produtos/melissa_cama_ambiente.jpg"
+    ]
   },
   "quartos-73": {
     "id": "quartos-73",
@@ -1327,7 +1388,10 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1470[+0.00]|L1570[+0.00]|L1670[+0.00]|L1870[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/sophie_cama_ambiente.jpg",
+    "gallery": [
+      "images/produtos/sophie_cama_ambiente.jpg"
+    ]
   },
   "quartos-74": {
     "id": "quartos-74",
@@ -1340,7 +1404,10 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L980[+0.00]|L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
-    "image": "images/logo_sem_fundo.png",
+    "image": "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg",
+    "gallery": [
+      "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg"
+    ],
     "subcategory": "Cabeceiras"
   },
   "quartos-75": {
@@ -1355,6 +1422,7 @@ const window_products = {
     "custom2_name": "Dimensões",
     "custom2_options": "L2200[+0.00]|L2700[+0.00]|L2800[+0.00]|L2900[+0.00]|L3100[+0.00]",
     "image": "images/logo_sem_fundo.png",
+    "gallery": [],
     "subcategory": "Cabeceiras"
   },
   "quartos-76": {
@@ -1368,7 +1436,11 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png",
+    "image": "images/produtos/myra.png",
+    "gallery": [
+      "images/produtos/myra.png",
+      "images/produtos/myra_amb-1200x1200.webp"
+    ],
     "subcategory": "Cabeceiras"
   },
   "quartos-77": {
@@ -1382,7 +1454,14 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png",
+    "image": "images/produtos/LUXE.jpg",
+    "gallery": [
+      "images/produtos/LUXE.jpg",
+      "images/produtos/LUXE_AMBIENTE.jpg",
+      "images/produtos/Cabeceira-Luxe-cinza.webp",
+      "images/produtos/Cabeceira-Luxe-Preto.webp",
+      "images/produtos/Cabeceira-Luxe-Beje.webp"
+    ],
     "subcategory": "Cabeceiras"
   },
   "quartos-78": {
@@ -1396,7 +1475,13 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1150[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png",
+    "image": "images/produtos/gomo-estofada.png",
+    "gallery": [
+      "images/produtos/gomo-estofada.png",
+      "images/produtos/gomo-estofada-1.png",
+      "images/produtos/gomo-1200x1200.png",
+      "images/produtos/quarto-cabeceira-gomo-1200x1200.webp"
+    ],
     "subcategory": "Cabeceiras"
   },
   "quartos-79": {
@@ -1410,7 +1495,15 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/logo_sem_fundo.png",
+    "image": "images/produtos/kristal-1200x1200.png",
+    "gallery": [
+      "images/produtos/kristal-1200x1200.png",
+      "images/produtos/kristal-1200x1200-1.png",
+      "images/produtos/kristal-cabeceira-1200x1200.webp",
+      "images/produtos/kristal-cabeceira-2048x2048.webp",
+      "images/produtos/cabeceira-kristal-sleep-1200x1200.webp",
+      "images/produtos/cabeceira-kristal-sleep-2048x2048.webp"
+    ],
     "subcategory": "Cabeceiras"
   },
   "quartos-80": {
@@ -1424,7 +1517,12 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]|1800x2000[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
+    "gallery": [
+      "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
+      "images/produtos/Base-Sommier-Big-Box2-600x333.jpg",
+      "images/produtos/Base-Sommier-Big-Box3-600x333.jpg"
+    ]
   },
   "quartos-81": {
     "id": "quartos-81",
@@ -1437,7 +1535,10 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/7616052-esquerdo-aberto.jpg",
+    "gallery": [
+      "images/produtos/7616052-esquerdo-aberto.jpg"
+    , "images/produtos/7616052-esquerdo-amb.jpg"]
   },
   "quartos-82": {
     "id": "quartos-82",
@@ -1450,7 +1551,11 @@ const window_products = {
     "custom1_options": "Cerejeira[+0.00]|Camouflage[+0.00]|Opal[+0.00]|Capuccino[+0.00]|Dark Grey[+0.00]|Branco[+0.00]|Preto[+0.00]|Carvalho Natura[+0.00]|Carvalho Cinza[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/new-natura-lourini.png",
+    "gallery": [
+      "images/produtos/new-natura-lourini.png",
+      "images/produtos/new-branco-lourini.png"
+    ]
   },
   "quartos-83": {
     "id": "quartos-83",
@@ -1463,7 +1568,11 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/sommier-vintage-1.webp",
+    "gallery": [
+      "images/produtos/sommier-vintage-1.webp",
+      "images/produtos/sommier-vintage-e1732121529234.webp"
+    ]
   },
   "quartos-84": {
     "id": "quartos-84",
@@ -1476,7 +1585,10 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/sommier-fixo-summer-195x140.jpg",
+    "gallery": [
+      "images/produtos/sommier-fixo-summer-195x140.jpg"
+    ]
   },
   "quartos-cab-1": {
     "id": "quartos-cab-1",
