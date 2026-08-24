@@ -709,7 +709,13 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1580 x A1100 x P2080[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/cama-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/cama-natura-1200x1200.png",
+      "images/produtos/cama-1200x1200.png",
+      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200-1.webp",
+      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
+    ]
   },
   "quartos-36": {
     "id": "quartos-36",
@@ -722,7 +728,11 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L640 x A540 x P405[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/mesa-cabeceira-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/mesa-cabeceira-natura-1200x1200.png",
+      "images/produtos/mesa-cabeceira-cinza-1-1200x1200.png"
+    ]
   },
   "quartos-37": {
     "id": "quartos-37",
@@ -735,7 +745,12 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L640 x A1225 x P405[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/camiseiro-natura-1200x1200.webp",
+    "gallery": [
+      "images/produtos/camiseiro-natura-1200x1200.webp",
+      "images/produtos/camiseiro-cinza-1200x1200.png",
+      "images/produtos/camiseiro-1200x1200.png"
+    ]
   },
   "quartos-38": {
     "id": "quartos-38",
@@ -748,7 +763,12 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1070 x A895 x P455[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/comoda-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/comoda-natura-1200x1200.png",
+      "images/produtos/comoda-cinza-malaga-1200x1200.webp",
+      "images/produtos/comoda-cinza-1200x1200.png"
+    ]
   },
   "quartos-39": {
     "id": "quartos-39",
@@ -761,7 +781,12 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A800 x P405[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/movel-hall-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/movel-hall-natura-1200x1200.png",
+      "images/produtos/movel-hall-1200x1200.png",
+      "images/produtos/movel-hall-1200x1200.webp"
+    ]
   },
   "quartos-40": {
     "id": "quartos-40",
@@ -774,7 +799,12 @@ const window_products = {
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L800 x A2000 x P395[+0.00]",
-    "image": "images/logo_sem_fundo.png"
+    "image": "images/produtos/estante-natura-1200x1200.png",
+    "gallery": [
+      "images/produtos/estante-natura-1200x1200.png",
+      "images/produtos/estante-cinza-1200x1200.png",
+      "images/produtos/elemento-prateleiras-toronto-cinza-1200x1200.webp"
+    ]
   },
   "quartos-41": {
     "id": "quartos-41",
