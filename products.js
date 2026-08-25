@@ -1825,9 +1825,9 @@ const window_products = {
     "description": "Coleções consistentes para as suas dores musculares. Soluções focadas na ergonomia e saúde da sua coluna.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "image": "images/F3EEE4",
+    "image": "images/produtos/colchao-mindol.jpg",
     "gallery": [
-      "images/F3EEE4"
+      "images/produtos/colchao-mindol.jpg"
     ]
   },
   "colchao-molaflex": {
@@ -1839,9 +1839,9 @@ const window_products = {
     "description": "Produto do ano 2026. Coleções com marca de confiança, desenvolvidas para garantir o máximo de frescura e conforto.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "image": "images/F3EEE4",
+    "image": "images/produtos/colchao-molaflex.avif",
     "gallery": [
-      "images/F3EEE4"
+      "images/produtos/colchao-molaflex.avif"
     ]
   },
   "colchao-bestbed": {
@@ -1853,9 +1853,9 @@ const window_products = {
     "description": "Coleções firmes para a sua coluna. O equilíbrio ideal entre firmeza e adaptabilidade para uma postura correta.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "image": "images/F3EEE4",
+    "image": "images/produtos/colchao-bestbed.jpg",
     "gallery": [
-      "images/F3EEE4"
+      "images/produtos/colchao-bestbed.jpg"
     ]
   },
   "colchao-colmed": {
@@ -1867,9 +1867,9 @@ const window_products = {
     "description": "Colchões medicinais que proporcionam alívio para os problemas enquanto dorme, promovendo a sua saúde diária.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "image": "images/F3EEE4",
+    "image": "images/produtos/colchao-colmed.jpg",
     "gallery": [
-      "images/F3EEE4"
+      "images/produtos/colchao-colmed.jpg"
     ]
   },
 };
