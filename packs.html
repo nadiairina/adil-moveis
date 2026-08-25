@@ -408,32 +408,60 @@
         }
 
         const packCards = document.querySelectorAll('.pack-card');
+        const mainGrid = document.getElementById('packs-grid-container');
+        const outrasGrid = document.getElementById('outras-grid-container');
+        const outrasSection = document.getElementById('outras-sugestoes-section');
+        
         let visibleCount = 0;
+        let outrasCount = 0;
+        
         packCards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
-          if (cat === 'all' || cardCat === cat) {
-            card.style.display = '';
-            visibleCount++;
+          if (cat === 'all') {
+             mainGrid.appendChild(card);
+             card.style.display = '';
+             visibleCount++;
           } else {
-            card.style.display = 'none';
+             if (cardCat === cat) {
+                mainGrid.appendChild(card);
+                card.style.display = '';
+                visibleCount++;
+             } else {
+                outrasGrid.appendChild(card);
+                card.style.display = '';
+                outrasCount++;
+             }
           }
         });
 
         if (destaquesSection) {
           destaquesSection.style.display = visibleCount > 0 ? '' : 'none';
         }
+        
+        if (outrasSection) {
+          outrasSection.style.display = (cat !== 'all' && outrasCount > 0) ? '' : 'none';
+        }
 
         // Adjust Grid layout
-        const grid = document.getElementById('packs-grid-container');
-        if (grid) {
+        if (mainGrid) {
             if (cat === 'all') {
-                grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full';
+                mainGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full';
             } else if (visibleCount === 1) {
-                grid.className = 'grid grid-cols-1 max-w-lg mx-auto gap-6';
+                mainGrid.className = 'grid grid-cols-1 max-w-lg mx-auto gap-6';
             } else if (visibleCount === 2) {
-                grid.className = 'grid grid-cols-1 sm:grid-cols-2 max-w-5xl mx-auto gap-8';
+                mainGrid.className = 'grid grid-cols-1 sm:grid-cols-2 max-w-5xl mx-auto gap-8';
             } else {
-                grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-8';
+                mainGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-8';
+            }
+        }
+        
+        if (outrasGrid) {
+            if (outrasCount === 1) {
+                outrasGrid.className = 'grid grid-cols-1 max-w-lg mx-auto gap-6';
+            } else if (outrasCount === 2) {
+                outrasGrid.className = 'grid grid-cols-1 sm:grid-cols-2 max-w-5xl mx-auto gap-8';
+            } else {
+                outrasGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-8';
             }
         }
       }
