@@ -1756,7 +1756,7 @@ const window_products = {
     "url": "salas.html",
     "category": "Salas",
     "description": "Base TV 1 Gaveta Madrid (L1555 x A500 x P450).",
-    "image": "images/produtos/saladesonho.jpg",
+    "image": "images/produtos/pack-sala-sonho.jpg",
     "gallery": [],
     "subcategory": "Móveis de Sala"
   },
