@@ -1814,7 +1814,7 @@ const window_products = {
     "image": "images/produtos/placeholder.jpg",
     "gallery": [],
     "subcategory": "Colchões"
-  }
+  },
 
   "colchao-mindol": {
     "id": "colchao-mindol",
@@ -1875,7 +1875,7 @@ const window_products = {
 
   "almofada-1": {
     "id": "almofada-1",
-    "name": "Almofada Ecofiber",
+    "name": "Molaflex Almofada Ecofiber",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1889,7 +1889,7 @@ const window_products = {
   },
   "almofada-2": {
     "id": "almofada-2",
-    "name": "Almofada Viscoprata",
+    "name": "Molaflex Almofada Viscoprata",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
