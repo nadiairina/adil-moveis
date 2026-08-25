@@ -1872,4 +1872,33 @@ const window_products = {
       "images/produtos/colchao-colmed.jpg"
     ]
   },
+
+  "almofada-1": {
+    "id": "almofada-1",
+    "name": "Almofada Ortopédica",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "description": "Apoio perfeito para o seu pescoço e coluna, garantindo noites de sono mais reparadoras.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]",
+    "image": "images/F3EEE4",
+    "gallery": [
+      "images/F3EEE4"
+    ]
+  },
+  "almofada-2": {
+    "id": "almofada-2",
+    "name": "Almofada Viscoelástica",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "description": "Adapta-se ao contorno da sua cabeça e pescoço, aliviando os pontos de pressão e melhorando a circulação.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]",
+    "image": "images/F3EEE4",
+    "gallery": [
+      "images/F3EEE4"
+    ]
+  },
 };
