@@ -158,7 +158,7 @@
           <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1 active" data-category="all">Todos os Packs</button>
           <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="quarto">Packs Quarto</button>
           <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="sala">Packs Sala</button>
-          <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="descanse">Packs Descanso</button>
+          <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="quarto">Packs Descanso</button>
         </div>
       </div>
     </section>
@@ -290,7 +290,7 @@
           </div>
 
           <!-- Pack 5: Pack Sonhos Tranquilos -->
-          <div class="product pack-card bg-white rounded-xl overflow-hidden border border-[#E8E3DC] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between" data-category="descanse">
+          <div class="product pack-card bg-white rounded-xl overflow-hidden border border-[#E8E3DC] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between" data-category="quarto">
             <div>
               <a href="pack-detalhe.html?id=pack-5" class="block relative w-full" style="aspect-ratio: 16/10; overflow:hidden; background:#F7F4F0;">
                 <img src="images/produtos/sonhostranquilos.webp" alt="pack-5" class="absolute inset-0 w-full h-full object-cover" style="mix-blend-mode: darken;" />
@@ -383,9 +383,9 @@
       const destaquesSection = document.getElementById('destaques-section');
 
       function filterPacks(cat) {
-        // Show/hide hero section (quarto category)
+        // Show/hide hero section only on 'all'
         if (heroSection) {
-          heroSection.style.display = (cat === 'all' || cat === 'quarto') ? '' : 'none';
+          heroSection.style.display = (cat === 'all') ? '' : 'none';
         }
         // Show/hide destaques section title only if there are visible cards
         // Show/hide all pack-card items
