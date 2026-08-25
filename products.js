@@ -534,7 +534,7 @@ const window_products = {
   },
   "colchoes-comp-1": {
     "id": "colchoes-comp-1",
-    "name": "Almofada Viscoelástica Ergonomia",
+    "name": "Almofada Viscoprata Ergonomia",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1875,30 +1875,30 @@ const window_products = {
 
   "almofada-1": {
     "id": "almofada-1",
-    "name": "Almofada Ortopédica",
+    "name": "Almofada Ecofiber",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "description": "Apoio perfeito para o seu pescoço e coluna, garantindo noites de sono mais reparadoras.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]",
-    "image": "images/F3EEE4",
+    "image": "images/produtos/colchoes/almofada-ecofiber.png",
     "gallery": [
-      "images/F3EEE4"
+      "images/produtos/colchoes/almofada-ecofiber.png"
     ]
   },
   "almofada-2": {
     "id": "almofada-2",
-    "name": "Almofada Viscoelástica",
+    "name": "Almofada Viscoprata",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
     "description": "Adapta-se ao contorno da sua cabeça e pescoço, aliviando os pontos de pressão e melhorando a circulação.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]",
-    "image": "images/F3EEE4",
+    "image": "images/produtos/colchoes/almofada-viscoprata.webp",
     "gallery": [
-      "images/F3EEE4"
+      "images/produtos/colchoes/almofada-viscoprata.webp"
     ]
   },
 };
