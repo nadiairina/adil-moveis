@@ -1876,10 +1876,8 @@ const window_products = {
     "description": "Apoio perfeito para o seu pescoço e coluna, garantindo noites de sono mais reparadoras.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]",
-    "image": "images/produtos/colchoes/almofada-ecofiber.png",
-    "gallery": [
-      "images/produtos/colchoes/almofada-ecofiber.png"
-    ]
+    "image": "images/produtos/colchoes/almofada-ecofiber-1.jpg",
+    "gallery": ["images/produtos/colchoes/almofada-ecofiber-1.jpg", "images/produtos/colchoes/almofada-ecofiber-2.png"]
   },
   "almofada-2": {
     "id": "almofada-2",
@@ -1890,9 +1888,7 @@ const window_products = {
     "description": "Adapta-se ao contorno da sua cabeça e pescoço, aliviando os pontos de pressão e melhorando a circulação.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]",
-    "image": "images/produtos/colchoes/almofada-viscoprata.webp",
-    "gallery": [
-      "images/produtos/colchoes/almofada-viscoprata.webp"
-    ]
+    "image": "images/produtos/colchoes/almofada-viscoprata-1.webp",
+    "gallery": ["images/produtos/colchoes/almofada-viscoprata-1.webp", "images/produtos/colchoes/almofada-viscoprata-2.webp"]
   },
 };
