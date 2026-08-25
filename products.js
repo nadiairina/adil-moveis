@@ -1851,8 +1851,8 @@ const window_products = {
     "description": "Coleções firmes para a sua coluna. O equilíbrio ideal entre firmeza e adaptabilidade para uma postura correta.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "image": "images/produtos/colchao-bestbed.jpg",
-    "gallery": ["images/produtos/colchao-bestbed.jpg", "images/produtos/colchoes/colchao-bestbed-1.jpg", "images/produtos/colchoes/colchao-bestbed-2.jpg", "images/produtos/colchoes/colchao-bestbed-3.jpg", "images/produtos/colchoes/colchao-bestbed-4.jpg"]
+    "image": "images/produtos/colchao-bestbed-v2.jpg",
+    "gallery": ["images/produtos/colchao-bestbed-v2.jpg", "images/produtos/colchoes/colchao-bestbed-1.jpg", "images/produtos/colchoes/colchao-bestbed-2.jpg", "images/produtos/colchoes/colchao-bestbed-3.jpg", "images/produtos/colchoes/colchao-bestbed-4.jpg"]
   },
   "colchao-colmed": {
     "id": "colchao-colmed",
