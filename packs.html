@@ -198,7 +198,7 @@
     <section id="destaques-section" class="py-12 bg-[#FDFCFA]">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-10">
-          <p id="destaques-super-title" style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">Outras Sugestões</p>
+          <p id="destaques-super-title" style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem; display:none;"></p>
           <h2 id="destaques-main-title" style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a;">Mais Packs Em Destaque</h2>
         </div>
 
@@ -396,15 +396,19 @@
         const titleMain = document.getElementById('destaques-main-title');
         if (titleSuper && titleMain) {
             if (cat === 'all') {
-                titleSuper.textContent = "Outras Sugestões";
+                titleSuper.style.display = "none";
                 titleMain.textContent = "Mais Packs Em Destaque";
             } else if (cat === 'quarto') {
+                titleSuper.style.display = "block";
+                titleSuper.textContent = "Coleção de Quartos";
                 titleSuper.textContent = "Coleção de Quartos";
                 titleMain.textContent = "Packs Quarto";
             } else if (cat === 'sala') {
+                titleSuper.style.display = "block";
                 titleSuper.textContent = "Coleção de Salas";
                 titleMain.textContent = "Packs Sala";
             } else if (cat === 'jantar') {
+                titleSuper.style.display = "block";
                 titleSuper.textContent = "Coleção de Jantar";
                 titleMain.textContent = "Packs Sala de Jantar";
             }
@@ -420,10 +424,16 @@
         
         packCards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
+          const isPack3 = card.innerHTML.includes('id=pack-3'); // Identify Aconchego Essencial
+          
           if (cat === 'all') {
              mainGrid.appendChild(card);
-             card.style.display = '';
-             visibleCount++;
+             if (isPack3) {
+                 card.style.display = 'none'; // Hide from grid because it's in the hero!
+             } else {
+                 card.style.display = '';
+                 visibleCount++;
+             }
           } else {
              if (cardCat === cat) {
                 mainGrid.appendChild(card);
@@ -448,7 +458,7 @@
         // Adjust Grid layout
         if (mainGrid) {
             if (cat === 'all') {
-                mainGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full';
+                mainGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-6';
             } else if (visibleCount === 1) {
                 mainGrid.className = 'grid grid-cols-1 max-w-lg mx-auto gap-6';
             } else if (visibleCount === 2) {
