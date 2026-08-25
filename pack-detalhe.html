@@ -698,8 +698,14 @@
         
         var mainImg = document.getElementById('mainImage');
         mainImg.src = p.image;
-        if (productId === 'pack-3') {
-            mainImg.style.objectPosition = 'right center';
+        mainImg.style.transform = 'scale(1)'; // reset default
+        
+        if (productId === 'pack-3') { // Aconchego Essencial
+            mainImg.style.transform = 'scale(1.15)';
+            mainImg.style.objectPosition = '90% center'; // Push left edge out
+        } else if (productId === 'pack-1') { // Sala de Sonho
+            mainImg.style.transform = 'scale(1.15)';
+            mainImg.style.objectPosition = '10% center'; // Push right edge out
         } else {
             mainImg.style.objectPosition = 'center';
         }
