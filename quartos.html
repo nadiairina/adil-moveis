@@ -201,6 +201,8 @@
 </form>
 </div>
 </section>
+
+
 <footer class="bg-black text-white py-8" style="font-family:'Inter',sans-serif; border-top:1px solid #1a1a1a;">
   <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
     <!-- Main row: logo/contacts on left, clean horizontal menu on right -->
@@ -349,10 +351,14 @@ document.addEventListener('DOMContentLoaded', function() {
       products.forEach(product => {
         if (category === 'all' || product.getAttribute('data-category') === category) {
           product.style.display = '';
+          product.classList.add('aos-animate');
+          product.style.opacity = '1';
+          product.style.transform = 'none';
         } else {
           product.style.display = 'none';
         }
       });
+      setTimeout(() => { if(typeof AOS !== 'undefined') AOS.refresh(); }, 50);
     });
   });
   

@@ -1181,3 +1181,21 @@ footer div.border-b {
 }
 
 
+
+
+
+/* Fix for images being small squares on mobile */
+.group img, .bg-white.rounded .relative img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
