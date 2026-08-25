@@ -1818,7 +1818,7 @@ const window_products = {
 
   "colchao-mindol": {
     "id": "colchao-mindol",
-    "name": "Mindol",
+    "name": "Mindol Evolution",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1832,7 +1832,7 @@ const window_products = {
   },
   "colchao-molaflex": {
     "id": "colchao-molaflex",
-    "name": "Molaflex",
+    "name": "Molaflex Freshcool",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1846,7 +1846,7 @@ const window_products = {
   },
   "colchao-bestbed": {
     "id": "colchao-bestbed",
-    "name": "Bestbed",
+    "name": "Bestbed Max Body",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1860,7 +1860,7 @@ const window_products = {
   },
   "colchao-colmed": {
     "id": "colchao-colmed",
-    "name": "Colmed",
+    "name": "Colmed Airflow",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
