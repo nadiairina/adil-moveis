@@ -695,7 +695,15 @@
           galleryContainer.appendChild(thumb);
         });
 
-        document.getElementById('mainImage').src = p.image;
+        
+        var mainImg = document.getElementById('mainImage');
+        mainImg.src = p.image;
+        if (productId === 'pack-3') {
+            mainImg.style.objectPosition = 'right center';
+        } else {
+            mainImg.style.objectPosition = 'center';
+        }
+
 
         // Hide gallery row if only 1 image
         if (galleryImages.length <= 1) galleryContainer.style.display = 'none';
