@@ -382,6 +382,9 @@
       const heroSection = document.getElementById('hero-pack-section');
       const destaquesSection = document.getElementById('destaques-section');
 
+      // Store original order once to prevent scrambling
+      const originalPackCards = Array.from(document.querySelectorAll('.pack-card'));
+      
       function filterPacks(cat) {
         // Show/hide hero section only on 'all'
         if (heroSection) {
@@ -407,7 +410,7 @@
             }
         }
 
-        const packCards = document.querySelectorAll('.pack-card');
+        const packCards = originalPackCards;
         const mainGrid = document.getElementById('packs-grid-container');
         const outrasGrid = document.getElementById('outras-grid-container');
         const outrasSection = document.getElementById('outras-sugestoes-section');
