@@ -154,11 +154,11 @@
     <!-- Subcategories Filter Buttons -->
     <section class="py-12 bg-white">
       <div class="container mx-auto px-4">
-        <div class="filters flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+        <div class="filters flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
           <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1 active" data-category="all">Todos os Packs</button>
           <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="quarto">Packs Quarto</button>
           <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="sala">Packs Sala</button>
-          <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="quarto">Packs Descanso</button>
+          <button class="filter-button outline-none focus:outline-none px-6 py-3 transition-all duration-300 rounded-full font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#C8B598] hover:text-white hover:-translate-y-1" data-category="jantar">Packs Sala de Jantar</button>
         </div>
       </div>
     </section>
@@ -198,11 +198,11 @@
     <section id="destaques-section" class="py-12 bg-[#FDFCFA]">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-10">
-          <p style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">Outras Sugestões</p>
-          <h2 style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a;">Mais Packs Em Destaque</h2>
+          <p id="destaques-super-title" style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">Outras Sugestões</p>
+          <h2 id="destaques-main-title" style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a;">Mais Packs Em Destaque</h2>
         </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div id="packs-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           
           <!-- Pack 1: Pack Sala de Sonho -->
           <div class="product pack-card bg-white rounded-xl overflow-hidden border border-[#E8E3DC] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between" data-category="sala">
@@ -269,7 +269,7 @@
           </div>
 
           <!-- Pack 4: Pack À Mesa -->
-          <div class="product pack-card bg-white rounded-xl overflow-hidden border border-[#E8E3DC] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between" data-category="sala">
+          <div class="product pack-card bg-white rounded-xl overflow-hidden border border-[#E8E3DC] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between" data-category="jantar">
             <div>
               <a href="pack-detalhe.html?id=pack-4" class="block relative w-full" style="aspect-ratio: 16/10; overflow:hidden; background:#F7F4F0;">
                 <img src="images/produtos/amesa.jpg" alt="pack-4" class="absolute inset-0 w-full h-full object-cover" style="mix-blend-mode: darken;" />
@@ -387,21 +387,54 @@
         if (heroSection) {
           heroSection.style.display = (cat === 'all') ? '' : 'none';
         }
-        // Show/hide destaques section title only if there are visible cards
-        // Show/hide all pack-card items
+
+        // Title update
+        const titleSuper = document.getElementById('destaques-super-title');
+        const titleMain = document.getElementById('destaques-main-title');
+        if (titleSuper && titleMain) {
+            if (cat === 'all') {
+                titleSuper.textContent = "Outras Sugestões";
+                titleMain.textContent = "Mais Packs Em Destaque";
+            } else if (cat === 'quarto') {
+                titleSuper.textContent = "Coleção de Quartos";
+                titleMain.textContent = "Packs Quarto";
+            } else if (cat === 'sala') {
+                titleSuper.textContent = "Coleção de Salas";
+                titleMain.textContent = "Packs Sala";
+            } else if (cat === 'jantar') {
+                titleSuper.textContent = "Coleção de Jantar";
+                titleMain.textContent = "Packs Sala de Jantar";
+            }
+        }
+
         const packCards = document.querySelectorAll('.pack-card');
-        let anyVisible = false;
+        let visibleCount = 0;
         packCards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
           if (cat === 'all' || cardCat === cat) {
             card.style.display = '';
-            anyVisible = true;
+            visibleCount++;
           } else {
             card.style.display = 'none';
           }
         });
+
         if (destaquesSection) {
-          destaquesSection.style.display = anyVisible ? '' : 'none';
+          destaquesSection.style.display = visibleCount > 0 ? '' : 'none';
+        }
+
+        // Adjust Grid layout
+        const grid = document.getElementById('packs-grid-container');
+        if (grid) {
+            if (cat === 'all') {
+                grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full';
+            } else if (visibleCount === 1) {
+                grid.className = 'grid grid-cols-1 max-w-lg mx-auto gap-6';
+            } else if (visibleCount === 2) {
+                grid.className = 'grid grid-cols-1 sm:grid-cols-2 max-w-5xl mx-auto gap-8';
+            } else {
+                grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-8';
+            }
         }
       }
 
