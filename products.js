@@ -1815,4 +1815,61 @@ const window_products = {
     "gallery": [],
     "subcategory": "Colchões"
   }
+
+  "colchao-mindol": {
+    "id": "colchao-mindol",
+    "name": "Mindol",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "description": "Coleções consistentes para as suas dores musculares. Soluções focadas na ergonomia e saúde da sua coluna.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
+    "image": "images/F3EEE4",
+    "gallery": [
+      "images/F3EEE4"
+    ]
+  },
+  "colchao-molaflex": {
+    "id": "colchao-molaflex",
+    "name": "Molaflex",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "description": "Produto do ano 2026. Coleções com marca de confiança, desenvolvidas para garantir o máximo de frescura e conforto.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
+    "image": "images/F3EEE4",
+    "gallery": [
+      "images/F3EEE4"
+    ]
+  },
+  "colchao-bestbed": {
+    "id": "colchao-bestbed",
+    "name": "Bestbed",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "description": "Coleções firmes para a sua coluna. O equilíbrio ideal entre firmeza e adaptabilidade para uma postura correta.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
+    "image": "images/F3EEE4",
+    "gallery": [
+      "images/F3EEE4"
+    ]
+  },
+  "colchao-colmed": {
+    "id": "colchao-colmed",
+    "name": "Colmed",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "description": "Colchões medicinais que proporcionam alívio para os problemas enquanto dorme, promovendo a sua saúde diária.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
+    "image": "images/F3EEE4",
+    "gallery": [
+      "images/F3EEE4"
+    ]
+  },
 };
