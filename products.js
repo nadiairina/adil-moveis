@@ -1841,8 +1841,7 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "image": "images/produtos/colchao-molaflex.avif",
     "gallery": [
-      "images/produtos/colchao-molaflex.avif"
-    ]
+      "images/produtos/colchao-molaflex.avif", "images/produtos/colchoes/colchao-molaflex-1.avif", "images/produtos/colchoes/colchao-molaflex-2.avif"]
   },
   "colchao-bestbed": {
     "id": "colchao-bestbed",
@@ -1855,8 +1854,7 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "image": "images/produtos/colchao-bestbed.jpg",
     "gallery": [
-      "images/produtos/colchao-bestbed.jpg"
-    ]
+      "images/produtos/colchao-bestbed.jpg", "images/produtos/colchoes/colchao-bestbed-1.jpg", "images/produtos/colchoes/colchao-bestbed-2.jpg", "images/produtos/colchoes/colchao-bestbed-3.jpg", "images/produtos/colchoes/colchao-bestbed-4.jpg"]
   },
   "colchao-colmed": {
     "id": "colchao-colmed",
@@ -1869,8 +1867,7 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "image": "images/produtos/colchao-colmed.jpg",
     "gallery": [
-      "images/produtos/colchao-colmed.jpg"
-    ]
+      "images/produtos/colchao-colmed.jpg", "images/produtos/colchoes/colchao-colmed-1.jpg", "images/produtos/colchoes/colchao-colmed-2.jpg"]
   },
 
   "almofada-1": {
