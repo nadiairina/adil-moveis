@@ -942,17 +942,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável. L950/1450/1550/1650/1850 x A1220 x P100.",
+    "subcategory": "Cabeceiras",
+    "description": "Cabeceira estofada capitonê Linha Myra. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/myra.png",
+    "image": "images/produtos/myra_amb-1200x1200.webp",
     "gallery": [
-      "images/produtos/myra.png",
-      "images/produtos/myra_amb-1200x1200.webp"
-    ],
-    "subcategory": "Cabeceiras"
+      "images/produtos/myra_amb-1200x1200.webp",
+      "images/produtos/myra.png"
+    ]
   },
   "quartos-59": {
     "id": "quartos-59",
@@ -995,18 +995,18 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L640 x A540 x P405.",
+    "subcategory": "Mesas de Cabeceira",
+    "description": "Mesa de cabeceira 2 gavetas da Linha Málaga (L640 x A540 x P405 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L640 x A540 x P405[+0.00]",
-    "image": "images/produtos/mesa-cabeceira-natura-1200x1200.png",
+    "image": "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp",
     "gallery": [
+      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp",
       "images/produtos/mesa-cabeceira-natura-1200x1200.png",
-      "images/produtos/mesa-cabeceira-cinza-1-1200x1200.png",
-      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
-    ],
-    "subcategory": "Mesas de Cabeceira"
+      "images/produtos/mesa-cabeceira-cinza-1-1200x1200.png"
+    ]
   },
   "quartos-49": {
     "id": "quartos-49",
@@ -1068,20 +1068,20 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1020 x A860 x P450.",
+    "subcategory": "Cómodas",
+    "description": "Cómoda 4 gavetas da Linha Madrid (L1020 x A860 x P450 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1020 x A860 x P450[+0.00]",
-    "image": "images/produtos/Comoda-Madrid-1.webp",
+    "image": "images/produtos/Comoda-Madrid-Ambiente.webp",
     "gallery": [
+      "images/produtos/Comoda-Madrid-Ambiente.webp",
       "images/produtos/Comoda-Madrid-1.webp",
       "images/produtos/Comoda-Madrid-2.webp",
       "images/produtos/Comoda-Madrid-3.webp",
-      "images/produtos/Comoda-Madrid-4.webp",
-      "images/produtos/Comoda-Madrid-Ambiente.webp"
-    ],
-    "subcategory": "Cómodas"
+      "images/produtos/Comoda-Madrid-4.webp"
+    ]
   },
   "quartos-38": {
     "id": "quartos-38",
@@ -1089,18 +1089,18 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 3 gavetas. L1070 x A895 x P455.",
+    "subcategory": "Cómodas",
+    "description": "Cómoda 3 gavetas da Linha Málaga (L1070 x A895 x P455 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1070 x A895 x P455[+0.00]",
-    "image": "images/produtos/comoda-natura-1200x1200.png",
+    "image": "images/produtos/comoda-cinza-malaga-1200x1200.webp",
     "gallery": [
-      "images/produtos/comoda-natura-1200x1200.png",
       "images/produtos/comoda-cinza-malaga-1200x1200.webp",
+      "images/produtos/comoda-natura-1200x1200.png",
       "images/produtos/comoda-cinza-1200x1200.png"
-    ],
-    "subcategory": "Cómodas"
+    ]
   },
   "quartos-50": {
     "id": "quartos-50",
@@ -1162,19 +1162,19 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Camiseiro 5 gavetas. L635 x A1060 x P400.",
+    "subcategory": "Camiseiros",
+    "description": "Camiseiro 5 gavetas da Linha Madrid (L635 x A1060 x P400 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L635 x A1060 x P400[+0.00]",
-    "image": "images/produtos/Camiseiro-Madrid-Frente.webp",
+    "image": "images/produtos/Camiseiro-Madrid-Ambiente.webp",
     "gallery": [
+      "images/produtos/Camiseiro-Madrid-Ambiente.webp",
       "images/produtos/Camiseiro-Madrid-Frente.webp",
       "images/produtos/Camiseiro-Madrid-Lateral.webp",
-      "images/produtos/Camiseiro-Madrid-Aberto.webp",
-      "images/produtos/Camiseiro-Madrid-Ambiente.webp"
-    ],
-    "subcategory": "Camiseiros"
+      "images/produtos/Camiseiro-Madrid-Aberto.webp"
+    ]
   },
   "quartos-37": {
     "id": "quartos-37",
