@@ -390,9 +390,10 @@ var window_products = window.window_products = window.produtos = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Vermelho[+0.00]|Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/cadeirao-star-vermelho.jpg",
+    "image": "images/produtos/cadeirao-star-vermelho-catalogo.jpg",
     "gallery": [
-      "images/produtos/cadeirao-star-vermelho.jpg"
+      "images/produtos/cadeirao-star-vermelho-catalogo.jpg",
+      "images/produtos/sofas-star_chair.jpg"
     ]
   },
   "salas-23": {
