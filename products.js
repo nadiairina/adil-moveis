@@ -1810,13 +1810,41 @@ const window_products = {
   },
   "mesa-sala-paris": {
     "id": "mesa-sala-paris",
-    "name": "Mesa Sala Extensível Paris",
+    "name": "Mesa de Jantar Extensível Paris (2 Topos)",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Mesa Sala Extensível Paris com 2 Topos.",
-    "image": "images/produtos/Mesa-Sala-Paris-Natura.webp",
-    "gallery": [],
+    "description": "Mesa de sala de jantar extensível da Linha Paris com 2 topos expansíveis. Dimensões: Fechada L1400 x A790 x P900 mm | Aberta L2300 x A790 x P900 mm. Disponível em 2 acabamentos.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Fechada L1400 / Aberta L2300 x A790 x P900 mm[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Carvalho Cinza - Branco[+0.00]|Carvalho Natura - Branco[+0.00]",
+    "image": "images/produtos/mesa-de-jantar-paris-cinzabranco.png",
+    "gallery": [
+      "images/produtos/mesa-de-jantar-paris-cinzabranco.png",
+      "images/produtos/mesa-de-jantar-paris-cinzabranco-1.png",
+      "images/produtos/mesa-de-jantar-paris-cinzabranco-2.png",
+      "images/produtos/mesa-de-jantar-paris-cinzabranco-3.png"
+    ],
+    "subcategory": "Mesas e Cadeiras"
+  },
+  "cadeira-paris": {
+    "id": "cadeira-paris",
+    "name": "Cadeira Paris Estofada",
+    "price": 0,
+    "url": "salas.html",
+    "category": "Salas",
+    "description": "Cadeira de sala de jantar da Linha Paris com estofo de elevado conforto e pés elegantes personalizáveis em várias cores e tecidos.",
+    "custom1_name": "Pés / Acabamento",
+    "custom1_options": "Pés Carvalho[+0.00]|Pés Brancos[+0.00]|Pés Pretos[+0.00]",
+    "custom2_name": "Tecido",
+    "custom2_options": "Ver Catálogo na Loja[+0.00]",
+    "image": "images/produtos/paris-cadeira-lourini-1200x1200.png",
+    "gallery": [
+      "images/produtos/paris-cadeira-lourini-1200x1200.png",
+      "images/produtos/paris-lado-1200x1200.png",
+      "images/produtos/paris-cadeiras-lourini-1200x1200.webp"
+    ],
     "subcategory": "Mesas e Cadeiras"
   },
   "colchao-ortopedico-premium": {
