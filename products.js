@@ -344,13 +344,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-20_gallery_3.webp",
+    "image": "images/produtos/sofas-20_gallery_4.webp",
     "gallery": [
+      "images/produtos/sofas-20_gallery_4.webp",
       "images/produtos/sofas-20_gallery_3.webp",
       "images/produtos/sofas-20_gallery_0.png",
       "images/produtos/sofas-20_gallery_1.png",
-      "images/produtos/sofas-20_gallery_2.png",
-      "images/produtos/sofas-20_gallery_4.webp"
+      "images/produtos/sofas-20_gallery_2.png"
     ],
     "subcategory": "Sofás"
   },
