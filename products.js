@@ -1,4 +1,4 @@
-const window_products = {
+var window_products = window.window_products = window.produtos = {
   "sofas-1": {
     "id": "sofas-1",
     "name": "Sofá Trevor",
@@ -1691,11 +1691,11 @@ const window_products = {
     "description": "Roupeiro individual de 1 porta com gavetas inferiores da Linha Play.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco - Rosa Nube[+0.00]|Branco - Verde Mint[+0.00]|Branco - Azul Piedra[+0.00]",
-    "image": "images/produtos/roupeiro-play-rosabranco.jpg",
+    "image": "images/produtos/kids-9_main.jpg",
     "gallery": [
-      "images/produtos/roupeiro-play-rosabranco.jpg",
-      "images/produtos/roupeiro-play-rosabranco-1.jpg",
-      "images/produtos/roupeiro-play-rosabranco-2.jpg"
+      "images/produtos/kids-9_main.jpg",
+      "images/produtos/kids-9_gallery_1.jpg",
+      "images/produtos/kids-9_gallery_2.jpg"
     ],
     "url": "kids.html"
   },
@@ -1708,11 +1708,11 @@ const window_products = {
     "description": "Roupeiro de 2 portas com 2 gavetas inferiores e excelente arrumação interior da Linha Play.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco - Verde Mint[+0.00]|Branco - Rosa Nube[+0.00]|Branco - Azul Piedra[+0.00]",
-    "image": "images/produtos/roupeiro-play-verde-agua.jpg",
+    "image": "images/produtos/kids-9_gallery_6.jpg",
     "gallery": [
-      "images/produtos/roupeiro-play-verde-agua.jpg",
-      "images/produtos/roupeiro-play-verde-agua-1.jpg",
-      "images/produtos/roupeiro-play-verde-agua-2.jpg"
+      "images/produtos/kids-9_gallery_6.jpg",
+      "images/produtos/kids-9_gallery_7.jpg",
+      "images/produtos/kids-9_gallery_8.jpg"
     ],
     "url": "kids.html"
   },
@@ -2010,3 +2010,5 @@ const window_products = {
     ]
   }
 };
+window.produtos = window_products;
+window.window_products = window_products;
