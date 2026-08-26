@@ -75,5 +75,4 @@ NEW_HEADER = """<!-- Global Promo Banner -->
       </div>
     </div>
   </div>
-</header>
-"""
+</header>"""
