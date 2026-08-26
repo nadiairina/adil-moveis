@@ -110,22 +110,20 @@ const window_products = {
   },
   "sofas-7": {
     "id": "sofas-7",
-    "name": "Sofá Orly",
+    "name": "Sofá Orly (2 Lugares)",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Moderno, elegante e confortável, com chaise longue e costas reclináveis. Um sofá com lugar de destaque em qualquer sala de estar. Revestimento em tecido personalizável.",
+    "description": "Sofá de 2 lugares moderno, elegante e confortável, com costas reclináveis. Um modelo de destaque em qualquer sala de estar. Revestimento em tecido personalizável.",
     "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
+    "custom1_options": "2 Lugares (Standard)[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-orly_main.webp",
+    "image": "images/produtos/sofa-orly-2-lugares.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-orly_main.webp",
-      "images/produtos/sofas-orly_g1.webp",
-      "images/produtos/sofas-orly_g2.webp",
-      "images/produtos/sofas-orly_g3.webp"
+      "images/produtos/sofa-orly-2-lugares.jpg",
+      "images/produtos/sofa-orly-2-lugares-1.jpg"
     ]
   },
   "sofas-8": {
