@@ -797,18 +797,18 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cama casal simples com estrado incluído. L1580 x A1100 x P2080.",
+    "subcategory": "Camas de Casal",
+    "description": "Cama casal simples com estrado incluído da Linha Málaga (L1580 x A1100 x P2080 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1580 x A1100 x P2080[+0.00]",
-    "image": "images/produtos/cama-natura-1200x1200.png",
+    "image": "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp",
     "gallery": [
+      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp",
       "images/produtos/cama-natura-1200x1200.png",
-      "images/produtos/cama-1200x1200.png",
-      "images/produtos/cama-mesas-cabeceira-toronto-cinza-1200x1200.webp"
-    ],
-    "subcategory": "Camas"
+      "images/produtos/cama-1200x1200.png"
+    ]
   },
   "quartos-48": {
     "id": "quartos-48",
@@ -852,19 +852,19 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável.",
+    "subcategory": "Cabeceiras",
+    "description": "Cabeceira estofada com design em gomos verticais. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1150[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/gomo-estofada.png",
+    "image": "images/produtos/quarto-cabeceira-gomo-1200x1200.webp",
     "gallery": [
+      "images/produtos/quarto-cabeceira-gomo-1200x1200.webp",
       "images/produtos/gomo-estofada.png",
       "images/produtos/gomo-estofada-1.png",
-      "images/produtos/gomo-1200x1200.png",
-      "images/produtos/quarto-cabeceira-gomo-1200x1200.webp"
-    ],
-    "subcategory": "Cabeceiras"
+      "images/produtos/gomo-1200x1200.png"
+    ]
   },
   "quartos-75": {
     "id": "quartos-75",
@@ -904,21 +904,19 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável.",
+    "subcategory": "Cabeceiras",
+    "description": "Cabeceira estofada elegante Linha Kristal. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/kristal-1200x1200.png",
+    "image": "images/produtos/cabeceira-kristal-sleep-1200x1200.webp",
     "gallery": [
+      "images/produtos/cabeceira-kristal-sleep-1200x1200.webp",
       "images/produtos/kristal-1200x1200.png",
       "images/produtos/kristal-1200x1200-1.png",
-      "images/produtos/kristal-cabeceira-1200x1200.webp",
-      "images/produtos/kristal-cabeceira-2048x2048.webp",
-      "images/produtos/cabeceira-kristal-sleep-1200x1200.webp",
-      "images/produtos/cabeceira-kristal-sleep-2048x2048.webp"
-    ],
-    "subcategory": "Cabeceiras"
+      "images/produtos/kristal-cabeceira-1200x1200.webp"
+    ]
   },
   "quartos-77": {
     "id": "quartos-77",
@@ -926,17 +924,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável.",
+    "subcategory": "Cabeceiras",
+    "description": "Cabeceira estofada capitonê contemporânea. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L950[+0.00]|L1450[+0.00]|L1550[+0.00]|L1650[+0.00]|L1850[+0.00]",
-    "image": "images/produtos/LUXE.jpg",
+    "image": "images/produtos/LUXE_AMBIENTE.jpg",
     "gallery": [
-      "images/produtos/LUXE.jpg",
-      "images/produtos/LUXE_AMBIENTE.jpg"
-    ],
-    "subcategory": "Cabeceiras"
+      "images/produtos/LUXE_AMBIENTE.jpg",
+      "images/produtos/LUXE.jpg"
+    ]
   },
   "quartos-76": {
     "id": "quartos-76",
