@@ -385,14 +385,14 @@ var window_products = window.window_products = window.produtos = {
     "url": "salas.html",
     "category": "Salas",
     "subcategory": "Cadeirões",
-    "description": "Cadeirão estofado ergonómico de elevado conforto. Pés disponíveis em wengué e cerejeira.",
+    "description": "Cadeirão estofado ergonómico com excelente suporte de costas e braços. Revestimento em tecido personalizável. Pés disponíveis em wengué e cerejeira.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-star_chair.jpg",
+    "custom2_options": "Vermelho[+0.00]|Ver Catálogo na Loja[+0.00]",
+    "image": "images/produtos/cadeirao-star-vermelho.jpg",
     "gallery": [
-      "images/produtos/sofas-star_chair.jpg"
+      "images/produtos/cadeirao-star-vermelho.jpg"
     ]
   },
   "salas-23": {
@@ -1559,12 +1559,12 @@ var window_products = window.window_products = window.produtos = {
     "subcategory": "Móveis de Sala",
     "description": "Móvel hall 1 gaveta + 1 prateleira da Linha Viena (L1000 x A800 x P350 mm).",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
+    "custom1_options": "Faia[+0.00]|Cinza - Branco Mate[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A800 x P350[+0.00]",
-    "image": "images/produtos/movel-hall-viena.jpg",
+    "image": "images/produtos/movel-hall-viena.webp",
     "gallery": [
-      "images/produtos/movel-hall-viena.jpg"
+      "images/produtos/movel-hall-viena.webp"
     ]
   },
   "salas-38": {
@@ -1576,12 +1576,12 @@ var window_products = window.window_products = window.produtos = {
     "subcategory": "Móveis de Sala",
     "description": "Sapateira 2 portas da Linha Viena (L1000 x A900 x P350 mm).",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
+    "custom1_options": "Faia[+0.00]|Cinza - Branco Mate[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A900 x P350[+0.00]",
-    "image": "images/produtos/sapateira-viena.jpg",
+    "image": "images/produtos/sapateira-viena.webp",
     "gallery": [
-      "images/produtos/sapateira-viena.jpg"
+      "images/produtos/sapateira-viena.webp"
     ]
   },
   "kids-7": {
@@ -1875,10 +1875,13 @@ var window_products = window.window_products = window.produtos = {
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
-    "description": "Almofada ergonómica de toque suave e elevado conforto cervical.",
+    "description": "Almofada ergonómica de toque suave e elevado conforto cervical. Perfeita para quem procura suavidade e alinhamento do pescoço e cabeça.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard (60x40 cm)[+0.00]|Personalizado[+0.00]",
     "image": "images/produtos/SOFT.jpg",
     "gallery": [
-      "images/produtos/SOFT.jpg"
+      "images/produtos/SOFT.jpg",
+      "images/produtos/Soft_2.jpg"
     ]
   },
   "colchao-ortopedico-premium": {
