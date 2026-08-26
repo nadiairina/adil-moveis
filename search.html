@@ -44,6 +44,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<script src="products.js?v=17"></script>
 </head>
 <body style="background:#FDFCFA; font-family:'Inter',sans-serif;">
 
@@ -318,451 +319,80 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
 
-  const siteProducts = [
+  // Build searchable database from window_products and packs
+  const packsData = [
     {
-      name: "Sofá Trevor",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "trevor", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Robson",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "robson", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Amazónia",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "amazónia", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Argo",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "argo"]
-    },
-    {
-      name: "Sofá Eros",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "eros", "relaxar", "salas", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Daytona",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "daytona", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Orly",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "orly"]
-    },
-    {
-      name: "Sofá Alvin",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "alvin", "chaise", "sala"]
-    },
-    {
-      name: "Sofá George",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "george"]
-    },
-    {
-      name: "Sofá Mónika",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "mónika", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Megan",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "megan", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Robbie",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "robbie", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Mistik",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "chaise", "mistik"]
-    },
-    {
-      name: "Sofá Philipe",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "philipe", "sofa", "relaxar", "salas", "sofas", "sala", "chaise"]
-    },
-    {
-      name: "Sofá Ozil",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🛋️",
-      keywords: ["sofás", "conforto", "estofos", "sofá", "sofa", "relaxar", "salas", "sofas", "sala", "ozil", "chaise"]
-    },
-    {
-      name: "Cadeirão Sirio",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "sirio", "cadeirao", "assento", "sala"]
-    },
-    {
-      name: "Cadeirão Fredy",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "cadeirao", "fredy", "sala", "assento"]
-    },
-    {
-      name: "Cadeirão Connor",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "connor", "relaxar", "salas", "cadeirao", "assento", "sala"]
-    },
-    {
-      name: "Cadeirão Lion",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "lion", "cadeirao", "assento", "sala"]
-    },
-    {
-      name: "Cadeirão Dover",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "dover", "relaxar", "salas", "cadeirao", "assento", "sala"]
-    },
-    {
-      name: "Cadeirão Stick",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "relaxar", "salas", "stick", "cadeirao", "assento", "sala"]
-    },
-    {
-      name: "Cadeirão Star",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["poltrona", "cadeirão", "cadeira", "star", "relaxar", "salas", "cadeirao", "assento", "sala"]
-    },
-    {
-      name: "Pack 4 Cadeiras Charly (Bege)",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🎁",
-      keywords: ["jantar", "cadeira", "cadeiras", "(bege)", "promoção", "completo", "tudo", "salas", "conjunto", "pack", "4", "assento", "desconto", "charly", "sala", "packs"]
-    },
-    {
-      name: "Cadeira Moon",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["moon", "jantar", "cadeira", "cadeiras", "salas", "assento", "sala"]
-    },
-    {
-      name: "Cadeira Paris",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["jantar", "cadeira", "cadeiras", "paris", "salas", "assento", "sala"]
-    },
-    {
-      name: "Cadeira Sagres",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["jantar", "cadeira", "cadeiras", "sagres", "salas", "assento", "sala"]
-    },
-    {
-      name: "Cadeira Madrid",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["jantar", "cadeira", "cadeiras", "salas", "assento", "sala", "madrid"]
-    },
-    {
-      name: "Cadeira Milão",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["jantar", "cadeira", "cadeiras", "milão", "salas", "assento", "sala"]
-    },
-    {
-      name: "Cadeira Chiado",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["jantar", "cadeira", "cadeiras", "chiado", "salas", "assento", "sala"]
-    },
-    {
-      name: "Cadeira Viena",
-      category: "Salas",
-      url: "salas.html",
-      icon: "🪑",
-      keywords: ["jantar", "cadeira", "cadeiras", "viena", "salas", "assento", "sala"]
-    },
-    {
-      name: "Sala Linha Malmo (Composição)",
-      category: "Salas",
-      url: "salas.html",
-      icon: "📺",
-      keywords: ["movel", "(composição)", "estante", "malmo", "linha", "composição", "móvel", "salas", "conjunto", "tv", "sala", "aparador"]
-    },
-    {
-      name: "Sala Linha Madrid (Composição)",
-      category: "Salas",
-      url: "salas.html",
-      icon: "📺",
-      keywords: ["movel", "(composição)", "estante", "linha", "composição", "móvel", "salas", "conjunto", "tv", "sala", "madrid", "aparador"]
-    },
-    {
-      name: "Sala Linha Paris (Composição)",
-      category: "Salas",
-      url: "salas.html",
-      icon: "📺",
-      keywords: ["movel", "(composição)", "estante", "linha", "paris", "composição", "móvel", "salas", "conjunto", "tv", "sala", "aparador"]
-    },
-    {
-      name: "Sala Linha Chiado (Composição)",
-      category: "Salas",
-      url: "salas.html",
-      icon: "📺",
-      keywords: ["movel", "(composição)", "estante", "linha", "composição", "móvel", "chiado", "salas", "conjunto", "tv", "sala", "aparador"]
-    },
-    {
-      name: "Quarto Louro - Cama casal",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🛏️",
-      keywords: ["casal", "quarto", "dormir", "cabeceira", "cama", "quartos", "estrado", "louro", "-", "camas"]
-    },
-    {
-      name: "Quarto Louro - Mesa cabeceira",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🪑",
-      keywords: ["casal", "jantar", "quarto", "dormir", "cabeceira", "quartos", "cama", "estrado", "louro", "apoio", "centro", "mesa", "-", "camas", "mesas"]
-    },
-    {
-      name: "Quarto Louro - Cómoda",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🚪",
-      keywords: ["cabeceira", "cama", "cómoda", "roupa", "quarto", "gavetas", "armário", "estrado", "comoda", "guardar", "-", "casal", "camiseiro", "dormir", "quartos", "arrumação", "louro", "roupeiro", "camas"]
-    },
-    {
-      name: "Quarto Louro - Camiseiro",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🚪",
-      keywords: ["cabeceira", "cama", "cómoda", "roupa", "quarto", "gavetas", "armário", "estrado", "comoda", "guardar", "-", "casal", "camiseiro", "dormir", "quartos", "arrumação", "louro", "roupeiro", "camas"]
-    },
-    {
-      name: "Quarto Louro - Estrado Metálico",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🛏️",
-      keywords: ["casal", "quarto", "dormir", "cabeceira", "quartos", "estrado", "cama", "louro", "-", "camas", "metálico"]
-    },
-    {
-      name: "Quarto Louro - Jones",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🛏️",
-      keywords: ["jones", "casal", "quarto", "dormir", "cabeceira", "quartos", "cama", "estrado", "louro", "-", "camas"]
-    },
-    {
-      name: "Cabeceira Jones com laterais",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🛏️",
-      keywords: ["jones", "casal", "quarto", "dormir", "cabeceira", "quartos", "cama", "estrado", "laterais", "com", "camas"]
-    },
-    {
-      name: "Cama Casal Paris",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🛏️",
-      keywords: ["casal", "quarto", "paris", "dormir", "cabeceira", "cama", "quartos", "estrado", "camas"]
-    },
-    {
-      name: "Cómoda Paris",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🚪",
-      keywords: ["quarto", "camiseiro", "gavetas", "armário", "paris", "quartos", "cómoda", "arrumação", "roupa", "comoda", "roupeiro", "guardar"]
-    },
-    {
-      name: "Camiseiro Paris",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🚪",
-      keywords: ["quarto", "camiseiro", "gavetas", "armário", "paris", "quartos", "cómoda", "arrumação", "roupa", "comoda", "roupeiro", "guardar"]
-    },
-    {
-      name: "Mesa de Cabeceira Paris",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "🪑",
-      keywords: ["casal", "jantar", "quarto", "paris", "cabeceira", "dormir", "quartos", "cama", "estrado", "apoio", "centro", "mesa", "de", "camas", "mesas"]
-    },
-    {
-      name: "Estrado Metálico",
-      category: "Quartos",
-      url: "quartos.html",
-      icon: "✨",
-      keywords: ["quartos", "estrado", "metálico"]
-    },
-    {
-      name: "Almofada Viscoelástica Ergonomia",
-      category: "Colchões",
-      url: "colchoes.html",
-      icon: "😴",
-      keywords: ["descanso", "ortopédico", "viscoelástica", "colchao", "viscoelástico", "dormir", "cama", "colchões", "ergonomia", "colchão", "colchoes", "espuma", "almofada"]
-    },
-    {
-      name: "Almofada de Penas & Plumagem",
-      category: "Colchões",
-      url: "colchoes.html",
-      icon: "😴",
-      keywords: ["descanso", "plumagem", "ortopédico", "colchao", "viscoelástico", "dormir", "penas", "colchão", "cama", "colchões", "&", "de", "colchoes", "espuma", "almofada"]
-    },
-    {
-      name: "Protetor de Colchão Impermeável",
-      category: "Colchões",
-      url: "colchoes.html",
-      icon: "😴",
-      keywords: ["descanso", "ortopédico", "viscoelástico", "colchao", "dormir", "cama", "colchões", "impermeável", "colchão", "de", "colchoes", "espuma", "almofada", "protetor"]
-    },
-    {
-      name: "Capa de Colchão Respirável",
-      category: "Colchões",
-      url: "colchoes.html",
-      icon: "😴",
-      keywords: ["descanso", "ortopédico", "viscoelástico", "colchao", "dormir", "respirável", "cama", "colchões", "capa", "colchão", "de", "colchoes", "espuma", "almofada"]
-    },
-    {
-      name: "Topper Viscoelástico Conforto Extra",
-      category: "Colchões",
-      url: "colchoes.html",
-      icon: "😴",
-      keywords: ["conforto", "descanso", "ortopédico", "colchao", "espuma", "dormir", "topper", "cama", "colchões", "extra", "colchão", "colchoes", "viscoelástico", "almofada"]
-    },
-    {
-      name: "Sommier Metálico de Suporte",
-      category: "Colchões",
-      url: "colchoes.html",
-      icon: "✨",
-      keywords: ["de", "colchões", "metálico", "sommier", "suporte"]
-    },
-    {
-      name: "Cama Solteiro - Linha Play",
-      category: "Kids",
-      url: "kids.html",
-      icon: "🧒",
-      keywords: ["criança", "estudo", "linha", "cabeceira", "cama", "secretária", "infantil", "quarto", "crianca", "play", "estrado", "solteiro", "jovem", "-", "casal", "dormir", "quartos", "juvenil", "crianças", "kids", "camas"]
-    },
-    {
-      name: "Secretária - Linha Play",
-      category: "Kids",
-      url: "kids.html",
-      icon: "🧒",
-      keywords: ["estudo", "linha", "crianca", "play", "juvenil", "crianças", "kids", "secretária", "solteiro", "infantil", "jovem", "criança", "-"]
-    },
-    {
-      name: "Roupeiro - Linha Play",
-      category: "Kids",
-      url: "kids.html",
-      icon: "🧒",
-      keywords: ["criança", "estudo", "linha", "cómoda", "roupa", "secretária", "infantil", "quarto", "gavetas", "armário", "crianca", "play", "comoda", "solteiro", "jovem", "guardar", "-", "camiseiro", "juvenil", "arrumação", "crianças", "kids", "roupeiro"]
-    },
-    {
-      name: "Camiseiro - Linha Play",
-      category: "Kids",
-      url: "kids.html",
-      icon: "🧒",
-      keywords: ["criança", "estudo", "linha", "cómoda", "roupa", "secretária", "infantil", "quarto", "gavetas", "armário", "crianca", "play", "comoda", "solteiro", "jovem", "guardar", "-", "camiseiro", "juvenil", "arrumação", "crianças", "kids", "roupeiro"]
-    },
-    {
-      name: "Mesa de Cabeceira - Linha Play",
-      category: "Kids",
-      url: "kids.html",
-      icon: "🧒",
-      keywords: ["mesa", "criança", "estudo", "linha", "cabeceira", "cama", "secretária", "infantil", "de", "jantar", "quarto", "crianca", "play", "estrado", "solteiro", "jovem", "-", "casal", "dormir", "quartos", "juvenil", "crianças", "kids", "apoio", "centro", "camas", "mesas"]
-    },
-    {
-      name: "Complemento - Linha Play",
-      category: "Kids",
-      url: "kids.html",
-      icon: "🧒",
-      keywords: ["estudo", "linha", "crianca", "play", "juvenil", "crianças", "kids", "secretária", "solteiro", "infantil", "complemento", "criança", "jovem", "-"]
-    },
-    {
+      id: "pack-1",
       name: "Pack Sala de Sonho",
       category: "Packs",
       url: "pack-detalhe.html?id=pack-1",
-      icon: "🎁",
-      keywords: ["movel", "estante", "composição", "sonho", "móvel", "completo", "promoção", "tudo", "salas", "conjunto", "tv", "pack", "desconto", "sala", "de", "aparador", "packs"]
+      image: "images/produtos/pack1-sala.jpg",
+      description: "Mobiliário completo para sala de estar com sofá, mesa de centro, móvel TV e estante.",
+      keywords: ["sala", "sofá", "estante", "móvel tv", "pack", "sonho", "promoção", "conjunto"]
     },
     {
+      id: "pack-2",
       name: "Pack Quarto Aconchego",
       category: "Packs",
       url: "pack-detalhe.html?id=pack-2",
-      icon: "🎁",
-      keywords: ["casal", "quarto", "dormir", "cabeceira", "promoção", "quartos", "cama", "estrado", "completo", "tudo", "conjunto", "pack", "desconto", "aconchego", "camas", "packs"]
+      image: "images/produtos/pack2-quarto.jpg",
+      description: "Conjunto completo de quarto com cama de casal, cabeceira estofada, mesas de cabeceira e roupeiro.",
+      keywords: ["quarto", "cama", "casal", "cabeceira", "roupeiro", "pack", "aconchego", "dormir"]
     },
     {
+      id: "pack-3",
       name: "Pack Casa Completa VIP",
       category: "Packs",
       url: "pack-detalhe.html?id=pack-3",
-      icon: "🎁",
-      keywords: ["promoção", "completo", "tudo", "vip", "conjunto", "pack", "casa", "desconto", "completa", "packs"]
+      image: "images/produtos/pack3-casatoda.jpg",
+      description: "Solução integral de mobiliário para toda a casa: sala, quarto principal e quarto secundário.",
+      keywords: ["casa", "completa", "vip", "tudo", "sala", "quarto", "pack", "conjunto"]
     },
     {
+      id: "pack-4",
       name: "Pack Kids",
       category: "Packs",
       url: "pack-detalhe.html?id=pack-4",
-      icon: "🎁",
-      keywords: ["promoção", "completo", "tudo", "conjunto", "kids", "pack", "desconto", "packs"]
+      image: "images/produtos/pack4-kids.jpg",
+      description: "Quarto infantil/juvenil completo com cama solteiro, secretária de estudo e arrumação.",
+      keywords: ["kids", "criança", "infantil", "juvenil", "secretária", "estudo", "pack", "quarto"]
     },
     {
+      id: "pack-5",
       name: "Pack Jovem",
       category: "Packs",
       url: "pack-detalhe.html?id=pack-5",
-      icon: "🎁",
-      keywords: ["promoção", "completo", "tudo", "conjunto", "pack", "jovem", "desconto", "packs"]
-    },
+      image: "images/produtos/pack5-jovem.jpg",
+      description: "Quarto moderno para jovens com cama solteiro compacta, secretária ergonómica e roupeiro.",
+      keywords: ["jovem", "juvenil", "quarto", "secretária", "estudo", "cama", "pack"]
+    }
   ];
 
+  function getSearchableCatalog() {
+    const list = [...packsData];
+    if (typeof window_products !== 'undefined') {
+      for (const [key, p] of Object.entries(window_products)) {
+        list.push({
+          id: p.id || key,
+          name: p.name || "",
+          category: p.category || "Mobiliário",
+          url: "produto-detalhe.html?id=" + encodeURIComponent(p.id || key),
+          image: p.image || "images/logo_sem_fundo.png",
+          description: p.description || "",
+          keywords: [
+            p.name,
+            p.category,
+            p.description,
+            ...(p.id ? p.id.split('-') : [])
+          ]
+        });
+      }
+    }
+    return list;
+  }
+
   function removeAccents(str) {
+    if (!str) return "";
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   }
 
@@ -770,23 +400,26 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     const cleanQ = removeAccents(q);
     if (!cleanQ) return [];
     
+    const catalog = getSearchableCatalog();
     let words = cleanQ.split(/\s+/).filter(w => w.length > 1);
     if (words.length === 0) words = [cleanQ];
 
-    return siteProducts.filter(p => {
+    return catalog.filter(p => {
       const nameNorm = removeAccents(p.name);
       const catNorm = removeAccents(p.category);
-      const kwNorms = p.keywords.map(k => removeAccents(k));
+      const descNorm = removeAccents(p.description);
+      const kwNorms = (p.keywords || []).map(k => removeAccents(k));
 
       return words.every(w => {
         const inName = nameNorm.includes(w);
         const inCat = catNorm.includes(w);
+        const inDesc = descNorm.includes(w);
         const inKw = kwNorms.some(k => 
-          w === k || 
+          k.includes(w) || 
           (w.length >= 3 && k.startsWith(w)) || 
           (k.length >= 3 && w.startsWith(k))
         );
-        return inName || inCat || inKw;
+        return inName || inCat || inDesc || inKw;
       });
     });
   }
@@ -827,17 +460,16 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 
     grid.style.display = 'grid';
     grid.innerHTML = matches.map(p => `
-      <a href="${p.url}" style="text-decoration:none;">
-        <div style="background:#fff; border:1px solid #E8E3DC; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)';this.style.borderColor='#C8B598';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';this.style.borderColor='#E8E3DC';">
-          <div style="aspect-ratio:16/9; background:#F3EEE4; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
-            <span style="font-size:2.5rem;">${p.icon}</span>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-            <span style="font-size:9px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#998b75;">Imagem em breve</span>
-          </div>
-          <div style="padding:1.25rem;">
-            <h3 style="font-family:\'Inter\',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:8px;">${p.name}</h3>
-            <span style="font-size:11px; color:#C8B598; font-weight:700;">Ver Produto →</span>
-          </div>
+      <a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" href="${p.url}" style="text-decoration:none; color:inherit; border:1px solid #E8E3DC;">
+        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+          <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='images/logo_sem_fundo.png'; this.style.objectFit='contain'; this.style.padding='20px';" />
+        </div>
+        <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+          <p style="font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598; margin-bottom:4px;">${p.category}</p>
+          <h3 style="font-family:'Inter',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</h3>
+          <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+            <span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+          </p>
         </div>
       </a>
     `).join('');
@@ -851,9 +483,13 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     if (!matches.length) { box.style.display = 'none'; return; }
     box.style.display = 'block';
     box.innerHTML = matches.map(p => `
-      <a href="${p.url}" style="display:flex; align-items:center; justify-content:space-between; padding:10px 16px; text-decoration:none; border-bottom:1px solid #f3f4f6; transition:background 0.15s;" onmouseover="this.style.background='#F5F0E8'" onmouseout="this.style.background='#fff'">
-        <span style="font-size:13px; font-weight:500; color:#1a1a1a;">${p.icon} ${p.name}</span>
-        <span style="font-size:9px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#C8B598;">${p.category} →</span>
+      <a href="${p.url}" style="display:flex; align-items:center; gap:12px; padding:10px 16px; text-decoration:none; border-bottom:1px solid #f3f4f6; transition:background 0.15s;" onmouseover="this.style.background='#F5F0E8'" onmouseout="this.style.background='#fff'">
+        <img src="${p.image}" style="width:38px; height:38px; object-fit:cover; border-radius:4px; background:#F7F4F0; flex-shrink:0;" onerror="this.style.display='none'" />
+        <div style="flex:1; overflow:hidden;">
+          <p style="font-size:13px; font-weight:600; color:#1a1a1a; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</p>
+          <span style="font-size:9px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#C8B598;">${p.category}</span>
+        </div>
+        <span style="font-size:11px; color:#999;">→</span>
       </a>
     `).join('');
   }
@@ -867,7 +503,8 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     }
     document.addEventListener('click', e => {
       if (!e.target.closest('form')) {
-        document.getElementById('suggestions-box').style.display = 'none';
+        const sBox = document.getElementById('suggestions-box');
+        if (sBox) sBox.style.display = 'none';
       }
     });
   });
