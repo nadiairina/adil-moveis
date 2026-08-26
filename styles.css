@@ -1248,3 +1248,14 @@ footer div.border-b {
   object-fit: contain !important;
   mix-blend-mode: darken !important;
 }
+
+
+/* GUARANTEE PRODUCT VISIBILITY REGARDLESS OF AOS */
+#products-grid .product,
+.product,
+[data-category] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: none !important;
+}

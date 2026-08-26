@@ -594,5 +594,19 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     if (e.key === 'Escape') closeSearchModal();
   });
 </script>
+<!-- AOS (Animate on Scroll) JS and Initialization -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 50
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
