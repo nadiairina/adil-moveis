@@ -416,10 +416,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-24_gallery_0.png",
+    "image": "images/produtos/salas-24_gallery_1.webp",
     "gallery": [
-      "images/produtos/salas-24_gallery_0.png",
       "images/produtos/salas-24_gallery_1.webp",
+      "images/produtos/salas-24_gallery_0.png",
       "images/produtos/salas-24_gallery_2.png"
     ],
     "subcategory": "Mesas e Cadeiras"
@@ -436,10 +436,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-26_gallery_0.png",
+    "image": "images/produtos/salas-26_gallery_1.webp",
     "gallery": [
-      "images/produtos/salas-26_gallery_0.png",
-      "images/produtos/salas-26_gallery_1.webp"
+      "images/produtos/salas-26_gallery_1.webp",
+      "images/produtos/salas-26_gallery_0.png"
     ],
     "subcategory": "Mesas e Cadeiras"
   },
@@ -486,10 +486,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-29_gallery_0.png",
+    "image": "images/produtos/salas-29_gallery_1.webp",
     "gallery": [
-      "images/produtos/salas-29_gallery_0.png",
-      "images/produtos/salas-29_gallery_1.webp"
+      "images/produtos/salas-29_gallery_1.webp",
+      "images/produtos/salas-29_gallery_0.png"
     ],
     "subcategory": "Mesas e Cadeiras"
   },
@@ -1283,19 +1283,19 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Sapateira 2 portas + 1 gaveta. L1100 x A905 x P355.",
+    "subcategory": "Móveis de Sala",
+    "description": "Sapateira 2 portas + 1 gaveta da Linha Madrid (L1100 x A905 x P355 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1100 x A905 x P355[+0.00]",
-    "image": "images/produtos/Sapateira-Madrid-1.webp",
+    "image": "images/produtos/Sapateira-Madrid-4.webp",
     "gallery": [
+      "images/produtos/Sapateira-Madrid-4.webp",
       "images/produtos/Sapateira-Madrid-1.webp",
       "images/produtos/Sapateira-Madrid-2.webp",
-      "images/produtos/Sapateira-Madrid-2-1.webp",
-      "images/produtos/Sapateira-Madrid-4.webp"
-    ],
-    "subcategory": "Outros"
+      "images/produtos/Sapateira-Madrid-2-1.webp"
+    ]
   },
   "salas-31": {
     "id": "salas-31",
@@ -1806,7 +1806,7 @@ const window_products = {
 },
   "cadeira-paris": {
     "id": "cadeira-paris",
-    "name": "Cadeira Paris Estofada",
+    "name": "Cadeira Paris",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
@@ -1816,11 +1816,11 @@ const window_products = {
     "custom1_options": "Pés Carvalho[+0.00]|Pés Brancos[+0.00]|Pés Pretos[+0.00]",
     "custom2_name": "Tecido",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/paris-cadeira-lourini-1200x1200.png",
+    "image": "images/produtos/paris-cadeiras-lourini-1200x1200.webp",
     "gallery": [
-        "images/produtos/paris-cadeira-lourini-1200x1200.png",
-        "images/produtos/paris-lado-1200x1200.png",
-        "images/produtos/paris-cadeiras-lourini-1200x1200.webp"
+      "images/produtos/paris-cadeiras-lourini-1200x1200.webp",
+      "images/produtos/paris-cadeira-lourini-1200x1200.png",
+      "images/produtos/paris-lado-1200x1200.png"
     ]
 },
   "colchao-ortopedico-premium": {
