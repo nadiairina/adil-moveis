@@ -119,11 +119,11 @@ const window_products = {
     "custom1_options": "2 Lugares (Standard)[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofa-orly-2-lugares.jpg",
+    "image": "images/produtos/sofa-orly-2-lugares-1.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofa-orly-2-lugares.jpg",
-      "images/produtos/sofa-orly-2-lugares-1.jpg"
+      "images/produtos/sofa-orly-2-lugares-1.jpg",
+      "images/produtos/sofa-orly-2-lugares.jpg"
     ]
   },
   "sofas-8": {
@@ -137,12 +137,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-8_gallery_2.webp",
+    "image": "images/produtos/sofas-8_gallery_3.webp",
     "gallery": [
+      "images/produtos/sofas-8_gallery_3.webp",
       "images/produtos/sofas-8_gallery_2.webp",
       "images/produtos/sofas-8_gallery_0.png",
-      "images/produtos/sofas-8_gallery_1.png",
-      "images/produtos/sofas-8_gallery_3.webp"
+      "images/produtos/sofas-8_gallery_1.png"
     ],
     "subcategory": "Sofás"
   },
