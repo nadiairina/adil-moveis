@@ -1860,13 +1860,13 @@ var window_products = window.window_products = window.produtos = {
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Colchões",
-    "description": "Colchão de elevada densidade com núcleo reforçado para o máximo suporte e alinhamento da coluna.",
-    "custom1_name": "Dimensões",
-    "custom1_options": "190x140 cm[+0.00]|195x150 cm[+0.00]|200x160 cm[+0.00]|Personalizado[+0.00]",
-    "image": "images/produtos/super_ortopedico_1.jpg",
+    "description": "Colchão ergonómico com excelente suporte de coluna e estrutura ortopédica tradicional.",
+    "custom1_name": "Medida",
+    "custom1_options": "190x90[+0.00]|190x140[+0.00]|195x150[+0.00]|195x160[+0.00]|200x160[+0.00]",
+    "image": "images/produtos/super_ortopedico_2.jpg",
     "gallery": [
-      "images/produtos/super_ortopedico_1.jpg",
-      "images/produtos/super_ortopedico_2.jpg"
+      "images/produtos/super_ortopedico_2.jpg",
+      "images/produtos/super_ortopedico_1.jpg"
     ]
   },
   "almofadas-soft": {
@@ -1876,13 +1876,13 @@ var window_products = window.window_products = window.produtos = {
     "url": "colchoes.html",
     "category": "Colchões",
     "subcategory": "Complementos",
-    "description": "Almofada ergonómica de toque suave e elevado conforto cervical. Perfeita para quem procura suavidade e alinhamento do pescoço e cabeça.",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard (60x40 cm)[+0.00]|Personalizado[+0.00]",
-    "image": "images/produtos/SOFT.jpg",
+    "description": "Almofada anatómica com excelente adaptabilidade e toque suave para um descanso perfeito.",
+    "custom1_name": "Medida",
+    "custom1_options": "Standard[+0.00]",
+    "image": "images/produtos/Soft_2.jpg",
     "gallery": [
-      "images/produtos/SOFT.jpg",
-      "images/produtos/Soft_2.jpg"
+      "images/produtos/Soft_2.jpg",
+      "images/produtos/SOFT.jpg"
     ]
   },
   "colchao-ortopedico-premium": {
