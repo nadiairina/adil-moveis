@@ -843,17 +843,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cama casal com estrado incluído e iluminação LED na cabeceira.",
+    "subcategory": "Camas de Casal",
+    "description": "Cama de casal moderna da Linha Viena com estrado incluído e acabamento requintado (L1580 x A1100 x P2110 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1580 x A1100 x P2110[+0.00]",
-    "image": "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
+    "image": "images/produtos/header_cama_casal_lourini_viena_cinza_branco.jpg",
     "gallery": [
-      "images/produtos/Cama-Casal-Viena-Faia-Lado.webp",
-      "images/produtos/Cama-Casal-Viena-Cinza-Lado.webp"
-    ],
-    "subcategory": "Camas"
+      "images/produtos/header_cama_casal_lourini_viena_cinza_branco.jpg",
+      "images/produtos/images.jpg"
+    ]
   },
   "quartos-78": {
     "id": "quartos-78",
@@ -943,10 +943,7 @@ const window_products = {
     "image": "images/produtos/LUXE.jpg",
     "gallery": [
       "images/produtos/LUXE.jpg",
-      "images/produtos/LUXE_AMBIENTE.jpg",
-      "images/produtos/Cabeceira-Luxe-cinza.webp",
-      "images/produtos/Cabeceira-Luxe-Preto.webp",
-      "images/produtos/Cabeceira-Luxe-Beje.webp"
+      "images/produtos/LUXE_AMBIENTE.jpg"
     ],
     "subcategory": "Cabeceiras"
   },
@@ -974,17 +971,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L575 x A460 x P400.",
+    "subcategory": "Mesas de Cabeceira",
+    "description": "Mesa de cabeceira com 2 gavetas da Linha Chiado (L575 x A460 x P400 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L575 x A460 x P400[+0.00]",
-    "image": "images/produtos/5.webp",
+    "image": "images/produtos/6.webp",
     "gallery": [
-      "images/produtos/5.webp",
-      "images/produtos/6.webp"
-    ],
-    "subcategory": "Mesas de Cabeceira"
+      "images/produtos/6.webp",
+      "images/produtos/5.webp"
+    ]
   },
   "quartos-42": {
     "id": "quartos-42",
@@ -992,17 +989,16 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L555 x A470 x P400.",
+    "subcategory": "Mesas de Cabeceira",
+    "description": "Mesa de cabeceira com 2 gavetas da Linha Madrid (L555 x A470 x P400 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Stone[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L555 x A470 x P400[+0.00]",
     "image": "images/produtos/9.webp",
     "gallery": [
-      "images/produtos/9.webp",
-      "images/produtos/7.webp"
-    ],
-    "subcategory": "Mesas de Cabeceira"
+      "images/produtos/9.webp"
+    ]
   },
   "quartos-36": {
     "id": "quartos-36",
