@@ -86,8 +86,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-5.png",
-    "subcategory": "Sofás"
+    "image": "images/produtos/eros-chaise-lourini-jpg.webp",
+    "subcategory": "Sofás",
+    "gallery": [
+      "images/produtos/eros-chaise-lourini-jpg.webp",
+      "images/produtos/eros-di-lourini-jpg.webp"
+    ]
   },
   "sofas-6": {
     "id": "sofas-6",
@@ -180,8 +184,7 @@ const window_products = {
     "image": "images/produtos/sofas-monika_main.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-monika_main.jpg",
-      "images/produtos/sofas-monika_g1.jpg"
+      "images/produtos/sofas-monika_main.jpg"
     ]
   },
   "sofas-11": {
@@ -214,12 +217,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-robbie_main.webp",
+    "image": "images/produtos/Conjunto-de-Sofas-32-Lugares-Robbie1_movestore.com_.jpg",
     "subcategory": "Sofás",
     "gallery": [
-      "images/produtos/sofas-robbie_main.webp",
-      "images/produtos/sofas-robbie_g1.webp",
-      "images/produtos/sofas-robbie_g2.webp"
+      "images/produtos/Conjunto-de-Sofas-32-Lugares-Robbie1_movestore.com_.jpg",
+      "images/produtos/Conjunto-de-Sofas-32-Lugares-Robbie2_movestore.com_.jpg"
     ]
   },
   "sofas-13": {
@@ -257,7 +259,6 @@ const window_products = {
     "subcategory": "Sofás",
     "gallery": [
       "images/produtos/sofas-ozil_main.jpg",
-      "images/produtos/sofas-ozil_g1.jpg",
       "images/produtos/sofas-ozil_g2.jpg"
     ]
   },
@@ -272,8 +273,13 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-16.png",
-    "subcategory": "Sofás"
+    "image": "images/produtos/sirio-21-jpg.webp",
+    "subcategory": "Cadeirões",
+    "gallery": [
+      "images/produtos/sirio-21-jpg.webp",
+      "images/produtos/sirio-1L-1224x1020.webp",
+      "images/produtos/sirio-1L-senior.png"
+    ]
   },
   "sofas-17": {
     "id": "sofas-17",
@@ -449,13 +455,17 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
+    "subcategory": "Mesas e Cadeiras",
+    "description": "Cadeira estofada da Linha Madrid com acabamento refinado e tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-27.png",
-    "subcategory": "Mesas e Cadeiras"
+    "image": "images/produtos/madrid-cadeiras-lourini-1200x1200.webp",
+    "gallery": [
+      "images/produtos/madrid-cadeiras-lourini-1200x1200.webp",
+      "images/produtos/cadeira-madrid-sand-1200x1200.png"
+    ]
   },
   "salas-28": {
     "id": "salas-28",
@@ -463,16 +473,16 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
+    "subcategory": "Mesas e Cadeiras",
     "description": "Costa e assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-milao_main.jpg",
-    "subcategory": "Mesas e Cadeiras",
+    "image": "images/produtos/milao_cadeiras_ambiente.jpg",
     "gallery": [
-      "images/produtos/salas-milao_main.jpg",
-      "images/produtos/salas-milao_g1.jpg"
+      "images/produtos/milao_cadeiras_ambiente.jpg",
+      "images/produtos/milao_cadeiras.png"
     ]
   },
   "salas-29": {
@@ -499,16 +509,16 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Assento estofado. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
+    "subcategory": "Mesas e Cadeiras",
+    "description": "Assento estofado da Linha Viena. Acabamentos disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e faia).",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-viena_main.jpg",
-    "subcategory": "Mesas e Cadeiras",
+    "image": "images/produtos/header_sala_jantar_lourini_viena_cinza_branco.jpg",
     "gallery": [
-      "images/produtos/salas-viena_main.jpg",
-      "images/produtos/salas-viena_g1.jpg"
+      "images/produtos/header_sala_jantar_lourini_viena_cinza_branco.jpg",
+      "images/produtos/cadeira-lourini-viena_thumb.jpg"
     ]
   },
   "colchoes-comp-1": {
@@ -1761,11 +1771,10 @@ const window_products = {
     "custom2_options": "Capuccino / Carvalho[+0.00]|Dark Grey / Carvalho[+0.00]|Branco / Carvalho[+0.00]",
     "image": "images/produtos/base-tv-malmo-ambiente.jpg",
     "gallery": [
-        "images/produtos/base-tv-malmo-ambiente.jpg",
-        "images/produtos/base-tv-malmo-isolado.webp",
-        "images/produtos/base-tv-malmo-capuccinocarvalho.jpg"
+      "images/produtos/base-tv-malmo-ambiente.jpg",
+      "images/produtos/base-tv-malmo-isolado.webp"
     ]
-},
+  },
   "mesa-centro-malmo": {
     "id": "mesa-centro-malmo",
     "name": "Mesa de Centro Malmo MC90",
@@ -1786,7 +1795,7 @@ const window_products = {
 },
   "mesa-sala-paris": {
     "id": "mesa-sala-paris",
-    "name": "Mesa de Jantar Extensível Paris (2 Topos)",
+    "name": "Mesa de Jantar Extensível Paris",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
