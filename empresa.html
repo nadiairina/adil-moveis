@@ -195,210 +195,666 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         });
       </script>
     </header>
-    <main style="background:#FDFCFA;">
-      <!-- Hero Section with Crossfade Slideshow -->
-      <section style="position:relative; height:55vh; min-height:380px; overflow:hidden; background:#1a1a1a; display:flex; flex-direction:column; justify-content:flex-end; padding:3.5rem 6%;">
-        <!-- Slideshow Background Images -->
-        <div id="hero-slide-1" class="hero-slide active" style="position:absolute; inset:0; background-image:url('images/produtos/historia1.jpg'); background-size:cover; background-position:center; transition:opacity 1.2s ease-in-out; opacity:1; z-index:1;"></div>
-        <div id="hero-slide-2" class="hero-slide" style="position:absolute; inset:0; background-image:url('images/produtos/IMG_6675.jpeg'); background-size:cover; background-position:center; transition:opacity 1.2s ease-in-out; opacity:0; z-index:1;"></div>
-        <div id="hero-slide-3" class="hero-slide" style="position:absolute; inset:0; background-image:url('images/produtos/IMG_6670.jpeg'); background-size:cover; background-position:center; transition:opacity 1.2s ease-in-out; opacity:0; z-index:1;"></div>
-        <div id="hero-slide-4" class="hero-slide" style="position:absolute; inset:0; background-image:url('images/produtos/IMG_6668.jpeg'); background-size:cover; background-position:center; transition:opacity 1.2s ease-in-out; opacity:0; z-index:1;"></div>
+    <!-- SLIDE-IN RIGHT SIDEBAR MENU -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/50 z-[999] hidden transition-opacity duration-300 opacity-0">
+      <!-- Sidebar container -->
+      <div id="menuSidebar" class="absolute top-0 right-0 w-80 max-w-[85vw] h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+          <!-- Header -->
+          <div class="px-6 py-6 border-b border-[#EAE6DF] flex justify-between items-center bg-white">
+              <span class="text-xs font-bold tracking-widest uppercase text-gray-500">Menu</span>
+              <button id="closeMenuBtn" class="text-black hover:text-red-500 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+          </div>
+          
+          <!-- Links -->
+          <div class="flex-1 overflow-y-auto px-6 py-8">
+              <h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4" data-aos="fade-up">Loja</h3>
+              <nav class="flex flex-col space-y-4 mb-8">
+                  <a href="quartos.html" class="text-lg font-medium text-gray-800 hover:text-black">Quartos</a>
+                  <a href="salas.html" class="text-lg font-medium text-gray-800 hover:text-black">Salas</a>
+                  
+                  <a href="colchoes.html" class="text-lg font-medium text-gray-800 hover:text-black">Colchões</a>
+                  <a href="kids.html" class="text-lg font-medium text-gray-800 hover:text-black">Kids</a>
+                  
+                  
+                  <a href="packs.html" class="text-lg font-bold text-[#C8B598] hover:text-[#b09e85]">✦ Comprar Packs</a>
+              </nav>
+              
+              <h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 border-t border-[#EAE6DF] pt-8" data-aos="fade-up">Empresa & Apoio</h3>
+              <nav class="flex flex-col space-y-4">
+                  <a href="empresa.html" class="text-sm font-medium text-gray-600 hover:text-black">A Nossa História</a>
+                  <a href="catalogos.html" class="text-sm font-medium text-gray-500 hover:text-black pt-2">Catálogos PDF</a>
+                  <a href="testemunhos.html" class="text-sm font-medium text-gray-600 hover:text-black">Testemunhos</a>
+                  
+                  <a href="contactos.html" class="text-sm font-medium text-gray-600 hover:text-black">Contactos & Lojas</a>
+                  <a href="faq.html" class="text-sm font-medium text-gray-600 hover:text-black mt-2 pt-2 border-t border-gray-100">Perguntas Frequentes</a>
+                  <a href="envios.html" class="text-sm font-medium text-gray-600 hover:text-black">Envios e Devoluções</a>
+              </nav>
+          </div>
+          
+          <!-- Footer -->
+          <div class="p-6 bg-gray-50 border-t border-[#EAE6DF]">
+              <a href="packs.html" class="flex items-center justify-center w-full py-3 mb-3 bg-[#C8B598] text-white font-bold uppercase tracking-widest text-[11px] hover:bg-[#b09e85] transition-colors">
+                Comprar Packs
+              </a>
+              <a href="contactos.html" class="flex items-center justify-center w-full py-3 mb-6 border border-black text-black font-bold uppercase tracking-widest text-[11px] hover:bg-black hover:text-white transition-colors">
+                Agendar Visita à Loja
+              </a>
+              <div class="flex justify-between items-center">
+                  <div>
+                      <a href="tel:212582788" class="flex items-center text-sm font-bold text-black mb-1 hover:text-gray-600">
+                        📞 212 582 788
+                      </a>
+                      <a href="https://wa.me/351960209396" target="_blank" class="flex items-center text-xs font-medium text-gray-500 hover:text-[#25D366] transition-colors">
+                        💬 960 209 396
+                      </a>
+                  </div>
+                  <div class="flex space-x-2">
+                      <a href="https://www.facebook.com/p/Adil-M%C3%B3veis-100063641348118/" target="_blank" class="text-[#1877F2] bg-white p-2 rounded-full shadow-sm border border-gray-200 hover:scale-110 transition-transform">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                      </a>
+                      <a href="https://www.instagram.com/adilmoveis/" target="_blank" class="text-[#E1306C] bg-white p-2 rounded-full shadow-sm border border-gray-200 hover:scale-110 transition-transform">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
 
-        <!-- Dark Gradient Overlay -->
-        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%); z-index:2;"></div>
+    <!-- Sidebar JS -->
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+          var hamburgerBtn = document.getElementById('hamburgerBtn');
+          var closeMenuBtn = document.getElementById('closeMenuBtn');
+          var menuOverlay = document.getElementById('menuOverlay');
+          var menuSidebar = document.getElementById('menuSidebar');
+          
+          function openMenu() {
+              menuOverlay.classList.remove('hidden');
+              setTimeout(function() {
+                  menuOverlay.classList.remove('opacity-0');
+                  menuOverlay.classList.add('opacity-100');
+                  menuSidebar.classList.remove('translate-x-full');
+              }, 10);
+              document.body.style.overflow = 'hidden';
+          }
+          
+          function closeMenu() {
+              menuSidebar.classList.add('translate-x-full');
+              menuOverlay.classList.remove('opacity-100');
+              menuOverlay.classList.add('opacity-0');
+              setTimeout(function() {
+                  menuOverlay.classList.add('hidden');
+              }, 300);
+              document.body.style.overflow = '';
+          }
 
-        <!-- Hero Content -->
-        <div style="position:relative; z-index:3; max-width:800px;" data-aos="fade-up">
-          <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.75rem;">DESDE 1988 · 38 ANOS DE TRADIÇÃO</p>
-          <h1 style="font-family:'Playfair Display',serif; font-size:clamp(2.4rem, 5vw, 4rem); font-weight:400; color:#ffffff; line-height:1.15; margin-bottom:0.75rem; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-            A Nossa História
-          </h1>
-          <p style="font-family:'Inter',sans-serif; font-size:clamp(0.95rem, 1.8vw, 1.2rem); color:rgba(255,255,255,0.9); font-weight:300; line-height:1.6; margin:0;">
-            38 anos de dedicação ao mobiliário de qualidade e ao conforto da sua família.
-          </p>
-        </div>
-      </section>
+          if(hamburgerBtn) hamburgerBtn.addEventListener('click', openMenu);
+          if(closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+          if(menuOverlay) {
+              menuOverlay.addEventListener('click', function(e) {
+                  if(e.target === menuOverlay) closeMenu();
+              });
+          }
+        });
+      })();
+    </script>
 
-      <!-- Story Text Section -->
-      <section style="padding:5rem 1.5rem; max-width:900px; margin:0 auto; text-align:center;">
-        <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.75rem;">UMA TRADIÇÃO FAMILIAR</p>
-        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.8rem, 3.5vw, 2.5rem); font-weight:400; color:#1a1a1a; margin-bottom:2rem; line-height:1.3;">
-          Tradição, Rigor e Paixão pelo Design Português
-        </h2>
+
+
+    
+    <script>
+      // Simple Mobile Menu Toggle
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileDropdown');
+        if(btn && menu) {
+          btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+          });
+        }
+      });
+    </script>
+
+
+    
+    
+    <main class="bg-white">
+  <!-- Hero -->
+  <section class="relative bg-black flex flex-col items-start justify-end pb-16 md:pb-24 pt-32 overflow-hidden" style="height: 60vh;">
+    <div class="absolute inset-0 z-0 bg-cover bg-center opacity-60" style="background-image: url('images/produtos/IMG_6675.jpeg');"></div>
+    </div>
+    <div class="relative z-20 text-left px-4 md:px-12 lg:px-24 w-full" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="text-white text-4xl md:text-6xl font-light tracking-widest mb-4 uppercase drop-shadow-2xl">A Nossa História</h1>
+      <p class="text-white/90 text-lg md:text-xl font-light max-w-2xl tracking-wide">38 anos de dedicação ao mobiliário e conforto da sua família.</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="py-24">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="text-3xl font-light text-black mb-10 tracking-tight" data-aos="fade-up">UMA TRADIÇÃO FAMILIAR</h2>
+      
+      <div class="text-lg leading-loose text-gray-600 font-light space-y-8 text-left md:text-justify" data-aos="fade-up" data-aos-delay="100">
+        <p>A <strong class="text-black font-medium">Adil Móveis</strong> é uma empresa de mobiliário composta por 3 lojas situadas no Feijó. Gerida por 3 irmãos, conta já com mais de 38 anos de experiência e disponibiliza desde mobiliário tradicional e clássico até ao design mais moderno, contemporâneo e arrojado.</p>
         
-        <div style="font-family:'Inter',sans-serif; font-size:1rem; color:#4a4a4a; font-weight:300; line-height:1.85; text-align:justify; display:flex; flex-direction:column; gap:1.5rem;">
-          <p>
-            A <strong style="color:#1a1a1a; font-weight:600;">Adil Móveis</strong> é uma empresa familiar de mobiliário fundada em 1988, composta por 3 lojas e espaços de exposição situados no Feijó, concelho de Almada. Gerida com dedicação por 3 irmãos, conta com mais de 38 anos de experiência no mercado de decoração e mobiliário em Portugal.
+        <p>Temos uma grande exposição de combinações para quartos de casal e individuais, salas de estar e de jantar. Complementamos o seu espaço com secretárias, cadeiras, cadeirões e sofás, onde tem a total liberdade de escolher o modelo, o tecido e a cor que mais lhe agradam.</p>
+        
+        <p>Na nossa vasta gama de descanso, oferecemos colchões de excelência desenvolvidos em vários materiais: desde o núcleo de alta densidade, látex, viscoelástica, até às avançadas molas ensacadas independentes, desenhados para satisfazer todos os tipos de gosto e fisionomia!</p>
+      </div>
+    </div>
+  </section>
+
+        <!-- Classic Family & Showroom Gallery with Clickable Lightbox -->
+  <section class="py-12 bg-white border-y border-gray-100">
+    <div class="container mx-auto px-4 max-w-7xl">
+      <!-- 1. Os Fundadores (Pai e Tios) -->
+      <div class="text-center mb-10">
+        <p style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">TRADIÇÃO FAMILIAR</p>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:400; color:#1a1a1a;">Os Fundadores & A Nossa História</h3>
+        <p style="font-size:0.85rem; color:#6b6b6b; font-weight:300; margin-top:4px;">Clique em qualquer fotografia para ampliar e navegar na galeria em ecrã inteiro.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(0)" data-aos="fade-up" data-aos-delay="0">
+          <img src="images/produtos/historia1.jpg" alt="Fundadores Adil Móveis 1" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(1)" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/produtos/historia2.jpg" alt="Fundadores Adil Móveis 2" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(2)" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/produtos/historia3.jpg" alt="Fundadores Adil Móveis 3" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+      </div>
+
+      <!-- 2. Exposição Completa nas Lojas do Feijó (7 Fotografias Enviadas pela Sara) -->
+      <div class="text-center mb-8 pt-8 border-t border-gray-100">
+        <p style="font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">EXPOSIÇÃO NO FEIJÓ</p>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:400; color:#1a1a1a;">Visite a Nossa Loja em Almada (7 Fotos da Exposição)</h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(3)" data-aos="fade-up" data-aos-delay="0">
+          <img src="images/produtos/IMG_6668.jpeg" alt="Exposição Loja 1" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(4)" data-aos="fade-up" data-aos-delay="50">
+          <img src="images/produtos/IMG_6670.jpeg" alt="Exposição Loja 2" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(5)" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/produtos/IMG_6675.jpeg" alt="Exposição Loja 3" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(6)" data-aos="fade-up" data-aos-delay="150">
+          <img src="images/produtos/IMG_6676.jpeg" alt="Exposição Loja 4" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(7)" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/produtos/Unknown.jpeg" alt="Exposição Loja 5" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(8)" data-aos="fade-up" data-aos-delay="250">
+          <img src="images/produtos/Unknown-1.jpeg" alt="Exposição Loja 6" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-sm group cursor-pointer" onclick="openLightbox(9)" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/produtos/Unknown-2.jpeg" alt="Exposição Loja 7" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-radius:8px; transition:transform 0.5s ease;" class="hover:scale-105">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values & Brands -->
+  <section class="py-24 bg-white border-t border-gray-100">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-light font-serif text-black tracking-tight mb-4" data-aos="fade-up">O que nos define.</h2>
+        <div class="w-12 h-px bg-black mx-auto"></div>
+      </div>
+      
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+        <div data-aos="fade-up" data-aos-delay="0" class="text-center">
+          <div class="w-12 h-12 mx-auto bg-gray-50 border border-gray-200 text-black rounded-full flex items-center justify-center mb-6">
+            <i data-feather="star" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold uppercase tracking-widest mb-3 text-black" data-aos="fade-up">Grandes Marcas</h3>
+          <p class="text-gray-500 font-light leading-relaxed text-sm">Colaboramos com marcas de excelência como a Lourini, Gioestofos, Móveis AF, Lar Ibérico e Vidal Lar. O nosso armazém está sempre repleto de produtos prontos para entrega.</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" class="text-center">
+          <div class="w-12 h-12 mx-auto bg-gray-50 border border-gray-200 text-black rounded-full flex items-center justify-center mb-6">
+            <i data-feather="tool" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold uppercase tracking-widest mb-3 text-black" data-aos="fade-up">Serviço Completo</h3>
+          <p class="text-gray-500 font-light leading-relaxed text-sm">Entregamos, montamos e recolhemos o seu mobiliário usado gratuitamente. Asseguramos um serviço atencioso e de enorme qualidade.</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="text-center">
+          <div class="w-12 h-12 mx-auto bg-gray-50 border border-gray-200 text-black rounded-full flex items-center justify-center mb-6">
+            <i data-feather="heart" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold uppercase tracking-widest mb-3 text-black" data-aos="fade-up">Pós-Venda</h3>
+          <p class="text-gray-500 font-light leading-relaxed text-sm">A nossa relação não termina na entrega. Garantimos durabilidade a preços acessíveis e um apoio pós-venda sempre próximo e resolutivo.</p>
+        </div>
+      </div>
+      
+      <!-- Combined CTA Block (Zara Home Minimalist Style in Baby Blue) -->
+      <div style="background-color: #EDF4F8; border: 1px solid #D4E4EE; padding: 4rem 2rem; text-align: center; border-radius: 4px; margin-top: 4rem;" data-aos="fade-up">
+        <div style="max-width: 650px; margin: 0 auto;">
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 400; color: #1a1a1a; margin-bottom: 1rem; text-transform: uppercase;" data-aos="fade-up">Agendar Visita à Loja</h2>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.9rem; color: #6b6b6b; line-height: 1.75; font-weight: 300; margin-bottom: 2rem;">
+            Sabia que pode agendar uma visita guiada à nossa loja diretamente pelo site? Terá um consultor dedicado para o ajudar a escolher as melhores soluções de espaço, cores e tecidos.
           </p>
-          <p>
-            Disponibilizamos uma gama completa que vai desde o mobiliário tradicional e rústico português até ao design mais moderno, contemporâneo e minimalista. Nas nossas lojas encontra exposições cuidadas de quartos de casal e individuais, salas de estar, sofás com tecidos personalizáveis, mesas de jantar extensíveis e móveis de TV.
-          </p>
-          <p>
-            Especialistas também no descanso de excelência, oferecemos colchões desenvolvidos com as mais recentes tecnologias de molas ensacadas independentes, viscoelástica de alta densidade e tratamentos térmicos inovadores para garantir noites verdadeiramente reparadoras.
-          </p>
-        </div>
-      </section>
-
-      <!-- 1. Os Fundadores Section -->
-      <section style="background:#F7F4F0; padding:5rem 1.5rem; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC;">
-        <div style="max-width:1200px; margin:0 auto;">
-          <div style="text-align:center; margin-bottom:3rem;">
-            <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">ORIGENS & FAMÍLIA</p>
-            <h3 style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem, 3vw, 2.2rem); font-weight:400; color:#1a1a1a; margin-bottom:0.5rem;">
-              Os Fundadores & A Nossa História
-            </h3>
-            <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#6b6b6b; font-weight:300;">
-              Clique em qualquer fotografia para ampliar em ecrã inteiro.
-            </p>
-          </div>
-
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
-            <!-- Foto 1 -->
-            <div onclick="openLightbox(0)" style="cursor:pointer; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)'">
-              <div style="width:100%; height:260px; overflow:hidden; background:#eae5df;">
-                <img src="images/produtos/historia1.jpg" alt="Fundador Adil Móveis" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
-              </div>
-              <div style="padding:1.25rem; text-align:center;">
-                <p style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:500; color:#1a1a1a; margin:0 0 4px 0;">38 Anos de Confiança</p>
-                <p style="font-family:'Inter',sans-serif; font-size:0.8rem; color:#888; margin:0;">Loja Sede no Feijó, Almada</p>
-              </div>
-            </div>
-
-            <!-- Foto 2 -->
-            <div onclick="openLightbox(1)" style="cursor:pointer; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)'">
-              <div style="width:100%; height:260px; overflow:hidden; background:#eae5df;">
-                <img src="images/produtos/historia2.jpg" alt="História Adil Móveis" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
-              </div>
-              <div style="padding:1.25rem; text-align:center;">
-                <p style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:500; color:#1a1a1a; margin:0 0 4px 0;">Tradição & Proximidade</p>
-                <p style="font-family:'Inter',sans-serif; font-size:0.8rem; color:#888; margin:0;">Atendimento personalizado e dedicado</p>
-              </div>
-            </div>
-
-            <!-- Foto 3 -->
-            <div onclick="openLightbox(2)" style="cursor:pointer; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)'">
-              <div style="width:100%; height:260px; overflow:hidden; background:#eae5df;">
-                <img src="images/produtos/historia3.jpg" alt="Equipa Adil Móveis" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
-              </div>
-              <div style="padding:1.25rem; text-align:center;">
-                <p style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:500; color:#1a1a1a; margin:0 0 4px 0;">Empresa Familiar</p>
-                <p style="font-family:'Inter',sans-serif; font-size:0.8rem; color:#888; margin:0;">Gerida por 3 irmãos com paixão</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2. Showroom Exhibition Section -->
-      <section style="background:#ffffff; padding:5rem 1.5rem;">
-        <div style="max-width:1200px; margin:0 auto;">
-          <div style="text-align:center; margin-bottom:3rem;">
-            <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:0.5rem;">EXPOSIÇÃO REAL</p>
-            <h3 style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem, 3vw, 2.2rem); font-weight:400; color:#1a1a1a; margin-bottom:0.5rem;">
-              Visite as Nossas Lojas no Feijó
-            </h3>
-            <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#6b6b6b; font-weight:300;">
-              Descubra mais de 1000m² de exposição com mobiliário para toda a casa.
-            </p>
-          </div>
-
-          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:1.5rem;">
-            <!-- Showroom 1 -->
-            <div onclick="openLightbox(3)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/IMG_6668.jpeg" alt="Exposição Loja Feijó 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-            <!-- Showroom 2 -->
-            <div onclick="openLightbox(4)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/IMG_6670.jpeg" alt="Exposição Loja Feijó 2" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-            <!-- Showroom 3 -->
-            <div onclick="openLightbox(5)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/IMG_6675.jpeg" alt="Exposição Loja Feijó 3" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-            <!-- Showroom 4 -->
-            <div onclick="openLightbox(6)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/IMG_6676.jpeg" alt="Exposição Loja Feijó 4" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-            <!-- Showroom 5 -->
-            <div onclick="openLightbox(7)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/Unknown.jpeg" alt="Exposição Loja Feijó 5" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-            <!-- Showroom 6 -->
-            <div onclick="openLightbox(8)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/Unknown-1.jpeg" alt="Exposição Loja Feijó 6" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-            <!-- Showroom 7 -->
-            <div onclick="openLightbox(9)" style="cursor:pointer; border-radius:10px; overflow:hidden; height:220px; background:#eae5df; box-shadow:0 3px 12px rgba(0,0,0,0.06); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-              <img src="images/produtos/Unknown-2.jpeg" alt="Exposição Loja Feijó 7" style="width:100%; height:100%; object-fit:cover; display:block;" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3. Our Values Section -->
-      <section style="background:#F5F0E8; padding:4.5rem 1.5rem; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC;">
-        <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:2.5rem; text-align:center;">
-          <div>
-            <div style="font-size:2rem; margin-bottom:0.75rem;">🚚</div>
-            <h4 style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:600; color:#1a1a1a; margin-bottom:0.5rem;">Entrega & Montagem Grátis</h4>
-            <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#6b6b6b; line-height:1.6; margin:0;">Num raio de 50km (Lisboa e Setúbal). Montagem profissional com recolha gratuita de móveis usados.</p>
-          </div>
-          <div>
-            <div style="font-size:2rem; margin-bottom:0.75rem;">🛡️</div>
-            <h4 style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:600; color:#1a1a1a; margin-bottom:0.5rem;">Garantia de 3 Anos</h4>
-            <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#6b6b6b; line-height:1.6; margin:0;">Mobiliário fabricado com materiais de alta durabilidade e assistência pós-venda garantida.</p>
-          </div>
-          <div>
-            <div style="font-size:2rem; margin-bottom:0.75rem;">🎨</div>
-            <h4 style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:600; color:#1a1a1a; margin-bottom:0.5rem;">Personalização Total</h4>
-            <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#6b6b6b; line-height:1.6; margin:0;">Mais de 100 tecidos, acabamentos de madeira e dimensões feitas à medida do seu espaço.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-8" style="font-family:'Inter',sans-serif; border-top:1px solid #1a1a1a;">
-      <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
-        <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #222;">
-          <div style="display:flex; align-items:center; gap:1.25rem;">
-            <div>
-              <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:600; color:#ffffff; margin:0 0 2px 0;">Adil Móveis</h3>
-              <p style="font-size:10px; color:#aaa; margin:0;">Loja no Feijó, Almada</p>
-            </div>
-          </div>
-          <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:11px; color:#aaa;">
-            <a href="tel:212582788" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">📞 212 582 788</a>
-            <a href="https://wa.me/351960209396" target="_blank" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='#aaa'">💬 960 209 396</a>
-            <a href="https://wa.me/351961253466" target="_blank" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='#aaa'">💬 961 253 466</a>
-            <a href="mailto:adil.moveis@hotmail.com" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">✉️ adil.moveis@hotmail.com</a>
-          </div>
-          <div style="display:flex; gap:1rem;">
-            <a href="https://www.facebook.com/p/Adil-M%C3%B3veis-100063641348118/" target="_blank" style="color:#aaa; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            <a href="contactos.html?agendar=true" class="btn-adil" style="padding: 0.85rem 2rem; text-decoration: none;">
+              📅 Reservar na Agenda
             </a>
-            <a href="https://www.instagram.com/adilmoveis/" target="_blank" style="color:#aaa; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <a href="contactos.html" style="background: transparent; border: 1px solid #C8B598; color: #1a1a1a; padding: 0.85rem 2rem; font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.3s;" onmouseover="this.style.background='rgba(212,228,238,0.5)';" onmouseout="this.style.background='transparent';">
+              Pedir Orçamento
             </a>
-          </div>
-        </div>
-        <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:11px; color:#666;">
-          <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;">
-            <a href="index.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Início</a>
-            <a href="quartos.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Quartos</a>
-            <a href="colchoes.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Colchões</a>
-            <a href="salas.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Salas</a>
-            <a href="kids.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Kids</a>
-            <a href="contactos.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Contactos</a>
-          </div>
-          <div style="text-align:right;">
-            &copy; 2026 Adil Móveis. Todos os direitos reservados.
-            <span style="margin:0 6px;">·</span>
-            Desenvolvido por <a href="https://nadiairina.github.io/Nadia-Portfolio/" target="_blank" style="color:#aaa; text-decoration:underline;">Nadia Irina</a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+</main>
+
+<!-- Newsletter Section -->
+<section class="bg-white py-16 border-b border-gray-100">
+  <div class="container mx-auto px-4 max-w-xl text-center">
+    <div class="ml-embedded" data-form="oCm4cl"></div>
+  </div>
+</section>
+
+
+    
+                <!-- ══════════════════════════════════════════════════════
+           CAMPANHA DE DESCONTO / NEWSLETTER (10%)
+      ══════════════════════════════════════════════════════ -->
+      <section style="background-color:#F5F0E8; border-top:1px solid #E8E3DC; border-bottom:1px solid #E8E3DC; padding:4.5rem 0; text-align:center;">
+        <div style="max-width:800px; margin:0 auto; padding:0 1.5rem;">
+          <p style="font-family:'Inter',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:#C8B598; margin-bottom:1rem;">OFERTA EXCLUSIVA</p>
+          <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.75rem,3.5vw,2.5rem); font-weight:400; color:#1a1a1a; margin-bottom:1rem; line-height:1.2;" data-aos="fade-up">Subscreva e receba 10% de desconto na primeira compra (Válido online e em loja!)</h2>
+          <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:#6b6b6b; line-height:1.75; margin-bottom:1rem; max-width:600px; margin-left:auto; margin-right:auto;">
+            Registe o seu e-mail para receber novidades, coleções exclusivas e um vale de 10% de desconto para a sua primeira encomenda de mobiliário.
+          </p>
+          <form style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; max-width:500px; margin:0 auto;" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST">
+            <input type="email" name="email" placeholder="O seu endereço de e-mail" style="flex:1; min-width:250px; padding:0.85rem 1.25rem; border:1px solid #E8E3DC; border-radius:2px; font-size:0.85rem; outline:none; background:#fff; font-family:'Inter',sans-serif;" required>
+            <button type="submit" style="background:#C8B598; border:1px solid #C8B598; color:#fff; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; padding:0.85rem 2rem; border-radius:2px; transition:all 0.3s; cursor:pointer; font-family:'Inter',sans-serif;" onmouseover="this.style.background='#b09e85'; this.style.borderColor='#b09e85';" onmouseout="this.style.background='#C8B598'; this.style.borderColor='#C8B598';">
+              Subscrever
+            </button>
+          </form>
+        </div>
+      </section>
+
+
+
+
+
+<footer class="bg-black text-white py-8" style="font-family:'Inter',sans-serif; border-top:1px solid #1a1a1a;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+    <!-- Main row: logo/contacts on left, clean horizontal menu on right -->
+    <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #222;">
+      
+      <!-- Left side: logo and contacts -->
+      <div style="display:flex; align-items:center; gap:1.25rem;">
+
+        <div>
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:600; color:#ffffff; margin:0 0 2px 0;">Adil Móveis</h3>
+          <p style="font-size:10px; color:#aaa; margin:0;">Loja no Feijó, Almada</p>
+        </div>
+      </div>
+      
+      <!-- Middle: Contacts -->
+      <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:11px; color:#aaa;">
+        <a href="tel:212582788" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">📞 212 582 788</a>
+        <a href="https://wa.me/351960209396" target="_blank" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='#aaa'">💬 960 209 396</a>
+        <a href="mailto:adil.moveis@hotmail.com" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">✉️ adil.moveis@hotmail.com</a>
+      </div>
+
+      <!-- Right side: Socials -->
+      <div style="display:flex; gap:1rem;">
+        <a href="https://www.facebook.com/p/Adil-M%C3%B3veis-100063641348118/" target="_blank" style="color:#aaa; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="https://www.instagram.com/adilmoveis/" target="_blank" style="color:#aaa; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom row: horizontal navigation and copyright -->
+    <div style="display:flex; flex-direction:row; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:11px; color:#666;">
+      
+      <!-- Horizontal links -->
+      <div style="display:flex; flex-wrap:wrap; gap:1.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;">
+        <a href="index.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Início</a>
+        <a href="quartos.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Quartos</a>
+        <a href="colchoes.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Colchões</a>
+        <a href="salas.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Salas</a>
+        <a href="kids.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Kids</a>
+        <a href="contactos.html" style="color:#aaa; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">Contactos</a>
+      </div>
+      
+      <!-- Copyright -->
+      <div style="text-align:right;">
+        &copy; 2026 Adil Móveis. Todos os direitos reservados.
+        <span style="margin:0 6px;">·</span>
+        Desenvolvido por <a href="https://nadiairina.github.io/Nadia-Portfolio/" target="_blank" style="color:#aaa; text-decoration:underline;">Nadia Irina</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    <!-- Gallery Modal -->
+<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <!-- Close button -->
+    <button id="closeGallery" class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75">
+      <i data-feather="x" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Slide counter -->
+    <div class="absolute top-4 left-4 text-white bg-black bg-opacity-50 py-1 px-3 rounded-full">
+      <span id="currentSlide">1</span>/<span id="totalSlides">8</span>
+    </div>
+    
+    <!-- Gallery container -->
+    <div class="gallery-container relative flex items-center justify-center w-full h-full">
+      <!-- You'll populate this with JavaScript -->
+    </div>
+    
+    <!-- Title at the bottom -->
+    <div id="galleryTitle" class="text-white text-center text-xl font-medium absolute bottom-8 w-full"></div>
+    
+    <!-- Navigation arrows -->
+    <button id="prevSlide" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      <i data-feather="chevron-left" class="w-8 h-8"></i>
+    </button>
+    <button id="nextSlide" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      <i data-feather="chevron-right" class="w-8 h-8"></i>
+    </button>
+  </div>
+</div>
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Feather icons
+  if (typeof feather !== 'undefined') {
+    feather.replace();
+  }
+  
+  // ===== MENU FUNCTIONALITY =====
+  // Get menu elements
+  const menuButton = document.getElementById('menuButton');
+  const closeMenuButton = document.getElementById('closeMenuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  
+  // Open menu when clicking menu button
+  if (menuButton) {
+    menuButton.addEventListener('click', function() {
+      menuOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+  }
+  
+  // Close menu when clicking close button
+  if (closeMenuButton) {
+    closeMenuButton.addEventListener('click', function() {
+      menuOverlay.classList.add('hidden');
+      document.body.style.overflow = ''; // Allow scrolling again
+    });
+  }
+  
+  // Close menu when clicking outside
+  if (menuOverlay) {
+    menuOverlay.addEventListener('click', function(e) {
+      if (e.target === menuOverlay) {
+        menuOverlay.classList.add('hidden');
+        document.body.style.overflow = ''; // Allow scrolling again
+      }
+    });
+  }
+  
+  // ===== FILTER FUNCTIONALITY =====
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll('.filter-button');
+  
+  // Add click handler to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the category from the button
+      const category = this.getAttribute('data-category');
+      
+      // Update active button styling
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.remove('bg-navy', 'text-white');
+        btn.classList.add('bg-[#f0ede6]');
+      });
+      
+      // Apply active styling to clicked button
+      this.classList.add('active', 'bg-navy', 'text-white');
+      this.classList.remove('bg-[#f0ede6]');
+      
+      // Get all products
+      const products = document.querySelectorAll('.product');
+      
+      // Show/hide products based on category
+      products.forEach(product => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // ===== GALLERY FUNCTIONALITY =====
+  // Get all product images
+  const products = document.querySelectorAll('.product');
+  
+  // Create an array of all product images
+  const galleryImages = [];
+  const galleryTitles = [];
+  
+  products.forEach(product => {
+    const img = product.querySelector('img');
+    const title = product.querySelector('h3').textContent;
+    galleryImages.push(img.src);
+    galleryTitles.push(title);
+  });
+  
+  // Setup gallery elements
+  const modal = document.getElementById('galleryModal');
+  const galleryContainer = document.querySelector('.gallery-container');
+  const closeButton = document.getElementById('closeGallery');
+  const prevButton = document.getElementById('prevSlide');
+  const nextButton = document.getElementById('nextSlide');
+  const currentSlideEl = document.getElementById('currentSlide');
+  const totalSlidesEl = document.getElementById('totalSlides');
+  
+  let currentIndex = 0;
+  
+  // Update total slides count
+  totalSlidesEl.textContent = galleryImages.length;
+  
+  // Function to open gallery
+  window.openGallery = function(index) {
+    currentIndex = index;
+    updateGallery();
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    
+    // Re-initialize Feather icons
+    if (typeof feather !== 'undefined') {
+      feather.replace();
+    }
+  };
+  
+  // Function to close gallery
+  function closeGallery() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+  
+  function updateGallery() {
+  // Update slide counter
+  currentSlideEl.textContent = currentIndex + 1;
+  
+  // Remove the title from inside the slide and put it at the bottom of the modal
+  galleryContainer.innerHTML = `
+    <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
+      <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
+        <img 
+          src="${galleryImages[currentIndex]}" 
+          alt="${galleryTitles[currentIndex]}" 
+          style="max-width: 100%; max-height: 100%; object-fit: contain;"
+        >
+      </div>
+    </div>
+  `;
+  
+  // Find or create the title element outside the gallery container
+  let titleElement = document.getElementById('galleryTitle');
+  if (!titleElement) {
+    titleElement = document.createElement('div');
+    titleElement.id = 'galleryTitle';
+    titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
+    document.getElementById('galleryModal').appendChild(titleElement);
+  }
+  
+  // Update the title text
+  titleElement.textContent = galleryTitles[currentIndex];
+}
+  
+  // Previous slide
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateGallery();
+  }
+  
+  // Next slide
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateGallery();
+  }
+  
+  // Event listeners
+  if (closeButton) closeButton.addEventListener('click', closeGallery);
+  if (prevButton) prevButton.addEventListener('click', prevSlide);
+  if (nextButton) nextButton.addEventListener('click', nextSlide);
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (!modal || modal.classList.contains('hidden')) return;
+    
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    } else if (e.key === 'Escape') {
+      closeGallery();
+    }
+  });
+  
+  // Close when clicking outside of the image
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeGallery();
+      }
+    });
+  }
+});
+</script>
+
+    <!-- Snipcart Configuration -->
+    
+    
+    <script>
+      document.addEventListener('snipcart.ready', function() {
+        Snipcart.api.session.setLanguage('pt-PT', {
+          cart: {
+            empty: "O seu carrinho está vazio.",
+            back_to_store: "Voltar à loja"
+          }
+        });
+      });
+    </script>
+      
+  
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50
+    });
+  </script>
+    
+
+    <!-- Active Link Underline Logic -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        let currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        
+        // Find links in the top nav
+        const topNavLinks = document.querySelectorAll('header nav a');
+        topNavLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                // If it's the red Packs button, maybe don't underline, or use a red underline
+                if (link.textContent.includes('Packs')) {
+                    link.classList.add('underline', 'decoration-2', 'underline-offset-8');
+                } else {
+                    link.classList.add('underline', 'decoration-2', 'underline-offset-8', 'text-black');
+                }
+            }
+        });
+        
+        // Find links in the sidebar nav
+        const sideNavLinks = document.querySelectorAll('#menuSidebar nav a');
+        sideNavLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('underline', 'decoration-2', 'underline-offset-4');
+            }
+        });
+      });
+    </script>
+
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9999] bg-[#2c2a29] text-white px-6 py-5 shadow-2xl border-t border-gray-700" style="display:none">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex-1">
+        <p class="text-sm font-medium mb-1">🍪 Utilizamos cookies</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Usamos cookies para melhorar a sua experiência de navegação. Ao continuar, aceita a nossa <a href="privacidade.html" class="text-[#C8B598] hover:underline">Política de Privacidade</a> e o uso de cookies.</p>
+      </div>
+      <div class="flex gap-3 flex-shrink-0">
+        <button id="cookieReject" class="text-[10px] font-bold uppercase tracking-[0.2em] px-5 py-2.5 border border-gray-600 text-gray-400 hover:border-white hover:text-white transition-colors">Apenas Essenciais</button>
+        <button id="cookieAccept" class="text-[10px] font-bold uppercase tracking-[0.2em] px-5 py-2.5 bg-[#C8B598] text-white hover:bg-[#b09e85] transition-colors">Aceitar Todos</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var banner = document.getElementById('cookieBanner');
+      var consent = localStorage.getItem('cookie_consent');
+      if (!consent) {
+        banner.style.display = 'block';
+      }
+      document.getElementById('cookieAccept').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'all');
+        banner.style.display = 'none';
+      });
+      document.getElementById('cookieReject').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'essential');
+        banner.style.display = 'none';
+      });
+    })();
+  </script>
 
     <!-- Floating Contact Widget (Adil Móveis Premium) -->
     <div class="floating-contact-bar">
@@ -413,127 +869,132 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       </a>
     </div>
 
-    <!-- Lightbox Gallery Modal -->
-    <div id="lightboxModal" class="fixed inset-0 z-[9999] hidden flex flex-col items-center justify-center" style="background:rgba(0,0,0,0.92); backdrop-filter:blur(8px);">
-      <button onclick="closeLightbox()" style="position:absolute; top:24px; right:28px; color:#fff; font-size:32px; background:none; border:none; cursor:pointer; z-index:10000;" title="Fechar (&times;)">&times;</button>
-      
-      <button onclick="prevLightboxImage()" style="position:absolute; z-index:10000; left:20px; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; background:rgba(255,255,255,0.15); border:none; border-radius:50%; width:54px; height:54px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(200,181,152,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">‹</button>
-      
-      <div style="max-width:90vw; max-height:80vh; text-align:center; position:relative;">
-        <img id="lightboxImg" src="" alt="Ampliada" style="max-width:100%; max-height:75vh; border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.5); object-fit:contain;" />
-        <p id="lightboxCaption" style="color:#C8B598; font-family:'Playfair Display',serif; font-size:1.1rem; margin-top:16px; font-style:italic;"></p>
-      </div>
-      
-      <button onclick="nextLightboxImage()" style="position:absolute; z-index:10000; right:20px; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; background:rgba(255,255,255,0.15); border:none; border-radius:50%; width:54px; height:54px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(200,181,152,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">›</button>
-    </div>
-
-    <!-- Quick Search Bar Modal -->
-    <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
-      <div class="max-w-xl mx-auto mt-24 px-4">
-        <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
-          <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
-            <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
-            <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
-          </div>
-          <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
-            <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
-          </form>
-          <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- AOS & Slideshow & Lightbox Scripts -->
+    <!-- AOS (Animate on Scroll) JS and Initialization -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // 1. Slideshow Crossfade
-      let currentSlide = 1;
-      const totalSlides = 4;
-      setInterval(() => {
-        const prev = document.getElementById('hero-slide-' + currentSlide);
-        currentSlide = (currentSlide % totalSlides) + 1;
-        const next = document.getElementById('hero-slide-' + currentSlide);
-        if (prev && next) {
-          prev.style.opacity = '0';
-          next.style.opacity = '1';
-        }
-      }, 4500);
-
-      // 2. Lightbox functionality
-      const galleryItems = [
-        { src: "images/produtos/historia1.jpg", caption: "Fundador Adil Móveis · 38 Anos de Dedicação no Feijó" },
-        { src: "images/produtos/historia2.jpg", caption: "Atendimento Familiar & Proximidade ao Cliente" },
-        { src: "images/produtos/historia3.jpg", caption: "Empresa Familiar Gerida por 3 Irmãos" },
-        { src: "images/produtos/IMG_6668.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
-        { src: "images/produtos/IMG_6670.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
-        { src: "images/produtos/IMG_6675.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
-        { src: "images/produtos/IMG_6676.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
-        { src: "images/produtos/Unknown.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
-        { src: "images/produtos/Unknown-1.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
-        { src: "images/produtos/Unknown-2.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" }
-      ];
-      let currentLightboxIdx = 0;
-
-      function openLightbox(index) {
-        currentLightboxIdx = index;
-        const modal = document.getElementById('lightboxModal');
-        const img = document.getElementById('lightboxImg');
-        const cap = document.getElementById('lightboxCaption');
-        if (img && cap && modal) {
-          img.src = galleryItems[index].src;
-          cap.textContent = galleryItems[index].caption;
-          modal.classList.remove('hidden');
-          document.body.style.overflow = 'hidden';
-        }
-      }
-
-      function closeLightbox() {
-        const modal = document.getElementById('lightboxModal');
-        if (modal) {
-          modal.classList.add('hidden');
-          document.body.style.overflow = '';
-        }
-      }
-
-      function prevLightboxImage() {
-        currentLightboxIdx = (currentLightboxIdx - 1 + galleryItems.length) % galleryItems.length;
-        openLightbox(currentLightboxIdx);
-      }
-
-      function nextLightboxImage() {
-        currentLightboxIdx = (currentLightboxIdx + 1) % galleryItems.length;
-        openLightbox(currentLightboxIdx);
-      }
-
-      document.addEventListener('keydown', function(e) {
-        const modal = document.getElementById('lightboxModal');
-        if (modal && !modal.classList.contains('hidden')) {
-          if (e.key === 'Escape') closeLightbox();
-          if (e.key === 'ArrowLeft') prevLightboxImage();
-          if (e.key === 'ArrowRight') nextLightboxImage();
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+          });
         }
       });
-
-      // 3. Search Modal
-      function openSearchModal() {
-        const m = document.getElementById('searchModal');
-        if (m) {
-          m.classList.remove('hidden');
-          const inp = document.getElementById('searchInput');
-          if (inp) { inp.value = ''; inp.focus(); }
-        }
-      }
-      function closeSearchModal() {
-        const m = document.getElementById('searchModal');
-        if (m) m.classList.add('hidden');
-      }
-      function handleGlobalSearch(e) {
-        e.preventDefault();
-        const q = document.getElementById('searchInput').value.trim();
-        if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
-      }
     </script>
-  </body>
+
+
+
+
+      <!-- Quick Search Bar Modal -->
+  <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
+    <div class="max-w-xl mx-auto mt-24 px-4">
+      <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
+        <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
+          <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
+          <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
+        </div>
+        <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
+          <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
+        </form>
+        <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
+      </div>
+    </div>
+  </div>
+<script>
+  function openSearchModal() {
+    const m = document.getElementById('searchModal');
+    if (m) {
+      m.classList.remove('hidden');
+      const inp = document.getElementById('searchInput');
+      if (inp) { inp.value = ''; inp.focus(); }
+    }
+  }
+  function closeSearchModal() {
+    const m = document.getElementById('searchModal');
+    if (m) m.classList.add('hidden');
+  }
+  function handleGlobalSearch(e) {
+    e.preventDefault();
+    const q = document.getElementById('searchInput').value.trim();
+    if (q) {
+      window.location.href = 'search.html?q=' + encodeURIComponent(q);
+    }
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSearchModal();
+  });
+</script>
+
+  
+  <!-- Lightbox Gallery Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-[9999] hidden flex flex-col items-center justify-center" style="background:rgba(0,0,0,0.92); backdrop-filter:blur(8px);">
+    <button onclick="closeLightbox()" style="position:absolute; top:24px; right:28px; color:#fff; font-size:32px; background:none; border:none; cursor:pointer; z-index:10000;" title="Fechar (&Esc;)">&times;</button>
+    
+    <button onclick="prevLightboxImage()" style="position:absolute; z-index:10000; left:20px; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; background:rgba(255,255,255,0.15); border:none; border-radius:50%; width:54px; height:54px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(200,181,152,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">‹</button>
+    
+    <div style="max-width:90vw; max-height:80vh; text-align:center; position:relative;">
+      <img id="lightboxImg" src="" alt="Ampliada" style="max-width:100%; max-height:75vh; border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.5); object-fit:contain;" />
+      <p id="lightboxCaption" style="color:#C8B598; font-family:'Playfair Display',serif; font-size:1.1rem; margin-top:16px; font-style:italic;"></p>
+    </div>
+    
+    <button onclick="nextLightboxImage()" style="position:absolute; z-index:10000; right:20px; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; background:rgba(255,255,255,0.15); border:none; border-radius:50%; width:54px; height:54px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='rgba(200,181,152,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">›</button>
+  </div>
+
+  <script>
+    const galleryItems = [
+      { src: "images/produtos/historia1.jpg", caption: "Fundadores Adil Móveis · 38 Anos de Tradição no Feijó" },
+      { src: "images/produtos/historia2.jpg", caption: "Fundadores Adil Móveis · 38 Anos de Tradição no Feijó" },
+      { src: "images/produtos/historia3.jpg", caption: "Fundadores Adil Móveis · 38 Anos de Tradição no Feijó" },
+      { src: "images/produtos/IMG_6668.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/produtos/IMG_6670.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/produtos/IMG_6675.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/produtos/IMG_6676.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/produtos/Unknown.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/produtos/Unknown-1.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" },
+      { src: "images/produtos/Unknown-2.jpeg", caption: "Exposição Atual na Loja Adil Móveis (Feijó, Almada)" }
+    ];
+    let currentLightboxIdx = 0;
+
+    function openLightbox(index) {
+      currentLightboxIdx = index;
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      const cap = document.getElementById('lightboxCaption');
+      img.src = galleryItems[index].src;
+      cap.textContent = galleryItems[index].caption;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function prevLightboxImage() {
+      currentLightboxIdx = (currentLightboxIdx - 1 + galleryItems.length) % galleryItems.length;
+      openLightbox(currentLightboxIdx);
+    }
+
+    function nextLightboxImage() {
+      currentLightboxIdx = (currentLightboxIdx + 1) % galleryItems.length;
+      openLightbox(currentLightboxIdx);
+    }
+
+    document.addEventListener('keydown', function(e) {
+      const modal = document.getElementById('lightboxModal');
+      if (modal && !modal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightboxImage();
+        if (e.key === 'ArrowRight') nextLightboxImage();
+      }
+    });
+  </script>
+</body>
+
+
 </html>
