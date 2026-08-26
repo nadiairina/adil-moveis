@@ -1749,15 +1749,21 @@ const window_products = {
   },
   "basetv-madrid": {
     "id": "basetv-madrid",
-    "name": "Base TV Madrid",
+    "name": "Base TV Madrid (1 Gaveta)",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Base TV 1 Gaveta Madrid (L1555 x A500 x P450).",
-    "image": "images/produtos/saladesonho.jpg",
-    "gallery": [],
-    "subcategory": "Móveis de Sala"
-  },
+    "subcategory": "Móveis de Sala",
+    "description": "Móvel de TV moderno com 1 gaveta da Linha Madrid (L1555 x A500 x P450 mm). Acabamento em Branco e Stone.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "L1555 x A500 x P450 mm[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Branco / Stone[+0.00]",
+    "image": "images/produtos/base-tv-madrid-brancostone.jpg",
+    "gallery": [
+        "images/produtos/base-tv-madrid-brancostone.jpg"
+    ]
+},
   "sofa-luna-chaise": {
     "id": "sofa-luna-chaise",
     "name": "Sofá Luna Chaise",
@@ -1775,78 +1781,76 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Móvel de TV moderno com 1 gaveta espaçosa da Linha Malmo (L1800 x A500 x P455 mm). Disponível em 3 acabamentos elegantes.",
+    "subcategory": "Móveis de Sala",
+    "description": "Móvel de TV moderno com 1 gaveta espaçosa e nicho em carvalho da Linha Malmo (L1800 x A500 x P455 mm).",
     "custom1_name": "Dimensões",
     "custom1_options": "L1800 x A500 x P455 mm[+0.00]",
     "custom2_name": "Cor / Acabamento",
     "custom2_options": "Capuccino / Carvalho[+0.00]|Dark Grey / Carvalho[+0.00]|Branco / Carvalho[+0.00]",
-    "image": "images/produtos/base-tv-malmo-capuccinocarvalho.jpg",
+    "image": "images/produtos/base-tv-malmo-ambiente.jpg",
     "gallery": [
-      "images/produtos/base-tv-malmo-capuccinocarvalho.jpg",
-      "images/produtos/Movel-TV-1-Gaveta.webp",
-      "images/produtos/base-tv-malmo-dark-greycarvalho.jpg",
-      "images/produtos/base-tv-malmo-dark-greycarvalho-1.jpg"
-    ],
-    "subcategory": "Móveis de Sala"
-  },
+        "images/produtos/base-tv-malmo-ambiente.jpg",
+        "images/produtos/base-tv-malmo-isolado.webp",
+        "images/produtos/base-tv-malmo-capuccinocarvalho.jpg"
+    ]
+},
   "mesa-centro-malmo": {
     "id": "mesa-centro-malmo",
     "name": "Mesa de Centro Malmo MC90",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Mesa de centro com prateleira inferior de arrumação da Linha Malmo (L900 x A380 x P600 mm). Disponível em 3 cores contemporâneas.",
+    "subcategory": "Móveis de Sala",
+    "description": "Mesa de centro contemporânea da Linha Malmo com nicho de arrumação em madeira natural (L900 x A380 x P600 mm).",
     "custom1_name": "Dimensões",
     "custom1_options": "L900 x A380 x P600 mm[+0.00]",
     "custom2_name": "Cor / Acabamento",
     "custom2_options": "Dark Grey / Carvalho[+0.00]|Capuccino / Carvalho[+0.00]|Branco / Carvalho[+0.00]",
-    "image": "images/produtos/mesa-de-centro-malmo-dark-greycarvalho.jpg",
+    "image": "images/produtos/mesa-de-centro-malmo-frontal.jpg",
     "gallery": [
-      "images/produtos/mesa-de-centro-malmo-dark-greycarvalho.jpg",
-      "images/produtos/mesa-de-centro-malmo-dark-greycarvalho-1.jpg",
-      "images/produtos/mesa-de-centro-malmo-dark-greycarvalho-2.jpg"
-    ],
-    "subcategory": "Móveis de Sala"
-  },
+        "images/produtos/mesa-de-centro-malmo-frontal.jpg",
+        "images/produtos/mesa-de-centro-malmo-perspetiva.jpg"
+    ]
+},
   "mesa-sala-paris": {
     "id": "mesa-sala-paris",
     "name": "Mesa de Jantar Extensível Paris (2 Topos)",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Mesa de sala de jantar extensível da Linha Paris com 2 topos expansíveis. Dimensões: Fechada L1400 x A790 x P900 mm | Aberta L2300 x A790 x P900 mm. Disponível em 2 acabamentos.",
+    "subcategory": "Mesas e Cadeiras",
+    "description": "Mesa de sala de jantar extensível da Linha Paris com 2 topos expansíveis (Fechada L1400 / Aberta L2300 x A790 x P900 mm).",
     "custom1_name": "Dimensões",
     "custom1_options": "Fechada L1400 / Aberta L2300 x A790 x P900 mm[+0.00]",
     "custom2_name": "Cor / Acabamento",
     "custom2_options": "Carvalho Cinza - Branco[+0.00]|Carvalho Natura - Branco[+0.00]",
     "image": "images/produtos/mesa-de-jantar-paris-cinzabranco.png",
     "gallery": [
-      "images/produtos/mesa-de-jantar-paris-cinzabranco.png",
-      "images/produtos/mesa-de-jantar-paris-cinzabranco-1.png",
-      "images/produtos/mesa-de-jantar-paris-cinzabranco-2.png",
-      "images/produtos/mesa-de-jantar-paris-cinzabranco-3.png"
-    ],
-    "subcategory": "Mesas e Cadeiras"
-  },
+        "images/produtos/mesa-de-jantar-paris-cinzabranco.png",
+        "images/produtos/mesa-de-jantar-paris-cinzabranco-1.png",
+        "images/produtos/mesa-de-jantar-paris-cinzabranco-2.png",
+        "images/produtos/mesa-de-jantar-paris-cinzabranco-3.png"
+    ]
+},
   "cadeira-paris": {
     "id": "cadeira-paris",
     "name": "Cadeira Paris Estofada",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Cadeira de sala de jantar da Linha Paris com estofo de elevado conforto e pés elegantes personalizáveis em várias cores e tecidos.",
+    "subcategory": "Mesas e Cadeiras",
+    "description": "Cadeira de sala de jantar da Linha Paris com estofo de elevado conforto e pés elegantes personalizáveis.",
     "custom1_name": "Pés / Acabamento",
     "custom1_options": "Pés Carvalho[+0.00]|Pés Brancos[+0.00]|Pés Pretos[+0.00]",
     "custom2_name": "Tecido",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/produtos/paris-cadeira-lourini-1200x1200.png",
     "gallery": [
-      "images/produtos/paris-cadeira-lourini-1200x1200.png",
-      "images/produtos/paris-lado-1200x1200.png",
-      "images/produtos/paris-cadeiras-lourini-1200x1200.webp"
-    ],
-    "subcategory": "Mesas e Cadeiras"
-  },
+        "images/produtos/paris-cadeira-lourini-1200x1200.png",
+        "images/produtos/paris-lado-1200x1200.png",
+        "images/produtos/paris-cadeiras-lourini-1200x1200.webp"
+    ]
+},
   "colchao-ortopedico-premium": {
     "id": "colchao-ortopedico-premium",
     "name": "Colchão Ortopédico Premium",
@@ -1984,4 +1988,55 @@ const window_products = {
       "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho-1.jpg"
     ]
   },
+  "cama-casal-madrid": {
+    "id": "cama-casal-madrid",
+    "name": "Cama Casal Madrid",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "subcategory": "Camas de Casal",
+    "description": "Cama de casal da Linha Madrid com acabamento elegante em Branco e Carvalho Cinza (L1610 x A1100 x P2090 mm). Estrado incluído.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "L1610 x A1100 x P2090 mm[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Branco / Carvalho Cinza[+0.00]|Branco / Carvalho Natura[+0.00]",
+    "image": "images/produtos/quarto-casal-madrid-bluewall.jpg",
+    "gallery": [
+        "images/produtos/quarto-casal-madrid-bluewall.jpg"
+    ]
+},
+  "base-estofada-divine": {
+    "id": "base-estofada-divine",
+    "name": "Base Sommier Estofada (À Escolha)",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "subcategory": "Sommiers e Bases",
+    "description": "Base sommier estofada com arrumação oculta espaçosa e tecido totalmente à sua escolha.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "190x140 cm[+0.00]|195x150 cm[+0.00]|200x160 cm[+0.00]",
+    "custom2_name": "Tecido / Cor",
+    "custom2_options": "Ver Catálogo na Loja[+0.00]",
+    "image": "images/produtos/sommier-bestbed-soft-tecido-elastron-seatle-light-grey.jpg",
+    "gallery": [
+        "images/produtos/sommier-bestbed-soft-tecido-elastron-seatle-light-grey.jpg"
+    ]
+},
+  "cabeceira-estofada-divine": {
+    "id": "cabeceira-estofada-divine",
+    "name": "Cabeceira Estofada (À Escolha)",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "subcategory": "Cabeceiras",
+    "description": "Cabeceira estofada contemporânea acolchoada com tecido e cor à sua medida.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Casal Standard[+0.00]|King Size[+0.00]",
+    "custom2_name": "Tecido / Cor",
+    "custom2_options": "Ver Catálogo na Loja[+0.00]",
+    "image": "images/produtos/cabeceira-bestbed-divine.jpg",
+    "gallery": [
+        "images/produtos/cabeceira-bestbed-divine.jpg"
+    ]
+},
 };
