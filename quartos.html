@@ -546,27 +546,55 @@ document.addEventListener('DOMContentLoaded', function() {
         const grid = document.getElementById('products-grid');
         if(!grid) return;
         
-        let html = '';
-        for (const key in window_products) {
-          const p = window_products[key];
-          if (!p.url.includes("quartos")) continue;
+        const subMap = {
+          "Camas": "camas",
+          "Camas de Casal": "camas",
+          "Cabeceiras": "cabeceiras",
+          "Mesas de Cabeceira": "mesasCabeceira",
+          "Cómodas": "comodas",
+          "Roupeiros": "roupeiros",
+          "Camiseiros": "camiseiros",
+          "Sommiers": "sommiers",
+          "Sommiers e Bases": "sommiers",
+          "Estrados": "estrados"
+        };
+
+        const categoryPriority = {
+          "camas": 1,
+          "cabeceiras": 2,
+          "mesasCabeceira": 3,
+          "comodas": 4,
+          "camiseiros": 5,
+          "sommiers": 6,
+          "roupeiros": 7,
+          "estrados": 8,
+          "outros": 9
+        };
+
+        const qProducts = Object.values(window_products).filter(p => p.url && p.url.includes("quartos"));
+
+        qProducts.sort((a, b) => {
+          let catA = subMap[a.subcategory] || 'outros';
+          let catB = subMap[b.subcategory] || 'outros';
+          if ((a.name || '').toLowerCase().includes('cabeceira')) catA = 'cabeceiras';
+          if ((b.name || '').toLowerCase().includes('cabeceira')) catB = 'cabeceiras';
+          if ((a.name || '').toLowerCase().includes('sommier')) catA = 'sommiers';
+          if ((b.name || '').toLowerCase().includes('sommier')) catB = 'sommiers';
           
-          // Map product name to filter button categories
-          // Map product subcategory to filter button categories
-          const subMap = {
-            "Camas": "camas",
-            "Cabeceiras": "cabeceiras",
-            "Mesas de Cabeceira": "mesasCabeceira",
-            "Cómodas": "comodas",
-            "Roupeiros": "roupeiros",
-            "Camiseiros": "camiseiros",
-            "Sommiers": "sommiers",
-            "Estrados": "estrados"
-          };
-          let dataCategory = subMap[p.subcategory] || 'outros';
+          const prioA = categoryPriority[catA] || 99;
+          const prioB = categoryPriority[catB] || 99;
+          if (prioA !== prioB) return prioA - prioB;
+          return (a.name || '').localeCompare(b.name || '');
+        });
+
+        let html = '';
+        qProducts.forEach(p => {
+          let cat = subMap[p.subcategory] || 'outros';
+          if ((p.name || '').toLowerCase().includes('cabeceira')) cat = 'cabeceiras';
+          if ((p.name || '').toLowerCase().includes('sommier')) cat = 'sommiers';
 
           html += `
-            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${dataCategory}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${cat}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
               <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
                 <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" />
               </div>
@@ -578,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </div>
             </a>
           `;
-        }
+        });
         grid.innerHTML = html;
       });
     </script>

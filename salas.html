@@ -543,27 +543,48 @@ document.addEventListener('DOMContentLoaded', function() {
       document.addEventListener('DOMContentLoaded', () => {
         const grid = document.getElementById('products-grid');
         if(!grid) return;
-        
-        let html = '';
-        for (const key in window_products) {
-          const p = window_products[key];
-          if (!p.url.includes("salas")) continue;
-          
-          // Map subcategory from products.js to the filter button values for salas
+
+        function getSalasInfo(p) {
           const nameLower = (p.name || '').toLowerCase();
+          const subLower = (p.subcategory || '').toLowerCase();
           const catLower = (p.category || '').toLowerCase();
-          let dataCategory = 'moveis'; // default
-          
-          if (catLower.includes('sofá') || catLower.includes('sofa') || nameLower.includes('sofá')) {
-            dataCategory = 'sofas';
-          } else if (catLower.includes('cadeirão') || catLower.includes('cadeirao') || nameLower.includes('cadeirão') || nameLower.includes('cadeirao') || nameLower.includes('relax')) {
-            dataCategory = 'cadeiroes';
-          } else if (nameLower.includes('mesa') || nameLower.includes('cadeira')) {
-            dataCategory = 'mesasEcadeiras';
+
+          if (nameLower.includes('cadeirão') || nameLower.includes('cadeirao') || subLower.includes('cadeirões') || subLower.includes('cadeiroes')) {
+            return { filterCat: 'cadeiroes', prio: 2 };
           }
+          if (nameLower.includes('sofá') || nameLower.includes('sofa') || subLower.includes('sofás') || subLower.includes('sofas')) {
+            return { filterCat: 'sofas', prio: 1 };
+          }
+          if (nameLower.includes('mesa de jantar') || nameLower.includes('mesa de sala') || nameLower.includes('mesa sala')) {
+            return { filterCat: 'mesasEcadeiras', prio: 5 };
+          }
+          if (nameLower.includes('cadeira')) {
+            return { filterCat: 'mesasEcadeiras', prio: 6 };
+          }
+          if (nameLower.includes('mesa de centro') || nameLower.includes('mesa centro') || nameLower.includes('mesa de apoio')) {
+            return { filterCat: 'mesasEcadeiras', prio: 4 };
+          }
+          if (nameLower.includes('base tv') || nameLower.includes('tv') || nameLower.includes('aparador') || nameLower.includes('estante') || nameLower.includes('prateleiras') || nameLower.includes('hall') || nameLower.includes('secretária') || nameLower.includes('sapateira')) {
+            return { filterCat: 'moveis', prio: 3 };
+          }
+          return { filterCat: 'moveis', prio: 7 };
+        }
+
+        const sProducts = Object.values(window_products).filter(p => p.url && p.url.includes("salas"));
+
+        sProducts.sort((a, b) => {
+          const infoA = getSalasInfo(a);
+          const infoB = getSalasInfo(b);
+          if (infoA.prio !== infoB.prio) return infoA.prio - infoB.prio;
+          return (a.name || '').localeCompare(b.name || '');
+        });
+
+        let html = '';
+        sProducts.forEach(p => {
+          const info = getSalasInfo(p);
 
           html += `
-            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${dataCategory}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
+            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${info.filterCat}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
               <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
                 <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" />
               </div>
@@ -575,7 +596,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </div>
             </a>
           `;
-        }
+        });
         grid.innerHTML = html;
       });
     </script>
