@@ -1511,18 +1511,18 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Móvel hall. L1000 x A800 x P405.",
+    "subcategory": "Móveis de Sala",
+    "description": "Móvel hall moderno da Linha Málaga (L1000 x A800 x P405 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A800 x P405[+0.00]",
-    "image": "images/produtos/movel-hall-natura-1200x1200.png",
+    "image": "images/produtos/movel-hall-1200x1200.webp",
     "gallery": [
+      "images/produtos/movel-hall-1200x1200.webp",
       "images/produtos/movel-hall-natura-1200x1200.png",
-      "images/produtos/movel-hall-1200x1200.png",
-      "images/produtos/movel-hall-1200x1200.webp"
-    ],
-    "subcategory": "Outros"
+      "images/produtos/movel-hall-1200x1200.png"
+    ]
   },
   "salas-45": {
     "id": "salas-45",
