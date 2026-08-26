@@ -384,16 +384,15 @@ var window_products = window.window_products = window.produtos = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Cadeirão estofado. Pés disponíveis: wengué e cerejeira",
+    "subcategory": "Cadeirões",
+    "description": "Cadeirão estofado ergonómico de elevado conforto. Pés disponíveis em wengué e cerejeira.",
     "custom1_name": "Dimensões",
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/produtos/sofas-star_chair.jpg",
-    "subcategory": "Cadeirões",
     "gallery": [
-      "images/produtos/sofas-star_chair.jpg",
-      "images/produtos/sofas-star_measures.jpg"
+      "images/produtos/sofas-star_chair.jpg"
     ]
   },
   "salas-23": {
@@ -1563,10 +1562,9 @@ var window_products = window.window_products = window.produtos = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A800 x P350[+0.00]",
-    "image": "images/produtos/movel-hall-viena-cinzabranco.png",
+    "image": "images/produtos/movel-hall-viena.jpg",
     "gallery": [
-      "images/produtos/movel-hall-viena-cinzabranco.png",
-      "images/produtos/movel-hall-viena-faia.jpg"
+      "images/produtos/movel-hall-viena.jpg"
     ]
   },
   "salas-38": {
@@ -1581,10 +1579,9 @@ var window_products = window.window_products = window.produtos = {
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1000 x A900 x P350[+0.00]",
-    "image": "images/produtos/sapateira-viena-cinzabranco.png",
+    "image": "images/produtos/sapateira-viena.jpg",
     "gallery": [
-      "images/produtos/sapateira-viena-cinzabranco.png",
-      "images/produtos/sapateira-viena-faia.jpg"
+      "images/produtos/sapateira-viena.jpg"
     ]
   },
   "kids-7": {
