@@ -418,47 +418,49 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 
 
 
-      <!-- Quick Search Bar Modal -->
-  <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
-    <div class="max-w-xl mx-auto mt-24 px-4">
-      <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
-        <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
-          <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
-          <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
-        </div>
-        <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
-          <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
-        </form>
-        <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
+      
+<!-- Quick Search Bar Modal -->
+<div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
+  <div class="max-w-xl mx-auto mt-24 px-4">
+    <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
+      <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
+        <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
+        <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
       </div>
+      <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
+        <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
+      </form>
+      <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
     </div>
   </div>
+</div>
+
 <script>
   function openSearchModal() {
-    const m = document.getElementById('searchModal');
+    var m = document.getElementById('searchModal');
     if (m) {
       m.classList.remove('hidden');
-      const inp = document.getElementById('searchInput');
+      var inp = document.getElementById('searchInput');
       if (inp) { inp.value = ''; inp.focus(); }
     }
   }
   function closeSearchModal() {
-    const m = document.getElementById('searchModal');
+    var m = document.getElementById('searchModal');
     if (m) m.classList.add('hidden');
   }
   function handleGlobalSearch(e) {
-    e.preventDefault();
-    const q = document.getElementById('searchInput').value.trim();
-    if (q) {
-      window.location.href = 'search.html?q=' + encodeURIComponent(q);
-    }
+    if (e) e.preventDefault();
+    var inp = document.getElementById('searchInput');
+    var q = inp ? inp.value.trim() : '';
+    if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
   }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeSearchModal();
   });
 </script>
+
 </body>
 
 </html>
