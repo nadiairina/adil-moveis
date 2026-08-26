@@ -640,18 +640,18 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
             name: "Pack Aconchego Essencial",
             category: "Packs Especiais",
             price: 0,
-            image: "images/produtos/aconchegoessecial.jpg",
+            image: "images/produtos/quarto-casal-madrid-bluewall.jpg",
             gallery: [
-              "images/produtos/aconchegoessecial.jpg",
-              "images/produtos/Cama-Casal-Madrid-4.webp",
+              "images/produtos/quarto-casal-madrid-bluewall.jpg",
               "images/produtos/super_ortopedico_1.jpg",
+              "images/produtos/super_ortopedico_2.jpg",
               "images/produtos/SOFT.jpg"
             ],
             items: [
               {
-                name: "Cama Casal Madrid (4 Gavetas)",
-                detail: "L1610 x A1100 x P2090 mm (4 gavetas + estrado incluído)",
-                image: "images/produtos/Cama-Casal-Madrid-4.webp"
+                name: "Cama Casal Madrid",
+                detail: "L1610 x A1100 x P2090 mm (Estrado incluído)",
+                image: "images/produtos/quarto-casal-madrid-bluewall.jpg"
               },
               {
                 name: "Colchão Super Ortopédico",
@@ -664,7 +664,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                 image: "images/produtos/SOFT.jpg"
               }
             ],
-            description: "O <strong>Pack Aconchego Essencial</strong> é o conjunto de quarto de casal completo pensado para o seu descanso total.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Cama de Casal Madrid:</strong> L1610 x A1100 x P2090 mm (Opção com 4 gavetas e estrado incluído).<br>• <strong>Colchão Super Ortopédico:</strong> Suporte ergonómico de elevada densidade.<br>🎁 <strong>OFERTA EXCLUSIVA:</strong> 2 Almofadas Soft de presente!<br><br><em>Fale connosco no WhatsApp para personalizar o seu pack!</em>"
+            description: "O <strong>Pack Aconchego Essencial</strong> é o conjunto de quarto de casal completo pensado para o seu descanso total.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Cama de Casal Madrid:</strong> L1610 x A1100 x P2090 mm (Estrado incluído).<br>• <strong>Colchão Super Ortopédico:</strong> Suporte ergonómico de elevada densidade.<br>🎁 <strong>OFERTA EXCLUSIVA:</strong> 2 Almofadas Soft de presente!<br><br><em>Fale connosco no WhatsApp para personalizar o seu pack!</em>"
           },
           "pack-4": {
             id: "pack-4",
@@ -825,7 +825,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         galleryContainer.innerHTML = '';
                 var galleryImages = (p.gallery && p.gallery.length > 0) ? p.gallery : (p.image ? [p.image] : []);
 
-        currentGallery = galleryImages;
+        currentLightboxGallery = galleryImages;
 
         var wrap = document.getElementById('mainImageWrap');
         if (wrap) {
@@ -833,8 +833,8 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
           wrap.title = 'Clique para ver em ecrã inteiro';
           wrap.onclick = function() {
             var curSrc = document.getElementById('mainImage').src;
-            var idx = currentGallery.findIndex(function(s) { return curSrc.indexOf(s) !== -1 || s.indexOf(curSrc) !== -1; });
-            openLightbox(idx >= 0 ? idx : 0);
+            var idx = currentLightboxGallery.findIndex(function(s) { return curSrc.indexOf(s) !== -1 || s.indexOf(curSrc) !== -1; });
+            openLightboxModal(idx >= 0 ? idx : 0);
           };
         }
 
@@ -855,10 +855,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         mainImg.src = p.image;
         mainImg.style.transform = 'scale(1)'; // reset default
         
-        if (productId === 'pack-3') { // Aconchego Essencial
-            mainImg.style.transform = 'scale(1.15)';
-            mainImg.style.objectPosition = '90% center'; // Push left edge out
-        } else if (productId === 'pack-1') {
+        if (productId === 'pack-1') {
             mainImg.style.objectPosition = 'left center';
         } else {
             mainImg.style.objectPosition = 'center';
@@ -1051,33 +1048,131 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 </script>
 
     <!-- FULLSCREEN LIGHTBOX MODAL -->
-    <div id="lightbox-modal" style="position:fixed;inset:0;background:rgba(15,15,15,0.92);backdrop-filter:blur(10px);z-index:99999;display:none;opacity:0;transition:opacity 0.25s ease;align-items:center;justify-content:center;flex-direction:column;">
-      <!-- Close Button (Cruz) -->
-      <button id="lightbox-close" style="position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s;z-index:100000;" onmouseover="this.style.background='rgba(255,255,255,0.25)';this.style.transform='scale(1.08)';" onmouseout="this.style.background='rgba(255,255,255,0.12)';this.style.transform='scale(1)';" title="Fechar (Esc)">
-        ✕
-      </button>
+    
 
-      <!-- Previous Arrow (Seta Esquerda) -->
-      <button id="lightbox-prev" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s;z-index:100000;user-select:none;" onmouseover="this.style.background='rgba(255,255,255,0.25)';this.style.transform='translateY(-50%) scale(1.1)';" onmouseout="this.style.background='rgba(255,255,255,0.12)';this.style.transform='translateY(-50%) scale(1)';" title="Anterior (←)">
-        ‹
-      </button>
 
-      <!-- Next Arrow (Seta Direita) -->
-      <button id="lightbox-next" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s;z-index:100000;user-select:none;" onmouseover="this.style.background='rgba(255,255,255,0.25)';this.style.transform='translateY(-50%) scale(1.1)';" onmouseout="this.style.background='rgba(255,255,255,0.12)';this.style.transform='translateY(-50%) scale(1)';" title="Seguinte (→)">
-        ›
-      </button>
+  <!-- FULLSCREEN LIGHTBOX MODAL SYSTEM -->
+  <div id="lightboxModal" style="position:fixed;inset:0;background:rgba(10,10,10,0.95);backdrop-filter:blur(8px);z-index:999999;display:none;opacity:0;transition:opacity 0.25s ease;align-items:center;justify-content:center;flex-direction:column;user-select:none;">
+    <!-- Close Button (Cruz) -->
+    <button id="lightboxCloseBtn" type="button" onclick="closeLightboxModal()" style="position:absolute;top:20px;right:24px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);color:#ffffff;font-size:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s ease;z-index:1000000;" onmouseover="this.style.background='rgba(255,255,255,0.3)';this.style.transform='scale(1.1)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.transform='scale(1)';" title="Fechar (Esc)">
+      ✕
+    </button>
 
-      <!-- Image Container -->
-      <div style="max-width:90vw;max-height:82vh;display:flex;align-items:center;justify-content:center;position:relative;">
-        <img id="lightbox-img" src="" alt="Imagem Ampliada" style="max-width:90vw;max-height:82vh;object-fit:contain;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,0.6);transition:transform 0.2s ease;" />
-      </div>
+    <!-- Previous Arrow (Seta Esquerda) -->
+    <button id="lightboxPrevBtn" type="button" onclick="prevLightboxSlide()" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);color:#ffffff;font-size:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s ease;z-index:1000000;" onmouseover="this.style.background='rgba(200,181,152,0.9)';this.style.transform='translateY(-50%) scale(1.1)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(-50%) scale(1)';" title="Anterior (←)">
+      ‹
+    </button>
 
-      <!-- Bottom Caption & Counter -->
-      <div style="margin-top:16px;color:rgba(255,255,255,0.85);font-family:'Inter',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.05em;display:flex;align-items:center;gap:12px;">
-        <span id="lightbox-counter" style="background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:12px;font-size:11px;">1 / 1</span>
-        <span id="lightbox-caption"></span>
-      </div>
+    <!-- Next Arrow (Seta Direita) -->
+    <button id="lightboxNextBtn" type="button" onclick="nextLightboxSlide()" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);color:#ffffff;font-size:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s ease;z-index:1000000;" onmouseover="this.style.background='rgba(200,181,152,0.9)';this.style.transform='translateY(-50%) scale(1.1)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(-50%) scale(1)';" title="Seguinte (→)">
+      ›
+    </button>
+
+    <!-- Image Container -->
+    <div onclick="event.stopPropagation()" style="max-width:92vw;max-height:82vh;display:flex;align-items:center;justify-content:center;position:relative;">
+      <img id="lightboxMainImg" src="" alt="Ampliação" style="max-width:92vw;max-height:82vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.8);background:#ffffff;" />
     </div>
+
+    <!-- Bottom Caption & Counter -->
+    <div style="margin-top:18px;color:#ffffff;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;display:flex;align-items:center;gap:14px;">
+      <span id="lightboxCounter" style="background:rgba(200,181,152,0.85);color:#ffffff;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:0.05em;">1 / 1</span>
+      <span id="lightboxCaption" style="font-family:'Playfair Display',serif;font-size:15px;color:#EDE8DF;letter-spacing:0.02em;"></span>
+    </div>
+  </div>
+
+
+<script>
+  // GLOBAL LIGHTBOX LOGIC
+  var currentLightboxGallery = [];
+  var currentLightboxIndex = 0;
+
+  function openLightboxModal(index) {
+    if (!currentLightboxGallery || currentLightboxGallery.length === 0) {
+      var mainImg = document.getElementById('mainImage');
+      if (mainImg && mainImg.src) {
+        currentLightboxGallery = [mainImg.src];
+      } else {
+        return;
+      }
+    }
+    currentLightboxIndex = (index >= 0 && index < currentLightboxGallery.length) ? index : 0;
+    renderLightboxCurrentSlide();
+    var modal = document.getElementById('lightboxModal');
+    if (modal) {
+      modal.style.display = 'flex';
+      setTimeout(function() { modal.style.opacity = '1'; }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeLightboxModal() {
+    var modal = document.getElementById('lightboxModal');
+    if (modal) {
+      modal.style.opacity = '0';
+      setTimeout(function() { modal.style.display = 'none'; }, 260);
+      document.body.style.overflow = '';
+    }
+  }
+
+  function nextLightboxSlide() {
+    if (currentLightboxGallery.length <= 1) return;
+    currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxGallery.length;
+    renderLightboxCurrentSlide();
+  }
+
+  function prevLightboxSlide() {
+    if (currentLightboxGallery.length <= 1) return;
+    currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxGallery.length) % currentLightboxGallery.length;
+    renderLightboxCurrentSlide();
+  }
+
+  function renderLightboxCurrentSlide() {
+    var imgEl = document.getElementById('lightboxMainImg');
+    var counterEl = document.getElementById('lightboxCounter');
+    var captionEl = document.getElementById('lightboxCaption');
+    var prevBtn = document.getElementById('lightboxPrevBtn');
+    var nextBtn = document.getElementById('lightboxNextBtn');
+
+    if (imgEl && currentLightboxGallery[currentLightboxIndex]) {
+      imgEl.src = currentLightboxGallery[currentLightboxIndex];
+    }
+    if (counterEl) {
+      counterEl.textContent = (currentLightboxIndex + 1) + ' / ' + currentLightboxGallery.length;
+    }
+    if (captionEl) {
+      var titleEl = document.getElementById('dynamic-title');
+      captionEl.textContent = titleEl ? titleEl.textContent : '';
+    }
+
+    if (prevBtn && nextBtn) {
+      if (currentLightboxGallery.length <= 1) {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      } else {
+        prevBtn.style.display = 'flex';
+        nextBtn.style.display = 'flex';
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('lightboxModal');
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeLightboxModal();
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      var m = document.getElementById('lightboxModal');
+      if (m && m.style.display === 'flex') {
+        if (e.key === 'Escape') closeLightboxModal();
+        if (e.key === 'ArrowRight') nextLightboxSlide();
+        if (e.key === 'ArrowLeft') prevLightboxSlide();
+      }
+    });
+  });
+</script>
 
 </body>
 
