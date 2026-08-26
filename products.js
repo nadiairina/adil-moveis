@@ -783,21 +783,22 @@ const window_products = {
   },
   "quartos-41": {
     "id": "quartos-41",
-    "name": "Cama Madrid",
+    "name": "Cama Casal Madrid",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cama casal com estrado incluído. L1610 x A1100 x P2090.",
+    "subcategory": "Camas de Casal",
+    "description": "Cama de casal com estrado incluído da Linha Madrid (L1610 x A1100 x P2090 mm). Disponível na versão simples ou com 4 gavetas embutidas.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Stone[+0.00]",
-    "custom2_name": "Dimensões",
-    "custom2_options": "Simples[+0.00]|Com 4 gavetas[+0.00]",
-    "image": "images/produtos/Cama-Casal-Madrid.webp",
+    "custom1_options": "Branco / Carvalho Cinza[+0.00]|Branco / Carvalho Natura[+0.00]|Branco Mate - Stone[+0.00]",
+    "custom2_name": "Versão",
+    "custom2_options": "Simples c/ Estrado[+0.00]|Com 4 Gavetas c/ Estrado[+0.00]",
+    "image": "images/produtos/quarto-casal-madrid-bluewall.jpg",
     "gallery": [
+      "images/produtos/quarto-casal-madrid-bluewall.jpg",
       "images/produtos/Cama-Casal-Madrid.webp",
       "images/produtos/Cama-Casal-Madrid-4.webp"
-    ],
-    "subcategory": "Camas"
+    ]
   },
   "quartos-35": {
     "id": "quartos-35",
@@ -1938,105 +1939,42 @@ const window_products = {
     "image": "images/produtos/colchoes/almofada-viscoprata-1.webp",
     "gallery": ["images/produtos/colchoes/almofada-viscoprata-1.webp", "images/produtos/colchoes/almofada-viscoprata-2.webp"]
   },
-  "roupeiro-eco-correr": {
-    "id": "roupeiro-eco-correr",
-    "name": "Roupeiro Eco Portas de Correr",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "subcategory": "Roupeiros",
-    "description": "Roupeiro de 2 ou 3 portas de correr com linhas contemporâneas e excelente arrumação. Bloco interior de 2 gavetas opcional.",
-    "custom1_name": "Dimensões / Portas",
-    "custom1_options": "2 Portas (L1100 x A2000 x P600)[+0.00]|3 Portas (L1650 x A2000 x P600)[+0.00]",
-    "custom2_name": "Cor / Acabamento",
-    "custom2_options": "Branco[+0.00]|Cerejeira[+0.00]|Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
-    "image": "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg",
-    "gallery": [
-      "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg"
-    ]
-  },
-  "roupeiro-eco-bater": {
-    "id": "roupeiro-eco-bater",
-    "name": "Roupeiro Eco Portas de Bater",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "subcategory": "Roupeiros",
-    "description": "Roupeiro prático e funcional de 2 ou 3 portas de abrir/bater. Bloco interior de 2 gavetas opcional para máxima arrumação.",
-    "custom1_name": "Dimensões / Portas",
-    "custom1_options": "2 Portas (L1100 x A2000 x P600)[+0.00]|3 Portas (L1650 x A2000 x P600)[+0.00]",
-    "custom2_name": "Cor / Acabamento",
-    "custom2_options": "Branco[+0.00]|Cerejeira[+0.00]|Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
-    "image": "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg",
-    "gallery": [
-      "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg"
-    ]
-  },
-  "mesa-cabeceira-malmo": {
-    "id": "mesa-cabeceira-malmo",
-    "name": "Mesa de Cabeceira Malmo",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "subcategory": "Mesas de Cabeceira",
-    "description": "Mesa de cabeceira moderna da Linha Malmo em Branco e Carvalho.",
-    "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco / Carvalho[+0.00]",
-    "image": "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho.jpg",
-    "gallery": [
-      "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho.jpg",
-      "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho-1.jpg"
-    ]
-  },
-  "cama-casal-madrid": {
-    "id": "cama-casal-madrid",
-    "name": "Cama Casal Madrid",
-    "price": 0,
-    "url": "quartos.html",
-    "category": "Quartos",
-    "subcategory": "Camas de Casal",
-    "description": "Cama de casal da Linha Madrid com acabamento elegante em Branco e Carvalho Cinza (L1610 x A1100 x P2090 mm). Estrado incluído.",
-    "custom1_name": "Dimensões",
-    "custom1_options": "L1610 x A1100 x P2090 mm[+0.00]",
-    "custom2_name": "Cor / Acabamento",
-    "custom2_options": "Branco / Carvalho Cinza[+0.00]|Branco / Carvalho Natura[+0.00]",
-    "image": "images/produtos/quarto-casal-madrid-bluewall.jpg",
-    "gallery": [
-        "images/produtos/quarto-casal-madrid-bluewall.jpg"
-    ]
-},
-  "base-estofada-divine": {
-    "id": "base-estofada-divine",
-    "name": "Base Sommier Estofada (À Escolha)",
+  
+  
+  
+  
+  "sommier-soft": {
+    "id": "sommier-soft",
+    "name": "Sommier Soft",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "subcategory": "Sommiers e Bases",
-    "description": "Base sommier estofada com arrumação oculta espaçosa e tecido totalmente à sua escolha.",
+    "description": "Sommier estofado com estrutura reforçada e estofo em tecido de elevada durabilidade (Elastron Seatle Light Grey).",
     "custom1_name": "Dimensões",
     "custom1_options": "190x140 cm[+0.00]|195x150 cm[+0.00]|200x160 cm[+0.00]",
     "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
+    "custom2_options": "Elastron Seatle Light Grey[+0.00]|Outros Tecidos na Loja[+0.00]",
     "image": "images/produtos/sommier-bestbed-soft-tecido-elastron-seatle-light-grey.jpg",
     "gallery": [
-        "images/produtos/sommier-bestbed-soft-tecido-elastron-seatle-light-grey.jpg"
+      "images/produtos/sommier-bestbed-soft-tecido-elastron-seatle-light-grey.jpg"
     ]
-},
-  "cabeceira-estofada-divine": {
-    "id": "cabeceira-estofada-divine",
-    "name": "Cabeceira Estofada (À Escolha)",
+  },
+  "cabeceira-divine": {
+    "id": "cabeceira-divine",
+    "name": "Cabeceira Divine",
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
     "subcategory": "Cabeceiras",
-    "description": "Cabeceira estofada contemporânea acolchoada com tecido e cor à sua medida.",
+    "description": "Cabeceira estofada contemporânea acolchoada com acabamento de alta costura e tecido personalizável.",
     "custom1_name": "Dimensões",
     "custom1_options": "Casal Standard[+0.00]|King Size[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
     "image": "images/produtos/cabeceira-bestbed-divine.jpg",
     "gallery": [
-        "images/produtos/cabeceira-bestbed-divine.jpg"
+      "images/produtos/cabeceira-bestbed-divine.jpg"
     ]
-},
+  }
 };
