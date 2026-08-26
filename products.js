@@ -587,15 +587,16 @@ const window_products = {
     "price": 0,
     "url": "kids.html",
     "category": "Kids",
-    "description": "Cama pessoa simples com estrado incluído. L1160 x A950 x P2030.",
+    "subcategory": "Camas",
+    "description": "Cama pessoa simples com estrado incluído da Linha Play (L1160 x A950 x P2030 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco[+0.00]|Rosa Nube[+0.00]|Azul Piedra[+0.00]|Verde Mint[+0.00]|Natural Grey[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1160 x A950 x P2030[+0.00]",
-    "image": "images/produtos/kids-1_main.jpg",
+    "image": "images/produtos/kids-1_gallery_1.jpg",
     "gallery": [
-      "images/produtos/kids-1_main.jpg",
       "images/produtos/kids-1_gallery_1.jpg",
+      "images/produtos/kids-1_main.jpg",
       "images/produtos/kids-1_gallery_2.jpg"
     ]
   },
@@ -1681,21 +1682,35 @@ const window_products = {
   },
   "kids-9": {
     "id": "kids-9",
-    "name": "Roupeiro Play",
+    "name": "Roupeiro 1 Porta Play",
     "category": "Kids",
     "subcategory": "Roupeiros",
-    "price": "Preço Sob Consulta",
-    "image": "images/produtos/kids-9_main.jpg",
+    "price": 0,
+    "description": "Roupeiro individual de 1 porta com gavetas inferiores da Linha Play.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco - Rosa Nube[+0.00]|Branco - Verde Mint[+0.00]|Branco - Azul Piedra[+0.00]",
+    "image": "images/produtos/roupeiro-play-rosabranco.jpg",
     "gallery": [
-      "images/produtos/kids-9_main.jpg",
-      "images/produtos/kids-9_gallery_1.jpg",
-      "images/produtos/kids-9_gallery_2.jpg",
-      "images/produtos/kids-9_gallery_3.jpg",
-      "images/produtos/kids-9_gallery_4.jpg",
-      "images/produtos/kids-9_gallery_5.jpg",
-      "images/produtos/kids-9_gallery_6.jpg",
-      "images/produtos/kids-9_gallery_7.jpg",
-      "images/produtos/kids-9_gallery_8.jpg"
+      "images/produtos/roupeiro-play-rosabranco.jpg",
+      "images/produtos/roupeiro-play-rosabranco-1.jpg",
+      "images/produtos/roupeiro-play-rosabranco-2.jpg"
+    ],
+    "url": "kids.html"
+  },
+  "kids-roupeiro-2portas": {
+    "id": "kids-roupeiro-2portas",
+    "name": "Roupeiro 2 Portas Play",
+    "category": "Kids",
+    "subcategory": "Roupeiros",
+    "price": 0,
+    "description": "Roupeiro de 2 portas com 2 gavetas inferiores e excelente arrumação interior da Linha Play.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco - Verde Mint[+0.00]|Branco - Rosa Nube[+0.00]|Branco - Azul Piedra[+0.00]",
+    "image": "images/produtos/roupeiro-play-verde-agua.jpg",
+    "gallery": [
+      "images/produtos/roupeiro-play-verde-agua.jpg",
+      "images/produtos/roupeiro-play-verde-agua-1.jpg",
+      "images/produtos/roupeiro-play-verde-agua-2.jpg"
     ],
     "url": "kids.html"
   },
@@ -1704,13 +1719,14 @@ const window_products = {
     "name": "Elemento Prateleiras Play",
     "category": "Kids",
     "subcategory": "Estantes",
-    "price": "Preço Sob Consulta",
-    "image": "images/produtos/kids-10_main.jpg",
+    "price": 0,
+    "description": "Elemento de prateleiras juvenil com módulos de arrumação da Linha Play.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco - Verde Mint[+0.00]|Branco - Rosa Nube[+0.00]|Branco - Azul Piedra[+0.00]",
+    "image": "images/produtos/elemento-de-prateleiras-play-verde-agua.jpg",
     "gallery": [
-      "images/produtos/kids-10_main.jpg",
-      "images/produtos/kids-10_gallery_1.jpg",
-      "images/produtos/kids-10_gallery_2.jpg",
-      "images/produtos/kids-10_gallery_3.jpg"
+      "images/produtos/elemento-de-prateleiras-play-verde-agua.jpg",
+      "images/produtos/elemento-de-prateleiras-play-verde-agua-1.jpg"
     ],
     "url": "kids.html"
   },
@@ -1750,10 +1766,17 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Sofá Luna com Chaise Longue.",
-    "image": "images/produtos/sofa-chaise-luna.jpg",
-    "gallery": [],
-    "subcategory": "Sofás"
+    "subcategory": "Sofás",
+    "description": "Sofá com Chaise Longue reversível, assentos deslizantes, encostos reclináveis e baú de arrumação.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
+    "custom2_name": "Tecido / Cor",
+    "custom2_options": "Ver Catálogo na Loja[+0.00]",
+    "image": "images/produtos/sofa-chaise-luna-1.jpg",
+    "gallery": [
+      "images/produtos/sofa-chaise-luna-1.jpg",
+      "images/produtos/sofa-chaise-luna-2.jpg"
+    ]
   },
   "basetv-malmo": {
     "id": "basetv-malmo",
@@ -1830,6 +1853,35 @@ const window_products = {
       "images/produtos/paris-lado-1200x1200.png"
     ]
 },
+  "colchao-super-ortopedico": {
+    "id": "colchao-super-ortopedico",
+    "name": "Colchão Super Ortopédico",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Colchões",
+    "description": "Colchão de elevada densidade com núcleo reforçado para o máximo suporte e alinhamento da coluna.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "190x140 cm[+0.00]|195x150 cm[+0.00]|200x160 cm[+0.00]|Personalizado[+0.00]",
+    "image": "images/produtos/super_ortopedico_1.jpg",
+    "gallery": [
+      "images/produtos/super_ortopedico_1.jpg",
+      "images/produtos/super_ortopedico_2.jpg"
+    ]
+  },
+  "almofadas-soft": {
+    "id": "almofadas-soft",
+    "name": "Almofada Soft",
+    "price": 0,
+    "url": "colchoes.html",
+    "category": "Colchões",
+    "subcategory": "Complementos",
+    "description": "Almofada ergonómica de toque suave e elevado conforto cervical.",
+    "image": "images/produtos/SOFT.jpg",
+    "gallery": [
+      "images/produtos/SOFT.jpg"
+    ]
+  },
   "colchao-ortopedico-premium": {
     "id": "colchao-ortopedico-premium",
     "name": "Colchão Ortopédico Premium",
