@@ -10,11 +10,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-1_gallery_0.png",
+    "image": "images/produtos/sofas-1_gallery_2.webp",
     "gallery": [
+      "images/produtos/sofas-1_gallery_2.webp",
       "images/produtos/sofas-1_gallery_0.png",
-      "images/produtos/sofas-1_gallery_1.png",
-      "images/produtos/sofas-1_gallery_2.webp"
+      "images/produtos/sofas-1_gallery_1.png"
     ],
     "subcategory": "Sofás"
   },
@@ -29,11 +29,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-2_gallery_0.png",
+    "image": "images/produtos/sofas-2_gallery_2.webp",
     "gallery": [
+      "images/produtos/sofas-2_gallery_2.webp",
       "images/produtos/sofas-2_gallery_0.png",
-      "images/produtos/sofas-2_gallery_1.png",
-      "images/produtos/sofas-2_gallery_2.webp"
+      "images/produtos/sofas-2_gallery_1.png"
     ],
     "subcategory": "Sofás"
   },
@@ -48,10 +48,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-3_gallery_0.png",
+    "image": "images/produtos/sofas-3_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-3_gallery_0.png",
       "images/produtos/sofas-3_gallery_1.webp",
+      "images/produtos/sofas-3_gallery_0.png",
       "images/produtos/sofas-3_gallery_2.webp"
     ],
     "subcategory": "Sofás"
@@ -67,11 +67,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-4_gallery_0.png",
+    "image": "images/produtos/sofas-4_gallery_2.webp",
     "gallery": [
+      "images/produtos/sofas-4_gallery_2.webp",
       "images/produtos/sofas-4_gallery_0.png",
-      "images/produtos/sofas-4_gallery_1.png",
-      "images/produtos/sofas-4_gallery_2.webp"
+      "images/produtos/sofas-4_gallery_1.png"
     ],
     "subcategory": "Sofás"
   },
@@ -100,10 +100,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-6_gallery_0.png",
+    "image": "images/produtos/sofas-6_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-6_gallery_0.png",
       "images/produtos/sofas-6_gallery_1.webp",
+      "images/produtos/sofas-6_gallery_0.png",
       "images/produtos/sofas-6_gallery_2.png"
     ],
     "subcategory": "Sofás"
@@ -137,11 +137,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-8_gallery_0.png",
+    "image": "images/produtos/sofas-8_gallery_2.webp",
     "gallery": [
+      "images/produtos/sofas-8_gallery_2.webp",
       "images/produtos/sofas-8_gallery_0.png",
       "images/produtos/sofas-8_gallery_1.png",
-      "images/produtos/sofas-8_gallery_2.webp",
       "images/produtos/sofas-8_gallery_3.webp"
     ],
     "subcategory": "Sofás"
@@ -157,10 +157,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-9_gallery_0.png",
+    "image": "images/produtos/sofas-9_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-9_gallery_0.png",
       "images/produtos/sofas-9_gallery_1.webp",
+      "images/produtos/sofas-9_gallery_0.png",
       "images/produtos/sofas-9_gallery_2.png",
       "images/produtos/sofas-9_gallery_3.png"
     ],
@@ -195,10 +195,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-11_gallery_0.png",
+    "image": "images/produtos/sofas-11_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-11_gallery_0.png",
       "images/produtos/sofas-11_gallery_1.webp",
+      "images/produtos/sofas-11_gallery_0.png",
       "images/produtos/sofas-11_gallery_2.webp"
     ],
     "subcategory": "Sofás"
@@ -233,10 +233,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-13_gallery_0.png",
+    "image": "images/produtos/sofas-13_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-13_gallery_0.png",
       "images/produtos/sofas-13_gallery_1.webp",
+      "images/produtos/sofas-13_gallery_0.png",
       "images/produtos/sofas-13_gallery_2.png",
       "images/produtos/sofas-13_gallery_3.webp"
     ],
@@ -307,10 +307,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-18_gallery_0.png",
+    "image": "images/produtos/sofas-18_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-18_gallery_0.png",
       "images/produtos/sofas-18_gallery_1.webp",
+      "images/produtos/sofas-18_gallery_0.png",
       "images/produtos/sofas-18_gallery_2.png"
     ],
     "subcategory": "Sofás"
@@ -326,10 +326,10 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-19_gallery_0.png",
+    "image": "images/produtos/sofas-19_gallery_1.webp",
     "gallery": [
-      "images/produtos/sofas-19_gallery_0.png",
-      "images/produtos/sofas-19_gallery_1.webp"
+      "images/produtos/sofas-19_gallery_1.webp",
+      "images/produtos/sofas-19_gallery_0.png"
     ],
     "subcategory": "Sofás"
   },
@@ -344,12 +344,12 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-20_gallery_0.png",
+    "image": "images/produtos/sofas-20_gallery_3.webp",
     "gallery": [
+      "images/produtos/sofas-20_gallery_3.webp",
       "images/produtos/sofas-20_gallery_0.png",
       "images/produtos/sofas-20_gallery_1.png",
       "images/produtos/sofas-20_gallery_2.png",
-      "images/produtos/sofas-20_gallery_3.webp",
       "images/produtos/sofas-20_gallery_4.webp"
     ],
     "subcategory": "Sofás"
@@ -383,11 +383,11 @@ const window_products = {
     "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
     "custom2_name": "Tecido / Cor",
     "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/sofas-star_measures.jpg",
-    "subcategory": "Sofás",
+    "image": "images/produtos/sofas-star_chair.jpg",
+    "subcategory": "Cadeirões",
     "gallery": [
-      "images/produtos/sofas-star_measures.jpg",
-      "images/produtos/sofas-star_chair.jpg"
+      "images/produtos/sofas-star_chair.jpg",
+      "images/produtos/sofas-star_measures.jpg"
     ]
   },
   "salas-23": {
@@ -424,26 +424,7 @@ const window_products = {
     ],
     "subcategory": "Mesas e Cadeiras"
   },
-  "salas-25": {
-    "id": "salas-25",
-    "name": "Cadeira Paris",
-    "price": 0,
-    "url": "salas.html",
-    "category": "Salas",
-    "description": "Cadeira estofada. Pés disponíveis em lacado (branco, preto, gris e cinza) ou verniz (wengué, cerejeira e pinho mel).",
-    "custom1_name": "Dimensões",
-    "custom1_options": "Standard[+0.00]|Personalizado (sob consulta)[+0.00]",
-    "custom2_name": "Tecido / Cor",
-    "custom2_options": "Ver Catálogo na Loja[+0.00]",
-    "image": "images/produtos/salas-25_gallery_0.png",
-    "gallery": [
-      "images/produtos/salas-25_gallery_0.png",
-      "images/produtos/salas-25_gallery_1.png",
-      "images/produtos/salas-25_gallery_2.webp",
-      "images/produtos/salas-25_gallery_3.png"
-    ],
-    "subcategory": "Mesas e Cadeiras"
-  },
+  
   "salas-26": {
     "id": "salas-26",
     "name": "Cadeira Sagres",
