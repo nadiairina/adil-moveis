@@ -1557,15 +1557,16 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Móvel hall 1 gaveta + 1 prateleira. L1130 x A900 x P350.",
+    "subcategory": "Móveis de Sala",
+    "description": "Móvel hall 1 gaveta + 1 prateleira da Linha Viena (L1000 x A800 x P350 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1130 x A900 x P350[+0.00]",
-    "image": "images/produtos/Hall-Viena-Faia-Lateral.webp",
+    "custom2_options": "L1000 x A800 x P350[+0.00]",
+    "image": "images/produtos/movel-hall-viena-cinzabranco.png",
     "gallery": [
-      "images/produtos/Hall-Viena-Faia-Lateral.webp",
-      "images/produtos/Hall-Viena-Cinza-Lateral.webp"
+      "images/produtos/movel-hall-viena-cinzabranco.png",
+      "images/produtos/movel-hall-viena-faia.jpg"
     ]
   },
   "salas-38": {
@@ -1574,15 +1575,16 @@ const window_products = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Sapateira 2 portas + 1 gaveta. L1130 x A1000 x P350.",
+    "subcategory": "Móveis de Sala",
+    "description": "Sapateira 2 portas da Linha Viena (L1000 x A900 x P350 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1130 x A1000 x P350[+0.00]",
-    "image": "images/produtos/Sapateira-Viena-Faia-Lateral.webp",
+    "custom2_options": "L1000 x A900 x P350[+0.00]",
+    "image": "images/produtos/sapateira-viena-cinzabranco.png",
     "gallery": [
-      "images/produtos/Sapateira-Viena-Faia-Lateral.webp",
-      "images/produtos/Sapateira-Viena-Cinza-Lateral.webp"
+      "images/produtos/sapateira-viena-cinzabranco.png",
+      "images/produtos/sapateira-viena-faia.jpg"
     ]
   },
   "kids-7": {

@@ -316,11 +316,12 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       const nameLower = (p.name || '').toLowerCase();
       const subLower = (p.subcategory || '').toLowerCase();
 
+      // Check mesas de cabeceira FIRST before cabeceiras
+      if (nameLower.includes('mesa de cabeceira') || nameLower.includes('mesa cabeceira') || subLower.includes('mesas de cabeceira') || subLower.includes('mesas cabeceira')) {
+        return { filterCat: 'mesasCabeceira', prio: 3 };
+      }
       if (nameLower.includes('cabeceira') || subLower.includes('cabeceiras')) {
         return { filterCat: 'cabeceiras', prio: 2 };
-      }
-      if (nameLower.includes('mesa de cabeceira') || nameLower.includes('mesa cabeceira') || subLower.includes('mesas de cabeceira')) {
-        return { filterCat: 'mesasCabeceira', prio: 3 };
       }
       if (nameLower.includes('cómoda') || nameLower.includes('comoda') || subLower.includes('cómodas') || subLower.includes('comodas')) {
         return { filterCat: 'comodas', prio: 4 };
