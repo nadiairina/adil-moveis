@@ -329,8 +329,160 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
 
-  // Packs definition
-  const packsData = [
+  // 1. Kids Products (10 official items from kids.html)
+  const kidsCatalog = [
+    {
+      id: "kids-1",
+      name: "Cama Estúdio Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-1",
+      image: "images/produtos/kids-1_main.jpg",
+      description: "Cama pessoa simples com estrado incluído. L1160 x A950 x P2030.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "cama", "cama estúdio", "estudio", "quarto infantil", "quarto crianca", "quarto"]
+    },
+    {
+      id: "kids-2",
+      name: "Cama Elevatória Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-2",
+      image: "images/produtos/kids-2_main.jpg",
+      description: "Cama com estrado elevatório para colchão 2000 x 1000. L1160 x A950 x P2030.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "cama", "cama elevatória", "elevatoria", "arrumação", "quarto infantil", "quarto crianca", "quarto"]
+    },
+    {
+      id: "kids-4",
+      name: "Beliche Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-4",
+      image: "images/produtos/kids-4_main.jpg",
+      description: "Beliche duplo com 2 gavetões e escada incluída. Para colchões 2000 x 1000.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "beliche", "cama", "duplo", "gavetoes", "gavetões", "escada", "quarto infantil", "quarto crianca", "quarto"]
+    },
+    {
+      id: "kids-8",
+      name: "Secretária Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-8",
+      image: "images/produtos/kids-8_main.jpg",
+      description: "Secretária de estudo com bloco de 3 gavetas. L1200 x A750 x P550.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "secretaria", "secretária", "estudo", "mesa de estudo", "gavetas", "quarto infantil", "quarto"]
+    },
+    {
+      id: "kids-9",
+      name: "Roupeiro Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-9",
+      image: "images/produtos/kids-9_main.jpg",
+      description: "Roupeiro 2 portas com 2 gavetas exteriores. L1000 x A2000 x P550.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "roupeiro", "armario", "armário", "gavetas", "guardar roupa", "quarto infantil", "quarto"]
+    },
+    {
+      id: "kids-7",
+      name: "Camiseiro Alto Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-7",
+      image: "images/produtos/kids-7_main.jpg",
+      description: "Camiseiro alto com 5 gavetas espaçosas. L600 x A1150 x P420.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "camiseiro", "comoda", "cómoda", "gavetas", "arrumacao", "arrumação", "quarto infantil", "quarto"]
+    },
+    {
+      id: "kids-6",
+      name: "Cómoda Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-6",
+      image: "images/produtos/kids-6_main.jpg",
+      description: "Cómoda 4 gavetões com corrediças suaves. L1000 x A850 x P450.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "comoda", "cómoda", "gavetas", "gavetoes", "gavetões", "quarto infantil", "quarto"]
+    },
+    {
+      id: "kids-5",
+      name: "Mesa de Cabeceira Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-5",
+      image: "images/produtos/kids-5_main.jpg",
+      description: "Mesa de cabeceira com 2 gavetas. L500 x A450 x P380.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "mesa de cabeceira", "cabeceira", "mesa", "apoio", "quarto infantil", "quarto"]
+    },
+    {
+      id: "kids-10",
+      name: "Elemento Prateleiras Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-10",
+      image: "images/produtos/kids-10_main.jpg",
+      description: "Estante suspensa com divisórias para livros e brinquedos. L1000 x A350 x P250.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "prateleiras", "estante", "livros", "brinquedos", "arrumação", "quarto infantil", "quarto"]
+    },
+    {
+      id: "kids-11",
+      name: "Estante TV Play",
+      category: "Kids",
+      url: "produto-detalhe.html?id=kids-11",
+      image: "images/produtos/kids-11_main.jpg",
+      description: "Móvel baixo para TV ou arrumação com rodas. L900 x A450 x P400.",
+      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "estante tv", "movel tv", "móvel tv", "arrumação", "quarto infantil", "quarto"]
+    }
+  ];
+
+  // 2. Mattress and Pillow Products (4 mattresses + 2 pillows from colchoes.html)
+  const mattressCatalog = [
+    {
+      id: "colchao-mindol",
+      name: "Mindol Evolution",
+      category: "Colchões",
+      url: "produto-detalhe.html?id=colchao-mindol",
+      image: "images/produtos/colchao-mindol.jpg",
+      description: "Coleções consistentes para as suas dores musculares. Soluções focadas na ergonomia e saúde da sua coluna.",
+      keywords: ["colchao", "colchão", "colchoes", "colchões", "mindol", "evolution", "molas", "ortopedico", "ergonomia", "dormir"]
+    },
+    {
+      id: "colchao-molaflex",
+      name: "Molaflex Freshcool",
+      category: "Colchões",
+      url: "produto-detalhe.html?id=colchao-molaflex",
+      image: "images/produtos/colchao-molaflex.avif",
+      description: "Coleções frescas para o seu descanso. Tecidos térmicos que garantem uma noite fresca e sono profundo.",
+      keywords: ["colchao", "colchão", "colchoes", "colchões", "molaflex", "freshcool", "fresco", "termico", "viscoelastico", "dormir"]
+    },
+    {
+      id: "colchao-bestbed",
+      name: "Bestbed Max Body",
+      category: "Colchões",
+      url: "produto-detalhe.html?id=colchao-bestbed",
+      image: "images/produtos/colchao-bestbed-v2.jpg",
+      description: "Coleções firmes para a sua coluna. O equilíbrio ideal entre firmeza e adaptabilidade para uma postura correta.",
+      keywords: ["colchao", "colchão", "colchoes", "colchões", "bestbed", "max body", "firme", "coluna", "postura", "dormir"]
+    },
+    {
+      id: "colchao-colmed",
+      name: "Colmed Airflow",
+      category: "Colchões",
+      url: "produto-detalhe.html?id=colchao-colmed",
+      image: "images/produtos/colchao-colmed.webp",
+      description: "Coleções respiráveis para maior higiene e ventilação. Máxima circulação de ar para um descanso sem humidade.",
+      keywords: ["colchao", "colchão", "colchoes", "colchões", "colmed", "airflow", "respiravel", "ventilacao", "anti-alergico", "dormir"]
+    },
+    {
+      id: "almofada-1",
+      name: "Molaflex Almofada Ecofiber",
+      category: "Colchões",
+      url: "produto-detalhe.html?id=almofada-1",
+      image: "images/produtos/colchoes/almofada-ecofiber-1.jpg",
+      description: "Apoio perfeito para o seu pescoço e coluna, garantindo noites de sono mais reparadoras.",
+      keywords: ["almofada", "almofadas", "molaflex", "ecofiber", "fibra", "pescoço", "sono", "dormir", "complemento"]
+    },
+    {
+      id: "almofada-2",
+      name: "Molaflex Almofada Viscoprata",
+      category: "Colchões",
+      url: "produto-detalhe.html?id=almofada-2",
+      image: "images/produtos/colchoes/almofada-viscoprata-1.jpg",
+      description: "Tratamento antibacteriano com iões de prata e núcleo viscoelástico com memória de forma.",
+      keywords: ["almofada", "almofadas", "molaflex", "viscoprata", "visco", "viscoelastica", "prata", "dormir", "complemento"]
+    }
+  ];
+
+  // 3. Packs Products (5 official packs from packs.html)
+  const packsCatalog = [
     {
       id: "pack-1",
       name: "Pack Sala de Sonho",
@@ -338,7 +490,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-1",
       image: "images/produtos/pack-sala-sonho-hq.jpg",
       description: "Pack completo para sala de estar: sofá, móvel de TV e estante.",
-      keywords: ["sala", "sofa", "sofá", "estante", "movel tv", "mobile tv", "pack sala", "sala de estar", "sala de sonho", "pack"]
+      keywords: ["pack", "packs", "sala", "sofa", "sofá", "estante", "movel tv", "móvel tv", "sala de estar", "sala de sonho"]
     },
     {
       id: "pack-2",
@@ -347,7 +499,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-2",
       image: "images/produtos/saladesonhopremium.jpg",
       description: "Pack premium para sala com sofá de alta gama, mesa de centro e móvel TV de design.",
-      keywords: ["sala", "sofa", "sofá", "premium", "sala de estar", "pack sala", "pack"]
+      keywords: ["pack", "packs", "sala", "sofa", "sofá", "premium", "sala de estar", "sala de sonho premium"]
     },
     {
       id: "pack-3",
@@ -356,7 +508,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-3",
       image: "images/produtos/aconchegoessecial.jpg",
       description: "Pack de quarto completo: cama de casal, cabeceira, roupeiro e mesas de cabeceira.",
-      keywords: ["quarto", "cama", "casal", "cabeceira", "roupeiro", "dormitorio", "dormir", "aconchego", "pack quarto", "pack"]
+      keywords: ["pack", "packs", "quarto", "cama", "casal", "cabeceira", "roupeiro", "dormitorio", "dormir", "aconchego", "pack quarto"]
     },
     {
       id: "pack-4",
@@ -365,7 +517,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-4",
       image: "images/produtos/amesa.jpg",
       description: "Pack sala de jantar: mesa extensível, cadeiras e aparador.",
-      keywords: ["mesa", "jantar", "sala de jantar", "cadeiras", "aparador", "comer", "refeicao", "refeição", "pack jantar", "pack"]
+      keywords: ["pack", "packs", "mesa", "jantar", "sala de jantar", "cadeiras", "aparador", "comer", "refeicao", "refeição", "pack jantar", "a mesa", "à mesa"]
     },
     {
       id: "pack-5",
@@ -374,14 +526,21 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-5",
       image: "images/produtos/sonhostranquilos.webp",
       description: "Pack de quarto com cama, colchão, roupeiro e arrumação para descanso completo.",
-      keywords: ["quarto", "cama", "colchao", "colchão", "dormir", "descanso", "roupeiro", "sonho", "tranquilo", "pack quarto", "pack"]
+      keywords: ["pack", "packs", "quarto", "cama", "colchao", "colchão", "colchoes", "colchões", "dormir", "descanso", "roupeiro", "sonhos tranquilos"]
     }
   ];
 
   function getSearchableCatalog() {
-    const list = [...packsData];
+    const list = [...kidsCatalog, ...mattressCatalog, ...packsCatalog];
+    
+    // Add Quartos and Salas products from window_products
     if (typeof window_products !== 'undefined') {
       for (const [key, p] of Object.entries(window_products)) {
+        // Skip Colchões and Kids in window_products (we already added the verified official ones above)
+        if (p.category === 'Colchões' || p.category === 'Kids' || key.startsWith('colchao-') || key.startsWith('kids-') || key.startsWith('almofada-')) {
+          continue;
+        }
+        
         list.push({
           id: p.id || key,
           name: p.name || "",
@@ -427,26 +586,31 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     if (!cleanQ) return [];
     
     const catalog = getSearchableCatalog();
-    let words = cleanQ.split(/\s+/).filter(w => w.length > 1);
-    if (words.length === 0) words = [cleanQ];
+    const words = cleanQ.split(/\s+/).filter(w => w.length > 0);
+    
+    // Single-word category shortcuts:
+    if (words.length === 1) {
+      const single = words[0];
+      if (['crianca', 'criancas', 'kids', 'juvenil', 'infantil'].includes(single)) {
+        return catalog.filter(p => p.category === 'Kids');
+      }
+      if (['colchao', 'colchoes'].includes(single)) {
+        return catalog.filter(p => ['colchao-mindol', 'colchao-molaflex', 'colchao-bestbed', 'colchao-colmed', 'pack-5'].includes(p.id));
+      }
+      if (['almofada', 'almofadas'].includes(single)) {
+        return catalog.filter(p => ['almofada-1', 'almofada-2'].includes(p.id));
+      }
+    }
 
     return catalog.filter(p => {
       const nameNorm = removeAccents(p.name);
       const catNorm = removeAccents(p.category);
       const descNorm = removeAccents(p.description);
-      const kwNorms = (p.keywords || []).map(k => removeAccents(k));
+      const kwNorms = (p.keywords || []).map(k => removeAccents(k)).join(' ');
 
-      return words.every(w => {
-        const inName = nameNorm.includes(w);
-        const inCat = catNorm.includes(w);
-        const inDesc = descNorm.includes(w);
-        const inKw = kwNorms.some(k => 
-          k.includes(w) || 
-          (w.length >= 3 && k.startsWith(w)) || 
-          (k.length >= 3 && w.startsWith(k))
-        );
-        return inName || inCat || inDesc || inKw;
-      });
+      const allText = `${nameNorm} ${catNorm} ${descNorm} ${kwNorms}`;
+
+      return words.every(w => allText.includes(w));
     });
   }
 
@@ -485,7 +649,6 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       grid.style.display = 'none';
       noRes.style.display = 'block';
       
-      // Still show popular related products
       if (relSec && relGrid) {
         relSec.style.display = 'block';
         relGrid.innerHTML = catalog.slice(0, 4).map(renderCard).join('');
@@ -496,7 +659,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     grid.style.display = 'grid';
     grid.innerHTML = matches.map(renderCard).join('');
 
-    // Show related products (items from same category or popular items not in results)
+    // Show related products (items from catalog not in results)
     if (relSec && relGrid) {
       const matchIds = new Set(matches.map(m => m.id));
       const related = catalog.filter(p => !matchIds.has(p.id)).slice(0, 4);
