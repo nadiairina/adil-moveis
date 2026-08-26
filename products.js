@@ -1771,24 +1771,41 @@ const window_products = {
   },
   "basetv-malmo": {
     "id": "basetv-malmo",
-    "name": "Base TV Malmo 180",
+    "name": "Base TV Malmo 180 (1 Gaveta)",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Base TV Malmo 180cm.",
-    "image": "images/produtos/base-tv-malmo-dark-greycarvalho.jpg",
-    "gallery": [],
+    "description": "Móvel de TV moderno com 1 gaveta espaçosa da Linha Malmo (L1800 x A500 x P455 mm). Disponível em 3 acabamentos elegantes.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "L1800 x A500 x P455 mm[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Capuccino / Carvalho[+0.00]|Dark Grey / Carvalho[+0.00]|Branco / Carvalho[+0.00]",
+    "image": "images/produtos/base-tv-malmo-capuccinocarvalho.jpg",
+    "gallery": [
+      "images/produtos/base-tv-malmo-capuccinocarvalho.jpg",
+      "images/produtos/Movel-TV-1-Gaveta.webp",
+      "images/produtos/base-tv-malmo-dark-greycarvalho.jpg",
+      "images/produtos/base-tv-malmo-dark-greycarvalho-1.jpg"
+    ],
     "subcategory": "Móveis de Sala"
   },
   "mesa-centro-malmo": {
     "id": "mesa-centro-malmo",
-    "name": "Mesa de Centro Malmo",
+    "name": "Mesa de Centro Malmo MC90",
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Mesa de Centro Malmo (Disponível em 3 Cores).",
+    "description": "Mesa de centro com prateleira inferior de arrumação da Linha Malmo (L900 x A380 x P600 mm). Disponível em 3 cores contemporâneas.",
+    "custom1_name": "Dimensões",
+    "custom1_options": "L900 x A380 x P600 mm[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Dark Grey / Carvalho[+0.00]|Capuccino / Carvalho[+0.00]|Branco / Carvalho[+0.00]",
     "image": "images/produtos/mesa-de-centro-malmo-dark-greycarvalho.jpg",
-    "gallery": [],
+    "gallery": [
+      "images/produtos/mesa-de-centro-malmo-dark-greycarvalho.jpg",
+      "images/produtos/mesa-de-centro-malmo-dark-greycarvalho-1.jpg",
+      "images/produtos/mesa-de-centro-malmo-dark-greycarvalho-2.jpg"
+    ],
     "subcategory": "Móveis de Sala"
   },
   "mesa-sala-paris": {
@@ -1921,6 +1938,22 @@ const window_products = {
     "image": "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg",
     "gallery": [
       "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg"
+    ]
+  },
+  "mesa-cabeceira-malmo": {
+    "id": "mesa-cabeceira-malmo",
+    "name": "Mesa de Cabeceira Malmo",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "subcategory": "Mesas de Cabeceira",
+    "description": "Mesa de cabeceira moderna da Linha Malmo em Branco e Carvalho.",
+    "custom1_name": "Cor / Acabamento",
+    "custom1_options": "Branco / Carvalho[+0.00]",
+    "image": "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho.jpg",
+    "gallery": [
+      "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho.jpg",
+      "images/produtos/mesa-de-cabeceira-malmo-brancocarvalho-1.jpg"
     ]
   },
 };
