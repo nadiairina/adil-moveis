@@ -1032,17 +1032,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Mesa de cabeceira 2 gavetas. L580 x A455 x P400.",
+    "subcategory": "Mesas de Cabeceira",
+    "description": "Mesa de cabeceira 2 gavetas da Linha Viena (L580 x A455 x P400 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L580 x A455 x P400[+0.00]",
-    "image": "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
+    "image": "images/produtos/Mesa-Cabeceira-Viena-Cinza.webp",
     "gallery": [
-      "images/produtos/Mesa-Cabeceira-Viena-Faia.webp",
-      "images/produtos/Mesa-Cabeceira-Viena-Cinza.webp"
-    ],
-    "subcategory": "Mesas de Cabeceira"
+      "images/produtos/Mesa-Cabeceira-Viena-Cinza.webp",
+      "images/produtos/Mesa-Cabeceira-Viena-Faia.webp"
+    ]
   },
   "quartos-60": {
     "id": "quartos-60",
@@ -1050,17 +1050,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1015 x A850 x P450.",
+    "subcategory": "Cómodas",
+    "description": "Cómoda 4 gavetas da Linha Chiado (L1015 x A850 x P450 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1015 x A850 x P450[+0.00]",
-    "image": "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
+    "image": "images/produtos/Comoda-Chiado-Branca.webp",
     "gallery": [
-      "images/produtos/Comoda-Chiado-Pinho-Mel.webp",
-      "images/produtos/Comoda-Chiado-Branca.webp"
-    ],
-    "subcategory": "Cómodas"
+      "images/produtos/Comoda-Chiado-Branca.webp",
+      "images/produtos/Comoda-Chiado-Pinho-Mel.webp"
+    ]
   },
   "quartos-43": {
     "id": "quartos-43",
