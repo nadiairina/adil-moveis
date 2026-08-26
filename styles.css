@@ -1259,3 +1259,15 @@ footer div.border-b {
   pointer-events: auto !important;
   transform: none !important;
 }
+
+
+/* Edge-to-edge cover for ambient and full scene products (no borders / no letterboxing) */
+.product-img-cover,
+.product[data-fit="cover"] .relative img,
+.product-card-cover img {
+  object-fit: cover !important;
+  object-position: center !important;
+  mix-blend-mode: normal !important;
+  width: 100% !important;
+  height: 100% !important;
+}
