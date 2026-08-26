@@ -1219,17 +1219,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Camiseiro 5 gavetas. L650 x A1150 x P400.",
+    "subcategory": "Camiseiros",
+    "description": "Camiseiro 5 gavetas da Linha Viena (L650 x A1150 x P400 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L650 x A1150 x P400[+0.00]",
-    "image": "images/produtos/camiseiro-viena-jl738.jpg",
+    "image": "images/produtos/camiseiro-viena-jl738-1.jpg",
     "gallery": [
-      "images/produtos/camiseiro-viena-jl738.jpg",
-      "images/produtos/camiseiro-viena-jl738-1.jpg"
-    ],
-    "subcategory": "Camiseiros"
+      "images/produtos/camiseiro-viena-jl738-1.jpg",
+      "images/produtos/camiseiro-viena-jl738.jpg"
+    ]
   },
   "salas-39": {
     "id": "salas-39",
@@ -1413,17 +1413,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Sommier articulado estofado. Consultar medidas.",
+    "subcategory": "Sommiers",
+    "description": "Sommier articulado estofado com arrumação elevatória e tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/produtos/7616052-esquerdo-aberto.jpg",
+    "image": "images/produtos/7616052-esquerdo-amb.jpg",
     "gallery": [
-      "images/produtos/7616052-esquerdo-aberto.jpg",
-      "images/produtos/7616052-esquerdo-amb.jpg"
-    ],
-    "subcategory": "Sommiers"
+      "images/produtos/7616052-esquerdo-amb.jpg",
+      "images/produtos/7616052-esquerdo-aberto.jpg"
+    ]
   },
   "quartos-80": {
     "id": "quartos-80",
@@ -1448,17 +1448,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
+    "subcategory": "Sommiers",
     "description": "Sommier articulado com estrutura de madeira. Disponível em várias cores.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Cerejeira[+0.00]|Camouflage[+0.00]|Opal[+0.00]|Capuccino[+0.00]|Dark Grey[+0.00]|Branco[+0.00]|Preto[+0.00]|Carvalho Natura[+0.00]|Carvalho Cinza[+0.00]",
+    "custom1_options": "Branco[+0.00]|Carvalho Natura[+0.00]|Carvalho Cinza[+0.00]|Cerejeira[+0.00]|Capuccino[+0.00]|Dark Grey[+0.00]|Preto[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]",
-    "image": "images/produtos/new-natura-lourini.png",
+    "image": "images/produtos/new-branco-lourini.png",
     "gallery": [
-      "images/produtos/new-natura-lourini.png",
-      "images/produtos/new-branco-lourini.png"
-    ],
-    "subcategory": "Sommiers"
+      "images/produtos/new-branco-lourini.png",
+      "images/produtos/new-natura-lourini.png"
+    ]
   },
   "quartos-84": {
     "id": "quartos-84",
