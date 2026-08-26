@@ -1539,17 +1539,16 @@ var window_products = window.window_products = window.produtos = {
     "price": 0,
     "url": "salas.html",
     "category": "Salas",
-    "description": "Sapateira 2 portas. L1032 x A885 x P350.",
+    "subcategory": "Outros",
+    "description": "Sapateira de design minimalista com 2 portas e puxador central elegante. L1032 x A885 x P350.",
     "custom1_name": "Cor / Acabamento",
-    "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
+    "custom1_options": "Branco Mate - Carvalho[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1032 x A885 x P350[+0.00]",
-    "image": "images/produtos/Sapateira-Chiado-Branco.webp",
+    "image": "images/produtos/sapateira-chiado.jpg",
     "gallery": [
-      "images/produtos/Sapateira-Chiado-Branco.webp",
-      "images/produtos/Sapateira-Chiado-Pinho-Mel.webp"
-    ],
-    "subcategory": "Outros"
+      "images/produtos/sapateira-chiado.jpg"
+    ]
   },
   "salas-37": {
     "id": "salas-37",
