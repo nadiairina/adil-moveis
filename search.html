@@ -172,14 +172,14 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       <p style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#1a1a1a; margin-bottom:0.5rem;">O que está à procura?</p>
       <p style="font-size:0.9rem; color:#6b6b6b; font-weight:300; margin-bottom:2rem;">Escreva o que procura acima e pressione Enter.</p>
       <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
-        <button onclick="quickSearch('cama')" class="suggestion-tag">🛏️ Cama</button>
-        <button onclick="quickSearch('sofá')" class="suggestion-tag">🛋️ Sofá</button>
-        <button onclick="quickSearch('colchão')" class="suggestion-tag">😴 Colchão</button>
-        <button onclick="quickSearch('roupeiro')" class="suggestion-tag">🚪 Roupeiro</button>
-        <button onclick="quickSearch('criança')" class="suggestion-tag">🧒 Kids</button>
-        <button onclick="quickSearch('secretária')" class="suggestion-tag">📚 Secretária</button>
-        <button onclick="quickSearch('packs')" class="suggestion-tag">🎁 Packs</button>
-        <button onclick="quickSearch('sala')" class="suggestion-tag">🪑 Sala</button>
+        <button onclick="quickSearch('cama')" class="suggestion-tag">Camas</button>
+        <button onclick="quickSearch('sofá')" class="suggestion-tag">Sofás</button>
+        <button onclick="quickSearch('colchão')" class="suggestion-tag">Colchões</button>
+        <button onclick="quickSearch('roupeiro')" class="suggestion-tag">Roupeiros</button>
+        <button onclick="quickSearch('kids')" class="suggestion-tag">Kids & Juvenil</button>
+        <button onclick="quickSearch('secretária')" class="suggestion-tag">Secretárias</button>
+        <button onclick="quickSearch('pack')" class="suggestion-tag">Packs Promocionais</button>
+        <button onclick="quickSearch('sala')" class="suggestion-tag">Salas</button>
       </div>
     </div>
 
@@ -190,7 +190,17 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     </div>
 
     <!-- Product Grid -->
-    <div id="results-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" style="display:none;"></div>
+        <!-- Product Grid -->
+    <div id="results-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8" style="display:none;"></div>
+
+    <!-- Related Products Section -->
+    <div id="related-section" style="display:none; margin-top:4.5rem; padding-top:3rem; border-top:1px solid #E8E3DC;">
+      <div style="text-align:center; margin-bottom:2rem;">
+        <p style="font-size:9px; font-weight:700; letter-spacing:0.25em; text-transform:uppercase; color:#C8B598; margin-bottom:4px;">SUGESTÕES PARA SI</p>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:400; color:#1a1a1a;">Poderá também gostar</h3>
+      </div>
+      <div id="related-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8"></div>
+    </div>
 
   </div>
 </section>
@@ -319,7 +329,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
 
-  // Build searchable database from window_products and packs
+  // Packs definition
   const packsData = [
     {
       id: "pack-1",
@@ -328,7 +338,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-1",
       image: "images/produtos/pack1-sala.jpg",
       description: "Mobiliário completo para sala de estar com sofá, mesa de centro, móvel TV e estante.",
-      keywords: ["sala", "sofá", "estante", "móvel tv", "pack", "sonho", "promoção", "conjunto"]
+      keywords: ["sala", "sofa", "sofá", "estante", "movel tv", "móvel tv", "pack", "sonho", "promocao", "promoção", "conjunto"]
     },
     {
       id: "pack-2",
@@ -355,7 +365,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-4",
       image: "images/produtos/pack4-kids.jpg",
       description: "Quarto infantil/juvenil completo com cama solteiro, secretária de estudo e arrumação.",
-      keywords: ["kids", "criança", "infantil", "juvenil", "secretária", "estudo", "pack", "quarto"]
+      keywords: ["kids", "crianca", "criança", "infantil", "juvenil", "secretaria", "secretária", "estudo", "pack", "quarto"]
     },
     {
       id: "pack-5",
@@ -364,7 +374,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       url: "pack-detalhe.html?id=pack-5",
       image: "images/produtos/pack5-jovem.jpg",
       description: "Quarto moderno para jovens com cama solteiro compacta, secretária ergonómica e roupeiro.",
-      keywords: ["jovem", "juvenil", "quarto", "secretária", "estudo", "cama", "pack"]
+      keywords: ["jovem", "juvenil", "quarto", "secretaria", "secretária", "estudo", "cama", "pack"]
     }
   ];
 
@@ -394,6 +404,22 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   function removeAccents(str) {
     if (!str) return "";
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  }
+
+  function renderCard(p) {
+    return `
+      <a href="${p.url}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" style="text-decoration:none; color:inherit; border:1px solid #E8E3DC;">
+        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+          <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" onerror="this.src='images/logo_sem_fundo.png'; this.style.objectFit='contain'; this.style.padding='20px';" />
+        </div>
+        <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+          <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</h3>
+          <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+            <span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+          </p>
+        </div>
+      </a>
+    `;
   }
 
   function matchProducts(q) {
@@ -440,11 +466,14 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 
   function doSearch(q) {
     const matches = matchProducts(q);
+    const catalog = getSearchableCatalog();
     const grid = document.getElementById('results-grid');
     const header = document.getElementById('results-header');
     const title = document.getElementById('results-title');
     const empty = document.getElementById('empty-state');
     const noRes = document.getElementById('no-results');
+    const relSec = document.getElementById('related-section');
+    const relGrid = document.getElementById('related-grid');
 
     empty.style.display = 'none';
     noRes.style.display = 'none';
@@ -455,24 +484,29 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     if (matches.length === 0) {
       grid.style.display = 'none';
       noRes.style.display = 'block';
+      
+      // Still show popular related products
+      if (relSec && relGrid) {
+        relSec.style.display = 'block';
+        relGrid.innerHTML = catalog.slice(0, 4).map(renderCard).join('');
+      }
       return;
     }
 
     grid.style.display = 'grid';
-    grid.innerHTML = matches.map(p => `
-      <a class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" href="${p.url}" style="text-decoration:none; color:inherit; border:1px solid #E8E3DC;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-          <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='images/logo_sem_fundo.png'; this.style.objectFit='contain'; this.style.padding='20px';" />
-        </div>
-        <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-          <p style="font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598; margin-bottom:4px;">${p.category}</p>
-          <h3 style="font-family:'Inter',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</h3>
-          <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-            <span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
-          </p>
-        </div>
-      </a>
-    `).join('');
+    grid.innerHTML = matches.map(renderCard).join('');
+
+    // Show related products (items from same category or popular items not in results)
+    if (relSec && relGrid) {
+      const matchIds = new Set(matches.map(m => m.id));
+      const related = catalog.filter(p => !matchIds.has(p.id)).slice(0, 4);
+      if (related.length > 0) {
+        relSec.style.display = 'block';
+        relGrid.innerHTML = related.map(renderCard).join('');
+      } else {
+        relSec.style.display = 'none';
+      }
+    }
   }
 
   function showSuggestions() {
@@ -484,9 +518,9 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     box.style.display = 'block';
     box.innerHTML = matches.map(p => `
       <a href="${p.url}" style="display:flex; align-items:center; gap:12px; padding:10px 16px; text-decoration:none; border-bottom:1px solid #f3f4f6; transition:background 0.15s;" onmouseover="this.style.background='#F5F0E8'" onmouseout="this.style.background='#fff'">
-        <img src="${p.image}" style="width:38px; height:38px; object-fit:cover; border-radius:4px; background:#F7F4F0; flex-shrink:0;" onerror="this.style.display='none'" />
+        <img src="${p.image}" style="width:38px; height:38px; object-fit:contain; border-radius:4px; background:#F7F4F0; flex-shrink:0; mix-blend-mode:darken;" onerror="this.style.display='none'" />
         <div style="flex:1; overflow:hidden;">
-          <p style="font-size:13px; font-weight:600; color:#1a1a1a; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</p>
+          <p style="font-size:12px; font-weight:600; text-transform:uppercase; color:#1a1a1a; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</p>
           <span style="font-size:9px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#C8B598;">${p.category}</span>
         </div>
         <span style="font-size:11px; color:#999;">→</span>
