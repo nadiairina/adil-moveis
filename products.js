@@ -1889,4 +1889,38 @@ const window_products = {
     "image": "images/produtos/colchoes/almofada-viscoprata-1.webp",
     "gallery": ["images/produtos/colchoes/almofada-viscoprata-1.webp", "images/produtos/colchoes/almofada-viscoprata-2.webp"]
   },
+  "roupeiro-eco-correr": {
+    "id": "roupeiro-eco-correr",
+    "name": "Roupeiro Eco Portas de Correr",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "subcategory": "Roupeiros",
+    "description": "Roupeiro de 2 ou 3 portas de correr com linhas contemporâneas e excelente arrumação. Bloco interior de 2 gavetas opcional.",
+    "custom1_name": "Dimensões / Portas",
+    "custom1_options": "2 Portas (L1100 x A2000 x P600)[+0.00]|3 Portas (L1650 x A2000 x P600)[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Branco[+0.00]|Cerejeira[+0.00]|Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
+    "image": "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg",
+    "gallery": [
+      "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg"
+    ]
+  },
+  "roupeiro-eco-bater": {
+    "id": "roupeiro-eco-bater",
+    "name": "Roupeiro Eco Portas de Bater",
+    "price": 0,
+    "url": "quartos.html",
+    "category": "Quartos",
+    "subcategory": "Roupeiros",
+    "description": "Roupeiro prático e funcional de 2 ou 3 portas de abrir/bater. Bloco interior de 2 gavetas opcional para máxima arrumação.",
+    "custom1_name": "Dimensões / Portas",
+    "custom1_options": "2 Portas (L1100 x A2000 x P600)[+0.00]|3 Portas (L1650 x A2000 x P600)[+0.00]",
+    "custom2_name": "Cor / Acabamento",
+    "custom2_options": "Branco[+0.00]|Cerejeira[+0.00]|Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
+    "image": "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg",
+    "gallery": [
+      "images/produtos/linha-paris-aparador-3-portas-1-gaveta.jpg"
+    ]
+  },
 };
