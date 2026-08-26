@@ -1137,21 +1137,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1130 x A920 x P500.",
+    "subcategory": "Cómodas",
+    "description": "Cómoda de 4 gavetas da Linha Viena com acabamento contemporâneo e excelente capacidade de arrumação (L1130 x A920 x P500 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Cinza - Branco Mate[+0.00]|Faia[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1130 x A920 x P500[+0.00]",
-    "image": "images/produtos/comoda-viena-faia.png",
+    "image": "images/produtos/header_comoda_lourini_viena_cinza_branco.jpg",
     "gallery": [
-      "images/produtos/comoda-viena-faia.png",
-      "images/produtos/comoda-viena-faia.jpg",
-      "images/produtos/comoda-viena-faia-1.jpg",
-      "images/produtos/comoda-viena-cinzabranco.jpg",
-      "images/produtos/comoda-viena-cinzabranco-1.jpg",
-      "images/produtos/comoda-viena-cinzabranco-2.jpg"
-    ],
-    "subcategory": "Cómodas"
+      "images/produtos/header_comoda_lourini_viena_cinza_branco.jpg",
+      "images/produtos/comoda-viena-detalhe.jpg"
+    ]
   },
   "quartos-61": {
     "id": "quartos-61",
@@ -1446,18 +1442,16 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Sommier articulado estofado. Tecido personalizável.",
+    "subcategory": "Sommiers",
+    "description": "Sommier articulado estofado com enorme capacidade de arrumação e tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]|1800x2000[+0.00]",
-    "image": "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
+    "image": "images/produtos/Base-Sommier-Big-Box3-600x333.jpg",
     "gallery": [
-      "images/produtos/Base-Sommier-Big-Box1-600x333.jpg",
-      "images/produtos/Base-Sommier-Big-Box2-600x333.jpg",
       "images/produtos/Base-Sommier-Big-Box3-600x333.jpg"
-    ],
-    "subcategory": "Sommiers"
+    ]
   },
   "quartos-82": {
     "id": "quartos-82",
