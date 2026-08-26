@@ -75,4 +75,33 @@ NEW_HEADER = """<!-- Global Promo Banner -->
       </div>
     </div>
   </div>
-</header>"""
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuBtn = document.getElementById('menuButton');
+    var closeBtn = document.getElementById('closeMenuBtn');
+    var overlay  = document.getElementById('menuOverlay');
+    var sidebar  = document.getElementById('menuSidebar');
+    
+    function openMenu() {
+      if (overlay && sidebar) {
+        overlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        setTimeout(function() { sidebar.style.transform = 'translateX(0)'; }, 10);
+      }
+    }
+    function closeMenu() {
+      if (sidebar && overlay) {
+        sidebar.style.transform = 'translateX(100%)';
+        setTimeout(function() { overlay.classList.add('hidden'); }, 310);
+        document.body.style.overflow = '';
+      }
+    }
+    
+    if (menuBtn)  menuBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
+  });
+</script>
+"""
