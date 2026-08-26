@@ -618,25 +618,19 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
             image: "images/produtos/saladesonhopremium.jpg",
             gallery: [
               "images/produtos/saladesonhopremium.jpg",
-              "images/produtos/sofa-chaise-luna.jpg",
-              "images/produtos/linha-malmo-m-dulo-1-gaveta-180.jpg",
-              "images/produtos/linha-malmo-m-dulo-mc90.jpg"
+              "images/produtos/base-tv-malmo-dark-greycarvalho.jpg",
+              "images/produtos/mesa-de-centro-malmo-dark-greycarvalho.jpg"
             ],
             items: [
               {
-                name: "Sofá Luna Chaise",
-                detail: "Chaise longue contemporâneo de elevada qualidade e conforto",
-                image: "images/produtos/sofa-chaise-luna.jpg"
-              },
-              {
                 name: "Base TV Malmo 180 (1 Gaveta)",
                 detail: "L1800 x A500 x P455 mm (Disponível em 3 Cores)",
-                image: "images/produtos/linha-malmo-m-dulo-1-gaveta-180.jpg"
+                image: "images/produtos/base-tv-malmo-dark-greycarvalho.jpg"
               },
               {
                 name: "Mesa de Centro Malmo MC90",
                 detail: "L900 x A380 x P600 mm (Disponível em 3 Cores)",
-                image: "images/produtos/linha-malmo-m-dulo-mc90.jpg"
+                image: "images/produtos/mesa-de-centro-malmo-dark-greycarvalho.jpg"
               }
             ],
             description: "O <strong>Pack Sala de Sonho Premium</strong> combina linhas contemporâneas e máxima arrumação para a sua sala.<br><br><strong>O conjunto inclui:</strong><br>• <strong>Sofá Luna Chaise:</strong> Chaise longue de elevada qualidade e conforto.<br>• <strong>Base TV Malmo (Módulo 1 gaveta 180):</strong> L1800 x A500 x P455 mm (Disponível em 3 Cores).<br>• <strong>Mesa de Centro Malmo (Módulo MC90):</strong> L900 x A380 x P600 mm (Disponível em 3 Cores).<br><br><em>Fale connosco no WhatsApp para escolher as cores e obter o melhor preço!</em>"
@@ -829,14 +823,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         var galleryContainer = document.getElementById('gallery-container');
         galleryContainer.innerHTML = '';
                 var galleryImages = (p.gallery && p.gallery.length > 0) ? p.gallery : (p.image ? [p.image] : []);
-        // Also ensure all item images are in gallery
-        if (p.items) {
-          p.items.forEach(function(it) {
-            if (it.image && galleryImages.indexOf(it.image) === -1) {
-              galleryImages.push(it.image);
-            }
-          });
-        }
+
         currentGallery = galleryImages;
 
         var wrap = document.getElementById('mainImageWrap');
