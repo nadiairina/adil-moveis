@@ -888,16 +888,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cabeceira estofada. Tecido personalizável. L980/1480/1580/1680/1880 x A1200 x P140.",
+    "subcategory": "Cabeceiras",
+    "description": "Cabeceira estofada elegante Linha Jones. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L980[+0.00]|L1480[+0.00]|L1580[+0.00]|L1680[+0.00]|L1880[+0.00]",
-    "image": "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg",
+    "image": "images/produtos/cabeceira-jones-quarto.webp",
     "gallery": [
-      "images/produtos/cabeceira-estofada-jones-slaterais-x150.jpg"
-    ],
-    "subcategory": "Cabeceiras"
+      "images/produtos/cabeceira-jones-quarto.webp",
+      "images/produtos/cabeceira-jones-detalhe.jpg"
+    ]
   },
   "quartos-79": {
     "id": "quartos-79",
@@ -1057,10 +1058,10 @@ const window_products = {
     "custom1_options": "Branco Mate - Carvalho[+0.00]|Pinho Mel - Wengué[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "L1015 x A850 x P450[+0.00]",
-    "image": "images/produtos/Comoda-Chiado-Branca.webp",
+    "image": "images/produtos/Comoda-Chiado-Branco-Carvalho1.jpg",
     "gallery": [
-      "images/produtos/Comoda-Chiado-Branca.webp",
-      "images/produtos/Comoda-Chiado-Pinho-Mel.webp"
+      "images/produtos/Comoda-Chiado-Branco-Carvalho1.jpg",
+      "images/produtos/comoda-chiado-brancocarvalho.png"
     ]
   },
   "quartos-43": {
@@ -1109,17 +1110,17 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Cómoda 4 gavetas. L1135 x A885 x P450. (Cinza disponível)",
+    "subcategory": "Cómodas",
+    "description": "Cómoda 3 gavetas da Linha Paris (L1070 x A840 x P450 mm).",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Carvalho Natura - Branco[+0.00]|Carvalho Cinza - Branco[+0.00]",
     "custom2_name": "Dimensões",
-    "custom2_options": "L1135 x A885 x P450[+0.00]",
-    "image": "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
+    "custom2_options": "L1070 x A840 x P450[+0.00]",
+    "image": "images/produtos/header_comoda_lourini_paris_carvalho_natura.jpg",
     "gallery": [
-      "images/produtos/Comoda-Paris-Carvalho-Natura.webp",
-      "images/produtos/Comoda-Paris-Carvalho-Cinza.webp"
-    ],
-    "subcategory": "Cómodas"
+      "images/produtos/header_comoda_lourini_paris_carvalho_natura.jpg",
+      "images/produtos/Comoda-Paris-Carvalho-Natura-Branco1.jpg"
+    ]
   },
   "quartos-66": {
     "id": "quartos-66",
@@ -1438,9 +1439,9 @@ const window_products = {
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "900x1900[+0.00]|1400x1900[+0.00]|1400x2000[+0.00]|1500x2000[+0.00]|1600x2000[+0.00]|1800x2000[+0.00]",
-    "image": "images/produtos/Base-Sommier-Big-Box3-600x333.jpg",
+    "image": "images/produtos/sommier-bigbox.jpg",
     "gallery": [
-      "images/produtos/Base-Sommier-Big-Box3-600x333.jpg"
+      "images/produtos/sommier-bigbox.jpg"
     ]
   },
   "quartos-82": {
@@ -1467,16 +1468,16 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Sommier fixo estofado. Consultar medidas.",
+    "subcategory": "Sommiers",
+    "description": "Sommier fixo estofado de alta estabilidade e durabilidade. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/produtos/sommier-fixo-summer-195x140.jpg",
+    "image": "images/produtos/sommier-summer.jpg",
     "gallery": [
-      "images/produtos/sommier-fixo-summer-195x140.jpg"
-    ],
-    "subcategory": "Sommiers"
+      "images/produtos/sommier-summer.jpg"
+    ]
   },
   "quartos-83": {
     "id": "quartos-83",
@@ -1484,17 +1485,16 @@ const window_products = {
     "price": 0,
     "url": "quartos.html",
     "category": "Quartos",
-    "description": "Sommier fixo estofado. Consultar medidas.",
+    "subcategory": "Sommiers",
+    "description": "Sommier fixo estofado Linha Vintage. Tecido personalizável.",
     "custom1_name": "Cor / Acabamento",
     "custom1_options": "Tecido personalizável — Ver Catálogo na Loja[+0.00]",
     "custom2_name": "Dimensões",
     "custom2_options": "Standard[+0.00]",
-    "image": "images/produtos/sommier-vintage-1.webp",
+    "image": "images/produtos/sommier-vintage.png",
     "gallery": [
-      "images/produtos/sommier-vintage-1.webp",
-      "images/produtos/sommier-vintage-e1732121529234.webp"
-    ],
-    "subcategory": "Sommiers"
+      "images/produtos/sommier-vintage.png"
+    ]
   },
   "salas-43": {
     "id": "salas-43",

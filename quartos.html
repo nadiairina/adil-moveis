@@ -288,349 +288,114 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     </div>
   </div>
 </footer>
-<!-- Gallery Modal -->
-<div class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center" id="galleryModal">
-<div class="relative w-full h-full flex items-center justify-center">
-<!-- Close button -->
-<button class="absolute top-4 right-4 text-white z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75" id="closeGallery">
-<i class="w-6 h-6" data-feather="x"></i>
-</button>
-<!-- Slide counter -->
-<div class="absolute top-4 left-4 text-white bg-black bg-opacity-50 py-1 px-3 rounded-full">
-<span id="currentSlide">1</span>/<span id="totalSlides">8</span>
-</div>
-<!-- Gallery container -->
-<div class="gallery-container relative flex items-center justify-center w-full h-full">
-<!-- You'll populate this with JavaScript -->
-</div>
-<!-- Title at the bottom -->
-<div class="text-white text-center text-xl font-medium absolute bottom-8 w-full" id="galleryTitle"></div>
-<!-- Navigation arrows -->
-<button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75" id="prevSlide">
-<i class="w-8 h-8" data-feather="chevron-left"></i>
-</button>
-<button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75" id="nextSlide">
-<i class="w-8 h-8" data-feather="chevron-right"></i>
-</button>
-</div>
-</div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize Feather icons
-  if (typeof feather !== 'undefined') {
-    feather.replace();
-  }
-  
-  // ===== MENU FUNCTIONALITY =====
-  // Get menu elements
-  const menuButton = document.getElementById('menuButton');
-  const closeMenuButton = document.getElementById('closeMenuButton');
-  const menuOverlay = document.getElementById('menuOverlay');
-  
-  // Open menu when clicking menu button
-  if (menuButton) {
-    menuButton.addEventListener('click', function() {
-      menuOverlay.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling
-    });
-  }
-  
-  // Close menu when clicking close button
-  if (closeMenuButton) {
-    closeMenuButton.addEventListener('click', function() {
-      menuOverlay.classList.add('hidden');
-      document.body.style.overflow = ''; // Allow scrolling again
-    });
-  }
-  
-  // Close menu when clicking outside
-  if (menuOverlay) {
-    menuOverlay.addEventListener('click', function(e) {
-      if (e.target === menuOverlay) {
-        menuOverlay.classList.add('hidden');
-        document.body.style.overflow = ''; // Allow scrolling again
-      }
-    });
-  }
-  
-  // ===== FILTER FUNCTIONALITY =====
-  // Get all filter buttons
-  const filterButtons = document.querySelectorAll('.filter-button');
-  
-  // Add click handler to each button
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Get the category from the button
-      const category = this.getAttribute('data-category');
-      
-      // Update active button styling
-      filterButtons.forEach(btn => {
-        btn.classList.remove('active');
-        btn.classList.remove('bg-[#C8B598]', 'text-white');
-        btn.classList.add('bg-gray-100');
-      });
-      
-      // Apply active styling to clicked button
-      this.classList.add('active', 'bg-[#C8B598]', 'text-white');
-      this.classList.remove('bg-gray-100');
-      
-      // Get all products
-      const products = document.querySelectorAll('.product');
-      
-      // Show/hide products based on category
-      products.forEach(product => {
-        if (category === 'all' || product.getAttribute('data-category') === category) {
-          product.style.display = '';
-          product.classList.add('aos-animate');
-          product.style.opacity = '1';
-          product.style.transform = 'none';
-        } else {
-          product.style.display = 'none';
-        }
-      });
-      setTimeout(() => { if(typeof AOS !== 'undefined') AOS.refresh(); }, 50);
-    });
-  });
-  
-  // ===== GALLERY FUNCTIONALITY =====
-  // Get all product images
-  const products = document.querySelectorAll('.product');
-  
-  // Create an array of all product images
-  const galleryImages = [];
-  const galleryTitles = [];
-  
-  products.forEach(product => {
-    const img = product.querySelector('img');
-    const title = product.querySelector('h3').textContent;
-    galleryImages.push(img.src);
-    galleryTitles.push(title);
-  });
-  
-  // Setup gallery elements
-  const modal = document.getElementById('galleryModal');
-  const galleryContainer = document.querySelector('.gallery-container');
-  const closeButton = document.getElementById('closeGallery');
-  const prevButton = document.getElementById('prevSlide');
-  const nextButton = document.getElementById('nextSlide');
-  const currentSlideEl = document.getElementById('currentSlide');
-  const totalSlidesEl = document.getElementById('totalSlides');
-  
-  let currentIndex = 0;
-  
-  // Update total slides count
-  totalSlidesEl.textContent = galleryImages.length;
-  
-  // Function to open gallery
-  window.openGallery = function(index) {
-    currentIndex = index;
-    updateGallery();
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
-    
-    // Re-initialize Feather icons
-    if (typeof feather !== 'undefined') {
-      feather.replace();
-    }
-  };
-  
-  // Function to close gallery
-  function closeGallery() {
-    modal.classList.add('hidden');
-    document.body.style.overflow = '';
-  }
-  
-  function updateGallery() {
-  // Update slide counter
-  currentSlideEl.textContent = currentIndex + 1;
-  
-  // Remove the title from inside the slide and put it at the bottom of the modal
-  galleryContainer.innerHTML = `
-    <div class="slide" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%;">
-      <div style="width: 90%; max-width: 800px; max-height: 80vh; background: white; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; overflow: hidden; margin: auto;">
-        <img 
-          src="${galleryImages[currentIndex]}" 
-          alt="${galleryTitles[currentIndex]}" 
-          style="max-width: 100%; max-height: 100%; object-fit: contain;"
-        >
+<!-- Quick Search Bar Modal -->
+<div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
+  <div class="max-w-xl mx-auto mt-24 px-4">
+    <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
+      <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
+        <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
+        <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
       </div>
-    </div>
-  `;
-  
-  // Find or create the title element outside the gallery container
-  let titleElement = document.getElementById('galleryTitle');
-  if (!titleElement) {
-    titleElement = document.createElement('div');
-    titleElement.id = 'galleryTitle';
-    titleElement.className = 'text-white text-center text-xl font-medium absolute bottom-8 w-full';
-    document.getElementById('galleryModal').appendChild(titleElement);
-  }
-  
-  // Update the title text
-  titleElement.textContent = galleryTitles[currentIndex];
-}
-  
-  // Previous slide
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-    updateGallery();
-  }
-  
-  // Next slide
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % galleryImages.length;
-    updateGallery();
-  }
-  
-  // Event listeners
-  if (closeButton) closeButton.addEventListener('click', closeGallery);
-  if (prevButton) prevButton.addEventListener('click', prevSlide);
-  if (nextButton) nextButton.addEventListener('click', nextSlide);
-  
-  // Keyboard navigation
-  document.addEventListener('keydown', function(e) {
-    if (!modal || modal.classList.contains('hidden')) return;
-    
-    if (e.key === 'ArrowLeft') {
-      prevSlide();
-    } else if (e.key === 'ArrowRight') {
-      nextSlide();
-    } else if (e.key === 'Escape') {
-      closeGallery();
-    }
-  });
-  
-  // Close when clicking outside of the image
-  if (modal) {
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        closeGallery();
-      }
-    });
-  }
-});
-</script>
-<!-- Snipcart Configuration -->
-
-
-<!-- WhatsApp Floating Button -->
-<!-- Floating Contact Widget (Adil Móveis Premium) -->
-<div class="floating-contact-bar">
-<a class="floating-btn floating-btn-sec" href="https://www.google.com/maps/search/?api=1&amp;query=Adil+Móveis+Feijó+Almada" rel="noopener" target="_blank">
-        📍 Loja
-      </a>
-<a class="floating-btn floating-btn-primary" href="contactos.html?agendar=true">
-        📅 Agendar
-      </a>
-<a class="floating-btn floating-btn-wpp" href="https://wa.me/351960209396" rel="noopener" target="_blank">
-        💬 Orçamento
-      </a>
-</div>
-<!-- AOS (Animate on Scroll) JS and Initialization -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-      document.addEventListener('DOMContentLoaded', function() {
-        if (typeof AOS !== 'undefined') {
-          AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-          });
-        }
-      });
-    </script>
-</header>
-<script src="products.js"></script>
-<script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const grid = document.getElementById('products-grid');
-        if(!grid) return;
-        
-        const subMap = {
-          "Camas": "camas",
-          "Camas de Casal": "camas",
-          "Cabeceiras": "cabeceiras",
-          "Mesas de Cabeceira": "mesasCabeceira",
-          "Cómodas": "comodas",
-          "Roupeiros": "roupeiros",
-          "Camiseiros": "camiseiros",
-          "Sommiers": "sommiers",
-          "Sommiers e Bases": "sommiers",
-          "Estrados": "estrados"
-        };
-
-        const categoryPriority = {
-          "camas": 1,
-          "cabeceiras": 2,
-          "mesasCabeceira": 3,
-          "comodas": 4,
-          "camiseiros": 5,
-          "sommiers": 6,
-          "roupeiros": 7,
-          "estrados": 8,
-          "outros": 9
-        };
-
-        const qProducts = Object.values(window_products).filter(p => p.url && p.url.includes("quartos"));
-
-        qProducts.sort((a, b) => {
-          let catA = subMap[a.subcategory] || 'outros';
-          let catB = subMap[b.subcategory] || 'outros';
-          if ((a.name || '').toLowerCase().includes('cabeceira')) catA = 'cabeceiras';
-          if ((b.name || '').toLowerCase().includes('cabeceira')) catB = 'cabeceiras';
-          if ((a.name || '').toLowerCase().includes('sommier')) catA = 'sommiers';
-          if ((b.name || '').toLowerCase().includes('sommier')) catB = 'sommiers';
-          
-          const prioA = categoryPriority[catA] || 99;
-          const prioB = categoryPriority[catB] || 99;
-          if (prioA !== prioB) return prioA - prioB;
-          return (a.name || '').localeCompare(b.name || '');
-        });
-
-        let html = '';
-        qProducts.forEach(p => {
-          let cat = subMap[p.subcategory] || 'outros';
-          if ((p.name || '').toLowerCase().includes('cabeceira')) cat = 'cabeceiras';
-          if ((p.name || '').toLowerCase().includes('sommier')) cat = 'sommiers';
-
-          html += `
-            <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${cat}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
-              <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
-                <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" />
-              </div>
-              <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
-                <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</h3>
-                <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
-                  <span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
-                </p>
-              </div>
-            </a>
-          `;
-        });
-        grid.innerHTML = html;
-      });
-    </script>
-
-
-
-      <!-- Quick Search Bar Modal -->
-  <div id="searchModal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
-    <div class="max-w-xl mx-auto mt-24 px-4">
-      <div class="bg-white rounded-2xl p-6 shadow-2xl border border-[#E8E3DC] relative">
-        <div class="flex items-center justify-between pb-3 border-b border-[#E8E3DC] mb-3">
-          <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#C8B598;">Pesquisa de Produtos</span>
-          <button onclick="closeSearchModal()" class="text-gray-400 hover:text-black text-xl font-bold ml-2">&times;</button>
-        </div>
-        <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
-          <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
-        </form>
-        <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
-      </div>
+      <form onsubmit="handleGlobalSearch(event)" class="flex items-center gap-3">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8B598" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Escreva o que procura (ex: cama, sofá, colchão) e prima Enter..." class="w-full text-sm outline-none text-[#1a1a1a] py-2" autofocus />
+        <button type="submit" style="background:#C8B598; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; padding:8px 16px; border-radius:20px; border:none; cursor:pointer;">Pesquisar</button>
+      </form>
+      <p class="text-xs text-gray-400 mt-3 text-center">Prima <strong class="text-black">Enter ↵</strong> para abrir a página completa de resultados.</p>
     </div>
   </div>
+</div>
+
+<script src="products.js"></script>
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('products-grid');
+    if (!grid) return;
+
+    function getQuartosInfo(p) {
+      const nameLower = (p.name || '').toLowerCase();
+      const subLower = (p.subcategory || '').toLowerCase();
+
+      if (nameLower.includes('cabeceira') || subLower.includes('cabeceiras')) {
+        return { filterCat: 'cabeceiras', prio: 2 };
+      }
+      if (nameLower.includes('mesa de cabeceira') || nameLower.includes('mesa cabeceira') || subLower.includes('mesas de cabeceira')) {
+        return { filterCat: 'mesasCabeceira', prio: 3 };
+      }
+      if (nameLower.includes('cómoda') || nameLower.includes('comoda') || subLower.includes('cómodas') || subLower.includes('comodas')) {
+        return { filterCat: 'comodas', prio: 4 };
+      }
+      if (nameLower.includes('camiseiro') || subLower.includes('camiseiros')) {
+        return { filterCat: 'camiseiros', prio: 5 };
+      }
+      if (nameLower.includes('sommier') || subLower.includes('sommiers') || nameLower.includes('base')) {
+        return { filterCat: 'sommiers', prio: 6 };
+      }
+      if (nameLower.includes('cama') || subLower.includes('camas')) {
+        return { filterCat: 'camas', prio: 1 };
+      }
+      if (nameLower.includes('roupeiro') || subLower.includes('roupeiros')) {
+        return { filterCat: 'roupeiros', prio: 7 };
+      }
+      if (nameLower.includes('estrado') || subLower.includes('estrados')) {
+        return { filterCat: 'estrados', prio: 8 };
+      }
+      return { filterCat: 'outros', prio: 9 };
+    }
+
+    const qProducts = Object.values(window_products).filter(p => p.url && p.url.includes("quartos"));
+
+    qProducts.sort((a, b) => {
+      const infoA = getQuartosInfo(a);
+      const infoB = getQuartosInfo(b);
+      if (infoA.prio !== infoB.prio) return infoA.prio - infoB.prio;
+      return (a.name || '').localeCompare(b.name || '');
+    });
+
+    let html = '';
+    qProducts.forEach(p => {
+      const info = getQuartosInfo(p);
+
+      html += `
+        <a href="produto-detalhe.html?id=${p.id}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" data-category="${info.filterCat}" data-aos="fade-up" style="text-decoration:none; color:inherit;">
+          <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+            <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" />
+          </div>
+          <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+            <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.name}</h3>
+            <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+              <span class="price-discounted" style="font-weight:600; color:#c8b598;">Preço Sob Consulta</span>
+            </p>
+          </div>
+        </a>
+      `;
+    });
+    grid.innerHTML = html;
+
+    // Filter Buttons logic
+    const filterButtons = document.querySelectorAll('.filter-button');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active', 'bg-[#C8B598]', 'text-white');
+          btn.classList.add('bg-gray-100');
+        });
+        this.classList.add('active', 'bg-[#C8B598]', 'text-white');
+        this.classList.remove('bg-gray-100');
+
+        const products = document.querySelectorAll('.product');
+        products.forEach(product => {
+          if (category === 'all' || product.getAttribute('data-category') === category) {
+            product.style.display = 'block';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+
   function openSearchModal() {
     const m = document.getElementById('searchModal');
     if (m) {
@@ -646,14 +411,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleGlobalSearch(e) {
     e.preventDefault();
     const q = document.getElementById('searchInput').value.trim();
-    if (q) {
-      window.location.href = 'search.html?q=' + encodeURIComponent(q);
-    }
+    if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
   }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeSearchModal();
   });
 </script>
 </body>
-
 </html>
