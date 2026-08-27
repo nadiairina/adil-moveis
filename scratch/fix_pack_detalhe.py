@@ -181,17 +181,22 @@ if start_idx != -1 and end_idx != -1:
 else:
     print('1. Error: Failed to find officialPacks data marks!')
 
-# 2. Update rendering logic with raw string to preserve backslashes in JS output
+# 2. Update rendering logic with raw string to resolve dynamic primary images
 new_render_js = r'''itemsContainer.innerHTML = p.items.map(function(item) {
             var targetUrl = '#';
+            var itemImage = item.image;
             if (item.productId) {
               targetUrl = 'produto-detalhe.html?id=' + item.productId;
+              // Get the actual first image (primary image) of the product if it exists in the database
+              if (window.produtos && window.produtos[item.productId]) {
+                itemImage = window.produtos[item.productId].image;
+              }
             } else if (item.linkUrl) {
               targetUrl = item.linkUrl;
             }
             return '<a href="' + targetUrl + '" style="background:#fff; border:1px solid #E8E3DC; border-radius:10px; overflow:hidden; transition:all 0.3s; cursor:pointer; text-decoration:none; color:inherit;" class="hover:shadow-md hover:border-[#C8B598] flex flex-col">' +
                    '  <div style="aspect-ratio:1/1; background:#F7F4F0; overflow:hidden; position:relative;">' +
-                   '    <img src="' + item.image + '" alt="' + item.name + '" style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain; mix-blend-mode:darken; padding:8px; transition:transform 0.4s;" class="hover:scale-105" onerror="this.src=\'images/logo_sem_fundo.png\'" />' +
+                   '    <img src="' + itemImage + '" alt="' + item.name + '" style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain; mix-blend-mode:darken; padding:8px; transition:transform 0.4s;" class="hover:scale-105" onerror="this.src=\'images/logo_sem_fundo.png\'" />' +
                    '  </div>' +
                    '  <div style="padding:12px 14px; text-align:center; border-top:1px solid #E8E3DC; background:#FDFCFA; margin-top:auto;">' +
                    '    <h4 style="font-family:\'Inter\',sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:#1a1a1a; margin-bottom:4px; line-height:1.3;">' + item.name + '</h4>' +
