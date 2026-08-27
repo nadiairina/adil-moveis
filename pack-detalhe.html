@@ -770,7 +770,18 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         // Breadcrumbs
         var catLabel = p.category ? p.category.charAt(0).toUpperCase() + p.category.slice(1) : '';
         if (catLabel) {
-          document.getElementById('breadcrumb-category').textContent = catLabel; var bLink = document.getElementById('breadcrumb-category-link'); if (bLink) { bLink.href = (catLabel.toLowerCase().includes('pack') ? 'packs.html' : (p.category ? p.category.toLowerCase() + '.html' : 'index.html')); }
+          document.getElementById('breadcrumb-category').textContent = catLabel;
+          var bLink = document.getElementById('breadcrumb-category-link');
+          if (bLink) {
+            if (catLabel.toLowerCase().includes('pack')) {
+              bLink.href = 'packs.html';
+            } else if (p.category) {
+              var catSlug = p.category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+              bLink.href = catSlug + '.html';
+            } else {
+              bLink.href = 'index.html';
+            }
+          }
           document.getElementById('breadcrumb-cat-sep').style.display = 'inline';
         }
         document.getElementById('breadcrumb-name').textContent = p.name;
