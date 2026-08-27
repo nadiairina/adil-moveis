@@ -395,229 +395,92 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (overlay)  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeMenu(); });
 
-  // 1. Kids Products (10 official items from kids.html)
-  const kidsCatalog = [
-    {
-      id: "kids-1",
-      name: "Cama Estúdio Play",
-      category: "Kids",
-      subcategory: "Camas",
-      url: "produto-detalhe.html?id=kids-1",
-      image: "images/produtos/kids-1_main.jpg",
-      description: "Cama pessoa simples com estrado incluído. L1160 x A950 x P2030.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "cama", "cama estúdio", "estudio", "quarto infantil"]
-    },
-    {
-      id: "kids-2",
-      name: "Cama Elevatória Play",
-      category: "Kids",
-      subcategory: "Camas",
-      url: "produto-detalhe.html?id=kids-2",
-      image: "images/produtos/kids-2_main.jpg",
-      description: "Cama com estrado elevatório para colchão 2000 x 1000. L1160 x A950 x P2030.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "cama", "cama elevatória", "elevatoria", "arrumação", "quarto infantil"]
-    },
-    {
-      id: "kids-4",
-      name: "Beliche Play",
-      category: "Kids",
-      subcategory: "Beliches",
-      url: "produto-detalhe.html?id=kids-4",
-      image: "images/produtos/kids-4_main.jpg",
-      description: "Beliche duplo com 2 gavetões e escada incluída. Para colchões 2000 x 1000.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "beliche", "cama", "duplo", "gavetoes", "escada", "quarto infantil"]
-    },
-    {
-      id: "kids-8",
-      name: "Secretária Play",
-      category: "Kids",
-      subcategory: "Secretárias",
-      url: "produto-detalhe.html?id=kids-8",
-      image: "images/produtos/kids-8_main.jpg",
-      description: "Secretária de estudo com bloco de 3 gavetas. L1200 x A750 x P550.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "secretaria", "secretária", "estudo", "mesa", "gavetas", "quarto infantil"]
-    },
-    {
-      id: "kids-9",
-      name: "Roupeiro Play",
-      category: "Kids",
-      subcategory: "Roupeiros",
-      url: "produto-detalhe.html?id=kids-9",
-      image: "images/produtos/kids-9_main.jpg",
-      description: "Roupeiro 2 portas com 2 gavetas exteriores. L1000 x A2000 x P550.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "roupeiro", "armario", "armário", "gavetas", "quarto infantil"]
-    },
-    {
-      id: "kids-7",
-      name: "Camiseiro Alto Play",
-      category: "Kids",
-      subcategory: "Camiseiros",
-      url: "produto-detalhe.html?id=kids-7",
-      image: "images/produtos/kids-7_main.jpg",
-      description: "Camiseiro alto com 5 gavetas espaçosas. L600 x A1150 x P420.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "camiseiro", "gavetas", "arrumacao", "quarto infantil"]
-    },
-    {
-      id: "kids-6",
-      name: "Cómoda Play",
-      category: "Kids",
-      subcategory: "Cómodas",
-      url: "produto-detalhe.html?id=kids-6",
-      image: "images/produtos/kids-6_main.jpg",
-      description: "Cómoda 4 gavetões com corrediças suaves. L1000 x A850 x P450.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "comoda", "cómoda", "gavetas", "gavetoes", "quarto infantil"]
-    },
-    {
-      id: "kids-5",
-      name: "Mesa de Cabeceira Play",
-      category: "Kids",
-      subcategory: "Mesas de Cabeceira",
-      url: "produto-detalhe.html?id=kids-5",
-      image: "images/produtos/kids-5_main.jpg",
-      description: "Mesa de cabeceira com 2 gavetas. L500 x A450 x P380.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "mesa de cabeceira", "cabeceira", "mesa", "quarto infantil"]
-    },
-    {
-      id: "kids-10",
-      name: "Elemento Prateleiras Play",
-      category: "Kids",
-      subcategory: "Estantes",
-      url: "produto-detalhe.html?id=kids-10",
-      image: "images/produtos/kids-10_main.jpg",
-      description: "Estante suspensa com divisórias para livros e brinquedos. L1000 x A350 x P250.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "prateleiras", "estante", "livros", "brinquedos", "quarto infantil"]
-    },
-    {
-      id: "kids-11",
-      name: "Estante TV Play",
-      category: "Kids",
-      subcategory: "Móveis TV",
-      url: "produto-detalhe.html?id=kids-11",
-      image: "images/produtos/kids-11_main.jpg",
-      description: "Móvel baixo para TV ou arrumação com rodas. L900 x A450 x P400.",
-      keywords: ["kids", "crianca", "criança", "juvenil", "infantil", "estante tv", "movel tv", "móvel tv", "quarto infantil"]
-    }
-  ];
-
-  // 2. Mattress and Pillow Products (4 mattresses + 2 pillows from colchoes.html)
-  const mattressCatalog = [
-    {
-      id: "colchao-mindol",
-      name: "Mindol Evolution",
-      category: "Colchões",
-      subcategory: "Colchões",
-      url: "produto-detalhe.html?id=colchao-mindol",
-      image: "images/produtos/colchao-mindol.jpg",
-      description: "Coleções consistentes para as suas dores musculares. Soluções focadas na ergonomia e saúde da sua coluna.",
-      keywords: ["colchao", "colchão", "colchoes", "colchões", "mindol", "evolution", "molas", "ortopedico", "ergonomia", "dormir"]
-    },
-    {
-      id: "colchao-molaflex",
-      name: "Molaflex Freshcool",
-      category: "Colchões",
-      subcategory: "Colchões",
-      url: "produto-detalhe.html?id=colchao-molaflex",
-      image: "images/produtos/colchao-molaflex.avif",
-      description: "Coleções frescas para o seu descanso. Tecidos térmicos que garantem uma noite fresca e sono profundo.",
-      keywords: ["colchao", "colchão", "colchoes", "colchões", "molaflex", "freshcool", "fresco", "termico", "viscoelastico", "dormir"]
-    },
-    {
-      id: "colchao-bestbed",
-      name: "Bestbed Max Body",
-      category: "Colchões",
-      subcategory: "Colchões",
-      url: "produto-detalhe.html?id=colchao-bestbed",
-      image: "images/produtos/colchao-bestbed-v2.jpg",
-      description: "Coleções firmes para a sua coluna. O equilíbrio ideal entre firmeza e adaptabilidade para uma postura correta.",
-      keywords: ["colchao", "colchão", "colchoes", "colchões", "bestbed", "max body", "firme", "coluna", "postura", "dormir"]
-    },
-    {
-      id: "colchao-colmed",
-      name: "Colmed Airflow",
-      category: "Colchões",
-      subcategory: "Colchões",
-      url: "produto-detalhe.html?id=colchao-colmed",
-      image: "images/produtos/colchao-colmed.jpg",
-      description: "Coleções respiráveis para maior higiene e ventilação. Máxima circulação de ar para um descanso sem humidade.",
-      keywords: ["colchao", "colchão", "colchoes", "colchões", "colmed", "airflow", "respiravel", "ventilacao", "anti-alergico", "dormir"]
-    },
-    {
-      id: "almofada-1",
-      name: "Molaflex Almofada Ecofiber",
-      category: "Colchões",
-      subcategory: "Almofadas",
-      url: "produto-detalhe.html?id=almofada-1",
-      image: "images/produtos/colchoes/almofada-ecofiber-1.jpg",
-      description: "Apoio perfeito para o seu pescoço e coluna, garantindo noites de sono mais reparadoras.",
-      keywords: ["almofada", "almofadas", "molaflex", "ecofiber", "fibra", "pescoço", "sono", "dormir"]
-    },
-    {
-      id: "almofada-2",
-      name: "Molaflex Almofada Viscoprata",
-      category: "Colchões",
-      subcategory: "Almofadas",
-      url: "produto-detalhe.html?id=almofada-2",
-      image: "images/produtos/colchoes/almofada-viscoprata-1.webp",
-      description: "Tratamento antibacteriano com iões de prata e núcleo viscoelástico com memória de forma.",
-      keywords: ["almofada", "almofadas", "molaflex", "viscoprata", "visco", "viscoelastica", "prata", "dormir"]
-    }
-  ];
-
-  // 3. Packs Products (5 official packs from packs.html)
+  // Packs Catalog (5 official packs with correct paths and descriptions)
   const packsCatalog = [
     {
       id: "pack-1",
       name: "Pack Sala de Sonho",
-      category: "Packs",
+      category: "Packs Especiais",
       subcategory: "Packs Sala",
       url: "pack-detalhe.html?id=pack-1",
       image: "images/produtos/pack-sala-sonho-hq.jpg",
-      description: "Pack completo para sala de estar: sofá, móvel de TV e estante.",
-      keywords: ["pack", "packs", "sala", "sofa", "sofá", "estante", "movel tv", "móvel tv", "sala de estar", "sala de sonho"]
+      description: "Pack completo para sala de estar: sofá Orly e base de TV Madrid.",
+      keywords: ["pack", "packs", "sala", "sofa", "sofá", "base tv", "madrid", "orly", "sala de estar", "sala de sonho"]
     },
     {
       id: "pack-2",
       name: "Pack Sala de Sonho Premium",
-      category: "Packs",
+      category: "Packs Especiais",
       subcategory: "Packs Sala",
       url: "pack-detalhe.html?id=pack-2",
       image: "images/produtos/saladesonhopremium.jpg",
-      description: "Pack premium para sala com sofá de alta gama, mesa de centro e móvel TV de design.",
-      keywords: ["pack", "packs", "sala", "sofa", "sofá", "premium", "sala de estar", "sala de sonho premium"]
+      description: "Pack premium para sala: sofá Luna Chaise, base de TV Malmo e mesa de centro Malmo.",
+      keywords: ["pack", "packs", "sala", "sofa", "sofá", "premium", "luna", "malmo", "sala de estar", "sala de sonho premium"]
     },
     {
       id: "pack-3",
       name: "Pack Aconchego Essencial",
-      category: "Packs",
+      category: "Packs Especiais",
       subcategory: "Packs Quarto",
       url: "pack-detalhe.html?id=pack-3",
-      image: "images/produtos/aconchegoessecial.jpg",
-      description: "Pack de quarto completo: cama de casal, cabeceira, roupeiro e mesas de cabeceira.",
-      keywords: ["pack", "packs", "quarto", "cama", "casal", "cabeceira", "roupeiro", "dormitorio", "dormir", "aconchego", "pack quarto"]
+      image: "images/produtos/quarto-casal-madrid-bluewall.jpg",
+      description: "Pack de quarto completo: cama de casal Madrid, colchão Super Ortopédico e 2 almofadas Soft de oferta.",
+      keywords: ["pack", "packs", "quarto", "cama", "casal", "madrid", "colchao", "colchão", "ortopedico", "almofadas", "soft", "dormir", "aconchego", "pack quarto"]
     },
     {
       id: "pack-4",
       name: "Pack À Mesa",
-      category: "Packs",
+      category: "Packs Especiais",
       subcategory: "Packs Jantar",
       url: "pack-detalhe.html?id=pack-4",
       image: "images/produtos/amesa.jpg",
-      description: "Pack sala de jantar: mesa extensível, cadeiras e aparador.",
-      keywords: ["pack", "packs", "mesa", "jantar", "sala de jantar", "cadeiras", "aparador", "comer", "refeicao", "refeição", "pack jantar", "a mesa", "à mesa"]
+      description: "Pack sala de jantar: mesa extensível Paris e 4 cadeiras estofadas Paris.",
+      keywords: ["pack", "packs", "mesa", "jantar", "sala de jantar", "cadeiras", "paris", "comer", "refeicao", "refeição", "pack jantar", "a mesa", "à mesa"]
     },
     {
       id: "pack-5",
       name: "Pack Sonhos Tranquilos",
-      category: "Packs",
+      category: "Packs Especiais",
       subcategory: "Packs Quarto",
       url: "pack-detalhe.html?id=pack-5",
-      image: "images/produtos/sonhostranquilos.webp",
-      description: "Pack de quarto com cama, colchão, roupeiro e arrumação para descanso completo.",
-      keywords: ["pack", "packs", "quarto", "cama", "colchao", "colchão", "colchoes", "colchões", "dormir", "descanso", "roupeiro", "sonhos tranquilos"]
+      image: "images/produtos/colchao-bestbed-sublime-grafen-conjunto-1.jpg",
+      description: "Pack de quarto com sommier soft, cabeceira Divine e colchão de alta gama.",
+      keywords: ["pack", "packs", "quarto", "cama", "sommier", "soft", "cabeceira", "divine", "colchao", "colchão", "dormir", "descanso", "sonhos tranquilos"]
     }
   ];
 
-  // Plural mappings for robust Portuguese search
+  function getSearchableCatalog() {
+    const list = [];
+    
+    // Add all products dynamically from products.js (window_products)
+    if (typeof window_products !== 'undefined') {
+      for (const [key, p] of Object.entries(window_products)) {
+        list.push({
+          id: p.id || key,
+          name: p.name || "",
+          category: p.category || "Mobiliário",
+          subcategory: p.subcategory || "",
+          url: "produto-detalhe.html?id=" + encodeURIComponent(p.id || key),
+          image: p.image || "images/logo_sem_fundo.png",
+          description: p.description || "",
+          keywords: [
+            p.name,
+            p.category,
+            p.subcategory || "",
+            p.description || "",
+            ...(p.id ? p.id.split('-') : [])
+          ]
+        });
+      }
+    }
+
+    // Add Packs
+    list.push(...packsCatalog);
+
+    return list;
+  }
+  
+    // Plural mappings for robust Portuguese search
   const PLURAL_MAP = {
     'camas': 'cama',
     'sofas': 'sofa',
@@ -698,8 +561,8 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 
   function renderCard(p) {
     return `
-      <a href="${p.url}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" style="text-decoration:none; color:inherit; border:1px solid #E8E3DC;">
-        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+      <a href="${p.url}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" style="text-decoration:none; color:inherit;">
+        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:transparent;">
           <img src="${p.image}" alt="${p.name}" class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 hover:scale-105" style="mix-blend-mode: darken;" onerror="this.src='images/logo_sem_fundo.png'; this.style.objectFit='contain'; this.style.padding='20px';" />
         </div>
         <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
