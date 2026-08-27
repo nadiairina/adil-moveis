@@ -476,7 +476,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
           <div id="related-products-section" style="display:none;margin-top:6rem;padding-top:4rem;border-top:1px solid #E8E3DC;">
             <div style="margin-bottom:2.5rem;">
               <p style="font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">DESCUBRA TAMBÉM</p>
-              <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:#1a1a1a;" data-aos="fade-up">Poderá gostar também</h2>
+              <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:#1a1a1a;" data-aos="fade-up">Mais Packs Em Destaque</h2>
             </div>
             <div id="related-products-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;">
               <!-- Populated by JS -->
@@ -954,37 +954,36 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         buildOptions('custom1-container', 'custom1-title', 'custom1-options', p.custom1_name, p.custom1_options, 1);
         buildOptions('custom2-container', 'custom2-title', 'custom2-options', p.custom2_name, p.custom2_options, 2);
 
-        // Related products
-        var allProducts = Object.values(window.produtos);
-        var related = allProducts.filter(function(prod) {
-          return (prod.category === p.category || prod.url === p.url) && prod.id !== p.id;
+        // Related packs (Mais Packs Em Destaque)
+        var allPacks = Object.values(window.officialPacks);
+        var related = allPacks.filter(function(pk) {
+          return pk.id !== p.id;
         });
-        related.sort(function() { return 0.5 - Math.random(); });
-        var selected = related.slice(0, 4);
-
-        if (selected.length > 0) {
+        
+        if (related.length > 0) {
           document.getElementById('related-products-section').style.display = 'block';
           var grid = document.getElementById('related-products-grid');
-          selected.forEach(function(prod) {
+          grid.innerHTML = '';
+          related.forEach(function(pk) {
             var card = document.createElement('div');
             card.className = 'related-card';
-            var imgHtml = (prod.image && prod.image !== 'images/logo_sem_fundo.png')
-              ? '<img src="' + prod.image + '" alt="' + prod.name + '" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;">'
+            
+            var imgHtml = (pk.image && pk.image !== 'images/logo_sem_fundo.png')
+              ? '<img src="' + pk.image + '" alt="' + pk.name + '" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;">'
               : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#ccc;background:#f7f4f0;font-size:12px;">Imagem brevemente</div>';
 
-            var priceStr = prod.price > 0 ? prod.price.toFixed(2).replace('.',',') + ' €' : 'Sob consulta';
-
-            card.innerHTML = '<a href="produto-detalhe.html?id=' + prod.id + '" style="text-decoration:none;display:block;">'
+            card.innerHTML = '<a href="pack-detalhe.html?id=' + pk.id + '" style="text-decoration:none;display:block;">'
               + '<div class="img-wrap">' + imgHtml + '</div>'
-              + '<div style="padding:1rem;">'
-              + '<p style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#C8B598;margin-bottom:4px;">' + (prod.category || '') + '</p>'
-              + '<h3 style="font-family:\'Playfair Display\',serif;font-size:1rem;font-weight:400;color:#1a1a1a;margin-bottom:6px;line-height:1.3;" data-aos="fade-up">' + (prod.name || '') + '</h3>'
-              + '<p style="font-size:0.95rem;color:#6b6b6b;font-weight:500;">' + priceStr + '</p>'
-              + '</div></a>';
+              + '<div style="padding:1.25rem;">'
+              + '<p style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#C8B598;margin-bottom:4px;">Packs Especiais</p>'
+              + '<h3 style="font-family:\'Playfair Display\',serif;font-size:1.1rem;font-weight:400;color:#1a1a1a;margin-bottom:6px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + pk.name + '</h3>'
+              + '<p style="font-size:11px;font-weight:600;color:#c8b598;margin:0;">Preço Sob Consulta</p>'
+              + '</div>'
+              + '</a>';
             grid.appendChild(card);
           });
         }
-
+        
         // Re-init feather for dynamically added icons
         if (typeof feather !== 'undefined') feather.replace();
       });
