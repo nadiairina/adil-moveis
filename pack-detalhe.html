@@ -335,52 +335,34 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 
         <!-- Product Layout -->
         <div id="product-container" style="display:none;">
-          <!-- Special Pack Header -->
-          <div style="text-align:center; margin-bottom:2rem;">
-            <p id="product-category-label" style="font-size:10px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:#C8B598;margin-bottom:1rem;">PACK ESPECIAL</p>
-            <h1 id="dynamic-title-top" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:400;color:#1a1a1a;line-height:1.1;">Produto</h1>
-          </div>
           
-          <div class="flex flex-col gap-12 lg:gap-16">
-
-            <!-- TOP: Images (Full Width / Large) -->
-            <div style="width:100%;">
-              <!-- Main Image -->
-              <div class="pdp-main-image-wrap" id="mainImageWrap" style="position:relative; padding-top:45%; max-height: 600px; border-radius:12px; overflow:hidden;">
+          <!-- Two-Column Hero Row -->
+          <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start mb-16">
+            
+            <!-- LEFT COLUMN: Images (60% on desktop) -->
+            <div class="w-full lg:w-[60%]">
+              <!-- Main Image Wrap -->
+              <div class="pdp-main-image-wrap" id="mainImageWrap" style="position:relative; padding-top:66.67%; border-radius:12px; overflow:hidden; background:#F7F4F0; box-shadow:0 4px 20px rgba(0,0,0,0.02);">
                 <img id="mainImage" src="images/logo_sem_fundo.png" alt="Produto" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; object-position:center;">
-                <!-- Discount Badge (injected by JS) -->
+                <!-- Discount Badge -->
                 <div id="discount-badge-img" style="display:none;position:absolute;top:20px;left:20px;background:#C8B598;color:#fff;font-size:11px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;padding:6px 16px;border-radius:30px;z-index:2;box-shadow:0 4px 10px rgba(0,0,0,0.1);"></div>
               </div>
-
-              <!-- Thumbnails -->
+              
+              <!-- Gallery Thumbnails -->
               <div id="gallery-container" style="display:flex;gap:12px;margin-top:20px;overflow-x:auto;padding-bottom:10px;"></div>
             </div>
-
-            <!-- BOTTOM: Info & Options -->
-            <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
-              
-              <!-- Left side: Description & What's included -->
-              <div class="lg:w-1/2">
-                <h3 style="font-family:'Playfair Display',serif;font-size:1.75rem;color:#1a1a1a;margin-bottom:1rem;" data-aos="fade-up">Sobre este Pack</h3>
-                <div id="dynamic-desc-container" style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #E8E3DC;">
-                  <p id="dynamic-desc" style="font-size:1rem;color:#6b6b6b;line-height:1.8;font-weight:300;"></p>
-                </div>
+            
+            <!-- RIGHT COLUMN: Product Info & Actions (40% on desktop) -->
+            <div class="w-full lg:w-[40%]">
+              <div style="background:#fff; border:1px solid #E8E3DC; border-radius:12px; padding:2.5rem; box-shadow:0 10px 40px rgba(0,0,0,0.03);">
                 
-                <div style="margin-top:2rem;">
-                  <p style="font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">COMPOSIÇÃO DO CONJUNTO</p>
-                  <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:#1a1a1a;margin-bottom:1.25rem;" data-aos="fade-up">Peças Incluídas no Pack:</h3>
-                  <div id="pack-included-items" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" style="margin-bottom:1.5rem;"></div>
-                </div>
-              </div>
-
-              <!-- Right side: Customizations & Price -->
-              <div class="lg:w-1/2">
-                <div style="background:#fff; border:1px solid #E8E3DC; border-radius:12px; padding:2.5rem; position:sticky; top:90px; box-shadow:0 10px 40px rgba(0,0,0,0.03);">
-
-                <!-- Product Name -->
-                <h1 id="dynamic-title-side" style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;color:#1a1a1a;line-height:1.2;margin-bottom:1.25rem;">Produto</h1>
-
-                <!-- Price -->
+                <!-- Category Label -->
+                <p id="product-category-label" style="font-size:10px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:#C8B598;margin-bottom:0.75rem;">PACK ESPECIAL</p>
+                
+                <!-- Product/Pack Name -->
+                <h1 id="dynamic-title" style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;color:#1a1a1a;line-height:1.2;margin-bottom:1.25rem;">Produto</h1>
+                
+                <!-- Price block -->
                 <div id="price-block" style="margin-bottom:1.75rem;">
                   <div id="productPrice" style="font-family:'Inter',sans-serif;font-size:1.6rem;font-weight:500;color:#1a1a1a;"></div>
                   <div id="price-original-wrap" style="display:none;margin-top:4px;">
@@ -388,36 +370,38 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                     <span id="discount-pct-badge" style="font-size:11px;font-weight:700;background:#C8B598;color:#fff;padding:2px 8px;border-radius:2px;"></span>
                   </div>
                 </div>
-
-
-
-                <!-- Custom Option 1 (Sizes / Colours) -->
+                
+                <!-- Description (moved to right side for balanced top section) -->
+                <div id="dynamic-desc-container" style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #E8E3DC;">
+                  <p id="dynamic-desc" style="font-size:1rem;color:#6b6b6b;line-height:1.8;font-weight:300;"></p>
+                </div>
+                
+                <!-- Custom Option 1 -->
                 <div id="custom1-container" style="display:none;margin-bottom:1.5rem;">
-                  <h3 id="custom1-title" style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1a1a1a;margin-bottom:0.75rem;" data-aos="fade-up">Opção 1</h3>
+                  <h3 id="custom1-title" style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1a1a1a;margin-bottom:0.75rem;">Opção 1</h3>
                   <div id="custom1-options" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
                 </div>
-
-                <!-- Custom Option 2 (Fabric / Colour) -->
+                
+                <!-- Custom Option 2 -->
                 <div id="custom2-container" style="display:none;margin-bottom:1.5rem;">
-                  <h3 style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1a1a1a;margin-bottom:0.75rem;display:flex;justify-content:space-between;align-items:center;" data-aos="fade-up">
+                  <h3 style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1a1a1a;margin-bottom:0.75rem;display:flex;justify-content:space-between;align-items:center;">
                     <span id="custom2-title">Opção 2</span>
-                    
                   </h3>
                   <div id="custom2-options" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
                 </div>
-
-                <!-- Add to Cart -->
+                
+                <!-- Add to Cart (Snipcart) -->
                 <button id="addToCartBtn" class="snipcart-add-item" style="width:100%;background:#C8B598;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">
                   <i data-feather="shopping-bag" style="width:18px;height:18px;"></i>
                   <span>Adicionar ao Carrinho</span>
                 </button>
-
-                <!-- Pedir Orçamento via WhatsApp -->
+                
+                <!-- WhatsApp Quote Button -->
                 <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:none;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
                   <i data-feather="message-circle" style="width:18px;height:18px;"></i>
                   <span>Pedir Orçamento via WhatsApp</span>
                 </a>
-
+                
                 <!-- Helper Buttons -->
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.75rem;">
                   <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:0.85rem;border:1px solid #C8B598;color:#C8B598;font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.2s;" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" onmouseout="this.style.background='transparent';this.style.color='#C8B598';">
@@ -429,7 +413,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                     Dúvidas?
                   </a>
                 </div>
-
+                
                 <!-- Trust Badges -->
                 <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:1.5rem;">
                   <div class="trust-badge">
@@ -449,7 +433,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                     <span>Recolha de Móveis Usados Grátis</span>
                   </div>
                 </div>
-
+                
                 <!-- Nota sobre Tecidos -->
                 <div style="background:#fcf9f5; border:1px dashed #C8B598; padding:1.25rem; border-radius:3px; margin-bottom:1.5rem; text-align:center;">
                   <span style="font-size:16px; display:block; margin-bottom:0.5rem;">🎨</span>
@@ -458,21 +442,27 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                     Trabalhamos com catálogos premium (tecnologia anti-mancha, pet-friendly e repelentes de água). Como as cores variam nos ecrãs, convidamo-lo a <a href="contactos.html" style="color:#C8B598; text-decoration:underline; font-weight:bold;">visitar a nossa loja</a> ou a <a href="https://wa.me/351960209396" target="_blank" style="color:#25D366; text-decoration:underline; font-weight:bold;">contactar-nos via WhatsApp</a> para lhe enviarmos vídeos reais das amostras.
                   </p>
                 </div>
-
+                
                 <!-- Agendar Visita CTA -->
-                <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;background:#F5F0E8;border:1px solid #C8B598;color:#1a1a1a;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.25s;" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" onmouseout="this.style.background='#F5F0E8';this.style.color='#1a1a1a';">
+                <a href="contactos.html" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;background:#F5F0E8;border:1px solid #C8B598;color:#1a1a1a;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.25s;" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" onmouseout="this.style.background='#F5F0E8';this.style.color:#1a1a1a;">
                   <i data-feather="calendar" style="width:16px;height:16px;"></i>
                   Agendar Visita à Loja · Adil Móveis Feijó
                 </a>
-
-                </div> <!-- End of Card -->
+                
               </div>
             </div>
-
-
-          </div><!-- /product layout -->
-
-          <!-- ── Related Products ─────────────────────────────── -->
+            
+          </div>
+          
+          <!-- BOTTOM: Full-Width Included Items -->
+          <div style="margin-top:4rem; padding-top:4rem; border-top:1px solid #E8E3DC;">
+            <p style="font-size:9px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">COMPOSIÇÃO DO CONJUNTO</p>
+            <h3 style="font-family:'Playfair Display',serif;font-size:1.75rem;color:#1a1a1a;margin-bottom:1.5rem;">Peças Incluídas no Pack:</h3>
+            <div id="pack-included-items" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" style="margin-bottom:1.5rem;"></div>
+          </div>
+          
+        </div>
+        <!-- ── Related Products ─────────────────────────────── -->
           <div id="related-products-section" style="display:none;margin-top:6rem;padding-top:4rem;border-top:1px solid #E8E3DC;">
             <div style="margin-bottom:2.5rem;">
               <p style="font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">DESCUBRA TAMBÉM</p>
@@ -795,8 +785,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         }
 
         // Title
-        var tTop = document.getElementById('dynamic-title-top'); if (tTop) tTop.textContent = p.name;
-        var tSide = document.getElementById('dynamic-title-side'); if (tSide) tSide.textContent = p.name;
+        
         var tMain = document.getElementById('dynamic-title'); if (tMain) tMain.textContent = p.name;
 
         // Price & discount
