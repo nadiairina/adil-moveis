@@ -467,8 +467,8 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         <!-- ── Related Products ─────────────────────────────── -->
           <div id="related-products-section" style="display:none;margin-top:6rem;padding-top:4rem;border-top:1px solid #E8E3DC;">
             <div style="margin-bottom:2.5rem;">
-              <p style="font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">DESCUBRA TAMBÉM</p>
-              <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:#1a1a1a;" data-aos="fade-up">Mais Packs Em Destaque</h2>
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#C8B598;margin-bottom:0.5rem;">DESCUBRA MAIS</p>
+              <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:#1a1a1a;" data-aos="fade-up">Outros Packs Pensados Para Si</h2>
             </div>
             <div id="related-products-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;">
               <!-- Populated by JS -->
@@ -919,7 +919,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         // Custom options builder
         function buildOptions(containerId, titleId, optionsId, customName, customOptionsRaw, customIndex) {
           var container = document.getElementById(containerId);
-          if (!customName || !customOptionsRaw) { container.style.display = 'none'; return; }
+          if (!customName || !customOptionsRaw) { if (container) container.style.display = 'none'; return; }
 
           container.style.display = 'block';
           document.getElementById(titleId).textContent = customName;
