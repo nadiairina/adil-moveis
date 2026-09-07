@@ -1891,7 +1891,7 @@ var window_products = window.window_products = window.produtos = {
     "url": "colchoes.html",
     "category": "Colchões",
     "description": "Colchão Ortopédico de elevada densidade (Pack Aconchego).",
-    "image": "images/produtos/placeholder.jpg",
+    "image": "images/produtos/cama-estofada-colchao-pack.jpg",
     "gallery": [],
     "subcategory": "Colchões"
   },
