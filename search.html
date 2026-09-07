@@ -518,46 +518,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   }
 
-  function getSearchableCatalog() {
-    const list = [];
-    
-    // Add Quartos and Salas products from window_products FIRST (adult products get priority)
-    if (typeof window_products !== 'undefined') {
-      for (const [key, p] of Object.entries(window_products)) {
-        // Skip Colchões and Kids in window_products (we have the verified official ones)
-        if (p.category === 'Colchões' || p.category === 'Kids' || key.startsWith('colchao-') || key.startsWith('kids-') || key.startsWith('almofada-')) {
-          continue;
-        }
-        
-        list.push({
-          id: p.id || key,
-          name: p.name || "",
-          category: p.category || "Mobiliário",
-          subcategory: p.subcategory || "",
-          url: "produto-detalhe.html?id=" + encodeURIComponent(p.id || key),
-          image: p.image || "images/logo_sem_fundo.png",
-          description: p.description || "",
-          keywords: [
-            p.name,
-            p.category,
-            p.subcategory || "",
-            ...(p.id ? p.id.split('-') : [])
-          ]
-        });
-      }
-    }
 
-    // Add Packs
-    list.push(...packsCatalog);
-
-    // Add Mattress & Pillow items
-    list.push(...mattressCatalog);
-
-    // Add Kids products (they appear after main adult categories)
-    list.push(...kidsCatalog);
-
-    return list;
-  }
 
   function renderCard(p) {
     return `
