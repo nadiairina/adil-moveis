@@ -637,7 +637,11 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                 var prod = window_products[k];
                 if (!prod) return false;
                 var c = prod.category ? prod.category.toLowerCase() : '';
-                return (c === currentCategory.toLowerCase() && k !== currentId);
+                if (c !== currentCategory.toLowerCase() || k === currentId) return false;
+                // Exclude products without real images
+                var img = prod.image || (prod.images && prod.images[0]) || '';
+                if (!img || img.indexOf('sem-imagem') !== -1 || img.indexOf('logo') !== -1) return false;
+                return true;
             });
             
             sameCategoryKeys.sort(function() { return 0.5 - Math.random() });
@@ -841,7 +845,7 @@ document.title = p.name + ' — Adil Móveis';
               ? '<img src="' + prod.image + '" alt="' + prod.name + '" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;">'
               : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#ccc;background:#f7f4f0;font-size:12px;">Imagem brevemente</div>';
 
-            var priceStr = prod.price > 0 ? prod.price.toFixed(2).replace('.',',') + ' €' : 'Sob consulta';
+            var priceStr = (typeof prod.price === 'number' && prod.price > 0) ? prod.price.toFixed(2).replace('.',',') + ' €' : 'Sob consulta';
 
             card.innerHTML = '<a href="produto-detalhe.html?id=' + prod.id + '" style="text-decoration:none;display:block;">'
               + '<div class="img-wrap">' + imgHtml + '</div>'
