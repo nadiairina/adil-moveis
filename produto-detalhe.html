@@ -368,6 +368,10 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                     <span id="discount-pct-badge" style="font-size:11px;font-weight:700;background:#C8B598;color:#fff;padding:2px 8px;border-radius:2px;"></span>
                   </div>
                 </div>
+                <!-- Pack Discount Note -->
+                <div id="pack-discount-note" style="display:none; margin-top:8px; font-size:11px; color:#e63946; font-weight:600; letter-spacing:0.02em;">
+                  * Ao comprar o Pack tem 50% de Desconto, os 10% promocionais não são acumuláveis com esta campanha.
+                </div>
 
                 <!-- Description -->
                 <div id="dynamic-desc-container" style="display:none;" style="margin-bottom:1.75rem;padding-bottom:1.75rem;border-bottom:1px solid #E8E3DC;">
@@ -611,7 +615,67 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         document.getElementById('product-container').style.display = 'block';
 
         // Page title
-        document.title = p.name + ' — Adil Móveis';
+        
+        // --- PACK DISCOUNT NOTE ---
+        var packNote = document.getElementById('pack-discount-note');
+        if (packNote) {
+            if (productId.startsWith('pack') || (p.category && p.category.toLowerCase() === 'packs')) {
+                packNote.style.display = 'block';
+            } else {
+                packNote.style.display = 'none';
+            }
+        }
+        
+        // --- RELATED PRODUCTS ---
+        function renderRelatedProducts(currentCategory, currentId) {
+            var relatedGrid = document.getElementById('related-products-grid');
+            var relatedSection = document.getElementById('related-products-section');
+            if (!relatedGrid || !relatedSection || !window_products) return;
+            
+            var allKeys = Object.keys(window_products);
+            var sameCategoryKeys = allKeys.filter(function(k) {
+                var prod = window_products[k];
+                if (!prod) return false;
+                var c = prod.category ? prod.category.toLowerCase() : '';
+                return (c === currentCategory.toLowerCase() && k !== currentId);
+            });
+            
+            sameCategoryKeys.sort(function() { return 0.5 - Math.random() });
+            var selectedKeys = sameCategoryKeys.slice(0, 4);
+            
+            if (selectedKeys.length > 0) {
+                var html = '';
+                selectedKeys.forEach(function(k) {
+                    var prod = window_products[k];
+                    var img = (prod.images && prod.images.length > 0) ? prod.images[0] : 'images/logo_sem_fundo.png';
+                    
+                    var pName = prod.name || '';
+                    var displayPrice = prod.price ? ('€' + prod.price.toFixed(2).replace('.',',')) : 'Preço Sob Consulta';
+                    if (prod.price === 0) displayPrice = 'Preço Sob Consulta';
+                    
+                    html += `
+                      <a href="produto-detalhe.html?id=${k}" class="product bg-white rounded overflow-hidden block hover:shadow-md transition-shadow relative" style="text-decoration:none; color:inherit;">
+                        <div class="relative w-full" style="aspect-ratio: 1 / 1; overflow:hidden; background:#F7F4F0;">
+                          <img src="${img}" alt="${pName}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" style="mix-blend-mode: normal !important; object-fit: cover !important;" />
+                        </div>
+                        <div class="p-4 text-center" style="background:#FDFCFA; border-top:1px solid #E8E3DC;">
+                          <h3 style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; color:#1a1a1a; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${pName}</h3>
+                          <p style="font-family:'Inter',sans-serif; font-size:11px; margin:0;">
+                            <span class="price-discounted" style="font-weight:600; color:#c8b598;">${displayPrice}</span>
+                          </p>
+                        </div>
+                      </a>
+                    `;
+                });
+                relatedGrid.innerHTML = html;
+                relatedSection.style.display = 'block';
+            }
+        }
+        
+        if (p.category) {
+            renderRelatedProducts(p.category, productId);
+        }
+document.title = p.name + ' — Adil Móveis';
 
         // Breadcrumbs
         var catLabel = p.category ? p.category.charAt(0).toUpperCase() + p.category.slice(1) : '';
