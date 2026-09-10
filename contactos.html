@@ -691,6 +691,49 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   });
 </script>
 
+
+<!-- ══════════════════════════════════════════════════════
+     FLOATING DISCOUNT BUTTON & MODAL (10% OFF IN STORE)
+══════════════════════════════════════════════════════ -->
+<div id="discountFloatingBtnWrap" style="position:fixed; bottom:24px; left:24px; z-index:9990;">
+  <button onclick="openDiscountModal()" style="display:flex; align-items:center; gap:8px; background:#C8B598; color:#ffffff; border:1px solid #B8A588; padding:10px 18px; border-radius:30px; font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.03em; box-shadow:0 6px 20px rgba(0,0,0,0.15); cursor:pointer; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.background='#b8a588';" onmouseout="this.style.transform='none'; this.style.background='#C8B598';">
+    <span style="font-size:14px;">🎁</span>
+    <span>10% Desconto em Loja</span>
+  </button>
+</div>
+
+<!-- Modal 10% Desconto -->
+<div id="discountModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:1rem;">
+  <div style="background:#ffffff; max-width:480px; width:100%; border-radius:16px; padding:2rem; position:relative; box-shadow:0 20px 50px rgba(0,0,0,0.25); border:1px solid #E8E3DC;">
+    <button onclick="closeDiscountModal()" style="position:absolute; top:16px; right:16px; background:none; border:none; font-size:22px; color:#999; cursor:pointer; line-height:1; padding:4px;" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#999'">&times;</button>
+    
+    <div style="text-align:center; margin-bottom:1.25rem;">
+      <span style="font-size:10px; font-weight:700; letter-spacing:0.25em; text-transform:uppercase; color:#C8B598; display:block; margin-bottom:0.5rem;">OFERTA DE BOAS-VINDAS</span>
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; font-weight:400; color:#1a1a1a; margin:0 0 0.5rem 0;">Ganhe 10% de Desconto</h3>
+      <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#6b6b6b; line-height:1.6; margin:0;">
+        Registe o seu e-mail para receber um vale de 10% de desconto válido na sua 1ª compra na nossa loja física no Feijó.
+      </p>
+    </div>
+
+    <!-- MailerLite Form -->
+    <div class="ml-embedded" data-form="oCm4cl"></div>
+  </div>
+</div>
+
+<script>
+  function openDiscountModal() {
+    var modal = document.getElementById('discountModal');
+    if (modal) modal.style.display = 'flex';
+  }
+  function closeDiscountModal() {
+    var modal = document.getElementById('discountModal');
+    if (modal) modal.style.display = 'none';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeDiscountModal();
+  });
+</script>
+
 </body>
 
 </html>
