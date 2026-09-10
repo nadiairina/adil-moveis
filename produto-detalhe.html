@@ -650,7 +650,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                     var img = prod.image || ((prod.images && prod.images.length > 0) ? prod.images[0] : 'images/logo_sem_fundo.png');
                     
                     var pName = prod.name || '';
-                    var displayPrice = prod.price ? ('€' + prod.price.toFixed(2).replace('.',',')) : 'Preço Sob Consulta';
+                    var displayPrice = (typeof prod.price === 'number' && prod.price > 0) ? ('€' + prod.price.toFixed(2).replace('.',',')) : 'Preço Sob Consulta';
                     if (prod.price === 0) displayPrice = 'Preço Sob Consulta';
                     
                     html += `
