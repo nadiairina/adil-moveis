@@ -701,5 +701,36 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
+
+<script>
+  function setupFilters() {
+    const filterButtons = document.querySelectorAll('.filter-button');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        filterButtons.forEach(b => {
+          b.classList.remove('active', 'bg-[#C8B598]', 'text-white');
+          b.classList.add('bg-gray-100');
+        });
+        this.classList.add('active', 'bg-[#C8B598]', 'text-white');
+        this.classList.remove('bg-gray-100');
+
+        const products = document.querySelectorAll('.product');
+        products.forEach(p => {
+          if (category === 'all' || p.getAttribute('data-category') === category) {
+            p.style.display = '';
+          } else {
+            p.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupFilters);
+  } else {
+    setupFilters();
+  }
+</script>
 </body>
 </html>
