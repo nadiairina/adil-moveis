@@ -1270,3 +1270,8 @@ footer div.border-b {
   width: 100% !important;
   height: 100% !important;
 }
+
+/* MailerLite form: hide duplicate "Ganhe 10% de Desconto" heading inside embedded form */
+.ml-form-embedContent h4 {
+  display: none !important;
+}
