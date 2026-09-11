@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <rect width="220" height="80" rx="8" fill="#ffffff"/>
+  <!-- Three colored squares -->
+  <rect x="10" y="15" width="28" height="50" rx="4" fill="#FF6600"/>
+  <rect x="44" y="15" width="28" height="50" rx="4" fill="#0066CC"/>
+  <rect x="78" y="15" width="28" height="50" rx="4" fill="#FF6600"/>
+  <!-- Text -->
+  <text x="130" y="42" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#0066CC" text-anchor="middle">multi</text>
+  <text x="130" y="60" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#0066CC" text-anchor="middle">banco</text>
+</svg>
