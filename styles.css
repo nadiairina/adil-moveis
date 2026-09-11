@@ -1271,7 +1271,16 @@ footer div.border-b {
   height: 100% !important;
 }
 
-/* MailerLite form: hide duplicate "Ganhe 10% de Desconto" heading inside embedded form */
-.ml-form-embedContent h4 {
+/* MailerLite form: hide duplicate heading in page sections, but keep styled title in popup modal */
+section .ml-form-embedContent h4 {
   display: none !important;
+}
+
+#discountModal .ml-form-embedContent h4 {
+  display: block !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  margin-bottom: 8px !important;
 }
