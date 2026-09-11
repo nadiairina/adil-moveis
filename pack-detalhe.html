@@ -767,6 +767,22 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         // Page title
         document.title = p.name + ' — Adil Móveis';
 
+        // Enviar evento GA4 com o nome e ID exato do pack aberto
+        if (typeof gtag === 'function') {
+          gtag('event', 'view_item', {
+            items: [{
+              item_id: packId,
+              item_name: p.name,
+              item_category: 'Packs Especiais'
+            }]
+          });
+          gtag('event', 'page_view', {
+            page_title: p.name + ' — Adil Móveis',
+            page_location: window.location.href,
+            page_path: '/pack-detalhe.html?id=' + packId
+          });
+        }
+
         // Breadcrumbs
         var catLabel = p.category ? p.category.charAt(0).toUpperCase() + p.category.slice(1) : '';
         if (catLabel) {
