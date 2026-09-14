@@ -637,16 +637,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- WhatsApp Floating Button -->
 <!-- Floating Contact Widget (Adil Móveis Premium) -->
 <div class="floating-contact-bar">
-<a class="floating-btn floating-btn-sec" href="https://www.google.com/maps/search/?api=1&amp;query=Adil+Móveis+Feijó+Almada" rel="noopener" target="_blank">
+      <a href="https://www.google.com/maps/search/?api=1&query=Adil+Móveis+Feijó+Almada" target="_blank" rel="noopener" class="floating-btn floating-btn-sec" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_loja', {'event_category': 'contacto_flutuante', 'event_label': 'Ver Loja no Mapa'});}">
         📍 Loja
       </a>
-<a class="floating-btn floating-btn-primary" href="contactos.html?agendar=true">
-        📅 Agendar
+      <a href="contactos.html?agendar=true" class="floating-btn floating-btn-primary" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_agendar', {'event_category': 'contacto_flutuante', 'event_label': 'Agendar Visita'});}">
+        📅 Agendar Visita
       </a>
-<a class="floating-btn floating-btn-wpp" href="https://wa.me/351960209396" rel="noopener" target="_blank">
+      <a href="https://wa.me/351960209396" target="_blank" rel="noopener" class="floating-btn floating-btn-wpp" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_whatsapp', {'event_category': 'contacto_flutuante', 'event_label': 'Pedir Orcamento WhatsApp'});}">
         💬 Orçamento
       </a>
-</div>
+    </div>
 <!-- AOS (Animate on Scroll) JS and Initialization -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
