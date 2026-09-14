@@ -305,7 +305,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
               
               <!-- TAB 1: Direct Message Form -->
               <div id="contact-tab-message" style="display:block;">
-                <form class="space-y-6" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST">
+                <form class="space-y-6" action="https://formsubmit.co/adil.moveis@hotmail.com" method="POST" onsubmit="if(typeof gtag==='function'){gtag('event', 'generate_lead', {'event_category': 'formulario_contacto', 'event_label': 'Mensagem Orcamento Enviada'});}">
                   <input type="hidden" name="_subject" value="Pedido de Orçamento / Mensagem - Adil Móveis">
                   
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -730,6 +730,16 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
   }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeDiscountModal();
+  });
+  // Rastreio GA4 de chamadas telefonicas
+  document.addEventListener('click', function(e) {
+    var tel = e.target.closest('a[href^="tel:"]');
+    if (tel && typeof gtag === 'function') {
+      gtag('event', 'click_chamada_telefonica', {
+        'event_category': 'contacto_telefone',
+        'event_label': tel.getAttribute('href').replace('tel:', '')
+      });
+    }
   });
 </script>
 

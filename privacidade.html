@@ -899,6 +899,16 @@ document.addEventListener('snipcart.ready', function() {
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeDiscountModal();
   });
+  // Rastreio GA4 de chamadas telefonicas
+  document.addEventListener('click', function(e) {
+    var tel = e.target.closest('a[href^="tel:"]');
+    if (tel && typeof gtag === 'function') {
+      gtag('event', 'click_chamada_telefonica', {
+        'event_category': 'contacto_telefone',
+        'event_label': tel.getAttribute('href').replace('tel:', '')
+      });
+    }
+  });
 </script>
 
 </body>
