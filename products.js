@@ -1898,7 +1898,7 @@ var window_products = window.window_products = window.produtos = {
 
   "colchao-mindol": {
     "id": "colchao-mindol",
-    "name": "Mindol Evolution",
+    "name": "Colchão Evolution",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1912,7 +1912,7 @@ var window_products = window.window_products = window.produtos = {
   },
   "colchao-molaflex": {
     "id": "colchao-molaflex",
-    "name": "Molaflex Freshcool",
+    "name": "Colchão Freshcool",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1924,7 +1924,7 @@ var window_products = window.window_products = window.produtos = {
   },
   "colchao-bestbed": {
     "id": "colchao-bestbed",
-    "name": "Bestbed Max Body",
+    "name": "Colchão Max Body",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1936,7 +1936,7 @@ var window_products = window.window_products = window.produtos = {
   },
   "colchao-colmed": {
     "id": "colchao-colmed",
-    "name": "Colmed Airflow",
+    "name": "Colchão Airflow",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1949,7 +1949,7 @@ var window_products = window.window_products = window.produtos = {
 
   "almofada-1": {
     "id": "almofada-1",
-    "name": "Molaflex Almofada Ecofiber",
+    "name": "Almofada Ecofiber",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
@@ -1961,7 +1961,7 @@ var window_products = window.window_products = window.produtos = {
   },
   "almofada-2": {
     "id": "almofada-2",
-    "name": "Molaflex Almofada Viscoprata",
+    "name": "Almofada Viscoprata",
     "price": 0,
     "url": "colchoes.html",
     "category": "Colchões",
