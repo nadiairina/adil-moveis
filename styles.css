@@ -1013,12 +1013,19 @@ footer.bg-black img {
 
 @media (max-width: 480px) {
   .floating-contact-bar {
-    gap: 6px;
-    padding: 6px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 24px;
+    width: 92vw;
   }
   .floating-btn {
-    padding: 5px 8px;
-    font-size: 7.5px;
+    display: flex;
+    justify-content: center;
+    padding: 8px 4px;
+    font-size: 8.5px;
+    width: 100%;
   }
 }
 
