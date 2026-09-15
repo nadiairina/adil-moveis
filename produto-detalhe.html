@@ -735,7 +735,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         document.getElementById('addToCartBtn').style.display = 'none';
         document.getElementById('quoteWhatsAppBtn').style.display = 'flex';
         var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name + ' (Ref: ' + p.id + ')';
-        document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento.?text=' + encodeURIComponent(textMessage);
+        document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage);
 
         // Add to cart setup
         var btn = document.getElementById('addToCartBtn');
@@ -821,7 +821,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
             var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name + ' (Ref: ' + p.id + ')';
             var custom1 = btn.dataset.itemCustom1Name ? '\\n- ' + btn.dataset.itemCustom1Name + ': ' + btn.dataset.itemCustom1Value : '';
             var custom2 = btn.dataset.itemCustom2Name ? '\\n- ' + btn.dataset.itemCustom2Name + ': ' + btn.dataset.itemCustom2Value : '';
-            document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento.?text=' + encodeURIComponent(textMessage + custom1 + custom2);
+            document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage + custom1 + custom2);
           }
 
           opts.forEach(function(opt, i) {
