@@ -733,7 +733,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         // Prices hidden - always show WhatsApp quote button only
         document.getElementById('addToCartBtn').style.display = 'none';
         document.getElementById('quoteWhatsAppBtn').style.display = 'flex';
-        var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name + ' (Ref: ' + p.id + ')';
+        var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name;
         document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage);
 
         // Add to cart setup
@@ -817,7 +817,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
           flexDiv.innerHTML = '';
           
           function updateWhatsAppLink() {
-            var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name + ' (Ref: ' + p.id + ')';
+            var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name;
             var custom1 = btn.dataset.itemCustom1Name ? '\\n- ' + btn.dataset.itemCustom1Name + ': ' + btn.dataset.itemCustom1Value : '';
             var custom2 = btn.dataset.itemCustom2Name ? '\\n- ' + btn.dataset.itemCustom2Name + ': ' + btn.dataset.itemCustom2Value : '';
             document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage + custom1 + custom2);
