@@ -738,7 +738,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
             description: "Dormir com estilo nunca foi tão fácil! ✨<br><br>Esqueça a cama básica. Aqui, você é o designer do seu descanso!<br><br>• <strong>Base Estofada:</strong> Estrutura robusta e duradoura, disponível em medidas do solteiro ao king size e em dezenas de tecidos.<br>• <strong>Cabeceira Estofada:</strong> Design elegante (modelos modernos, clássicos ou minimalistas) para transformar o quarto.<br>• <strong>Colchão Adequado a Si:</strong> Ajustado exatamente às suas necessidades de suporte e postura.<br><br>🔹 Medidas sob medida – Do solteiro ao king, temos o tamanho exato para o seu espaço.<br>🔹 Cores infinitas – Do neutro sofisticado ao tom ousado, a cor que combina com a sua personalidade.<br>🔹 Modelos para todos os gostos – Bases modernas, cabeceiras estofadas, clássicas ou minimalistas. O seu quarto, a sua cara!<br><br>E o melhor: o colchão perfeito espera por si!<br>🛌 Faça um diagnóstico gratuito e descubra, em minutos, o nível de firmeza ideal para as suas costas e noites de sono.<br><br>Tudo junto e com um empurrãozinho no bolso:<br>💰 <strong>Descontos até 50%</strong> na compra de conjunto (cama + colchão)! *<br><span style=\"font-size:0.85em; color:#6b6b6b;\">* Os cupões de 10% não são acumuláveis com esta campanha.</span><br><br>Crie a cama dos seus sonhos, peça por peça, e poupe a sério.<br>👑 Conforto que se vê, estilo que se sente, preço que se agrada.<br><br>Venha fazer o seu diagnóstico gratuito! A sua combinação perfeita espera por si! 🛏️"
           }
         };
-        p = (window.officialPacks && window.officialPacks[productId]) || (window.produtos && (window.produtos[productId] || window.produtos[cleanId]));
+        var p = (window.officialPacks && window.officialPacks[productId]) || (window.produtos && (window.produtos[productId] || window.produtos[cleanId]));
         
         // Se o produto não existir na base de dados (placeholders como kids-17 ou pack-5)
         if (!p) {
@@ -771,7 +771,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         if (typeof gtag === 'function') {
           gtag('event', 'view_item', {
             items: [{
-              item_id: packId,
+              item_id: productId,
               item_name: p.name,
               item_category: 'Packs Especiais'
             }]
@@ -779,7 +779,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
           gtag('event', 'page_view', {
             page_title: p.name + ' — Adil Móveis',
             page_location: window.location.href,
-            page_path: '/pack-detalhe.html?id=' + packId
+            page_path: '/pack-detalhe.html?id=' + productId
           });
         }
 
