@@ -726,7 +726,21 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         // Prices hidden - always show "Preço sob consulta"
         priceEl.style.display = 'none';
 
+        // Prices hidden - always show WhatsApp quote button only
         
+        
+        var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name;
+        document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage);
+
+        // Add to cart setup
+        var btn = document.createElement('a');
+        btn.dataset.itemId       = p.id;
+        btn.dataset.itemName     = p.name;
+        if (p.buy_link) {
+          btn.href = p.buy_link;
+          btn.onclick = null; // Disable add to cart popup
+          btn.innerHTML = '<i class="fas fa-shopping-bag mr-2"></i> COMPRAR AGORA';
+          btn.style.backgroundColor = '#16a34a'; // Green
         } else {
           btn.href = 'javascript:void(0)';
           btn.innerHTML = '<i class="fas fa-shopping-bag mr-2"></i> Adicionar ao Carrinho';

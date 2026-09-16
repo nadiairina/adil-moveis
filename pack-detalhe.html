@@ -820,6 +820,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         }
 
         // Add to cart setup
+        var btn = document.createElement('a');
         btn.dataset.itemId       = p.id;
         btn.dataset.itemName     = p.name;
         btn.dataset.itemPrice    = p.price > 0 ? p.price : 0.01;
@@ -1064,7 +1065,8 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                 'event_category': 'contacto_pack',
                 'event_label': pName,
                 'page_location': window.location.href
-              });
+                if (typeof fbq === 'function') fbq('track', 'Lead');
+          });
             }
             if (typeof fbq === 'function') fbq('track', 'Lead');
           });
