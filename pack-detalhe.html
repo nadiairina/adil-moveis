@@ -378,12 +378,8 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                 </div>
                 
                 <!-- Primary Actions -->
-                <button id="addToCartBtn" class="snipcart-add-item" style="width:100%;background:#C8B598;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">
-                  <i data-feather="shopping-bag" style="width:18px;height:18px;"></i>
-                  <span>Adicionar ao Carrinho</span>
-                </button>
                 
-                <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:none;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
+                <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:flex;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
                   <i data-feather="message-circle" style="width:18px;height:18px;"></i>
                   <span>Pedir Orçamento via WhatsApp</span>
                 </a>
@@ -816,15 +812,14 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         priceEl.textContent = 'Preço sob consulta';
 
         // Prices hidden - always show WhatsApp quote button
-        document.getElementById('addToCartBtn').style.display = 'none';
-        document.getElementById('quoteWhatsAppBtn').style.display = 'flex';
+        
+        
         if (true) { // always
           var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name;
           document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage);
         }
 
         // Add to cart setup
-        var btn = document.getElementById('addToCartBtn');
         btn.dataset.itemId       = p.id;
         btn.dataset.itemName     = p.name;
         btn.dataset.itemPrice    = p.price > 0 ? p.price : 0.01;

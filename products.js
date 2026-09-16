@@ -2009,6 +2009,53 @@ var window_products = window.window_products = window.produtos = {
       "images/produtos/cabeceira-bestbed-divine.jpg"
     ]
   }
+,
+  "pack-1": {
+    "id": "pack-1",
+    "name": "Pack Sala de Sonho",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Sofá + Móvel de TV. Mobiliário Lourini de alta qualidade. Cores, acabamentos e tecidos personalizáveis na nossa loja física.",
+    "image": "images/produtos/sofas-monika_main.jpg",
+    "gallery": ["images/produtos/sofas-monika_main.jpg", "images/produtos/movel-tv-malmo.jpg"]
+  },
+  "pack-2": {
+    "id": "pack-2",
+    "name": "Pack Sala de Sonho Premium",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Sofá + Mesa de Centro + Móvel de TV. Mobiliário Lourini de alta qualidade. Cores, acabamentos e tecidos personalizáveis na nossa loja física.",
+    "image": "images/produtos/sofas-monika_main.jpg",
+    "gallery": ["images/produtos/sofas-monika_main.jpg", "images/produtos/mesa-centro-malmo.jpg", "images/produtos/movel-tv-malmo.jpg"]
+  },
+  "pack-3": {
+    "id": "pack-3",
+    "name": "Pack Aconchego Essencial",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Cama de Casal + Colchão + Almofadas. Mobiliário Lourini de alta qualidade e conforto superior.",
+    "image": "images/produtos/cama-estofada-alison-bege-200x150.jpg",
+    "gallery": ["images/produtos/cama-estofada-alison-bege-200x150.jpg", "images/produtos/colchao-mindol.jpg", "images/produtos/almofada-viscoprata.jpg"]
+  },
+  "pack-4": {
+    "id": "pack-4",
+    "name": "Pack À Mesa",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Mesa de Refeição + Cadeiras. Perfeito para momentos de convívio em família. Medidas e acabamentos personalizáveis.",
+    "image": "images/produtos/mesa-jantar-extensivel-paris.jpg",
+    "gallery": ["images/produtos/mesa-jantar-extensivel-paris.jpg", "images/produtos/cadeira-paris.jpg"]
+  },
+  "pack-5": {
+    "id": "pack-5",
+    "name": "Pack Sonhos Tranquilos",
+    "price": 0.0,
+    "url": "packs.html",
+    "description": "Conjunto completo composto por: Sommier de Casal + Cabeceira Estofada + Colchão. Conforto e elegância garantidos para o seu quarto.",
+    "image": "images/produtos/cama-estofada-colchao-pack.jpg",
+    "gallery": ["images/produtos/cama-estofada-colchao-pack.jpg", "images/produtos/sommier-new-33-37-branco.jpg", "images/produtos/cabeceira-luxe-estofada.jpg", "images/produtos/colchao-mindol.jpg"]
+  }
 };
+
 window.produtos = window_products;
 window.window_products = window_products;

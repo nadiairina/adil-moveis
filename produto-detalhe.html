@@ -382,11 +382,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
 
                 
 
-                <!-- Add to Cart -->
-                <button id="addToCartBtn" class="snipcart-add-item" style="width:100%;background:#C8B598;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;" onmouseover="this.style.background='#b09e85'" onmouseout="this.style.background='#C8B598'">
-                  <i data-feather="shopping-bag" style="width:18px;height:18px;"></i>
-                  <span>Adicionar ao Carrinho</span>
-                </button>
+                
 
                 <!-- Customization Note -->
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:1.5rem; color:#6b6b6b; font-size:11.5px; font-family:'Inter',sans-serif; background:#FDFCFA; padding:10px 15px; border-left:3px solid #C8B598; border-radius:2px;">
@@ -395,7 +391,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                 </div>
 
                 <!-- Pedir Orçamento via WhatsApp -->
-                <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:none;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
+                <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:flex;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
                   <i data-feather="message-circle" style="width:18px;height:18px;"></i>
                   <span>Dúvidas? / Pedir Orçamento?</span>
                 </a>
@@ -730,21 +726,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         // Prices hidden - always show "Preço sob consulta"
         priceEl.style.display = 'none';
 
-        // Prices hidden - always show WhatsApp quote button only
-        document.getElementById('addToCartBtn').style.display = 'none';
-        document.getElementById('quoteWhatsAppBtn').style.display = 'flex';
-        var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name;
-        document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage);
-
-        // Add to cart setup
-        var btn = document.getElementById('addToCartBtn');
-        btn.dataset.itemId       = p.id;
-        btn.dataset.itemName     = p.name;
-        if (p.buy_link) {
-          btn.href = p.buy_link;
-          btn.onclick = null; // Disable add to cart popup
-          btn.innerHTML = '<i class="fas fa-shopping-bag mr-2"></i> COMPRAR AGORA';
-          btn.style.backgroundColor = '#16a34a'; // Green
+        
         } else {
           btn.href = 'javascript:void(0)';
           btn.innerHTML = '<i class="fas fa-shopping-bag mr-2"></i> Adicionar ao Carrinho';
