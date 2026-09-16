@@ -1066,14 +1066,11 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                 'page_location': window.location.href
               });
             }
+            if (typeof fbq === 'function') fbq('track', 'Lead');
           });
         }
         
-        // Listen to Snipcart added event
-        document.addEventListener('snipcart.ready', function() {
-          Snipcart.events.on('item.added', function (cartItem) {
-             showPdpToast("Produto adicionado ao carrinho!");
-          });
+        
         });
       });
     </script>
