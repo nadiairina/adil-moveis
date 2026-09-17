@@ -32,7 +32,7 @@ right_col_new = """<div id="agendar-visita-form" class="flex flex-col justify-ce
                   <span style="font-size:20px;">💬</span> PEDIR ORÇAMENTO / DÚVIDAS
                 </a>
                 
-                <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A%0AProcuro%20por%3A" target="_blank" rel="noopener" style="background-color: #C8B598; color: white; border: none; font-size: 14px; font-weight: bold; text-decoration:none; display:flex;" class="w-full py-4 px-6 rounded shadow items-center justify-center gap-3 hover:bg-[#b09e85] transition-colors">
+                <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A" target="_blank" rel="noopener" style="background-color: #C8B598; color: white; border: none; font-size: 14px; font-weight: bold; text-decoration:none; display:flex;" class="w-full py-4 px-6 rounded shadow items-center justify-center gap-3 hover:bg-[#b09e85] transition-colors">
                   <span style="font-size:20px;">📅</span> AGENDAR VISITA À LOJA
                 </a>
               </div>

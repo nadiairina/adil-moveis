@@ -206,7 +206,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       <!-- Right Side -->
       <div class="flex items-center gap-4">
         <a class="hidden sm:inline-block" href="packs.html" onmouseout="this.style.background='#EBF2F7';this.style.transform='translateY(0)';" onmouseover="this.style.background='#D6E4F0';this.style.transform='translateY(-2px)';" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.2em;color:#1E3A8A;background:#EBF2F7;border:2px solid #1E3A8A;padding:7px 20px;transition:all 0.3s;border-radius:30px;text-decoration:none;box-shadow:0 4px 15px rgba(30,58,138,0.1);">PACKS ESPECIAIS</a>
-        <a class="hidden lg:inline-block" href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A%0AProcuro%20por%3A" target="_blank" rel="noopener" onmouseout="this.style.background='transparent';this.style.color='#1a1a1a';" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;background:transparent;color:#1a1a1a;border:2px solid #C8B598;padding:7px 18px;transition:all 0.3s;border-radius:20px;text-decoration:none;">AGENDAR VISITA</a>
+        <a class="hidden lg:inline-block" href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A" target="_blank" rel="noopener" onmouseout="this.style.background='transparent';this.style.color='#1a1a1a';" onmouseover="this.style.background='#C8B598';this.style.color='#fff';" style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;background:transparent;color:#1a1a1a;border:2px solid #C8B598;padding:7px 18px;transition:all 0.3s;border-radius:20px;text-decoration:none;">AGENDAR VISITA</a>
         <button onclick="openSearchModal()" style="background:transparent;border:none;cursor:pointer;color:#1a1a1a;padding:4px;margin-right:2px;" title="Pesquisar">
           <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
@@ -248,7 +248,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       </div>
       <!-- Sidebar Footer -->
       <div style="padding:1.5rem;background:#F5F0E8;border-top:1px solid #E8E3DC;">
-        <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A%0AProcuro%20por%3A" target="_blank" rel="noopener" onmouseout="this.style.background='#C8B598'" onmouseover="this.style.background='#b09e85'" style="display:flex;align-items:center;justify-content:center;width:100%;padding:0.85rem;margin-bottom:0.75rem;background:#C8B598;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;">
+        <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A" target="_blank" rel="noopener" onmouseout="this.style.background='#C8B598'" onmouseover="this.style.background='#b09e85'" style="display:flex;align-items:center;justify-content:center;width:100%;padding:0.85rem;margin-bottom:0.75rem;background:#C8B598;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;">
           Agendar Visita à Loja
         </a>
         <a href="tel:212582788" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;font-size:0.9rem;font-weight:700;color:#1a1a1a;text-decoration:none;margin-bottom:0.5rem;">
@@ -390,11 +390,20 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
                   <span>Personalizável: Disponível em vários tamanhos, cores e acabamentos.</span>
                 </div>
 
-                <!-- Pedir Orçamento via WhatsApp -->
-                <a id="quoteWhatsAppBtn" href="#" target="_blank" style="display:flex;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 2rem;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s ease;margin-bottom:1rem;text-decoration:none;" onmouseover="this.style.background='#20ba5a'" onmouseout="this.style.background='#25D366'">
-                  <i data-feather="message-circle" style="width:18px;height:18px;"></i>
-                  <span>Dúvidas? / Pedir Orçamento?</span>
-                </a>
+                <!-- Primary Actions -->
+                <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:1.5rem;">
+                  <!-- Pedir Orçamento via WhatsApp -->
+                  <a id="quoteWhatsAppBtn" href="#" target="_blank" rel="noopener" style="display:flex;width:100%;background:#25D366;color:#fff;border:none;padding:1rem 1.5rem;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.3s ease;text-decoration:none;box-shadow:0 4px 15px rgba(37,211,102,0.18);" onmouseover="this.style.background='#20ba5a';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='#25D366';this.style.transform='translateY(0)';">
+                    <i data-feather="message-circle" style="width:17px;height:17px;"></i>
+                    <span>Dúvidas? / Pedir Orçamento</span>
+                  </a>
+
+                  <!-- Agendar Visita à Loja (Warm Beige/Gold Highlighted) -->
+                  <a id="productScheduleVisitBtn" href="#" target="_blank" rel="noopener" style="display:flex;width:100%;background:#F5F0E8;border:1.5px solid #C8B598;color:#1a1a1a;padding:0.95rem 1.5rem;font-size:10.5px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;font-family:'Inter',sans-serif;cursor:pointer;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.3s ease;text-decoration:none;" onmouseover="this.style.background='#C8B598';this.style.color='#fff';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='#F5F0E8';this.style.color='#1a1a1a';this.style.transform='translateY(0)';">
+                    <i data-feather="calendar" style="width:16px;height:16px;"></i>
+                    <span>Agendar Visita à Loja</span>
+                  </a>
+                </div>
 
                 <!-- Helper Buttons -->
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.75rem;">
@@ -735,6 +744,10 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
         var textMessage = 'Olá! Gostaria de pedir um orçamento para o produto: ' + p.name;
         document.getElementById('quoteWhatsAppBtn').href = 'https://wa.me/351961253466?text=' + encodeURIComponent(textMessage);
 
+        var scheduleMsg = 'Olá! Quero agendar uma visita à loja para ver o ' + p.name + ':\n\nNome:\nDia e Hora:';
+        var schedBtn = document.getElementById('productScheduleVisitBtn');
+        if (schedBtn) schedBtn.href = 'https://wa.me/351961253466?text=' + encodeURIComponent(scheduleMsg);
+
         // Add to cart setup
         var btn = document.createElement('a');
         btn.dataset.itemId       = p.id;
@@ -887,7 +900,7 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       <a href="https://www.google.com/maps/dir/?api=1&destination=Adil+M%C3%B3veis,+Rua+Dr.+Ant%C3%B3nio+Elvas+92,+2810-165+Feij%C3%B3" target="_blank" rel="noopener" class="floating-btn floating-btn-sec" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_loja', {'event_category': 'contacto_flutuante', 'event_label': 'Ver Loja no Mapa'});}">
         📍 Loja
       </a>
-      <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A%0AProcuro%20por%3A" class="floating-btn floating-btn-primary" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_agendar', {'event_category': 'contacto_flutuante', 'event_label': 'Agendar Visita'});}">
+      <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A" class="floating-btn floating-btn-primary" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_agendar', {'event_category': 'contacto_flutuante', 'event_label': 'Agendar Visita'});}">
         📅 Agendar Visita
       </a>
       <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20para%20o%20produto%3A%20" target="_blank" rel="noopener" class="floating-btn floating-btn-wpp" onclick="if(typeof gtag==='function'){gtag('event', 'click_barra_whatsapp', {'event_category': 'contacto_flutuante', 'event_label': 'Pedir Orcamento WhatsApp'});}">

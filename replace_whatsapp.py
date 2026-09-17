@@ -36,7 +36,7 @@ for filepath in html_files:
     if filepath == 'contactos.html':
         form_new = """<div class="text-center py-8">
   <p class="text-sm text-gray-600 mb-6">Para agendar a sua visita de forma rápida e sem complicações, basta enviar-nos uma mensagem no WhatsApp com o seu nome e o dia pretendido.</p>
-  <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A%0AProcuro%20por%3A" target="_blank" rel="noopener" style="background-color: #25D366; color: white; border: none; font-size: 13px; font-weight: bold; text-decoration:none; display:inline-flex;" class="w-full py-4 px-6 rounded shadow flex items-center justify-center gap-2 hover:bg-green-500 transition-colors">
+  <a href="https://wa.me/351961253466?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20visita%20%C3%A0%20loja%3A%0A%0ANome%3A%0ADia%20e%20Hora%3A" target="_blank" rel="noopener" style="background-color: #25D366; color: white; border: none; font-size: 13px; font-weight: bold; text-decoration:none; display:inline-flex;" class="w-full py-4 px-6 rounded shadow flex items-center justify-center gap-2 hover:bg-green-500 transition-colors">
     💬 AGENDAR VISITA PELO WHATSAPP →
   </a>
 </div>"""
