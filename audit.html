@@ -6,4 +6,41 @@
 
 
 
-</body></html>
+
+<!-- Global Event Tracking Scripts -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. WhatsApp / Contact Leads
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+        if(!link.hasAttribute('data-tracked')) {
+            link.addEventListener('click', function() {
+                if(typeof fbq === 'function') fbq('track', 'Contact');
+                if(typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'whatsapp', event_label: link.innerText.trim() || 'WhatsApp Global' });
+            });
+            link.setAttribute('data-tracked', 'true');
+        }
+    });
+
+    // 2. Google Maps / Find Location
+    document.querySelectorAll('a[href*="maps.google.com"], a[href*="google.com/maps"]').forEach(function(link) {
+        if(!link.hasAttribute('data-tracked')) {
+            link.addEventListener('click', function() {
+                if(typeof fbq === 'function') fbq('track', 'FindLocation');
+                if(typeof gtag === 'function') gtag('event', 'click_maps', { event_category: 'loja', event_label: 'Google Maps Global' });
+            });
+            link.setAttribute('data-tracked', 'true');
+        }
+    });
+
+    // 3. Formulários de Contacto
+    const forms = document.querySelectorAll('form');
+    forms.forEach(function(form) {
+        form.addEventListener('submit', function() {
+            if(typeof fbq === 'function') fbq('track', 'Lead');
+            if(typeof gtag === 'function') gtag('event', 'form_submit', { event_category: 'formulario', event_label: 'Formulario Global' });
+        });
+    });
+});
+</script>
+</body>
+</html>

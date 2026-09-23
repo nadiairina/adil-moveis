@@ -53,11 +53,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1036015335871903');
+fbq('init', '1102916795815505');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1102916795815505&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 </head>
@@ -510,5 +510,42 @@ src="https://www.facebook.com/tr?id=1036015335871903&ev=PageView&noscript=1"
       </a>
     </div>
 
+
+<!-- Global Event Tracking Scripts -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. WhatsApp / Contact Leads
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+        if(!link.hasAttribute('data-tracked')) {
+            link.addEventListener('click', function() {
+                if(typeof fbq === 'function') fbq('track', 'Contact');
+                if(typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'whatsapp', event_label: link.innerText.trim() || 'WhatsApp Global' });
+            });
+            link.setAttribute('data-tracked', 'true');
+        }
+    });
+
+    // 2. Google Maps / Find Location
+    document.querySelectorAll('a[href*="maps.google.com"], a[href*="google.com/maps"]').forEach(function(link) {
+        if(!link.hasAttribute('data-tracked')) {
+            link.addEventListener('click', function() {
+                if(typeof fbq === 'function') fbq('track', 'FindLocation');
+                if(typeof gtag === 'function') gtag('event', 'click_maps', { event_category: 'loja', event_label: 'Google Maps Global' });
+            });
+            link.setAttribute('data-tracked', 'true');
+        }
+    });
+
+    // 3. Formulários de Contacto
+    const forms = document.querySelectorAll('form');
+    forms.forEach(function(form) {
+        form.addEventListener('submit', function() {
+            if(typeof fbq === 'function') fbq('track', 'Lead');
+            if(typeof gtag === 'function') gtag('event', 'form_submit', { event_category: 'formulario', event_label: 'Formulario Global' });
+        });
+    });
+});
+</script>
 </body>
+
 </html>
